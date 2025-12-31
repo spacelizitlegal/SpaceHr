@@ -5,190 +5,86 @@ import { Button } from "@/components/ui/Button";
 import {
     Brain,
     Target,
-    TrendingUp,
-    Users,
-    ShieldCheck,
-    Sparkles,
-    LineChart,
-    BookOpen,
     Zap,
-    Layers,
-    CheckCircle2,
-    ArrowRight
+    Check,
+    Play,
+    Users,
+    TrendingUp
 } from "lucide-react";
 import Image from "next/image";
 
 export default function CoursesPage() {
     return (
-        <div className="min-h-screen bg-white dark:bg-gray-950 font-sans selection:bg-primary/20">
+        <div className="min-h-screen bg-white dark:bg-[#0b1121] font-sans overflow-x-hidden">
 
-            {/* 1. Hero Section */}
-            <section className="relative overflow-hidden pt-20 pb-24 lg:pt-32 lg:pb-40">
-                {/* Background Gradients */}
-                <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
-                    <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[70%] rounded-full bg-purple-500/10 blur-[100px]" />
-                    <div className="absolute top-[10%] -right-[10%] w-[60%] h-[80%] rounded-full bg-blue-500/10 blur-[100px]" />
-                </div>
-
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative">
-                    <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-                        {/* Text Content */}
-                        <div className="w-full lg:w-1/2 text-center lg:text-left">
-                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 text-sm font-medium mb-6">
-                                <Sparkles className="w-4 h-4" />
-                                <span>AI-Powered Workforce Transformation</span>
-                            </div>
-
-                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 dark:text-white mb-6 leading-[1.1]">
-                                AI-Powered Learning That Improves <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">Employee Performance</span>
-                            </h1>
-
-                            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-                                Align training with business goals. Our AI analyzes skill gaps, personalizes learning paths, and drives measurable performance growth for your entire workforce.
-                            </p>
-
-                            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                                <Button size="lg" className="rounded-full px-8 text-base h-12 shadow-lg shadow-blue-500/20 hover:shadow-blue-500/30 transition-all bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 border-0">
-                                    Request Demo
-                                </Button>
-                                <Button variant="outline" size="lg" className="rounded-full px-8 text-base h-12 border-gray-200 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-900">
-                                    Explore Platform
-                                </Button>
-                            </div>
-
-                            <div className="mt-8 flex items-center justify-center lg:justify-start gap-6 text-sm text-gray-500 font-medium">
-                                <div className="flex items-center gap-2">
-                                    <CheckCircle2 className="w-4 h-4 text-green-500" />
-                                    <span>No credit card required</span>
-                                </div>
-                                <div className="flex items-center gap-2">
-                                    <CheckCircle2 className="w-4 h-4 text-green-500" />
-                                    <span>14-day free trial</span>
-                                </div>
-                            </div>
+            {/* 1. HERO SECTION */}
+            <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                    <div className="lg:w-2/3 mx-auto text-center">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 dark:bg-teal-900/30 text-teal-600 dark:text-teal-300 text-xs font-bold tracking-wider uppercase mb-8 border border-teal-100 dark:border-teal-800">
+                            <Brain className="w-3 h-3" /> AIPerform Academy
                         </div>
-
-                        {/* Visual Content */}
-                        <div className="w-full lg:w-1/2 relative">
-                            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900/50 backdrop-blur-sm p-4">
-                                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 pointer-events-none" />
-                                <img
-                                    src="https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80"
-                                    alt="Team collaborating on performance"
-                                    className="rounded-xl w-full h-auto object-cover aspect-[4/3]"
-                                />
-
-                                {/* Floating Badge 1 */}
-                                <div className="absolute -left-6 top-10 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-xl border border-gray-100 dark:border-gray-700 animate-in fade-in slide-in-from-left-4 duration-1000 hidden md:block">
-                                    <div className="flex items-center gap-3">
-                                        <div className="p-2 bg-green-100 dark:bg-green-900/30 rounded-lg">
-                                            <TrendingUp className="w-5 h-5 text-green-600 dark:text-green-400" />
-                                        </div>
-                                        <div>
-                                            <p className="text-xs text-gray-500">Performance</p>
-                                            <p className="text-sm font-bold text-gray-900 dark:text-white">+24% Growth</p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                {/* Floating Badge 2 */}
-                                <div className="absolute -right-6 bottom-10 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-xl border border-gray-100 dark:border-gray-700 animate-in fade-in slide-in-from-right-4 duration-1000 delay-200 hidden md:block">
-                                    <div className="flex items-center gap-3">
-                                        <div className="p-2 bg-blue-100 dark:bg-blue-900/30 rounded-lg">
-                                            <Brain className="w-5 h-5 text-blue-600 dark:text-blue-400" />
-                                        </div>
-                                        <div>
-                                            <p className="text-xs text-gray-500">Skill Match</p>
-                                            <p className="text-sm font-bold text-gray-900 dark:text-white">98% Accuracy</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* 2. How It Works Section */}
-            <section className="py-20 bg-gray-50 dark:bg-gray-900/50">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">How Our Intelligent Platform Works</h2>
-                        <p className="text-lg text-gray-600 dark:text-gray-300">
-                            We don't just host courses. We build intelligent growth engines for your teams.
+                        <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-gray-900 dark:text-white mb-8 leading-tight">
+                            Corporate learning, <br />
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-blue-600">personalized by AI.</span>
+                        </h1>
+                        <p className="text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed">
+                            Stop assigning generic training. Our AI analyzes performance gaps and automatically assigns targeted micro-courses to upskill your team in the flow of work.
                         </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-3 gap-8 relative">
-                        {/* Connecting Line (Desktop) */}
-                        <div className="hidden md:block absolute top-12 left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-transparent via-blue-200 dark:via-blue-800 to-transparent z-0" />
-
-                        {/* Step 1 */}
-                        <div className="relative z-10 flex flex-col items-center text-center group">
-                            <div className="w-24 h-24 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                                <div className="w-16 h-16 rounded-xl bg-blue-50 dark:bg-blue-900/30 flex items-center justify-center">
-                                    <Brain className="w-8 h-8 text-blue-600 dark:text-blue-400" />
-                                </div>
-                            </div>
-                            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">1. AI Skill Analysis</h3>
-                            <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                                Our AI automatically maps current employee skills against role requirements to identify gaps instantly.
-                            </p>
-                        </div>
-
-                        {/* Step 2 */}
-                        <div className="relative z-10 flex flex-col items-center text-center group">
-                            <div className="w-24 h-24 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                                <div className="w-16 h-16 rounded-xl bg-purple-50 dark:bg-purple-900/30 flex items-center justify-center">
-                                    <Zap className="w-8 h-8 text-purple-600 dark:text-purple-400" />
-                                </div>
-                            </div>
-                            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">2. Personalized Paths</h3>
-                            <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                                Employees receive custom learning journeys curated from thousands of internal and external resources.
-                            </p>
-                        </div>
-
-                        {/* Step 3 */}
-                        <div className="relative z-10 flex flex-col items-center text-center group">
-                            <div className="w-24 h-24 rounded-2xl bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                                <div className="w-16 h-16 rounded-xl bg-green-50 dark:bg-green-900/30 flex items-center justify-center">
-                                    <LineChart className="w-8 h-8 text-green-600 dark:text-green-400" />
-                                </div>
-                            </div>
-                            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">3. Growth & Insights</h3>
-                            <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                                Track progress in real-time and correlate learning activities directly with performance improvements.
-                            </p>
+                        <div className="flex justify-center gap-4">
+                            <Button size="lg" className="rounded-full h-14 px-8 text-lg bg-primary hover:bg-primary/90 text-white shadow-xl shadow-primary/20">
+                                Explore The Academy
+                            </Button>
                         </div>
                     </div>
                 </div>
+
+                {/* Hero Backgroud Effect */}
+                <div className="absolute top-0 inset-x-0 h-full -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-teal-50/50 via-white to-white dark:from-teal-900/20 dark:via-[#0b1121] dark:to-[#0b1121]"></div>
             </section>
 
-            {/* 3. Key AI Features Section */}
-            <section className="py-24 bg-white dark:bg-gray-950">
+            {/* 2. HOW IT WORKS - 3 Steps Visual Flow */}
+            <section className="py-24 bg-gray-50 dark:bg-[#0f172a]">
                 <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
-                        <div className="max-w-2xl">
-                            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Enterprise-Grade AI Capabilities</h2>
-                            <p className="text-lg text-gray-600 dark:text-gray-300">
-                                Built for scale, security, and impact. Everything you need to modernize your L&D strategy.
-                            </p>
-                        </div>
-                        <Button variant="outline" className="hidden md:flex">
-                            View Full Feature List <ArrowRight className="ml-2 w-4 h-4" />
-                        </Button>
+                    <div className="text-center mb-20">
+                        <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">From Insight to Action</h2>
+                        <p className="text-gray-500 max-w-xl mx-auto">Seamlessly connecting performance reviews with learning and development.</p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {features.map((feature, idx) => (
-                            <div key={idx} className="p-8 rounded-2xl border border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900 hover:shadow-xl hover:border-gray-200 dark:hover:border-gray-700 transition-all duration-300 group">
-                                <div className={`w-12 h-12 rounded-lg ${feature.bg} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform`}>
-                                    <feature.icon className={`w-6 h-6 ${feature.color}`} />
+                    <div className="grid md:grid-cols-3 gap-12 relative">
+                        {/* Connecting Line (Desktop) */}
+                        <div className="hidden md:block absolute top-12 left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-700 to-transparent border-t border-dashed border-gray-400 dark:border-gray-600"></div>
+
+                        {[
+                            {
+                                icon: Target,
+                                title: "1. Identify Gaps",
+                                description: "Managers and AI identify skill gaps during performance reviews.",
+                                color: "text-red-500",
+                                bg: "bg-red-50 dark:bg-red-900/20"
+                            },
+                            {
+                                icon: Brain,
+                                title: "2. Assign Training",
+                                description: "AI recommends specific modules to close the identified gaps.",
+                                color: "text-purple-500",
+                                bg: "bg-purple-50 dark:bg-purple-900/20"
+                            },
+                            {
+                                icon: TrendingUp,
+                                title: "3. Track Growth",
+                                description: "Monitor skill acquisition and its impact on subsequent reviews.",
+                                color: "text-green-500",
+                                bg: "bg-green-50 dark:bg-green-900/20"
+                            }
+                        ].map((step, i) => (
+                            <div key={i} className="relative z-10 flex flex-col items-center text-center group">
+                                <div className={`w-24 h-24 rounded-3xl ${step.bg} flex items-center justify-center mb-8 shadow-sm group-hover:scale-110 transition-transform duration-300`}>
+                                    <step.icon className={`w-10 h-10 ${step.color}`} />
                                 </div>
-                                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">{feature.title}</h3>
-                                <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                                    {feature.description}
+                                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">{step.title}</h3>
+                                <p className="text-gray-600 dark:text-gray-400 leading-relaxed px-4">
+                                    {step.description}
                                 </p>
                             </div>
                         ))}
@@ -196,124 +92,98 @@ export default function CoursesPage() {
                 </div>
             </section>
 
-            {/* 4. Benefits by Audience Section */}
-            <section className="py-24 bg-gray-900 text-white relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 to-purple-900/20" />
-
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold mb-4">Value for the Entire Organization</h2>
-                        <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-                            A unified platform that aligns individual goals with company success.
-                        </p>
-                    </div>
-
-                    <div className="grid md:grid-cols-3 gap-8">
-                        {/* Employees */}
-                        <div className="p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-colors">
-                            <div className="mb-6"><Users className="w-10 h-10 text-blue-400" /></div>
-                            <h3 className="text-2xl font-bold mb-4">Employees</h3>
-                            <ul className="space-y-4 text-gray-300">
-                                <li className="flex items-start gap-3">
-                                    <CheckCircle2 className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
-                                    <span>Personalized career roadmaps</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <CheckCircle2 className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
-                                    <span>Skill-based learning recommendations</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <CheckCircle2 className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
-                                    <span>Clear visibility on growth metrics</span>
-                                </li>
-                            </ul>
+            {/* 3. FEATURE BLOCK - Image Left */}
+            <section className="py-32 overflow-hidden">
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="flex flex-col lg:flex-row items-center gap-16">
+                        <div className="lg:w-1/2 relative">
+                            <div className="absolute -inset-4 bg-gradient-to-r from-teal-500 to-blue-600 rounded-[2rem] opacity-30 blur-2xl transform rotate-3"></div>
+                            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800">
+                                <Image
+                                    src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?auto=format&fit=crop&w=1674&q=80"
+                                    alt="Learning Dashboard"
+                                    width={800}
+                                    height={600}
+                                    className="w-full h-auto"
+                                />
+                                {/* Overlay UI Element */}
+                                <div className="absolute bottom-6 left-6 right-6 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md p-6 rounded-xl shadow-lg border border-gray-100 dark:border-gray-700">
+                                    <div className="flex items-center gap-4 mb-4">
+                                        <div className="w-12 h-12 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
+                                            <Play className="w-5 h-5 text-blue-600 fill-current" />
+                                        </div>
+                                        <div>
+                                            <p className="text-xs text-uppercase font-bold text-blue-600 tracking-wider">Now Playing</p>
+                                            <p className="font-bold text-gray-900 dark:text-white">Giving Effective Feedback</p>
+                                        </div>
+                                    </div>
+                                    <div className="w-full bg-gray-200 dark:bg-gray-700 h-1.5 rounded-full overflow-hidden">
+                                        <div className="bg-blue-600 h-full w-2/3"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-                        {/* Managers */}
-                        <div className="p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-colors">
-                            <div className="mb-6"><ShieldCheck className="w-10 h-10 text-purple-400" /></div>
-                            <h3 className="text-2xl font-bold mb-4">Managers</h3>
-                            <ul className="space-y-4 text-gray-300">
-                                <li className="flex items-start gap-3">
-                                    <CheckCircle2 className="w-5 h-5 text-purple-500 shrink-0 mt-0.5" />
-                                    <span>Real-time team skill tracking</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <CheckCircle2 className="w-5 h-5 text-purple-500 shrink-0 mt-0.5" />
-                                    <span>Data-driven coaching insights</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <CheckCircle2 className="w-5 h-5 text-purple-500 shrink-0 mt-0.5" />
-                                    <span>Automated performance reviews</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        {/* HR Leaders */}
-                        <div className="p-8 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 hover:bg-white/10 transition-colors">
-                            <div className="mb-6"><Target className="w-10 h-10 text-green-400" /></div>
-                            <h3 className="text-2xl font-bold mb-4">HR Leaders</h3>
-                            <ul className="space-y-4 text-gray-300">
-                                <li className="flex items-start gap-3">
-                                    <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
-                                    <span>Workforce skill heatmaps</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
-                                    <span>ROI tracking on L&D spend</span>
-                                </li>
-                                <li className="flex items-start gap-3">
-                                    <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0 mt-0.5" />
-                                    <span>Succession planning tools</span>
-                                </li>
+                        <div className="lg:w-1/2">
+                            <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-6">Learning that happens <br /><span className="text-primary">in the flow of work</span>.</h2>
+                            <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+                                Don't force employees to switch context. Our integrations with Slack, Teams, and your existing LMS mean training happens where work happens.
+                            </p>
+                            <ul className="space-y-4">
+                                {['Bite-sized micro-learning modules', 'Interactive role-play scenarios', 'Mobile-first design for on-the-go access'].map((item, i) => (
+                                    <li key={i} className="flex items-center gap-3 font-medium text-gray-800 dark:text-gray-200">
+                                        <div className="w-6 h-6 rounded-full bg-green-100 dark:bg-green-900/50 flex items-center justify-center text-green-600 flex-shrink-0">
+                                            <Check className="w-3.5 h-3.5" />
+                                        </div>
+                                        {item}
+                                    </li>
+                                ))}
                             </ul>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* 5. Visual Section */}
-            <section className="relative h-[500px] flex items-center justify-center">
-                <div className="absolute inset-0 z-0">
-                    <img
-                        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80"
-                        alt="Diverse team working together"
-                        className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-blue-900/80 mix-blend-multiply" />
-                </div>
+            {/* 4. CONTENT LIBRARY PREVIEW - Image Grids (Not cards) */}
+            <section className="py-24 bg-[#0b1121] text-white">
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="flex flex-col md:flex-row justify-between items-end mb-12">
+                        <div>
+                            <h2 className="text-3xl font-bold mb-4">World-Class Content Library</h2>
+                            <p className="text-gray-400 max-w-xl">Access thousands of courses from industry experts.</p>
+                        </div>
+                        <Button variant="outline" className="mt-6 md:mt-0 text-white border-white/20 hover:bg-white/10">Browse Catalog</Button>
+                    </div>
 
-                <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                        "Training that adapts to your workforce, not the other way around."
-                    </h2>
-                    <p className="text-xl text-blue-100">
-                        Join 500+ forward-thinking companies transforming their culture.
-                    </p>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        {[
+                            "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80",
+                            "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80",
+                            "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
+                            "https://images.unsplash.com/photo-1551434678-e076c2236033?auto=format&fit=crop&w=800&q=80"
+                        ].map((img, i) => (
+                            <div key={i} className="relative aspect-[3/4] rounded-xl overflow-hidden group cursor-pointer">
+                                <Image src={img} alt="Course Category" fill className="object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100" />
+                                <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-black/90 to-transparent">
+                                    <p className="font-bold text-lg">Leadership {i + 1}01</p>
+                                    <p className="text-xs text-gray-400 uppercase tracking-wider mt-1">12 Modules</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </section>
 
-            {/* 6. Final CTA Section */}
-            <section className="py-24 bg-white dark:bg-gray-950">
-                <div className="container mx-auto px-4 text-center">
-                    <div className="max-w-3xl mx-auto bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/10 dark:to-purple-900/10 rounded-3xl p-12 lg:p-16 border border-gray-100 dark:border-gray-800">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
-                            Transform Learning into <br /> Measurable Performance
-                        </h2>
-                        <p className="text-lg text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto">
-                            Stop guessing what your team needs. Start delivering precision training that drives results today.
-                        </p>
-                        <div className="flex flex-col sm:flex-row justify-center gap-4">
-                            <Button size="lg" className="rounded-full px-10 h-14 text-lg shadow-xl shadow-blue-500/25 bg-blue-600 hover:bg-blue-700">
-                                Get Started Now
-                            </Button>
-                            <Button variant="outline" size="lg" className="rounded-full px-10 h-14 text-lg bg-white dark:bg-transparent">
-                                Talk to Sales
-                            </Button>
-                        </div>
-                        <p className="mt-6 text-sm text-gray-500">
-                            Free for teams up to 10 users • No credit card needed
-                        </p>
+            {/* 5. CTA */}
+            <section className="py-32 bg-teal-600 relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-teal-600 to-blue-800"></div>
+                <div className="absolute opacity-10 top-0 left-0 w-full h-full bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
+
+                <div className="container relative z-10 mx-auto px-4 text-center max-w-3xl">
+                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Close the skill gap today.</h2>
+                    <p className="text-xl text-teal-100 mb-10">Start your 14-day free trial of AIPerform Academy and see the difference in your team's output.</p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <Button size="lg" className="bg-white text-teal-900 hover:bg-teal-50 font-bold h-14 px-8 rounded-full shadow-lg">Start Free Trial</Button>
+                        <Button size="lg" variant="outline" className="border-white/30 text-white hover:bg-white/10 h-14 px-8 rounded-full">Schedule Demo</Button>
                     </div>
                 </div>
             </section>
@@ -321,48 +191,3 @@ export default function CoursesPage() {
         </div>
     );
 }
-
-const features = [
-    {
-        title: "Skill Gap Analysis",
-        description: "Identify the skills your team lacks and automatically suggest courses to bridge the gap.",
-        icon: Target,
-        color: "text-red-500",
-        bg: "bg-red-50 dark:bg-red-900/20"
-    },
-    {
-        title: "Generative AI Coach",
-        description: "24/7 AI mentor that answers employee questions and guides them through complex topics.",
-        icon: Sparkles,
-        color: "text-purple-500",
-        bg: "bg-purple-50 dark:bg-purple-900/20"
-    },
-    {
-        title: "Smart Assessments",
-        description: "Adaptive quizzes that adjust difficulty based on performance to accurately measure proficiency.",
-        icon: CheckCircle2,
-        color: "text-blue-500",
-        bg: "bg-blue-50 dark:bg-blue-900/20"
-    },
-    {
-        title: "Performance Tracking",
-        description: "Visualize progress with granular reports on course completion, engagement, and skill growth.",
-        icon: LineChart,
-        color: "text-green-500",
-        bg: "bg-green-50 dark:bg-green-900/20"
-    },
-    {
-        title: "Custom Learning Paths",
-        description: "Curate specific journeys for different roles, bringing structure to professional development.",
-        icon: Layers,
-        color: "text-orange-500",
-        bg: "bg-orange-50 dark:bg-orange-900/20"
-    },
-    {
-        title: "Content Library Integration",
-        description: "Connect seamlessly with internal docs, Notion, Drive, and third-party course providers.",
-        icon: BookOpen,
-        color: "text-indigo-500",
-        bg: "bg-indigo-50 dark:bg-indigo-900/20"
-    }
-];
