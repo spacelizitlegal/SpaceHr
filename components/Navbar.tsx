@@ -20,9 +20,9 @@ export function Navbar() {
 
     const navLinks = [
         { href: "/", label: "Product" },
-        { href: "/courses", label: "Academy" },
-        { href: "/blogs", label: "Resources" },
-        { href: "/pricing", label: "Pricing" },
+        { href: "/features", label: "Features" },
+        { href: "/courses", label: "Courses" },
+        { href: "/blogs", label: "Blogs" },
     ];
 
     return (
@@ -69,16 +69,6 @@ export function Navbar() {
                 {/* Actions */}
                 <div className="hidden md:flex items-center gap-3">
                     <Button
-                        variant="ghost"
-                        size="sm"
-                        className={cn(
-                            "font-medium hover:bg-white/10",
-                            scrolled ? "text-foreground" : "text-foreground dark:text-white"
-                        )}
-                    >
-                        Sign In
-                    </Button>
-                    <Button
                         size="sm"
                         className="rounded-full px-6 bg-foreground dark:bg-white text-background dark:text-black hover:bg-foreground/90 dark:hover:bg-white/90 shadow-lg transition-all hover:shadow-xl font-semibold"
                     >
@@ -110,9 +100,6 @@ export function Navbar() {
                         </Link>
                     ))}
                     <div className="h-px bg-border my-2"></div>
-                    <Button variant="outline" className="w-full justify-center rounded-xl" onClick={() => setIsOpen(false)}>
-                        Sign In
-                    </Button>
                     <Button className="w-full justify-center rounded-xl bg-primary hover:bg-primary/90" onClick={() => setIsOpen(false)}>
                         Get Demo
                     </Button>
