@@ -53,7 +53,7 @@ export default function BlogsPage() {
             date: "Nov 15, 2024",
             readTime: "6 min read",
             category: "Hybrid Work",
-            image: "https://images.unsplash.com/photo-1593642632823-8f78536788c6?auto=format&fit=crop&w=800&q=80"
+            image: "https://images.unsplash.com/photo-1593642532744-d377ab507dc8?auto=format&fit=crop&w=800&q=80"
         },
     ];
 

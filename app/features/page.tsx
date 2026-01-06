@@ -98,7 +98,7 @@ export default function FeaturesHub() {
                                 <div className="flex-1 w-full relative h-[300px] rounded-xl overflow-hidden shadow-sm border border-gray-100 dark:border-gray-700 bg-gray-50 dark:bg-gray-800">
                                     {/* Placeholder for small payroll visual */}
                                     <Image
-                                        src="/images/features/ai-payroll.png"
+                                        src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=800&q=80"
                                         alt="Payroll Intelligence"
                                         fill
                                         className="object-cover object-top opacity-90 transition-all hover:scale-105"

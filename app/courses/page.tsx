@@ -159,7 +159,7 @@ export default function CoursesPage() {
                             "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80",
                             "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80",
                             "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80",
-                            "https://images.unsplash.com/photo-1551434678-e076c2236033?auto=format&fit=crop&w=800&q=80"
+                            "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80"
                         ].map((img, i) => (
                             <div key={i} className="relative aspect-[3/4] rounded-xl overflow-hidden group cursor-pointer">
                                 <Image src={img} alt="Course Category" fill className="object-cover transition-transform duration-700 group-hover:scale-110 opacity-70 group-hover:opacity-100" />
