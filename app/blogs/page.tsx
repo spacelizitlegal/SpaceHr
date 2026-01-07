@@ -3,59 +3,19 @@
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { blogPosts } from "@/lib/blogData";
+import { useState } from "react";
 
 export default function BlogsPage() {
+    const [visibleCount, setVisibleCount] = useState(6);
 
-    const featuredPost = {
-        title: "The Future of Performance Management is AI-Driven",
-        summary: "Discover how Artificial Intelligence is reshaping how we evaluate and improve employee performance, moving away from bias and towards real-time data.",
-        date: "Dec 12, 2024",
-        category: "Technology",
-        image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop"
+    const featuredPost = blogPosts[0];
+    const initialPosts = blogPosts.slice(1); // All posts except the first one (featured)
+    const visiblePosts = initialPosts.slice(0, visibleCount);
+
+    const handleLoadMore = () => {
+        setVisibleCount((prev) => prev + 3);
     };
-
-    const posts = [
-        {
-            title: "5 Strategies for Remote Team Alignment",
-            summary: "Keep your distributed team aligned and motivated with these proven strategies for async work.",
-            date: "Dec 10, 2024",
-            readTime: "4 min read",
-            category: "Management",
-            image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
-        },
-        {
-            title: "Why Annual Reviews are Dead",
-            summary: "Continuous feedback loops drastically outperform the stressful annual review process.",
-            date: "Dec 05, 2024",
-            readTime: "6 min read",
-            category: "HR Trends",
-            image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80"
-        },
-        {
-            title: "Building Psychological Safety",
-            summary: "Create an environment where employees feel safe to take risks and be vulnerable.",
-            date: "Nov 28, 2024",
-            readTime: "7 min read",
-            category: "Culture",
-            image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80"
-        },
-        {
-            title: "The ROI of Employee Wellbeing",
-            summary: "Investing in mental health drives significant ROI through retention and productivity.",
-            date: "Nov 22, 2024",
-            readTime: "5 min read",
-            category: "Wellbeing",
-            image: "https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?auto=format&fit=crop&w=800&q=80"
-        },
-        {
-            title: "Hybrid Work Challenges",
-            summary: "Practical tips for managers handling proximity bias and communication gaps.",
-            date: "Nov 15, 2024",
-            readTime: "6 min read",
-            category: "Hybrid Work",
-            image: "https://images.unsplash.com/photo-1593642532744-d377ab507dc8?auto=format&fit=crop&w=800&q=80"
-        },
-    ];
 
     return (
         <div className="min-h-screen bg-white dark:bg-[#0f172a] font-sans">
@@ -80,7 +40,7 @@ export default function BlogsPage() {
                     <div className="order-2 lg:order-1">
                         <span className="text-primary font-bold text-sm tracking-wide uppercase mb-3 block">Featured Story</span>
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4 leading-tight">
-                            <Link href="#" className="hover:text-primary transition-colors">
+                            <Link href={`/blogs/${featuredPost.slug}`} className="hover:text-primary transition-colors">
                                 {featuredPost.title}
                             </Link>
                         </h2>
@@ -92,9 +52,11 @@ export default function BlogsPage() {
                             <span className="w-1 h-1 rounded-full bg-gray-300"></span>
                             <span>{featuredPost.category}</span>
                         </div>
-                        <Button className="rounded-full px-6">
-                            Read Article <ArrowRight className="ml-2 w-4 h-4" />
-                        </Button>
+                        <Link href={`/blogs/${featuredPost.slug}`}>
+                            <Button className="rounded-full px-6">
+                                Read Article <ArrowRight className="ml-2 w-4 h-4" />
+                            </Button>
+                        </Link>
                     </div>
                     <div className="order-1 lg:order-2 relative h-[400px] rounded-2xl overflow-hidden shadow-2xl">
                         <img
@@ -112,8 +74,8 @@ export default function BlogsPage() {
                 <div className="mb-12">
                     <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">Latest Articles</h3>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
-                        {posts.map((post, idx) => (
-                            <div key={idx} className="group cursor-pointer">
+                        {visiblePosts.map((post, idx) => (
+                            <Link href={`/blogs/${post.slug}`} key={idx} className="group cursor-pointer block">
                                 <div className="h-48 rounded-xl overflow-hidden mb-5 relative bg-gray-100 dark:bg-gray-800">
                                     <img
                                         src={post.image}
@@ -137,15 +99,23 @@ export default function BlogsPage() {
                                         <span>{post.readTime}</span>
                                     </div>
                                 </div>
-                            </div>
+                            </Link>
                         ))}
                     </div>
                 </div>
 
-                <div className="flex justify-center mt-16">
-                    <Button variant="outline" size="lg" className="rounded-full px-8">View All Articles</Button>
-                </div>
-
+                {visibleCount < initialPosts.length && (
+                    <div className="flex justify-center mt-16">
+                        <Button
+                            variant="outline"
+                            size="lg"
+                            className="rounded-full px-8"
+                            onClick={handleLoadMore}
+                        >
+                            View All Articles
+                        </Button>
+                    </div>
+                )}
             </div>
         </div>
     );

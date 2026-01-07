@@ -41,16 +41,14 @@ export function Navbar() {
                 )}
             >
                 {/* Logo */}
-                <Link href="/" className="flex items-center gap-2 group">
-                    <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-primary to-accent flex items-center justify-center text-white shadow-lg shadow-primary/20 group-hover:scale-105 transition-transform duration-300">
-                        <Cpu className="h-5 w-5" />
+                <Link href="/" className="flex items-center gap-3 group">
+                    <div className="relative h-12 w-48 hover:scale-105 transition-transform duration-300">
+                        <img
+                            src="/Space_Lizit_Full_Logo.png"
+                            alt="Space Lizit"
+                            className="w-full h-full object-contain object-left"
+                        />
                     </div>
-                    <span className={cn(
-                        "text-lg font-bold tracking-tight transition-colors",
-                        scrolled ? "text-foreground" : "text-foreground dark:text-white"
-                    )}>
-                        AIPerform
-                    </span>
                 </Link>
 
                 {/* Desktop Menu */}
@@ -68,18 +66,28 @@ export function Navbar() {
 
                 {/* Actions */}
                 <div className="hidden md:flex items-center gap-3">
-                    <Button
-                        size="sm"
-                        className="rounded-full px-6 bg-foreground dark:bg-white text-background dark:text-black hover:bg-foreground/90 dark:hover:bg-white/90 shadow-lg transition-all hover:shadow-xl font-semibold"
-                    >
-                        Get Demo
-                    </Button>
+                    <Link href="/#demo">
+                        <Button
+                            size="sm"
+                            className="rounded-lg px-6 bg-white text-gray-900 hover:bg-gray-100 shadow-lg transition-all font-semibold"
+                        >
+                            Get Demo
+                        </Button>
+                    </Link>
+                    <Link href="https://cad.spaceaiapp.com/login">
+                        <Button
+                            size="sm"
+                            className="rounded-lg px-6 bg-blue-600 text-white hover:bg-blue-700 shadow-lg transition-all hover:shadow-xl font-semibold border-none"
+                        >
+                            Try for Free
+                        </Button>
+                    </Link>
                 </div>
 
                 {/* Mobile Toggle */}
                 <button
                     onClick={() => setIsOpen(!isOpen)}
-                    className="md:hidden p-2 text-foreground/80 hover:text-primary transition-colors"
+                    className="md:hidden p-2 text-foreground hover:text-primary transition-colors"
                 >
                     {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
                 </button>
@@ -100,8 +108,8 @@ export function Navbar() {
                         </Link>
                     ))}
                     <div className="h-px bg-border my-2"></div>
-                    <Button className="w-full justify-center rounded-xl bg-primary hover:bg-primary/90" onClick={() => setIsOpen(false)}>
-                        Get Demo
+                    <Button className="w-full justify-center rounded-xl bg-blue-600 hover:bg-blue-700 text-white" onClick={() => setIsOpen(false)}>
+                        Try for Free
                     </Button>
                 </div>
             )}

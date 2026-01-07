@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/Button";
+import Link from "next/link";
 import { ArrowRight, BarChart3, Users, Zap, Award, CheckCircle, PlayCircle, Globe, ShieldCheck } from "lucide-react";
 import Image from "next/image";
 
@@ -38,12 +39,16 @@ export default function Home() {
             Align goals, develop talent, and drive results with the only AI-powered platform built for the modern enterprise.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-300">
-            <Button size="lg" className="h-14 px-8 rounded-full text-lg font-semibold bg-primary hover:bg-primary/90 text-white shadow-xl shadow-primary/25 hover:shadow-2xl hover:-translate-y-1 transition-all">
-              Request Demo
-            </Button>
-            <Button size="lg" variant="outline" className="h-14 px-8 rounded-full text-lg font-semibold bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 hover:border-white/40 transition-all">
-              Explore Platform
-            </Button>
+            <Link href="#demo">
+              <Button size="lg" className="h-14 px-8 rounded-full text-lg font-semibold bg-primary hover:bg-primary/90 text-white shadow-xl shadow-primary/25 hover:shadow-2xl hover:-translate-y-1 transition-all">
+                Request Demo
+              </Button>
+            </Link>
+            <Link href="/features">
+              <Button size="lg" variant="outline" className="h-14 px-8 rounded-full text-lg font-semibold bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 hover:border-white/40 transition-all">
+                Explore Platform
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
@@ -107,9 +112,11 @@ export default function Home() {
                   <h3 className="text-3xl font-bold mb-4">AI Performance Tracking</h3>
                   <p className="text-blue-100 text-lg max-w-md">Real-time analytics that identify coaching opportunities and potential burnout before it happens.</p>
                 </div>
-                <Button variant="ghost" className="w-fit text-white hover:bg-white/10 group-hover:translate-x-2 transition-all p-0 h-auto font-semibold mt-8">
-                  View Analytics <ArrowRight className="ml-2 w-4 h-4" />
-                </Button>
+                <Link href="/features">
+                  <Button variant="ghost" className="w-fit text-white hover:bg-white/10 group-hover:translate-x-2 transition-all p-0 h-auto font-semibold mt-8">
+                    View Analytics <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
+                </Link>
               </div>
               {/* Abstract Visual */}
               <div className="absolute right-0 bottom-0 w-1/2 h-full opacity-30 translate-x-1/4 translate-y-1/4">
@@ -257,12 +264,16 @@ export default function Home() {
           <h2 className="text-5xl md:text-7xl font-bold text-white mb-8 tracking-tight">Ready to transform your workforce?</h2>
           <p className="text-xl md:text-2xl text-gray-400 mb-12">Join the forward-thinking companies building the future of work with AIPerform.</p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button size="lg" className="h-16 px-10 rounded-full text-xl font-bold bg-white text-black hover:bg-gray-100 transition-all transform hover:scale-105">
-              Get Started Now
-            </Button>
-            <Button size="lg" variant="outline" className="h-16 px-10 rounded-full text-xl font-bold border-white/20 text-white hover:bg-white/10">
-              Talk to Sales
-            </Button>
+            <Link href="https://cad.spaceaiapp.com/login">
+              <Button size="lg" className="h-16 px-10 rounded-full text-xl font-bold bg-white text-black hover:bg-gray-100 transition-all transform hover:scale-105">
+                Get Started Now
+              </Button>
+            </Link>
+            <Link href="#demo">
+              <Button size="lg" variant="outline" className="h-16 px-10 rounded-full text-xl font-bold border-white/20 text-white hover:bg-white/10">
+                Talk to Sales
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
