@@ -45,12 +45,12 @@ export function Navbar() {
                 <Link href="/" className="flex items-center gap-3 group">
                     <div className="relative h-10 w-10 hover:scale-110 transition-transform duration-300">
                         <img
-                            src="/Space_S_Logo_New.png"
+                            src="/Space_S_Logo_Final.png"
                             alt="Space HR"
                             className="w-full h-full object-contain"
                         />
                     </div>
-                    <span className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white group-hover:text-primary transition-colors">
+                    <span className="text-3xl font-bold tracking-tight text-white group-hover:text-primary transition-colors">
                         Space HR
                     </span>
                 </Link>
