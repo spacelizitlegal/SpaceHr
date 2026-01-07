@@ -9,15 +9,17 @@ export function Footer() {
 
                     {/* Brand Column */}
                     <div className="space-y-6">
-                        <Link href="/" className="flex items-center gap-3 group">
-                            <div className="relative w-10 h-10 hover:scale-105 transition-transform duration-300">
+                        <Link href="/" className="flex items-center gap-2 group">
+                            <div className="relative h-8 w-8 hover:scale-110 transition-transform duration-300">
                                 <img
-                                    src="/Space_S_Logo.png"
-                                    alt="Space Lizit Logo"
+                                    src="/Space_S_Logo_New.png"
+                                    alt="Space HR"
                                     className="w-full h-full object-contain"
                                 />
                             </div>
-                            <span className="text-2xl font-bold tracking-tight text-blue-500">Space Lizit</span>
+                            <span className="text-xl font-bold tracking-tight text-gray-900 dark:text-white group-hover:text-primary transition-colors">
+                                Space HR
+                            </span>
                         </Link>
                         <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
                             The intelligent performance management platform for modern enterprises. Align, train, and grow your workforce with AI.

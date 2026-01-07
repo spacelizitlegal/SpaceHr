@@ -41,14 +41,18 @@ export function Navbar() {
                 )}
             >
                 {/* Logo */}
+                {/* Logo */}
                 <Link href="/" className="flex items-center gap-3 group">
-                    <div className="relative h-12 w-48 hover:scale-105 transition-transform duration-300">
+                    <div className="relative h-10 w-10 hover:scale-110 transition-transform duration-300">
                         <img
-                            src="/Space_Lizit_Full_Logo.png"
-                            alt="Space Lizit"
-                            className="w-full h-full object-contain object-left"
+                            src="/Space_S_Logo_New.png"
+                            alt="Space HR"
+                            className="w-full h-full object-contain"
                         />
                     </div>
+                    <span className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white group-hover:text-primary transition-colors">
+                        Space HR
+                    </span>
                 </Link>
 
                 {/* Desktop Menu */}
