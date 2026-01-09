@@ -13,6 +13,10 @@ import {
   Brain,
   Users,
   Award,
+  Clock,
+  Calendar,
+  Target,
+  UserCheck,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -20,9 +24,9 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "AI-Powered ERP Features: Payroll, Appraisals, Tax & Finance Automation",
+    "AI-Powered ERP Features: Payroll, Appraisals, Attendance, Leave, Goals & More",
   description:
-    "Explore Space HR's comprehensive AI features: intelligent payroll processing, 360° appraisals, automated tax compliance, financial analytics, and predictive workforce insights.",
+    "Explore Space HR's comprehensive AI features: intelligent payroll processing, 360° appraisals, attendance tracking, leave management, goal setting, automated tax compliance, and financial analytics.",
   keywords: [
     "AI payroll automation",
     "360-degree appraisal software",
@@ -38,6 +42,13 @@ export const metadata: Metadata = {
     "AI coaching recommendations",
     "role-based HR portals",
     "FICA tax automation",
+    "employee attendance tracking",
+    "time tracking software",
+    "leave management system",
+    "PTO tracking",
+    "goal management software",
+    "OKR software",
+    "employee self-service portal",
   ],
   openGraph: {
     title: "AI-Powered ERP Features | Space HR Platform",
@@ -133,8 +144,8 @@ export default function FeaturesHub() {
               Comprehensive ERP Modules
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Five integrated modules that transform how you manage payroll,
-              performance, taxes, finance, and AI intelligence.
+              Nine integrated modules that transform how you manage payroll,
+              performance, attendance, leave, goals, taxes, finance, and AI intelligence.
             </p>
           </div>
 
@@ -279,7 +290,7 @@ export default function FeaturesHub() {
             {/* Finance & Analytics */}
             <Link
               href="/features/finance"
-              className="group relative bg-white dark:bg-[#1e293b] rounded-3xl p-8 border border-gray-100 dark:border-gray-800 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden md:col-span-2 lg:col-span-1"
+              className="group relative bg-white dark:bg-[#1e293b] rounded-3xl p-8 border border-gray-100 dark:border-gray-800 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
             >
               <div className="absolute top-0 right-0 w-32 h-32 bg-orange-100/50 dark:bg-orange-900/20 rounded-bl-[100px] transition-transform group-hover:scale-110 origin-top-right"></div>
               <div className="w-14 h-14 rounded-2xl bg-orange-100 dark:bg-orange-900/50 flex items-center justify-center text-orange-600 dark:text-orange-400 mb-6 group-hover:animate-pulse relative z-10">
@@ -303,6 +314,142 @@ export default function FeaturesHub() {
                 <li className="flex items-start gap-2">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
                   <span>ACH batch generation</span>
+                </li>
+              </ul>
+              <div className="flex items-center text-primary font-bold group-hover:translate-x-2 transition-transform relative z-10">
+                Learn more <ArrowRight className="ml-2 w-4 h-4" />
+              </div>
+            </Link>
+
+            {/* Attendance & Time Tracking */}
+            <Link
+              href="/features/attendance"
+              className="group relative bg-white dark:bg-[#1e293b] rounded-3xl p-8 border border-gray-100 dark:border-gray-800 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-100/50 dark:bg-cyan-900/20 rounded-bl-[100px] transition-transform group-hover:scale-110 origin-top-right"></div>
+              <div className="w-14 h-14 rounded-2xl bg-cyan-100 dark:bg-cyan-900/50 flex items-center justify-center text-cyan-600 dark:text-cyan-400 mb-6 group-hover:animate-pulse relative z-10">
+                <Clock className="w-7 h-7" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 relative z-10">
+                Attendance & Time Tracking
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-6 relative z-10">
+                Real-time clock-in/out with geolocation and automated attendance reports
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-6 relative z-10">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Digital time clock with GPS</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Overtime calculation</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Shift scheduling</span>
+                </li>
+              </ul>
+              <div className="flex items-center text-primary font-bold group-hover:translate-x-2 transition-transform relative z-10">
+                Learn more <ArrowRight className="ml-2 w-4 h-4" />
+              </div>
+            </Link>
+
+            {/* Leave Management */}
+            <Link
+              href="/features/leave-management"
+              className="group relative bg-white dark:bg-[#1e293b] rounded-3xl p-8 border border-gray-100 dark:border-gray-800 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 w-32 h-32 bg-rose-100/50 dark:bg-rose-900/20 rounded-bl-[100px] transition-transform group-hover:scale-110 origin-top-right"></div>
+              <div className="w-14 h-14 rounded-2xl bg-rose-100 dark:bg-rose-900/50 flex items-center justify-center text-rose-600 dark:text-rose-400 mb-6 group-hover:animate-pulse relative z-10">
+                <Calendar className="w-7 h-7" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 relative z-10">
+                Leave Management
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-6 relative z-10">
+                Streamlined PTO requests, approvals, and balance tracking
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-6 relative z-10">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Multi-type leave policies</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Automated accrual tracking</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Team calendar view</span>
+                </li>
+              </ul>
+              <div className="flex items-center text-primary font-bold group-hover:translate-x-2 transition-transform relative z-10">
+                Learn more <ArrowRight className="ml-2 w-4 h-4" />
+              </div>
+            </Link>
+
+            {/* Goals & OKRs */}
+            <Link
+              href="/features/goals"
+              className="group relative bg-white dark:bg-[#1e293b] rounded-3xl p-8 border border-gray-100 dark:border-gray-800 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 w-32 h-32 bg-amber-100/50 dark:bg-amber-900/20 rounded-bl-[100px] transition-transform group-hover:scale-110 origin-top-right"></div>
+              <div className="w-14 h-14 rounded-2xl bg-amber-100 dark:bg-amber-900/50 flex items-center justify-center text-amber-600 dark:text-amber-400 mb-6 group-hover:animate-pulse relative z-10">
+                <Target className="w-7 h-7" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 relative z-10">
+                Goals & OKRs
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-6 relative z-10">
+                Align individual goals with company objectives using OKR framework
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-6 relative z-10">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Goal cascading & alignment</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Progress tracking dashboards</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Key result metrics</span>
+                </li>
+              </ul>
+              <div className="flex items-center text-primary font-bold group-hover:translate-x-2 transition-transform relative z-10">
+                Learn more <ArrowRight className="ml-2 w-4 h-4" />
+              </div>
+            </Link>
+
+            {/* Employee Self-Service */}
+            <Link
+              href="/features/employee-self-service"
+              className="group relative bg-white dark:bg-[#1e293b] rounded-3xl p-8 border border-gray-100 dark:border-gray-800 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 w-32 h-32 bg-emerald-100/50 dark:bg-emerald-900/20 rounded-bl-[100px] transition-transform group-hover:scale-110 origin-top-right"></div>
+              <div className="w-14 h-14 rounded-2xl bg-emerald-100 dark:bg-emerald-900/50 flex items-center justify-center text-emerald-600 dark:text-emerald-400 mb-6 group-hover:animate-pulse relative z-10">
+                <UserCheck className="w-7 h-7" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 relative z-10">
+                Employee Self-Service
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-6 relative z-10">
+                Empower employees with direct access to their HR information
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-6 relative z-10">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Paystub & tax documents</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Profile & benefit management</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Mobile-first experience</span>
                 </li>
               </ul>
               <div className="flex items-center text-primary font-bold group-hover:translate-x-2 transition-transform relative z-10">
