@@ -22,7 +22,7 @@ import {
 } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Complete Human Capital Management ERP with AI Intelligence",
+  title: "Complete Human Capital Management system with AI Intelligence",
   description:
     "Transform your HR operations with Space HR's comprehensive ERP system. AI-powered payroll, performance appraisals, tax compliance, finance analytics, and learning management for modern enterprises.",
   keywords: [
