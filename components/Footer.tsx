@@ -199,18 +199,18 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <Link
-                  href="/#about"
+                  href="/about"
                   className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
                 >
-                  About Us
+                  About Space AI
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/#contact"
+                  href="/request-a-demo"
                   className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
                 >
-                  Contact
+                  Contact Us
                 </Link>
               </li>
               <li>
@@ -235,7 +235,7 @@ export function Footer() {
 
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm">
-            © 2025 AIPerform Inc. All rights reserved.
+            © 2025 Space AI Inc. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <Link
