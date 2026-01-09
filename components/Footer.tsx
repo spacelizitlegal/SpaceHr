@@ -35,18 +35,18 @@ export function Footer() {
             <ul className="space-y-4">
               <li>
                 <Link
-                  href="/features/ai-appraisals"
+                  href="/features/appraisals"
                   className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
                 >
-                  AI Appraisals
+                  Appraisals
                 </Link>
               </li>
               <li>
                 <Link
-                  href="/features/ai-payroll"
+                  href="/features/payroll"
                   className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
                 >
-                  AI Payroll
+                  Payroll
                 </Link>
               </li>
               <li>
