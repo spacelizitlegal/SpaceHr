@@ -1,13 +1,33 @@
 import { Button } from "@/components/ui/Button";
-import { Check, ArrowLeft, BarChart3, TrendingUp } from "lucide-react";
+import {
+  CheckCircle,
+  ArrowRight,
+  BarChart3,
+  TrendingUp,
+  Zap,
+  Clock,
+  Users,
+  Bell,
+  Mail,
+  Calendar,
+  Settings,
+  RefreshCw,
+  Target,
+  Award,
+  MessageSquare,
+  Sparkles,
+  Play,
+  GitBranch,
+} from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Workflow Automation | Automated HR Processes & Approvals",
+  title:
+    "AI Workflow Automation | Automated HR Processes & Employee Engagement",
   description:
-    "Automate HR workflows with AI: onboarding sequences, approval chains, reminder systems, and engagement campaigns. Eliminate manual tasks.",
+    "Automate HR workflows with AI: onboarding sequences, approval chains, reminder systems, engagement campaigns, and sentiment analysis. Eliminate manual tasks and scale your culture.",
   keywords: [
     "AI workflow automation",
     "HR process automation",
@@ -19,64 +39,92 @@ export const metadata: Metadata = {
     "engagement automation",
     "HR efficiency tools",
     "intelligent automation",
+    "employee engagement automation",
+    "HR workflow software",
+    "automated onboarding",
+    "sentiment analysis HR",
   ],
   openGraph: {
     title: "AI Workflow Automation | Space HR",
     description:
-      "Automate HR workflows: onboarding, approvals, reminders, and engagement campaigns.",
-    images: ["/og-automation.png"],
+      "Automate HR workflows: onboarding, approvals, reminders, and engagement campaigns with AI-powered intelligence.",
+    url: "https://spacehr.net/features/ai-automation",
+    images: [
+      {
+        url: "/og-automation.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Space HR AI Automation",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Workflow Automation | Space HR",
+    description:
+      "AI-powered workflow automation for HR: onboarding, approvals, and employee engagement.",
+    images: ["/og-automation.jpg"],
+  },
+  alternates: {
+    canonical: "https://spacehr.net/features/ai-automation",
   },
 };
 
 export default function AIAutomationPage() {
   return (
     <div className="min-h-screen bg-white dark:bg-[#0b1121] font-sans">
-      {/* HEADER */}
-      <div className="pt-24 px-6 container mx-auto">
-        <Link
-          href="/features"
-          className="inline-flex items-center text-sm text-gray-500 hover:text-primary transition-colors mb-8"
-        >
-          <ArrowLeft className="w-4 h-4 mr-2" /> Back to Features
-        </Link>
-      </div>
-
       {/* HERO SECTION */}
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 pb-20">
-        <div className="flex flex-col lg:flex-row items-center gap-16">
-          <div className="lg:w-1/2">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 text-sm font-semibold mb-6">
-              <BarChart3 className="w-4 h-4" /> Workflow Automation
+      <section className="relative pt-24 sm:pt-28 pb-16 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-b from-orange-50/50 to-transparent dark:from-orange-900/10 dark:to-[#0b1121]"></div>
+        <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left Content */}
+            <div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 text-sm font-semibold mb-6 border border-orange-200 dark:border-orange-800">
+                <Zap className="w-4 h-4" /> AI Workflow Automation
+              </div>
+              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+                Automate Engagement.{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">
+                  Scale Your Culture.
+                </span>
+              </h1>
+              <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+                Treat your employees like customers. Use AI to deliver
+                personalized internal communication campaigns, automated
+                onboarding journeys, intelligent reminders, and culture-building
+                workflows that run 24/7.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                <Link href="/request-a-demo">
+                  <Button size="lg" className="w-full sm:w-auto cursor-pointer">
+                    Automate Your Workflows
+                    <ArrowRight className="ml-2 w-5 h-5" />
+                  </Button>
+                </Link>
+                <Link href="https://cad.spaceaiapp.com/login" target="_blank">
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="w-full sm:w-auto cursor-pointer"
+                  >
+                    Try for Free
+                  </Button>
+                </Link>
+              </div>
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-              Automate Engagement.{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">
-                Scale Your Culture.
-              </span>
-            </h1>
-            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-              Treat your employees like customers. Use AI to deliver
-              personalized internal communication campaigns, automated
-              onboarding journeys, and culture-building workflows.
-            </p>
-            <Button
-              size="lg"
-              className="rounded-full h-14 px-8 text-lg cursor-pointer"
-            >
-              Automate Your Workflows
-            </Button>
-          </div>
-          <div className="lg:w-1/2 relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800 bg-gray-900">
+
+            {/* Right Image */}
+            <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/images/features/ai-marketing.png"
-                alt="AI Marketing Automation"
-                width={800}
-                height={600}
-                className="w-full h-auto"
+                src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80"
+                alt="AI Workflow Automation Dashboard"
+                fill
+                className="object-cover"
+                priority
               />
               {/* Overlay Stats */}
-              <div className="absolute top-6 left-6 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg border-l-4 border-orange-500 animate-in fade-in slide-in-from-left duration-700">
+              <div className="absolute top-6 left-6 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg border-l-4 border-orange-500">
                 <div className="flex items-center gap-3">
                   <div className="p-2 bg-orange-100 rounded-lg text-orange-600">
                     <TrendingUp className="w-5 h-5" />
@@ -86,7 +134,22 @@ export default function AIAutomationPage() {
                       Employee Engagement
                     </p>
                     <p className="text-lg font-bold text-gray-900 dark:text-white">
-                      +24% vs Last Month
+                      +34% vs Last Quarter
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="absolute bottom-6 right-6 bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg border-l-4 border-green-500">
+                <div className="flex items-center gap-3">
+                  <div className="p-2 bg-green-100 rounded-lg text-green-600">
+                    <Clock className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 uppercase">
+                      HR Hours Saved
+                    </p>
+                    <p className="text-lg font-bold text-gray-900 dark:text-white">
+                      40+ hours/week
                     </p>
                   </div>
                 </div>
@@ -96,37 +159,604 @@ export default function AIAutomationPage() {
         </div>
       </section>
 
-      {/* BENEFITS GRID */}
-      <section className="py-24 bg-gray-50 dark:bg-[#0f172a]">
+      {/* STATS BANNER */}
+      <section className="py-12 bg-gradient-to-r from-orange-600 via-red-600 to-pink-600">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-16 dark:text-white">
-            Internal Marketing on Autopilot
-          </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-white text-center">
+            <div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">85%</div>
+              <div className="text-white/80 text-sm">
+                Reduction in Manual Tasks
+              </div>
+            </div>
+            <div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">3x</div>
+              <div className="text-white/80 text-sm">
+                Faster Onboarding Completion
+              </div>
+            </div>
+            <div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">24/7</div>
+              <div className="text-white/80 text-sm">
+                Automated Workflow Execution
+              </div>
+            </div>
+            <div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">+42%</div>
+              <div className="text-white/80 text-sm">
+                Employee Satisfaction Score
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AUTOMATION CAPABILITIES */}
+      <section className="py-24 bg-white dark:bg-[#0b1121]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 text-sm font-semibold mb-6">
+              <Settings className="w-4 h-4" /> Automation Capabilities
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+              HR Workflows on Autopilot
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Set it and forget it. Our AI automation engine handles repetitive
+              tasks, sends timely reminders, and keeps your organization running
+              smoothly.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Onboarding Automation */}
+            <div className="bg-gradient-to-br from-orange-50 to-amber-50 dark:from-orange-950/30 dark:to-amber-950/30 rounded-2xl p-8 border border-orange-200 dark:border-orange-800">
+              <div className="w-14 h-14 rounded-2xl bg-orange-100 dark:bg-orange-900/50 flex items-center justify-center text-orange-600 dark:text-orange-400 mb-6">
+                <Users className="w-7 h-7" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                Onboarding Autopilot
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-6">
+                Drip-feed training content and welcome messages based on
+                engagement pace
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 shrink-0" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Day 1-30 automated task sequences
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 shrink-0" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Document collection reminders
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-orange-500 mt-0.5 shrink-0" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Training completion tracking
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Smart Nudges */}
+            <div className="bg-gradient-to-br from-blue-50 to-cyan-50 dark:from-blue-950/30 dark:to-cyan-950/30 rounded-2xl p-8 border border-blue-200 dark:border-blue-800">
+              <div className="w-14 h-14 rounded-2xl bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center text-blue-600 dark:text-blue-400 mb-6">
+                <Bell className="w-7 h-7" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                Smart Nudges
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-6">
+                AI-timed reminders that get results without being annoying
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-blue-500 mt-0.5 shrink-0" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    1:1 meeting scheduling reminders
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-blue-500 mt-0.5 shrink-0" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Work anniversary celebrations
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-blue-500 mt-0.5 shrink-0" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Performance review due alerts
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Approval Workflows */}
+            <div className="bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30 rounded-2xl p-8 border border-green-200 dark:border-green-800">
+              <div className="w-14 h-14 rounded-2xl bg-green-100 dark:bg-green-900/50 flex items-center justify-center text-green-600 dark:text-green-400 mb-6">
+                <GitBranch className="w-7 h-7" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                Approval Chains
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-6">
+                Multi-level approval workflows with automatic escalation
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 shrink-0" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Leave request auto-routing
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 shrink-0" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Expense approval with thresholds
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 shrink-0" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Escalation on timeout
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Engagement Campaigns */}
+            <div className="bg-gradient-to-br from-purple-50 to-pink-50 dark:from-purple-950/30 dark:to-pink-950/30 rounded-2xl p-8 border border-purple-200 dark:border-purple-800">
+              <div className="w-14 h-14 rounded-2xl bg-purple-100 dark:bg-purple-900/50 flex items-center justify-center text-purple-600 dark:text-purple-400 mb-6">
+                <Mail className="w-7 h-7" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                Engagement Campaigns
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-6">
+                Internal marketing automation for culture building
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-purple-500 mt-0.5 shrink-0" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Pulse survey distribution
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-purple-500 mt-0.5 shrink-0" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Company news & announcements
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-purple-500 mt-0.5 shrink-0" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Recognition & shoutout programs
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Sentiment Analysis */}
+            <div className="bg-gradient-to-br from-indigo-50 to-violet-50 dark:from-indigo-950/30 dark:to-violet-950/30 rounded-2xl p-8 border border-indigo-200 dark:border-indigo-800">
+              <div className="w-14 h-14 rounded-2xl bg-indigo-100 dark:bg-indigo-900/50 flex items-center justify-center text-indigo-600 dark:text-indigo-400 mb-6">
+                <MessageSquare className="w-7 h-7" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                Sentiment Analysis
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-6">
+                AI monitors organizational mood and suggests interventions
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-indigo-500 mt-0.5 shrink-0" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Survey response sentiment scoring
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-indigo-500 mt-0.5 shrink-0" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Department mood trend analysis
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-indigo-500 mt-0.5 shrink-0" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Proactive engagement recommendations
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            {/* Recurring Tasks */}
+            <div className="bg-gradient-to-br from-rose-50 to-red-50 dark:from-rose-950/30 dark:to-red-950/30 rounded-2xl p-8 border border-rose-200 dark:border-rose-800">
+              <div className="w-14 h-14 rounded-2xl bg-rose-100 dark:bg-rose-900/50 flex items-center justify-center text-rose-600 dark:text-rose-400 mb-6">
+                <RefreshCw className="w-7 h-7" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                Recurring Tasks
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-6">
+                Schedule and automate repetitive HR administrative tasks
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-rose-500 mt-0.5 shrink-0" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Monthly compliance checks
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-rose-500 mt-0.5 shrink-0" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Quarterly goal review triggers
+                  </span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-5 h-5 text-rose-500 mt-0.5 shrink-0" />
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Annual document renewal alerts
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* WORKFLOW BUILDER */}
+      <section className="py-24 bg-gradient-to-b from-gray-50 to-white dark:from-[#0f172a] dark:to-[#0b1121]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+              Visual Workflow Builder
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Create complex automations with a simple drag-and-drop interface.
+              No coding required.
+            </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto">
+            <div className="bg-white dark:bg-[#1e293b] rounded-2xl border border-gray-100 dark:border-gray-800 shadow-xl overflow-hidden">
+              {/* Workflow Header */}
+              <div className="bg-gradient-to-r from-orange-500 to-red-500 p-6 text-white">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <h3 className="text-2xl font-bold">
+                      New Hire Onboarding Workflow
+                    </h3>
+                    <p className="text-white/80">
+                      Automated 30-day onboarding sequence
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="px-3 py-1 bg-white/20 rounded-full text-sm">
+                      Active
+                    </span>
+                    <span className="px-3 py-1 bg-white/20 rounded-full text-sm">
+                      247 runs
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Workflow Steps */}
+              <div className="p-8">
+                <div className="space-y-6">
+                  {[
+                    {
+                      day: "Day 0",
+                      title: "Welcome Email",
+                      description:
+                        "Automated welcome message with first-day instructions",
+                      icon: Mail,
+                      color: "blue",
+                    },
+                    {
+                      day: "Day 1",
+                      title: "IT Setup Checklist",
+                      description:
+                        "Task list assigned to IT for equipment provisioning",
+                      icon: Settings,
+                      color: "purple",
+                    },
+                    {
+                      day: "Day 3",
+                      title: "Manager 1:1 Reminder",
+                      description:
+                        "Nudge to manager to schedule introductory meeting",
+                      icon: Calendar,
+                      color: "green",
+                    },
+                    {
+                      day: "Day 7",
+                      title: "Training Modules",
+                      description:
+                        "Compliance training courses auto-assigned in LMS",
+                      icon: Play,
+                      color: "orange",
+                    },
+                    {
+                      day: "Day 14",
+                      title: "Check-in Survey",
+                      description:
+                        "Pulse survey to gauge onboarding experience",
+                      icon: MessageSquare,
+                      color: "pink",
+                    },
+                    {
+                      day: "Day 30",
+                      title: "Goal Setting",
+                      description:
+                        "Prompt to set 90-day objectives with manager",
+                      icon: Target,
+                      color: "indigo",
+                    },
+                  ].map((step, i) => (
+                    <div key={i} className="flex items-start gap-6">
+                      <div className="flex flex-col items-center">
+                        <div
+                          className={`w-12 h-12 rounded-xl bg-${step.color}-100 dark:bg-${step.color}-900/50 flex items-center justify-center text-${step.color}-600 dark:text-${step.color}-400`}
+                        >
+                          <step.icon className="w-6 h-6" />
+                        </div>
+                        {i < 5 && (
+                          <div className="w-0.5 h-8 bg-gray-200 dark:bg-gray-700 mt-2"></div>
+                        )}
+                      </div>
+                      <div className="flex-1 pb-6">
+                        <div className="flex items-center gap-3 mb-2">
+                          <span className="px-2 py-0.5 bg-gray-100 dark:bg-gray-800 rounded text-xs font-medium text-gray-600 dark:text-gray-400">
+                            {step.day}
+                          </span>
+                          <h4 className="text-lg font-bold text-gray-900 dark:text-white">
+                            {step.title}
+                          </h4>
+                        </div>
+                        <p className="text-gray-600 dark:text-gray-400">
+                          {step.description}
+                        </p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* TRIGGERS & ACTIONS */}
+      <section className="py-24 bg-white dark:bg-[#0b1121]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16">
+            {/* Triggers */}
+            <div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-sm font-semibold mb-6">
+                <Play className="w-4 h-4" /> Workflow Triggers
+              </div>
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+                Start Workflows Automatically
+              </h2>
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+                Workflows can be triggered by events, schedules, or manual
+                activation.
+              </p>
+              <div className="space-y-4">
+                {[
+                  {
+                    trigger: "New Employee Created",
+                    example: "Starts onboarding sequence",
+                  },
+                  {
+                    trigger: "Leave Request Submitted",
+                    example: "Routes to approval chain",
+                  },
+                  {
+                    trigger: "Work Anniversary Date",
+                    example: "Sends recognition notification",
+                  },
+                  {
+                    trigger: "Performance Review Due",
+                    example: "Triggers review cycle workflow",
+                  },
+                  {
+                    trigger: "Compliance Training Expired",
+                    example: "Assigns renewal courses",
+                  },
+                  {
+                    trigger: "Survey Response Received",
+                    example: "Updates sentiment dashboard",
+                  },
+                ].map((item, i) => (
+                  <div
+                    key={i}
+                    className="flex items-center gap-4 p-4 bg-gray-50 dark:bg-[#1e293b] rounded-xl border border-gray-100 dark:border-gray-800"
+                  >
+                    <div className="w-10 h-10 rounded-lg bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center">
+                      <Zap className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                    </div>
+                    <div>
+                      <div className="font-bold text-gray-900 dark:text-white">
+                        {item.trigger}
+                      </div>
+                      <div className="text-sm text-gray-500 dark:text-gray-400">
+                        {item.example}
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Actions */}
+            <div>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 text-sm font-semibold mb-6">
+                <Sparkles className="w-4 h-4" /> Available Actions
+              </div>
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+                Automate Any HR Task
+              </h2>
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+                Chain multiple actions together to create powerful automation
+                sequences.
+              </p>
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  "Send Email",
+                  "Create Task",
+                  "Assign Training",
+                  "Update Profile",
+                  "Send Notification",
+                  "Request Approval",
+                  "Schedule Meeting",
+                  "Generate Document",
+                  "Add to Calendar",
+                  "Post Announcement",
+                  "Trigger Survey",
+                  "Run Report",
+                ].map((action, i) => (
+                  <div
+                    key={i}
+                    className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-[#1e293b] rounded-lg border border-gray-100 dark:border-gray-800"
+                  >
+                    <CheckCircle className="w-5 h-5 text-green-500 shrink-0" />
+                    <span className="text-gray-700 dark:text-gray-300">
+                      {action}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* USE CASES */}
+      <section className="py-24 bg-gradient-to-b from-gray-50 to-white dark:from-[#0f172a] dark:to-[#0b1121]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+              Pre-Built Automation Templates
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Get started quickly with proven workflow templates. Customize to
+              fit your organization.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {[
               {
-                title: "Smart Nudges",
-                desc: "Automatically reminds managers to schedule 1:1s or celebrate work anniversaries.",
+                title: "90-Day Onboarding",
+                description:
+                  "Complete new hire journey from offer accepted to fully productive",
+                steps: 12,
+                category: "Onboarding",
               },
               {
-                title: "Onboarding Autopilot",
-                desc: "Drip-feed training content and welcome messages to new hires based on their engagement pace.",
+                title: "Leave Request Flow",
+                description:
+                  "Multi-level approval with automatic escalation and calendar sync",
+                steps: 5,
+                category: "Approvals",
               },
               {
-                title: "Sentiment Analysis",
-                desc: "Analyze organizational mood through survey responses and proactively suggest engagement campaigns.",
+                title: "Performance Review Cycle",
+                description:
+                  "Annual review process with self-assessment and manager feedback",
+                steps: 8,
+                category: "Performance",
               },
-            ].map((item, i) => (
+              {
+                title: "Exit Interview Process",
+                description:
+                  "Offboarding workflow with knowledge transfer and equipment return",
+                steps: 7,
+                category: "Offboarding",
+              },
+              {
+                title: "Birthday & Anniversary",
+                description:
+                  "Automated celebrations with team notifications and recognition",
+                steps: 3,
+                category: "Engagement",
+              },
+              {
+                title: "Compliance Training",
+                description:
+                  "Annual certification tracking with expiration reminders",
+                steps: 4,
+                category: "Learning",
+              },
+            ].map((template, i) => (
               <div
                 key={i}
-                className="bg-white dark:bg-[#1e293b] p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800"
+                className="bg-white dark:bg-[#1e293b] rounded-2xl p-6 border border-gray-100 dark:border-gray-800 shadow-lg hover:shadow-xl transition-shadow"
               >
-                <h3 className="text-xl font-bold mb-4 text-gray-900 dark:text-white">
-                  {item.title}
+                <div className="flex items-center justify-between mb-4">
+                  <span className="px-3 py-1 bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 rounded-full text-sm font-medium">
+                    {template.category}
+                  </span>
+                  <span className="text-sm text-gray-500 dark:text-gray-400">
+                    {template.steps} steps
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                  {template.title}
                 </h3>
-                <p className="text-gray-600 dark:text-gray-400">{item.desc}</p>
+                <p className="text-gray-600 dark:text-gray-400 mb-4">
+                  {template.description}
+                </p>
+                <button className="text-orange-600 dark:text-orange-400 font-medium flex items-center gap-2 hover:gap-3 transition-all">
+                  Use Template <ArrowRight className="w-4 h-4" />
+                </button>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA SECTION */}
+      <section className="py-24 bg-gradient-to-br from-orange-600 via-red-600 to-pink-600 text-white">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            Ready to Automate Your HR Workflows?
+          </h2>
+          <p className="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">
+            Save 40+ hours per week and deliver consistent employee experiences
+            at scale.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/request-a-demo">
+              <Button
+                size="lg"
+                className="rounded-full h-16 px-12 text-lg bg-white text-orange-700 hover:bg-gray-100 cursor-pointer"
+              >
+                Request a Demo
+              </Button>
+            </Link>
+            <Link
+              href="https://cad.spaceaiapp.com/login"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button
+                size="lg"
+                variant="outline"
+                className="rounded-full h-16 px-12 text-lg border-2 border-white text-white hover:bg-white/10 cursor-pointer"
+              >
+                Try for Free
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

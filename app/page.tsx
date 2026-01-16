@@ -22,7 +22,7 @@ import {
 } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Complete Human Capital Management ERP with AI Intelligence",
+  title: "Complete Human Capital Management system with AI Intelligence",
   description:
     "Transform your HR operations with Space HR's comprehensive ERP system. AI-powered payroll, performance appraisals, tax compliance, finance analytics, and learning management for modern enterprises.",
   keywords: [
@@ -525,7 +525,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <Link href="/features/ai-payroll">
+                  <Link href="/features/payroll">
                     <Button
                       size="lg"
                       className="rounded-full h-14 px-8 text-lg group"
@@ -647,7 +647,7 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <Link href="/features/ai-appraisals">
+                  <Link href="/features/appraisals">
                     <Button
                       size="lg"
                       variant="outline"
@@ -715,7 +715,7 @@ export default function Home() {
                       Year-End Forecasting
                     </span>
                   </div>
-                  <Link href="/features">
+                  <Link href="/features/finance">
                     <Button
                       size="lg"
                       className="rounded-full h-14 px-8 text-lg group bg-gradient-to-r from-green-600 to-teal-600 hover:from-green-700 hover:to-teal-700"

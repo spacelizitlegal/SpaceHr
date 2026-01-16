@@ -13,7 +13,7 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL("https://spacehr.net"),
   title: {
-    default: "Space HR | AI-Powered Performance Management Platform",
+    default: "Space HR | AI-Powered Performance Management Platform ",
     template: "%s | Space HR",
   },
   description:
