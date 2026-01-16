@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     canonical: "https://spacehr.net",
   },
   verification: {
-    google: "google-site-verification-code",
+    google: "MJLrhzEJERw1j9RMKx272D8n3whd7L_71XQTi2_puqY",
   },
 };
 
