@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     "hrms",
     "best hr software",
     "human resource management system",
-    "HR ERP system",
+    "AI HR ERP system",
     "human capital management",
     "AI payroll software",
     "performance appraisal system",
