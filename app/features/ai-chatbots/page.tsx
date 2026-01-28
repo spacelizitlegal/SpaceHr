@@ -23,9 +23,9 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI HR Chatbot | 24/7 Employee Self-Service Support | Space HR",
+  title: "AI HR Chatbot: 24/7 Employee Self-Service | Space HR",
   description:
-    "Automate employee support with AI chatbots. Instant answers to policy, leave, payroll, and benefits questions. Reduce HR workload by 70% with intelligent conversational AI.",
+    "Reduce HR workload by 70% with AI chatbots. Provide employees with instant, 24/7 answers to leave, policy, and payroll questions using conversational AI",
   keywords: [
     "AI HR chatbot",
     "employee self-service chatbot",

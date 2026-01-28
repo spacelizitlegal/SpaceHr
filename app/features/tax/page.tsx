@@ -32,7 +32,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Tax Compliance & Payroll Tax Automation | Space HR",
   description:
-    "Comprehensive Federal, State, and Local tax management. Automated tax calculations, liability ledger tracking, multi-state compliance, and quarterly tax table updates. 99.9% accuracy guaranteed.",
+    "Ensure 99.9% accuracy with automated Federal, State, and Local tax management. Track liability ledgers and stay compliant with multi-state tax table updates",
   keywords: [
     "payroll tax automation",
     "federal tax compliance",

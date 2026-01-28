@@ -22,10 +22,17 @@ import {
 } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Complete Human Capital Management system with AI Intelligence",
+  title: {
+    absolute:
+      "Space HR - AI Payroll Auditor & Predictive Workforce Analytics Platform",
+  },
   description:
-    "Transform your HR operations with Space HR's comprehensive ERP system. AI-powered payroll, performance appraisals, tax compliance, finance analytics, and learning management for modern enterprises.",
+    "Transform your enterprise with Space HR’s AI-powered ERP. Automate payroll, appraisals, and finance analytics to streamline operations and scale your business.",
   keywords: [
+    "hr software",
+    "hrms",
+    "best hr software",
+    "human resource management system",
     "HR ERP system",
     "human capital management",
     "AI payroll software",
@@ -43,24 +50,24 @@ export const metadata: Metadata = {
     "automated payroll processing",
   ],
   openGraph: {
-    title: "Space HR | Complete Human Capital Management ERP with AI",
+    title: "HR Software for Modern Teams | Best HRMS & Management System",
     description:
-      "Comprehensive ERP for HR, Payroll, Tax, Finance, and Performance Management with AI-powered insights and automation.",
+      "Comprehensive HR Software for Payroll, Tax, Finance, and Performance Management. The best HRMS with AI-powered insights.",
     url: "https://spacehr.net",
     images: [
       {
         url: "/og-home.jpg",
         width: 1200,
         height: 630,
-        alt: "Space HR ERP Platform",
+        alt: "Space HR - Best HR Software",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Space HR | AI-Powered Human Capital Management ERP",
+    title: "HR Software for Modern Teams | Best HRMS & Management System",
     description:
-      "Complete ERP system for Payroll, Appraisals, Tax, Finance with AI intelligence.",
+      "Complete HR Software & HRMS for Payroll, Appraisals, Tax, Finance with AI intelligence.",
     images: ["/og-home.jpg"],
   },
   alternates: {
@@ -99,18 +106,33 @@ export default function Home() {
               The Future of Work is Here
             </div>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-8 leading-tight drop-shadow-sm animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-100">
-              Complete Human Capital <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-cyan-300">
-                Management ERP
-              </span>
+                HR Software
+              </span>{" "}
+              <br />
+              for Modern Teams
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 mb-12 max-w-3xl mx-auto leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200">
-              AI-powered ERP for Payroll, Appraisals, Tax, Finance, and Learning
-              Management. Streamline operations from hiring to retirement with
-              intelligent automation.
+              Experience the <strong>best HR software</strong> designed to
+              simplify complex{" "}
+              <Link
+                href="/hrms"
+                className="text-teal-300 hover:underline decoration-teal-300/50 underline-offset-4"
+              >
+                human resource management
+              </Link>
+              . From intelligent{" "}
+              <Link
+                href="/features/payroll"
+                className="text-teal-300 hover:underline decoration-teal-300/50 underline-offset-4"
+              >
+                payroll automation
+              </Link>{" "}
+              to advanced HRMS analytics, Space HR empowers your business to
+              thrive.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-300">
-              <Link href="#demo">
+              <Link href="/request-a-demo">
                 <Button
                   size="lg"
                   className="h-14 px-8 rounded-full text-lg font-semibold bg-primary hover:bg-primary/90 text-white shadow-xl shadow-primary/25 hover:shadow-2xl hover:-translate-y-1 transition-all"

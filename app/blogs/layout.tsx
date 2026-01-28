@@ -3,7 +3,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "HR Insights & Leadership Blog",
   description:
-    "Deep dives into leadership, AI technology, and organizational culture. Expert perspectives on the future of work, performance management, and employee engagement.",
+    "Explore expert perspectives on leadership, AI technology, and organizational culture. Stay ahead with deep dives into the future of work and performance.",
   keywords: [
     "HR blog",
     "leadership insights",

@@ -33,9 +33,9 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Payroll Automation | Anomaly Detection & ACH Generation | Space HR",
+  title: "AI Payroll Automation: Anomaly Detection & ACH | Space HR",
   description:
-    "Automated payroll auditing with AI anomaly detection. 5-step wizard for compliant payroll processing, tax withholding, and NACHA-compliant ACH file generation. Reduce payroll errors by 99%.",
+    "Eliminate payroll errors by 99% with AI anomaly detection. Generate NACHA-compliant ACH files and handle tax withholding via an automated 5-step wizard",
   keywords: [
     "AI payroll automation",
     "payroll anomaly detection",

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Instagram, Youtube, Mail, Phone, MapPin } from "lucide-react";
+import { Instagram, Youtube, Mail, Phone, MapPin, ArrowUpRight } from "lucide-react";
 import { Twitter } from "lucide-react";
 
 export function Footer() {
@@ -29,9 +29,15 @@ export function Footer() {
                 <Mail className="w-4 h-4 text-primary" />
                 <span>support@spacehr.com</span>
               </div>
-              <div className="flex items-center gap-3 text-gray-400 text-sm">
-                <Phone className="w-4 h-4 text-primary" />
-                <span>+1 (555) 123-4567</span>
+              <div className="space-y-3">
+                <div className="flex items-center gap-3 text-gray-400 text-sm">
+                  <Phone className="w-4 h-4 text-primary" />
+                  <a href="tel:+14198201487" className="hover:text-white transition-colors">+1 419-820-1487 (USA)</a>
+                </div>
+                <div className="flex items-center gap-3 text-gray-400 text-sm">
+                  <Phone className="w-4 h-4 text-primary" />
+                  <a href="tel:+6586111900" className="hover:text-white transition-colors">+65 8611 1900 (Singapore)</a>
+                </div>
               </div>
             </div>
           </div>
@@ -48,6 +54,14 @@ export function Footer() {
                   className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
                 >
                   Payroll Management
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/payroll-anomaly-detection"
+                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                >
+                  Payroll Anomaly Detection
                 </Link>
               </li>
               <li>
@@ -188,6 +202,104 @@ export function Footer() {
                   All Features
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/tools/true-cost-calculator"
+                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                >
+                  True Cost Calculator
+                </Link>
+              </li>
+            </ul>
+          </div>
+          
+          {/* HR Guides */}
+          <div>
+            <h3 className="font-semibold text-white mb-6 tracking-wide">
+              HR Guides
+            </h3>
+            <ul className="space-y-3">
+              <li>
+                <Link
+                  href="/hr-software"
+                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                >
+                  HR Software Guide
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/hrms"
+                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                >
+                  What is HRMS?
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/best-hr-software-small-business"
+                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                >
+                  Small Business HR
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/hr-payroll-software"
+                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                >
+                  Payroll & Appraisals
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/nyc-144-compliance"
+                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                >
+                  NYC 144 Compliance
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/california-pay-transparency"
+                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                >
+                  CA Pay Transparency
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Comparisons */}
+          <div>
+             <h3 className="font-semibold text-white mb-6 tracking-wide">
+              Switch From
+            </h3>
+            <ul className="space-y-3">
+              <li>
+                <Link
+                  href="/compare/orangehrm"
+                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                >
+                  OrangeHRM
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/compare/rippling"
+                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                >
+                  Rippling
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/compare/bamboohr"
+                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                >
+                  BambooHR
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -213,23 +325,80 @@ export function Footer() {
                   Contact Us
                 </Link>
               </li>
+
               <li>
                 <Link
-                  href="/privacy"
+                  href="/sitemap-page"
                   className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
                 >
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/terms"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  Terms of Service
+                  Sitemap
                 </Link>
               </li>
             </ul>
+          </div>
+        </div>
+
+        {/* Global Locations */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-12 border-t border-white/5 mt-12">
+          {/* Singapore */}
+          <div className="space-y-4">
+            <h4 className="text-white font-semibold flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-blue-500"></span>
+              Singapore (HQ)
+            </h4>
+            <div className="text-sm text-gray-400 leading-relaxed">
+              <p>Regional Headquarters</p>
+              <p>ISPACE BUILDING #04-39</p>
+              <p>7 SOON LEE STREET</p>
+              <p>SINGAPORE 627608</p>
+            </div>
+            <Link
+              href="https://www.google.com/maps/search/?api=1&query=1.34,103.70"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-xs text-blue-400 hover:text-blue-300 transition-colors"
+            >
+              View in Google Maps <ArrowUpRight className="w-3 h-3 ml-1" />
+            </Link>
+          </div>
+
+          {/* USA */}
+          <div className="space-y-4">
+            <h4 className="text-white font-semibold flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-purple-500"></span>
+              USA
+            </h4>
+            <div className="text-sm text-gray-400 leading-relaxed">
+              <p>2500 MARCONI AVE, STE 101</p>
+              <p>SACRAMENTO, CA 95821 USA</p>
+            </div>
+            <Link
+              href="https://www.google.com/maps/search/?api=1&query=38.62,-121.38"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-xs text-purple-400 hover:text-purple-300 transition-colors"
+            >
+              View in Google Maps <ArrowUpRight className="w-3 h-3 ml-1" />
+            </Link>
+          </div>
+
+          {/* Dubai */}
+          <div className="space-y-4">
+            <h4 className="text-white font-semibold flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-orange-500"></span>
+              Dubai
+            </h4>
+            <div className="text-sm text-gray-400 leading-relaxed">
+              <p>Middle East - Regional Office</p>
+            </div>
+            <Link
+              href="https://www.google.com/maps/search/?api=1&query=25.28,55.31"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-xs text-orange-400 hover:text-orange-300 transition-colors"
+            >
+              View in Google Maps <ArrowUpRight className="w-3 h-3 ml-1" />
+            </Link>
           </div>
         </div>
 

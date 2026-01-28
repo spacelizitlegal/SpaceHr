@@ -25,9 +25,9 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Goal Management & OKR Software | Align Teams with Strategic Objectives",
+  title: "Goal Management & OKR Software: Align Teams | Space HR",
   description:
-    "Set, track, and achieve goals with AI-powered OKR management. Cascade objectives from company to individual, track progress in real-time, and align teams with organizational strategy.",
+    "Align your team with AI-powered OKR management. Cascade company objectives to individuals and track real-time progress toward your most strategic goals.",
   keywords: [
     "goal management software",
     "OKR software",

@@ -24,9 +24,9 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Attendance & Time Tracking Software | Real-Time Employee Monitoring",
+  title: "Attendance & Time Tracking Software: Real-Time Monitoring | Space HR",
   description:
-    "Streamline workforce attendance with AI-powered time tracking. Real-time check-in/out, GPS verification, overtime alerts, and seamless payroll integration for modern enterprises.",
+    "Streamline workforce tracking with GPS verification and real-time check-ins. Prevent overtime issues with AI alerts and seamless payroll integration.",
   keywords: [
     "employee attendance tracking",
     "time tracking software",

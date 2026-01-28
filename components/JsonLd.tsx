@@ -30,8 +30,11 @@ export const organizationSchema = {
 export const softwareSchema = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  name: "Space HR",
-  applicationCategory: "BusinessApplication",
+  name: "Space HR - AI Payroll Auditor & Predictive Workforce Analytics",
+  applicationCategory: [
+    "BusinessIntelligenceService",
+    "HumanResourcesApplication",
+  ],
   operatingSystem: "Web",
   offers: {
     "@type": "Offer",

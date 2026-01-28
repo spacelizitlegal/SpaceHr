@@ -3,7 +3,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "AI-Powered Learning Management System",
   description:
-    "Transform employee development with Space HR's intelligent learning management. Assign courses, track progress, and boost engagement with AI-generated summaries, quizzes, badges, and trophies.",
+    "Boost employee growth with AI-powered learning. Assign courses and track progress with AI-generated quizzes, summaries, and gamified engagement tools.",
   keywords: [
     "learning management system",
     "employee training software",

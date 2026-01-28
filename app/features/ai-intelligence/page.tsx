@@ -21,9 +21,9 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI Intelligence Layer - Hybrid Local/Cloud AI | Space HR",
+  title: "AI Intelligence Layer: Hybrid Local/Cloud AI | Space HR",
   description:
-    "Comprehensive AI-powered automation for HR, Payroll, Appraisals, and Finance. Anomaly detection, predictive analytics, comment enhancement, template generation, and cost optimization.",
+    "Leverage predictive analytics and anomaly detection across HR and Finance. Optimize costs and enhance productivity with Space HR’s deep AI integration layer",
   keywords: [
     "AI HR automation",
     "payroll AI anomaly detection",

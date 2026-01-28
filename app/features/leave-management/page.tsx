@@ -25,9 +25,9 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Leave Management System | Automated PTO & Absence Tracking",
+  title: "Leave Management System: Automated PTO Tracking | Space HR",
   description:
-    "Streamline leave requests with automated approval workflows. Track PTO, sick days, vacation balances, and absences with real-time visibility and payroll integration.",
+    "Simplify PTO and absence tracking with automated approval workflows. Get real-time visibility into vacation balances with direct payroll synchronization",
   keywords: [
     "leave management system",
     "PTO tracking software",

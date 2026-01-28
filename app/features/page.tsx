@@ -23,10 +23,9 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "AI-Powered ERP Features: Payroll, Appraisals, Attendance, Leave, Goals & More",
+  title: "AI-Powered HR ERP: Payroll, Leave & Appraisals | Space HR",
   description:
-    "Explore Space HR's comprehensive AI features: intelligent payroll processing, 360° appraisals, attendance tracking, leave management, goal setting, automated tax compliance, and financial analytics.",
+    "Explore Space HR’s AI features: from 360° appraisals and attendance tracking to tax compliance and financial analytics. The complete toolkit for modern HR",
   keywords: [
     "AI payroll automation",
     "360-degree appraisal software",

@@ -2,7 +2,7 @@ import DemoRequest from "@/components/DemoRequest";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Request a Demo | Space HR - AI-Powered Human Capital Management ERP",
+  title: "Request a Demo: AI-Powered HR Management ERP | Space HR",
   description:
     "Schedule a personalized demo of Space HR's AI-powered ERP. See automated payroll, 360° appraisals, tax compliance, and predictive analytics in action.",
   keywords: [

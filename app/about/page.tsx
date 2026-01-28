@@ -422,61 +422,7 @@ export default function AboutPage() {
       </section>
 
       {/* TIMELINE / JOURNEY */}
-      <section className="py-24 bg-white dark:bg-[#0b1121] relative overflow-hidden">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-primary/10 to-cyan-500/10 border border-primary/20 text-primary dark:text-cyan-400 text-sm font-medium mb-6">
-              <Calendar className="w-4 h-4" />
-              Our Journey
-            </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-6">
-              Key{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-cyan-500">
-                Milestones
-              </span>
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              From a small team with big dreams to a platform trusted by hundreds of companies worldwide.
-            </p>
-          </div>
 
-          <div className="relative">
-            {/* Timeline Line */}
-            <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-cyan-500 to-violet-500 hidden lg:block"></div>
-
-            <div className="space-y-12 lg:space-y-0">
-              {milestones.map((milestone, index) => (
-                <div
-                  key={index}
-                  className={`relative lg:flex items-center ${
-                    index % 2 === 0 ? "lg:flex-row" : "lg:flex-row-reverse"
-                  }`}
-                >
-                  <div className={`lg:w-1/2 ${index % 2 === 0 ? "lg:pr-16 lg:text-right" : "lg:pl-16"}`}>
-                    <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-200 dark:border-gray-700 shadow-lg hover:shadow-xl transition-shadow">
-                      <div className={`flex items-center gap-4 mb-4 ${index % 2 === 0 ? "lg:justify-end" : ""}`}>
-                        <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-primary to-cyan-500 flex items-center justify-center">
-                          <milestone.icon className="w-6 h-6 text-white" />
-                        </div>
-                        <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary to-cyan-500">
-                          {milestone.year}
-                        </span>
-                      </div>
-                      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">{milestone.title}</h3>
-                      <p className="text-gray-600 dark:text-gray-400">{milestone.description}</p>
-                    </div>
-                  </div>
-
-                  {/* Center Dot */}
-                  <div className="absolute left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-gradient-to-r from-primary to-cyan-500 border-4 border-white dark:border-gray-900 hidden lg:block"></div>
-
-                  <div className="lg:w-1/2"></div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* SPACE HR PRODUCT HIGHLIGHT */}
       <section className="py-24 bg-gradient-to-br from-[#0b1121] via-[#0f172a] to-[#1e1b4b] relative overflow-hidden">

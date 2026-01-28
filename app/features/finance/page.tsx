@@ -35,7 +35,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Finance Analytics & Labor Cost Management | Space HR",
   description:
-    "Real-time labor cost analysis, YTD vs Budget tracking, predictive forecasting, and ACH batch generation. Transform HR data into strategic financial insights. Save 15% on labor costs.",
+    "Turn HR data into insights. Real-time labor cost analysis, predictive forecasting, and budget tracking help modern enterprises save up to 15% on labor costs.",
   keywords: [
     "labor cost analytics",
     "HR finance dashboard",

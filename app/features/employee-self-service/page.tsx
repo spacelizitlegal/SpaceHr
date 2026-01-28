@@ -30,9 +30,9 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Employee Self-Service Portal | Empower Your Workforce",
+  title: "Employee Self-Service Portal: ESS & Payslips | Space HR",
   description:
-    "Give employees control with a modern self-service portal. Access payslips, submit leave requests, track goals, view appraisals, and manage personal information—all in one place.",
+    "Empower your workforce with a modern portal. Employees can access payslips, track goals, and submit leave requests in one secure, easy-to-use platform",
   keywords: [
     "employee self-service portal",
     "ESS portal",

@@ -24,10 +24,9 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "AI Workflow Automation | Automated HR Processes & Employee Engagement",
+  title: "AI Workflow Automation: HR Process Automation | Space HR",
   description:
-    "Automate HR workflows with AI: onboarding sequences, approval chains, reminder systems, engagement campaigns, and sentiment analysis. Eliminate manual tasks and scale your culture.",
+    "Eliminate manual HR tasks with AI. Automate onboarding, approval chains, and sentiment analysis to scale your company culture and increase engagement.",
   keywords: [
     "AI workflow automation",
     "HR process automation",
