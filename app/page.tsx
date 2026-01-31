@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   description:
     "Transform your enterprise with Space HR’s AI-powered ERP. Automate payroll, appraisals, and finance analytics to streamline operations and scale your business.",
   keywords: [
-    "hr software",
+    "hr software AI"  ,
     "hrms",
     "best hr software",
     "human resource management system",
