@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 
 const WhatsAppButton = () => {
-  const whatsappNumber = "+14198201487"; // Update with your Space HR WhatsApp number
+  const whatsappNumber = "+17652713686"; // Update with your Space HR WhatsApp number
   const queryMessage =
     "Hello! I'm interested in learning more about Space HR's AI-powered Human Capital Management ERP.";
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
