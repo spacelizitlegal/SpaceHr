@@ -130,7 +130,9 @@ export default function RootLayout({
         {/* End Google Tag Manager (noscript) */}
 
         <Navbar />
-        <main className="flex-grow relative z-10">{children}</main>
+        <main className="flex-grow relative z-10 pt-24 sm:pt-28">
+          {children}
+        </main>
         <Footer />
         <WhatsAppButton />
       </body>

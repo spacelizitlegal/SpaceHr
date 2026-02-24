@@ -21,6 +21,11 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
+import {
+  JsonLd,
+  softwareSchema,
+  generateBreadcrumbSchema,
+} from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "AI-Powered HR ERP: Payroll, Leave & Appraisals | Space HR",
@@ -75,9 +80,16 @@ export const metadata: Metadata = {
   },
 };
 
+const featuresBreadcrumb = generateBreadcrumbSchema([
+  { name: "Home", url: "https://spacehr.net" },
+  { name: "Features", url: "https://spacehr.net/features" },
+]);
+
 export default function FeaturesHub() {
   return (
     <div className="min-h-screen bg-white dark:bg-[#0b1121] font-sans">
+      <JsonLd data={softwareSchema} />
+      <JsonLd data={featuresBreadcrumb} />
       {/* HERO SECTION */}
       <section className="relative pt-32 pb-24 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-teal-50/50 to-transparent dark:from-teal-900/10 dark:to-[#0b1121]"></div>
@@ -144,7 +156,8 @@ export default function FeaturesHub() {
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               Nine integrated modules that transform how you manage payroll,
-              performance, attendance, leave, goals, taxes, finance, and AI intelligence.
+              performance, attendance, leave, goals, taxes, finance, and AI
+              intelligence.
             </p>
           </div>
 
@@ -333,7 +346,8 @@ export default function FeaturesHub() {
                 Attendance & Time Tracking
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-6 relative z-10">
-                Real-time clock-in/out with geolocation and automated attendance reports
+                Real-time clock-in/out with geolocation and automated attendance
+                reports
               </p>
               <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-6 relative z-10">
                 <li className="flex items-start gap-2">
@@ -401,7 +415,8 @@ export default function FeaturesHub() {
                 Goals & OKRs
               </h3>
               <p className="text-gray-600 dark:text-gray-400 mb-6 relative z-10">
-                Align individual goals with company objectives using OKR framework
+                Align individual goals with company objectives using OKR
+                framework
               </p>
               <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-6 relative z-10">
                 <li className="flex items-start gap-2">

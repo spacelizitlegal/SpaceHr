@@ -1,21 +1,27 @@
 import Link from "next/link";
-import { Instagram, Youtube, Mail, Phone, ArrowUpRight, Linkedin } from "lucide-react";
+import {
+  Instagram,
+  Youtube,
+  Mail,
+  Phone,
+  ArrowUpRight,
+  Linkedin,
+} from "lucide-react";
 import { Twitter } from "lucide-react";
 
 export function Footer() {
   return (
     <footer className="bg-[#0b1121] text-white border-t border-white/5 font-sans">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        {/* Main grid: brand + 6 link columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-10 lg:gap-8">
-
+        {/* Main grid: brand + link columns */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-8 lg:gap-6">
           {/* Brand Column */}
-          <div className="space-y-6 xl:col-span-1 lg:col-span-2 md:col-span-2">
+          <div className="space-y-6 col-span-2 md:col-span-3 lg:col-span-2 xl:col-span-2">
             <Link href="/" className="flex items-center gap-0 group">
               <div className="relative h-15 w-15 sm:h-[4.5rem] sm:w-[4.5rem] lg:h-[5.25rem] lg:w-[5.25rem] hover:scale-110 transition-transform duration-300">
                 <img
                   src="/hrlogonly.png"
-                  alt="Space HR"
+                  alt="Space HR — AI-powered HRMS and ERP platform logo"
                   className="w-full h-full object-contain drop-shadow-lg"
                 />
               </div>
@@ -24,36 +30,104 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
-              The intelligent AI-powered HR platform for modern enterprises. Streamline payroll, appraisals, tax compliance, and workforce management.
+              The intelligent AI-powered HRMS & ERP platform for modern
+              enterprises. Automate payroll, appraisals, tax compliance, and
+              predictive workforce analytics.
             </p>
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-gray-400 text-sm">
                 <Mail className="w-4 h-4 text-primary flex-shrink-0" />
-                <a href="mailto:support@spacehr.com" className="hover:text-white transition-colors">support@spacehr.com</a>
+                <a
+                  href="mailto:support@spacehr.com"
+                  className="hover:text-white transition-colors"
+                >
+                  support@spacehr.com
+                </a>
               </div>
               <div className="flex items-center gap-3 text-gray-400 text-sm">
                 <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                <a href="tel:+14198201487" className="hover:text-white transition-colors">+1 419-820-1487 (USA)</a>
+                <a
+                  href="tel:+19169690451"
+                  className="hover:text-white transition-colors"
+                >
+                  🇺🇸 +1 916-969-0451
+                </a>
               </div>
               <div className="flex items-center gap-3 text-gray-400 text-sm">
                 <Phone className="w-4 h-4 text-primary flex-shrink-0" />
-                <a href="tel:+6586111900" className="hover:text-white transition-colors">+65 8611 1900 (Singapore)</a>
+                <a
+                  href="tel:+6586111900"
+                  className="hover:text-white transition-colors"
+                >
+                  🇸🇬 +65 8611 1900
+                </a>
               </div>
+            </div>
+
+            {/* Social Media - moved here to avoid WhatsApp overlap */}
+            <div className="flex items-center gap-4 pt-2">
+              <Link
+                href="https://x.com/SpaceHR197173"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-blue-400 hover:bg-blue-400/10 hover:border-blue-400/30 transition-all duration-200"
+                aria-label="Follow us on X (Twitter)"
+              >
+                <Twitter className="w-4 h-4" />
+              </Link>
+              <Link
+                href="https://www.instagram.com/space_hr7?igsh=YTJlYnV2OXlkYzR6"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-pink-500 hover:bg-pink-500/10 hover:border-pink-500/30 transition-all duration-200"
+                aria-label="Follow us on Instagram"
+              >
+                <Instagram className="w-4 h-4" />
+              </Link>
+              <Link
+                href="https://youtube.com/@spacehr7?si=Mz17igrQhxa3Jt7R"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-red-500 hover:bg-red-500/10 hover:border-red-500/30 transition-all duration-200"
+                aria-label="Subscribe on YouTube"
+              >
+                <Youtube className="w-4 h-4" />
+              </Link>
+              <Link
+                href="https://www.linkedin.com/company/space-hr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-blue-500 hover:bg-blue-500/10 hover:border-blue-500/30 transition-all duration-200"
+                aria-label="Follow us on LinkedIn"
+              >
+                <Linkedin className="w-4 h-4" />
+              </Link>
             </div>
           </div>
 
           {/* Core Features */}
           <div>
-            <h3 className="font-semibold text-white mb-6 tracking-wide">Core Features</h3>
-            <ul className="space-y-3">
+            <h3 className="font-semibold text-white mb-5 tracking-wide text-sm uppercase">
+              Core Features
+            </h3>
+            <ul className="space-y-2.5">
               {[
                 { href: "/features/payroll", label: "Payroll Management" },
-                { href: "/features/appraisals", label: "Performance Appraisals" },
+                {
+                  href: "/features/appraisals",
+                  label: "Performance Appraisals",
+                },
                 { href: "/features/tax", label: "Tax Compliance" },
                 { href: "/features/finance", label: "Finance & Accounting" },
                 { href: "/features/attendance", label: "Attendance Tracking" },
-                { href: "/features/leave-management", label: "Leave Management" },
-                { href: "/features/employee-self-service", label: "Employee Self-Service" },
+                {
+                  href: "/features/leave-management",
+                  label: "Leave Management",
+                },
+                {
+                  href: "/features/employee-self-service",
+                  label: "Employee Self-Service",
+                },
                 { href: "/features", label: "All Features →" },
               ].map((link) => (
                 <li key={link.href}>
@@ -68,19 +142,35 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* AI & Workforce */}
+          {/* AI & Deep Dives */}
           <div>
-            <h3 className="font-semibold text-white mb-6 tracking-wide">AI & Workforce</h3>
-            <ul className="space-y-3">
+            <h3 className="font-semibold text-white mb-5 tracking-wide text-sm uppercase">
+              AI & Intelligence
+            </h3>
+            <ul className="space-y-2.5">
               {[
+                {
+                  href: "/features/ai-payroll-auditor",
+                  label: "AI Payroll Auditor",
+                },
+                {
+                  href: "/features/360-performance-appraisals",
+                  label: "360 AI Appraisals",
+                },
+                {
+                  href: "/features/hr-ai-concierge",
+                  label: "HR AI Concierge",
+                },
                 { href: "/features/ai-intelligence", label: "AI Intelligence" },
                 { href: "/features/ai-chatbots", label: "AI Chatbots" },
                 { href: "/features/ai-automation", label: "AI Automation" },
                 { href: "/features/ai-templates", label: "AI Templates" },
                 { href: "/features/goals", label: "Goals & OKRs" },
-                { href: "/features/attrition-prediction", label: "Attrition Prediction" },
+                {
+                  href: "/features/attrition-prediction",
+                  label: "Attrition Prediction",
+                },
                 { href: "/features/cost-prediction", label: "Cost Prediction" },
-                { href: "/payroll-anomaly-detection", label: "Anomaly Detection" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
@@ -94,16 +184,81 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Resources & Tools */}
+          {/* Solutions & Regions */}
           <div>
-            <h3 className="font-semibold text-white mb-6 tracking-wide">Resources & Tools</h3>
-            <ul className="space-y-3">
+            <h3 className="font-semibold text-white mb-5 tracking-wide text-sm uppercase">
+              Solutions
+            </h3>
+            <ul className="space-y-2.5">
               {[
-                { href: "/request-a-demo", label: "Request Demo" },
+                { href: "/solutions/ceo", label: "For CEOs" },
+                { href: "/solutions/hr-admin", label: "For HR Admins" },
+                { href: "/solutions/employees", label: "For Employees" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <h3 className="font-semibold text-white mt-6 mb-5 tracking-wide text-sm uppercase">
+              Regions
+            </h3>
+            <ul className="space-y-2.5">
+              {[
+                {
+                  href: "/regions/united-states",
+                  label: "United States",
+                },
+                {
+                  href: "/regions/singapore",
+                  label: "Singapore",
+                },
+                { href: "/regions/dubai", label: "Dubai & UAE" },
+                { href: "/regions/canada", label: "Canada" },
+                { href: "/regions/europe", label: "Europe" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Resources & Compare */}
+          <div>
+            <h3 className="font-semibold text-white mb-5 tracking-wide text-sm uppercase">
+              Resources
+            </h3>
+            <ul className="space-y-2.5">
+              {[
                 { href: "/blogs", label: "Blog & Insights" },
                 { href: "/courses", label: "Learning Center" },
-                { href: "/tools/true-cost-calculator", label: "True Cost Calculator" },
-                { href: "/sitemap-page", label: "Sitemap" },
+                { href: "/templates", label: "HR Templates" },
+                { href: "/glossary", label: "HR Glossary" },
+                {
+                  href: "/tools/true-cost-calculator",
+                  label: "True Cost Calculator",
+                },
+                {
+                  href: "/tools/fw4-form-download",
+                  label: "FW-4 Form Download",
+                },
+                {
+                  href: "/payroll-anomaly-detection",
+                  label: "Payroll Anomaly Detection",
+                },
+                { href: "/request-a-demo", label: "Request Demo" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
@@ -115,39 +270,23 @@ export function Footer() {
                 </li>
               ))}
             </ul>
-          </div>
 
-          {/* HR Guides */}
-          <div>
-            <h3 className="font-semibold text-white mb-6 tracking-wide">HR Guides</h3>
-            <ul className="space-y-3">
+            <h3 className="font-semibold text-white mt-6 mb-5 tracking-wide text-sm uppercase">
+              SEO & Compliance
+            </h3>
+            <ul className="space-y-2.5">
               {[
-                { href: "/hr-software", label: "HR Software Guide" },
-                { href: "/hrms", label: "What is HRMS?" },
-                { href: "/best-hr-software-small-business", label: "Small Business HR" },
-                { href: "/hr-payroll-software", label: "Payroll & Appraisals" },
+                { href: "/hr-software", label: "HR Software" },
+                { href: "/hrms", label: "HRMS" },
+                {
+                  href: "/best-hr-software-small-business",
+                  label: "Best HR Software for SMB",
+                },
+                {
+                  href: "/california-pay-transparency",
+                  label: "California Pay Transparency",
+                },
                 { href: "/nyc-144-compliance", label: "NYC 144 Compliance" },
-                { href: "/california-pay-transparency", label: "CA Pay Transparency" },
-              ].map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Company & Compare */}
-          <div>
-            <h3 className="font-semibold text-white mb-6 tracking-wide">Company</h3>
-            <ul className="space-y-3">
-              {[
-                { href: "/about", label: "About Space AI" },
-                { href: "/request-a-demo", label: "Contact Us" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
@@ -160,12 +299,16 @@ export function Footer() {
               ))}
             </ul>
 
-            <h3 className="font-semibold text-white mt-8 mb-6 tracking-wide">Switch From</h3>
-            <ul className="space-y-3">
+            <h3 className="font-semibold text-white mt-6 mb-5 tracking-wide text-sm uppercase">
+              Switch From
+            </h3>
+            <ul className="space-y-2.5">
               {[
-                { href: "/compare/orangehrm", label: "OrangeHRM" },
                 { href: "/compare/rippling", label: "Rippling" },
+                { href: "/compare/gusto", label: "Gusto" },
+                { href: "/compare/workday", label: "Workday" },
                 { href: "/compare/bamboohr", label: "BambooHR" },
+                { href: "/compare/orangehrm", label: "OrangeHRM" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
@@ -249,33 +392,21 @@ export function Footer() {
           <p className="text-gray-500 text-sm">
             © 2025 Space AI Inc. All rights reserved.
           </p>
-          <div className="flex items-center gap-4">
-            <Link
-              href="https://x.com/SpaceHR197173"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-blue-400 transition-colors duration-200"
-              aria-label="Follow us on X (Twitter)"
-            >
-              <Twitter className="w-5 h-5" />
+          <div className="flex items-center gap-6 text-sm text-gray-500 w-full justify-center">
+            <Link href="/about" className="hover:text-white transition-colors">
+              About
             </Link>
             <Link
-              href="https://www.instagram.com/space_hr7?igsh=YTJlYnV2OXlkYzR6"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-pink-500 transition-colors duration-200"
-              aria-label="Follow us on Instagram"
+              href="/contact"
+              className="hover:text-white transition-colors"
             >
-              <Instagram className="w-5 h-5" />
+              Contact
             </Link>
             <Link
-              href="https://youtube.com/@spacehr7?si=Mz17igrQhxa3Jt7R"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-red-500 transition-colors duration-200"
-              aria-label="Subscribe on YouTube"
+              href="/sitemap-page"
+              className="hover:text-white transition-colors"
             >
-              <Youtube className="w-5 h-5" />
+              Sitemap
             </Link>
           </div>
         </div>
@@ -283,3 +414,6 @@ export function Footer() {
     </footer>
   );
 }
+
+
+
