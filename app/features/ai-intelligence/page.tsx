@@ -105,7 +105,7 @@ export default function AIIntelligencePage() {
             {/* Right Image */}
             <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80"
+                src="/engineering-blueprint-review.webp"
                 alt="AI Intelligence Dashboard"
                 fill
                 className="object-cover"

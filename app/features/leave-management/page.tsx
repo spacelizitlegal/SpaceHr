@@ -125,7 +125,7 @@ export default function LeaveManagementPage() {
           <div className="lg:w-1/2 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800">
               <Image
-                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1740&q=80"
+                src="/team-meeting-collaboration.webp"
                 alt="Beach vacation representing time off"
                 width={800}
                 height={600}
@@ -319,7 +319,7 @@ export default function LeaveManagementPage() {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800">
                 <Image
-                  src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=1740&q=80"
+                  src="/desktop-design-showcase.webp"
                   alt="Manager approving leave request"
                   width={700}
                   height={500}

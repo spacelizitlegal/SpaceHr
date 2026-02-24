@@ -145,7 +145,7 @@ export default function FinanceAnalyticsPage() {
             {/* Right Image */}
             <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
+                src="/office-team-presentation.webp"
                 alt="Finance Analytics Dashboard"
                 fill
                 className="object-cover"

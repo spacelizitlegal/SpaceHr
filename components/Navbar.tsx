@@ -2,13 +2,108 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
-import { useState, useEffect } from "react";
-import { Menu, X, ChevronRight } from "lucide-react";
+import { useState, useEffect, useRef } from "react";
+import { Menu, X, ChevronRight, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
+
+const featuresLinks = [
+  { href: "/features/payroll", label: "Payroll Management" },
+  { href: "/features/appraisals", label: "Performance Appraisals" },
+  { href: "/features/tax", label: "Tax Compliance" },
+  { href: "/features/finance", label: "Finance & Accounting" },
+  { href: "/features/attendance", label: "Attendance Tracking" },
+  { href: "/features/leave-management", label: "Leave Management" },
+  { href: "/features/ai-intelligence", label: "AI Intelligence" },
+  { href: "/features/ai-chatbots", label: "AI Chatbots" },
+  { href: "/features/ai-automation", label: "AI Automation" },
+  { href: "/features/ai-templates", label: "AI Templates" },
+  { href: "/features/goals", label: "Goals & OKRs" },
+  { href: "/features/employee-self-service", label: "Employee Self-Service" },
+  { href: "/features/attrition-prediction", label: "Attrition Prediction" },
+  { href: "/features/cost-prediction", label: "Cost Prediction" },
+];
+
+const compareLinks = [
+  { href: "/compare/orangehrm", label: "vs OrangeHRM" },
+  { href: "/compare/rippling", label: "vs Rippling" },
+  { href: "/compare/bamboohr", label: "vs BambooHR" },
+];
+
+const resourceLinks = [
+  { href: "/blogs", label: "Blog & Insights" },
+  { href: "/courses", label: "Learning Center" },
+  { href: "/tools/true-cost-calculator", label: "True Cost Calculator" },
+  { href: "/payroll-anomaly-detection", label: "Payroll Anomaly Detection" },
+];
+
+interface DropdownProps {
+  label: string;
+  links: { href: string; label: string }[];
+  columns?: number;
+}
+
+function NavDropdown({ label, links, columns = 1 }: DropdownProps) {
+  const [open, setOpen] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (ref.current && !ref.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  return (
+    <div ref={ref} className="relative">
+      <button
+        onClick={() => setOpen(!open)}
+        className="flex items-center gap-1 px-4 lg:px-5 py-2 text-sm font-medium rounded-full text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-white dark:hover:bg-slate-700 transition-all duration-200 hover:shadow-sm whitespace-nowrap"
+      >
+        {label}
+        <ChevronDown
+          className={cn(
+            "h-3.5 w-3.5 transition-transform duration-200",
+            open && "rotate-180"
+          )}
+        />
+      </button>
+      {open && (
+        <div
+          className={cn(
+            "absolute top-full left-1/2 -translate-x-1/2 mt-2 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-600 rounded-2xl shadow-2xl p-3 z-50 animate-in fade-in-0 slide-in-from-top-2",
+            columns === 2 ? "w-[420px]" : "w-52"
+          )}
+        >
+          <div
+            className={cn(
+              "grid gap-1",
+              columns === 2 ? "grid-cols-2" : "grid-cols-1"
+            )}
+          >
+            {links.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className="flex items-center px-3 py-2 rounded-xl text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors whitespace-nowrap"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,11 +113,9 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = [
-    { href: "/features", label: "Features" },
-    { href: "/courses", label: "Learning Management" },
-    { href: "/blogs", label: "Blogs" },
-  ];
+  const toggleMobile = (section: string) => {
+    setMobileExpanded(mobileExpanded === section ? null : section);
+  };
 
   return (
     <header className="fixed top-4 left-0 right-0 z-[100] mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -34,7 +127,7 @@ export function Navbar() {
             : "bg-white/70 dark:bg-slate-900/70 backdrop-blur-lg border border-slate-200/40 dark:border-slate-700/40"
         )}
       >
-        {/* Logo Section - Fixed width to prevent layout shift */}
+        {/* Logo */}
         <div className="flex-shrink-0">
           <Link href="/" className="flex items-center h-16 group">
             <div className="flex items-center gap-0">
@@ -52,22 +145,40 @@ export function Navbar() {
           </Link>
         </div>
 
-        {/* Desktop Navigation Menu - Centered */}
+        {/* Desktop Navigation */}
         <div className="hidden lg:flex flex-1 items-center justify-center">
           <div className="flex items-center gap-1 lg:gap-2 bg-slate-100/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-full px-2 py-1.5 border border-slate-200/50 dark:border-slate-700/50 shadow-sm">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className="px-4 lg:px-5 py-2 text-sm font-medium rounded-full text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-white dark:hover:bg-slate-700 transition-all duration-200 hover:shadow-sm whitespace-nowrap"
-              >
-                {link.label}
-              </Link>
-            ))}
+            <NavDropdown label="Features" links={featuresLinks} columns={2} />
+            <Link
+              href="/features"
+              className="px-4 lg:px-5 py-2 text-sm font-medium rounded-full text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-white dark:hover:bg-slate-700 transition-all duration-200 hover:shadow-sm whitespace-nowrap"
+            >
+              All Features
+            </Link>
+            <NavDropdown label="Compare" links={compareLinks} />
+            <NavDropdown label="Resources" links={resourceLinks} />
+            <Link
+              href="/courses"
+              className="px-4 lg:px-5 py-2 text-sm font-medium rounded-full text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-white dark:hover:bg-slate-700 transition-all duration-200 hover:shadow-sm whitespace-nowrap"
+            >
+              Learning
+            </Link>
+            <Link
+              href="/about"
+              className="px-4 lg:px-5 py-2 text-sm font-medium rounded-full text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-white dark:hover:bg-slate-700 transition-all duration-200 hover:shadow-sm whitespace-nowrap"
+            >
+              About
+            </Link>
+            <Link
+              href="/contact"
+              className="px-4 lg:px-5 py-2 text-sm font-medium rounded-full text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-white dark:hover:bg-slate-700 transition-all duration-200 hover:shadow-sm whitespace-nowrap"
+            >
+              Contact
+            </Link>
           </div>
         </div>
 
-        {/* Action Buttons - Right aligned */}
+        {/* Action Buttons */}
         <div className="flex items-center gap-2 lg:gap-3 flex-shrink-0">
           <div className="hidden lg:flex items-center gap-2 lg:gap-3">
             <Link href="/request-a-demo">
@@ -101,8 +212,109 @@ export function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden absolute top-full left-4 right-4 mt-2 bg-white dark:bg-slate-800 backdrop-blur-xl border border-slate-200 dark:border-slate-600 rounded-2xl shadow-2xl p-4 flex flex-col gap-2 animate-in slide-in-from-top-4 fade-in-0">
-          {navLinks.map((link) => (
+        <div className="lg:hidden absolute top-full left-4 right-4 mt-2 bg-white dark:bg-slate-800 backdrop-blur-xl border border-slate-200 dark:border-slate-600 rounded-2xl shadow-2xl p-4 flex flex-col gap-1 animate-in slide-in-from-top-4 fade-in-0 max-h-[80vh] overflow-y-auto">
+          {/* Features accordion */}
+          <button
+            onClick={() => toggleMobile("features")}
+            className="flex items-center justify-between px-4 py-3 rounded-xl text-slate-700 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors w-full"
+          >
+            <span className="font-medium">Features</span>
+            <ChevronDown
+              className={cn(
+                "h-4 w-4 text-slate-400 transition-transform duration-200",
+                mobileExpanded === "features" && "rotate-180"
+              )}
+            />
+          </button>
+          {mobileExpanded === "features" && (
+            <div className="ml-4 flex flex-col gap-1">
+              {featuresLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="flex items-center justify-between px-4 py-2 rounded-xl text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.label}
+                  <ChevronRight className="h-3.5 w-3.5 text-slate-400" />
+                </Link>
+              ))}
+              <Link
+                href="/features"
+                className="flex items-center justify-between px-4 py-2 rounded-xl text-sm font-semibold text-blue-600 dark:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                View All Features
+                <ChevronRight className="h-3.5 w-3.5" />
+              </Link>
+            </div>
+          )}
+
+          {/* Compare accordion */}
+          <button
+            onClick={() => toggleMobile("compare")}
+            className="flex items-center justify-between px-4 py-3 rounded-xl text-slate-700 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors w-full"
+          >
+            <span className="font-medium">Compare</span>
+            <ChevronDown
+              className={cn(
+                "h-4 w-4 text-slate-400 transition-transform duration-200",
+                mobileExpanded === "compare" && "rotate-180"
+              )}
+            />
+          </button>
+          {mobileExpanded === "compare" && (
+            <div className="ml-4 flex flex-col gap-1">
+              {compareLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="flex items-center justify-between px-4 py-2 rounded-xl text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.label}
+                  <ChevronRight className="h-3.5 w-3.5 text-slate-400" />
+                </Link>
+              ))}
+            </div>
+          )}
+
+          {/* Resources accordion */}
+          <button
+            onClick={() => toggleMobile("resources")}
+            className="flex items-center justify-between px-4 py-3 rounded-xl text-slate-700 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors w-full"
+          >
+            <span className="font-medium">Resources</span>
+            <ChevronDown
+              className={cn(
+                "h-4 w-4 text-slate-400 transition-transform duration-200",
+                mobileExpanded === "resources" && "rotate-180"
+              )}
+            />
+          </button>
+          {mobileExpanded === "resources" && (
+            <div className="ml-4 flex flex-col gap-1">
+              {resourceLinks.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="flex items-center justify-between px-4 py-2 rounded-xl text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.label}
+                  <ChevronRight className="h-3.5 w-3.5 text-slate-400" />
+                </Link>
+              ))}
+            </div>
+          )}
+
+          {/* Direct links */}
+          {[
+            { href: "/courses", label: "Learning Center" },
+            { href: "/blogs", label: "Blog & Insights" },
+            { href: "/about", label: "About" },
+            { href: "/contact", label: "Contact" },
+          ].map((link) => (
             <Link
               key={link.href}
               href={link.href}
@@ -113,6 +325,7 @@ export function Navbar() {
               <ChevronRight className="h-4 w-4 text-slate-400 dark:text-slate-400" />
             </Link>
           ))}
+
           <div className="h-px bg-slate-200 dark:bg-slate-600 my-2"></div>
           <Link
             href="/request-a-demo"

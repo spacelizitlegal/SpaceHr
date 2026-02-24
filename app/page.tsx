@@ -86,7 +86,7 @@ export default function Home() {
           {/* Background Image with Overlay */}
           <div className="absolute inset-0 z-0">
             <Image
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2850&q=80"
+              src="/engineering-blueprint-review.webp"
               alt="Team collaboration"
               fill
               className="object-cover"
@@ -154,54 +154,129 @@ export default function Home() {
         </section>
 
         {/* 2. EMBEDDED VIDEO SECTION */}
-        <section className="py-24 bg-[#0b1121] relative">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                See AIPerform in Action
-              </h2>
-              <p className="text-gray-400 text-lg">
-                Watch how top companies use our platform to transform their
-                culture regardless of team size.
-              </p>
-            </div>
+        <section className="py-24 px-10 bg-[#0b1121] relative">
+  <div className="px-4 sm:px-6 lg:px-8">
+    <div className="text-center max-w-3xl mx-auto mb-16">
+      <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+        See AIPerform in Action
+      </h2>
+      <p className="text-gray-400 text-lg">
+        Watch how top companies use our platform to transform their culture
+        regardless of team size.
+      </p>
+    </div>
 
-            <div className="relative max-w-5xl mx-auto">
-              {/* Decorative Elements */}
-              <div className="absolute -top-12 -left-12 w-24 h-24 bg-accent/20 rounded-full blur-2xl"></div>
-              <div className="absolute -bottom-12 -right-12 w-32 h-32 bg-primary/20 rounded-full blur-3xl"></div>
+    <div className="relative   max-w-5xl mx-auto">
+      {/* Decorative Glows */}
+      <div className="absolute -top-12 -left-12 w-24 h-24 bg-accent/20 rounded-full blur-2xl pointer-events-none" />
+      <div className="absolute -bottom-12 -right-12 w-32 h-32 bg-primary/20 rounded-full blur-3xl pointer-events-none" />
 
-              <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-white/10 bg-black/50 group">
-                {/* Play Button Overlay (simulated for placeholder) */}
-                <div className="absolute inset-0 flex items-center justify-center z-10">
-                  <Link
-                    href="https://cad.spaceaiapp.com/login"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="cursor-pointer"
-                  >
-                    <div className="w-20 h-20 rounded-full bg-white/10 backdrop-blur-md flex items-center justify-center hover:bg-primary/80 transition-all duration-500 scale-100 hover:scale-110">
-                      <PlayCircle className="w-10 h-10 text-white fill-white/20" />
-                    </div>
-                  </Link>
-                </div>
+      {/* Browser Shell */}
+      <div className="rounded-2xl overflow-hidden shadow-[0_32px_80px_rgba(0,0,0,0.6)] border border-white/10">
 
-                {/* Fallback Image / Video Placeholder */}
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-[#1a2035]">
-                  {/* In production this would be an iframe */}
-                  <div className="w-full h-full flex items-center justify-center text-gray-500 font-medium">
-                    <Image
-                      src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1740&q=80"
-                      alt="Video Thumbnail"
-                      fill
-                      className="object-cover opacity-60"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
+        {/* ── Title Bar ── */}
+        <div className="flex items-center gap-2 bg-[#1a2035] px-4 py-3 border-b border-white/5">
+          {/* Traffic Lights */}
+          <span className="w-3 h-3 rounded-full bg-[#ff5f57] shadow-[0_0_6px_#ff5f57aa]" />
+          <span className="w-3 h-3 rounded-full bg-[#febc2e] shadow-[0_0_6px_#febc2eaa]" />
+          <span className="w-3 h-3 rounded-full bg-[#28c840] shadow-[0_0_6px_#28c840aa]" />
+        </div>
+
+        {/* ── Tab Bar ── */}
+        <div className="flex items-end bg-[#141929] px-3 pt-2 gap-1 border-b border-white/5">
+          {/* Active Tab */}
+          <div className="flex items-center gap-2 bg-[#1a2035] text-white/80 text-xs font-medium px-4 py-2 rounded-t-lg border border-white/10 border-b-[#1a2035] -mb-px max-w-[200px]">
+            <svg className="w-3.5 h-3.5 text-blue-400 shrink-0" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/>
+            </svg>
+            <span className="truncate">AIPerform · Dashboard</span>
+            <svg className="w-3 h-3 ml-1 text-white/30 hover:text-white/70 cursor-pointer shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
           </div>
-        </section>
+          {/* Ghost Tab */}
+          <div className="flex items-center gap-2 text-white/30 text-xs px-4 py-2 rounded-t-lg max-w-[160px]">
+            <svg className="w-3.5 h-3.5 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <circle cx="12" cy="12" r="10"/>
+            </svg>
+            <span className="truncate">Analytics</span>
+          </div>
+          {/* New Tab Button */}
+          <button className="ml-1 mb-2 text-white/30 hover:text-white/60 transition-colors">
+            <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </button>
+        </div>
+
+        {/* ── Address / Toolbar Bar ── */}
+        <div className="flex items-center gap-3 bg-[#1a2035] px-4 py-2.5 border-b border-white/5">
+          {/* Nav Buttons */}
+          <div className="flex items-center gap-1">
+            <button className="p-1.5 rounded-md text-white/30 hover:text-white/60 hover:bg-white/5 transition-all">
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M15 18l-6-6 6-6"/>
+              </svg>
+            </button>
+            <button className="p-1.5 rounded-md text-white/20 cursor-not-allowed">
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M9 18l6-6-6-6"/>
+              </svg>
+            </button>
+            <button className="p-1.5 rounded-md text-white/30 hover:text-white/60 hover:bg-white/5 transition-all">
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+              </svg>
+            </button>
+          </div>
+
+          {/* URL Bar */}
+          <div className="flex flex-1 items-center gap-2 bg-[#0d1526] border border-white/10 rounded-lg px-3 py-1.5 group hover:border-white/20 transition-colors">
+            {/* Lock Icon */}
+            <svg className="w-3.5 h-3.5 text-green-400 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+              <path d="M7 11V7a5 5 0 0110 0v4"/>
+            </svg>
+            <span className="text-xs text-white/50 select-none truncate">
+              <span className="text-white/30">https://</span>
+              <span className="text-white/70">app.aiperform.io</span>
+              <span className="text-white/30">/dashboard/overview</span>
+            </span>
+          </div>
+
+          {/* Right Actions */}
+          <div className="flex items-center gap-1">
+            <button className="p-1.5 rounded-md text-white/30 hover:text-white/60 hover:bg-white/5 transition-all">
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </button>
+            <button className="p-1.5 rounded-md text-white/30 hover:text-white/60 hover:bg-white/5 transition-all">
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        {/* ── Video Content ── */}
+        <div className="relative aspect-video w-full overflow-hidden bg-black/50">
+          <video
+            className="h-full w-full object-contain"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="auto"
+          >
+            <source src="/videos/space-hr-demo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
         {/* COMPREHENSIVE ERP MODULES SECTION */}
         <section className="py-24 bg-gray-50 dark:bg-[#0f172a]">
@@ -560,7 +635,7 @@ export default function Home() {
                 <div className="order-1 lg:order-2 relative">
                   <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-gray-100 dark:border-gray-800">
                     <Image
-                      src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1740&q=80"
+                      src="/desktop-design-showcase.webp"
                       alt="Payroll Dashboard"
                       width={700}
                       height={500}
@@ -587,7 +662,7 @@ export default function Home() {
                 <div className="relative">
                   <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-gray-100 dark:border-gray-800">
                     <Image
-                      src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1740&q=80"
+                      src="/professional-woman-laptop.webp"
                       alt="Performance Review"
                       width={700}
                       height={500}
@@ -750,7 +825,7 @@ export default function Home() {
                 <div className="order-1 lg:order-2 relative">
                   <div className="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-gray-100 dark:border-gray-800">
                     <Image
-                      src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1740&q=80"
+                      src="/office-team-presentation.webp"
                       alt="Finance Analytics Dashboard"
                       width={700}
                       height={500}

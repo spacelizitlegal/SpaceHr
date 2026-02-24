@@ -130,7 +130,7 @@ export default function EmployeeSelfServicePage() {
           <div className="lg:w-1/2 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800">
               <Image
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1740&q=80"
+                src="/engineering-blueprint-review.webp"
                 alt="Employees using self-service portal"
                 width={800}
                 height={600}
@@ -382,7 +382,7 @@ export default function EmployeeSelfServicePage() {
             <div className="relative flex justify-center">
               <div className="relative">
                 <Image
-                  src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80"
+                  src="/team-meeting-collaboration.webp"
                   alt="Mobile HR app interface"
                   width={400}
                   height={600}

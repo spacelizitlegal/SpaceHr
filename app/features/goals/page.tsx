@@ -126,7 +126,7 @@ export default function GoalsPage() {
           <div className="lg:w-1/2 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800">
               <Image
-                src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&w=1740&q=80"
+                src="/desktop-design-showcase.webp"
                 alt="Team achieving goals together"
                 width={800}
                 height={600}
@@ -422,7 +422,7 @@ export default function GoalsPage() {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1740&q=80"
+                  src="/professional-woman-laptop.webp"
                   alt="Team collaborating on goals"
                   width={700}
                   height={500}

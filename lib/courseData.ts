@@ -13,7 +13,7 @@ export const courses = [
         ],
         modules: 12,
         duration: "4 weeks",
-        image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80"
+        image: "/team-meeting-collaboration.webp"
     },
     {
         slug: "giving-effective-feedback",
@@ -28,7 +28,7 @@ export const courses = [
         ],
         modules: 8,
         duration: "2 weeks",
-        image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80"
+        image: "/desktop-design-showcase.webp"
     },
     {
         slug: "emotional-intelligence-at-work",
@@ -43,7 +43,7 @@ export const courses = [
         ],
         modules: 10,
         duration: "3 weeks",
-        image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80"
+        image: "/professional-woman-laptop.webp"
     },
     {
         slug: "strategic-thinking",
@@ -58,7 +58,7 @@ export const courses = [
         ],
         modules: 15,
         duration: "5 weeks",
-        image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80"
+        image: "/office-team-presentation.webp"
     },
     {
         slug: "generative-ai-for-business",
@@ -73,7 +73,7 @@ export const courses = [
         ],
         modules: 8,
         duration: "2 weeks",
-        image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80"
+        image: "/engineering-blueprint-review.webp"
     },
     {
         slug: "presentation-mastery",
@@ -88,6 +88,6 @@ export const courses = [
         ],
         modules: 6,
         duration: "2 weeks",
-        image: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80"
+        image: "/team-meeting-collaboration.webp"
     }
 ];
