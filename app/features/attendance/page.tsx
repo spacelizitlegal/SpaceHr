@@ -125,7 +125,7 @@ export default function AttendancePage() {
           <div className="lg:w-1/2 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800">
               <Image
-                src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1740&q=80"
+                src="/desktop-design-showcase.webp"
                 alt="Team using attendance tracking system"
                 width={800}
                 height={600}
@@ -419,7 +419,7 @@ export default function AttendancePage() {
             <div className="relative">
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1740&q=80"
+                  src="/professional-woman-laptop.webp"
                   alt="Diverse team using attendance system"
                   width={700}
                   height={500}

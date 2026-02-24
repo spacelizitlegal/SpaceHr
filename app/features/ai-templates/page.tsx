@@ -82,7 +82,7 @@ export default function AITemplatesPage() {
           <div className="lg:w-1/2 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800">
               <Image
-                src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=1740&q=80"
+                src="/team-meeting-collaboration.webp"
                 alt="AI Template Generation Interface"
                 width={800}
                 height={600}

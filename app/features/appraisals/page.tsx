@@ -84,7 +84,7 @@ export default function AIAppraisalsPage() {
           <div className="lg:w-1/2 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800">
               <Image
-                src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1740&q=80"
+                src="/office-team-presentation.webp"
                 alt="AI Appraisal Interface"
                 width={800}
                 height={600}

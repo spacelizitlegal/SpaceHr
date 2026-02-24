@@ -144,7 +144,7 @@ export default function AIPayrollPage() {
           <div className="lg:w-1/2 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800">
               <Image
-                src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&w=1740&q=80"
+                src="/professional-woman-laptop.webp"
                 alt="AI Payroll Dashboard"
                 width={800}
                 height={600}

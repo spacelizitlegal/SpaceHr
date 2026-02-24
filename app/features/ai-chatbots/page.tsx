@@ -115,7 +115,7 @@ export default function AIChatbotsPage() {
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800 bg-gradient-to-br from-gray-900 to-purple-900">
                 <Image
-                  src="https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&w=1200&q=80"
+                  src="/desktop-design-showcase.webp"
                   alt="AI Chatbot Interface"
                   width={800}
                   height={600}
@@ -606,7 +606,7 @@ export default function AIChatbotsPage() {
             </div>
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80"
+                src="/professional-woman-laptop.webp"
                 alt="Enterprise Security"
                 fill
                 className="object-cover"

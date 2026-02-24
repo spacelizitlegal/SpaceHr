@@ -269,7 +269,7 @@ export default function CoursesPage() {
             <div className="relative">
               <div className="bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 rounded-3xl p-8 border border-gray-200 dark:border-gray-700">
                 <img
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+                  src="/office-team-presentation.webp"
                   alt="Team learning together"
                   className="rounded-2xl shadow-2xl"
                 />

@@ -146,7 +146,7 @@ export default function AboutPage() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2850&q=80"
+            src="/team-meeting-collaboration.webp"
             alt="Team collaboration"
             fill
             className="object-cover"
@@ -274,7 +274,7 @@ export default function AboutPage() {
                 <div className="space-y-4">
                   <div className="relative rounded-2xl overflow-hidden shadow-xl">
                     <Image
-                      src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=600&q=80"
+                      src="/desktop-design-showcase.webp"
                       alt="Team collaboration"
                       width={300}
                       height={400}
@@ -284,7 +284,7 @@ export default function AboutPage() {
                   </div>
                   <div className="relative rounded-2xl overflow-hidden shadow-xl">
                     <Image
-                      src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=600&q=80"
+                      src="/professional-woman-laptop.webp"
                       alt="Innovation"
                       width={300}
                       height={200}
@@ -295,7 +295,7 @@ export default function AboutPage() {
                 <div className="space-y-4 pt-8">
                   <div className="relative rounded-2xl overflow-hidden shadow-xl">
                     <Image
-                      src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=600&q=80"
+                      src="/office-team-presentation.webp"
                       alt="Team working"
                       width={300}
                       height={200}
@@ -304,7 +304,7 @@ export default function AboutPage() {
                   </div>
                   <div className="relative rounded-2xl overflow-hidden shadow-xl">
                     <Image
-                      src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=600&q=80"
+                      src="/engineering-blueprint-review.webp"
                       alt="Meeting"
                       width={300}
                       height={400}

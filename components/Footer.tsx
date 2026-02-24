@@ -1,14 +1,16 @@
 import Link from "next/link";
-import { Instagram, Youtube, Mail, Phone, MapPin, ArrowUpRight } from "lucide-react";
+import { Instagram, Youtube, Mail, Phone, ArrowUpRight, Linkedin } from "lucide-react";
 import { Twitter } from "lucide-react";
 
 export function Footer() {
   return (
     <footer className="bg-[#0b1121] text-white border-t border-white/5 font-sans">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8">
+        {/* Main grid: brand + 6 link columns */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-10 lg:gap-8">
+
           {/* Brand Column */}
-          <div className="space-y-6 lg:col-span-1">
+          <div className="space-y-6 xl:col-span-1 lg:col-span-2 md:col-span-2">
             <Link href="/" className="flex items-center gap-0 group">
               <div className="relative h-15 w-15 sm:h-[4.5rem] sm:w-[4.5rem] lg:h-[5.25rem] lg:w-[5.25rem] hover:scale-110 transition-transform duration-300">
                 <img
@@ -26,314 +28,154 @@ export function Footer() {
             </p>
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-gray-400 text-sm">
-                <Mail className="w-4 h-4 text-primary" />
-                <span>support@spacehr.com</span>
+                <Mail className="w-4 h-4 text-primary flex-shrink-0" />
+                <a href="mailto:support@spacehr.com" className="hover:text-white transition-colors">support@spacehr.com</a>
               </div>
-              <div className="space-y-3">
-                <div className="flex items-center gap-3 text-gray-400 text-sm">
-                  <Phone className="w-4 h-4 text-primary" />
-                  <a href="tel:+14198201487" className="hover:text-white transition-colors">+1 419-820-1487 (USA)</a>
-                </div>
-                <div className="flex items-center gap-3 text-gray-400 text-sm">
-                  <Phone className="w-4 h-4 text-primary" />
-                  <a href="tel:+6586111900" className="hover:text-white transition-colors">+65 8611 1900 (Singapore)</a>
-                </div>
+              <div className="flex items-center gap-3 text-gray-400 text-sm">
+                <Phone className="w-4 h-4 text-primary flex-shrink-0" />
+                <a href="tel:+14198201487" className="hover:text-white transition-colors">+1 419-820-1487 (USA)</a>
+              </div>
+              <div className="flex items-center gap-3 text-gray-400 text-sm">
+                <Phone className="w-4 h-4 text-primary flex-shrink-0" />
+                <a href="tel:+6586111900" className="hover:text-white transition-colors">+65 8611 1900 (Singapore)</a>
               </div>
             </div>
           </div>
 
           {/* Core Features */}
           <div>
-            <h3 className="font-semibold text-white mb-6 tracking-wide">
-              Core Features
-            </h3>
+            <h3 className="font-semibold text-white mb-6 tracking-wide">Core Features</h3>
             <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/features/payroll"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  Payroll Management
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/payroll-anomaly-detection"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  Payroll Anomaly Detection
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/features/appraisals"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  Performance Appraisals
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/features/tax"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  Tax Compliance
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/features/finance"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  Finance & Accounting
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/features/attendance"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  Attendance Tracking
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/features/leave-management"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  Leave Management
-                </Link>
-              </li>
+              {[
+                { href: "/features/payroll", label: "Payroll Management" },
+                { href: "/features/appraisals", label: "Performance Appraisals" },
+                { href: "/features/tax", label: "Tax Compliance" },
+                { href: "/features/finance", label: "Finance & Accounting" },
+                { href: "/features/attendance", label: "Attendance Tracking" },
+                { href: "/features/leave-management", label: "Leave Management" },
+                { href: "/features/employee-self-service", label: "Employee Self-Service" },
+                { href: "/features", label: "All Features →" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* AI & Workforce */}
           <div>
-            <h3 className="font-semibold text-white mb-6 tracking-wide">
-              AI & Workforce
-            </h3>
+            <h3 className="font-semibold text-white mb-6 tracking-wide">AI & Workforce</h3>
             <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/features/ai-intelligence"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  AI Intelligence
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/features/ai-chatbots"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  AI Chatbots
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/features/ai-automation"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  AI Automation
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/features/ai-templates"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  AI Templates
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/features/goals"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  Goals & OKRs
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/features/employee-self-service"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  Employee Self-Service
-                </Link>
-              </li>
+              {[
+                { href: "/features/ai-intelligence", label: "AI Intelligence" },
+                { href: "/features/ai-chatbots", label: "AI Chatbots" },
+                { href: "/features/ai-automation", label: "AI Automation" },
+                { href: "/features/ai-templates", label: "AI Templates" },
+                { href: "/features/goals", label: "Goals & OKRs" },
+                { href: "/features/attrition-prediction", label: "Attrition Prediction" },
+                { href: "/features/cost-prediction", label: "Cost Prediction" },
+                { href: "/payroll-anomaly-detection", label: "Anomaly Detection" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Resources */}
+          {/* Resources & Tools */}
           <div>
-            <h3 className="font-semibold text-white mb-6 tracking-wide">
-              Resources
-            </h3>
+            <h3 className="font-semibold text-white mb-6 tracking-wide">Resources & Tools</h3>
             <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/request-a-demo"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  Request Demo
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/blogs"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  Blog & Insights
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/courses"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  Learning Center
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/features"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  All Features
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/tools/true-cost-calculator"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  True Cost Calculator
-                </Link>
-              </li>
+              {[
+                { href: "/request-a-demo", label: "Request Demo" },
+                { href: "/blogs", label: "Blog & Insights" },
+                { href: "/courses", label: "Learning Center" },
+                { href: "/tools/true-cost-calculator", label: "True Cost Calculator" },
+                { href: "/sitemap-page", label: "Sitemap" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
-          
+
           {/* HR Guides */}
           <div>
-            <h3 className="font-semibold text-white mb-6 tracking-wide">
-              HR Guides
-            </h3>
+            <h3 className="font-semibold text-white mb-6 tracking-wide">HR Guides</h3>
             <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/hr-software"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  HR Software Guide
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/hrms"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  What is HRMS?
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/best-hr-software-small-business"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  Small Business HR
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/hr-payroll-software"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  Payroll & Appraisals
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/nyc-144-compliance"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  NYC 144 Compliance
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/california-pay-transparency"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  CA Pay Transparency
-                </Link>
-              </li>
+              {[
+                { href: "/hr-software", label: "HR Software Guide" },
+                { href: "/hrms", label: "What is HRMS?" },
+                { href: "/best-hr-software-small-business", label: "Small Business HR" },
+                { href: "/hr-payroll-software", label: "Payroll & Appraisals" },
+                { href: "/nyc-144-compliance", label: "NYC 144 Compliance" },
+                { href: "/california-pay-transparency", label: "CA Pay Transparency" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Comparisons */}
+          {/* Company & Compare */}
           <div>
-             <h3 className="font-semibold text-white mb-6 tracking-wide">
-              Switch From
-            </h3>
+            <h3 className="font-semibold text-white mb-6 tracking-wide">Company</h3>
             <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/compare/orangehrm"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  OrangeHRM
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/compare/rippling"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  Rippling
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/compare/bamboohr"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  BambooHR
-                </Link>
-              </li>
+              {[
+                { href: "/about", label: "About Space AI" },
+                { href: "/request-a-demo", label: "Contact Us" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
-          </div>
 
-          {/* Company */}
-          <div>
-            <h3 className="font-semibold text-white mb-6 tracking-wide">
-              Company
-            </h3>
+            <h3 className="font-semibold text-white mt-8 mb-6 tracking-wide">Switch From</h3>
             <ul className="space-y-3">
-              <li>
-                <Link
-                  href="/about"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  About Space AI
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/request-a-demo"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  Contact Us
-                </Link>
-              </li>
-
-              <li>
-                <Link
-                  href="/sitemap-page"
-                  className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
-                >
-                  Sitemap
-                </Link>
-              </li>
+              {[
+                { href: "/compare/orangehrm", label: "OrangeHRM" },
+                { href: "/compare/rippling", label: "Rippling" },
+                { href: "/compare/bamboohr", label: "BambooHR" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -402,7 +244,8 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+        {/* Bottom bar */}
+        <div className="mt-8 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm">
             © 2025 Space AI Inc. All rights reserved.
           </p>

@@ -20,7 +20,7 @@ export const blogPosts = [
         date: "Dec 12, 2024",
         category: "Technology",
         readTime: "5 min read",
-        image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop"
+        image: "/desktop-design-showcase.webp"
     },
     {
         slug: "strategies-remote-team-alignment",
@@ -39,7 +39,7 @@ export const blogPosts = [
         date: "Dec 10, 2024",
         readTime: "4 min read",
         category: "Management",
-        image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
+        image: "/professional-woman-laptop.webp"
     },
     {
         slug: "annual-reviews-are-dead",
@@ -55,7 +55,7 @@ export const blogPosts = [
         date: "Dec 05, 2024",
         readTime: "6 min read",
         category: "HR Trends",
-        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80"
+        image: "/office-team-presentation.webp"
     },
     {
         slug: "building-psychological-safety",
@@ -74,7 +74,7 @@ export const blogPosts = [
         date: "Nov 28, 2024",
         readTime: "7 min read",
         category: "Culture",
-        image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80"
+        image: "/engineering-blueprint-review.webp"
     },
     {
         slug: "roi-employee-wellbeing",
@@ -88,7 +88,7 @@ export const blogPosts = [
         date: "Nov 22, 2024",
         readTime: "5 min read",
         category: "Wellbeing",
-        image: "https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?auto=format&fit=crop&w=800&q=80"
+        image: "/team-meeting-collaboration.webp"
     },
     {
         slug: "hybrid-work-challenges",
@@ -104,7 +104,7 @@ export const blogPosts = [
         date: "Nov 15, 2024",
         readTime: "6 min read",
         category: "Hybrid Work",
-        image: "https://images.unsplash.com/photo-1593642532744-d377ab507dc8?auto=format&fit=crop&w=800&q=80"
+        image: "/desktop-design-showcase.webp"
     },
     {
         slug: "ai-in-recruitment",
@@ -117,7 +117,7 @@ export const blogPosts = [
         date: "Nov 10, 2024",
         readTime: "5 min read",
         category: "Recruitment",
-        image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"
+        image: "/professional-woman-laptop.webp"
     },
     {
         slug: "data-driven-hr",
@@ -130,7 +130,7 @@ export const blogPosts = [
         date: "Nov 05, 2024",
         readTime: "4 min read",
         category: "People Analytics",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+        image: "/office-team-presentation.webp"
     },
     {
         slug: "importance-of-soft-skills",
@@ -143,6 +143,6 @@ export const blogPosts = [
         date: "Oct 28, 2024",
         readTime: "3 min read",
         category: "Skills",
-        image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80"
+        image: "/engineering-blueprint-review.webp"
     }
 ];
