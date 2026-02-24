@@ -63,6 +63,7 @@ const templates = [
     items: [
       {
         title: "Free 360-Degree Appraisal Template",
+        slug: "360-degree-appraisal-template",
         description:
           "Comprehensive multi-rater feedback form with competency-based scoring, self-assessment sections, and manager evaluation criteria. Available in Excel and Word formats.",
         format: "Excel / Word",
@@ -71,6 +72,7 @@ const templates = [
       },
       {
         title: "Annual Performance Review Template",
+        slug: "annual-performance-review-template",
         description:
           "Structured performance review form with goal achievement tracking, competency ratings, development planning, and manager comments sections.",
         format: "Excel / Word",
@@ -79,6 +81,7 @@ const templates = [
       },
       {
         title: "Employee Self-Assessment Form",
+        slug: "employee-self-assessment-form",
         description:
           "Guide employees through self-reflection with structured prompts covering achievements, challenges, skill development, and career goals.",
         format: "Word / PDF",
@@ -94,6 +97,7 @@ const templates = [
     items: [
       {
         title: "PTO & Leave Policy Template",
+        slug: "pto-leave-policy-template",
         description:
           "Complete paid time off policy covering accrual rates, carryover rules, blackout dates, request procedures, and approval workflows. Customizable for your organization.",
         format: "Word / PDF",
@@ -102,6 +106,7 @@ const templates = [
       },
       {
         title: "Sick Leave Policy Template",
+        slug: "sick-leave-policy-template",
         description:
           "Sick leave policy with documentation requirements, notification procedures, return-to-work protocols, and FMLA compliance guidelines.",
         format: "Word / PDF",
@@ -110,6 +115,7 @@ const templates = [
       },
       {
         title: "Time & Attendance Policy Template",
+        slug: "time-attendance-policy-template",
         description:
           "Attendance policy covering work hours, tardiness, absence reporting, flexible scheduling, and GPS time tracking procedures.",
         format: "Word / PDF",
@@ -125,6 +131,7 @@ const templates = [
     items: [
       {
         title: "Remote Work Employee Handbook Template",
+        slug: "remote-work-employee-handbook-template",
         description:
           "Comprehensive remote work handbook covering equipment policies, communication expectations, security requirements, expense reimbursement, and performance expectations for distributed teams.",
         format: "Word / PDF",
@@ -133,6 +140,7 @@ const templates = [
       },
       {
         title: "Hybrid Work Policy Template",
+        slug: "hybrid-work-policy-template",
         description:
           "Flexible hybrid work policy defining in-office days, remote work eligibility, scheduling procedures, and collaboration expectations.",
         format: "Word / PDF",
@@ -148,6 +156,7 @@ const templates = [
     items: [
       {
         title: "New Employee Onboarding Checklist",
+        slug: "new-employee-onboarding-checklist",
         description:
           "Day-by-day onboarding checklist covering paperwork, IT setup, team introductions, training schedule, and 30-60-90 day goals.",
         format: "Excel / PDF",
@@ -156,6 +165,7 @@ const templates = [
       },
       {
         title: "Employee Offboarding Checklist",
+        slug: "employee-offboarding-checklist",
         description:
           "Comprehensive exit checklist covering knowledge transfer, equipment return, access revocation, exit interview, and final pay processing.",
         format: "Excel / PDF",
@@ -171,6 +181,7 @@ const templates = [
     items: [
       {
         title: "Payroll Processing Checklist",
+        slug: "payroll-processing-checklist",
         description:
           "Step-by-step payroll processing checklist covering data verification, tax calculations, deductions, approvals, and ACH file generation.",
         format: "Excel / PDF",
@@ -179,6 +190,7 @@ const templates = [
       },
       {
         title: "Employee Classification Guide",
+        slug: "employee-classification-guide",
         description:
           "Guide for correctly classifying workers as exempt/non-exempt, full-time/part-time, and employee/contractor per FLSA and IRS guidelines.",
         format: "PDF",
@@ -194,6 +206,7 @@ const templates = [
     items: [
       {
         title: "OKR Planning Template",
+        slug: "okr-planning-template",
         description:
           "Objectives and Key Results template for setting, tracking, and evaluating quarterly and annual goals at individual, team, and company levels.",
         format: "Excel / Word",
@@ -202,6 +215,7 @@ const templates = [
       },
       {
         title: "Individual Development Plan (IDP) Template",
+        slug: "individual-development-plan-template",
         description:
           "Structured development plan template covering skill gaps, learning objectives, action items, timelines, and success metrics.",
         format: "Word / PDF",
@@ -272,12 +286,13 @@ export default function TemplatesPage() {
                       {template.description}
                     </p>
                     <div className="space-y-3">
-                      <Button
-                        variant="outline"
-                        className="w-full rounded-lg text-sm"
+                      <a
+                        href={`/api/template-download?slug=${template.slug}`}
+                        download
+                        className="inline-flex h-10 w-full items-center justify-center whitespace-nowrap rounded-md border border-input bg-background px-4 py-2 text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground"
                       >
                         <Download className="w-4 h-4 mr-2" /> Download Template
-                      </Button>
+                      </a>
                       <Link href={template.link}>
                         <div className="text-center text-xs text-primary hover:underline font-medium">
                           💡 {template.cta} →
