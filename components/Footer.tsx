@@ -21,7 +21,7 @@ export function Footer() {
               <div className="relative h-15 w-15 sm:h-[4.5rem] sm:w-[4.5rem] lg:h-[5.25rem] lg:w-[5.25rem] hover:scale-110 transition-transform duration-300">
                 <img
                   src="/hrlogonly.png"
-                  alt="Space HR — AI-powered HRMS and ERP platform logo"
+                  alt="Space HR — AI-powered HRMS and ERP platform logo ."
                   className="w-full h-full object-contain drop-shadow-lg"
                 />
               </div>
