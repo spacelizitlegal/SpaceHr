@@ -49,6 +49,25 @@ export const metadata: Metadata = {
     "CEO HR analytics",
     "supervisor performance management",
     "automated payroll processing",
+    "free w4 form filling tool",
+    "free w-4 form filling tool",
+    "free w4 generator",
+    "free w-4 generator",
+    "w4 form online",
+    "w-4 form online",
+    "fillable w4 form",
+    "fillable w-4 form",
+    "w4 form pdf download",
+    "w-4 form pdf download",
+    "w4 tax form generator",
+    "employee withholding certificate",
+    "irs form w-4",
+    "how to fill out w4 form",
+    "w4 form for employees",
+    "federal w4 form tool",
+    "online w4 form filling",
+    "w4 withholding form online",
+    "download completed w4 form",
   ],
   openGraph: {
     title: "HR Software for Modern Teams | Best HRMS & Management System",
@@ -163,10 +182,19 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
                 See AIPerform in Action
               </h2>
-              <p className="text-gray-400 text-lg">
+              <p className="text-gray-400 text-lg mb-8">
                 Watch how top companies use our platform to transform their
                 culture regardless of team size.
               </p>
+              <Link href="/tools/w4-generator">
+                <Button
+                  size="lg"
+                  className="rounded-full px-8 text-white bg-gradient-to-r from-pink-500 to-violet-500 hover:from-pink-600 hover:to-violet-600 border-none shadow-[0_0_20px_rgba(236,72,153,0.3)] transition-all hover:scale-105"
+                >
+                  <Sparkles className="w-5 h-5 mr-2" />
+                  Try Our Free W-4 Form Generator for Employees
+                </Button>
+              </Link>
             </div>
 
             <div className="relative   max-w-5xl mx-auto">

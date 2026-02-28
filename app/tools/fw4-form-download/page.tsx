@@ -99,9 +99,9 @@ export default function FW4FormDownloadPage() {
                   Download FW-4 PDF
                 </Button>
               </a>
-              <Link href="/request-a-demo">
-                <Button className="h-12 px-8 bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold rounded-xl">
-                  Automate W-4 Collection
+              <Link href="/tools/w4-generator">
+                <Button className="h-12 px-8 bg-gradient-to-r from-pink-500 to-violet-500 hover:from-pink-600 hover:to-violet-600 text-white border-0 font-semibold rounded-xl shadow-[0_0_15px_rgba(236,72,153,0.3)] hover:scale-105 transition-all">
+                  Use Free W-4 Generator
                 </Button>
               </Link>
             </div>

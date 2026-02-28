@@ -38,10 +38,10 @@ export function Footer() {
               <div className="flex items-center gap-3 text-gray-400 text-sm">
                 <Mail className="w-4 h-4 text-primary flex-shrink-0" />
                 <a
-                  href="mailto:support@spacehr.com"
+                  href="mailto:support@spacehr.net"
                   className="hover:text-white transition-colors"
                 >
-                  support@spacehr.com
+                  support@spacehr.net
                 </a>
               </div>
               <div className="flex items-center gap-3 text-gray-400 text-sm">
@@ -249,6 +249,10 @@ export function Footer() {
                 {
                   href: "/tools/true-cost-calculator",
                   label: "True Cost Calculator",
+                },
+                {
+                  href: "/tools/w4-generator",
+                  label: "Free W-4 Form Filling Tool",
                 },
                 {
                   href: "/tools/fw4-form-download",

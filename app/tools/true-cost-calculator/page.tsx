@@ -200,6 +200,12 @@ export default function TrueCostCalculator() {
                         </Button>
                     </Link>
                 </div>
+                
+                <div className="text-center mt-6">
+                  <p className="text-slate-600 dark:text-slate-400 text-sm">
+                    Bringing on a new hire? Try our <Link href="/tools/w4-generator" className="text-blue-600 dark:text-blue-400 hover:underline font-medium">Free W-4 Form Generator</Link> to get them compliant instantly.
+                  </p>
+                </div>
             </div>
          </div>
        </div>
