@@ -126,7 +126,7 @@ export default function LeaveManagementPage() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800">
               <Image
                 src="/team-meeting-collaboration.webp"
-                alt="Beach vacation representing time off"
+                alt="Space HR leave management dashboard showing employee time-off requests, leave balance tracking, and manager approval workflows"
                 width={800}
                 height={600}
                 className="w-full h-auto"
@@ -320,7 +320,7 @@ export default function LeaveManagementPage() {
               <div className="rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800">
                 <Image
                   src="/desktop-design-showcase.webp"
-                  alt="Manager approving leave request"
+                  alt="HR manager approving employee leave request in Space HR leave management system with team calendar visibility and workload impact analysis"
                   width={700}
                   height={500}
                   className="w-full h-auto"

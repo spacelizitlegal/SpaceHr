@@ -106,7 +106,7 @@ export default function AIIntelligencePage() {
             <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src="/engineering-blueprint-review.webp"
-                alt="AI Intelligence Dashboard"
+                alt="Space HR AI intelligence dashboard showing predictive workforce analytics, attrition risk forecasting, and AI-driven HR insights for strategic planning"
                 fill
                 className="object-cover"
                 priority

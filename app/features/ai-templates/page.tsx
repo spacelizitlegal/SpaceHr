@@ -83,7 +83,7 @@ export default function AITemplatesPage() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800">
               <Image
                 src="/team-meeting-collaboration.webp"
-                alt="AI Template Generation Interface"
+                alt="Space HR AI template generation interface showing automated HR document creation for offer letters, policies, and performance review forms"
                 width={800}
                 height={600}
                 className="w-full h-auto"

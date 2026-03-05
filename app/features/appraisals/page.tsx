@@ -85,7 +85,7 @@ export default function AIAppraisalsPage() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800">
               <Image
                 src="/office-team-presentation.webp"
-                alt="AI Appraisal Interface"
+                alt="Space HR 360-degree performance appraisal interface showing competency-based review forms with AI-generated coaching summaries and continuous feedback loop tracking"
                 width={800}
                 height={600}
                 className="w-full h-auto"

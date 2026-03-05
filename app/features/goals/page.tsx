@@ -127,7 +127,7 @@ export default function GoalsPage() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800">
               <Image
                 src="/desktop-design-showcase.webp"
-                alt="Team achieving goals together"
+                alt="Space HR OKR and goal management platform showing team objectives, key results tracking, and asynchronous team alignment for distributed workforces"
                 width={800}
                 height={600}
                 className="w-full h-auto"
@@ -423,7 +423,7 @@ export default function GoalsPage() {
               <div className="rounded-2xl overflow-hidden shadow-2xl">
                 <Image
                   src="/professional-woman-laptop.webp"
-                  alt="Team collaborating on goals"
+                  alt="Distributed team collaborating on OKR goal tracking in Space HR with asynchronous team alignment features for remote and hybrid workforces"
                   width={700}
                   height={500}
                   className="w-full h-auto"

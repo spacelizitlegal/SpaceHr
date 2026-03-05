@@ -117,7 +117,7 @@ export default function AIAutomationPage() {
             <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src="/team-meeting-collaboration.webp"
-                alt="AI Workflow Automation Dashboard"
+                alt="Space HR AI workflow automation dashboard showing automated HR process triggers, approval chains, and AI-powered task management for HRMS operations"
                 fill
                 className="object-cover"
                 priority

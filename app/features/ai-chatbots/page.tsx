@@ -116,7 +116,7 @@ export default function AIChatbotsPage() {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800 bg-gradient-to-br from-gray-900 to-purple-900">
                 <Image
                   src="/desktop-design-showcase.webp"
-                  alt="AI Chatbot Interface"
+                  alt="Space HR AI HR chatbot interface showing conversational employee self-service for payslip queries, policy questions, and leave requests"
                   width={800}
                   height={600}
                   className="w-full h-auto opacity-30"
@@ -510,9 +510,8 @@ export default function AIChatbotsPage() {
                     </h3>
                   </div>
                   <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                    Beyond answering questions, the AI can execute
-                    tasks—booking leave, updating profiles, generating
-                    documents.
+                    Beyond answering questions, the AI can execute tasks—booking
+                    leave, updating profiles, generating documents.
                   </p>
                 </div>
               </div>
@@ -607,7 +606,7 @@ export default function AIChatbotsPage() {
             <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src="/professional-woman-laptop.webp"
-                alt="Enterprise Security"
+                alt="Space HR AI chatbot enterprise security features showing SOC 2 compliance and data encryption for HR data protection"
                 fill
                 className="object-cover"
               />

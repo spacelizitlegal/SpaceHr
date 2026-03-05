@@ -110,7 +110,8 @@ export default function FinanceAnalyticsPage() {
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
                 Transform payroll data into actionable financial insights. Track
                 YTD vs Budget, forecast year-end costs, and optimize workforce
-                spending with AI-powered analytics that help you save up to 15% on labor costs.
+                spending with AI-powered analytics that help you save up to 15%
+                on labor costs.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Link href="/request-a-demo">
@@ -146,7 +147,7 @@ export default function FinanceAnalyticsPage() {
             <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src="/office-team-presentation.webp"
-                alt="Finance Analytics Dashboard"
+                alt="Space HR finance analytics dashboard showing AI labor cost prediction, year-end budget trend forecasting, and liability ledger analysis for HR and CFO teams"
                 fill
                 className="object-cover"
                 priority
@@ -155,17 +156,29 @@ export default function FinanceAnalyticsPage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
               <div className="absolute bottom-4 left-4 right-4 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm rounded-xl p-4 border border-gray-200 dark:border-gray-700">
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">Labor Cost Analysis</span>
-                  <span className="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/50 text-green-600 dark:text-green-400 font-medium">On Track</span>
+                  <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+                    Labor Cost Analysis
+                  </span>
+                  <span className="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/50 text-green-600 dark:text-green-400 font-medium">
+                    On Track
+                  </span>
                 </div>
                 <div className="grid grid-cols-2 gap-3">
                   <div className="bg-blue-50 dark:bg-blue-900/30 rounded-lg p-3">
-                    <div className="text-lg font-bold text-blue-600 dark:text-blue-400">$1.05M</div>
-                    <div className="text-xs text-gray-500 dark:text-gray-400">YTD Spend</div>
+                    <div className="text-lg font-bold text-blue-600 dark:text-blue-400">
+                      $1.05M
+                    </div>
+                    <div className="text-xs text-gray-500 dark:text-gray-400">
+                      YTD Spend
+                    </div>
                   </div>
                   <div className="bg-green-50 dark:bg-green-900/30 rounded-lg p-3">
-                    <div className="text-lg font-bold text-green-600 dark:text-green-400">87.5%</div>
-                    <div className="text-xs text-gray-500 dark:text-gray-400">Budget Used</div>
+                    <div className="text-lg font-bold text-green-600 dark:text-green-400">
+                      87.5%
+                    </div>
+                    <div className="text-xs text-gray-500 dark:text-gray-400">
+                      Budget Used
+                    </div>
                   </div>
                 </div>
               </div>
@@ -179,20 +192,36 @@ export default function FinanceAnalyticsPage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-white mb-2">15%</div>
-              <div className="text-orange-100 text-sm md:text-base">Avg Labor Cost Savings</div>
+              <div className="text-4xl md:text-5xl font-bold text-white mb-2">
+                15%
+              </div>
+              <div className="text-orange-100 text-sm md:text-base">
+                Avg Labor Cost Savings
+              </div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-white mb-2">98%</div>
-              <div className="text-orange-100 text-sm md:text-base">Forecast Accuracy</div>
+              <div className="text-4xl md:text-5xl font-bold text-white mb-2">
+                98%
+              </div>
+              <div className="text-orange-100 text-sm md:text-base">
+                Forecast Accuracy
+              </div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-white mb-2">5 Hrs</div>
-              <div className="text-orange-100 text-sm md:text-base">Saved Weekly on Reports</div>
+              <div className="text-4xl md:text-5xl font-bold text-white mb-2">
+                5 Hrs
+              </div>
+              <div className="text-orange-100 text-sm md:text-base">
+                Saved Weekly on Reports
+              </div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-white mb-2">50+</div>
-              <div className="text-orange-100 text-sm md:text-base">Pre-Built Reports</div>
+              <div className="text-4xl md:text-5xl font-bold text-white mb-2">
+                50+
+              </div>
+              <div className="text-orange-100 text-sm md:text-base">
+                Pre-Built Reports
+              </div>
             </div>
           </div>
         </div>
@@ -223,7 +252,8 @@ export default function FinanceAnalyticsPage() {
                 Real-Time Labor Cost Tracking
               </h3>
               <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
-                Get instant visibility into your total labor costs across the entire organization with live dashboards.
+                Get instant visibility into your total labor costs across the
+                entire organization with live dashboards.
               </p>
               <ul className="space-y-2 text-gray-600 dark:text-gray-400 text-sm">
                 <li className="flex items-start gap-2">
@@ -244,7 +274,9 @@ export default function FinanceAnalyticsPage() {
                 </li>
               </ul>
               <div className="mt-4 pt-4 border-t border-orange-200 dark:border-orange-800">
-                <span className="text-xs font-semibold text-orange-600 dark:text-orange-400">15+ analysis dimensions</span>
+                <span className="text-xs font-semibold text-orange-600 dark:text-orange-400">
+                  15+ analysis dimensions
+                </span>
               </div>
             </div>
 
@@ -256,7 +288,8 @@ export default function FinanceAnalyticsPage() {
                 Budget Variance Analysis
               </h3>
               <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
-                Never be surprised by budget overruns. Get real-time alerts when spending deviates from plan.
+                Never be surprised by budget overruns. Get real-time alerts when
+                spending deviates from plan.
               </p>
               <ul className="space-y-2 text-gray-600 dark:text-gray-400 text-sm">
                 <li className="flex items-start gap-2">
@@ -277,7 +310,9 @@ export default function FinanceAnalyticsPage() {
                 </li>
               </ul>
               <div className="mt-4 pt-4 border-t border-blue-200 dark:border-blue-800">
-                <span className="text-xs font-semibold text-blue-600 dark:text-blue-400">98% forecast accuracy</span>
+                <span className="text-xs font-semibold text-blue-600 dark:text-blue-400">
+                  98% forecast accuracy
+                </span>
               </div>
             </div>
 
@@ -289,7 +324,8 @@ export default function FinanceAnalyticsPage() {
                 ACH & Banking Integration
               </h3>
               <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">
-                Streamline payments with NACHA-compliant ACH file generation and multi-bank support.
+                Streamline payments with NACHA-compliant ACH file generation and
+                multi-bank support.
               </p>
               <ul className="space-y-2 text-gray-600 dark:text-gray-400 text-sm">
                 <li className="flex items-start gap-2">
@@ -310,7 +346,9 @@ export default function FinanceAnalyticsPage() {
                 </li>
               </ul>
               <div className="mt-4 pt-4 border-t border-purple-200 dark:border-purple-800">
-                <span className="text-xs font-semibold text-purple-600 dark:text-purple-400">Same-day ACH supported</span>
+                <span className="text-xs font-semibold text-purple-600 dark:text-purple-400">
+                  Same-day ACH supported
+                </span>
               </div>
             </div>
           </div>
@@ -329,10 +367,11 @@ export default function FinanceAnalyticsPage() {
                 CFO-Ready Analytics at a Glance
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
-                Real-time visibility into labor costs across your entire organization.
-                Filter by department, location, or time period. Export reports with one click.
+                Real-time visibility into labor costs across your entire
+                organization. Filter by department, location, or time period.
+                Export reports with one click.
               </p>
-              
+
               <div className="space-y-4">
                 {[
                   { text: "Real-time cost per employee metrics", icon: Users },
@@ -344,7 +383,9 @@ export default function FinanceAnalyticsPage() {
                     <div className="w-8 h-8 rounded-lg bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
                       <item.icon className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                     </div>
-                    <span className="text-gray-700 dark:text-gray-300">{item.text}</span>
+                    <span className="text-gray-700 dark:text-gray-300">
+                      {item.text}
+                    </span>
                   </div>
                 ))}
               </div>
@@ -358,30 +399,44 @@ export default function FinanceAnalyticsPage() {
                   <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                   <div className="w-3 h-3 rounded-full bg-green-500"></div>
                 </div>
-                <span className="text-xs text-gray-500 dark:text-gray-400">Finance Dashboard</span>
+                <span className="text-xs text-gray-500 dark:text-gray-400">
+                  Finance Dashboard
+                </span>
               </div>
 
               {/* Summary Cards */}
               <div className="grid grid-cols-3 gap-4 mb-6">
                 <div className="bg-white dark:bg-gray-900 rounded-xl p-4">
-                  <div className="text-2xl font-bold text-gray-900 dark:text-white">$2.8M</div>
-                  <div className="text-xs text-gray-500 dark:text-gray-400">Total Payroll YTD</div>
+                  <div className="text-2xl font-bold text-gray-900 dark:text-white">
+                    $2.8M
+                  </div>
+                  <div className="text-xs text-gray-500 dark:text-gray-400">
+                    Total Payroll YTD
+                  </div>
                   <div className="flex items-center gap-1 mt-2 text-green-500 text-xs">
                     <TrendingUp className="w-3 h-3" />
                     <span>On Budget</span>
                   </div>
                 </div>
                 <div className="bg-white dark:bg-gray-900 rounded-xl p-4">
-                  <div className="text-2xl font-bold text-gray-900 dark:text-white">$4,250</div>
-                  <div className="text-xs text-gray-500 dark:text-gray-400">Avg Cost/Employee</div>
+                  <div className="text-2xl font-bold text-gray-900 dark:text-white">
+                    $4,250
+                  </div>
+                  <div className="text-xs text-gray-500 dark:text-gray-400">
+                    Avg Cost/Employee
+                  </div>
                   <div className="flex items-center gap-1 mt-2 text-blue-500 text-xs">
                     <TrendingUp className="w-3 h-3" />
                     <span>+2.3% YoY</span>
                   </div>
                 </div>
                 <div className="bg-white dark:bg-gray-900 rounded-xl p-4">
-                  <div className="text-2xl font-bold text-gray-900 dark:text-white">93%</div>
-                  <div className="text-xs text-gray-500 dark:text-gray-400">Budget Utilization</div>
+                  <div className="text-2xl font-bold text-gray-900 dark:text-white">
+                    93%
+                  </div>
+                  <div className="text-xs text-gray-500 dark:text-gray-400">
+                    Budget Utilization
+                  </div>
                   <div className="flex items-center gap-1 mt-2 text-green-500 text-xs">
                     <Target className="w-3 h-3" />
                     <span>On Track</span>
@@ -392,17 +447,24 @@ export default function FinanceAnalyticsPage() {
               {/* Chart Area */}
               <div className="bg-white dark:bg-gray-900 rounded-xl p-4 mb-4">
                 <div className="flex items-center justify-between mb-4">
-                  <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">Monthly Labor Costs</span>
+                  <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+                    Monthly Labor Costs
+                  </span>
                   <span className="text-xs text-gray-500">Last 6 months</span>
                 </div>
                 <div className="flex items-end gap-3 h-24">
                   {[65, 72, 68, 80, 75, 85].map((height, index) => (
-                    <div key={index} className="flex-1 flex flex-col items-center gap-1">
-                      <div 
+                    <div
+                      key={index}
+                      className="flex-1 flex flex-col items-center gap-1"
+                    >
+                      <div
                         className="w-full bg-gradient-to-t from-orange-500 to-orange-400 rounded-t"
                         style={{ height: `${height}%` }}
                       ></div>
-                      <span className="text-xs text-gray-400">{['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'][index]}</span>
+                      <span className="text-xs text-gray-400">
+                        {["Jan", "Feb", "Mar", "Apr", "May", "Jun"][index]}
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -410,22 +472,28 @@ export default function FinanceAnalyticsPage() {
 
               {/* Department Breakdown */}
               <div className="bg-white dark:bg-gray-900 rounded-xl p-4">
-                <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">By Department</span>
+                <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+                  By Department
+                </span>
                 <div className="mt-3 space-y-2">
                   {[
-                    { dept: 'Engineering', amount: '$1.2M', percent: 43 },
-                    { dept: 'Sales', amount: '$680K', percent: 24 },
-                    { dept: 'Operations', amount: '$520K', percent: 19 },
+                    { dept: "Engineering", amount: "$1.2M", percent: 43 },
+                    { dept: "Sales", amount: "$680K", percent: 24 },
+                    { dept: "Operations", amount: "$520K", percent: 19 },
                   ].map((item, index) => (
                     <div key={index} className="flex items-center gap-3">
-                      <span className="text-xs text-gray-600 dark:text-gray-400 w-20">{item.dept}</span>
+                      <span className="text-xs text-gray-600 dark:text-gray-400 w-20">
+                        {item.dept}
+                      </span>
                       <div className="flex-1 h-2 bg-gray-100 dark:bg-gray-800 rounded-full overflow-hidden">
-                        <div 
+                        <div
                           className="h-full bg-gradient-to-r from-orange-500 to-red-500 rounded-full"
                           style={{ width: `${item.percent}%` }}
                         ></div>
                       </div>
-                      <span className="text-xs font-semibold text-gray-700 dark:text-gray-300 w-16 text-right">{item.amount}</span>
+                      <span className="text-xs font-semibold text-gray-700 dark:text-gray-300 w-16 text-right">
+                        {item.amount}
+                      </span>
                     </div>
                   ))}
                 </div>
@@ -604,7 +672,9 @@ export default function FinanceAnalyticsPage() {
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
                   YTD vs Annual Budget Dashboard
                 </h3>
-                <span className="text-xs px-3 py-1 rounded-full bg-green-100 dark:bg-green-900/50 text-green-600 dark:text-green-400 font-semibold">Live</span>
+                <span className="text-xs px-3 py-1 rounded-full bg-green-100 dark:bg-green-900/50 text-green-600 dark:text-green-400 font-semibold">
+                  Live
+                </span>
               </div>
               <div className="space-y-6">
                 <div>
@@ -656,21 +726,28 @@ export default function FinanceAnalyticsPage() {
 
                 {/* Variance by Month */}
                 <div className="bg-white dark:bg-[#1e293b] rounded-xl p-4">
-                  <span className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3 block">Monthly Variance</span>
+                  <span className="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3 block">
+                    Monthly Variance
+                  </span>
                   <div className="grid grid-cols-6 gap-2">
                     {[
-                      { month: 'Jan', variance: -2 },
-                      { month: 'Feb', variance: 3 },
-                      { month: 'Mar', variance: -1 },
-                      { month: 'Apr', variance: 5 },
-                      { month: 'May', variance: -3 },
-                      { month: 'Jun', variance: 2 },
+                      { month: "Jan", variance: -2 },
+                      { month: "Feb", variance: 3 },
+                      { month: "Mar", variance: -1 },
+                      { month: "Apr", variance: 5 },
+                      { month: "May", variance: -3 },
+                      { month: "Jun", variance: 2 },
                     ].map((item, index) => (
                       <div key={index} className="text-center">
-                        <div className={`text-xs font-bold ${item.variance >= 0 ? 'text-red-500' : 'text-green-500'}`}>
-                          {item.variance >= 0 ? '+' : ''}{item.variance}%
+                        <div
+                          className={`text-xs font-bold ${item.variance >= 0 ? "text-red-500" : "text-green-500"}`}
+                        >
+                          {item.variance >= 0 ? "+" : ""}
+                          {item.variance}%
                         </div>
-                        <div className="text-xs text-gray-400">{item.month}</div>
+                        <div className="text-xs text-gray-400">
+                          {item.month}
+                        </div>
                       </div>
                     ))}
                   </div>
@@ -763,7 +840,8 @@ export default function FinanceAnalyticsPage() {
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
               Generate NACHA-compliant ACH files and process batch direct
-              deposits with ease. Support for same-day ACH and multi-bank routing.
+              deposits with ease. Support for same-day ACH and multi-bank
+              routing.
             </p>
           </div>
 
@@ -778,15 +856,21 @@ export default function FinanceAnalyticsPage() {
               <ul className="space-y-2">
                 <li className="flex items-start gap-2 text-sm">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
-                  <span className="text-gray-600 dark:text-gray-400">NACHA-compliant batch files</span>
+                  <span className="text-gray-600 dark:text-gray-400">
+                    NACHA-compliant batch files
+                  </span>
                 </li>
                 <li className="flex items-start gap-2 text-sm">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
-                  <span className="text-gray-600 dark:text-gray-400">One-click export</span>
+                  <span className="text-gray-600 dark:text-gray-400">
+                    One-click export
+                  </span>
                 </li>
                 <li className="flex items-start gap-2 text-sm">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
-                  <span className="text-gray-600 dark:text-gray-400">Bank-ready format</span>
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Bank-ready format
+                  </span>
                 </li>
               </ul>
             </div>
@@ -801,15 +885,21 @@ export default function FinanceAnalyticsPage() {
               <ul className="space-y-2">
                 <li className="flex items-start gap-2 text-sm">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
-                  <span className="text-gray-600 dark:text-gray-400">Split deposits</span>
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Split deposits
+                  </span>
                 </li>
                 <li className="flex items-start gap-2 text-sm">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
-                  <span className="text-gray-600 dark:text-gray-400">% or fixed allocations</span>
+                  <span className="text-gray-600 dark:text-gray-400">
+                    % or fixed allocations
+                  </span>
                 </li>
                 <li className="flex items-start gap-2 text-sm">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
-                  <span className="text-gray-600 dark:text-gray-400">Paper check fallback</span>
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Paper check fallback
+                  </span>
                 </li>
               </ul>
             </div>
@@ -824,15 +914,21 @@ export default function FinanceAnalyticsPage() {
               <ul className="space-y-2">
                 <li className="flex items-start gap-2 text-sm">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
-                  <span className="text-gray-600 dark:text-gray-400">Expedited payments</span>
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Expedited payments
+                  </span>
                 </li>
                 <li className="flex items-start gap-2 text-sm">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
-                  <span className="text-gray-600 dark:text-gray-400">Emergency payroll</span>
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Emergency payroll
+                  </span>
                 </li>
                 <li className="flex items-start gap-2 text-sm">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
-                  <span className="text-gray-600 dark:text-gray-400">Bonus processing</span>
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Bonus processing
+                  </span>
                 </li>
               </ul>
             </div>
@@ -847,15 +943,21 @@ export default function FinanceAnalyticsPage() {
               <ul className="space-y-2">
                 <li className="flex items-start gap-2 text-sm">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
-                  <span className="text-gray-600 dark:text-gray-400">Multiple funding accounts</span>
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Multiple funding accounts
+                  </span>
                 </li>
                 <li className="flex items-start gap-2 text-sm">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
-                  <span className="text-gray-600 dark:text-gray-400">Entity-level routing</span>
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Entity-level routing
+                  </span>
                 </li>
                 <li className="flex items-start gap-2 text-sm">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
-                  <span className="text-gray-600 dark:text-gray-400">Bank reconciliation</span>
+                  <span className="text-gray-600 dark:text-gray-400">
+                    Bank reconciliation
+                  </span>
                 </li>
               </ul>
             </div>
@@ -884,7 +986,9 @@ export default function FinanceAnalyticsPage() {
                   <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-3">
                     <DollarSign className="w-6 h-6" />
                   </div>
-                  <div className="text-lg font-bold mb-1">Payroll → Finance</div>
+                  <div className="text-lg font-bold mb-1">
+                    Payroll → Finance
+                  </div>
                   <div className="text-white/80 text-sm">
                     Labor cost data flows instantly
                   </div>
@@ -933,23 +1037,39 @@ export default function FinanceAnalyticsPage() {
               Enterprise-Grade Financial Security
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              Your financial data is protected by the same standards used by major banks
+              Your financial data is protected by the same standards used by
+              major banks
             </p>
           </div>
 
           <div className="grid md:grid-cols-4 gap-6">
             {[
               { icon: Shield, title: "SOC 2 Type II", desc: "Annual audits" },
-              { icon: Lock, title: "256-bit Encryption", desc: "AES-256 at rest & in transit" },
-              { icon: BadgeCheck, title: "NACHA Certified", desc: "ACH compliance" },
+              {
+                icon: Lock,
+                title: "256-bit Encryption",
+                desc: "AES-256 at rest & in transit",
+              },
+              {
+                icon: BadgeCheck,
+                title: "NACHA Certified",
+                desc: "ACH compliance",
+              },
               { icon: Globe, title: "GDPR Ready", desc: "Data protection" },
             ].map((item, index) => (
-              <div key={index} className="bg-white dark:bg-gray-800 rounded-xl p-6 text-center border border-gray-200 dark:border-gray-700">
+              <div
+                key={index}
+                className="bg-white dark:bg-gray-800 rounded-xl p-6 text-center border border-gray-200 dark:border-gray-700"
+              >
                 <div className="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center mx-auto mb-3">
                   <item.icon className="w-6 h-6 text-green-600 dark:text-green-400" />
                 </div>
-                <h3 className="font-bold text-gray-900 dark:text-white mb-1">{item.title}</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400">{item.desc}</p>
+                <h3 className="font-bold text-gray-900 dark:text-white mb-1">
+                  {item.title}
+                </h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  {item.desc}
+                </p>
               </div>
             ))}
           </div>
@@ -957,7 +1077,9 @@ export default function FinanceAnalyticsPage() {
           <div className="mt-8 text-center">
             <div className="inline-flex items-center gap-2 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-full px-6 py-3">
               <BadgeCheck className="w-5 h-5 text-green-600 dark:text-green-400" />
-              <span className="text-green-700 dark:text-green-300 font-semibold">Financial Data Protection Guarantee</span>
+              <span className="text-green-700 dark:text-green-300 font-semibold">
+                Financial Data Protection Guarantee
+              </span>
             </div>
           </div>
         </div>
@@ -982,44 +1104,55 @@ export default function FinanceAnalyticsPage() {
             {[
               {
                 title: "Healthcare",
-                description: "Track labor costs across shifts, departments, and facilities. Monitor overtime compliance and staffing ratios.",
+                description:
+                  "Track labor costs across shifts, departments, and facilities. Monitor overtime compliance and staffing ratios.",
                 color: "red",
               },
               {
                 title: "Manufacturing",
-                description: "Analyze labor costs per unit produced. Optimize shift scheduling and track productivity metrics.",
+                description:
+                  "Analyze labor costs per unit produced. Optimize shift scheduling and track productivity metrics.",
                 color: "blue",
               },
               {
                 title: "Retail",
-                description: "Compare labor costs to sales revenue. Optimize staffing for peak seasons and track store-level profitability.",
+                description:
+                  "Compare labor costs to sales revenue. Optimize staffing for peak seasons and track store-level profitability.",
                 color: "green",
               },
               {
                 title: "Technology",
-                description: "Manage contractor vs employee costs. Track R&D labor for tax credits and project-based budgeting.",
+                description:
+                  "Manage contractor vs employee costs. Track R&D labor for tax credits and project-based budgeting.",
                 color: "purple",
               },
               {
                 title: "Professional Services",
-                description: "Bill back labor costs to clients. Track utilization rates and profitability by engagement.",
+                description:
+                  "Bill back labor costs to clients. Track utilization rates and profitability by engagement.",
                 color: "orange",
               },
               {
                 title: "Non-Profit",
-                description: "Allocate labor costs to grants and programs. Generate reports for funders and board members.",
+                description:
+                  "Allocate labor costs to grants and programs. Generate reports for funders and board members.",
                 color: "teal",
               },
             ].map((useCase, index) => (
               <div
                 key={index}
                 className={`group bg-gradient-to-br rounded-2xl p-6 border transition-all hover:shadow-lg cursor-pointer ${
-                  useCase.color === 'red' ? 'from-red-50 to-orange-50 dark:from-red-950/30 dark:to-orange-950/30 border-red-200 dark:border-red-800 hover:border-red-300 dark:hover:border-red-700' :
-                  useCase.color === 'blue' ? 'from-blue-50 to-indigo-50 dark:from-blue-950/30 dark:to-indigo-950/30 border-blue-200 dark:border-blue-800 hover:border-blue-300 dark:hover:border-blue-700' :
-                  useCase.color === 'green' ? 'from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30 border-green-200 dark:border-green-800 hover:border-green-300 dark:hover:border-green-700' :
-                  useCase.color === 'purple' ? 'from-purple-50 to-pink-50 dark:from-purple-950/30 dark:to-pink-950/30 border-purple-200 dark:border-purple-800 hover:border-purple-300 dark:hover:border-purple-700' :
-                  useCase.color === 'orange' ? 'from-orange-50 to-yellow-50 dark:from-orange-950/30 dark:to-yellow-950/30 border-orange-200 dark:border-orange-800 hover:border-orange-300 dark:hover:border-orange-700' :
-                  'from-teal-50 to-cyan-50 dark:from-teal-950/30 dark:to-cyan-950/30 border-teal-200 dark:border-teal-800 hover:border-teal-300 dark:hover:border-teal-700'
+                  useCase.color === "red"
+                    ? "from-red-50 to-orange-50 dark:from-red-950/30 dark:to-orange-950/30 border-red-200 dark:border-red-800 hover:border-red-300 dark:hover:border-red-700"
+                    : useCase.color === "blue"
+                      ? "from-blue-50 to-indigo-50 dark:from-blue-950/30 dark:to-indigo-950/30 border-blue-200 dark:border-blue-800 hover:border-blue-300 dark:hover:border-blue-700"
+                      : useCase.color === "green"
+                        ? "from-green-50 to-emerald-50 dark:from-green-950/30 dark:to-emerald-950/30 border-green-200 dark:border-green-800 hover:border-green-300 dark:hover:border-green-700"
+                        : useCase.color === "purple"
+                          ? "from-purple-50 to-pink-50 dark:from-purple-950/30 dark:to-pink-950/30 border-purple-200 dark:border-purple-800 hover:border-purple-300 dark:hover:border-purple-700"
+                          : useCase.color === "orange"
+                            ? "from-orange-50 to-yellow-50 dark:from-orange-950/30 dark:to-yellow-950/30 border-orange-200 dark:border-orange-800 hover:border-orange-300 dark:hover:border-orange-700"
+                            : "from-teal-50 to-cyan-50 dark:from-teal-950/30 dark:to-cyan-950/30 border-teal-200 dark:border-teal-800 hover:border-teal-300 dark:hover:border-teal-700"
                 }`}
               >
                 <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
@@ -1045,7 +1178,8 @@ export default function FinanceAnalyticsPage() {
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
             Stop flying blind with labor costs. Get real-time visibility,
-            predictive forecasting, and budget control that saves 15% on average.
+            predictive forecasting, and budget control that saves 15% on
+            average.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link href="/request-a-demo">
@@ -1090,10 +1224,22 @@ export default function FinanceAnalyticsPage() {
           </h2>
           <div className="grid md:grid-cols-4 gap-6">
             {[
-              { name: "AI-Powered Payroll", href: "/features/payroll", icon: Calculator },
+              {
+                name: "AI-Powered Payroll",
+                href: "/features/payroll",
+                icon: Calculator,
+              },
               { name: "Tax Compliance", href: "/features/tax", icon: FileText },
-              { name: "Employee Appraisals", href: "/features/appraisals", icon: Users },
-              { name: "AI Intelligence", href: "/features/ai-intelligence", icon: Sparkles },
+              {
+                name: "Employee Appraisals",
+                href: "/features/appraisals",
+                icon: Users,
+              },
+              {
+                name: "AI Intelligence",
+                href: "/features/ai-intelligence",
+                icon: Sparkles,
+              },
             ].map((feature, index) => (
               <Link key={index} href={feature.href}>
                 <div className="group bg-gray-50 dark:bg-gray-800 rounded-xl p-4 border border-gray-200 dark:border-gray-700 hover:border-orange-300 dark:hover:border-orange-700 hover:shadow-md transition-all cursor-pointer">

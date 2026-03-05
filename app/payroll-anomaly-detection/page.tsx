@@ -12,6 +12,12 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import {
+  JsonLd,
+  generateFAQSchema,
+  generateBreadcrumbSchema,
+} from "@/components/JsonLd";
+import { FAQAccordion } from "@/components/FAQAccordion";
 
 export const metadata: Metadata = {
   title: "AI Payroll Error Detection Software | Catch Ghost Employees",
@@ -28,9 +34,48 @@ export const metadata: Metadata = {
   ],
 };
 
+const anomalyFaqs = [
+  {
+    question: "How does AI detect payroll anomalies?",
+    answer:
+      "Space HR's AI Payroll Auditor uses machine learning models trained on payroll transaction patterns to identify statistical outliers before every pay run. It benchmarks each employee's current payroll data against their 12-month history, flagging deviations such as sudden salary increases, duplicate bank account entries, payments to terminated employees (ghost employees), overtime spikes exceeding baseline norms, and incorrect tax bracket applications. All flagged items are reviewed by HR before the NACHA-compliant ACH file is generated and funds are transferred.",
+  },
+  {
+    question: "What is a ghost employee and how does Space HR detect them?",
+    answer:
+      "A ghost employee is a fictitious or terminated worker who continues to receive payroll payments — either through system error or intentional fraud. Space HR prevents ghost employee costs by cross-referencing every payment recipient against the active employee directory and HR records in real-time. If a pay recipient's employment status is terminated, on leave without pay, or flagged as inactive, the system automatically blocks the payment and alerts HR before the payroll run is processed.",
+  },
+  {
+    question: "What types of payroll anomalies does the AI scan for?",
+    answer:
+      "The AI auditor scans for a comprehensive set of anomalies in the gross-to-net calculation pipeline: duplicate employee payments, ghost employee entries, unauthorized salary rate changes, overtime miscalculations, incorrect FUTA/SICA tax withholding, benefits deduction discrepancies, missing Social Security numbers, retroactive pay errors, FLSA minimum wage violations, and inconsistencies in the liability ledger versus actual disbursements.",
+  },
+  {
+    question:
+      "How does payroll anomaly detection protect against compliance risk?",
+    answer:
+      "Every payroll error that goes undetected creates downstream compliance risk — incorrect FUTA/FICA remittances trigger IRS penalties, FLSA overtime violations result in back-pay liability, and inaccurate state tax withholding creates year-end reconciliation issues. Space HR's pre-processing audit layer catches these errors before the payroll run, ensuring your liability ledger is accurate, your tax filings are correct, and your NACHA ACH files are clean before they reach the bank.",
+  },
+  {
+    question: "Can I see a report of all detected anomalies per pay run?",
+    answer:
+      "Yes. After every payroll audit, Space HR generates a structured Anomaly Report that lists each flagged item with its anomaly type, severity level (critical / warning / informational), the affected employee's ID, the variance amount, and the recommended resolution. The report is stored in your audit log for compliance documentation and can be exported for external audits or CFO review.",
+  },
+];
+
+const anomalyBreadcrumb = generateBreadcrumbSchema([
+  { name: "Home", url: "https://spacehr.net" },
+  {
+    name: "Payroll Anomaly Detection",
+    url: "https://spacehr.net/payroll-anomaly-detection",
+  },
+]);
+
 export default function PayrollAnomalyDetectionPage() {
   return (
     <div className="min-h-screen bg-white dark:bg-[#0f172a] font-sans">
+      <JsonLd data={generateFAQSchema(anomalyFaqs)} />
+      <JsonLd data={anomalyBreadcrumb} />
       {/* Hero Section - Trust & Alertness Color Palette */}
       <section className="pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-slate-900/50 dark:via-blue-900/20 dark:to-indigo-900/20 -z-10"></div>
@@ -51,8 +96,10 @@ export default function PayrollAnomalyDetectionPage() {
               {" "}
               AI Auditor{" "}
             </span>
-            scans every line item for anomalies, variance, and compliance risks
-            in real-time.
+            scans every line item for anomalies in{" "}
+            <strong>gross-to-net calculations</strong>, FUTA/SICA withholding,
+            and <strong>liability ledger</strong> reconciliation before money
+            leaves your account.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link href="https://cad.spaceaiapp.com/login">
@@ -141,97 +188,154 @@ export default function PayrollAnomalyDetectionPage() {
               </h2>
               <p className="text-lg text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
                 Space HR provides a pre-processing audit layer that acts as a
-                firewall for your finance team. We flag issues <strong>before</strong>{" "}
-                money leaves the account.
+                firewall for your finance team. We flag issues{" "}
+                <strong>before</strong> money leaves the account.
               </p>
-              
+
               <div className="space-y-6">
                 <div className="flex gap-4">
                   <div className="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center shrink-0">
                     <CheckCircle2 className="w-5 h-5 text-green-600 dark:text-green-400" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-bold text-slate-900 dark:text-white mb-1">Pre-Run Variance Analysis</h4>
-                    <p className="text-slate-600 dark:text-slate-400">Compares current payroll against historical averages and flags &gt;5% deviations.</p>
+                    <h4 className="text-lg font-bold text-slate-900 dark:text-white mb-1">
+                      Pre-Run Variance Analysis
+                    </h4>
+                    <p className="text-slate-600 dark:text-slate-400">
+                      Compares current payroll against historical averages and
+                      flags &gt;5% deviations.
+                    </p>
                   </div>
                 </div>
-                 <div className="flex gap-4">
+                <div className="flex gap-4">
                   <div className="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center shrink-0">
                     <CheckCircle2 className="w-5 h-5 text-green-600 dark:text-green-400" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-bold text-slate-900 dark:text-white mb-1">Active-Status Verification</h4>
-                    <p className="text-slate-600 dark:text-slate-400">Cross-references pay recipients with active employee directories and resignation dates.</p>
+                    <h4 className="text-lg font-bold text-slate-900 dark:text-white mb-1">
+                      Active-Status Verification
+                    </h4>
+                    <p className="text-slate-600 dark:text-slate-400">
+                      Cross-references pay recipients with active employee
+                      directories and resignation dates.
+                    </p>
                   </div>
                 </div>
-                 <div className="flex gap-4">
+                <div className="flex gap-4">
                   <div className="w-10 h-10 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center shrink-0">
                     <CheckCircle2 className="w-5 h-5 text-green-600 dark:text-green-400" />
                   </div>
                   <div>
-                    <h4 className="text-lg font-bold text-slate-900 dark:text-white mb-1">Global Tax Sync</h4>
-                    <p className="text-slate-600 dark:text-slate-400">Real-time validation against the latest federal, state, and local tax tables.</p>
+                    <h4 className="text-lg font-bold text-slate-900 dark:text-white mb-1">
+                      Global Tax Sync
+                    </h4>
+                    <p className="text-slate-600 dark:text-slate-400">
+                      Real-time validation against the latest federal, state,
+                      and local tax tables.
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
-             <div className="relative">
-                <div className="absolute -inset-4 bg-gradient-to-r from-red-500 to-indigo-500 rounded-3xl opacity-20 blur-2xl"></div>
-                <div className="relative bg-slate-900 text-white rounded-2xl p-8 border border-slate-700 shadow-2xl">
-                    <div className="flex items-center justify-between border-b border-slate-700 pb-4 mb-6">
-                        <div className="flex items-center gap-3">
-                            <History className="w-5 h-5 text-red-500" />
-                            <span className="font-bold">Audit Log: Run #2024-10-A</span>
-                        </div>
-                        <span className="text-red-400 text-sm font-bold bg-red-900/20 px-3 py-1 rounded-full border border-red-900/50">3 Critical Flags Found</span>
-                    </div>
-                    <div className="space-y-4">
-                        <div className="p-4 rounded-lg bg-red-500/10 border border-red-500/20 flex gap-4">
-                            <ShieldAlert className="w-5 h-5 text-red-500 shrink-0 mt-1" />
-                            <div>
-                                <p className="font-semibold text-red-200">Ghost Employee Detected</p>
-                                <p className="text-sm text-slate-400">ID #4029 (Terminated Oct 1st) included in batch.</p>
-                            </div>
-                        </div>
-                         <div className="p-4 rounded-lg bg-orange-500/10 border border-orange-500/20 flex gap-4">
-                            <TrendingDown className="w-5 h-5 text-orange-500 shrink-0 mt-1" />
-                            <div>
-                                <p className="font-semibold text-orange-200">Abnormal Overtime Spike</p>
-                                <p className="text-sm text-slate-400">Dept: Logistics (+45% vs avg). Approval pending.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="mt-6 pt-4 border-t border-slate-700 flex justify-between items-center">
-                        <span className="text-sm text-slate-400">Status: <span className="text-red-400 font-bold">Blocked</span></span>
-                         <Button size="sm" className="bg-white text-slate-900 hover:bg-slate-200">Review Anomalies</Button>
-                    </div>
+            <div className="relative">
+              <div className="absolute -inset-4 bg-gradient-to-r from-red-500 to-indigo-500 rounded-3xl opacity-20 blur-2xl"></div>
+              <div className="relative bg-slate-900 text-white rounded-2xl p-8 border border-slate-700 shadow-2xl">
+                <div className="flex items-center justify-between border-b border-slate-700 pb-4 mb-6">
+                  <div className="flex items-center gap-3">
+                    <History className="w-5 h-5 text-red-500" />
+                    <span className="font-bold">Audit Log: Run #2024-10-A</span>
+                  </div>
+                  <span className="text-red-400 text-sm font-bold bg-red-900/20 px-3 py-1 rounded-full border border-red-900/50">
+                    3 Critical Flags Found
+                  </span>
                 </div>
+                <div className="space-y-4">
+                  <div className="p-4 rounded-lg bg-red-500/10 border border-red-500/20 flex gap-4">
+                    <ShieldAlert className="w-5 h-5 text-red-500 shrink-0 mt-1" />
+                    <div>
+                      <p className="font-semibold text-red-200">
+                        Ghost Employee Detected
+                      </p>
+                      <p className="text-sm text-slate-400">
+                        ID #4029 (Terminated Oct 1st) included in batch.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="p-4 rounded-lg bg-orange-500/10 border border-orange-500/20 flex gap-4">
+                    <TrendingDown className="w-5 h-5 text-orange-500 shrink-0 mt-1" />
+                    <div>
+                      <p className="font-semibold text-orange-200">
+                        Abnormal Overtime Spike
+                      </p>
+                      <p className="text-sm text-slate-400">
+                        Dept: Logistics (+45% vs avg). Approval pending.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-6 pt-4 border-t border-slate-700 flex justify-between items-center">
+                  <span className="text-sm text-slate-400">
+                    Status:{" "}
+                    <span className="text-red-400 font-bold">Blocked</span>
+                  </span>
+                  <Button
+                    size="sm"
+                    className="bg-white text-slate-900 hover:bg-slate-200"
+                  >
+                    Review Anomalies
+                  </Button>
+                </div>
+              </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ SECTION */}
+      <section className="py-24 bg-white dark:bg-[#0f172a]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">
+              People Also Ask: AI Payroll Anomaly Detection
+            </h2>
+            <p className="text-lg text-slate-600 dark:text-slate-400">
+              Answers to the most common questions about how AI detects payroll
+              anomalies, ghost employees, and compliance risks.
+            </p>
+          </div>
+          <FAQAccordion items={anomalyFaqs} />
         </div>
       </section>
 
       {/* ROI & CTA */}
       <section className="py-24 bg-slate-900 text-center">
         <div className="container mx-auto px-4 max-w-4xl">
-           <h2 className="text-3xl md:text-5xl font-bold text-white mb-8">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-8">
             Protect Your Bottom Line Today
-           </h2>
-           <p className="text-xl text-slate-300 mb-10 max-w-2xl mx-auto">
-            Schedule a demonstration with our Finance Solutions team to see exactly how Space HR can secure your payroll process.
-           </p>
-           <div className="flex flex-col sm:flex-row justify-center gap-6">
-             <Link href="https://cad.spaceaiapp.com/login">
-                <Button size="lg" className="h-16 px-8 text-lg bg-red-600 hover:bg-red-700 text-white rounded-full shadow-red-900/20 shadow-xl">
-                    Start Protection Now
-                </Button>
-             </Link>
-             <Link href="/request-a-demo">
-                  <Button size="lg" variant="outline" className="h-16 px-8 text-lg border-slate-600 text-white hover:bg-slate-800 rounded-full">
-                    Talk to Sales
-                </Button>
-             </Link>
-           </div>
+          </h2>
+          <p className="text-xl text-slate-300 mb-10 max-w-2xl mx-auto">
+            Schedule a demonstration with our Finance Solutions team to see
+            exactly how Space HR can secure your payroll process.
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-6">
+            <Link href="https://cad.spaceaiapp.com/login">
+              <Button
+                size="lg"
+                className="h-16 px-8 text-lg bg-red-600 hover:bg-red-700 text-white rounded-full shadow-red-900/20 shadow-xl"
+              >
+                Start Protection Now
+              </Button>
+            </Link>
+            <Link href="/request-a-demo">
+              <Button
+                size="lg"
+                variant="outline"
+                className="h-16 px-8 text-lg border-slate-600 text-white hover:bg-slate-800 rounded-full"
+              >
+                Talk to Sales
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
     </div>

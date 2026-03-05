@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 import { blogPosts } from "@/lib/blogData";
+import { courses } from "@/lib/courseData";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://spacehr.net";
@@ -296,6 +297,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.7,
     },
+    {
+      url: `${baseUrl}/tools/w2-form-download`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/tools/w4-generator`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/sitemap-page`,
+      lastModified: now,
+      changeFrequency: "monthly",
+      priority: 0.4,
+    },
   ];
 
   // ─── Blog Pages (Priority 0.7) ───
@@ -322,6 +341,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.8,
     },
+    ...courses.map((course) => ({
+      url: `${baseUrl}/courses/${course.slug}`,
+      lastModified: now,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    })),
   ];
 
   // ─── Compliance Pages (Priority 0.7) ───

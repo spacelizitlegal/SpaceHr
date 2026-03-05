@@ -1,183 +1,295 @@
-export const blogPosts = [
+export type BlogPost = {
+  slug: string;
+  title: string;
+  summary: string;
+  content: string;
+  date: string;
+  category: string;
+  readTime: string;
+};
+
+function slugify(input: string): string {
+  return input
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-");
+}
+
+function toDisplayDate(baseDate: Date, offsetDays: number): string {
+  const date = new Date(baseDate);
+  date.setDate(date.getDate() + offsetDays);
+  return date.toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  });
+}
+
+function estimateReadTime(html: string): string {
+  const plain = html.replace(/<[^>]+>/g, " ");
+  const words = plain.split(/\s+/).filter(Boolean).length;
+  const minutes = Math.max(6, Math.ceil(words / 180));
+  return `${minutes} min read`;
+}
+
+function createLongFormContent(
+  title: string,
+  clusterName: string,
+  primaryFeatureHref = "/features/ai-intelligence"
+): string {
+  return `
+    <p>${title} has moved from an optional improvement project to an operating priority for modern HR teams. As organizations scale, manual systems often break first in onboarding, payroll validation, manager follow-up, and cross-team coordination. This creates invisible delays, inconsistent employee experience, and expensive rework. Space HR addresses this with one connected system for automation, analytics, and execution governance.</p>
+
+    <h3>Why This Matters in 2026</h3>
+    <p>In most companies, HR is now expected to deliver measurable impact on retention, performance quality, compliance, and workforce cost control. The old model, where teams react to issues after they become visible, is no longer enough. Leaders need earlier signals, better workflows, and stronger operational discipline. That is why ${clusterName.toLowerCase()} has become central to business strategy.</p>
+    <p>Organizations that invest in process design, not just policy documentation, consistently outperform. They run faster hiring cycles, close performance feedback loops quickly, and reduce payroll disputes because data and approvals are structured from the start. This is the difference between activity-heavy HR and outcomes-driven HR.</p>
+
+    <h3>The Core Execution Gaps Most Teams Face</h3>
+    <ul>
+      <li>Critical tasks depend on individual memory rather than system triggers.</li>
+      <li>Policy rules exist in documents but are not enforced in workflows.</li>
+      <li>Managers receive late signals and cannot intervene early.</li>
+      <li>Data is duplicated across tools, increasing error probability.</li>
+      <li>Employees do not have transparent visibility into request status.</li>
+      <li>Leadership receives lagging reports instead of forward-looking insights.</li>
+    </ul>
+    <p>Each issue looks small in isolation, but together they create recurring execution debt. Over a quarter, this debt appears as missed SLAs, frustrated employees, and avoidable compliance stress.</p>
+
+    <h3>A Practical Operating Framework</h3>
+    <p>Start by identifying high-volume, repeatable workflows. In most teams, these include onboarding checklists, leave approvals, payroll pre-checks, appraisal reminders, and manager one-on-one follow-ups. Define one standard path for each workflow with clear owners, deadlines, and exception logic. This removes ambiguity before automation is introduced.</p>
+    <p>Next, connect workflows to a shared data model so employee records, role metadata, policy rules, and approval chains stay synchronized. Without this step, teams automate fragmented processes and continue fixing the same issues manually. Structured inputs are the foundation of reliable outputs.</p>
+    <p>Finally, layer in automation and AI. Use <a href="/features/ai-automation">AI workflow automation</a> for repetitive actions, <a href="/features/hr-ai-concierge">AI self-service support</a> for employee queries, and <a href="${primaryFeatureHref}">predictive analytics</a> for risk detection and planning. Human review should remain in high-impact decisions like compensation changes, performance ratings, and policy exceptions.</p>
+
+    <h3>How Space HR Improves Day-to-Day Delivery</h3>
+    <p>Space HR is most valuable when used as an operating system, not a reporting dashboard. Teams can orchestrate onboarding journeys, send role-based nudges, automate approvals, and generate executive-ready insights from one platform. That means less context switching, fewer missed tasks, and more consistent outcomes across departments.</p>
+    <ul>
+      <li><strong>Performance:</strong> Structured cycles with <a href="/features/360-performance-appraisals">360 appraisals</a>, multi-rater inputs, and AI-generated summaries.</li>
+      <li><strong>Payroll:</strong> Automated validations and <a href="/features/ai-payroll-auditor">anomaly detection</a> before payroll lock.</li>
+      <li><strong>Planning:</strong> Forecast attrition and workforce costs using <a href="/features/cost-prediction">cost prediction models</a>.</li>
+      <li><strong>Engagement:</strong> Automated campaigns and timely communication through orchestration workflows.</li>
+      <li><strong>Governance:</strong> Role-based access, approval logs, and process traceability for audits.</li>
+    </ul>
+
+    <h3>Implementation Plan You Can Start This Month</h3>
+    <p><strong>Week 1:</strong> Audit current workflows and identify where execution breaks most often. Prioritize one workflow each for performance, payroll, and employee support.</p>
+    <p><strong>Week 2:</strong> Define standardized intake fields, owners, SLAs, and exception routes. Publish one clear operating playbook for each selected workflow.</p>
+    <p><strong>Week 3:</strong> Configure automation rules, reminders, and approvals. Make sure audit trails are enabled and manager responsibilities are explicit.</p>
+    <p><strong>Week 4:</strong> Launch with a pilot group, track cycle time and error rate, and hold a weekly review for process tuning.</p>
+    <p>This phased rollout improves adoption and avoids the common failure mode of trying to automate everything at once.</p>
+
+    <h3>KPIs to Track for Measurable ROI</h3>
+    <ul>
+      <li>Time from request submission to resolution.</li>
+      <li>Workflow completion rate by team and manager.</li>
+      <li>Exception frequency and average resolution time.</li>
+      <li>Payroll rework incidents and correction turnaround.</li>
+      <li>Appraisal completion on-time percentage.</li>
+      <li>Voluntary attrition signals and high-risk cohort trends.</li>
+      <li>Employee satisfaction scores for HR service interactions.</li>
+    </ul>
+    <p>These metrics help leaders connect HR operations to business outcomes rather than vanity reporting. Over time, the data also reveals where process redesign delivers the highest marginal gain.</p>
+
+    <h3>Common Mistakes and How to Avoid Them</h3>
+    <p><strong>Mistake 1:</strong> Automating broken workflows. If ownership and exception logic are unclear, automation only scales confusion.</p>
+    <p><strong>Mistake 2:</strong> Measuring activity instead of outcomes. More tasks completed does not always mean better employee experience or lower risk.</p>
+    <p><strong>Mistake 3:</strong> Ignoring manager enablement. Managers need clear playbooks and practical training for sustained adoption.</p>
+    <p><strong>Mistake 4:</strong> Treating analytics as a monthly report. High-performing teams use weekly trend reviews to intervene early.</p>
+    <p><strong>Mistake 5:</strong> Weak internal linking in content strategy. If your blog supports SEO growth, each article should connect to related feature pages and cluster posts naturally.</p>
+
+    <h3>SEO Angle for HR Content Clusters</h3>
+    <p>For organic growth, publish ${clusterName.toLowerCase()} content in clusters. Each cluster should have one pillar page and multiple supporting guides targeting specific search intent. Use clear headings, practical checklists, and direct examples. Include contextual links to Space HR feature pages so readers can move from learning to action. This improves rankings, increases engagement time, and drives qualified traffic to conversion pages.</p>
+    <p>Also refresh high-performing posts every 60 to 90 days. Update benchmarks, examples, and process recommendations based on real usage patterns. Search visibility compounds when content quality and relevance improve over time.</p>
+
+    <h3>Final Thoughts</h3>
+    <p>${title} should be implemented as a repeatable system, not a one-time campaign. The winning pattern is simple: structured workflows, AI-assisted execution, measurable governance, and continuous optimization. Space HR gives teams the infrastructure to run this model at scale while keeping decisions transparent and employee experience consistent.</p>
+    <p>If your goal is faster execution, stronger compliance, better retention, and lower operational friction, start with one critical workflow and scale from there. Small process wins compound quickly when they are systemized.</p>
+  `.trim();
+}
+
+const coreDefinitions = [
+  {
+    slug: "space-hr-ai-hrms-guide",
+    title: "Space HR AI HRMS Guide: How to Build a Data-Driven HR Engine in 2026",
+    summary:
+      "A practical guide to using Space HR for performance, payroll, automation, and people analytics to improve business outcomes.",
+    date: "Jan 10, 2026",
+    category: "HR Strategy",
+    clusterName: "HR Strategy",
+    featureHref: "/features/ai-intelligence",
+  },
   {
     slug: "future-of-performance-management",
     title: "The Future of Performance Management is AI-Driven",
     summary:
-      "Discover how Artificial Intelligence is reshaping how we evaluate and improve employee performance, moving away from bias and towards real-time data.",
-    content: `
-            <p>Performance management is undergoing a paradigm shift. Traditional annual reviews are being replaced by continuous, data-driven feedback loops powered by Artificial Intelligence.</p>
-            <h3>The Problem with Annual Reviews</h3>
-            <p>Annual reviews are often biased, stressful, and look backward rather than forward. They fail to capture the nuances of an employee's daily contributions and often suffer from recency bias.</p>
-            <h3>How AI Changes the Game</h3>
-            <p>AI tools can analyze vast amounts of data—from project completion rates to communication patterns—to provide objective, real-time insights into performance. This allows managers to offer timely coaching and recognize achievements as they happen.</p>
-            <ul>
-                <li><strong>Bias Reduction:</strong> Algorithms can be designed to focus on output and impact, ignoring irrelevant personal factors.</li>
-                <li><strong>Real-time Feedback:</strong> Employees get instant nudges on how to improve, rather than waiting months for a formal review.</li>
-                <li><strong>Personalized Development:</strong> AI can suggest tailored learning paths based on an individual's specific skill gaps and career goals.</li>
-            </ul>
-            <p>The future of work is not about monitoring, but about empowering. AI-driven performance management is the key to unlocking the full potential of your workforce. Modern platforms like Space HR use <a href="/features/360-performance-appraisals">360-degree performance appraisals</a> with AI-generated summaries to eliminate bias and deliver actionable coaching insights.</p>
-            <p>With <a href="/features/ai-intelligence">predictive workforce analytics</a>, organizations can forecast performance trends and proactively address skill gaps before they impact business outcomes.</p>
-        `,
-    date: "Dec 12, 2024",
-    category: "Technology",
-    readTime: "5 min read",
-    image: "/desktop-design-showcase.webp",
+      "Discover how AI is reshaping employee performance and moving teams from annual reviews to continuous development.",
+    date: "Jan 8, 2026",
+    category: "Performance",
+    clusterName: "Performance and Appraisals",
+    featureHref: "/features/360-performance-appraisals",
   },
   {
-    slug: "strategies-remote-team-alignment",
-    title: "5 Strategies for Remote Team Alignment",
+    slug: "ai-payroll-compliance-checklist-india",
+    title: "AI Payroll Compliance Checklist for Indian Businesses",
     summary:
-      "Keep your distributed team aligned and motivated with these proven strategies for async work.",
-    content: `
-            <p>Managing a remote team comes with its own set of challenges. Keeping everyone on the same page without the ability to walk over to someone's desk requires intentionality and the right strategies.</p>
-            <h3>1. Over-communicate Clarity</h3>
-            <p>In a remote setting, ambiguity is the enemy. Be explicitly clear about goals, deadlines, and expectations. Use written documentation as much as possible.</p>
-            <h3>2. Embrace Async Work</h3>
-            <p>Stop trying to replicate the 9-5 office hours. Allow people to work when they are most productive, as long as they meet their deliverables.</p>
-            <h3>3. Regular One-on-Ones</h3>
-            <p>Use video calls for connection, not just status updates. Check in on your team's well-being and career growth.</p>
-            <h3>4. Use Goal Management Software</h3>
-            <p>Tools like <a href="/features/goals">OKR and goal management software</a> help distributed teams stay aligned on objectives and track progress transparently across time zones.</p>
-            <h3>5. Leverage AI for Employee Self-Service</h3>
-            <p>Remote employees need instant access to HR information. An <a href="/features/hr-ai-concierge">AI HR Concierge chatbot</a> provides 24/7 self-service for leave requests, policy questions, and payslip retrieval — no matter the time zone.</p>
-            <p>Remote work is here to stay. Mastering these alignment strategies will ensure your team thrives, no matter where they are located.</p>
-        `,
-    date: "Dec 10, 2024",
-    readTime: "4 min read",
-    category: "Management",
-    image: "/professional-woman-laptop.webp",
+      "A practical payroll compliance checklist with automation tips to reduce payroll errors and statutory risk.",
+    date: "Jan 5, 2026",
+    category: "Payroll",
+    clusterName: "Payroll, Compliance, and Cost Control",
+    featureHref: "/features/ai-payroll-auditor",
   },
   {
-    slug: "annual-reviews-are-dead",
-    title: "Why Annual Reviews are Dead",
+    slug: "remote-team-alignment-space-hr",
+    title: "Remote Team Alignment with Space HR: A Practical Playbook",
     summary:
-      "Continuous feedback loops drastically outperform the stressful annual review process.",
-    content: `
-            <p>The ritual of the annual performance review is unpopular with almost everyone. Managers hate writing them, and employees hate receiving them. But more importantly, they aren't effective.</p>
-            <p>Waiting a year to give feedback is too long. If an employee is struggling, they need help now. If they are excelling, they should be recognized now.</p>
-            <h3>The Shift to Continuous Performance Management</h3>
-            <p>Leading companies are moving to a model of continuous check-ins. These frequent, lightweight conversations focus on near-term goals and immediate obstacles.</p>
-            <p>This approach builds trust, improves agility, and drives better business results.</p>
-            <h3>The Role of AI in Modern Performance Reviews</h3>
-            <p>AI-powered platforms are making continuous feedback practical at scale. With <a href="/features/360-performance-appraisals">360-degree performance appraisals</a>, organizations collect multi-rater feedback from managers, peers, and direct reports — then use AI to generate comprehensive performance summaries automatically.</p>
-            <p>Instead of managers spending 40+ hours writing reviews, AI analyzes all feedback data and produces executive-ready summaries in seconds. The result? More frequent, more accurate, and less biased performance evaluations using <a href="/features/appraisals">competency-based review forms</a>.</p>
-            <p>Companies using <a href="/features/ai-intelligence">AI-driven continuous feedback loops</a> report 40% higher employee engagement and 3x more feedback touchpoints per year.</p>
-        `,
-    date: "Dec 05, 2024",
-    readTime: "6 min read",
-    category: "HR Trends",
-    image: "/office-team-presentation.webp",
-  },
-  {
-    slug: "building-psychological-safety",
-    title: "Building Psychological Safety",
-    summary:
-      "Create an environment where employees feel safe to take risks and be vulnerable.",
-    content: `
-            <p>Google's Project Aristotle found that psychological safety was the number one predictor of high-performing teams. But what is it?</p>
-            <p>It's the belief that you won't be punished or humiliated for speaking up with ideas, questions, concerns, or mistakes.</p>
-            <h3>How to Foster It</h3>
-            <ul>
-                <li><strong>Admit your own fallibility:</strong> Leaders should model vulnerability.</li>
-                <li><strong>Encourage participation:</strong> Actively invite input from everyone in meetings.</li>
-                <li><strong>Respond productively to failure:</strong> Treat mistakes as learning opportunities, not reasons for blame.</li>
-            </ul>
-            <h3>Technology's Role in Psychological Safety</h3>
-            <p>Anonymous feedback mechanisms in <a href="/features/360-performance-appraisals">360-degree performance appraisals</a> allow employees to share honest feedback without fear of retaliation. When combined with <a href="/features/goals">goal management and OKR tracking</a>, teams can focus on outcomes rather than blame.</p>
-            <p>AI-powered <a href="/features/attrition-prediction">attrition prediction</a> can also help identify teams where psychological safety may be low by detecting patterns in engagement data and turnover trends.</p>
-        `,
-    date: "Nov 28, 2024",
-    readTime: "7 min read",
-    category: "Culture",
-    image: "/engineering-blueprint-review.webp",
-  },
-  {
-    slug: "roi-employee-wellbeing",
-    title: "The ROI of Employee Wellbeing",
-    summary:
-      "Investing in mental health drives significant ROI through retention and productivity.",
-    content: `
-            <p>Employee wellbeing is often treated as a "nice to have" perk. But the data shows it's a critical business driver.</p>
-            <p>Burnout costs companies billions in lost productivity and turnover. Conversely, thriving employees are more creative, more engaged, and do better work.</p>
-            <p>Investing in mental health support, flexible work policies, and a supportive culture pays for itself many times over.</p>
-            <h3>Measuring Wellbeing ROI with Data</h3>
-            <p>Modern HR platforms provide the analytics to quantify wellbeing's impact. <a href="/features/cost-prediction">Predictive cost analytics</a> can model the financial impact of turnover caused by burnout, while <a href="/features/attrition-prediction">attrition prediction AI</a> identifies at-risk employees before they leave.</p>
-            <p>By combining <a href="/features/leave-management">leave management data</a> with performance metrics, organizations can identify patterns that indicate burnout and intervene proactively.</p>
-        `,
-    date: "Nov 22, 2024",
-    readTime: "5 min read",
-    category: "Wellbeing",
-    image: "/team-meeting-collaboration.webp",
-  },
-  {
-    slug: "hybrid-work-challenges",
-    title: "Hybrid Work Challenges",
-    summary:
-      "Practical tips for managers handling proximity bias and communication gaps.",
-    content: `
-            <p>Hybrid work promises the best of both worlds, but it often delivers the worst if not managed carefully.</p>
-            <h3>Proximity Bias</h3>
-            <p>The tendency for leaders to favor people they see in person. Combat this by ensuring fully remote employees have equal access to opportunities and visibility.</p>
-            <h3>Communication Gaps</h3>
-            <p>Information often flows informally in the office. Make sure important decisions and updates are documented digitally so everyone is in the loop.</p>
-            <h3>Technology Solutions for Hybrid Teams</h3>
-            <p><a href="/features/attendance">GPS and geofenced attendance tracking</a> helps manage hybrid schedules by tracking who's in-office and who's remote. Meanwhile, an <a href="/features/hr-ai-concierge">AI HR Concierge chatbot</a> ensures all employees — regardless of location — have 24/7 access to HR support and company policies.</p>
-            <p>Using <a href="/features/360-performance-appraisals">360-degree performance appraisals</a> with multi-rater feedback helps combat proximity bias by collecting input from diverse sources, not just the manager who sees certain employees more often.</p>
-        `,
-    date: "Nov 15, 2024",
-    readTime: "6 min read",
+      "How distributed teams can improve accountability, engagement, and execution with goal and feedback workflows.",
+    date: "Jan 2, 2026",
     category: "Hybrid Work",
-    image: "/desktop-design-showcase.webp",
+    clusterName: "Employee Experience and Retention",
+    featureHref: "/features/goals",
   },
   {
-    slug: "ai-in-recruitment",
-    title: "AI in Recruitment: Bias vs Efficiency",
+    slug: "hr-analytics-roadmap-for-growing-companies",
+    title: "HR Analytics Roadmap for Growing Companies",
     summary:
-      "How AI is streamlining the hiring process while raising important questions about algorithmic fairness.",
-    content: `
-            <p>Recruitment is one of the first areas to be transformed by AI. From screening resumes to scheduling interviews, automation is saving recruiters hours of work.</p>
-            <p>However, there is a risk that AI models trained on historical data will perpetuate past biases. It's crucial to audit these tools and ensure they are selecting for true potential, not just pattern matching.</p>
-            <h3>The Importance of AI Auditing</h3>
-            <p>Just as <a href="/features/ai-payroll-auditor">AI payroll auditors</a> scan every payroll run for anomalies and errors, recruitment AI must be continuously audited for bias. The same principles of automated anomaly detection that protect payroll accuracy can be applied to ensure fair hiring practices.</p>
-            <p>Organizations using <a href="/features/ai-intelligence">AI-powered HR intelligence</a> can build more equitable processes by focusing on objective, data-driven criteria rather than subjective impressions.</p>
-        `,
-    date: "Nov 10, 2024",
-    readTime: "5 min read",
-    category: "Recruitment",
-    image: "/professional-woman-laptop.webp",
-  },
-  {
-    slug: "data-driven-hr",
-    title: "The Rise of Data-Driven HR",
-    summary:
-      "Moving from 'people instinct' to 'people analytics' for better organizational decision making.",
-    content: `
-            <p>HR has traditionally been viewed as a soft skill function. But today's HR leaders need to be data-literate.</p>
-            <p>By analyzing metrics on engagement, turnover, and performance, HR can provide strategic insights to the C-suite that drive business outcomes.</p>
-            <h3>From Reporting to Prediction</h3>
-            <p>The evolution of HR analytics moves through three stages: descriptive (what happened), diagnostic (why it happened), and predictive (what will happen). <a href="/features/ai-intelligence">Predictive workforce analytics</a> represents the cutting edge, using AI to forecast attrition, labor costs, and performance trends.</p>
-            <p>Tools like <a href="/features/cost-prediction">AI-powered cost prediction</a> help CFOs and CHROs collaborate on workforce planning with data-driven confidence. Meanwhile, <a href="/features/ai-payroll-auditor">automated payroll anomaly detection</a> ensures the underlying data is accurate and trustworthy.</p>
-        `,
-    date: "Nov 05, 2024",
-    readTime: "4 min read",
+      "Move from reporting to prediction with a practical people analytics roadmap designed for scaling organizations.",
+    date: "Dec 30, 2025",
     category: "People Analytics",
-    image: "/office-team-presentation.webp",
+    clusterName: "AI HR Automation",
+    featureHref: "/features/ai-intelligence",
+  },
+] as const;
+
+const coreBlogPosts: BlogPost[] = coreDefinitions.map((post) => {
+  const content = createLongFormContent(
+    post.title,
+    post.clusterName,
+    post.featureHref
+  );
+  return {
+    slug: post.slug,
+    title: post.title,
+    summary: post.summary,
+    content,
+    date: post.date,
+    category: post.category,
+    readTime: estimateReadTime(content),
+  };
+});
+
+const clusters = [
+  {
+    name: "AI HR Automation",
+    category: "HR Automation",
+    titles: [
+      "AI Workflow Automation for HR: End-to-End Execution Blueprint",
+      "How to Automate Employee Onboarding Without Losing Human Touch",
+      "Approval Workflow Automation for HR Teams at Scale",
+      "Building AI-Driven Reminder Systems for HR Operations",
+      "Automating Policy Acknowledgement and Compliance Tracking",
+      "How Space HR Reduces Manual HR Admin by 70 Percent",
+      "HR Task Orchestration: Connecting Payroll, Attendance, and Leave",
+      "Designing Self-Service HR Journeys with AI Concierge",
+      "Automation Governance for HR: Controls, Ownership, and Audits",
+      "HR Automation KPIs: Measuring Speed, Accuracy, and Adoption",
+    ],
   },
   {
-    slug: "importance-of-soft-skills",
-    title: "Why Soft Skills are the New Hard Skills",
-    summary:
-      "In an AI age, human skills like empathy and communication are becoming more valuable, not less.",
-    content: `
-            <p>As automation takes over routine technical tasks, the unique human ability to connect, empathize, and lead becomes the true differentiator.</p>
-            <p>Companies are rewriting their competency frameworks to prioritize emotional intelligence, adaptability, and collaboration.</p>
-            <h3>Measuring Soft Skills with AI</h3>
-            <p>Modern <a href="/features/360-performance-appraisals">360-degree performance appraisals</a> with competency-based review forms make it possible to systematically evaluate soft skills like communication, leadership, and teamwork. AI-generated performance summaries can identify patterns in feedback that highlight soft skill strengths and development areas.</p>
-            <p>By integrating soft skill assessment into <a href="/features/appraisals">continuous feedback loops</a>, organizations ensure these critical capabilities are developed alongside technical expertise.</p>
-        `,
-    date: "Oct 28, 2024",
-    readTime: "3 min read",
-    category: "Skills",
-    image: "/engineering-blueprint-review.webp",
+    name: "Performance and Appraisals",
+    category: "Performance",
+    titles: [
+      "Continuous Performance Management Framework for Modern Teams",
+      "How to Run 360 Degree Appraisals That Employees Trust",
+      "Competency-Based Reviews: Building Fair Evaluation Systems",
+      "Manager Coaching Playbooks for Better Performance Conversations",
+      "Reducing Bias in Employee Reviews with Multi-Rater Feedback",
+      "Goal Alignment in HR: Linking OKRs to Appraisal Outcomes",
+      "AI-Generated Performance Summaries: Best Practices for HR",
+      "Mid-Year and Quarterly Review Cycles That Actually Work",
+      "Performance Improvement Plans: Structure, Signals, and Support",
+      "Using Performance Data for Succession and Leadership Planning",
+    ],
+  },
+  {
+    name: "Payroll, Compliance, and Cost Control",
+    category: "Payroll",
+    titles: [
+      "Payroll Error Prevention Framework for Fast-Growing Companies",
+      "AI Payroll Auditor: Detecting Anomalies Before Payroll Lock",
+      "HR Compliance Calendar: Monthly and Quarterly Control Checklist",
+      "Attendance to Payroll Mapping: Common Data Integrity Gaps",
+      "Cost Prediction in HR: Forecasting Workforce Spend with AI",
+      "Leave Policy Automation and Its Impact on Payroll Accuracy",
+      "How to Build Audit-Ready Payroll Operations with Space HR",
+      "Compensation Change Workflows: Approval, Audit, and Traceability",
+      "Workforce Cost Dashboards for CHRO and CFO Decision-Making",
+      "Reducing Payroll Rework Through Standardized HR Data Models",
+    ],
+  },
+  {
+    name: "Employee Experience and Retention",
+    category: "Employee Engagement",
+    titles: [
+      "Employee Engagement Strategy in 2026: From Survey to Action",
+      "How to Build Psychological Safety in High-Performance Teams",
+      "Using AI to Predict Attrition and Retain Critical Talent",
+      "Designing Internal Communication Campaigns That Drive Participation",
+      "Wellbeing Analytics: Measuring Burnout Risk and Intervention Impact",
+      "The First 90 Days Employee Journey: A Retention-First Playbook",
+      "Recognition Systems That Improve Motivation and Team Trust",
+      "Culture Operations: Turning Values into Repeatable Behaviors",
+      "Manager Enablement Programs That Reduce Voluntary Attrition",
+      "Employee Experience Metrics Every HR Leader Should Track",
+    ],
+  },
+  {
+    name: "Recruitment and Talent Intelligence",
+    category: "Recruitment",
+    titles: [
+      "AI Recruitment Workflows: Faster Hiring with Better Quality",
+      "Structured Interview Systems for Fair and Consistent Hiring",
+      "From Requisition to Offer: Hiring Pipeline Optimization Framework",
+      "How to Reduce Offer Drop-Off with Candidate Experience Design",
+      "Talent Intelligence Dashboards for Recruiters and Hiring Managers",
+      "Hiring Bias Controls: Practical Safeguards for AI-Assisted Recruiting",
+      "Campus Hiring at Scale: Automation Strategies for HR Teams",
+      "Data-Driven Job Descriptions That Improve Applicant Match",
+      "Recruiter Productivity Metrics That Connect to Business Outcomes",
+      "Post-Hire Quality Analysis: Closing the Loop Between Hiring and Performance",
+    ],
   },
 ];
+
+function getClusterPosts(): BlogPost[] {
+  const baseDate = new Date("2025-10-01T00:00:00Z");
+  const slugCounts: Record<string, number> = {};
+  const posts: BlogPost[] = [];
+  let dayOffset = 0;
+
+  for (const cluster of clusters) {
+    for (const title of cluster.titles) {
+      const baseSlug = slugify(title);
+      const seen = slugCounts[baseSlug] ?? 0;
+      slugCounts[baseSlug] = seen + 1;
+      const slug = seen === 0 ? baseSlug : `${baseSlug}-${seen + 1}`;
+      const content = createLongFormContent(title, cluster.name);
+
+      posts.push({
+        slug,
+        title,
+        summary: `A Space HR guide to ${title.toLowerCase()} with practical workflows, implementation steps, and measurable outcomes.`,
+        content,
+        date: toDisplayDate(baseDate, dayOffset),
+        category: cluster.category,
+        readTime: estimateReadTime(content),
+      });
+
+      dayOffset += 1;
+    }
+  }
+
+  return posts;
+}
+
+export const blogPosts: BlogPost[] = [...coreBlogPosts, ...getClusterPosts()];

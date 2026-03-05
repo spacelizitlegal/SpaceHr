@@ -143,7 +143,7 @@ export default function TaxCompliancePage() {
             <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src="/engineering-blueprint-review.webp"
-                alt="Tax Compliance Dashboard"
+                alt="Space HR tax compliance dashboard showing automated FUTA, SICA, and multi-state payroll tax withholding calculations and year-end tax filing tools"
                 fill
                 className="object-cover"
                 priority
@@ -152,21 +152,37 @@ export default function TaxCompliancePage() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
               <div className="absolute bottom-4 left-4 right-4 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm rounded-xl p-4 border border-gray-200 dark:border-gray-700">
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">Tax Calculation Engine</span>
-                  <span className="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/50 text-green-600 dark:text-green-400 font-medium">Active</span>
+                  <span className="text-sm font-semibold text-gray-700 dark:text-gray-300">
+                    Tax Calculation Engine
+                  </span>
+                  <span className="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/50 text-green-600 dark:text-green-400 font-medium">
+                    Active
+                  </span>
                 </div>
                 <div className="grid grid-cols-3 gap-2 text-center">
                   <div className="bg-blue-50 dark:bg-blue-900/30 rounded-lg p-2">
-                    <div className="text-lg font-bold text-blue-600 dark:text-blue-400">$12,450</div>
-                    <div className="text-xs text-gray-500 dark:text-gray-400">Federal</div>
+                    <div className="text-lg font-bold text-blue-600 dark:text-blue-400">
+                      $12,450
+                    </div>
+                    <div className="text-xs text-gray-500 dark:text-gray-400">
+                      Federal
+                    </div>
                   </div>
                   <div className="bg-purple-50 dark:bg-purple-900/30 rounded-lg p-2">
-                    <div className="text-lg font-bold text-purple-600 dark:text-purple-400">$3,210</div>
-                    <div className="text-xs text-gray-500 dark:text-gray-400">State</div>
+                    <div className="text-lg font-bold text-purple-600 dark:text-purple-400">
+                      $3,210
+                    </div>
+                    <div className="text-xs text-gray-500 dark:text-gray-400">
+                      State
+                    </div>
                   </div>
                   <div className="bg-orange-50 dark:bg-orange-900/30 rounded-lg p-2">
-                    <div className="text-lg font-bold text-orange-600 dark:text-orange-400">$840</div>
-                    <div className="text-xs text-gray-500 dark:text-gray-400">Local</div>
+                    <div className="text-lg font-bold text-orange-600 dark:text-orange-400">
+                      $840
+                    </div>
+                    <div className="text-xs text-gray-500 dark:text-gray-400">
+                      Local
+                    </div>
                   </div>
                 </div>
               </div>
@@ -180,20 +196,36 @@ export default function TaxCompliancePage() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-white mb-2">99.9%</div>
-              <div className="text-green-100 text-sm md:text-base">Calculation Accuracy</div>
+              <div className="text-4xl md:text-5xl font-bold text-white mb-2">
+                99.9%
+              </div>
+              <div className="text-green-100 text-sm md:text-base">
+                Calculation Accuracy
+              </div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-white mb-2">50</div>
-              <div className="text-green-100 text-sm md:text-base">States + Territories</div>
+              <div className="text-4xl md:text-5xl font-bold text-white mb-2">
+                50
+              </div>
+              <div className="text-green-100 text-sm md:text-base">
+                States + Territories
+              </div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-white mb-2">10K+</div>
-              <div className="text-green-100 text-sm md:text-base">Local Jurisdictions</div>
+              <div className="text-4xl md:text-5xl font-bold text-white mb-2">
+                10K+
+              </div>
+              <div className="text-green-100 text-sm md:text-base">
+                Local Jurisdictions
+              </div>
             </div>
             <div className="text-center">
-              <div className="text-4xl md:text-5xl font-bold text-white mb-2">$0</div>
-              <div className="text-green-100 text-sm md:text-base">Penalties Guaranteed*</div>
+              <div className="text-4xl md:text-5xl font-bold text-white mb-2">
+                $0
+              </div>
+              <div className="text-green-100 text-sm md:text-base">
+                Penalties Guaranteed*
+              </div>
             </div>
           </div>
         </div>
@@ -210,7 +242,8 @@ export default function TaxCompliancePage() {
               Three-Tier Tax Jurisdiction Support
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Complete coverage for Federal, State, and Local tax requirements—all automated and always current
+              Complete coverage for Federal, State, and Local tax
+              requirements—all automated and always current
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -227,7 +260,10 @@ export default function TaxCompliancePage() {
               <ul className="space-y-3 text-gray-600 dark:text-gray-400">
                 <li className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 shrink-0" />
-                  <span>Social Security 6.2% auto-calculation with wage base tracking</span>
+                  <span>
+                    Social Security 6.2% auto-calculation with wage base
+                    tracking
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 shrink-0" />
@@ -235,7 +271,9 @@ export default function TaxCompliancePage() {
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 shrink-0" />
-                  <span>FUTA unemployment tax with credit reduction states</span>
+                  <span>
+                    FUTA unemployment tax with credit reduction states
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 shrink-0" />
@@ -257,7 +295,9 @@ export default function TaxCompliancePage() {
               <ul className="space-y-3 text-gray-600 dark:text-gray-400">
                 <li className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 shrink-0" />
-                  <span>50-state income tax (SIT) tables with bracket updates</span>
+                  <span>
+                    50-state income tax (SIT) tables with bracket updates
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 shrink-0" />
@@ -287,7 +327,9 @@ export default function TaxCompliancePage() {
               <ul className="space-y-3 text-gray-600 dark:text-gray-400">
                 <li className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 shrink-0" />
-                  <span>City-level tax configuration (NYC, Philadelphia, etc.)</span>
+                  <span>
+                    City-level tax configuration (NYC, Philadelphia, etc.)
+                  </span>
                 </li>
                 <li className="flex items-start gap-2">
                   <CheckCircle className="w-5 h-5 text-green-500 mt-0.5 shrink-0" />
@@ -319,7 +361,9 @@ export default function TaxCompliancePage() {
                 Instant Tax Calculations with Breakdown Visibility
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-                See exactly how every dollar is calculated. Our tax engine provides full transparency into Federal, State, and Local withholdings with drill-down details.
+                See exactly how every dollar is calculated. Our tax engine
+                provides full transparency into Federal, State, and Local
+                withholdings with drill-down details.
               </p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start gap-3">
@@ -327,8 +371,12 @@ export default function TaxCompliancePage() {
                     <Zap className="w-5 h-5 text-green-600 dark:text-green-400" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white">Sub-Second Calculations</h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Process thousands of tax calculations instantly</p>
+                    <h4 className="font-semibold text-gray-900 dark:text-white">
+                      Sub-Second Calculations
+                    </h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      Process thousands of tax calculations instantly
+                    </p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -336,8 +384,12 @@ export default function TaxCompliancePage() {
                     <Scale className="w-5 h-5 text-blue-600 dark:text-blue-400" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white">Full Audit Trail</h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Every calculation logged with timestamp and version</p>
+                    <h4 className="font-semibold text-gray-900 dark:text-white">
+                      Full Audit Trail
+                    </h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      Every calculation logged with timestamp and version
+                    </p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
@@ -345,8 +397,12 @@ export default function TaxCompliancePage() {
                     <Target className="w-5 h-5 text-purple-600 dark:text-purple-400" />
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white">Margin of Error: ±0.01%</h4>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Industry-leading accuracy for all calculations</p>
+                    <h4 className="font-semibold text-gray-900 dark:text-white">
+                      Margin of Error: ±0.01%
+                    </h4>
+                    <p className="text-sm text-gray-600 dark:text-gray-400">
+                      Industry-leading accuracy for all calculations
+                    </p>
                   </div>
                 </li>
               </ul>
@@ -355,53 +411,83 @@ export default function TaxCompliancePage() {
             <div className="bg-white dark:bg-[#1e293b] rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-700 overflow-hidden">
               <div className="bg-gradient-to-r from-green-600 to-teal-600 p-4">
                 <div className="flex items-center justify-between">
-                  <h3 className="text-white font-bold">Tax Breakdown Calculator</h3>
-                  <span className="text-xs px-2 py-1 rounded-full bg-white/20 text-white">Live Preview</span>
+                  <h3 className="text-white font-bold">
+                    Tax Breakdown Calculator
+                  </h3>
+                  <span className="text-xs px-2 py-1 rounded-full bg-white/20 text-white">
+                    Live Preview
+                  </span>
                 </div>
               </div>
               <div className="p-6 space-y-4">
                 <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
                   <div className="flex justify-between items-center mb-2">
-                    <span className="text-sm text-gray-600 dark:text-gray-400">Gross Pay</span>
-                    <span className="text-lg font-bold text-gray-900 dark:text-white">$8,333.33</span>
+                    <span className="text-sm text-gray-600 dark:text-gray-400">
+                      Gross Pay
+                    </span>
+                    <span className="text-lg font-bold text-gray-900 dark:text-white">
+                      $8,333.33
+                    </span>
                   </div>
-                  <div className="text-xs text-gray-500 dark:text-gray-500">Semi-monthly • California Resident</div>
+                  <div className="text-xs text-gray-500 dark:text-gray-500">
+                    Semi-monthly • California Resident
+                  </div>
                 </div>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                     <div className="flex items-center gap-2">
                       <Building2 className="w-4 h-4 text-blue-600 dark:text-blue-400" />
-                      <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Federal Income Tax</span>
+                      <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                        Federal Income Tax
+                      </span>
                     </div>
-                    <span className="font-bold text-blue-600 dark:text-blue-400">-$1,456.00</span>
+                    <span className="font-bold text-blue-600 dark:text-blue-400">
+                      -$1,456.00
+                    </span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-green-50 dark:bg-green-900/20 rounded-lg">
                     <div className="flex items-center gap-2">
                       <ShieldCheck className="w-4 h-4 text-green-600 dark:text-green-400" />
-                      <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Social Security</span>
+                      <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                        Social Security
+                      </span>
                     </div>
-                    <span className="font-bold text-green-600 dark:text-green-400">-$516.67</span>
+                    <span className="font-bold text-green-600 dark:text-green-400">
+                      -$516.67
+                    </span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-teal-50 dark:bg-teal-900/20 rounded-lg">
                     <div className="flex items-center gap-2">
                       <ShieldCheck className="w-4 h-4 text-teal-600 dark:text-teal-400" />
-                      <span className="text-sm font-medium text-gray-700 dark:text-gray-300">Medicare</span>
+                      <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                        Medicare
+                      </span>
                     </div>
-                    <span className="font-bold text-teal-600 dark:text-teal-400">-$120.83</span>
+                    <span className="font-bold text-teal-600 dark:text-teal-400">
+                      -$120.83
+                    </span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
                     <div className="flex items-center gap-2">
                       <MapPin className="w-4 h-4 text-purple-600 dark:text-purple-400" />
-                      <span className="text-sm font-medium text-gray-700 dark:text-gray-300">CA State Tax</span>
+                      <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                        CA State Tax
+                      </span>
                     </div>
-                    <span className="font-bold text-purple-600 dark:text-purple-400">-$620.00</span>
+                    <span className="font-bold text-purple-600 dark:text-purple-400">
+                      -$620.00
+                    </span>
                   </div>
                   <div className="flex justify-between items-center p-3 bg-orange-50 dark:bg-orange-900/20 rounded-lg">
                     <div className="flex items-center gap-2">
                       <Globe className="w-4 h-4 text-orange-600 dark:text-orange-400" />
-                      <span className="text-sm font-medium text-gray-700 dark:text-gray-300">CA SDI</span>
+                      <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                        CA SDI
+                      </span>
                     </div>
-                    <span className="font-bold text-orange-600 dark:text-orange-400">-$91.67</span>
+                    <span className="font-bold text-orange-600 dark:text-orange-400">
+                      -$91.67
+                    </span>
                   </div>
                 </div>
                 <div className="bg-gradient-to-r from-green-600 to-teal-600 rounded-lg p-4 mt-4">
@@ -449,7 +535,8 @@ export default function TaxCompliancePage() {
                     Social Security (OASDI)
                   </h4>
                   <p className="text-gray-600 dark:text-gray-400 text-sm">
-                    6.2% employee + 6.2% employer up to $168,600 wage base (2024)
+                    6.2% employee + 6.2% employer up to $168,600 wage base
+                    (2024)
                   </p>
                 </div>
                 <div className="border-l-4 border-green-500 pl-4 py-2 bg-green-50/50 dark:bg-green-900/10 rounded-r-lg">
@@ -457,7 +544,8 @@ export default function TaxCompliancePage() {
                     Medicare (HI)
                   </h4>
                   <p className="text-gray-600 dark:text-gray-400 text-sm">
-                    1.45% employee + employer (no cap) + 0.9% Additional Medicare
+                    1.45% employee + employer (no cap) + 0.9% Additional
+                    Medicare
                   </p>
                 </div>
                 <div className="border-l-4 border-green-500 pl-4 py-2 bg-green-50/50 dark:bg-green-900/10 rounded-r-lg">
@@ -634,7 +722,8 @@ export default function TaxCompliancePage() {
                       Penalty Prevention
                     </h4>
                     <p className="text-gray-600 dark:text-gray-400">
-                      Proactive alerts when deposits are due to avoid IRS and state penalties
+                      Proactive alerts when deposits are due to avoid IRS and
+                      state penalties
                     </p>
                   </div>
                 </li>
@@ -663,7 +752,9 @@ export default function TaxCompliancePage() {
                     <p className="text-sm text-gray-600 dark:text-gray-400">
                       Due: Quarterly - April 30, 2026
                     </p>
-                    <span className="text-xs px-2 py-1 rounded-full bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400">Due in 15 days</span>
+                    <span className="text-xs px-2 py-1 rounded-full bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400">
+                      Due in 15 days
+                    </span>
                   </div>
                 </div>
 
@@ -683,7 +774,9 @@ export default function TaxCompliancePage() {
                     <p className="text-sm text-gray-600 dark:text-gray-400">
                       Due: Quarterly - April 30, 2026
                     </p>
-                    <span className="text-xs px-2 py-1 rounded-full bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400">Due in 15 days</span>
+                    <span className="text-xs px-2 py-1 rounded-full bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400">
+                      Due in 15 days
+                    </span>
                   </div>
                 </div>
 
@@ -703,7 +796,9 @@ export default function TaxCompliancePage() {
                     <p className="text-sm text-gray-600 dark:text-gray-400">
                       Due: Monthly - March 31, 2026
                     </p>
-                    <span className="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400">Paid</span>
+                    <span className="text-xs px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400">
+                      Paid
+                    </span>
                   </div>
                 </div>
 
@@ -714,7 +809,9 @@ export default function TaxCompliancePage() {
                     </span>
                     <span className="text-2xl font-bold">$17,500</span>
                   </div>
-                  <p className="text-sm text-green-100 mt-1">Next payment due in 15 days</p>
+                  <p className="text-sm text-green-100 mt-1">
+                    Next payment due in 15 days
+                  </p>
                 </div>
               </div>
             </div>
@@ -733,7 +830,8 @@ export default function TaxCompliancePage() {
               Multi-State Employee Tax Handling
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Automatically handle tax complexities for remote workers, traveling employees, and multi-state operations
+              Automatically handle tax complexities for remote workers,
+              traveling employees, and multi-state operations
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
@@ -765,18 +863,30 @@ export default function TaxCompliancePage() {
             ].map((item, i) => {
               const colorClasses = {
                 blue: "bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400",
-                green: "bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400",
-                purple: "bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400",
-                orange: "bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400",
+                green:
+                  "bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400",
+                purple:
+                  "bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400",
+                orange:
+                  "bg-orange-100 dark:bg-orange-900/30 text-orange-600 dark:text-orange-400",
               }[item.color];
 
               return (
-                <div key={i} className="bg-gray-50 dark:bg-[#1e293b] rounded-xl p-6 border border-gray-100 dark:border-gray-800 hover:shadow-lg transition-shadow text-center">
-                  <div className={`w-12 h-12 rounded-xl ${colorClasses} flex items-center justify-center mx-auto mb-4`}>
+                <div
+                  key={i}
+                  className="bg-gray-50 dark:bg-[#1e293b] rounded-xl p-6 border border-gray-100 dark:border-gray-800 hover:shadow-lg transition-shadow text-center"
+                >
+                  <div
+                    className={`w-12 h-12 rounded-xl ${colorClasses} flex items-center justify-center mx-auto mb-4`}
+                  >
                     <item.icon className="w-6 h-6" />
                   </div>
-                  <h3 className="font-bold text-gray-900 dark:text-white mb-2">{item.title}</h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">{item.desc}</p>
+                  <h3 className="font-bold text-gray-900 dark:text-white mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                    {item.desc}
+                  </p>
                 </div>
               );
             })}
@@ -795,7 +905,8 @@ export default function TaxCompliancePage() {
               Automated Compliance & Updates
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Stay compliant with automatic tax table updates, W-4 processing, and year-end form generation.
+              Stay compliant with automatic tax table updates, W-4 processing,
+              and year-end form generation.
             </p>
           </div>
 
@@ -926,7 +1037,9 @@ export default function TaxCompliancePage() {
                 Bank-Level Security for Tax Data
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
-                Tax data is some of the most sensitive information you handle. Our platform is built with enterprise-grade security from the ground up.
+                Tax data is some of the most sensitive information you handle.
+                Our platform is built with enterprise-grade security from the
+                ground up.
               </p>
               <div className="grid grid-cols-2 gap-4">
                 {[
@@ -935,15 +1048,22 @@ export default function TaxCompliancePage() {
                   { icon: BadgeCheck, label: "IRS e-File Authorized" },
                   { icon: Globe, label: "99.99% Uptime SLA" },
                 ].map((item, i) => (
-                  <div key={i} className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-[#1e293b] rounded-lg">
+                  <div
+                    key={i}
+                    className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-[#1e293b] rounded-lg"
+                  >
                     <item.icon className="w-5 h-5 text-indigo-600 dark:text-indigo-400" />
-                    <span className="text-sm font-medium text-gray-700 dark:text-gray-300">{item.label}</span>
+                    <span className="text-sm font-medium text-gray-700 dark:text-gray-300">
+                      {item.label}
+                    </span>
                   </div>
                 ))}
               </div>
             </div>
             <div className="bg-gradient-to-br from-indigo-100 to-purple-100 dark:from-indigo-950/30 dark:to-purple-950/30 rounded-2xl p-8 border border-indigo-200 dark:border-indigo-800">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">Tax Compliance Guarantee*</h3>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">
+                Tax Compliance Guarantee*
+              </h3>
               <ul className="space-y-4">
                 {[
                   "IRS deposit deadline tracking",
@@ -957,11 +1077,16 @@ export default function TaxCompliancePage() {
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-green-600 dark:text-green-400 shrink-0" />
-                    <span className="text-gray-700 dark:text-gray-300">{item}</span>
+                    <span className="text-gray-700 dark:text-gray-300">
+                      {item}
+                    </span>
                   </li>
                 ))}
               </ul>
-              <p className="text-xs text-gray-500 dark:text-gray-400 mt-6">*Terms and conditions apply. Guarantee covers penalties resulting from platform calculation errors.</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400 mt-6">
+                *Terms and conditions apply. Guarantee covers penalties
+                resulting from platform calculation errors.
+              </p>
             </div>
           </div>
         </div>
@@ -1011,7 +1136,10 @@ export default function TaxCompliancePage() {
               </div>
               <div className="text-center mt-8">
                 <Link href="/features/payroll">
-                  <Button size="lg" className="bg-white text-green-700 hover:bg-gray-100 cursor-pointer">
+                  <Button
+                    size="lg"
+                    className="bg-white text-green-700 hover:bg-gray-100 cursor-pointer"
+                  >
                     Learn About Payroll Automation
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
@@ -1033,11 +1161,15 @@ export default function TaxCompliancePage() {
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-3xl mx-auto">
             Let our tax engine handle the complexity of Federal, State, and
-            Local tax calculations—so you can focus on growing your business without worrying about penalties.
+            Local tax calculations—so you can focus on growing your business
+            without worrying about penalties.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Link href="/request-a-demo">
-              <Button size="lg" className="w-full sm:w-auto cursor-pointer h-14 px-10 rounded-full">
+              <Button
+                size="lg"
+                className="w-full sm:w-auto cursor-pointer h-14 px-10 rounded-full"
+              >
                 Request a Demo
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
@@ -1085,22 +1217,34 @@ export default function TaxCompliancePage() {
             <Link href="/features/payroll" className="group">
               <div className="bg-white dark:bg-[#1e293b] rounded-xl p-6 border border-gray-100 dark:border-gray-800 hover:border-green-200 dark:hover:border-green-800 transition-all group-hover:shadow-lg">
                 <DollarSign className="w-8 h-8 text-green-600 dark:text-green-400 mb-3" />
-                <h3 className="font-bold text-gray-900 dark:text-white mb-2 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors">Payroll Automation</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">5-step wizard with AI anomaly detection</p>
+                <h3 className="font-bold text-gray-900 dark:text-white mb-2 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors">
+                  Payroll Automation
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  5-step wizard with AI anomaly detection
+                </p>
               </div>
             </Link>
             <Link href="/features/finance" className="group">
               <div className="bg-white dark:bg-[#1e293b] rounded-xl p-6 border border-gray-100 dark:border-gray-800 hover:border-orange-200 dark:hover:border-orange-800 transition-all group-hover:shadow-lg">
                 <BarChart3 className="w-8 h-8 text-orange-600 dark:text-orange-400 mb-3" />
-                <h3 className="font-bold text-gray-900 dark:text-white mb-2 group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors">Finance Analytics</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">Labor cost tracking and forecasting</p>
+                <h3 className="font-bold text-gray-900 dark:text-white mb-2 group-hover:text-orange-600 dark:group-hover:text-orange-400 transition-colors">
+                  Finance Analytics
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  Labor cost tracking and forecasting
+                </p>
               </div>
             </Link>
             <Link href="/features/appraisals" className="group">
               <div className="bg-white dark:bg-[#1e293b] rounded-xl p-6 border border-gray-100 dark:border-gray-800 hover:border-purple-200 dark:hover:border-purple-800 transition-all group-hover:shadow-lg">
                 <Target className="w-8 h-8 text-purple-600 dark:text-purple-400 mb-3" />
-                <h3 className="font-bold text-gray-900 dark:text-white mb-2 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">Performance Appraisals</h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">360° reviews and AI-powered feedback</p>
+                <h3 className="font-bold text-gray-900 dark:text-white mb-2 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
+                  Performance Appraisals
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400">
+                  360° reviews and AI-powered feedback
+                </p>
               </div>
             </Link>
           </div>

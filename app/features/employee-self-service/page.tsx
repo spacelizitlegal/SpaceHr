@@ -131,7 +131,7 @@ export default function EmployeeSelfServicePage() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800">
               <Image
                 src="/engineering-blueprint-review.webp"
-                alt="Employees using self-service portal"
+                alt="Space HR employee self-service portal showing payslip access, leave requests, and HR document management for workforce autonomy"
                 width={800}
                 height={600}
                 className="w-full h-auto"
@@ -383,7 +383,7 @@ export default function EmployeeSelfServicePage() {
               <div className="relative">
                 <Image
                   src="/team-meeting-collaboration.webp"
-                  alt="Mobile HR app interface"
+                  alt="Space HR mobile employee self-service app showing payslip viewing, leave balance, and HR AI concierge chatbot on smartphone interface"
                   width={400}
                   height={600}
                   className="rounded-3xl shadow-2xl"
@@ -593,8 +593,8 @@ export default function EmployeeSelfServicePage() {
             Ready to Empower Your Employees?
           </h2>
           <p className="text-xl text-orange-100 mb-10 max-w-2xl mx-auto">
-            Give your workforce the self-service experience they expect.
-            Reduce HR burden while increasing employee satisfaction.
+            Give your workforce the self-service experience they expect. Reduce
+            HR burden while increasing employee satisfaction.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/request-a-demo">
