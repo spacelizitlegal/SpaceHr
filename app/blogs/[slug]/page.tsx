@@ -2,6 +2,7 @@
 
 import { useParams, notFound } from "next/navigation";
 import { blogPosts } from "@/lib/blogData";
+import { howToSchemas } from "@/lib/howToSchemas";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
@@ -34,6 +35,12 @@ export default function BlogDetailPage() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-[#0f172a] font-sans pt-32 pb-20">
+      {howToSchemas[slug] && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchemas[slug]) }}
+        />
+      )}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         {/* Back Button */}
         <Link

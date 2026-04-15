@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { JsonLd, generateBreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "California Pay Transparency Act Software | Automated Pay Scales",
@@ -27,6 +28,8 @@ export const metadata: Metadata = {
     "HR compliance tools",
   ],
 };
+
+const _bc_ca_pay = [{"name":"Home","url":"https://spacehr.net"},{"name":"California Pay Transparency","url":"https://spacehr.net/california-pay-transparency"}];
 
 export default function CaliforniaPayTransparencyPage() {
   return (

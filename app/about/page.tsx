@@ -1,4 +1,7 @@
 import { Metadata } from "next";
+import { JsonLd, generateFAQSchema,
+  generateBreadcrumbSchema } from "@/components/JsonLd";
+import { FAQAccordion } from "@/components/FAQAccordion";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
@@ -25,9 +28,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About Space AI | Your Spatial Apps Partner | Innovating HR Technology",
+  title: "About SpaceHR — AI-Powered HR Platform for Growing Teams",
   description:
-    "Discover Space AI - the innovative technology company behind Space HR. Learn about our mission to transform human capital management through AI-powered solutions, our values, and our commitment to empowering businesses worldwide.",
+    "SpaceHR is an AI-powered HR and payroll platform built for mid-market companies. Learn about our mission, the team behind SpaceHR, and why HR leaders trust us to automate chatbots, payroll anomaly detection, and workforce forecasting.",
   keywords: [
     "Space AI",
     "Space HR",
@@ -41,12 +44,34 @@ export const metadata: Metadata = {
     "HR automation",
   ],
   openGraph: {
-    title: "About Space AI | Your Spatial Apps Partner",
+    title: "About SpaceHR — AI-Powered HR Platform for Growing Teams",
     description:
-      "Meet the innovative team behind Space HR. We're on a mission to revolutionize human capital management through cutting-edge AI technology.",
+      "Meet the team behind SpaceHR. We build AI that automates HR chatbots, payroll anomaly detection, labor cost forecasting, and 360 appraisals — so HR teams can focus on people, not admin.",
     type: "website",
+    url: "https://spacehr.net/about",
+    siteName: "SpaceHR",
+    images: [
+      {
+        url: "/desktop-design-showcase.webp",
+        width: 1200,
+        height: 630,
+        alt: "SpaceHR Team and Platform",
+      },
+    ],
+  },
+  alternates: {
+    canonical: "https://spacehr.net/about",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About SpaceHR — AI-Powered HR Platform",
+    description:
+      "AI HR chatbots, payroll anomaly detection, labor cost forecasting, and 360 appraisals — meet the team behind SpaceHR.",
+    images: ["/desktop-design-showcase.webp"],
   },
 };
+
+const _bc_about = [{"name":"Home","url":"https://spacehr.net"},{"name":"About","url":"https://spacehr.net/about"}];
 
 export default function AboutPage() {
   const values = [
@@ -139,8 +164,82 @@ export default function AboutPage() {
     },
   ];
 
+const aboutFAQs = [
+  {
+    question: "What is Space HR?",
+    answer: "Space HR is an AI-powered Human Capital Management (HCM) platform that combines core HRMS features — payroll, leave, attendance, performance — with advanced AI capabilities including attrition prediction, payroll anomaly detection, and an AI HR chatbot. It is built for mid-sized and growing organizations.",
+  },
+  {
+    question: "What makes Space HR different from other HR software?",
+    answer: "Space HR natively embeds AI into every workflow rather than bolting it on as an add-on. Features like real-time payroll anomaly detection, workforce attrition prediction, and an AI HR concierge are built into the core platform — not separate modules. This gives HR teams predictive insights, not just reporting.",
+  },
+  {
+    question: "What company sizes does Space HR serve?",
+    answer: "Space HR is optimized for companies with 50 to 2,000 employees. It scales from growing startups establishing their first HR processes to established mid-market companies needing enterprise-grade compliance and analytics without the complexity of legacy systems.",
+  },
+  {
+    question: "Which countries and regions does Space HR support?",
+    answer: "Space HR supports organizations across the United States, UAE, Singapore, Canada, and Europe. The platform handles multi-country payroll, local tax compliance, regional holiday calendars, and GDPR/PDPA data residency requirements.",
+  },
+  {
+    question: "Is Space HR GDPR compliant?",
+    answer: "Yes. Space HR is built with data privacy by design. All employee data is encrypted at rest and in transit, role-based access controls limit data exposure, and the platform supports data residency requirements for GDPR (EU), PDPA (Singapore), and equivalent regional regulations.",
+  },
+  {
+    question: "How long does Space HR implementation take?",
+    answer: "Most customers go live within 2 weeks. Our implementation team handles data migration, configuration, and training. Unlike enterprise systems that take 6–18 months, Space HR is designed for rapid deployment without sacrificing depth.",
+  },
+  {
+    question: "Does Space HR integrate with existing tools?",
+    answer: "Yes. Space HR integrates with accounting platforms (QuickBooks, Xero), collaboration tools (Slack, Microsoft Teams), single sign-on (Okta, Google Workspace), and ERP systems via REST API. Our open API allows custom integrations.",
+  },
+  {
+    question: "Is there a free trial or demo available?",
+    answer: "Yes. You can book a personalized 30-minute demo with our team or request a guided trial. Visit the Request a Demo page to get started — no credit card required.",
+  },
+];
+  const faqSchema = generateFAQSchema(aboutFAQs);
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "SpaceHR",
+    alternateName: "Space AI",
+    url: "https://spacehr.net",
+    logo: "https://spacehr.net/about_logo.png",
+    description:
+      "SpaceHR is an AI-powered HR and payroll platform that automates employee self-service, payroll anomaly detection, labor cost forecasting, attrition prediction, and 360-degree performance appraisals for mid-market and enterprise companies.",
+    foundingDate: "2023",
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "customer support",
+      email: "support@spacehr.net",
+      availableLanguage: ["English"],
+    },
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "US",
+    },
+    sameAs: [
+      "https://www.linkedin.com/company/spacehr",
+      "https://twitter.com/spacehr",
+      "https://g2.com/products/spacehr",
+    ],
+    knowsAbout: [
+      "HR automation",
+      "AI payroll software",
+      "employee self-service chatbot",
+      "workforce cost forecasting",
+      "attrition prediction",
+      "360-degree performance appraisals",
+    ],
+  };
+
   return (
-    <div className="flex flex-col min-h-screen font-sans bg-white dark:bg-[#0b1121]">
+    <>
+      <JsonLd data={generateBreadcrumbSchema(_bc_about)} />
+      <JsonLd data={organizationSchema} />
+      <JsonLd data={faqSchema} />
+      <div className="flex flex-col min-h-screen font-sans bg-white dark:bg-[#0b1121]">
       {/* HERO SECTION */}
       <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden pt-24">
         {/* Background Image with Overlay */}
@@ -545,6 +644,18 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <section className="py-24 bg-white dark:bg-gray-900">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Frequently Asked Questions</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-400">Common questions about Space HR and our AI platform.</p>
+          </div>
+          <FAQAccordion items={aboutFAQs} />
+        </div>
+      </section>
     </div>
+    </>
   );
 }

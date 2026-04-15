@@ -22,6 +22,8 @@ export default function BlogsPage() {
 
   return (
     <div className="min-h-screen bg-white dark:bg-[#0f172a] font-sans">
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://spacehr.net"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://spacehr.net/blogs"}]}` }} />
       {/* Header */}
       <section className="pt-32 pb-16 border-b border-gray-100 dark:border-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl">

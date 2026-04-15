@@ -1,4 +1,4 @@
-import DemoRequest from "@/components/DemoRequest";
+﻿import DemoRequest from "@/components/DemoRequest";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     images: ["/og-demo.png"],
   },
   alternates: {
-    canonical: "/request-a-demo",
+    canonical: "https://spacehr.net/request-a-demo",
   },
 };
 

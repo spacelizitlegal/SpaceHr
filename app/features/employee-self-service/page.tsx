@@ -28,6 +28,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
+import { JsonLd, generateBreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Employee Self-Service Portal: ESS & Payslips | Space HR",
@@ -74,6 +75,8 @@ export const metadata: Metadata = {
     canonical: "https://spacehr.net/features/employee-self-service",
   },
 };
+
+const _bc_ess = [{"name":"Home","url":"https://spacehr.net"},{"name":"Features","url":"https://spacehr.net/features"},{"name":"Employee Self-Service","url":"https://spacehr.net/features/employee-self-service"}];
 
 export default function EmployeeSelfServicePage() {
   return (

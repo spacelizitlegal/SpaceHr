@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import {
   Instagram,
   Youtube,
@@ -19,10 +20,12 @@ export function Footer() {
           <div className="space-y-6 col-span-2 md:col-span-3 lg:col-span-2 xl:col-span-2">
             <Link href="/" className="flex items-center gap-0 group">
               <div className="relative h-15 w-15 sm:h-[4.5rem] sm:w-[4.5rem] lg:h-[5.25rem] lg:w-[5.25rem] hover:scale-110 transition-transform duration-300">
-                <img
+                <Image
                   src="/hrlogonly.png"
-                  alt="Space HR — AI-powered HRMS and ERP platform logo ."
-                  className="w-full h-full object-contain drop-shadow-lg"
+                  alt="Space HR — AI-powered HRMS and ERP platform logo"
+                  fill
+                  className="object-contain drop-shadow-lg"
+                  sizes="84px"
                 />
               </div>
               <span className="-ml-0.5 text-xl sm:text-2xl font-bold tracking-tight bg-gradient-to-r from-pink-500 via-violet-500 to-blue-600 dark:from-pink-400 dark:via-violet-400 dark:to-blue-500 bg-clip-text text-transparent group-hover:from-pink-600 group-hover:via-violet-600 group-hover:to-blue-700 transition-colors">
@@ -70,37 +73,37 @@ export function Footer() {
                 href="https://x.com/SpaceHR197173"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-blue-400 hover:bg-blue-400/10 hover:border-blue-400/30 transition-all duration-200"
+                className="w-11 h-11 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-blue-400 hover:bg-blue-400/10 hover:border-blue-400/30 transition-all duration-200"
                 aria-label="Follow us on X (Twitter)"
               >
-                <Twitter className="w-4 h-4" />
+                <Twitter className="w-5 h-5" />
               </Link>
               <Link
                 href="https://www.instagram.com/space_hr7?igsh=YTJlYnV2OXlkYzR6"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-pink-500 hover:bg-pink-500/10 hover:border-pink-500/30 transition-all duration-200"
+                className="w-11 h-11 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-pink-500 hover:bg-pink-500/10 hover:border-pink-500/30 transition-all duration-200"
                 aria-label="Follow us on Instagram"
               >
-                <Instagram className="w-4 h-4" />
+                <Instagram className="w-5 h-5" />
               </Link>
               <Link
                 href="https://youtube.com/@spacehr7?si=Mz17igrQhxa3Jt7R"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-red-500 hover:bg-red-500/10 hover:border-red-500/30 transition-all duration-200"
+                className="w-11 h-11 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-red-500 hover:bg-red-500/10 hover:border-red-500/30 transition-all duration-200"
                 aria-label="Subscribe on YouTube"
               >
-                <Youtube className="w-4 h-4" />
+                <Youtube className="w-5 h-5" />
               </Link>
               <Link
                 href="https://www.linkedin.com/company/space-hr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-blue-500 hover:bg-blue-500/10 hover:border-blue-500/30 transition-all duration-200"
+                className="w-11 h-11 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-blue-500 hover:bg-blue-500/10 hover:border-blue-500/30 transition-all duration-200"
                 aria-label="Follow us on LinkedIn"
               >
-                <Linkedin className="w-4 h-4" />
+                <Linkedin className="w-5 h-5" />
               </Link>
             </div>
           </div>
@@ -110,7 +113,7 @@ export function Footer() {
             <h3 className="font-semibold text-white mb-5 tracking-wide text-sm uppercase">
               Core Features
             </h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-0.5">
               {[
                 { href: "/features/payroll", label: "Payroll Management" },
                 {
@@ -133,7 +136,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm py-1"
                   >
                     {link.label}
                   </Link>
@@ -147,7 +150,7 @@ export function Footer() {
             <h3 className="font-semibold text-white mb-5 tracking-wide text-sm uppercase">
               AI & Intelligence
             </h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-0.5">
               {[
                 {
                   href: "/features/ai-payroll-auditor",
@@ -175,7 +178,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm py-1"
                   >
                     {link.label}
                   </Link>
@@ -189,7 +192,7 @@ export function Footer() {
             <h3 className="font-semibold text-white mb-5 tracking-wide text-sm uppercase">
               Solutions
             </h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-0.5">
               {[
                 { href: "/solutions/ceo", label: "For CEOs" },
                 { href: "/solutions/hr-admin", label: "For HR Admins" },
@@ -198,7 +201,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm py-1"
                   >
                     {link.label}
                   </Link>
@@ -209,7 +212,7 @@ export function Footer() {
             <h3 className="font-semibold text-white mt-6 mb-5 tracking-wide text-sm uppercase">
               Regions
             </h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-0.5">
               {[
                 {
                   href: "/regions/united-states",
@@ -226,7 +229,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm py-1"
                   >
                     {link.label}
                   </Link>
@@ -240,7 +243,7 @@ export function Footer() {
             <h3 className="font-semibold text-white mb-5 tracking-wide text-sm uppercase">
               Resources
             </h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-0.5">
               {[
                 { href: "/blogs", label: "Blog & Insights" },
                 { href: "/courses", label: "Learning Center" },
@@ -267,7 +270,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm py-1"
                   >
                     {link.label}
                   </Link>
@@ -278,7 +281,7 @@ export function Footer() {
             <h3 className="font-semibold text-white mt-6 mb-5 tracking-wide text-sm uppercase">
               SEO & Compliance
             </h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-0.5">
               {[
                 { href: "/hr-software", label: "HR Software" },
                 { href: "/hrms", label: "HRMS" },
@@ -295,7 +298,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm py-1"
                   >
                     {link.label}
                   </Link>
@@ -306,7 +309,7 @@ export function Footer() {
             <h3 className="font-semibold text-white mt-6 mb-5 tracking-wide text-sm uppercase">
               Switch From
             </h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-0.5">
               {[
                 { href: "/compare/rippling", label: "Rippling" },
                 { href: "/compare/gusto", label: "Gusto" },
@@ -317,7 +320,7 @@ export function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm"
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm py-1"
                   >
                     {link.label}
                   </Link>

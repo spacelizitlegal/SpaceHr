@@ -93,6 +93,8 @@ export default function ContactPage() {
 
     return (
         <div className="flex flex-col min-h-screen font-sans bg-white dark:bg-[#0b1121]">
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://spacehr.net"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://spacehr.net/contact"}]}` }} />
             {/* HERO */}
             <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden pt-28 pb-16">
                 {/* Gradient blobs */}

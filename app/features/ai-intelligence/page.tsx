@@ -19,6 +19,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
+import { JsonLd, generateBreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "AI Intelligence Layer: Hybrid Local/Cloud AI | Space HR",
@@ -61,6 +62,8 @@ export const metadata: Metadata = {
     canonical: "https://spacehr.net/features/ai-intelligence",
   },
 };
+
+const _bc_ai_intelligence = [{"name":"Home","url":"https://spacehr.net"},{"name":"Features","url":"https://spacehr.net/features"},{"name":"AI Intelligence","url":"https://spacehr.net/features/ai-intelligence"}];
 
 export default function AIIntelligencePage() {
   return (

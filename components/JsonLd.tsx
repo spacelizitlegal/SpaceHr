@@ -20,6 +20,11 @@ export const organizationSchema = {
     "https://twitter.com/SpaceHR",
     "https://www.linkedin.com/company/space-hr",
     "https://www.facebook.com/SpaceHR",
+    "https://www.g2.com/products/spacehr",
+    "https://www.capterra.com/p/spacehr",
+    "https://www.trustradius.com/products/spacehr",
+    "https://www.producthunt.com/products/spacehr",
+    "https://www.crunchbase.com/organization/spacehr",
   ],
   contactPoint: [
     {
@@ -164,7 +169,34 @@ export function generateBreadcrumbSchema(
   };
 }
 
-// Article Schema generator for blog posts
+// HowTo Schema generator
+export function generateHowToSchema(howTo: {
+  name: string;
+  description: string;
+  totalTime?: string;
+  supply?: string[];
+  tool?: string[];
+  steps: { name: string; text: string; url?: string }[];
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: howTo.name,
+    description: howTo.description,
+    ...(howTo.totalTime && { totalTime: howTo.totalTime }),
+    ...(howTo.supply && { supply: howTo.supply.map((s) => ({ "@type": "HowToSupply", name: s })) }),
+    ...(howTo.tool && { tool: howTo.tool.map((t) => ({ "@type": "HowToTool", name: t })) }),
+    step: howTo.steps.map((step, i) => ({
+      "@type": "HowToStep",
+      position: i + 1,
+      name: step.name,
+      text: step.text,
+      ...(step.url && { url: step.url }),
+    })),
+  };
+}
+
+
 export function generateArticleSchema(article: {
   title: string;
   description: string;

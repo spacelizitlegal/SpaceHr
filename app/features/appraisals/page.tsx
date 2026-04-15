@@ -16,6 +16,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
+import { JsonLd, generateBreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "AI-Powered Performance Appraisals | 360° Reviews with Smart Coaching",
@@ -40,6 +41,8 @@ export const metadata: Metadata = {
     images: ["/og-appraisals.png"],
   },
 };
+
+const _bc_appraisals = [{"name":"Home","url":"https://spacehr.net"},{"name":"Features","url":"https://spacehr.net/features"},{"name":"Appraisals","url":"https://spacehr.net/features/appraisals"}];
 
 export default function AIAppraisalsPage() {
   return (

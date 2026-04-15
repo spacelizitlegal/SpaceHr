@@ -13,6 +13,9 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { JsonLd, generateBreadcrumbSchema, generateFAQSchema,
+  softwareSchema } from "@/components/JsonLd";
+import { FAQAccordion } from "@/components/FAQAccordion";
 
 export const metadata: Metadata = {
   title: "Workforce Attrition Prediction Model | Retain Top Talent | Space HR",
@@ -34,7 +37,7 @@ export const metadata: Metadata = {
     url: "https://spacehr.net/features/attrition-prediction",
     images: [
       {
-        url: "/og-attrition.jpg",
+        url: "/desktop-design-showcase.webp",
         width: 1200,
         height: 630,
         alt: "Workforce Attrition Prediction Dashboard",
@@ -43,9 +46,31 @@ export const metadata: Metadata = {
   },
 };
 
+const attritionFAQs = [
+  { question: "What is workforce attrition prediction?", answer: "Workforce attrition prediction uses AI to analyze employee data — engagement scores, performance trends, compensation ratios, and 50+ other signals — to identify employees at risk of leaving months before they resign." },
+  { question: "How accurate is Space HR attrition prediction?", answer: "Space HR's model achieves 87%+ precision on flight-risk identification. It continuously learns from your organization's patterns, improving accuracy over time as it processes more data." },
+  { question: "What data signals does Space HR analyze?", answer: "The model analyzes over 50 signals including engagement survey scores, tenure length, recent performance reviews, promotion history, manager relationship quality, compensation vs. market, absenteeism patterns, and peer network strength." },
+  { question: "How early can Space HR detect flight risk?", answer: "Space HR typically flags at-risk employees 3–6 months before a likely resignation, giving HR and managers sufficient time to intervene with tailored retention strategies." },
+  { question: "Does attrition prediction violate employee privacy?", answer: "No. Space HR processes only data your employees have already consented to provide (surveys, HR records, performance data). The model surfaces risk scores to HR and managers — not to other employees." },
+  { question: "Can I see WHY an employee is flagged as at-risk?", answer: "Yes. Each risk profile includes a breakdown of contributing factors with plain-language explanations, so managers can have targeted, constructive conversations rather than guessing." },
+  { question: "How does Space HR integrate with existing HR systems?", answer: "Space HR connects to major HRIS platforms via API. HR data flows automatically so risk scores are always up to date without manual data exports or uploads." },
+  { question: "What ROI does attrition prediction deliver?", answer: "Replacing a mid-level employee costs 50–200% of their annual salary. Even reducing attrition by 10–15% in a 200-person company can save $500K+ annually in recruiting, training, and lost productivity costs." },
+];
+
+const attritionBreadcrumbs = [
+  { name: "Home", url: "https://spacehr.net/" },
+  { name: "Features", url: "https://spacehr.net/features" },
+  { name: "Attrition Prediction", url: "https://spacehr.net/features/attrition-prediction" },
+];
+
 export default function AttritionPredictionPage() {
+  const faqSchema = generateFAQSchema(attritionFAQs);
+  const breadcrumbSchema = generateBreadcrumbSchema(attritionBreadcrumbs);
   return (
     <div className="min-h-screen bg-white dark:bg-[#0f172a] font-sans">
+      <JsonLd data={softwareSchema} />
+      <JsonLd data={faqSchema} />
+      <JsonLd data={breadcrumbSchema} />
       {/* Hero Section */}
       <section className="pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-purple-50 via-pink-50 to-indigo-50 dark:from-purple-900/20 dark:via-pink-900/10 dark:to-indigo-900/20 -z-10"></div>
@@ -289,6 +314,17 @@ export default function AttritionPredictionPage() {
                 </Button>
              </Link>
            </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-24 bg-white dark:bg-gray-900">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Frequently Asked Questions</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-400">Common questions about AI-powered workforce attrition prediction.</p>
+          </div>
+          <FAQAccordion items={attritionFAQs} />
         </div>
       </section>
     </div>

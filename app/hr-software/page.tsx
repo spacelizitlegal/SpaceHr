@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { JsonLd } from "@/components/JsonLd";
+import { JsonLd,
+  generateBreadcrumbSchema } from "@/components/JsonLd";
 import {
   CheckCircle,
   BarChart3,
@@ -82,9 +83,12 @@ const organizationSchema = {
   })),
 };
 
+const _bc_hr_software = [{"name":"Home","url":"https://spacehr.net"},{"name":"HR Software","url":"https://spacehr.net/hr-software"}];
+
 export default function HRSoftwarePage() {
   return (
     <div className="min-h-screen bg-white dark:bg-[#0b1121] font-sans">
+      <JsonLd data={generateBreadcrumbSchema(_bc_hr_software)} />
       <JsonLd data={organizationSchema} />
 
       {/* Hero Section */}

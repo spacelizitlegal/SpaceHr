@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/Button";
+﻿import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -20,75 +20,55 @@ import {
   organizationSchema,
   softwareSchema,
   websiteSchema,
+  generateFAQSchema,
+  generateBreadcrumbSchema,
 } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Space HR - AI Payroll Auditor & Predictive Workforce Analytics Platform",
+      "SpaceHR - AI-Powered HR Chatbot & Employee Self-Service Platform",
   },
   description:
-    "Transform your enterprise with Space HR’s AI-powered ERP. Automate payroll, appraisals, and finance analytics to streamline operations and scale your business.",
+    "SpaceHR automates HR for growing teams - AI chatbot for employee self-service, payroll anomaly detection, 12-month labor cost forecasting, and 360 appraisals. Free trial. Setup in 48 hours.",
   keywords: [
-    "hr software AI",
+    "AI HR chatbot",
+    "chatbot for HR services",
+    "employee self-service chatbot",
+    "hr software",
     "hrms",
     "best hr software",
     "human resource management system",
-    "AI HR ERP system",
-    "human capital management",
+    "AI HR platform",
     "AI payroll software",
+    "payroll anomaly detection",
+    "workforce cost forecasting",
     "performance appraisal system",
-    "tax compliance software",
-    "HR finance analytics",
-    "payroll automation",
-    "360-degree feedback",
+    "HR automation",
     "AI-powered HR",
-    "workforce management system",
     "employee self-service portal",
-    "HR admin dashboard",
-    "CEO HR analytics",
-    "supervisor performance management",
-    "automated payroll processing",
-    "free w4 form filling tool",
-    "free w-4 form filling tool",
-    "free w4 generator",
-    "free w-4 generator",
-    "w4 form online",
-    "w-4 form online",
-    "fillable w4 form",
-    "fillable w-4 form",
-    "w4 form pdf download",
-    "w-4 form pdf download",
-    "w4 tax form generator",
-    "employee withholding certificate",
-    "irs form w-4",
-    "how to fill out w4 form",
-    "w4 form for employees",
-    "federal w4 form tool",
-    "online w4 form filling",
-    "w4 withholding form online",
-    "download completed w4 form",
+    "hr payroll software",
   ],
   openGraph: {
-    title: "HR Software for Modern Teams | Best HRMS & Management System",
+    title: "SpaceHR - AI HR Chatbot & Employee Self-Service Platform",
     description:
-      "Comprehensive HR Software for Payroll, Tax, Finance, and Performance Management. The best HRMS with AI-powered insights.",
+      "AI HR chatbot + payroll auditor + workforce forecasting - all in one platform. Reduce HR tickets by 70%. Free trial available.",
     url: "https://spacehr.net",
     images: [
       {
-        url: "/og-home.jpg",
+        url: "https://spacehr.net/desktop-design-showcase.webp",
         width: 1200,
         height: 630,
-        alt: "Space HR - Best HR Software",
+        alt: "SpaceHR - AI HR Chatbot and Employee Self-Service Platform",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "HR Software for Modern Teams | Best HRMS & Management System",
+    title: "SpaceHR - AI HR Chatbot & Employee Self-Service Platform",
     description:
-      "Complete HR Software & HRMS for Payroll, Appraisals, Tax, Finance with AI intelligence.",
-    images: ["/og-home.jpg"],
+      "AI chatbot for HR, payroll anomaly detection, workforce forecasting - all in one. Free trial, setup in 48 hours.",
+    images: ["https://spacehr.net/desktop-design-showcase.webp"],
   },
   alternates: {
     canonical: "https://spacehr.net",
@@ -96,11 +76,48 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const homeFaqs = [
+    {
+      question: "What is SpaceHR?",
+      answer:
+        "SpaceHR is an AI-powered HR platform that combines an AI HR chatbot for employee self-service, automated payroll anomaly detection, 12-month labor cost forecasting, 360-degree performance appraisals, and attrition prediction. Designed for mid-market and enterprise companies to reduce HR overhead and make data-driven workforce decisions.",
+    },
+    {
+      question: "Does SpaceHR have an AI HR chatbot?",
+      answer:
+        "Yes. SpaceHR includes a 24/7 AI HR chatbot that handles employee questions about leave balances, payroll, policies, and benefits automatically. It resolves 95% of queries instantly, reduces HR ticket volume by 70%, and escalates complex issues to your HR team with full context.",
+    },
+    {
+      question: "How does SpaceHR detect payroll anomalies?",
+      answer:
+        "SpaceHR's AI Payroll Auditor scans every payroll run before processing and flags errors in gross-to-net calculations, FUTA/FICA withholding, and NACHA ACH file generation. It compares payroll against historical baselines and alerts HR instantly, reducing payroll errors by 99%.",
+    },
+    {
+      question: "Can SpaceHR predict labor costs?",
+      answer:
+        "Yes. SpaceHR forecasts 12 months of labor costs with 95% accuracy using AI headcount scenario modeling. HR leaders and CFOs can model hiring plans, simulate salary increase impacts, and track budget-vs-actual variance in real time.",
+    },
+    {
+      question: "Which countries does SpaceHR support?",
+      answer:
+        "SpaceHR supports United States (all 50 states, FUTA/SUTA, NACHA), UAE (WPS, MOHRE, gratuity), Singapore (CPF, MOM), Canada, and Europe (GDPR). Regional payroll compliance is built in with no configuration required.",
+    },
+    {
+      question: "How long does it take to set up SpaceHR?",
+      answer:
+        "Most teams go live within 48 hours. SpaceHR provides guided onboarding, data import tools, and a dedicated setup team. No coding is required. A free trial is available.",
+    },
+  ];
+
+  const homeBreadcrumb = [{ name: "Home", url: "https://spacehr.net" }];
+
   return (
     <>
       <JsonLd data={organizationSchema} />
       <JsonLd data={softwareSchema} />
       <JsonLd data={websiteSchema} />
+      <JsonLd data={generateFAQSchema(homeFaqs)} />
+      <JsonLd data={generateBreadcrumbSchema(homeBreadcrumb)} />
       <div className="flex flex-col min-h-screen font-sans bg-white dark:bg-[#0b1121] overflow-x-hidden">
         {/* 1. HERO SECTION - Full width with gradient overlay */}
         <section className="relative h-[90vh] min-h-[700px] flex items-center justify-center overflow-hidden pt-32">
@@ -1077,6 +1094,83 @@ export default function Home() {
           </div>
         </section>
 
+        {/* SITE NAVIGATION HUB — internal linking for SEO */}
+        <section className="py-16 bg-gray-50 dark:bg-[#0f172a] border-t border-gray-100 dark:border-gray-800">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-10 text-center">
+              Explore Space HR
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              {/* Features */}
+              <div>
+                <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">Features</h3>
+                <ul className="space-y-2">
+                  <li><Link href="/features/ai-chatbots" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">AI HR Chatbot</Link></li>
+                  <li><Link href="/features/ai-automation" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">AI Workflow Automation</Link></li>
+                  <li><Link href="/features/cost-prediction" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Labor Cost Forecasting</Link></li>
+                  <li><Link href="/features/ai-payroll-auditor" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">AI Payroll Auditor</Link></li>
+                  <li><Link href="/features/attrition-prediction" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Attrition Prediction</Link></li>
+                  <li><Link href="/features/hr-ai-concierge" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">HR AI Concierge</Link></li>
+                  <li><Link href="/features/360-performance-appraisals" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">360° Appraisals</Link></li>
+                  <li><Link href="/features/ai-templates" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">AI Templates</Link></li>
+                  <li><Link href="/features" className="text-sm font-semibold text-primary hover:underline">All Features →</Link></li>
+                </ul>
+              </div>
+              {/* Solutions & Compare */}
+              <div>
+                <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">Solutions</h3>
+                <ul className="space-y-2">
+                  <li><Link href="/solutions/ceo" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">For CEOs</Link></li>
+                  <li><Link href="/solutions/hr-admin" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">For HR Admins</Link></li>
+                  <li><Link href="/solutions/employees" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">For Employees</Link></li>
+                </ul>
+                <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mt-6 mb-4">Compare</h3>
+                <ul className="space-y-2">
+                  <li><Link href="/compare/bamboohr" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">vs BambooHR</Link></li>
+                  <li><Link href="/compare/rippling" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">vs Rippling</Link></li>
+                  <li><Link href="/compare/workday" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">vs Workday</Link></li>
+                  <li><Link href="/compare/gusto" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">vs Gusto</Link></li>
+                  <li><Link href="/compare/orangehrm" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">vs OrangeHRM</Link></li>
+                </ul>
+              </div>
+              {/* Regions */}
+              <div>
+                <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">Regions</h3>
+                <ul className="space-y-2">
+                  <li><Link href="/regions/united-states" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">United States</Link></li>
+                  <li><Link href="/regions/dubai" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Dubai & UAE</Link></li>
+                  <li><Link href="/regions/singapore" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Singapore</Link></li>
+                  <li><Link href="/regions/canada" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Canada</Link></li>
+                  <li><Link href="/regions/europe" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Europe</Link></li>
+                </ul>
+                <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mt-6 mb-4">HR Software</h3>
+                <ul className="space-y-2">
+                  <li><Link href="/hr-software" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">HR Software</Link></li>
+                  <li><Link href="/hrms" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">HRMS</Link></li>
+                  <li><Link href="/hr-payroll-software" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">HR Payroll Software</Link></li>
+                  <li><Link href="/payroll-anomaly-detection" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Payroll Anomaly Detection</Link></li>
+                </ul>
+              </div>
+              {/* Resources */}
+              <div>
+                <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">Resources</h3>
+                <ul className="space-y-2">
+                  <li><Link href="/blogs" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">HR Blog</Link></li>
+                  <li><Link href="/courses" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">HR Courses</Link></li>
+                  <li><Link href="/demo" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Watch Demo Video</Link></li>
+                  <li><Link href="/glossary" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">HR Glossary</Link></li>
+                  <li><Link href="/tools/w4-generator" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">W-4 Generator</Link></li>
+                  <li><Link href="/tools/true-cost-calculator" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Employee Cost Calculator</Link></li>
+                  <li><Link href="/tools/w2-form-download" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">W-2 Form Download</Link></li>
+                  <li><Link href="/california-pay-transparency" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">CA Pay Transparency</Link></li>
+                  <li><Link href="/nyc-144-compliance" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">NYC 144 Compliance</Link></li>
+                  <li><Link href="/about" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">About Space HR</Link></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* 6. ENHANCED FINAL CTA */}
         <section className="relative py-32 bg-gradient-to-br from-gray-900 via-gray-800 to-black dark:from-black dark:via-gray-950 dark:to-black overflow-hidden">
           {/* Animated Gradient Orbs */}
@@ -1164,6 +1258,129 @@ export default function Home() {
                     Go live in 2 business days
                   </p>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        {/* FAQ Section */}
+        <section className="py-20 bg-white dark:bg-[#0b1121]" id="faq">
+          <div className="container mx-auto px-6 max-w-4xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                Frequently Asked Questions
+              </h2>
+              <p className="text-lg text-gray-600 dark:text-gray-300">
+                Everything you need to know about SpaceHR
+              </p>
+            </div>
+            <div className="space-y-4">
+              {[
+                {
+                  q: "What is SpaceHR?",
+                  a: "SpaceHR is an AI-powered HR platform combining an AI chatbot for employee self-service, automated payroll anomaly detection, 12-month labor cost forecasting, 360° performance appraisals, and attrition prediction — designed for mid-market and enterprise teams.",
+                },
+                {
+                  q: "Does SpaceHR have an AI HR chatbot?",
+                  a: "Yes. SpaceHR's AI HR chatbot handles employee questions about leave, payroll, policies, and benefits 24/7. It resolves 95% of queries instantly and reduces HR ticket volume by 70%.",
+                },
+                {
+                  q: "How does SpaceHR detect payroll anomalies?",
+                  a: "SpaceHR's AI Payroll Auditor scans every payroll run before processing, flags errors in gross-to-net calculations and FUTA/FICA withholding, and alerts HR instantly — reducing payroll errors by 99%.",
+                },
+                {
+                  q: "Can SpaceHR predict labor costs?",
+                  a: "Yes. SpaceHR forecasts 12 months of labor costs with 95% accuracy, enabling HR and CFOs to model headcount scenarios and track budget-vs-actual variance in real time.",
+                },
+                {
+                  q: "Which countries does SpaceHR support?",
+                  a: "SpaceHR supports United States (all 50 states, NACHA), UAE (WPS, MOHRE, gratuity), Singapore (CPF, MOM), Canada, and Europe (GDPR). Regional payroll compliance is built in.",
+                },
+                {
+                  q: "How long does it take to set up SpaceHR?",
+                  a: "Most teams go live within 48 hours with guided onboarding, data import tools, and a dedicated setup team. No coding required. A free trial is available.",
+                },
+              ].map(({ q, a }, i) => (
+                <details key={i} className="group border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                  <summary className="flex items-center justify-between p-5 cursor-pointer bg-gray-50 dark:bg-[#111827] hover:bg-gray-100 dark:hover:bg-[#1a2433] transition-colors list-none">
+                    <span className="font-semibold text-gray-900 dark:text-white pr-4">{q}</span>
+                    <span className="text-2xl text-blue-500 flex-shrink-0 group-open:rotate-45 transition-transform duration-200">+</span>
+                  </summary>
+                  <div className="p-5 text-gray-600 dark:text-gray-300 leading-relaxed bg-white dark:bg-[#0b1121]">
+                    {a}
+                  </div>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Site Navigation Hub - Internal Links for SEO */}
+        <section className="py-16 bg-gray-50 dark:bg-[#111827]" aria-label="Site Navigation">
+          <div className="container mx-auto px-6">
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white text-center mb-10">
+              Explore SpaceHR
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-sm">
+              <div>
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-3 uppercase tracking-wide text-xs">Features</h3>
+                <ul className="space-y-2">
+                  <li><a href="/features" className="text-blue-600 dark:text-blue-400 hover:underline">All Features</a></li>
+                  <li><a href="/features/ai-chatbots" className="text-blue-600 dark:text-blue-400 hover:underline">AI HR Chatbot</a></li>
+                  <li><a href="/features/ai-automation" className="text-blue-600 dark:text-blue-400 hover:underline">AI Automation</a></li>
+                  <li><a href="/features/cost-prediction" className="text-blue-600 dark:text-blue-400 hover:underline">Cost Prediction</a></li>
+                  <li><a href="/features/attrition-prediction" className="text-blue-600 dark:text-blue-400 hover:underline">Attrition Prediction</a></li>
+                  <li><a href="/features/ai-payroll-auditor" className="text-blue-600 dark:text-blue-400 hover:underline">AI Payroll Auditor</a></li>
+                  <li><a href="/features/hr-ai-concierge" className="text-blue-600 dark:text-blue-400 hover:underline">HR AI Concierge</a></li>
+                  <li><a href="/features/leave-management" className="text-blue-600 dark:text-blue-400 hover:underline">Leave Management</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-3 uppercase tracking-wide text-xs">Solutions</h3>
+                <ul className="space-y-2">
+                  <li><a href="/solutions/chatbot-for-hr-services" className="text-blue-600 dark:text-blue-400 hover:underline">Chatbot for HR Services</a></li>
+                  <li><a href="/solutions/employee-self-service" className="text-blue-600 dark:text-blue-400 hover:underline">Employee Self-Service Portal</a></li>
+                  <li><a href="/solutions/hr-ai-chatbot" className="text-blue-600 dark:text-blue-400 hover:underline">HR AI Chatbot</a></li>
+                  <li><a href="/solutions/small-business" className="text-blue-600 dark:text-blue-400 hover:underline">Small Business</a></li>
+                  <li><a href="/solutions/enterprise" className="text-blue-600 dark:text-blue-400 hover:underline">Enterprise</a></li>
+                  <li><a href="/solutions/remote-teams" className="text-blue-600 dark:text-blue-400 hover:underline">Remote Teams</a></li>
+                  <li><a href="/solutions/healthcare" className="text-blue-600 dark:text-blue-400 hover:underline">Healthcare</a></li>
+                  <li><a href="/solutions/retail" className="text-blue-600 dark:text-blue-400 hover:underline">Retail</a></li>
+                  <li><a href="/solutions/construction" className="text-blue-600 dark:text-blue-400 hover:underline">Construction</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-3 uppercase tracking-wide text-xs">Compare</h3>
+                <ul className="space-y-2">
+                  <li><a href="/compare/spacehr-vs-bamboohr" className="text-blue-600 dark:text-blue-400 hover:underline">vs BambooHR</a></li>
+                  <li><a href="/compare/spacehr-vs-workday" className="text-blue-600 dark:text-blue-400 hover:underline">vs Workday</a></li>
+                  <li><a href="/compare/spacehr-vs-rippling" className="text-blue-600 dark:text-blue-400 hover:underline">vs Rippling</a></li>
+                  <li><a href="/compare/spacehr-vs-adp" className="text-blue-600 dark:text-blue-400 hover:underline">vs ADP</a></li>
+                  <li><a href="/compare/spacehr-vs-gusto" className="text-blue-600 dark:text-blue-400 hover:underline">vs Gusto</a></li>
+                  <li><a href="/compare/spacehr-vs-hibob" className="text-blue-600 dark:text-blue-400 hover:underline">vs HiBob</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-3 uppercase tracking-wide text-xs">Regions</h3>
+                <ul className="space-y-2">
+                  <li><a href="/regions/united-states" className="text-blue-600 dark:text-blue-400 hover:underline">United States</a></li>
+                  <li><a href="/regions/uae" className="text-blue-600 dark:text-blue-400 hover:underline">UAE</a></li>
+                  <li><a href="/regions/singapore" className="text-blue-600 dark:text-blue-400 hover:underline">Singapore</a></li>
+                  <li><a href="/regions/canada" className="text-blue-600 dark:text-blue-400 hover:underline">Canada</a></li>
+                  <li><a href="/regions/europe" className="text-blue-600 dark:text-blue-400 hover:underline">Europe</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="font-semibold text-gray-900 dark:text-white mb-3 uppercase tracking-wide text-xs">Resources</h3>
+                <ul className="space-y-2">
+                  <li><a href="/about" className="text-blue-600 dark:text-blue-400 hover:underline">About SpaceHR</a></li>
+                  <li><a href="/pricing" className="text-blue-600 dark:text-blue-400 hover:underline">Pricing</a></li>
+                  <li><a href="/blog" className="text-blue-600 dark:text-blue-400 hover:underline">Blog</a></li>
+                  <li><a href="/courses" className="text-blue-600 dark:text-blue-400 hover:underline">HR Courses</a></li>
+                  <li><a href="/templates" className="text-blue-600 dark:text-blue-400 hover:underline">HR Templates</a></li>
+                  <li><a href="/tools/w4-generator" className="text-blue-600 dark:text-blue-400 hover:underline">W-4 Generator</a></li>
+                  <li><a href="/demo" className="text-blue-600 dark:text-blue-400 hover:underline">Watch Demo</a></li>
+                  <li><a href="/press" className="text-blue-600 dark:text-blue-400 hover:underline">Press Kit</a></li>
+                </ul>
               </div>
             </div>
           </div>

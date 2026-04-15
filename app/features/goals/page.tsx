@@ -23,6 +23,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
+import { JsonLd, generateBreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Goal Management & OKR Software: Align Teams | Space HR",
@@ -69,6 +70,8 @@ export const metadata: Metadata = {
     canonical: "https://spacehr.net/features/goals",
   },
 };
+
+const _bc_goals = [{"name":"Home","url":"https://spacehr.net"},{"name":"Features","url":"https://spacehr.net/features"},{"name":"Goals and OKRs","url":"https://spacehr.net/features/goals"}];
 
 export default function GoalsPage() {
   return (

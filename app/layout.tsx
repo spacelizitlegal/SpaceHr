@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Outfit } from "next/font/google";
 import Script from "next/script";
 import { Navbar } from "@/components/Navbar";
@@ -84,12 +84,30 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://spacehr.net",
+    languages: {
+      "en":    "https://spacehr.net",
+      "en-US": "https://spacehr.net/regions/united-states",
+      "en-IN": "https://spacehr.net/regions/india",
+      "en-GB": "https://spacehr.net/regions/uk",
+      "en-AE": "https://spacehr.net/regions/dubai",
+      "x-default": "https://spacehr.net",
+    },
   },
   verification: {
     google: "MJLrhzEJERw1j9RMKx272D8n3whd7L_71XQTi2_puqY",
   },
 };
 
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  minimumScale: 1,
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#0b1121" },
+  ],
+};
 export default function RootLayout({
   children,
 }: {

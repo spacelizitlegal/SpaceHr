@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { Metadata } from "next";
+import { JsonLd, generateBreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "New York AI Hiring Law (NYC 144) Compliance Tool | Space HR",
@@ -26,6 +27,8 @@ export const metadata: Metadata = {
     "algorithm bias detection",
   ],
 };
+
+const _bc_nyc144 = [{"name":"Home","url":"https://spacehr.net"},{"name":"NYC Local Law 144 Compliance","url":"https://spacehr.net/nyc-144-compliance"}];
 
 export default function NYC144CompliancePage() {
   return (

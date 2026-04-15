@@ -14,6 +14,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
+import { JsonLd, generateBreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "AI Performance Review Templates | Unbiased Competency-Based Forms",
@@ -38,6 +39,8 @@ export const metadata: Metadata = {
     images: ["/og-templates.png"],
   },
 };
+
+const _bc_ai_templates = [{"name":"Home","url":"https://spacehr.net"},{"name":"Features","url":"https://spacehr.net/features"},{"name":"AI Templates","url":"https://spacehr.net/features/ai-templates"}];
 
 export default function AITemplatesPage() {
   return (

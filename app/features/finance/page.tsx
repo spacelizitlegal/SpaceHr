@@ -31,6 +31,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
+import { JsonLd, generateBreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Finance Analytics & Labor Cost Management | Space HR",
@@ -77,6 +78,8 @@ export const metadata: Metadata = {
     canonical: "https://spacehr.net/features/finance",
   },
 };
+
+const _bc_finance = [{"name":"Home","url":"https://spacehr.net"},{"name":"Features","url":"https://spacehr.net/features"},{"name":"Finance","url":"https://spacehr.net/features/finance"}];
 
 export default function FinanceAnalyticsPage() {
   return (
