@@ -1,4 +1,4 @@
-﻿import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 import {
   ArrowRight,
@@ -1094,82 +1094,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* SITE NAVIGATION HUB — internal linking for SEO */}
-        <section className="py-16 bg-gray-50 dark:bg-[#0f172a] border-t border-gray-100 dark:border-gray-800">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-10 text-center">
-              Explore Space HR
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {/* Features */}
-              <div>
-                <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">Features</h3>
-                <ul className="space-y-2">
-                  <li><Link href="/features/ai-chatbots" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">AI HR Chatbot</Link></li>
-                  <li><Link href="/features/ai-automation" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">AI Workflow Automation</Link></li>
-                  <li><Link href="/features/cost-prediction" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Labor Cost Forecasting</Link></li>
-                  <li><Link href="/features/ai-payroll-auditor" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">AI Payroll Auditor</Link></li>
-                  <li><Link href="/features/attrition-prediction" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Attrition Prediction</Link></li>
-                  <li><Link href="/features/hr-ai-concierge" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">HR AI Concierge</Link></li>
-                  <li><Link href="/features/360-performance-appraisals" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">360° Appraisals</Link></li>
-                  <li><Link href="/features/ai-templates" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">AI Templates</Link></li>
-                  <li><Link href="/features" className="text-sm font-semibold text-primary hover:underline">All Features →</Link></li>
-                </ul>
-              </div>
-              {/* Solutions & Compare */}
-              <div>
-                <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">Solutions</h3>
-                <ul className="space-y-2">
-                  <li><Link href="/solutions/ceo" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">For CEOs</Link></li>
-                  <li><Link href="/solutions/hr-admin" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">For HR Admins</Link></li>
-                  <li><Link href="/solutions/employees" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">For Employees</Link></li>
-                </ul>
-                <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mt-6 mb-4">Compare</h3>
-                <ul className="space-y-2">
-                  <li><Link href="/compare/bamboohr" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">vs BambooHR</Link></li>
-                  <li><Link href="/compare/rippling" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">vs Rippling</Link></li>
-                  <li><Link href="/compare/workday" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">vs Workday</Link></li>
-                  <li><Link href="/compare/gusto" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">vs Gusto</Link></li>
-                  <li><Link href="/compare/orangehrm" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">vs OrangeHRM</Link></li>
-                </ul>
-              </div>
-              {/* Regions */}
-              <div>
-                <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">Regions</h3>
-                <ul className="space-y-2">
-                  <li><Link href="/regions/united-states" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">United States</Link></li>
-                  <li><Link href="/regions/dubai" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Dubai & UAE</Link></li>
-                  <li><Link href="/regions/singapore" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Singapore</Link></li>
-                  <li><Link href="/regions/canada" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Canada</Link></li>
-                  <li><Link href="/regions/europe" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Europe</Link></li>
-                </ul>
-                <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mt-6 mb-4">HR Software</h3>
-                <ul className="space-y-2">
-                  <li><Link href="/hr-software" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">HR Software</Link></li>
-                  <li><Link href="/hrms" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">HRMS</Link></li>
-                  <li><Link href="/hr-payroll-software" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">HR Payroll Software</Link></li>
-                  <li><Link href="/payroll-anomaly-detection" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Payroll Anomaly Detection</Link></li>
-                </ul>
-              </div>
-              {/* Resources */}
-              <div>
-                <h3 className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">Resources</h3>
-                <ul className="space-y-2">
-                  <li><Link href="/blogs" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">HR Blog</Link></li>
-                  <li><Link href="/courses" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">HR Courses</Link></li>
-                  <li><Link href="/demo" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Watch Demo Video</Link></li>
-                  <li><Link href="/glossary" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">HR Glossary</Link></li>
-                  <li><Link href="/tools/w4-generator" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">W-4 Generator</Link></li>
-                  <li><Link href="/tools/true-cost-calculator" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">Employee Cost Calculator</Link></li>
-                  <li><Link href="/tools/w2-form-download" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">W-2 Form Download</Link></li>
-                  <li><Link href="/california-pay-transparency" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">CA Pay Transparency</Link></li>
-                  <li><Link href="/nyc-144-compliance" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">NYC 144 Compliance</Link></li>
-                  <li><Link href="/about" className="text-sm text-gray-600 dark:text-gray-400 hover:text-primary transition-colors">About Space HR</Link></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
+
 
         {/* 6. ENHANCED FINAL CTA */}
         <section className="relative py-32 bg-gradient-to-br from-gray-900 via-gray-800 to-black dark:from-black dark:via-gray-950 dark:to-black overflow-hidden">
@@ -1314,77 +1239,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Site Navigation Hub - Internal Links for SEO */}
-        <section className="py-16 bg-gray-50 dark:bg-[#111827]" aria-label="Site Navigation">
-          <div className="container mx-auto px-6">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white text-center mb-10">
-              Explore SpaceHR
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-sm">
-              <div>
-                <h3 className="font-semibold text-gray-900 dark:text-white mb-3 uppercase tracking-wide text-xs">Features</h3>
-                <ul className="space-y-2">
-                  <li><a href="/features" className="text-blue-600 dark:text-blue-400 hover:underline">All Features</a></li>
-                  <li><a href="/features/ai-chatbots" className="text-blue-600 dark:text-blue-400 hover:underline">AI HR Chatbot</a></li>
-                  <li><a href="/features/ai-automation" className="text-blue-600 dark:text-blue-400 hover:underline">AI Automation</a></li>
-                  <li><a href="/features/cost-prediction" className="text-blue-600 dark:text-blue-400 hover:underline">Cost Prediction</a></li>
-                  <li><a href="/features/attrition-prediction" className="text-blue-600 dark:text-blue-400 hover:underline">Attrition Prediction</a></li>
-                  <li><a href="/features/ai-payroll-auditor" className="text-blue-600 dark:text-blue-400 hover:underline">AI Payroll Auditor</a></li>
-                  <li><a href="/features/hr-ai-concierge" className="text-blue-600 dark:text-blue-400 hover:underline">HR AI Concierge</a></li>
-                  <li><a href="/features/leave-management" className="text-blue-600 dark:text-blue-400 hover:underline">Leave Management</a></li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 dark:text-white mb-3 uppercase tracking-wide text-xs">Solutions</h3>
-                <ul className="space-y-2">
-                  <li><a href="/solutions/chatbot-for-hr-services" className="text-blue-600 dark:text-blue-400 hover:underline">Chatbot for HR Services</a></li>
-                  <li><a href="/solutions/employee-self-service" className="text-blue-600 dark:text-blue-400 hover:underline">Employee Self-Service Portal</a></li>
-                  <li><a href="/solutions/hr-ai-chatbot" className="text-blue-600 dark:text-blue-400 hover:underline">HR AI Chatbot</a></li>
-                  <li><a href="/solutions/small-business" className="text-blue-600 dark:text-blue-400 hover:underline">Small Business</a></li>
-                  <li><a href="/solutions/enterprise" className="text-blue-600 dark:text-blue-400 hover:underline">Enterprise</a></li>
-                  <li><a href="/solutions/remote-teams" className="text-blue-600 dark:text-blue-400 hover:underline">Remote Teams</a></li>
-                  <li><a href="/solutions/healthcare" className="text-blue-600 dark:text-blue-400 hover:underline">Healthcare</a></li>
-                  <li><a href="/solutions/retail" className="text-blue-600 dark:text-blue-400 hover:underline">Retail</a></li>
-                  <li><a href="/solutions/construction" className="text-blue-600 dark:text-blue-400 hover:underline">Construction</a></li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 dark:text-white mb-3 uppercase tracking-wide text-xs">Compare</h3>
-                <ul className="space-y-2">
-                  <li><a href="/compare/spacehr-vs-bamboohr" className="text-blue-600 dark:text-blue-400 hover:underline">vs BambooHR</a></li>
-                  <li><a href="/compare/spacehr-vs-workday" className="text-blue-600 dark:text-blue-400 hover:underline">vs Workday</a></li>
-                  <li><a href="/compare/spacehr-vs-rippling" className="text-blue-600 dark:text-blue-400 hover:underline">vs Rippling</a></li>
-                  <li><a href="/compare/spacehr-vs-adp" className="text-blue-600 dark:text-blue-400 hover:underline">vs ADP</a></li>
-                  <li><a href="/compare/spacehr-vs-gusto" className="text-blue-600 dark:text-blue-400 hover:underline">vs Gusto</a></li>
-                  <li><a href="/compare/spacehr-vs-hibob" className="text-blue-600 dark:text-blue-400 hover:underline">vs HiBob</a></li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 dark:text-white mb-3 uppercase tracking-wide text-xs">Regions</h3>
-                <ul className="space-y-2">
-                  <li><a href="/regions/united-states" className="text-blue-600 dark:text-blue-400 hover:underline">United States</a></li>
-                  <li><a href="/regions/uae" className="text-blue-600 dark:text-blue-400 hover:underline">UAE</a></li>
-                  <li><a href="/regions/singapore" className="text-blue-600 dark:text-blue-400 hover:underline">Singapore</a></li>
-                  <li><a href="/regions/canada" className="text-blue-600 dark:text-blue-400 hover:underline">Canada</a></li>
-                  <li><a href="/regions/europe" className="text-blue-600 dark:text-blue-400 hover:underline">Europe</a></li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 dark:text-white mb-3 uppercase tracking-wide text-xs">Resources</h3>
-                <ul className="space-y-2">
-                  <li><a href="/about" className="text-blue-600 dark:text-blue-400 hover:underline">About SpaceHR</a></li>
-                  <li><a href="/pricing" className="text-blue-600 dark:text-blue-400 hover:underline">Pricing</a></li>
-                  <li><a href="/blog" className="text-blue-600 dark:text-blue-400 hover:underline">Blog</a></li>
-                  <li><a href="/courses" className="text-blue-600 dark:text-blue-400 hover:underline">HR Courses</a></li>
-                  <li><a href="/templates" className="text-blue-600 dark:text-blue-400 hover:underline">HR Templates</a></li>
-                  <li><a href="/tools/w4-generator" className="text-blue-600 dark:text-blue-400 hover:underline">W-4 Generator</a></li>
-                  <li><a href="/demo" className="text-blue-600 dark:text-blue-400 hover:underline">Watch Demo</a></li>
-                  <li><a href="/press" className="text-blue-600 dark:text-blue-400 hover:underline">Press Kit</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
+
       </div>
     </>
   );

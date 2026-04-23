@@ -16,8 +16,11 @@ export function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Main grid: brand + link columns */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-8 lg:gap-6">
-          {/* Brand Column */}
+          {/* Brand Column - Explore Space HR */}
           <div className="space-y-6 col-span-2 md:col-span-3 lg:col-span-2 xl:col-span-2">
+            <h3 className="font-semibold text-white mb-5 tracking-wide text-sm uppercase">
+              Explore Space HR
+            </h3>
             <Link href="/" className="flex items-center gap-0 group">
               <div className="relative h-15 w-15 sm:h-[4.5rem] sm:w-[4.5rem] lg:h-[5.25rem] lg:w-[5.25rem] hover:scale-110 transition-transform duration-300">
                 <Image
@@ -67,7 +70,7 @@ export function Footer() {
               </div>
             </div>
 
-            {/* Social Media - moved here to avoid WhatsApp overlap */}
+            {/* Social Media */}
             <div className="flex items-center gap-4 pt-2">
               <Link
                 href="https://x.com/SpaceHR197173"
@@ -108,74 +111,33 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Core Features */}
+          {/* Features */}
           <div>
             <h3 className="font-semibold text-white mb-5 tracking-wide text-sm uppercase">
-              Core Features
+              Features
             </h3>
             <ul className="space-y-0.5">
               {[
-                { href: "/features/payroll", label: "Payroll Management" },
-                {
-                  href: "/features/appraisals",
-                  label: "Performance Appraisals",
-                },
-                { href: "/features/tax", label: "Tax Compliance" },
-                { href: "/features/finance", label: "Finance & Accounting" },
-                { href: "/features/attendance", label: "Attendance Tracking" },
-                {
-                  href: "/features/leave-management",
-                  label: "Leave Management",
-                },
-                {
-                  href: "/features/employee-self-service",
-                  label: "Employee Self-Service",
-                },
-                { href: "/features", label: "All Features →" },
-              ].map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm py-1"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* AI & Deep Dives */}
-          <div>
-            <h3 className="font-semibold text-white mb-5 tracking-wide text-sm uppercase">
-              AI & Intelligence
-            </h3>
-            <ul className="space-y-0.5">
-              {[
+                { href: "/features/ai-chatbots", label: "AI HR Chatbot" },
+                { href: "/features/ai-automation", label: "AI Workflow Automation" },
+                { href: "/features/cost-prediction", label: "Labor Cost Forecasting" },
                 {
                   href: "/features/ai-payroll-auditor",
                   label: "AI Payroll Auditor",
                 },
                 {
-                  href: "/features/360-performance-appraisals",
-                  label: "360 AI Appraisals",
-                },
-                {
-                  href: "/features/hr-ai-concierge",
-                  label: "HR AI Concierge",
-                },
-                { href: "/features/ai-intelligence", label: "AI Intelligence" },
-                { href: "/features/ai-chatbots", label: "AI Chatbots" },
-                { href: "/features/ai-automation", label: "AI Automation" },
-                { href: "/features/ai-templates", label: "AI Templates" },
-                { href: "/features/goals", label: "Goals & OKRs" },
-                {
                   href: "/features/attrition-prediction",
                   label: "Attrition Prediction",
                 },
-                { href: "/features/cost-prediction", label: "Cost Prediction" },
+                { href: "/features/hr-ai-concierge", label: "HR AI Concierge" },
+                {
+                  href: "/features/360-performance-appraisals",
+                  label: "360° Appraisals",
+                },
+                { href: "/features/ai-templates", label: "AI Templates" },
+                { href: "/features", label: "All Features →" },
               ].map((link) => (
-                <li key={link.href}>
+                <li key={link.label}>
                   <Link
                     href={link.href}
                     className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm py-1"
@@ -187,7 +149,7 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Solutions & Regions */}
+          {/* Solutions & Compare */}
           <div>
             <h3 className="font-semibold text-white mb-5 tracking-wide text-sm uppercase">
               Solutions
@@ -198,7 +160,7 @@ export function Footer() {
                 { href: "/solutions/hr-admin", label: "For HR Admins" },
                 { href: "/solutions/employees", label: "For Employees" },
               ].map((link) => (
-                <li key={link.href}>
+                <li key={link.label}>
                   <Link
                     href={link.href}
                     className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm py-1"
@@ -210,23 +172,17 @@ export function Footer() {
             </ul>
 
             <h3 className="font-semibold text-white mt-6 mb-5 tracking-wide text-sm uppercase">
-              Regions
+              Compare
             </h3>
             <ul className="space-y-0.5">
               {[
-                {
-                  href: "/regions/united-states",
-                  label: "United States",
-                },
-                {
-                  href: "/regions/singapore",
-                  label: "Singapore",
-                },
-                { href: "/regions/dubai", label: "Dubai & UAE" },
-                { href: "/regions/canada", label: "Canada" },
-                { href: "/regions/europe", label: "Europe" },
+                { href: "/compare/bamboohr", label: "vs BambooHR" },
+                { href: "/compare/rippling", label: "vs Rippling" },
+                { href: "/compare/workday", label: "vs Workday" },
+                { href: "/compare/gusto", label: "vs Gusto" },
+                { href: "/compare/orangehrm", label: "vs OrangeHRM" },
               ].map((link) => (
-                <li key={link.href}>
+                <li key={link.label}>
                   <Link
                     href={link.href}
                     className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm py-1"
@@ -238,86 +194,80 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Resources & Compare */}
+          {/* Regions & HR Software */}
+          <div>
+            <h3 className="font-semibold text-white mb-5 tracking-wide text-sm uppercase">
+              Regions
+            </h3>
+            <ul className="space-y-0.5">
+              {[
+                { href: "/regions/united-states", label: "United States" },
+                { href: "/regions/dubai", label: "Dubai & UAE" },
+                { href: "/regions/singapore", label: "Singapore" },
+                { href: "/regions/canada", label: "Canada" },
+                { href: "/regions/europe", label: "Europe" },
+              ].map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm py-1"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <h3 className="font-semibold text-white mt-6 mb-5 tracking-wide text-sm uppercase">
+              HR Software
+            </h3>
+            <ul className="space-y-0.5">
+              {[
+                { href: "/hr-software", label: "HR Software" },
+                { href: "/hrms", label: "HRMS" },
+                { href: "/hr-payroll-software", label: "HR Payroll Software" },
+                {
+                  href: "/payroll-anomaly-detection",
+                  label: "Payroll Anomaly Detection",
+                },
+              ].map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm py-1"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Resources */}
           <div>
             <h3 className="font-semibold text-white mb-5 tracking-wide text-sm uppercase">
               Resources
             </h3>
             <ul className="space-y-0.5">
               {[
-                { href: "/blogs", label: "Blog & Insights" },
-                { href: "/courses", label: "Learning Center" },
-                { href: "/templates", label: "HR Templates" },
+                { href: "/blogs", label: "HR Blog" },
+                { href: "/courses", label: "HR Courses" },
+                { href: "/demo", label: "Watch Demo Video" },
                 { href: "/glossary", label: "HR Glossary" },
+                { href: "/tools/w4-generator", label: "W-4 Generator" },
                 {
                   href: "/tools/true-cost-calculator",
-                  label: "True Cost Calculator",
+                  label: "Employee Cost Calculator",
                 },
-                {
-                  href: "/tools/w4-generator",
-                  label: "Free W-4 Form Filling Tool",
-                },
-                {
-                  href: "/tools/fw4-form-download",
-                  label: "FW-4 Form Download",
-                },
-                {
-                  href: "/payroll-anomaly-detection",
-                  label: "Payroll Anomaly Detection",
-                },
-                { href: "/request-a-demo", label: "Request Demo" },
-              ].map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm py-1"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-
-            <h3 className="font-semibold text-white mt-6 mb-5 tracking-wide text-sm uppercase">
-              SEO & Compliance
-            </h3>
-            <ul className="space-y-0.5">
-              {[
-                { href: "/hr-software", label: "HR Software" },
-                { href: "/hrms", label: "HRMS" },
-                {
-                  href: "/best-hr-software-small-business",
-                  label: "Best HR Software for SMB",
-                },
+                { href: "/tools/w2-form-download", label: "W-2 Form Download" },
                 {
                   href: "/california-pay-transparency",
-                  label: "California Pay Transparency",
+                  label: "CA Pay Transparency",
                 },
                 { href: "/nyc-144-compliance", label: "NYC 144 Compliance" },
+                { href: "/about", label: "About Space HR" },
               ].map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm py-1"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-
-            <h3 className="font-semibold text-white mt-6 mb-5 tracking-wide text-sm uppercase">
-              Switch From
-            </h3>
-            <ul className="space-y-0.5">
-              {[
-                { href: "/compare/rippling", label: "Rippling" },
-                { href: "/compare/gusto", label: "Gusto" },
-                { href: "/compare/workday", label: "Workday" },
-                { href: "/compare/bamboohr", label: "BambooHR" },
-                { href: "/compare/orangehrm", label: "OrangeHRM" },
-              ].map((link) => (
-                <li key={link.href}>
+                <li key={link.label}>
                   <Link
                     href={link.href}
                     className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm py-1"
@@ -397,7 +347,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="mt-8 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm">
-            © 2025 Space AI Inc. All rights reserved.
+            © 2026 Space AI Inc. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-sm text-gray-500 w-full justify-center">
             <Link href="/about" className="hover:text-white transition-colors">

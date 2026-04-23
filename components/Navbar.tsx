@@ -41,6 +41,7 @@ const resourceLinks = [
   { href: "/tools/true-cost-calculator", label: "True Cost Calculator" },
   { href: "/tools/fw4-form-download", label: "FW-4 Form Download" },
   { href: "/payroll-anomaly-detection", label: "Payroll Anomaly Detection" },
+  { href: "/press", label: "Press Kit" },
 ];
 
 interface DropdownProps {
