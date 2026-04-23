@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { JsonLd } from "@/components/JsonLd";
+import { JsonLd, generateBreadcrumbSchema } from "@/components/JsonLd";
 import {
   CheckCircle,
   XCircle,
@@ -57,6 +57,12 @@ const faqs = [
   },
 ];
 
+const orangehrmBreadcrumbs = [
+  { name: "Home", url: "https://spacehr.net/" },
+  { name: "Compare", url: "https://spacehr.net/compare" },
+  { name: "vs OrangeHRM", url: "https://spacehr.net/compare/orangehrm" },
+];
+
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -76,7 +82,7 @@ export default function CompareOrangeHRMPage() {
       <JsonLd data={organizationSchema} />
 
       {/* Hero Section */}
-      <section className="relative pt-32 pb-20 overflow-hidden">
+      <section className="relative pt-10 pb-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-orange-50 to-red-50 dark:from-orange-950/20 dark:to-red-950/20 -z-10"></div>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-4xl">
           <div className="inline-block px-4 py-1.5 mb-6 rounded-full bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 font-semibold text-sm">

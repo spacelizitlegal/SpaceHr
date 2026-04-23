@@ -28,6 +28,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
+import { JsonLd, generateBreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: "Tax Compliance & Payroll Tax Automation | Space HR",
@@ -74,6 +75,8 @@ export const metadata: Metadata = {
     canonical: "https://spacehr.net/features/tax",
   },
 };
+
+const _bc_tax = [{"name":"Home","url":"https://spacehr.net"},{"name":"Features","url":"https://spacehr.net/features"},{"name":"Tax Compliance","url":"https://spacehr.net/features/tax"}];
 
 export default function TaxCompliancePage() {
   return (

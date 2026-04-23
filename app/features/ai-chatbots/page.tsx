@@ -17,50 +17,62 @@ import {
   HelpCircle,
   TrendingUp,
   Lock,
+  ChevronDown,
+  PlayCircle,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
+import {
+  JsonLd,
+  generateFAQSchema,
+  generateBreadcrumbSchema,
+  softwareSchema,
+} from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "AI HR Chatbot: 24/7 Employee Self-Service | Space HR",
+  title: "AI HR Chatbot for Employee Self-Service | Chatbot for HR Services | Space HR",
   description:
-    "Reduce HR workload by 70% with AI chatbots. Provide employees with instant, 24/7 answers to leave, policy, and payroll questions using conversational AI",
+    "Deploy an AI HR chatbot that answers employee questions about leave, payroll, and policies 24/7. Reduce HR ticket volume by 70%. Instant setup, enterprise-grade security. Try free.",
   keywords: [
     "AI HR chatbot",
+    "chatbot for HR services",
     "employee self-service chatbot",
+    "HR chatbot platform",
+    "chatbot for employees",
+    "chatbot for internal employees",
+    "ai chatbot hr",
+    "hr chatbot solutions",
+    "intelligent hr chatbot",
+    "hr virtual assistant",
     "HR automation",
     "AI employee support",
     "payroll chatbot",
-    "policy automation",
-    "leave management chatbot",
     "24/7 HR support",
     "conversational AI HR",
     "automated HR concierge",
-    "HR virtual assistant",
     "employee engagement chatbot",
-    "intelligent HR support",
   ],
   openGraph: {
-    title: "AI HR Chatbot | 24/7 Employee Self-Service | Space HR",
+    title: "AI HR Chatbot for Employee Self-Service | Space HR",
     description:
-      "24/7 automated employee support for policies, leave, payroll, and benefits. Reduce HR workload by 70%.",
+      "24/7 AI chatbot for HR services — instant answers on leave, payroll, policy, and benefits. Reduce HR workload by 70%.",
     url: "https://spacehr.net/features/ai-chatbots",
     images: [
       {
-        url: "/og-chatbot.jpg",
+        url: "/desktop-design-showcase.webp",
         width: 1200,
         height: 630,
-        alt: "Space HR AI Chatbot",
+        alt: "Space HR AI HR Chatbot for Employee Self-Service",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI HR Chatbot | Space HR",
+    title: "AI HR Chatbot | Chatbot for HR Services | Space HR",
     description:
-      "24/7 AI-powered employee support that handles policies, leave, payroll, and benefits queries instantly.",
-    images: ["/og-chatbot.jpg"],
+      "24/7 AI chatbot that handles policies, leave, payroll, and benefits queries instantly. 70% fewer HR tickets.",
+    images: ["/desktop-design-showcase.webp"],
   },
   alternates: {
     canonical: "https://spacehr.net/features/ai-chatbots",
@@ -68,29 +80,108 @@ export const metadata: Metadata = {
 };
 
 export default function AIChatbotsPage() {
+  const faqItems = [
+    {
+      question: "What is an AI HR chatbot?",
+      answer:
+        "An AI HR chatbot is a conversational software tool that uses artificial intelligence and natural language processing to automatically answer employee questions about HR topics such as leave balances, payroll, company policies, benefits, and onboarding. Unlike traditional FAQ pages or ticketing systems, an AI HR chatbot responds instantly 24/7 and can take action — like booking leave or retrieving payslips — without human involvement.",
+    },
+    {
+      question: "How does a chatbot for HR services work?",
+      answer:
+        "A chatbot for HR services connects to your HRMS database and company policy documents. When an employee sends a message, the AI parses the intent, searches the relevant data source, and returns an accurate, personalized answer within seconds. For transactional requests (e.g., 'book Friday off'), it executes the action directly and notifies the relevant manager or system. Complex queries requiring human judgment are automatically escalated to the HR team with full conversation context.",
+    },
+    {
+      question: "What HR questions can the chatbot answer?",
+      answer:
+        "Space HR's AI chatbot handles the most common employee queries: leave balance checks, PTO requests, payslip retrieval, pay date questions, W-2 and tax document access, benefits enrollment details, health insurance plan comparisons, work-from-home policy lookups, onboarding checklists, expense policy questions, 401(k) contribution guidance, and open enrollment reminders. The chatbot is trained on your specific company handbook so answers reflect your actual policies.",
+    },
+    {
+      question: "How much does an HR chatbot cost?",
+      answer:
+        "Space HR offers a free trial so you can test the AI HR chatbot with your team before committing. Enterprise pricing is based on company size and modules selected. Most customers see ROI within 60 days through reduced HR ticket volume (typically 70% fewer tickets), faster query resolution, and HR team time savings. Contact us for a custom quote.",
+    },
+    {
+      question: "Is the HR chatbot secure and compliant?",
+      answer:
+        "Yes. Space HR's chatbot uses end-to-end encryption for all conversations. Role-based access controls ensure employees only see information they are authorized to view. All conversations are audit-logged for compliance review. Data residency options are available for organizations in the US, UAE, Singapore, and Europe. The platform meets SOC 2 compliance standards.",
+    },
+    {
+      question: "How long does it take to set up the HR chatbot?",
+      answer:
+        "Most teams deploy the Space HR chatbot within 48 hours. Setup involves connecting your HRMS data, uploading your company policy documents, and configuring escalation rules. No coding is required. Our onboarding team guides you through the process and the chatbot begins learning from your policies immediately.",
+    },
+    {
+      question: "Can the chatbot handle employee self-service for global teams?",
+      answer:
+        "Yes. Space HR's employee self-service chatbot supports multi-language conversations and is deployed by companies across the US, UAE, Singapore, Canada, and Europe. It handles region-specific compliance requirements such as WPS (UAE), CPF (Singapore), and multi-state tax rules (US). The chatbot adapts responses based on the employee's location and applicable HR policies.",
+    },
+  ];
+
+  const breadcrumbItems = [
+    { name: "Home", url: "https://spacehr.net" },
+    { name: "Features", url: "https://spacehr.net/features" },
+    { name: "AI HR Chatbot", url: "https://spacehr.net/features/ai-chatbots" },
+  ];
+
+  const videoSchema = {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    name: "Space HR AI HR Chatbot Demo — Employee Self-Service in Action",
+    description:
+      "Watch how Space HR's AI chatbot for HR services handles leave requests, payroll queries, policy lookups, and benefits questions for employees 24/7.",
+    thumbnailUrl: "https://spacehr.net/desktop-design-showcase.webp",
+    uploadDate: "2026-01-15T08:00:00+00:00",
+    duration: "PT2M30S",
+    contentUrl: "https://spacehr.net/videos/space-hr-demo.mp4",
+    embedUrl: "https://spacehr.net/demo",
+    publisher: {
+      "@type": "Organization",
+      name: "Space HR",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://spacehr.net/hrlogonly.png",
+      },
+    },
+  };
+
   return (
     <div className="min-h-screen bg-white dark:bg-[#0b1121] font-sans">
+      <JsonLd data={generateFAQSchema(faqItems)} />
+      <JsonLd data={generateBreadcrumbSchema(breadcrumbItems)} />
+      <JsonLd data={videoSchema} />
+      <JsonLd data={softwareSchema} />
       {/* HERO SECTION */}
       <section className="relative pt-24 sm:pt-28 pb-16 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-purple-50/50 to-transparent dark:from-purple-900/10 dark:to-[#0b1121]"></div>
         <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Breadcrumb */}
+          <nav aria-label="Breadcrumb" className="mb-6">
+            <ol className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
+              <li><Link href="/" className="hover:text-purple-600 dark:hover:text-purple-400">Home</Link></li>
+              <li className="select-none">/</li>
+              <li><Link href="/features" className="hover:text-purple-600 dark:hover:text-purple-400">Features</Link></li>
+              <li className="select-none">/</li>
+              <li className="text-gray-800 dark:text-gray-200 font-medium">AI HR Chatbot</li>
+            </ol>
+          </nav>
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-sm font-semibold mb-6 border border-purple-200 dark:border-purple-800">
-                <MessageSquare className="w-4 h-4" /> AI HR Concierge
+                <MessageSquare className="w-4 h-4" /> AI HR Chatbot &amp; Concierge
               </div>
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                Instant Answers.{" "}
+                AI HR Chatbot for{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
-                  Zero HR Bottlenecks.
+                  Employee Self-Service
                 </span>
               </h1>
-              <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                Relieve your HR team from repetitive queries. Our 24/7 AI
-                Concierge answers employee questions about policies, leave
-                balances, payroll, and benefits instantly—while learning your
-                organization&apos;s unique context.
+              <p className="text-xl text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+                Deploy a 24/7 <strong>chatbot for HR services</strong> that answers employee questions about policies, leave balances, payroll, and benefits instantly — without a single HR ticket.
+              </p>
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+                Space HR&apos;s AI chatbot learns your company handbook and HR data, resolves 95% of queries automatically, and escalates complex issues to your team with full context.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Link href="/request-a-demo">
@@ -219,6 +310,38 @@ export default function AIChatbotsPage() {
               <div className="text-white/80 text-sm">Query Resolution Rate</div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* VIDEO DEMO SECTION */}
+      <section className="py-24 bg-white dark:bg-[#0b1121]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-sm font-semibold mb-6">
+              <PlayCircle className="w-4 h-4" /> Product Demo
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+              See the AI HR Chatbot in Action
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Watch how employees get instant answers on leave, payroll, and policies — no HR ticket required.
+            </p>
+          </div>
+          <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-2xl border border-gray-200 dark:border-gray-800 bg-black">
+            <video
+              controls
+              preload="metadata"
+              className="w-full h-auto"
+              poster="/desktop-design-showcase.webp"
+              aria-label="Space HR AI HR chatbot demo video showing employee self-service for HR queries"
+            >
+              <source src="/videos/space-hr-demo.mp4" type="video/mp4" />
+              Your browser does not support the video tag. <Link href="/request-a-demo" className="text-purple-400 underline">Book a live demo instead.</Link>
+            </video>
+          </div>
+          <p className="text-center text-sm text-gray-500 dark:text-gray-400 mt-4">
+            2-minute overview — see leave requests, payslip retrieval, and policy lookups handled end-to-end.
+          </p>
         </div>
       </section>
 
@@ -695,6 +818,126 @@ export default function AIChatbotsPage() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ SECTION */}
+      <section className="py-24 bg-gradient-to-b from-gray-50 to-white dark:from-[#0f172a] dark:to-[#0b1121]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-sm font-semibold mb-6">
+              <HelpCircle className="w-4 h-4" /> Frequently Asked Questions
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+              Everything You Need to Know About AI HR Chatbots
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+              Common questions from HR leaders and IT teams evaluating a chatbot for HR services.
+            </p>
+          </div>
+          <div className="max-w-4xl mx-auto space-y-4">
+            {[
+              {
+                q: "What is an AI HR chatbot?",
+                a: "An AI HR chatbot is a conversational AI tool that automatically answers employee questions about HR topics — leave balances, payroll, company policies, benefits, and onboarding — 24/7 without human involvement. Unlike a ticketing system, it responds in seconds and can take action like booking leave or retrieving payslips directly.",
+              },
+              {
+                q: "How does a chatbot for HR services work?",
+                a: "The chatbot connects to your HRMS database and company policy documents. When an employee sends a message, the AI understands the intent, searches your data, and returns a personalized answer. For transactional requests — 'book Friday off', 'show my last payslip' — it executes the action and notifies the relevant party. Complex queries are escalated to HR with full context.",
+              },
+              {
+                q: "What HR questions can the chatbot answer?",
+                a: "Space HR's AI chatbot handles leave balance checks, PTO requests, payslip retrieval, pay date queries, W-2 access, benefits enrollment, health insurance comparisons, WFH policy lookups, onboarding checklists, 401(k) guidance, expense policies, and open enrollment reminders — all trained on your company's specific handbook.",
+              },
+              {
+                q: "How long does it take to deploy the HR chatbot?",
+                a: "Most teams go live within 48 hours. You connect your HRMS, upload your policy documents, configure escalation rules, and you're ready. No coding required. Our team guides the full setup.",
+              },
+              {
+                q: "How much does an HR chatbot cost?",
+                a: "Space HR offers a free trial. Paid plans are sized by company headcount. Most customers recoup their investment within 60 days through ticket volume reduction (typically 70%) and HR team time savings. Request a demo for custom enterprise pricing.",
+              },
+              {
+                q: "Is the HR chatbot secure and GDPR/SOC 2 compliant?",
+                a: "Yes. All conversations are end-to-end encrypted. Role-based access ensures employees only see their own data. Full audit logging is maintained for compliance. Data residency options available for US, UAE, Singapore, and Europe. The platform is SOC 2 compliant.",
+              },
+              {
+                q: "Can the chatbot support global and multi-language teams?",
+                a: "Yes. The chatbot handles multi-language conversations and supports region-specific compliance — WPS for UAE, CPF for Singapore, FUTA/SUTA for the US. Responses adapt to each employee's location and applicable policy.",
+              },
+            ].map((item, i) => (
+              <details
+                key={i}
+                className="group bg-white dark:bg-[#1e293b] rounded-2xl border border-gray-100 dark:border-gray-800 shadow-sm overflow-hidden"
+              >
+                <summary className="flex items-center justify-between gap-4 p-6 cursor-pointer list-none font-semibold text-gray-900 dark:text-white text-lg hover:text-purple-600 dark:hover:text-purple-400 transition-colors">
+                  {item.q}
+                  <ChevronDown className="w-5 h-5 shrink-0 text-gray-400 group-open:rotate-180 transition-transform" />
+                </summary>
+                <div className="px-6 pb-6 text-gray-600 dark:text-gray-400 leading-relaxed">
+                  {item.a}
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* RELATED FEATURES — INTERNAL LINKING */}
+      <section className="py-16 bg-white dark:bg-[#0b1121] border-t border-gray-100 dark:border-gray-800">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+            Explore Related HR AI Features
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+            <Link
+              href="/features/employee-self-service"
+              className="flex flex-col items-center gap-3 p-6 bg-gray-50 dark:bg-[#1e293b] rounded-2xl border border-gray-100 dark:border-gray-800 hover:border-purple-300 dark:hover:border-purple-700 hover:shadow-md transition-all text-center group"
+            >
+              <Users className="w-8 h-8 text-purple-500" />
+              <span className="font-semibold text-sm text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400">Employee Self-Service</span>
+            </Link>
+            <Link
+              href="/features/hr-ai-concierge"
+              className="flex flex-col items-center gap-3 p-6 bg-gray-50 dark:bg-[#1e293b] rounded-2xl border border-gray-100 dark:border-gray-800 hover:border-purple-300 dark:hover:border-purple-700 hover:shadow-md transition-all text-center group"
+            >
+              <MessageSquare className="w-8 h-8 text-purple-500" />
+              <span className="font-semibold text-sm text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400">HR AI Concierge</span>
+            </Link>
+            <Link
+              href="/features/ai-automation"
+              className="flex flex-col items-center gap-3 p-6 bg-gray-50 dark:bg-[#1e293b] rounded-2xl border border-gray-100 dark:border-gray-800 hover:border-purple-300 dark:hover:border-purple-700 hover:shadow-md transition-all text-center group"
+            >
+              <Zap className="w-8 h-8 text-purple-500" />
+              <span className="font-semibold text-sm text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400">AI Workflow Automation</span>
+            </Link>
+            <Link
+              href="/features/leave-management"
+              className="flex flex-col items-center gap-3 p-6 bg-gray-50 dark:bg-[#1e293b] rounded-2xl border border-gray-100 dark:border-gray-800 hover:border-purple-300 dark:hover:border-purple-700 hover:shadow-md transition-all text-center group"
+            >
+              <Calendar className="w-8 h-8 text-purple-500" />
+              <span className="font-semibold text-sm text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400">Leave Management</span>
+            </Link>
+            <Link
+              href="/solutions/chatbot-for-hr-services"
+              className="flex flex-col items-center gap-3 p-6 bg-gray-50 dark:bg-[#1e293b] rounded-2xl border border-gray-100 dark:border-gray-800 hover:border-purple-300 dark:hover:border-purple-700 hover:shadow-md transition-all text-center group"
+            >
+              <Bot className="w-8 h-8 text-purple-500" />
+              <span className="font-semibold text-sm text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400">Chatbot for HR Services</span>
+            </Link>
+            <Link
+              href="/solutions/hr-ai-chatbot"
+              className="flex flex-col items-center gap-3 p-6 bg-gray-50 dark:bg-[#1e293b] rounded-2xl border border-gray-100 dark:border-gray-800 hover:border-purple-300 dark:hover:border-purple-700 hover:shadow-md transition-all text-center group"
+            >
+              <Brain className="w-8 h-8 text-purple-500" />
+              <span className="font-semibold text-sm text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400">HR AI Chatbot Solution</span>
+            </Link>
+          </div>
+          <p className="text-center mt-8">
+            <Link href="/features" className="text-purple-600 dark:text-purple-400 font-semibold hover:underline inline-flex items-center gap-1">
+              View all Space HR features <ArrowRight className="w-4 h-4" />
+            </Link>
+          </p>
         </div>
       </section>
 

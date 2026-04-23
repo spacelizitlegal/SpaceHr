@@ -20,75 +20,55 @@ import {
   organizationSchema,
   softwareSchema,
   websiteSchema,
+  generateFAQSchema,
+  generateBreadcrumbSchema,
 } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Space HR - AI Payroll Auditor & Predictive Workforce Analytics Platform",
+      "SpaceHR - AI-Powered HR Chatbot & Employee Self-Service Platform",
   },
   description:
-    "Transform your enterprise with Space HR’s AI-powered ERP. Automate payroll, appraisals, and finance analytics to streamline operations and scale your business.",
+    "SpaceHR automates HR for growing teams - AI chatbot for employee self-service, payroll anomaly detection, 12-month labor cost forecasting, and 360 appraisals. Free trial. Setup in 48 hours.",
   keywords: [
-    "hr software AI",
+    "AI HR chatbot",
+    "chatbot for HR services",
+    "employee self-service chatbot",
+    "hr software",
     "hrms",
     "best hr software",
     "human resource management system",
-    "AI HR ERP system",
-    "human capital management",
+    "AI HR platform",
     "AI payroll software",
+    "payroll anomaly detection",
+    "workforce cost forecasting",
     "performance appraisal system",
-    "tax compliance software",
-    "HR finance analytics",
-    "payroll automation",
-    "360-degree feedback",
+    "HR automation",
     "AI-powered HR",
-    "workforce management system",
     "employee self-service portal",
-    "HR admin dashboard",
-    "CEO HR analytics",
-    "supervisor performance management",
-    "automated payroll processing",
-    "free w4 form filling tool",
-    "free w-4 form filling tool",
-    "free w4 generator",
-    "free w-4 generator",
-    "w4 form online",
-    "w-4 form online",
-    "fillable w4 form",
-    "fillable w-4 form",
-    "w4 form pdf download",
-    "w-4 form pdf download",
-    "w4 tax form generator",
-    "employee withholding certificate",
-    "irs form w-4",
-    "how to fill out w4 form",
-    "w4 form for employees",
-    "federal w4 form tool",
-    "online w4 form filling",
-    "w4 withholding form online",
-    "download completed w4 form",
+    "hr payroll software",
   ],
   openGraph: {
-    title: "HR Software for Modern Teams | Best HRMS & Management System",
+    title: "SpaceHR - AI HR Chatbot & Employee Self-Service Platform",
     description:
-      "Comprehensive HR Software for Payroll, Tax, Finance, and Performance Management. The best HRMS with AI-powered insights.",
+      "AI HR chatbot + payroll auditor + workforce forecasting - all in one platform. Reduce HR tickets by 70%. Free trial available.",
     url: "https://spacehr.net",
     images: [
       {
-        url: "/og-home.jpg",
+        url: "https://spacehr.net/desktop-design-showcase.webp",
         width: 1200,
         height: 630,
-        alt: "Space HR - Best HR Software",
+        alt: "SpaceHR - AI HR Chatbot and Employee Self-Service Platform",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "HR Software for Modern Teams | Best HRMS & Management System",
+    title: "SpaceHR - AI HR Chatbot & Employee Self-Service Platform",
     description:
-      "Complete HR Software & HRMS for Payroll, Appraisals, Tax, Finance with AI intelligence.",
-    images: ["/og-home.jpg"],
+      "AI chatbot for HR, payroll anomaly detection, workforce forecasting - all in one. Free trial, setup in 48 hours.",
+    images: ["https://spacehr.net/desktop-design-showcase.webp"],
   },
   alternates: {
     canonical: "https://spacehr.net",
@@ -96,11 +76,48 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
+  const homeFaqs = [
+    {
+      question: "What is SpaceHR?",
+      answer:
+        "SpaceHR is an AI-powered HR platform that combines an AI HR chatbot for employee self-service, automated payroll anomaly detection, 12-month labor cost forecasting, 360-degree performance appraisals, and attrition prediction. Designed for mid-market and enterprise companies to reduce HR overhead and make data-driven workforce decisions.",
+    },
+    {
+      question: "Does SpaceHR have an AI HR chatbot?",
+      answer:
+        "Yes. SpaceHR includes a 24/7 AI HR chatbot that handles employee questions about leave balances, payroll, policies, and benefits automatically. It resolves 95% of queries instantly, reduces HR ticket volume by 70%, and escalates complex issues to your HR team with full context.",
+    },
+    {
+      question: "How does SpaceHR detect payroll anomalies?",
+      answer:
+        "SpaceHR's AI Payroll Auditor scans every payroll run before processing and flags errors in gross-to-net calculations, FUTA/FICA withholding, and NACHA ACH file generation. It compares payroll against historical baselines and alerts HR instantly, reducing payroll errors by 99%.",
+    },
+    {
+      question: "Can SpaceHR predict labor costs?",
+      answer:
+        "Yes. SpaceHR forecasts 12 months of labor costs with 95% accuracy using AI headcount scenario modeling. HR leaders and CFOs can model hiring plans, simulate salary increase impacts, and track budget-vs-actual variance in real time.",
+    },
+    {
+      question: "Which countries does SpaceHR support?",
+      answer:
+        "SpaceHR supports United States (all 50 states, FUTA/SUTA, NACHA), UAE (WPS, MOHRE, gratuity), Singapore (CPF, MOM), Canada, and Europe (GDPR). Regional payroll compliance is built in with no configuration required.",
+    },
+    {
+      question: "How long does it take to set up SpaceHR?",
+      answer:
+        "Most teams go live within 48 hours. SpaceHR provides guided onboarding, data import tools, and a dedicated setup team. No coding is required. A free trial is available.",
+    },
+  ];
+
+  const homeBreadcrumb = [{ name: "Home", url: "https://spacehr.net" }];
+
   return (
     <>
       <JsonLd data={organizationSchema} />
       <JsonLd data={softwareSchema} />
       <JsonLd data={websiteSchema} />
+      <JsonLd data={generateFAQSchema(homeFaqs)} />
+      <JsonLd data={generateBreadcrumbSchema(homeBreadcrumb)} />
       <div className="flex flex-col min-h-screen font-sans bg-white dark:bg-[#0b1121] overflow-x-hidden">
         {/* 1. HERO SECTION - Full width with gradient overlay */}
         <section className="relative h-[90vh] min-h-[700px] flex items-center justify-center overflow-hidden pt-32">
@@ -1077,6 +1094,8 @@ export default function Home() {
           </div>
         </section>
 
+
+
         {/* 6. ENHANCED FINAL CTA */}
         <section className="relative py-32 bg-gradient-to-br from-gray-900 via-gray-800 to-black dark:from-black dark:via-gray-950 dark:to-black overflow-hidden">
           {/* Animated Gradient Orbs */}
@@ -1168,6 +1187,59 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* FAQ Section */}
+        <section className="py-20 bg-white dark:bg-[#0b1121]" id="faq">
+          <div className="container mx-auto px-6 max-w-4xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                Frequently Asked Questions
+              </h2>
+              <p className="text-lg text-gray-600 dark:text-gray-300">
+                Everything you need to know about SpaceHR
+              </p>
+            </div>
+            <div className="space-y-4">
+              {[
+                {
+                  q: "What is SpaceHR?",
+                  a: "SpaceHR is an AI-powered HR platform combining an AI chatbot for employee self-service, automated payroll anomaly detection, 12-month labor cost forecasting, 360° performance appraisals, and attrition prediction — designed for mid-market and enterprise teams.",
+                },
+                {
+                  q: "Does SpaceHR have an AI HR chatbot?",
+                  a: "Yes. SpaceHR's AI HR chatbot handles employee questions about leave, payroll, policies, and benefits 24/7. It resolves 95% of queries instantly and reduces HR ticket volume by 70%.",
+                },
+                {
+                  q: "How does SpaceHR detect payroll anomalies?",
+                  a: "SpaceHR's AI Payroll Auditor scans every payroll run before processing, flags errors in gross-to-net calculations and FUTA/FICA withholding, and alerts HR instantly — reducing payroll errors by 99%.",
+                },
+                {
+                  q: "Can SpaceHR predict labor costs?",
+                  a: "Yes. SpaceHR forecasts 12 months of labor costs with 95% accuracy, enabling HR and CFOs to model headcount scenarios and track budget-vs-actual variance in real time.",
+                },
+                {
+                  q: "Which countries does SpaceHR support?",
+                  a: "SpaceHR supports United States (all 50 states, NACHA), UAE (WPS, MOHRE, gratuity), Singapore (CPF, MOM), Canada, and Europe (GDPR). Regional payroll compliance is built in.",
+                },
+                {
+                  q: "How long does it take to set up SpaceHR?",
+                  a: "Most teams go live within 48 hours with guided onboarding, data import tools, and a dedicated setup team. No coding required. A free trial is available.",
+                },
+              ].map(({ q, a }, i) => (
+                <details key={i} className="group border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                  <summary className="flex items-center justify-between p-5 cursor-pointer bg-gray-50 dark:bg-[#111827] hover:bg-gray-100 dark:hover:bg-[#1a2433] transition-colors list-none">
+                    <span className="font-semibold text-gray-900 dark:text-white pr-4">{q}</span>
+                    <span className="text-2xl text-blue-500 flex-shrink-0 group-open:rotate-45 transition-transform duration-200">+</span>
+                  </summary>
+                  <div className="p-5 text-gray-600 dark:text-gray-300 leading-relaxed bg-white dark:bg-[#0b1121]">
+                    {a}
+                  </div>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+
+
       </div>
     </>
   );

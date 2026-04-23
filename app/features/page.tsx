@@ -17,6 +17,10 @@ import {
   Calendar,
   Target,
   UserCheck,
+  Zap,
+  TrendingDown,
+  Headphones,
+  LayoutTemplate,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -464,6 +468,278 @@ export default function FeaturesHub() {
                 <li className="flex items-start gap-2">
                   <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
                   <span>Mobile-first experience</span>
+                </li>
+              </ul>
+              <div className="flex items-center text-primary font-bold group-hover:translate-x-2 transition-transform relative z-10">
+                Learn more <ArrowRight className="ml-2 w-4 h-4" />
+              </div>
+            </Link>
+
+            {/* AI Chatbots */}
+            <Link
+              href="/features/ai-chatbots"
+              className="group relative bg-white dark:bg-[#1e293b] rounded-3xl p-8 border border-gray-100 dark:border-gray-800 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 w-32 h-32 bg-cyan-100/50 dark:bg-cyan-900/20 rounded-bl-[100px] transition-transform group-hover:scale-110 origin-top-right"></div>
+              <div className="w-14 h-14 rounded-2xl bg-cyan-100 dark:bg-cyan-900/50 flex items-center justify-center text-cyan-600 dark:text-cyan-400 mb-6 group-hover:animate-pulse relative z-10">
+                <Bot className="w-7 h-7" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 relative z-10">
+                AI HR Chatbot
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-6 relative z-10">
+                24/7 AI chatbot that answers employee HR questions instantly
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-6 relative z-10">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Instant policy & leave answers</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>70% reduction in HR tickets</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Multi-language support</span>
+                </li>
+              </ul>
+              <div className="flex items-center text-primary font-bold group-hover:translate-x-2 transition-transform relative z-10">
+                Learn more <ArrowRight className="ml-2 w-4 h-4" />
+              </div>
+            </Link>
+
+            {/* AI Automation */}
+            <Link
+              href="/features/ai-automation"
+              className="group relative bg-white dark:bg-[#1e293b] rounded-3xl p-8 border border-gray-100 dark:border-gray-800 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 w-32 h-32 bg-violet-100/50 dark:bg-violet-900/20 rounded-bl-[100px] transition-transform group-hover:scale-110 origin-top-right"></div>
+              <div className="w-14 h-14 rounded-2xl bg-violet-100 dark:bg-violet-900/50 flex items-center justify-center text-violet-600 dark:text-violet-400 mb-6 group-hover:animate-pulse relative z-10">
+                <Zap className="w-7 h-7" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 relative z-10">
+                AI Workflow Automation
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-6 relative z-10">
+                Eliminate manual HR tasks with intelligent workflow automation
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-6 relative z-10">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Automated onboarding flows</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Smart approval chains</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Sentiment analysis & pulse surveys</span>
+                </li>
+              </ul>
+              <div className="flex items-center text-primary font-bold group-hover:translate-x-2 transition-transform relative z-10">
+                Learn more <ArrowRight className="ml-2 w-4 h-4" />
+              </div>
+            </Link>
+
+            {/* Cost Prediction */}
+            <Link
+              href="/features/cost-prediction"
+              className="group relative bg-white dark:bg-[#1e293b] rounded-3xl p-8 border border-gray-100 dark:border-gray-800 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 w-32 h-32 bg-orange-100/50 dark:bg-orange-900/20 rounded-bl-[100px] transition-transform group-hover:scale-110 origin-top-right"></div>
+              <div className="w-14 h-14 rounded-2xl bg-orange-100 dark:bg-orange-900/50 flex items-center justify-center text-orange-600 dark:text-orange-400 mb-6 group-hover:animate-pulse relative z-10">
+                <BarChart3 className="w-7 h-7" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 relative z-10">
+                Labor Cost Forecasting
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-6 relative z-10">
+                Predict 12-month labor costs with 95% accuracy
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-6 relative z-10">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Headcount scenario modeling</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Payroll anomaly detection</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Budget vs. actual variance tracking</span>
+                </li>
+              </ul>
+              <div className="flex items-center text-primary font-bold group-hover:translate-x-2 transition-transform relative z-10">
+                Learn more <ArrowRight className="ml-2 w-4 h-4" />
+              </div>
+            </Link>
+
+            {/* Attrition Prediction */}
+            <Link
+              href="/features/attrition-prediction"
+              className="group relative bg-white dark:bg-[#1e293b] rounded-3xl p-8 border border-gray-100 dark:border-gray-800 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 w-32 h-32 bg-red-100/50 dark:bg-red-900/20 rounded-bl-[100px] transition-transform group-hover:scale-110 origin-top-right"></div>
+              <div className="w-14 h-14 rounded-2xl bg-red-100 dark:bg-red-900/50 flex items-center justify-center text-red-600 dark:text-red-400 mb-6 group-hover:animate-pulse relative z-10">
+                <TrendingDown className="w-7 h-7" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 relative z-10">
+                Attrition Prediction
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-6 relative z-10">
+                Identify flight-risk employees before they resign
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-6 relative z-10">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>AI-powered flight risk scoring</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Early warning alerts</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Retention action recommendations</span>
+                </li>
+              </ul>
+              <div className="flex items-center text-primary font-bold group-hover:translate-x-2 transition-transform relative z-10">
+                Learn more <ArrowRight className="ml-2 w-4 h-4" />
+              </div>
+            </Link>
+
+            {/* AI Payroll Auditor */}
+            <Link
+              href="/features/ai-payroll-auditor"
+              className="group relative bg-white dark:bg-[#1e293b] rounded-3xl p-8 border border-gray-100 dark:border-gray-800 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 w-32 h-32 bg-teal-100/50 dark:bg-teal-900/20 rounded-bl-[100px] transition-transform group-hover:scale-110 origin-top-right"></div>
+              <div className="w-14 h-14 rounded-2xl bg-teal-100 dark:bg-teal-900/50 flex items-center justify-center text-teal-600 dark:text-teal-400 mb-6 group-hover:animate-pulse relative z-10">
+                <ShieldCheck className="w-7 h-7" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 relative z-10">
+                AI Payroll Auditor
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-6 relative z-10">
+                Automated payroll anomaly detection to eliminate costly errors
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-6 relative z-10">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>99% payroll error reduction</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>FUTA/FICA tax validation</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>NACHA-compliant ACH file checks</span>
+                </li>
+              </ul>
+              <div className="flex items-center text-primary font-bold group-hover:translate-x-2 transition-transform relative z-10">
+                Learn more <ArrowRight className="ml-2 w-4 h-4" />
+              </div>
+            </Link>
+
+            {/* HR AI Concierge */}
+            <Link
+              href="/features/hr-ai-concierge"
+              className="group relative bg-white dark:bg-[#1e293b] rounded-3xl p-8 border border-gray-100 dark:border-gray-800 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 w-32 h-32 bg-sky-100/50 dark:bg-sky-900/20 rounded-bl-[100px] transition-transform group-hover:scale-110 origin-top-right"></div>
+              <div className="w-14 h-14 rounded-2xl bg-sky-100 dark:bg-sky-900/50 flex items-center justify-center text-sky-600 dark:text-sky-400 mb-6 group-hover:animate-pulse relative z-10">
+                <Headphones className="w-7 h-7" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 relative z-10">
+                HR AI Concierge
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-6 relative z-10">
+                Always-on AI concierge for employee self-service and HR support
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-6 relative z-10">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Policy lookup & FAQ automation</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Leave & payslip self-service</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Seamless escalation to HR team</span>
+                </li>
+              </ul>
+              <div className="flex items-center text-primary font-bold group-hover:translate-x-2 transition-transform relative z-10">
+                Learn more <ArrowRight className="ml-2 w-4 h-4" />
+              </div>
+            </Link>
+
+            {/* 360 Performance Appraisals */}
+            <Link
+              href="/features/360-performance-appraisals"
+              className="group relative bg-white dark:bg-[#1e293b] rounded-3xl p-8 border border-gray-100 dark:border-gray-800 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 w-32 h-32 bg-yellow-100/50 dark:bg-yellow-900/20 rounded-bl-[100px] transition-transform group-hover:scale-110 origin-top-right"></div>
+              <div className="w-14 h-14 rounded-2xl bg-yellow-100 dark:bg-yellow-900/50 flex items-center justify-center text-yellow-600 dark:text-yellow-400 mb-6 group-hover:animate-pulse relative z-10">
+                <Trophy className="w-7 h-7" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 relative z-10">
+                360° Performance Reviews
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-6 relative z-10">
+                Multi-rater feedback for fair, comprehensive performance reviews
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-6 relative z-10">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Peer, manager & self reviews</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Customizable review templates</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>AI-generated performance summaries</span>
+                </li>
+              </ul>
+              <div className="flex items-center text-primary font-bold group-hover:translate-x-2 transition-transform relative z-10">
+                Learn more <ArrowRight className="ml-2 w-4 h-4" />
+              </div>
+            </Link>
+
+            {/* AI Templates */}
+            <Link
+              href="/features/ai-templates"
+              className="group relative bg-white dark:bg-[#1e293b] rounded-3xl p-8 border border-gray-100 dark:border-gray-800 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+            >
+              <div className="absolute top-0 right-0 w-32 h-32 bg-fuchsia-100/50 dark:bg-fuchsia-900/20 rounded-bl-[100px] transition-transform group-hover:scale-110 origin-top-right"></div>
+              <div className="w-14 h-14 rounded-2xl bg-fuchsia-100 dark:bg-fuchsia-900/50 flex items-center justify-center text-fuchsia-600 dark:text-fuchsia-400 mb-6 group-hover:animate-pulse relative z-10">
+                <LayoutTemplate className="w-7 h-7" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3 relative z-10">
+                AI HR Templates
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-6 relative z-10">
+                Ready-to-use AI-generated HR documents and policy templates
+              </p>
+              <ul className="space-y-2 text-sm text-gray-600 dark:text-gray-400 mb-6 relative z-10">
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Job descriptions & offer letters</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Policy documents & handbooks</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <CheckCircle className="w-4 h-4 text-green-500 mt-0.5 shrink-0" />
+                  <span>Performance review forms</span>
                 </li>
               </ul>
               <div className="flex items-center text-primary font-bold group-hover:translate-x-2 transition-transform relative z-10">

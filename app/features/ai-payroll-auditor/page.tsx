@@ -25,7 +25,7 @@ import {
   JsonLd,
   generateFAQSchema,
   generateBreadcrumbSchema,
-} from "@/components/JsonLd";
+  softwareSchema } from "@/components/JsonLd";
 import { FAQAccordion } from "@/components/FAQAccordion";
 
 export const metadata: Metadata = {
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     url: "https://spacehr.net/features/ai-payroll-auditor",
     images: [
       {
-        url: "/og-ai-payroll-auditor.jpg",
+        url: "/desktop-design-showcase.webp",
         width: 1200,
         height: 630,
         alt: "Space HR AI Payroll Auditor dashboard showing automated anomaly detection and compliance scanning",
@@ -118,6 +118,7 @@ const breadcrumb = generateBreadcrumbSchema([
 export default function AIPayrollAuditorPage() {
   return (
     <div className="min-h-screen bg-white dark:bg-[#0b1121] font-sans">
+      <JsonLd data={softwareSchema} />
       <JsonLd data={generateFAQSchema(faqs)} />
       <JsonLd data={breadcrumb} />
 
@@ -479,6 +480,18 @@ export default function AIPayrollAuditorPage() {
             </p>
           </div>
           <FAQAccordion items={faqs} />
+
+      {/* Cross-link to payroll-anomaly-detection */}
+      <section className="py-8 bg-white dark:bg-[#0b1121] border-t border-gray-100 dark:border-gray-800">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
+          <p className="text-slate-600 dark:text-slate-400 text-sm">
+            Learn how our AI catches errors in practice:{" "}
+            <a href="/payroll-anomaly-detection" className="text-red-600 dark:text-red-400 font-semibold hover:underline">
+              Payroll Anomaly Detection — How It Works &amp; What It Catches
+            </a>
+          </p>
+        </div>
+      </section>
         </div>
       </section>
 

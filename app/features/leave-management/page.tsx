@@ -23,6 +23,9 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { Metadata } from "next";
+import { JsonLd, generateFAQSchema, generateBreadcrumbSchema,
+  softwareSchema } from "@/components/JsonLd";
+import { FAQAccordion } from "@/components/FAQAccordion";
 
 export const metadata: Metadata = {
   title: "Leave Management System: Automated PTO Tracking | Space HR",
@@ -70,9 +73,42 @@ export const metadata: Metadata = {
   },
 };
 
+const leaveFAQs = [
+  { question: "What is leave management software?", answer: "Leave management software automates requesting, approving, tracking, and reporting employee time off — replacing spreadsheets with self-service portals, policy enforcement, and real-time leave balance visibility." },
+  { question: "Does Space HR support multiple leave types?", answer: "Yes. Space HR supports annual leave, sick leave, maternity/paternity, public holidays, compensatory leave, and unpaid leave — each with configurable accrual rules, approval workflows, and eligibility criteria." },
+  { question: "How does automated leave approval work?", answer: "Employees submit requests via the self-service portal or mobile. Space HR checks balances, team coverage rules, and blackout periods, then routes to the manager. Auto-approval rules can be set for low-risk requests." },
+  { question: "Can employees request leave from mobile devices?", answer: "Yes. Space HR's mobile-responsive portal lets employees submit requests, check balances, and view approval status from any device. The AI HR concierge also handles leave requests via chat." },
+  { question: "Does the system handle leave accruals automatically?", answer: "Yes. Space HR automatically accrues leave based on configured policies. It handles carryover limits, proration for part-time staff, and tenure-based entitlement increases without manual calculations." },
+  { question: "How does Space HR ensure leave compliance?", answer: "Space HR includes pre-built compliance templates for the US, UAE, Singapore, Canada, and Europe — enforcing statutory minimums, mandatory notice periods, and jurisdiction-specific entitlements automatically." },
+  { question: "Can I integrate leave management with payroll?", answer: "Yes. Leave management is natively connected to Space HR payroll. Approved leave automatically feeds into payroll calculations for accurate deductions and paid leave payouts." },
+  { question: "How does Space HR prevent leave abuse?", answer: "Space HR gives managers pattern analysis dashboards — flagging unusual leave frequency, Monday/Friday clustering, or leave taken immediately after accrual. AI anomaly detection helps identify issues early." },
+];
+
+const leaveBreadcrumbs = [
+  { name: "Home", url: "https://spacehr.net/" },
+  { name: "Features", url: "https://spacehr.net/features" },
+  { name: "Leave Management", url: "https://spacehr.net/features/leave-management" },
+];
+
 export default function LeaveManagementPage() {
+  const faqSchema = generateFAQSchema(leaveFAQs);
+  const breadcrumbSchema = generateBreadcrumbSchema(leaveBreadcrumbs);
   return (
     <div className="min-h-screen bg-white dark:bg-[#0b1121] font-sans">
+      <JsonLd data={softwareSchema} />
+      <JsonLd data={faqSchema} />
+      <JsonLd data={breadcrumbSchema} />
+
+      {/* Breadcrumb */}
+      <nav aria-label="Breadcrumb" className="pt-6 container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+        <ol className="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
+          <li><Link href="/" className="hover:text-gray-700 dark:hover:text-gray-200">Home</Link></li>
+          <li><span className="mx-1">/</span></li>
+          <li><Link href="/features" className="hover:text-gray-700 dark:hover:text-gray-200">Features</Link></li>
+          <li><span className="mx-1">/</span></li>
+          <li className="text-gray-900 dark:text-white font-medium">Leave Management</li>
+        </ol>
+      </nav>
       {/* HEADER */}
       <div className="pt-24 px-6 container mx-auto">
         <Link
@@ -492,6 +528,39 @@ export default function LeaveManagementPage() {
                 Explore Platform
               </Button>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-24 bg-white dark:bg-gray-900">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">Frequently Asked Questions</h2>
+            <p className="text-lg text-gray-600 dark:text-gray-400">Everything you need to know about leave management software.</p>
+          </div>
+          <FAQAccordion items={leaveFAQs} />
+        </div>
+      </section>
+
+      {/* Related Features */}
+      <section className="py-12 bg-gray-50 dark:bg-slate-900/50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-6 text-center">Related Features</h2>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { href: "/features", label: "All Features" },
+              { href: "/features/attendance", label: "Attendance Tracking" },
+              { href: "/features/payroll", label: "Payroll" },
+              { href: "/features/employee-self-service", label: "Employee Self-Service" },
+              { href: "/features/ai-chatbots", label: "AI Chatbots" },
+              { href: "/solutions/employee-self-service", label: "ESS Portal" },
+              { href: "/request-a-demo", label: "Book a Demo" },
+            ].map((l) => (
+              <Link key={l.href} href={l.href} className="px-4 py-2 rounded-full border border-gray-200 dark:border-gray-700 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:border-blue-300 dark:hover:border-blue-700 transition-all">
+                {l.label}
+              </Link>
+            ))}
           </div>
         </div>
       </section>

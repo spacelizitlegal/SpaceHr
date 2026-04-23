@@ -35,7 +35,7 @@ import {
   JsonLd,
   generateFAQSchema,
   generateBreadcrumbSchema,
-} from "@/components/JsonLd";
+  softwareSchema } from "@/components/JsonLd";
 import { FAQAccordion } from "@/components/FAQAccordion";
 
 export const metadata: Metadata = {
@@ -126,6 +126,7 @@ const payrollBreadcrumb = generateBreadcrumbSchema([
 export default function AIPayrollPage() {
   return (
     <div className="min-h-screen bg-white dark:bg-[#0b1121] font-sans">
+      <JsonLd data={softwareSchema} />
       <JsonLd data={generateFAQSchema(payrollFaqs)} />
       <JsonLd data={payrollBreadcrumb} />
       {/* HEADER */}

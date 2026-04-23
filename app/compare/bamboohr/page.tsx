@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { JsonLd } from "@/components/JsonLd";
+import { JsonLd,
+  generateBreadcrumbSchema } from "@/components/JsonLd";
 import {
   CheckCircle,
   XCircle,
@@ -56,6 +57,12 @@ const faqs = [
   },
 ];
 
+const bamboohrBreadcrumbs = [
+  { name: "Home", url: "https://spacehr.net/" },
+  { name: "Compare", url: "https://spacehr.net/compare" },
+  { name: "vs BambooHR", url: "https://spacehr.net/compare/bamboohr" },
+];
+
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -69,9 +76,12 @@ const organizationSchema = {
   })),
 };
 
+const _bc_bamboohr = [{"name":"Home","url":"https://spacehr.net"},{"name":"Compare","url":"https://spacehr.net/compare"},{"name":"Space HR vs BambooHR","url":"https://spacehr.net/compare/bamboohr"}];
+
 export default function CompareBambooHRPage() {
   return (
     <div className="min-h-screen bg-white dark:bg-[#0b1121] font-sans">
+      <JsonLd data={generateBreadcrumbSchema(_bc_bamboohr)} />
       <JsonLd data={organizationSchema} />
 
       {/* Hero Section */}

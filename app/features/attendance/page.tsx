@@ -26,7 +26,7 @@ import {
   JsonLd,
   generateFAQSchema,
   generateBreadcrumbSchema,
-} from "@/components/JsonLd";
+  softwareSchema } from "@/components/JsonLd";
 import { FAQAccordion } from "@/components/FAQAccordion";
 
 export const metadata: Metadata = {
@@ -122,6 +122,7 @@ const breadcrumb = generateBreadcrumbSchema([
 export default function AttendancePage() {
   return (
     <div className="min-h-screen bg-white dark:bg-[#0b1121] font-sans">
+      <JsonLd data={softwareSchema} />
       <JsonLd data={generateFAQSchema(faqs)} />
       <JsonLd data={breadcrumb} />
       {/* HEADER */}

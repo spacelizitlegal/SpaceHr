@@ -26,6 +26,8 @@ import { courses } from "@/lib/courseData";
 export default function CoursesPage() {
   return (
     <div className="min-h-screen bg-white dark:bg-[#0f172a] font-sans">
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://spacehr.net"},{"@type":"ListItem","position":2,"name":"Courses","item":"https://spacehr.net/courses"}]}` }} />
       {/* Hero Section */}
       <section className="pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 dark:from-blue-900/10 dark:via-purple-900/10 dark:to-pink-900/10 -z-10"></div>

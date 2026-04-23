@@ -66,6 +66,8 @@ export default function TrueCostCalculator() {
 
   return (
     <div className="min-h-screen bg-slate-50 dark:bg-[#0b1121] font-sans pt-20">
+
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://spacehr.net"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://spacehr.net/tools"},{"@type":"ListItem","position":3,"name":"True Cost Calculator","item":"https://spacehr.net/tools/true-cost-calculator"}]}` }} />
        {/* Hero / Header */}
        <div className="bg-white dark:bg-[#0f172a] border-b border-slate-200 dark:border-slate-800 pb-12 pt-16">
          <div className="container mx-auto px-4 text-center max-w-4xl">

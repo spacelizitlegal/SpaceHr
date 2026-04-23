@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { useState, useEffect, useRef } from "react";
 import { Menu, X, ChevronRight, ChevronDown, Phone } from "lucide-react";
@@ -40,6 +41,7 @@ const resourceLinks = [
   { href: "/tools/true-cost-calculator", label: "True Cost Calculator" },
   { href: "/tools/fw4-form-download", label: "FW-4 Form Download" },
   { href: "/payroll-anomaly-detection", label: "Payroll Anomaly Detection" },
+  { href: "/press", label: "Press Kit" },
 ];
 
 interface DropdownProps {
@@ -170,10 +172,13 @@ export function Navbar() {
             <Link href="/" className="flex items-center h-16 group">
               <div className="flex items-center gap-0">
                 <div className="relative h-14 w-14 flex items-center justify-center hover:scale-110 transition-transform duration-300">
-                  <img
+                  <Image
                     src="/hrlogonly.png"
                     alt="Space HR — AI-powered HRMS platform logo"
-                    className="h-full w-full object-contain drop-shadow-lg"
+                    width={56}
+                    height={56}
+                    className="object-contain drop-shadow-lg"
+                    priority
                   />
                 </div>
                 <span className="-ml-1 text-lg sm:text-xl lg:text-2xl font-bold tracking-tight bg-gradient-to-r from-pink-500 via-violet-500 to-blue-600 dark:from-pink-400 dark:via-violet-400 dark:to-blue-500 bg-clip-text text-transparent group-hover:from-pink-600 group-hover:via-violet-600 group-hover:to-blue-700 transition-all duration-300 whitespace-nowrap">
@@ -228,7 +233,7 @@ export function Navbar() {
             {/* Mobile Menu Toggle */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden p-2 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors"
+              className="lg:hidden p-3 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors"
               aria-label="Toggle menu"
             >
               {isOpen ? (
@@ -246,7 +251,7 @@ export function Navbar() {
             {/* Features accordion */}
             <button
               onClick={() => toggleMobile("features")}
-              className="flex items-center justify-between px-4 py-3 rounded-xl text-slate-700 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors w-full"
+              className="flex items-center justify-between px-4 py-4 rounded-xl text-slate-700 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors w-full"
             >
               <span className="font-medium">Features</span>
               <ChevronDown
@@ -262,7 +267,7 @@ export function Navbar() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="flex items-center justify-between px-4 py-2 rounded-xl text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    className="flex items-center justify-between px-4 py-3 rounded-xl text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                     onClick={() => setIsOpen(false)}
                   >
                     {link.label}
@@ -271,7 +276,7 @@ export function Navbar() {
                 ))}
                 <Link
                   href="/features"
-                  className="flex items-center justify-between px-4 py-2 rounded-xl text-sm font-semibold text-blue-600 dark:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
+                  className="flex items-center justify-between px-4 py-3 rounded-xl text-sm font-semibold text-blue-600 dark:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors"
                   onClick={() => setIsOpen(false)}
                 >
                   View All Features
@@ -283,7 +288,7 @@ export function Navbar() {
             {/* Solutions accordion */}
             <button
               onClick={() => toggleMobile("solutions")}
-              className="flex items-center justify-between px-4 py-3 rounded-xl text-slate-700 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors w-full"
+              className="flex items-center justify-between px-4 py-4 rounded-xl text-slate-700 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors w-full"
             >
               <span className="font-medium">Solutions</span>
               <ChevronDown
@@ -299,7 +304,7 @@ export function Navbar() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="flex items-center justify-between px-4 py-2 rounded-xl text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    className="flex items-center justify-between px-4 py-3 rounded-xl text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                     onClick={() => setIsOpen(false)}
                   >
                     {link.label}
@@ -312,7 +317,7 @@ export function Navbar() {
             {/* Resources accordion */}
             <button
               onClick={() => toggleMobile("resources")}
-              className="flex items-center justify-between px-4 py-3 rounded-xl text-slate-700 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors w-full"
+              className="flex items-center justify-between px-4 py-4 rounded-xl text-slate-700 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors w-full"
             >
               <span className="font-medium">Resources</span>
               <ChevronDown
@@ -328,7 +333,7 @@ export function Navbar() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className="flex items-center justify-between px-4 py-2 rounded-xl text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    className="flex items-center justify-between px-4 py-3 rounded-xl text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                     onClick={() => setIsOpen(false)}
                   >
                     {link.label}
@@ -346,7 +351,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="flex items-center justify-between px-4 py-3 rounded-xl text-slate-700 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                className="flex items-center justify-between px-4 py-4 rounded-xl text-slate-700 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                 onClick={() => setIsOpen(false)}
               >
                 <span className="font-medium">{link.label}</span>
