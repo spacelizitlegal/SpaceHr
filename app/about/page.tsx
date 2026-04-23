@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About SpaceHR — AI-Powered HR Platform for Growing Teams",
     description:
-      "Meet the team behind SpaceHR. We build AI that automates HR chatbots, payroll anomaly detection, labor cost forecasting, and 360 appraisals — so HR teams can focus on people, not admin.",
+      "Meet the team behind Space HR. We build AI that automates HR chatbots, payroll anomaly detection, labor cost forecasting, and 360 appraisals — so HR teams can focus on people, not admin.",
     type: "website",
     url: "https://spacehr.net/about",
     siteName: "SpaceHR",
