@@ -280,7 +280,7 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Global Locations */}
+        {/* Global Locations- */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-12 border-t border-white/5 mt-12">
           {/* Singapore */}
           <div className="space-y-4">
