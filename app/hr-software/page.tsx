@@ -188,7 +188,27 @@ export default function HRSoftwarePage() {
               Space HR consolidates these functions into a single, cloud-based
               platform. This centralization allows for real-time data access,
               automated workflows, and strategic analytics that were previously
-              impossible.
+              impossible. For instance, teams can now deploy{" "}
+              <Link href="/solutions/enterprise-hr-chatbot" className="text-blue-600 dark:text-blue-400 hover:underline">
+                enterprise AI chatbots
+              </Link>{" "}
+              directly into Slack or Teams, utilize{" "}
+              <Link href="/solutions/hr-helpdesk-chatbot" className="text-blue-600 dark:text-blue-400 hover:underline">
+                HR helpdesk chatbots
+              </Link>{" "}
+              for pre-triage, and run automated{" "}
+              <Link href="/payroll-anomaly-detection" className="text-blue-600 dark:text-blue-400 hover:underline">
+                payroll anomaly detection
+              </Link>{" "}
+              to scan tax documents like{" "}
+              <Link href="/tools/w2-form-download" className="text-blue-600 dark:text-blue-400 hover:underline">
+                W-2 forms
+              </Link>{" "}
+              and{" "}
+              <Link href="/tools/w4-generator" className="text-blue-600 dark:text-blue-400 hover:underline">
+                W-4 forms
+              </Link>
+              .
             </p>
           </div>
         </div>

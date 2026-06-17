@@ -208,6 +208,39 @@ export default function CompareLeenaAIPage() {
         </div>
       </section>
 
+      
+      {/* Head-to-Head Technical Trade-offs */}
+      <section className="py-24 bg-white dark:bg-[#0b1121] border-t border-gray-100 dark:border-gray-800">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 text-center">
+            Head-to-Head Technical Trade-offs
+          </h2>
+          <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-xl mx-auto">
+            A granular look at the architectural differences between Space HR and Leena AI.
+          </p>
+          <div className="bg-gray-50 dark:bg-gray-800/40 rounded-3xl p-8 border border-gray-200 dark:border-gray-700">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">Product Architecture Comparison</h3>
+            <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+              Leena AI operates as a conversational chatbot layer on top of legacy HR systems. This requires maintaining expensive integrations and doesn't solve the underlying problem of fragmented, slow legacy databases.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mt-8">
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl border border-gray-100 dark:border-gray-700">
+                <h4 className="font-bold text-red-600 dark:text-red-400 mb-2">Leena AI Limitations</h4>
+                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                  Not a system of record. Requires separate licensing for core HRMS database, payroll engines, time logs, and performance tracking modules.
+                </p>
+              </div>
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl border border-gray-100 dark:border-gray-700">
+                <h4 className="font-bold text-green-600 dark:text-green-400 mb-2">Space HR Architectural Advantage</h4>
+                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                  Unified HRMS that contains both the core database (system of record) and the conversational AI layer natively, removing integration lag and dual-licensing costs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-24 bg-white dark:bg-[#0b1121]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">

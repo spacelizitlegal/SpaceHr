@@ -246,6 +246,39 @@ export default function CompareOrangeHRMPage() {
         </div>
       </section>
 
+      
+      {/* Head-to-Head Technical Trade-offs */}
+      <section className="py-24 bg-white dark:bg-[#0b1121] border-t border-gray-100 dark:border-gray-800">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 text-center">
+            Head-to-Head Technical Trade-offs
+          </h2>
+          <p className="text-center text-gray-600 dark:text-gray-400 mb-12 max-w-xl mx-auto">
+            A granular look at the architectural differences between Space HR and OrangeHRM.
+          </p>
+          <div className="bg-gray-50 dark:bg-gray-800/40 rounded-3xl p-8 border border-gray-200 dark:border-gray-700">
+            <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-6">Product Architecture Comparison</h3>
+            <p className="text-gray-600 dark:text-gray-300 mb-6 leading-relaxed">
+              OrangeHRM is a traditional open-source HRMS. While customizable, it lacks modern AI automation, built-in global payroll calculations, and forward-looking workforce analytics out of the box.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6 mt-8">
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl border border-gray-100 dark:border-gray-700">
+                <h4 className="font-bold text-red-600 dark:text-red-400 mb-2">OrangeHRM Limitations</h4>
+                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                  Lacks native predictive analytics (e.g. attrition forecasting). Requires manual database administration and lacks native conversational AI support.
+                </p>
+              </div>
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl border border-gray-100 dark:border-gray-700">
+                <h4 className="font-bold text-green-600 dark:text-green-400 mb-2">Space HR Architectural Advantage</h4>
+                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                  Modern SaaS platform with hybrid local/cloud AI, predictive attrition forecasting, live payroll anomaly detection, and a built-in AI HR Concierge.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-24 bg-white dark:bg-[#0b1121]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -258,6 +291,27 @@ export default function CompareOrangeHRMPage() {
             </p>
           </div>
           <FAQAccordion items={faqs} />
+        </div>
+      </section>
+
+      {/* Cross-links */}
+      <section className="py-12 bg-gray-50 dark:bg-slate-900/50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-6 text-center">More Comparisons</h2>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { href: "/compare/bamboohr", label: "vs BambooHR" },
+              { href: "/compare/gusto", label: "vs Gusto" },
+              { href: "/compare/adp", label: "vs ADP" },
+              { href: "/compare/rippling", label: "vs Rippling" },
+              { href: "/compare/workday", label: "vs Workday" },
+              { href: "/compare", label: "All Comparisons" },
+            ].map((l) => (
+              <Link key={l.href} href={l.href} className="px-4 py-2 rounded-full border border-gray-200 dark:border-gray-700 text-sm text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:border-blue-300 transition-all">
+                {l.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

@@ -164,6 +164,51 @@ export default function EuropePage() {
 
       <section className="py-24 bg-gray-50 dark:bg-[#0f172a]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 text-center">
+            Europe Compliance & Deductions Table
+          </h2>
+          <p className="text-center text-gray-600 dark:text-gray-400 mb-12">
+            Integrated compliance safeguards and reporting formats supported natively across European markets.
+          </p>
+          <div className="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700 shadow-md bg-white dark:bg-[#0b1121] mb-12">
+            <table className="w-full text-left border-collapse">
+              <thead>
+                <tr className="bg-gray-50 dark:bg-gray-800/50">
+                  <th className="p-4 border-b dark:border-gray-700 font-bold text-sm text-gray-700 dark:text-white">Compliance Standard</th>
+                  <th className="p-4 border-b dark:border-gray-700 font-bold text-sm text-gray-700 dark:text-white">Supported Actions</th>
+                  <th className="p-4 border-b dark:border-gray-700 font-bold text-sm text-gray-700 dark:text-white">European Authority / Regulation</th>
+                </tr>
+              </thead>
+              <tbody className="text-sm divide-y divide-gray-100 dark:divide-gray-800 text-gray-600 dark:text-gray-300">
+                <tr>
+                  <td className="p-4 font-semibold text-gray-900 dark:text-white">GDPR Privacy & Data Sovereignty</td>
+                  <td className="p-4">Encrypted local database hosting options (Germany / France) with SCIM user provisioning.</td>
+                  <td className="p-4">European Commission / GDPR</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-gray-900 dark:text-white">SEPA Credit Transfers</td>
+                  <td className="p-4">Generation of ISO 20022 SEPA XML files for centralized, single-currency salary distribution.</td>
+                  <td className="p-4">European Payments Council (EPC)</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-gray-900 dark:text-white">Working Time Directive</td>
+                  <td className="p-4">Time tracking audits automatically flagging employees exceeding 48 hours per week average.</td>
+                  <td className="p-4">EU Working Time Directive (2003/88/EC)</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-gray-900 dark:text-white">Multi-Jurisdictional Social Tax</td>
+                  <td className="p-4">Dynamic employee record tagging for URSSAF (France) and health insurance splits (Germany).</td>
+                  <td className="p-4">Local Tax & Social Security Administrations</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-gray-900 dark:text-white">Mandatory Employee Pension</td>
+                  <td className="p-4">Support for automated deductions e.g. Nest Pensions (UK), statutory occupational pensions.</td>
+                  <td className="p-4">Country-specific pension regulators</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
             Europe Coverage Highlights
           </h2>
@@ -193,6 +238,34 @@ export default function EuropePage() {
             Frequently Asked Questions
           </h2>
           <FAQAccordion items={faqs} />
+        </div>
+      </section>
+
+      {/* Related Regions */}
+      <section className="py-16 bg-gray-50 dark:bg-[#0f172a] border-t border-gray-200 dark:border-slate-800">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white text-center mb-2">Other Regions</h2>
+          <p className="text-gray-500 dark:text-slate-400 text-center text-sm mb-8">Space HR delivers built-in payroll compliance in 7 major regions worldwide.</p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+            {[
+              { href: "/regions/united-states", flag: "🇺🇸", label: "United States" },
+              { href: "/regions/uk", flag: "🇬🇧", label: "United Kingdom" },
+              { href: "/regions/dubai", flag: "🇦🇪", label: "Dubai & UAE" },
+              { href: "/regions/india", flag: "🇮🇳", label: "India" },
+              { href: "/regions/singapore", flag: "🇸🇬", label: "Singapore" },
+              { href: "/regions/canada", flag: "🇨🇦", label: "Canada" },
+            ].map((r) => (
+              <Link href={r.href} key={r.href} className="group bg-white dark:bg-[#0f1a35] border border-gray-200 dark:border-slate-700 rounded-xl p-4 hover:border-indigo-300 dark:hover:border-indigo-500/40 transition-colors text-center">
+                <span className="text-2xl mb-2 block">{r.flag}</span>
+                <p className="text-gray-900 dark:text-white font-semibold text-xs group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">{r.label}</p>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/regions" className="inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 dark:text-indigo-400 hover:underline">
+              View all regions <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
         </div>
       </section>
 

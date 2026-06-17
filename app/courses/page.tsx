@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
+import Image from "next/image";
 import {
   BookOpen,
   Users,
@@ -270,10 +271,13 @@ export default function CoursesPage() {
             </div>
             <div className="relative">
               <div className="bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900/30 dark:to-purple-900/30 rounded-3xl p-8 border border-gray-200 dark:border-gray-700">
-                <img
+                <Image
                   src="/office-team-presentation.webp"
                   alt="Team learning together"
                   className="rounded-2xl shadow-2xl"
+                  width={600}
+                  height={400}
+                  loading="lazy"
                 />
               </div>
             </div>

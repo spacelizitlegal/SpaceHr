@@ -156,6 +156,32 @@ export default function HealthcarePage() {
         </div>
       </section>
 
+      <section className="py-14 bg-[#0b1121] border-t border-slate-800">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-white text-center mb-2">Explore Other Industries</h2>
+          <p className="text-slate-400 text-center text-sm mb-8">Space HR delivers sector-specific HR compliance across all major industries.</p>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {[
+              { href: "/industries/banking", emoji: "🏦", label: "Banking & Finance", blurb: "SMCR compliance, conduct risk & bonus scheme administration" },
+              { href: "/industries/retail", emoji: "🛍️", label: "Retail & Hospitality", blurb: "Zero-hours contracts, multi-site scheduling & seasonal hiring" },
+              { href: "/industries/manufacturing", emoji: "🏭", label: "Manufacturing", blurb: "Multi-shift planning, safety compliance & ISO certification" },
+              { href: "/industries/government", emoji: "🏛️", label: "Government", blurb: "Civil service pay scales, GDPR/FOI & pension scheme management" },
+            ].map((ind) => (
+              <Link href={ind.href} key={ind.href} className="group bg-[#0f1a35] border border-slate-700 rounded-xl p-5 hover:border-teal-500/40 transition-colors">
+                <span className="text-2xl mb-3 block">{ind.emoji}</span>
+                <h3 className="text-white font-semibold text-sm mb-1 group-hover:text-teal-400 transition-colors">{ind.label}</h3>
+                <p className="text-slate-500 text-xs leading-relaxed">{ind.blurb}</p>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/industries" className="inline-flex items-center gap-2 text-sm font-semibold text-teal-400 hover:text-teal-300 transition-colors">
+              View all industry solutions <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <section className="py-20 bg-gradient-to-br from-teal-900/30 to-cyan-900/20 border-t border-slate-800">
         <div className="max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">Ready to Transform Healthcare HR?</h2>

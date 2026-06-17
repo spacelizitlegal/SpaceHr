@@ -163,6 +163,56 @@ export default function CanadaPage() {
 
       <section className="py-24 bg-gray-50 dark:bg-[#0f172a]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 text-center">
+            Canada Compliance & Deductions Table
+          </h2>
+          <p className="text-center text-gray-600 dark:text-gray-400 mb-12">
+            Standard deductions and reporting guidelines supported natively by Space HR for Canadian provinces.
+          </p>
+          <div className="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700 shadow-md bg-white dark:bg-[#0b1121] mb-12">
+            <table className="w-full text-left border-collapse">
+              <thead>
+                <tr className="bg-gray-50 dark:bg-gray-800/50">
+                  <th className="p-4 border-b dark:border-gray-700 font-bold text-sm text-gray-700 dark:text-white">Statutory Item</th>
+                  <th className="p-4 border-b dark:border-gray-700 font-bold text-sm text-gray-700 dark:text-white">Supported Actions</th>
+                  <th className="p-4 border-b dark:border-gray-700 font-bold text-sm text-gray-700 dark:text-white">CRA / Provincial Authority</th>
+                </tr>
+              </thead>
+              <tbody className="text-sm divide-y divide-gray-100 dark:divide-gray-800 text-gray-600 dark:text-gray-300">
+                <tr>
+                  <td className="p-4 font-semibold text-gray-900 dark:text-white">CPP (Canada Pension Plan)</td>
+                  <td className="p-4">Automated calculation of employee & employer contributions (5.95% up to YMPE).</td>
+                  <td className="p-4">Canada Revenue Agency (CRA)</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-gray-900 dark:text-white">EI (Employment Insurance)</td>
+                  <td className="p-4">Automated withholding calculation (1.66% employee, 1.4x employer matching).</td>
+                  <td className="p-4">CRA / Service Canada</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-gray-900 dark:text-white">ROE (Record of Employment)</td>
+                  <td className="p-4">One-click generation of Service Canada-compatible ROE files for departing staff.</td>
+                  <td className="p-4">Service Canada</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-gray-900 dark:text-white">T4 & T4A Slip Filing</td>
+                  <td className="p-4">Centralized XML file compilation for CRA XML schema transfers and employee copies.</td>
+                  <td className="p-4">CRA</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-gray-900 dark:text-white">Quebec QPP & QPIP</td>
+                  <td className="p-4">Custom calculations for QPP contributions, QPIP premiums, and provincial tax brackets.</td>
+                  <td className="p-4">Revenu Québec</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-gray-900 dark:text-white">Provincial Health Taxes</td>
+                  <td className="p-4">Automated calculation of Ontario EHT, BC EHT, and Manitoba HAPL tax brackets.</td>
+                  <td className="p-4">Provincial Ministries of Finance</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
             Canada Coverage Highlights
           </h2>
@@ -192,6 +242,34 @@ export default function CanadaPage() {
             Frequently Asked Questions
           </h2>
           <FAQAccordion items={faqs} />
+        </div>
+      </section>
+
+      {/* Related Regions */}
+      <section className="py-16 bg-gray-50 dark:bg-[#0f172a] border-t border-gray-200 dark:border-slate-800">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white text-center mb-2">Other Regions</h2>
+          <p className="text-gray-500 dark:text-slate-400 text-center text-sm mb-8">Space HR delivers built-in payroll compliance in 7 major regions worldwide.</p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+            {[
+              { href: "/regions/united-states", flag: "🇺🇸", label: "United States" },
+              { href: "/regions/uk", flag: "🇬🇧", label: "United Kingdom" },
+              { href: "/regions/dubai", flag: "🇦🇪", label: "Dubai & UAE" },
+              { href: "/regions/india", flag: "🇮🇳", label: "India" },
+              { href: "/regions/singapore", flag: "🇸🇬", label: "Singapore" },
+              { href: "/regions/europe", flag: "🇪🇺", label: "Europe" },
+            ].map((r) => (
+              <Link href={r.href} key={r.href} className="group bg-white dark:bg-[#0f1a35] border border-gray-200 dark:border-slate-700 rounded-xl p-4 hover:border-rose-300 dark:hover:border-rose-500/40 transition-colors text-center">
+                <span className="text-2xl mb-2 block">{r.flag}</span>
+                <p className="text-gray-900 dark:text-white font-semibold text-xs group-hover:text-rose-600 dark:group-hover:text-rose-400 transition-colors">{r.label}</p>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/regions" className="inline-flex items-center gap-2 text-sm font-semibold text-rose-600 dark:text-rose-400 hover:underline">
+              View all regions <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
         </div>
       </section>
 
