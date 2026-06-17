@@ -68,6 +68,30 @@ const solutions = [
     color: "text-rose-600 dark:text-rose-400",
     bg: "bg-rose-100 dark:bg-rose-900/30",
   },
+  {
+    href: "/solutions/enterprise-hr-chatbot",
+    label: "Enterprise AI Chatbot",
+    desc: "Enterprise-grade AI HR chatbot with SSO, SCIM provisioning, data residency controls, and deep Workday/SAP integrations.",
+    icon: Bot,
+    color: "text-amber-600 dark:text-amber-400",
+    bg: "bg-amber-100 dark:bg-amber-900/30",
+  },
+  {
+    href: "/solutions/hr-helpdesk-chatbot",
+    label: "HR Helpdesk Chatbot",
+    desc: "Automate your internal HR service desk with an AI chatbot that pre-triages inquiries and escalates to ServiceNow or Jira.",
+    icon: Settings,
+    color: "text-teal-600 dark:text-teal-400",
+    bg: "bg-teal-100 dark:bg-teal-900/30",
+  },
+  {
+    href: "/solutions/internal-employee-chatbot",
+    label: "Internal Employee Chatbot",
+    desc: "Deploy a secure AI HR Concierge directly in Slack or Teams to request PTO, query handbooks, and download documents.",
+    icon: Users,
+    color: "text-cyan-600 dark:text-cyan-400",
+    bg: "bg-cyan-100 dark:bg-cyan-900/30",
+  },
 ];
 
 const breadcrumbs = [

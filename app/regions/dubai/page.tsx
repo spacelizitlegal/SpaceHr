@@ -181,9 +181,58 @@ export default function DubaiPage() {
         </div>
       </section>
 
-      {/* WHY DUBAI COMPANIES CHOOSE US */}
       <section className="py-24 bg-gray-50 dark:bg-[#0f172a]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 text-center">
+            UAE Compliance & Deductions Table
+          </h2>
+          <p className="text-center text-gray-600 dark:text-gray-400 mb-12">
+            Automated statutory calculations and reporting features compliant with MOHRE and UAE Labour Law.
+          </p>
+          <div className="overflow-x-auto rounded-xl border border-gray-200 dark:border-gray-700 shadow-md bg-white dark:bg-[#0b1121] mb-12">
+            <table className="w-full text-left border-collapse">
+              <thead>
+                <tr className="bg-gray-50 dark:bg-gray-800/50">
+                  <th className="p-4 border-b dark:border-gray-700 font-bold text-sm text-gray-700 dark:text-white">Statutory Item</th>
+                  <th className="p-4 border-b dark:border-gray-700 font-bold text-sm text-gray-700 dark:text-white">Supported Actions</th>
+                  <th className="p-4 border-b dark:border-gray-700 font-bold text-sm text-gray-700 dark:text-white">UAE Authority / Standard</th>
+                </tr>
+              </thead>
+              <tbody className="text-sm divide-y divide-gray-100 dark:divide-gray-800 text-gray-600 dark:text-gray-300">
+                <tr>
+                  <td className="p-4 font-semibold text-gray-900 dark:text-white">WPS (Wages Protection System)</td>
+                  <td className="p-4">Automated compilation and verification of .SIF (Salary Information Files) with direct bank exports.</td>
+                  <td className="p-4">Central Bank of the UAE & MOHRE</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-gray-900 dark:text-white">EOSB (End of Service Gratuity)</td>
+                  <td className="p-4">Calculations based on contract type (limited/unlimited), duration tiers (21 days for 1-5 yrs, 30 days for 5+ yrs).</td>
+                  <td className="p-4">MOHRE / UAE Labour Law (Art. 51)</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-gray-900 dark:text-white">Pension (GPSSA)</td>
+                  <td className="p-4">Automated pension contributions for UAE nationals (12.5% employer, 5% employee).</td>
+                  <td className="p-4">General Pension and Social Security Authority</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-gray-900 dark:text-white">DIFC Employee Workplace Savings (DEWS)</td>
+                  <td className="p-4">Native support for DEWS calculations (5.83% basic salary under 5 yrs service, 8.33% basic salary above 5 yrs).</td>
+                  <td className="p-4">DIFC Authority</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-gray-900 dark:text-white">Visa & Emirates ID Tracking</td>
+                  <td className="p-4">Central tracking of visa, work permit, and labor card expirations with 90/60/30 day notification thresholds.</td>
+                  <td className="p-4">ICA / MOHRE</td>
+                </tr>
+                <tr>
+                  <td className="p-4 font-semibold text-gray-900 dark:text-white">Emiratization Goals</td>
+                  <td className="p-4">Workforce breakdown dashboard highlighting progress towards targeted UAE national ratios.</td>
+                  <td className="p-4">MOHRE</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
             Why Dubai & UAE Companies Choose Space HR
           </h2>
@@ -219,6 +268,34 @@ export default function DubaiPage() {
             Frequently Asked Questions
           </h2>
           <FAQAccordion items={faqs} />
+        </div>
+      </section>
+
+      {/* Related Regions */}
+      <section className="py-16 bg-gray-50 dark:bg-[#0f172a] border-t border-gray-200 dark:border-slate-800">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white text-center mb-2">Other Regions</h2>
+          <p className="text-gray-500 dark:text-slate-400 text-center text-sm mb-8">Space HR delivers built-in payroll compliance in 7 major regions worldwide.</p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
+            {[
+              { href: "/regions/united-states", flag: "🇺🇸", label: "United States" },
+              { href: "/regions/uk", flag: "🇬🇧", label: "United Kingdom" },
+              { href: "/regions/india", flag: "🇮🇳", label: "India" },
+              { href: "/regions/singapore", flag: "🇸🇬", label: "Singapore" },
+              { href: "/regions/canada", flag: "🇨🇦", label: "Canada" },
+              { href: "/regions/europe", flag: "🇪🇺", label: "Europe" },
+            ].map((r) => (
+              <Link href={r.href} key={r.href} className="group bg-white dark:bg-[#0f1a35] border border-gray-200 dark:border-slate-700 rounded-xl p-4 hover:border-amber-300 dark:hover:border-amber-500/40 transition-colors text-center">
+                <span className="text-2xl mb-2 block">{r.flag}</span>
+                <p className="text-gray-900 dark:text-white font-semibold text-xs group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">{r.label}</p>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/regions" className="inline-flex items-center gap-2 text-sm font-semibold text-amber-600 dark:text-amber-400 hover:underline">
+              View all regions <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
         </div>
       </section>
 

@@ -159,6 +159,11 @@ export function Footer() {
                 { href: "/solutions/ceo", label: "For CEOs" },
                 { href: "/solutions/hr-admin", label: "For HR Admins" },
                 { href: "/solutions/employees", label: "For Employees" },
+                { href: "/solutions/enterprise-hr-chatbot", label: "Enterprise AI Chatbot" },
+                { href: "/solutions/hr-helpdesk-chatbot", label: "HR Helpdesk Chatbot" },
+                { href: "/solutions/internal-employee-chatbot", label: "Internal Employee Chatbot" },
+                { href: "/solutions/chatbot-for-hr-services", label: "Chatbot for HR Services" },
+                { href: "/solutions/employee-self-service", label: "Employee Self-Service" },
               ].map((link) => (
                 <li key={link.label}>
                   <Link
@@ -181,6 +186,14 @@ export function Footer() {
                 { href: "/compare/workday", label: "vs Workday" },
                 { href: "/compare/gusto", label: "vs Gusto" },
                 { href: "/compare/orangehrm", label: "vs OrangeHRM" },
+                { href: "/compare/adp", label: "vs ADP" },
+                { href: "/compare/darwinbox", label: "vs Darwinbox" },
+                { href: "/compare/freshteam", label: "vs Freshteam" },
+                { href: "/compare/leena-ai", label: "vs Leena AI" },
+                { href: "/compare/moveworks", label: "vs Moveworks" },
+                { href: "/compare/microsoft-copilot", label: "vs Copilot" },
+                { href: "/compare/sap-successfactors", label: "vs SAP" },
+                { href: "/compare/servicenow", label: "vs ServiceNow" },
               ].map((link) => (
                 <li key={link.label}>
                   <Link
@@ -206,6 +219,8 @@ export function Footer() {
                 { href: "/regions/singapore", label: "Singapore" },
                 { href: "/regions/canada", label: "Canada" },
                 { href: "/regions/europe", label: "Europe" },
+                { href: "/regions/uk", label: "United Kingdom" },
+                { href: "/regions/india", label: "India" },
               ].map((link) => (
                 <li key={link.label}>
                   <Link
@@ -260,6 +275,7 @@ export function Footer() {
                   label: "Employee Cost Calculator",
                 },
                 { href: "/tools/w2-form-download", label: "W-2 Form Download" },
+                { href: "/tools/fw4-form-download", label: "FW-4 Form Download" },
                 {
                   href: "/california-pay-transparency",
                   label: "CA Pay Transparency",

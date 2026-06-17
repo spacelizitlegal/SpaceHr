@@ -262,10 +262,13 @@ const aboutFAQs = [
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary to-violet-500 rounded-full blur-xl opacity-50"></div>
                 <div className="relative bg-white/10 backdrop-blur-xl border border-white/20 rounded-full p-6">
-                  <img
+                  <Image
                     src="/about_logo.png"
                     alt="Space AI Logo"
+                    width={96}
+                    height={96}
                     className="h-24 w-24 object-contain"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -539,10 +542,13 @@ const aboutFAQs = [
 
             <div className="flex items-center justify-center gap-4 mb-8">
               <div className="relative h-20 w-20">
-                <img
+                <Image
                   src="/hrlogonly.png"
                   alt="Space HR"
+                  width={80}
+                  height={80}
                   className="w-full h-full object-contain drop-shadow-2xl"
+                  loading="lazy"
                 />
               </div>
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white">

@@ -404,51 +404,51 @@ export default function Home() {
 
             {/* Role-Based Portals */}
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-20">
-              <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all">
-                <div className="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center mb-4">
+              <Link href="/solutions/hr-admin" className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all group">
+                <div className="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <ShieldCheck className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
                   Admin Portal
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
                   Central configuration, payroll processing, organizational
                   management
                 </p>
-              </div>
-              <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all">
-                <div className="w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center mb-4">
+              </Link>
+              <Link href="/solutions/ceo" className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all group">
+                <div className="w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <Award className="w-6 h-6 text-purple-600 dark:text-purple-400" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
                   CEO Dashboard
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
                   Strategic insights, financial health, executive oversight
                 </p>
-              </div>
-              <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all">
-                <div className="w-12 h-12 rounded-xl bg-green-100 dark:bg-green-900/30 flex items-center justify-center mb-4">
+              </Link>
+              <Link href="/solutions/chatbot-for-hr-services" className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all group">
+                <div className="w-12 h-12 rounded-xl bg-green-100 dark:bg-green-900/30 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <Users className="w-6 h-6 text-green-600 dark:text-green-400" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
                   Supervisor Hub
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
                   Team management, appraisal reviews, approval workflows
                 </p>
-              </div>
-              <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all">
-                <div className="w-12 h-12 rounded-xl bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center mb-4">
+              </Link>
+              <Link href="/solutions/employee-self-service" className="bg-white dark:bg-gray-800 rounded-2xl p-6 border border-gray-200 dark:border-gray-700 hover:shadow-xl transition-all group">
+                <div className="w-12 h-12 rounded-xl bg-orange-100 dark:bg-orange-900/30 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
                   <CheckCircle className="w-6 h-6 text-orange-600 dark:text-orange-400" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
                   Employee Self-Service
                 </h3>
                 <p className="text-gray-600 dark:text-gray-400 text-sm">
                   Payslips, tax forms, performance goals, course progress
                 </p>
-              </div>
+              </Link>
             </div>
 
             {/* Core Modules Grid */}
@@ -1095,6 +1095,84 @@ export default function Home() {
         </section>
 
 
+
+        {/* Industries We Serve */}
+        <section className="py-24 bg-white dark:bg-[#0b1121]">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+            <div className="text-center mb-12">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-emerald-500 font-bold tracking-wider uppercase text-sm">
+                By Industry
+              </span>
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mt-4 mb-4">
+                HR Software Built for Your Industry
+              </h2>
+              <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                Compliance rules, workflows, and reporting vary by sector. Space HR ships pre-configured for each.
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 mb-10">
+              {[
+                { href: "/industries/healthcare", emoji: "🏥", label: "Healthcare", desc: "HIPAA, shift scheduling, credentialing" },
+                { href: "/industries/banking", emoji: "🏦", label: "Banking & Finance", desc: "FINRA compliance, audit trails" },
+                { href: "/industries/retail", emoji: "🛒", label: "Retail", desc: "Hourly workforce, multi-location" },
+                { href: "/industries/manufacturing", emoji: "🏭", label: "Manufacturing", desc: "OSHA safety, union payroll" },
+                { href: "/industries/government", emoji: "🏛️", label: "Government", desc: "Civil service, leave accrual" },
+              ].map((ind) => (
+                <Link key={ind.href} href={ind.href} className="group bg-gray-50 dark:bg-[#0f172a] rounded-2xl p-6 border border-gray-200 dark:border-gray-700 hover:border-teal-400 hover:shadow-lg transition-all text-center">
+                  <div className="text-4xl mb-3">{ind.emoji}</div>
+                  <h3 className="font-bold text-gray-900 dark:text-white mb-2 group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors">{ind.label}</h3>
+                  <p className="text-xs text-gray-500 dark:text-gray-400">{ind.desc}</p>
+                </Link>
+              ))}
+            </div>
+            <div className="text-center">
+              <Link href="/industries" className="inline-flex items-center gap-2 text-teal-600 dark:text-teal-400 font-semibold hover:underline">
+                View all industry solutions →
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Global Coverage */}
+        <section className="py-24 bg-gray-50 dark:bg-[#0f172a]">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+            <div className="text-center mb-12">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-500 font-bold tracking-wider uppercase text-sm">
+                Global Coverage
+              </span>
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mt-4 mb-4">
+                Compliant HR in Every Region
+              </h2>
+              <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                Native payroll compliance for the US, UAE, Singapore, UK, India, Canada, and Europe — not a bolt-on.
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+              {[
+                { href: "/regions/united-states", flag: "🇺🇸", label: "United States", desc: "NACHA, IRS, all 50 states" },
+                { href: "/regions/dubai", flag: "🇦🇪", label: "UAE / Dubai", desc: "WPS, MOHRE, gratuity" },
+                { href: "/regions/singapore", flag: "🇸🇬", label: "Singapore", desc: "CPF, MOM, IR8A" },
+                { href: "/regions/uk", flag: "🇬🇧", label: "United Kingdom", desc: "RTI, PAYE, auto-enrolment" },
+                { href: "/regions/india", flag: "🇮🇳", label: "India", desc: "PF, ESI, TDS" },
+                { href: "/regions/canada", flag: "🇨🇦", label: "Canada", desc: "CRA, provincial tax" },
+                { href: "/regions/europe", flag: "🇪🇺", label: "Europe", desc: "GDPR, local labour law" },
+              ].map((reg) => (
+                <Link key={reg.href} href={reg.href} className="group bg-white dark:bg-[#0b1121] rounded-2xl p-5 border border-gray-200 dark:border-gray-700 hover:border-blue-400 hover:shadow-lg transition-all flex items-center gap-4">
+                  <span className="text-3xl flex-shrink-0">{reg.flag}</span>
+                  <div>
+                    <h3 className="font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors text-sm">{reg.label}</h3>
+                    <p className="text-xs text-gray-500 dark:text-gray-400">{reg.desc}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+            <div className="text-center">
+              <Link href="/regions" className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold hover:underline">
+                Explore global HR compliance →
+              </Link>
+            </div>
+          </div>
+        </section>
 
         {/* 6. ENHANCED FINAL CTA */}
         <section className="relative py-32 bg-gradient-to-br from-gray-900 via-gray-800 to-black dark:from-black dark:via-gray-950 dark:to-black overflow-hidden">

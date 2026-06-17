@@ -91,6 +91,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // ─── Industry Landing Pages ──────────────────────────────────────────────────
   const industryPages: MetadataRoute.Sitemap = [
+    { url: `${base}/industries`,             lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/industries/healthcare`,    lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/industries/retail`,        lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/industries/banking`,       lastModified: now, changeFrequency: "monthly", priority: 0.8 },
@@ -100,6 +101,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // ─── Regional Pages ──────────────────────────────────────────────────────
   const regionPages: MetadataRoute.Sitemap = [
+    { url: `${base}/regions`,              lastModified: now, changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/regions/united-states`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/regions/dubai`,         lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/regions/india`,         lastModified: now, changeFrequency: "monthly", priority: 0.8 },

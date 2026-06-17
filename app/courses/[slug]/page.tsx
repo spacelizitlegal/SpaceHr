@@ -4,6 +4,7 @@ import { useParams, notFound } from "next/navigation";
 import { courses } from "@/lib/courseData";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowLeft, CheckCircle, PlayCircle, Clock, Award } from "lucide-react";
 
 export default function CourseDetailPage() {
@@ -57,10 +58,13 @@ export default function CourseDetailPage() {
             <div className="lg:w-1/3 w-full">
               <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-xl border border-gray-100 dark:border-gray-700 sticky top-24">
                 <div className="relative aspect-video rounded-lg overflow-hidden mb-6 bg-gray-100">
-                  <img
+                  <Image
                     src={course.image}
                     alt={course.title}
+                    width={600}
+                    height={340}
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 </div>
                 <Link

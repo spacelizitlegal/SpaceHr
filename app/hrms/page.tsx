@@ -34,6 +34,9 @@ export const metadata: Metadata = {
     "hcm software",
     "hr database",
   ],
+  alternates: {
+    canonical: "https://spacehr.net/hrms",
+  },
 };
 
 const faqs = [
@@ -177,7 +180,21 @@ export default function HRMSPage() {
               Unlike simple payroll tools or standalone tracking sheets, an HRMS
               aims to be the "single source of truth" for all employee data,
               connecting core administrative functions with strategic talent
-              management.
+              management. Modern AI-enabled systems also provide interactive{" "}
+              <Link href="/solutions/employee-self-service" className="text-purple-600 dark:text-purple-400 hover:underline">
+                employee self-service
+              </Link>{" "}
+              and conversational assistants like the{" "}
+              <Link href="/solutions/hr-ai-chatbot" className="text-purple-600 dark:text-purple-400 hover:underline">
+                HR AI Chatbot
+              </Link>
+              . This is particularly valuable for global enterprises operating across regions like the{" "}
+              <Link href="/regions/united-states" className="text-purple-600 dark:text-purple-400 hover:underline">United States</Link>,{" "}
+              <Link href="/regions/uk" className="text-purple-600 dark:text-purple-400 hover:underline">United Kingdom</Link>,{" "}
+              <Link href="/regions/india" className="text-purple-600 dark:text-purple-400 hover:underline">India</Link>,{" "}
+              <Link href="/regions/canada" className="text-purple-600 dark:text-purple-400 hover:underline">Canada</Link>,{" "}
+              <Link href="/regions/europe" className="text-purple-600 dark:text-purple-400 hover:underline">Europe</Link>, and{" "}
+              <Link href="/regions/dubai" className="text-purple-600 dark:text-purple-400 hover:underline">Dubai</Link>.
             </p>
           </div>
         </div>
