@@ -2,7 +2,13 @@ import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 import {
   ArrowRight,
+  ArrowUpRight,
   BarChart3,
+  Camera,
+  FileSignature,
+  Network,
+  Package,
+  UserCheck,
   Users,
   Zap,
   Award,
@@ -13,6 +19,7 @@ import {
   TrendingUp,
   Sparkles,
 } from "lucide-react";
+import { SpaceHRCard } from "@/components/SpaceHRCard";
 import Image from "next/image";
 import { Metadata } from "next";
 import {
@@ -1169,6 +1176,79 @@ export default function Home() {
             <div className="text-center">
               <Link href="/regions" className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold hover:underline">
                 Explore global HR compliance →
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* SPACE AI ECOSYSTEM */}
+        <section
+          className="py-24 relative bg-gray-50 dark:bg-[#111827]"
+          style={{
+            backgroundImage: "url('/ecosystem-bg.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div className="absolute inset-0 bg-white/80 dark:bg-[#111827]/85 pointer-events-none" />
+          <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-14">
+              <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-blue-500/10 border border-blue-500/20 mb-6">
+                <Globe className="w-4 h-4 text-blue-500" />
+                <span className="text-blue-600 dark:text-blue-400 text-sm font-medium">Part of the Space AI Ecosystem</span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                One Company. Eight AI Products.
+              </h2>
+              <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                SpaceHR is built by{" "}
+                <a href="https://pmspace.ai" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold">
+                  Space AI
+                </a>
+                {" "}— the same team behind PM Space AI, Space CRM, and five other enterprise tools. Connect them all or use SpaceHR standalone.
+              </p>
+            </div>
+
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto mb-10">
+              {[
+                { name: "PM Space AI",   url: "https://pmspace.ai",     desc: "AI project & crew management",  icon: BarChart3,     iconColor: "text-blue-500",    iconBg: "bg-blue-500/10"    },
+                { name: "Space Sign",    url: "https://space-sign.ai",  desc: "E-signature & contracts",       icon: FileSignature, iconColor: "text-violet-500",  iconBg: "bg-violet-500/10"  },
+                { name: "Space Capture", url: "https://spacecapture.ai",desc: "Field data capture",            icon: Camera,        iconColor: "text-cyan-500",    iconBg: "bg-cyan-500/10"    },
+                { name: "Space Lizit",   url: "https://spacelizit.com", desc: "Procurement & vendors",         icon: Package,       iconColor: "text-orange-500",  iconBg: "bg-orange-500/10"  },
+                { name: "Space Lean",    url: "https://spacelean.ai",   desc: "Lean process optimisation",     icon: TrendingUp,    iconColor: "text-emerald-500", iconBg: "bg-emerald-500/10" },
+                { name: "Space Nexus",   url: "https://spacenexus.net", desc: "Enterprise integration hub",    icon: Network,       iconColor: "text-indigo-500",  iconBg: "bg-indigo-500/10"  },
+                { name: "Space CRM",     url: "https://spacecrm.net",   desc: "Customer relationship mgmt",    icon: UserCheck,     iconColor: "text-pink-500",    iconBg: "bg-pink-500/10"    },
+              ].map((product) => {
+                const Icon = product.icon;
+                return (
+                  <a
+                    key={product.name}
+                    href={product.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group bg-white dark:bg-[#111827] border border-gray-200 dark:border-gray-700 rounded-2xl p-8 hover:border-blue-500/30 hover:shadow-lg hover:scale-105 active:scale-95 active:rotate-[1.7deg] transition-all duration-200"
+                  >
+                    <div className={`w-10 h-10 rounded-xl ${product.iconBg} flex items-center justify-center mb-3`}>
+                      <Icon className={`w-5 h-5 ${product.iconColor}`} />
+                    </div>
+                    <div className="flex items-start justify-between mb-1">
+                      <p className="font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors text-sm">
+                        {product.name}
+                      </p>
+                      <ArrowUpRight className="w-4 h-4 text-gray-400 group-hover:text-blue-500 transition-colors flex-shrink-0 mt-0.5" />
+                    </div>
+                    <p className="text-xs text-gray-500 dark:text-gray-400">{product.desc}</p>
+                  </a>
+                );
+              })}
+              <SpaceHRCard />
+            </div>
+
+            <div className="text-center">
+              <Link href="/integrations/space-ai" className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold hover:underline text-sm">
+                See how SpaceHR integrates with PM Space AI
+                <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
           </div>

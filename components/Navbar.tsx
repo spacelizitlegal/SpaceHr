@@ -33,6 +33,16 @@ const solutionsLinks = [
   { href: "/solutions/employees", label: "For Employees" },
 ];
 
+const ecosystemLinks = [
+  { href: "https://pmspace.ai", label: "PM Space AI", external: true },
+  { href: "https://space-sign.ai", label: "Space Sign", external: true },
+  { href: "https://spacecapture.ai", label: "Space Capture", external: true },
+  { href: "https://spacelizit.com", label: "Space Lizit", external: true },
+  { href: "https://spacelean.ai", label: "Space Lean", external: true },
+  { href: "https://spacenexus.net", label: "Space Nexus", external: true },
+  { href: "https://spacecrm.net", label: "Space CRM", external: true },
+];
+
 const resourceLinks = [
   { href: "/blogs", label: "Blog & Insights" },
   { href: "/courses", label: "Learning Center" },
@@ -46,7 +56,7 @@ const resourceLinks = [
 
 interface DropdownProps {
   label: string;
-  links: { href: string; label: string }[];
+  links: { href: string; label: string; external?: boolean }[];
   columns?: number;
 }
 
@@ -91,16 +101,29 @@ function NavDropdown({ label, links, columns = 1 }: DropdownProps) {
               columns === 2 ? "grid-cols-2" : "grid-cols-1",
             )}
           >
-            {links.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setOpen(false)}
-                className="flex items-center px-3 py-2 rounded-xl text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors whitespace-nowrap"
-              >
-                {link.label}
-              </Link>
-            ))}
+            {links.map((link) =>
+              link.external ? (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setOpen(false)}
+                  className="flex items-center px-3 py-2 rounded-xl text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors whitespace-nowrap"
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className="flex items-center px-3 py-2 rounded-xl text-sm text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors whitespace-nowrap"
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
           </div>
         </div>
       )}
@@ -206,6 +229,7 @@ export function Navbar() {
               >
                 Learning
               </Link>
+              <NavDropdown label="Ecosystem" links={ecosystemLinks} />
             </div>
           </div>
 
@@ -339,6 +363,37 @@ export function Navbar() {
                     {link.label}
                     <ChevronRight className="h-3.5 w-3.5 text-slate-400" />
                   </Link>
+                ))}
+              </div>
+            )}
+
+            {/* Ecosystem accordion */}
+            <button
+              onClick={() => toggleMobile("ecosystem")}
+              className="flex items-center justify-between px-4 py-4 rounded-xl text-slate-700 dark:text-slate-100 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors w-full"
+            >
+              <span className="font-medium">Ecosystem</span>
+              <ChevronDown
+                className={cn(
+                  "h-4 w-4 text-slate-400 transition-transform duration-200",
+                  mobileExpanded === "ecosystem" && "rotate-180",
+                )}
+              />
+            </button>
+            {mobileExpanded === "ecosystem" && (
+              <div className="ml-4 flex flex-col gap-1">
+                {ecosystemLinks.map((link) => (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between px-4 py-3 rounded-xl text-sm text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-700 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    {link.label}
+                    <ChevronRight className="h-3.5 w-3.5 text-slate-400" />
+                  </a>
                 ))}
               </div>
             )}

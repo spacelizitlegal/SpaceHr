@@ -209,6 +209,27 @@ const aboutFAQs = [
     description:
       "SpaceHR is an AI-powered HR and payroll platform that automates employee self-service, payroll anomaly detection, labor cost forecasting, attrition prediction, and 360-degree performance appraisals for mid-market and enterprise companies.",
     foundingDate: "2023",
+    parentOrganization: {
+      "@type": "Organization",
+      "@id": "https://spaceaiapp.com/#organization",
+      name: "Space AI",
+      url: "https://spaceaiapp.com",
+    },
+    founders: [
+      {
+        "@type": "Person",
+        name: "Thomas Jomon",
+        jobTitle: "Co-Founder, President & Chief AI Officer",
+        url: "https://pmspace.ai/space-team",
+        sameAs: "https://www.linkedin.com/in/thomas-jomon-45475327/",
+      },
+      {
+        "@type": "Person",
+        name: "Bibin Prathap",
+        url: "https://bibinprathap.com",
+        sameAs: "https://bibinprathap.com",
+      },
+    ],
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "customer support",
@@ -223,6 +244,15 @@ const aboutFAQs = [
       "https://www.linkedin.com/company/spacehr",
       "https://twitter.com/spacehr",
       "https://g2.com/products/spacehr",
+      "https://pmspace.ai",
+      "https://spaceaiapp.com",
+      "https://bibinprathap.com",
+      "https://space-sign.ai",
+      "https://spacecapture.ai",
+      "https://spacelizit.com",
+      "https://spacelean.ai",
+      "https://spacenexus.net",
+      "https://spacecrm.net",
     ],
     knowsAbout: [
       "HR automation",
@@ -355,8 +385,45 @@ const aboutFAQs = [
                   disconnected systems, and the inability to gain actionable insights from their workforce data.
                 </p>
                 <p>
-                  Today, we serve 500+ companies across 15 countries, processing billions in payroll and helping 
+                  Today, we serve 500+ companies across 15 countries, processing billions in payroll and helping
                   organizations build cultures where people genuinely thrive. But we're just getting started.
+                </p>
+                <p>
+                  Space HR is one product in the broader{" "}
+                  <a
+                    href="https://pmspace.ai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-cyan-600 dark:text-cyan-400 font-semibold hover:underline"
+                  >
+                    Space AI ecosystem
+                  </a>
+                  {" "}— the same team also builds{" "}
+                  <a href="https://pmspace.ai" target="_blank" rel="noopener noreferrer" className="text-cyan-600 dark:text-cyan-400 hover:underline">PM Space AI</a>,{" "}
+                  <a href="https://spacecrm.net" target="_blank" rel="noopener noreferrer" className="text-cyan-600 dark:text-cyan-400 hover:underline">Space CRM</a>,{" "}
+                  <a href="https://space-sign.ai" target="_blank" rel="noopener noreferrer" className="text-cyan-600 dark:text-cyan-400 hover:underline">Space Sign</a>,{" "}
+                  and four other enterprise tools. These products share a common platform, unified authentication, and native integrations with Space HR — so HR data flows freely across your entire operation.
+                </p>
+                <p>
+                  Space AI was co-founded by Thomas Jomon (President &amp; Chief AI Officer) and{" "}
+                  <a
+                    href="https://bibinprathap.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-cyan-600 dark:text-cyan-400 font-semibold hover:underline"
+                  >
+                    Bibin Prathap
+                  </a>
+                  , bringing together deep expertise in enterprise AI, product strategy, and spatial computing. Learn more about the vision behind Space AI at{" "}
+                  <a
+                    href="https://bibinprathap.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-cyan-600 dark:text-cyan-400 hover:underline"
+                  >
+                    bibinprathap.com
+                  </a>
+                  .
                 </p>
               </div>
 
@@ -364,6 +431,12 @@ const aboutFAQs = [
                 <Link href="/features">
                   <Button className="bg-gradient-to-r from-primary to-cyan-500 hover:from-primary/90 hover:to-cyan-500/90 text-white rounded-full px-6">
                     Explore Space HR
+                    <ArrowRight className="ml-2 w-4 h-4" />
+                  </Button>
+                </Link>
+                <Link href="/integrations/space-ai">
+                  <Button variant="outline" className="rounded-full px-6 border-primary/30 text-primary dark:text-cyan-400 hover:bg-primary/5">
+                    See Integrations
                     <ArrowRight className="ml-2 w-4 h-4" />
                   </Button>
                 </Link>
