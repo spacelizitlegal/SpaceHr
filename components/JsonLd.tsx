@@ -10,12 +10,34 @@ export function JsonLd({ data }: { data: Record<string, unknown> }) {
 export const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": "https://spacehr.net/#organization",
   name: "Space HR",
   url: "https://spacehr.net",
   logo: "https://spacehr.net/hrlogonly.png",
   description:
     "AI-powered HRMS and ERP platform for modern enterprises — payroll automation, predictive workforce analytics, and compliance management.",
   foundingDate: "2023",
+  parentOrganization: {
+    "@type": "Organization",
+    "@id": "https://spaceaiapp.com/#organization",
+    name: "Space AI",
+    url: "https://spaceaiapp.com",
+  },
+  founders: [
+    {
+      "@type": "Person",
+      name: "Thomas Jomon",
+      jobTitle: "Co-Founder, President & Chief AI Officer",
+      url: "https://pmspace.ai/space-team",
+      sameAs: "https://www.linkedin.com/in/thomas-jomon-45475327/",
+    },
+    {
+      "@type": "Person",
+      name: "Bibin Prathap",
+      url: "https://bibinprathap.com",
+      sameAs: "https://bibinprathap.com",
+    },
+  ],
   sameAs: [
     "https://twitter.com/SpaceHR",
     "https://www.linkedin.com/company/space-hr",
@@ -25,6 +47,24 @@ export const organizationSchema = {
     "https://www.trustradius.com/products/spacehr",
     "https://www.producthunt.com/products/spacehr",
     "https://www.crunchbase.com/organization/spacehr",
+    "https://pmspace.ai",
+    "https://spaceaiapp.com",
+    "https://space-sign.ai",
+    "https://spacecapture.ai",
+    "https://spacelizit.com",
+    "https://spacelean.ai",
+    "https://spacenexus.net",
+    "https://spacecrm.net",
+  ],
+  owns: [
+    { "@type": "SoftwareApplication", name: "PM Space AI", url: "https://pmspace.ai", applicationCategory: "ProjectManagement" },
+    { "@type": "SoftwareApplication", name: "Space Sign", url: "https://space-sign.ai", applicationCategory: "BusinessApplication" },
+    { "@type": "SoftwareApplication", name: "Space Capture", url: "https://spacecapture.ai", applicationCategory: "BusinessApplication" },
+    { "@type": "SoftwareApplication", name: "Space Lizit", url: "https://spacelizit.com", applicationCategory: "BusinessApplication" },
+    { "@type": "SoftwareApplication", name: "Space Lean", url: "https://spacelean.ai", applicationCategory: "BusinessApplication" },
+    { "@type": "SoftwareApplication", name: "Space Nexus", url: "https://spacenexus.net", applicationCategory: "BusinessApplication" },
+    { "@type": "SoftwareApplication", name: "Space CRM", url: "https://spacecrm.net", applicationCategory: "CRMApplication" },
+    { "@type": "SoftwareApplication", name: "Space HR", url: "https://spacehr.net", applicationCategory: "HumanResourceManagement" },
   ],
   contactPoint: [
     {
@@ -105,9 +145,17 @@ export const softwareSchema = {
     worstRating: "1",
   },
   author: {
+    "@type": "Person",
+    name: "Thomas Jomon",
+    jobTitle: "Co-Founder, President & Chief AI Officer",
+    url: "https://pmspace.ai/space-team",
+    sameAs: "https://www.linkedin.com/in/thomas-jomon-45475327/",
+  },
+  provider: {
     "@type": "Organization",
     name: "Space HR",
     url: "https://spacehr.net",
+    sameAs: "https://spaceaiapp.com",
   },
   audience: {
     "@type": "BusinessAudience",

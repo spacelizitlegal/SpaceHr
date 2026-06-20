@@ -7,6 +7,7 @@ import {
   Phone,
   ArrowUpRight,
   Linkedin,
+  LayoutGrid,
 } from "lucide-react";
 import { Twitter } from "lucide-react";
 
@@ -15,7 +16,7 @@ export function Footer() {
     <footer className="bg-[#0b1121] text-white border-t border-white/5 font-sans">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Main grid: brand + link columns */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-8 lg:gap-6">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-8 gap-8 lg:gap-6">
           {/* Brand Column - Explore Space HR */}
           <div className="space-y-6 col-span-2 md:col-span-3 lg:col-span-2 xl:col-span-2">
             <h3 className="font-semibold text-white mb-5 tracking-wide text-sm uppercase">
@@ -71,42 +72,49 @@ export function Footer() {
             </div>
 
             {/* Social Media */}
-            <div className="flex items-center gap-4 pt-2">
+            <div className="flex items-center gap-2 pt-2">
               <Link
                 href="https://x.com/SpaceHR197173"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-11 h-11 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-blue-400 hover:bg-blue-400/10 hover:border-blue-400/30 transition-all duration-200"
+                className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-blue-400 hover:bg-blue-400/10 hover:border-blue-400/30 transition-all duration-200"
                 aria-label="Follow us on X (Twitter)"
               >
-                <Twitter className="w-5 h-5" />
+                <Twitter className="w-4 h-4" />
               </Link>
               <Link
                 href="https://www.instagram.com/space_hr7?igsh=YTJlYnV2OXlkYzR6"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-11 h-11 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-pink-500 hover:bg-pink-500/10 hover:border-pink-500/30 transition-all duration-200"
+                className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-pink-500 hover:bg-pink-500/10 hover:border-pink-500/30 transition-all duration-200"
                 aria-label="Follow us on Instagram"
               >
-                <Instagram className="w-5 h-5" />
+                <Instagram className="w-4 h-4" />
               </Link>
               <Link
                 href="https://youtube.com/@spacehr7?si=Mz17igrQhxa3Jt7R"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-11 h-11 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-red-500 hover:bg-red-500/10 hover:border-red-500/30 transition-all duration-200"
+                className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-red-500 hover:bg-red-500/10 hover:border-red-500/30 transition-all duration-200"
                 aria-label="Subscribe on YouTube"
               >
-                <Youtube className="w-5 h-5" />
+                <Youtube className="w-4 h-4" />
               </Link>
               <Link
                 href="https://www.linkedin.com/company/space-hr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-11 h-11 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-blue-500 hover:bg-blue-500/10 hover:border-blue-500/30 transition-all duration-200"
+                className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-blue-500 hover:bg-blue-500/10 hover:border-blue-500/30 transition-all duration-200"
                 aria-label="Follow us on LinkedIn"
               >
-                <Linkedin className="w-5 h-5" />
+                <Linkedin className="w-4 h-4" />
+              </Link>
+              <Link
+                href="/social-media-platforms"
+                className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-violet-400 hover:bg-violet-400/10 hover:border-violet-400/30 hover:scale-110 hover:shadow-[0_0_10px_rgba(167,139,250,0.4)] active:scale-95 transition-all duration-200"
+                aria-label="All SpaceHR social platforms"
+              >
+                <LayoutGrid className="w-4 h-4" />
               </Link>
             </div>
           </div>
@@ -281,6 +289,7 @@ export function Footer() {
                   label: "CA Pay Transparency",
                 },
                 { href: "/nyc-144-compliance", label: "NYC 144 Compliance" },
+                { href: "/integrations", label: "Integrations" },
                 { href: "/about", label: "About Space HR" },
               ].map((link) => (
                 <li key={link.label}>
@@ -290,6 +299,35 @@ export function Footer() {
                   >
                     {link.label}
                   </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+          {/* Space AI Ecosystem */}
+          <div>
+            <h3 className="font-semibold text-white mb-5 tracking-wide text-sm uppercase">
+              Space AI Ecosystem
+            </h3>
+            <ul className="space-y-0.5">
+              {[
+                { href: "https://pmspace.ai", label: "PM Space AI" },
+                { href: "https://space-sign.ai", label: "Space Sign" },
+                { href: "https://spacecapture.ai", label: "Space Capture" },
+                { href: "https://spacelizit.com", label: "Space Lizit" },
+                { href: "https://spacelean.ai", label: "Space Lean" },
+                { href: "https://spacenexus.net", label: "Space Nexus" },
+                { href: "https://spacecrm.net", label: "Space CRM" },
+              ].map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-flex items-center gap-1 text-sm py-1"
+                  >
+                    {link.label}
+                    <ArrowUpRight className="w-3 h-3 opacity-60" />
+                  </a>
                 </li>
               ))}
             </ul>
