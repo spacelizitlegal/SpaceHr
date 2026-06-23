@@ -37,7 +37,7 @@ export const metadata: Metadata = {
       "SpaceHR - AI-Powered HR Chatbot & Employee Self-Service Platform",
   },
   description:
-    "SpaceHR automates HR for growing teams - AI chatbot for employee self-service, payroll anomaly detection, 12-month labor cost forecasting, and 360 appraisals. Free trial. Setup in 48 hours.",
+    "SpaceHR automates  HR for growing teams - AI chatbot for employee self-service, payroll anomaly detection, 12-month labor cost forecasting, and 360 appraisals. Free trial. Setup in 48 hours.",
   keywords: [
     "AI HR chatbot",
     "chatbot for HR services",
