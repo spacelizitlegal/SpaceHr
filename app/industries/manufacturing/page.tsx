@@ -18,6 +18,13 @@ export const metadata: Metadata = {
     title: "HR Software for Manufacturing | Space HR",
     description: "Shift scheduling, factory-act compliance, labour cost control, and hourly workforce management for manufacturers.",
     url: "https://spacehr.net/industries/manufacturing",
+    siteName: "Space HR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HR Software for Manufacturing | Space HR",
+    description: "Shift scheduling, factory-act compliance, labour cost control, and hourly workforce management for manufacturers.",
   },
   alternates: { canonical: "https://spacehr.net/industries/manufacturing" },
 };

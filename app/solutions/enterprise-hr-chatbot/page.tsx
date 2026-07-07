@@ -31,20 +31,20 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Enterprise AI HR Chatbot — Secure, Scalable HR Automation for Large Organizations | SpaceHR",
+  title: "Enterprise AI HR Chatbot — Security, Scale & HRIS Integration | Space HR",
   description:
-    "SpaceHR's enterprise AI HR chatbot delivers 24/7 employee self-service at scale — with SSO, private cloud, multi-language, deep HRIS integration, and SOC 2 security. Built for 1,000+ employee organizations.",
+    "Enterprise-grade AI HR chatbot with SSO, SCIM, private cloud or on-premise deployment, SOC 2 security, and deep integrations with Workday, SAP SuccessFactors, Oracle, ADP, and Ceridian. Built for 1,000+ employee organizations.",
   keywords: [
     "enterprise ai hr chatbot",
     "enterprise hr chatbot",
     "enterprise hr virtual assistant",
-    "ai hr chatbot enterprise",
-    "large company hr chatbot",
+    "secure hr chatbot",
+    "scalable hr chatbot",
     "enterprise hr automation",
     "hr chatbot for large organizations",
     "enterprise hr self service chatbot",
-    "scalable hr chatbot",
-    "secure enterprise hr chatbot",
+    "hr chatbot sso",
+    "hr chatbot private cloud",
     "hr chatbot workday integration",
     "hr chatbot sap successfactors",
   ],
@@ -52,26 +52,26 @@ export const metadata: Metadata = {
     canonical: "https://spacehr.net/solutions/enterprise-hr-chatbot",
   },
   openGraph: {
-    title: "Enterprise AI HR Chatbot | SpaceHR",
+    title: "Enterprise AI HR Chatbot — Security, Scale & HRIS Integration | Space HR",
     description:
-      "24/7 AI HR self-service at enterprise scale — SSO, private cloud, multi-language, deep HRIS integration, and SOC 2 security. For organizations with 1,000+ employees.",
+      "Enterprise-grade AI HR chatbot with SSO, private cloud, SOC 2, and deep Workday/SAP/Oracle/ADP integration. For 1,000+ employee organizations.",
     url: "https://spacehr.net/solutions/enterprise-hr-chatbot",
-    siteName: "SpaceHR",
+    siteName: "Space HR",
     type: "website",
     images: [
       {
         url: "/desktop-design-showcase.webp",
         width: 1200,
         height: 630,
-        alt: "SpaceHR Enterprise AI HR Chatbot",
+        alt: "Space HR Enterprise AI HR Chatbot Security and Integration",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Enterprise AI HR Chatbot | SpaceHR",
+    title: "Enterprise AI HR Chatbot | Space HR",
     description:
-      "Enterprise-grade AI HR chatbot — SSO, private cloud, multi-language, deep HRIS integration. Built for 1,000+ employee organizations.",
+      "Enterprise-grade AI HR chatbot with SSO, private cloud, SOC 2, and deep HRIS integration.",
     images: ["/desktop-design-showcase.webp"],
   },
 };
@@ -83,49 +83,49 @@ const faqs = [
       "An enterprise-grade HR chatbot differs from SMB solutions in five critical ways: (1) Security — SOC 2 Type II certification, SSO/SAML integration, private cloud or on-premise deployment options, and granular RBAC. (2) Scale — handles tens of thousands of concurrent employee queries without performance degradation. (3) Integration depth — native connectors to enterprise HRIS platforms (Workday, SAP SuccessFactors, Oracle HCM) with real-time bidirectional sync. (4) Multi-language support — serves global workforces across dozens of languages with localized HR policy content. (5) Governance — full audit logging, data residency controls, and compliance reporting for regulated industries.",
   },
   {
-    question: "Which HRIS platforms does SpaceHR integrate with at enterprise level?",
+    question: "Which HRIS platforms does Space HR integrate with at enterprise level?",
     answer:
-      "SpaceHR has enterprise-grade (bidirectional, real-time) integrations with: Workday HCM, SAP SuccessFactors, Oracle HCM Cloud, ADP Workforce Now, and Ceridian Dayforce. Standard integrations (read-only, real-time) are available for BambooHR, Rippling, Gusto, UKG, and 20+ additional platforms. For platforms without a pre-built connector, SpaceHR provides an enterprise API with Webhook support and a certified implementation partner network for custom integration projects.",
+      "Space HR has enterprise-grade (bidirectional, real-time) integrations with: Workday HCM, SAP SuccessFactors, Oracle HCM Cloud, ADP Workforce Now, and Ceridian Dayforce. Standard integrations (read-only, real-time) are available for BambooHR, Rippling, Gusto, UKG, and 20+ additional platforms. For platforms without a pre-built connector, Space HR provides an enterprise API with Webhook support and a certified implementation partner network for custom integration projects.",
   },
   {
-    question: "How does SpaceHR handle multi-language support for global enterprises?",
+    question: "How does Space HR handle multi-language support for global enterprises?",
     answer:
-      "SpaceHR's enterprise tier supports 40+ languages for employee-facing interactions. HR policy content can be maintained in multiple languages with version control — when a policy is updated in English, HR admins can push updates to localized versions with AI-assisted translation. The chatbot automatically detects employee language preference from their HRIS profile or browser locale. Regional HR rules (UAE labor law, Singapore MOM regulations, UK employment law, EU Working Time Directive) are configured per country and applied automatically based on employee work location.",
+      "Space HR's enterprise tier supports 40+ languages for employee-facing interactions. HR policy content can be maintained in multiple languages with version control — when a policy is updated in English, HR admins can push updates to localized versions with AI-assisted translation. The chatbot automatically detects employee language preference from their HRIS profile or browser locale. Regional HR rules (UAE labor law, Singapore MOM regulations, UK employment law, EU Working Time Directive) are configured per country and applied automatically based on employee work location.",
   },
   {
     question: "What are the deployment options for enterprise customers?",
     answer:
-      "SpaceHR offers three deployment options for enterprise: (1) SaaS (multi-tenant cloud) — fastest to deploy, lowest TCO, data stored in your chosen region (US, EU, APAC). (2) Dedicated cloud — single-tenant SaaS deployment on isolated infrastructure, same managed service but data is not co-mingled. (3) Private cloud / on-premise — SpaceHR deployed within your own cloud environment (AWS, Azure, GCP) or on-premise data center. Private cloud is available for organizations with strict data sovereignty requirements (defense, government, regulated finance).",
+      "Space HR offers three deployment options for enterprise: (1) SaaS (multi-tenant cloud) — fastest to deploy, lowest TCO, data stored in your chosen region (US, EU, APAC). (2) Dedicated cloud — single-tenant SaaS deployment on isolated infrastructure, same managed service but data is not co-mingled. (3) Private cloud / on-premise — Space HR deployed within your own cloud environment (AWS, Azure, GCP) or on-premise data center. Private cloud is available for organizations with strict data sovereignty requirements (defense, government, regulated finance).",
   },
   {
-    question: "How does SpaceHR handle SSO and identity management for enterprises?",
+    question: "How does Space HR handle SSO and identity management for enterprises?",
     answer:
-      "SpaceHR supports SAML 2.0 and OpenID Connect (OIDC) for SSO integration with all major identity providers: Okta, Azure Active Directory, Google Workspace, Ping Identity, and OneLogin. Role provisioning is automated via SCIM — when an employee's role changes in your IdP, their chatbot access permissions update automatically with no manual intervention. MFA is supported and can be enforced as a policy for all chatbot sessions.",
+      "Space HR supports SAML 2.0 and OpenID Connect (OIDC) for SSO integration with all major identity providers: Okta, Azure Active Directory, Google Workspace, Ping Identity, and OneLogin. Role provisioning is automated via SCIM — when an employee's role changes in your IdP, their chatbot access permissions update automatically with no manual intervention. MFA is supported and can be enforced as a policy for all chatbot sessions.",
   },
   {
-    question: "How does SpaceHR manage data residency for enterprise customers?",
+    question: "How does Space HR manage data residency for enterprise customers?",
     answer:
-      "SpaceHR supports data residency in three regions: United States (AWS us-east-1), European Union (AWS eu-west-1 / eu-central-1), and Asia-Pacific (AWS ap-southeast-1). Enterprise customers can specify that all employee data is stored and processed within a specific region to comply with GDPR, PDPA (Singapore), or other data localization regulations. Private cloud customers have full control over data residency as the infrastructure runs in their own cloud environment.",
+      "Space HR supports data residency in three regions: United States (AWS us-east-1), European Union (AWS eu-west-1 / eu-central-1), and Asia-Pacific (AWS ap-southeast-1). Enterprise customers can specify that all employee data is stored and processed within a specific region to comply with GDPR, PDPA (Singapore), or other data localization regulations. Private cloud customers have full control over data residency as the infrastructure runs in their own cloud environment.",
   },
   {
-    question: "What security certifications does SpaceHR have for enterprise use?",
+    question: "What security certifications does Space HR have for enterprise use?",
     answer:
-      "SpaceHR's security posture for enterprise: SOC 2 Type II certified (annual re-certification), GDPR compliant, ISO 27001 aligned practices, AES-256 encryption at rest, TLS 1.3 in transit, annual penetration testing by a third-party firm, vulnerability disclosure program, RBAC with attribute-based access control, full audit logging with immutable log storage, and session timeout controls. Enterprise customers receive a copy of the most recent SOC 2 report under NDA during procurement.",
+      "Space HR's security posture for enterprise: SOC 2 Type II certified (annual re-certification), GDPR compliant, ISO 27001 aligned practices, AES-256 encryption at rest, TLS 1.3 in transit, annual penetration testing by a third-party firm, vulnerability disclosure program, RBAC with attribute-based access control, full audit logging with immutable log storage, and session timeout controls. Enterprise customers receive a copy of the most recent SOC 2 report under NDA during procurement.",
   },
   {
-    question: "Can SpaceHR handle complex enterprise HR workflows, not just Q&A?",
+    question: "Can Space HR handle complex enterprise HR workflows, not just Q&A?",
     answer:
-      "Yes. SpaceHR's enterprise tier supports multi-step workflow automation beyond simple Q&A: leave request submission and approval routing, onboarding task orchestration across HR / IT / Finance / Facilities, employee data change requests with manager and HR approval chains, performance review cycle management and reminders, compliance training completion tracking and reminders, and cross-system ticket creation (HR + ServiceNow + Jira). Workflows are configured in SpaceHR's no-code workflow builder — no engineering required for standard workflow templates.",
+      "Yes. Space HR's enterprise tier supports multi-step workflow automation beyond simple Q&A: leave request submission and approval routing, onboarding task orchestration across HR / IT / Finance / Facilities, employee data change requests with manager and HR approval chains, performance review cycle management and reminders, compliance training completion tracking and reminders, and cross-system ticket creation (HR + ServiceNow + Jira). Workflows are configured in Space HR's no-code workflow builder — no engineering required for standard workflow templates.",
   },
   {
-    question: "How does SpaceHR scale to support tens of thousands of employees?",
+    question: "How does Space HR scale to support tens of thousands of employees?",
     answer:
-      "SpaceHR's architecture is built on auto-scaling cloud infrastructure (AWS) with horizontal scaling for query processing. Enterprise SLA guarantees 99.9% uptime with sub-3-second response times at peak load. SpaceHR has been tested at 50,000 concurrent sessions. Dedicated cloud and private cloud customers receive dedicated infrastructure with no noisy-neighbor performance risk. Load testing results are available to enterprise customers during procurement.",
+      "Space HR's architecture is built on auto-scaling cloud infrastructure (AWS) with horizontal scaling for query processing. Enterprise SLA guarantees 99.9% uptime with sub-3-second response times at peak load. Space HR has been tested at 50,000 concurrent sessions. Dedicated cloud and private cloud customers receive dedicated infrastructure with no noisy-neighbor performance risk. Load testing results are available to enterprise customers during procurement.",
   },
   {
-    question: "What does enterprise implementation look like for SpaceHR?",
+    question: "What does enterprise implementation look like for Space HR?",
     answer:
-      "Enterprise implementations follow a structured program: (1) Discovery — 2-week requirements gathering, HRIS audit, workflow mapping, security review. (2) Technical setup — HRIS integration, SSO configuration, data residency setup, ticketing system integration (3–4 weeks). (3) Knowledge base build — HR team uploads and reviews policy content, SpaceHR AI extracts and structures it (1–2 weeks). (4) Pilot — 10% employee rollout with monitoring (2 weeks). (5) Phased launch — department by department rollout with adoption reporting. Typical enterprise time-to-full-deployment: 8–12 weeks. A dedicated Customer Success Manager is assigned for the full program.",
+      "Enterprise implementations follow a structured program: (1) Discovery — 2-week requirements gathering, HRIS audit, workflow mapping, security review. (2) Technical setup — HRIS integration, SSO configuration, data residency setup, ticketing system integration (3–4 weeks). (3) Knowledge base build — HR team uploads and reviews policy content, Space HR AI extracts and structures it (1–2 weeks). (4) Pilot — 10% employee rollout with monitoring (2 weeks). (5) Phased launch — department by department rollout with adoption reporting. Typical enterprise time-to-full-deployment: 8–12 weeks. A dedicated Customer Success Manager is assigned for the full program.",
   },
 ];
 
@@ -144,7 +144,7 @@ const enterpriseCapabilities = [
   {
     icon: Server,
     title: "Private Cloud & On-Premise",
-    description: "Deploy SpaceHR within your own AWS, Azure, or GCP environment — or on-premise. Full data sovereignty for regulated industries.",
+    description: "Deploy Space HR within your own AWS, Azure, or GCP environment — or on-premise. Full data sovereignty for regulated industries.",
   },
   {
     icon: Globe,
@@ -280,7 +280,7 @@ export default function EnterpriseHRChatbotPage() {
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-                  SpaceHR&apos;s <strong>enterprise AI HR chatbot</strong> delivers 24/7 employee self-service across thousands of employees, dozens of countries, and multiple languages — with the security and integration depth large organizations require.
+                  Space HR&apos;s <strong>enterprise AI HR chatbot</strong> delivers 24/7 employee self-service across thousands of employees, dozens of countries, and multiple languages — with the security and integration depth large organizations require.
                 </p>
                 <p className="text-lg text-gray-500 dark:text-gray-400 mb-8 leading-relaxed">
                   SSO. Private cloud. Bidirectional Workday and SAP integration. SOC 2 Type II. Multi-language. 99.9% SLA. <strong>Everything an SMB chatbot doesn&apos;t have.</strong>
@@ -315,7 +315,7 @@ export default function EnterpriseHRChatbotPage() {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <Building2 className="w-5 h-5 text-white" />
-                        <span className="text-white font-semibold text-sm">SpaceHR Enterprise</span>
+                        <span className="text-white font-semibold text-sm">Space HR Enterprise</span>
                       </div>
                       <span className="text-xs bg-green-500/20 text-green-300 border border-green-500/30 px-2 py-0.5 rounded-full font-semibold">
                         99.9% uptime
@@ -397,7 +397,7 @@ export default function EnterpriseHRChatbotPage() {
                 What &ldquo;Enterprise-Grade&rdquo; Actually Means
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                Most HR chatbot vendors offer one tier and call it enterprise. SpaceHR was designed from the ground up with enterprise requirements — here is what that means in practice.
+                Most HR chatbot vendors offer one tier and call it enterprise. Space HR was designed from the ground up with enterprise requirements — here is what that means in practice.
               </p>
             </div>
             <div className="overflow-x-auto rounded-2xl border border-gray-200 dark:border-gray-700">
@@ -406,7 +406,7 @@ export default function EnterpriseHRChatbotPage() {
                   <tr className="bg-gray-100 dark:bg-[#1e293b]">
                     <th className="text-left px-5 py-4 font-semibold text-gray-700 dark:text-gray-300 w-1/3">Requirement</th>
                     <th className="px-5 py-4 font-semibold text-gray-500 dark:text-gray-400 text-center">Typical SMB Tool</th>
-                    <th className="px-5 py-4 font-semibold text-blue-600 dark:text-blue-400 text-center">SpaceHR Enterprise</th>
+                    <th className="px-5 py-4 font-semibold text-blue-600 dark:text-blue-400 text-center">Space HR Enterprise</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -431,7 +431,7 @@ export default function EnterpriseHRChatbotPage() {
                 12 Enterprise-Specific Capabilities
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                Every capability below is exclusive to SpaceHR&apos;s enterprise tier — not available on standard SMB HR chatbot platforms.
+                Every capability below is exclusive to Space HR&apos;s enterprise tier — not available on standard SMB HR chatbot platforms.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -456,7 +456,7 @@ export default function EnterpriseHRChatbotPage() {
                 Enterprise HR Chatbot — By Organization Size
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                The challenges — and the right deployment approach — differ significantly by organization size. Here is how SpaceHR addresses each segment.
+                The challenges — and the right deployment approach — differ significantly by organization size. Here is how Space HR addresses each segment.
               </p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -472,7 +472,7 @@ export default function EnterpriseHRChatbotPage() {
                       <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{pain}</p>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold text-green-600 uppercase tracking-wide mb-1.5">SpaceHR Approach</p>
+                      <p className="text-xs font-semibold text-green-600 uppercase tracking-wide mb-1.5">Space HR Approach</p>
                       <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">{solution}</p>
                     </div>
                     <div className="mt-auto pt-3 border-t border-gray-100 dark:border-gray-800">
@@ -496,13 +496,13 @@ export default function EnterpriseHRChatbotPage() {
                   Enterprise Implementation Program
                 </h2>
                 <p className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
-                  Enterprise HR chatbot deployments require a structured program — not a self-serve sign-up. SpaceHR&apos;s enterprise implementation follows a proven 5-phase approach with a dedicated Customer Success Manager from day one.
+                  Enterprise HR chatbot deployments require a structured program — not a self-serve sign-up. Space HR&apos;s enterprise implementation follows a proven 5-phase approach with a dedicated Customer Success Manager from day one.
                 </p>
                 <div className="space-y-4">
                   {[
                     { phase: "Phase 1", title: "Discovery (Weeks 1–2)", detail: "Requirements gathering, HRIS audit, workflow mapping, security review, data residency decision. Deliverable: signed-off Technical Design Document." },
                     { phase: "Phase 2", title: "Technical Setup (Weeks 3–6)", detail: "HRIS integration, SSO/SCIM configuration, data residency setup, ticketing system integration, channel deployment (Slack/Teams)." },
-                    { phase: "Phase 3", title: "Knowledge Base Build (Weeks 5–7)", detail: "HR team uploads policy documents. SpaceHR AI extracts and structures content. HR review and approval. Regional variants configured." },
+                    { phase: "Phase 3", title: "Knowledge Base Build (Weeks 5–7)", detail: "HR team uploads policy documents. Space HR AI extracts and structures content. HR review and approval. Regional variants configured." },
                     { phase: "Phase 4", title: "Pilot (Weeks 8–9)", detail: "10% employee rollout with one HR region or department. Analytics review, knowledge gap remediation, adoption measurement." },
                     { phase: "Phase 5", title: "Phased Launch (Weeks 10–12)", detail: "Department-by-department rollout. Communication campaign. Adoption reporting. Quarterly business review scheduled." },
                   ].map(({ phase, title, detail }) => (
@@ -524,7 +524,7 @@ export default function EnterpriseHRChatbotPage() {
                   Security &amp; Compliance at Enterprise Level
                 </h2>
                 <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
-                  HR data is among the most sensitive data your organization holds. SpaceHR&apos;s security posture is built for the scrutiny of enterprise procurement and InfoSec teams.
+                  HR data is among the most sensitive data your organization holds. Space HR&apos;s security posture is built for the scrutiny of enterprise procurement and InfoSec teams.
                 </p>
                 <div className="space-y-3 mb-8">
                   {[
@@ -566,7 +566,7 @@ export default function EnterpriseHRChatbotPage() {
               Ready for an Enterprise AI HR Chatbot Evaluation?
             </h2>
             <p className="text-blue-100 mb-3 max-w-2xl mx-auto text-lg">
-              SpaceHR&apos;s enterprise team works with HR and IT leaders at large organizations to design the right deployment architecture, integration plan, and security posture.
+              Space HR&apos;s enterprise team works with HR and IT leaders at large organizations to design the right deployment architecture, integration plan, and security posture.
             </p>
             <p className="text-blue-200 mb-8 max-w-xl mx-auto text-sm">
               Enterprise demos include a live HRIS integration demonstration, a security briefing, and a tailored ROI estimate based on your headcount and current HR ticket volume.
@@ -596,7 +596,7 @@ export default function EnterpriseHRChatbotPage() {
               Enterprise AI HR Chatbot — FAQ
             </h2>
             <p className="text-center text-gray-600 dark:text-gray-400 mb-10">
-              Questions from enterprise HR leaders, IT architects, and procurement teams evaluating SpaceHR.
+              Questions from enterprise HR leaders, IT architects, and procurement teams evaluating Space HR.
             </p>
             <FAQAccordion items={faqs} />
           </div>
@@ -614,7 +614,7 @@ export default function EnterpriseHRChatbotPage() {
                 { href: "/features/ai-chatbots", title: "AI Chatbot Features", desc: "Full feature breakdown — enterprise and standard tiers." },
                 { href: "/blogs/enterprise-ai-hr-chatbot-guide", title: "Enterprise HR Chatbot Guide", desc: "Requirements, evaluation, and deployment for large organizations." },
                 { href: "/resources/hr-chatbot-buyers-guide", title: "HR Chatbot Buyer's Guide", desc: "Evaluation framework, red flags, pricing benchmarks." },
-                { href: "/compare", title: "Compare HR Platforms", desc: "SpaceHR vs ServiceNow, Moveworks, Leena AI, and 10 more." },
+                { href: "/compare", title: "Compare HR Platforms", desc: "Space HR vs ServiceNow, Moveworks, Leena AI, and 10 more." },
                 { href: "/request-a-demo", title: "Request Enterprise Demo", desc: "Tailored demo with live HRIS integration and security briefing." },
               ].map(({ href, title, desc }) => (
                 <Link

@@ -23,9 +23,9 @@ import { JsonLd, generateFAQSchema, generateBreadcrumbSchema,
   softwareSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Labor Cost Forecasting Software | Predict Workforce Costs 12 Months Out | SpaceHR",
+  title: "Labor Cost Forecasting Software | Predict Workforce Costs 12 Months Out | Space HR",
   description:
-    "SpaceHR's AI labor cost forecasting predicts 12 months of workforce spend with 95% accuracy. Model headcount scenarios, automate variance alerts, and align HR budgets with Finance. Free trial.",
+    "Space HR's AI labor cost forecasting predicts 12 months of workforce spend with 95% accuracy. Model headcount scenarios, automate variance alerts, and align HR budgets with Finance. Free trial.",
   keywords: [
     "labor cost forecasting software",
     "workforce cost prediction",
@@ -38,22 +38,27 @@ export const metadata: Metadata = {
     "AI headcount forecasting",
     "HR cost prediction tool",
   ],
+  twitter: {
+    card: "summary_large_image",
+    title: "Labor Cost Forecasting Software — Predict Workforce Costs 12 Months Out | Space HR",
+    description: "Stop guessing your biggest expense. Forecast salaries, benefits, and overtime with 95% accuracy using Space HR's AI-powered labor cost prediction engine.",
+  },
   alternates: {
     canonical: "https://spacehr.net/features/cost-prediction",
   },
   openGraph: {
-    title: "Labor Cost Forecasting Software — Predict Workforce Costs 12 Months Out | SpaceHR",
+    title: "Labor Cost Forecasting Software — Predict Workforce Costs 12 Months Out | Space HR",
     description:
-      "Stop guessing your biggest expense. Forecast salaries, benefits, and overtime with 95% accuracy using SpaceHR's AI-powered labor cost prediction engine.",
+      "Stop guessing your biggest expense. Forecast salaries, benefits, and overtime with 95% accuracy using Space HR's AI-powered labor cost prediction engine.",
     url: "https://spacehr.net/features/cost-prediction",
-    siteName: "SpaceHR",
+    siteName: "Space HR",
     type: "website",
     images: [
       {
         url: "/desktop-design-showcase.webp",
         width: 1200,
         height: 630,
-        alt: "SpaceHR Labor Cost Forecasting Dashboard",
+        alt: "Space HR Labor Cost Forecasting Dashboard",
       },
     ],
   },
@@ -61,39 +66,39 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    question: "How accurate is SpaceHR's labor cost forecasting?",
+    question: "How accurate is Space HR's labor cost forecasting?",
     answer:
-      "SpaceHR's AI labor cost forecasting achieves 95% accuracy over a 12-month horizon. The model is trained on your historical payroll data — base salary, overtime, benefits, taxes — and continuously self-corrects as actuals come in. Most customers find their variance drops from ±15% (spreadsheet-based) to under ±3% within the first quarter.",
+      "Space HR's AI labor cost forecasting achieves 95% accuracy over a 12-month horizon. The model is trained on your historical payroll data — base salary, overtime, benefits, taxes — and continuously self-corrects as actuals come in. Most customers find their variance drops from ±15% (spreadsheet-based) to under ±3% within the first quarter.",
   },
   {
-    question: "What does SpaceHR include in its labor cost forecast?",
+    question: "What does Space HR include in its labor cost forecast?",
     answer:
       "The forecast covers: base salary, employer payroll taxes (FICA, FUTA, SUTA, state equivalents), health insurance premiums, 401k/pension employer contributions, overtime and variable pay, bonuses and commissions, and new hire ramp costs. You can include or exclude any component by department, location, or employee classification.",
   },
   {
     question: "Can I model headcount scenarios — like adding 20 engineers in Q3?",
     answer:
-      "Yes. SpaceHR's scenario planner lets you model unlimited what-if situations: adding headcount by role and start date, applying merit increase percentages, simulating layoffs or restructures, and testing the impact of benefit plan changes. Each scenario shows the full 12-month cash-flow impact in seconds.",
+      "Yes. Space HR's scenario planner lets you model unlimited what-if situations: adding headcount by role and start date, applying merit increase percentages, simulating layoffs or restructures, and testing the impact of benefit plan changes. Each scenario shows the full 12-month cash-flow impact in seconds.",
   },
   {
-    question: "How does SpaceHR compare to building a labor cost model in Excel?",
+    question: "How does Space HR compare to building a labor cost model in Excel?",
     answer:
-      "Excel models are static — they break when reality changes and require manual updates for every new hire, departure, or pay change. SpaceHR's model is live: it pulls from your HRIS and payroll system automatically, updates forecasts when employees are added or terminated, and alerts you in real time when spend deviates from plan. A typical mid-market HR team saves 6-10 hours per month on budget reconciliation.",
+      "Excel models are static — they break when reality changes and require manual updates for every new hire, departure, or pay change. Space HR's model is live: it pulls from your HRIS and payroll system automatically, updates forecasts when employees are added or terminated, and alerts you in real time when spend deviates from plan. A typical mid-market HR team saves 6-10 hours per month on budget reconciliation.",
   },
   {
-    question: "Does SpaceHR integrate with our existing payroll and HRIS systems?",
+    question: "Does Space HR integrate with our existing payroll and HRIS systems?",
     answer:
-      "SpaceHR integrates with leading payroll and HRIS providers. It can also ingest data via CSV import for teams without a formal integration. The setup team will configure your data connections during the 48-hour onboarding process. Regional payroll compliance (US, UAE, Singapore, Canada, Europe) is built in.",
+      "Space HR integrates with leading payroll and HRIS providers. It can also ingest data via CSV import for teams without a formal integration. The setup team will configure your data connections during the 48-hour onboarding process. Regional payroll compliance (US, UAE, Singapore, Canada, Europe) is built in.",
   },
   {
-    question: "How does SpaceHR handle multi-country or multi-currency labor cost forecasts?",
+    question: "How does Space HR handle multi-country or multi-currency labor cost forecasts?",
     answer:
-      "SpaceHR supports multi-currency forecasting with automatic exchange rate updates. Each country entity can be modeled separately with local statutory costs (e.g., UAE gratuity and WPS, Singapore CPF, European social charges) and then rolled up into a consolidated group view in your reporting currency.",
+      "Space HR supports multi-currency forecasting with automatic exchange rate updates. Each country entity can be modeled separately with local statutory costs (e.g., UAE gratuity and WPS, Singapore CPF, European social charges) and then rolled up into a consolidated group view in your reporting currency.",
   },
   {
-    question: "How long does it take to set up labor cost forecasting in SpaceHR?",
+    question: "How long does it take to set up labor cost forecasting in Space HR?",
     answer:
-      "Most teams complete setup in 48 hours. The process involves connecting your payroll data source (or uploading a CSV export), confirming your headcount structure, and configuring your forecast parameters. SpaceHR's onboarding team guides you through every step. No IT project or custom development is required.",
+      "Most teams complete setup in 48 hours. The process involves connecting your payroll data source (or uploading a CSV export), confirming your headcount structure, and configuring your forecast parameters. Space HR's onboarding team guides you through every step. No IT project or custom development is required.",
   },
 ];
 
@@ -138,7 +143,7 @@ export default function CostPredictionPage() {
               </span>
             </h1>
             <p className="text-xl text-slate-600 dark:text-slate-300 mb-4 max-w-3xl mx-auto leading-relaxed">
-              SpaceHR's <strong>AI labor cost forecasting engine</strong> predicts salaries, benefits, payroll taxes, and overtime with <strong>95% accuracy</strong> — giving Finance and HR a single, live source of truth instead of a broken spreadsheet.
+              Space HR's <strong>AI labor cost forecasting engine</strong> predicts salaries, benefits, payroll taxes, and overtime with <strong>95% accuracy</strong> — giving Finance and HR a single, live source of truth instead of a broken spreadsheet.
             </p>
             <p className="text-lg text-slate-500 dark:text-slate-400 mb-10 max-w-2xl mx-auto">
               Model unlimited headcount scenarios. Catch budget overruns before they happen. Align HR strategy with financial reality — automatically.
@@ -301,10 +306,10 @@ export default function CostPredictionPage() {
                   See Your Payroll Future — Before It Happens.
                 </h2>
                 <p className="text-lg text-slate-600 dark:text-slate-300 mb-4 leading-relaxed">
-                  SpaceHR's labor cost forecasting engine connects directly to your payroll and HRIS data to build a living financial model of your workforce — one that updates automatically as your organization changes.
+                  Space HR's labor cost forecasting engine connects directly to your payroll and HRIS data to build a living financial model of your workforce — one that updates automatically as your organization changes.
                 </p>
                 <p className="text-base text-slate-500 dark:text-slate-400 mb-8 leading-relaxed">
-                  Unlike static spreadsheet models or expensive enterprise planning tools, SpaceHR is purpose-built for HR teams — no finance degree or BI analyst required. Set up in 48 hours. Accurate from day one.
+                  Unlike static spreadsheet models or expensive enterprise planning tools, Space HR is purpose-built for HR teams — no finance degree or BI analyst required. Set up in 48 hours. Accurate from day one.
                 </p>
                 <div className="space-y-6">
                   <div className="flex gap-4">
@@ -345,7 +350,7 @@ export default function CostPredictionPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
             <div className="text-center mb-14">
               <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">
-                How SpaceHR Labor Cost Forecasting Works
+                How Space HR Labor Cost Forecasting Works
               </h2>
               <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
                 Three steps from raw payroll data to a board-ready 12-month cost forecast.
@@ -358,7 +363,7 @@ export default function CostPredictionPage() {
                   icon: <Zap className="w-6 h-6" />,
                   color: "emerald",
                   title: "Connect Your Data",
-                  body: "SpaceHR pulls from your payroll system, HRIS, and headcount plan. Historical patterns — including seasonal overtime, turnover rates, and benefit renewal cycles — are ingested automatically. Setup takes under 48 hours with no IT involvement.",
+                  body: "Space HR pulls from your payroll system, HRIS, and headcount plan. Historical patterns — including seasonal overtime, turnover rates, and benefit renewal cycles — are ingested automatically. Setup takes under 48 hours with no IT involvement.",
                 },
                 {
                   step: "2",
@@ -393,10 +398,10 @@ export default function CostPredictionPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
             <div className="text-center mb-14">
               <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">
-                SpaceHR vs. Other Labor Cost Forecasting Approaches
+                Space HR vs. Other Labor Cost Forecasting Approaches
               </h2>
               <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-                How does SpaceHR stack up against Excel models, Workday Adaptive, and Anaplan for workforce cost forecasting?
+                How does Space HR stack up against Excel models, Workday Adaptive, and Anaplan for workforce cost forecasting?
               </p>
             </div>
             <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-700 shadow-sm">
@@ -405,7 +410,7 @@ export default function CostPredictionPage() {
                   <tr className="bg-slate-50 dark:bg-slate-800 border-b border-slate-200 dark:border-slate-700">
                     <th className="text-left p-5 font-semibold text-slate-700 dark:text-slate-300 w-1/4">Capability</th>
                     <th className="p-5 font-bold text-emerald-700 dark:text-emerald-400 text-center bg-emerald-50 dark:bg-emerald-900/20">
-                      SpaceHR
+                      Space HR
                     </th>
                     <th className="p-5 font-semibold text-slate-600 dark:text-slate-400 text-center">Excel / Sheets</th>
                     <th className="p-5 font-semibold text-slate-600 dark:text-slate-400 text-center">Workday Adaptive</th>
@@ -424,10 +429,10 @@ export default function CostPredictionPage() {
                     ["Price (mid-market)", "✅ Affordable SaaS", "✅ Free", "❌ $100k+/yr", "❌ $200k+/yr"],
                     ["HR team self-service", "✅ No IT needed", "✅ Yes", "❌ Finance/IT required", "❌ Dedicated team required"],
                     ["Forecast accuracy", "✅ 95%", "⚠️ 75–85% typical", "✅ 90–95%", "✅ 90–95%"],
-                  ].map(([capability, spacehr, excel, workday, anaplan], i) => (
+                  ].map(([capability, spaceHR, excel, workday, anaplan], i) => (
                     <tr key={i} className={i % 2 === 0 ? "bg-white dark:bg-[#0f172a]" : "bg-slate-50/50 dark:bg-slate-900/30"}>
                       <td className="p-5 font-medium text-slate-700 dark:text-slate-300">{capability}</td>
-                      <td className="p-5 text-center font-medium text-emerald-700 dark:text-emerald-400 bg-emerald-50/50 dark:bg-emerald-900/10">{spacehr}</td>
+                      <td className="p-5 text-center font-medium text-emerald-700 dark:text-emerald-400 bg-emerald-50/50 dark:bg-emerald-900/10">{spaceHR}</td>
                       <td className="p-5 text-center text-slate-600 dark:text-slate-400">{excel}</td>
                       <td className="p-5 text-center text-slate-600 dark:text-slate-400">{workday}</td>
                       <td className="p-5 text-center text-slate-600 dark:text-slate-400">{anaplan}</td>
@@ -452,7 +457,7 @@ export default function CostPredictionPage() {
               Build Trust with Finance
             </h2>
             <p className="text-xl text-slate-600 dark:text-slate-400 mb-16 max-w-3xl mx-auto">
-              HR leaders and CFOs speak different languages. SpaceHR's forecasting engine translates headcount decisions into cash flow projections — so your next budget review is a conversation, not a negotiation.
+              HR leaders and CFOs speak different languages. Space HR's forecasting engine translates headcount decisions into cash flow projections — so your next budget review is a conversation, not a negotiation.
             </p>
             <div className="grid md:grid-cols-2 gap-8 text-left">
               <div className="p-8 rounded-3xl bg-white dark:bg-slate-800 shadow-xl border border-slate-100 dark:border-slate-700 relative overflow-hidden group">
@@ -468,7 +473,7 @@ export default function CostPredictionPage() {
                 <PieChart className="w-10 h-10 text-blue-600 dark:text-blue-400 mb-6 relative z-10" />
                 <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 relative z-10">Total Rewards Optimization</h3>
                 <p className="text-slate-600 dark:text-slate-400 relative z-10">
-                  Analyze the ROI of your compensation mix. Model how shifting from bonuses to base pay (or vice versa) affects both total cost and employee retention, using SpaceHR's integrated attrition prediction data.
+                  Analyze the ROI of your compensation mix. Model how shifting from bonuses to base pay (or vice versa) affects both total cost and employee retention, using Space HR's integrated attrition prediction data.
                 </p>
               </div>
             </div>
@@ -483,7 +488,7 @@ export default function CostPredictionPage() {
                 Labor Cost Forecasting — Frequently Asked Questions
               </h2>
               <p className="text-lg text-slate-600 dark:text-slate-400">
-                Everything HR leaders and CFOs ask before switching to SpaceHR.
+                Everything HR leaders and CFOs ask before switching to Space HR.
               </p>
             </div>
             <div className="space-y-3">
@@ -508,7 +513,7 @@ export default function CostPredictionPage() {
         {/* Internal Links */}
         <section className="py-12 bg-slate-50 dark:bg-slate-900/50 border-t border-slate-200 dark:border-slate-800">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-            <h2 className="text-lg font-semibold text-slate-900 dark:text-white mb-6">Related SpaceHR Features</h2>
+            <h2 className="text-lg font-semibold text-slate-900 dark:text-white mb-6">Related Space HR Features</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
                 { label: "AI HR Chatbot", href: "/features/ai-chatbots" },

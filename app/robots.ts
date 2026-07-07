@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/api/", "/admin/"],
+      disallow: ["/api/", "/admin/", "/tools/w4-generator/lead"],
     },
     sitemap: "https://spacehr.net/sitemap.xml",
   };

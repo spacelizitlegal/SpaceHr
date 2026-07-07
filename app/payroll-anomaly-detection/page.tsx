@@ -23,9 +23,9 @@ import {
 } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Payroll Anomaly Detection Software — Catch Errors Before Payroll Runs | SpaceHR",
+  title: "Payroll Anomaly Detection Software — Catch Errors Before Payroll Runs | Space HR",
   description:
-    "SpaceHR's AI payroll anomaly detection scans every pay run before funds transfer — catching ghost employees, tax errors, overtime spikes, and duplicate payments. Reduce payroll errors by 99%.",
+    "Space HR's AI payroll anomaly detection scans every pay run before funds transfer — catching ghost employees, tax errors, overtime spikes, and duplicate payments. Reduce payroll errors by 99%.",
   keywords: [
     "payroll anomaly detection",
     "payroll anomaly detection software",
@@ -42,24 +42,24 @@ export const metadata: Metadata = {
     canonical: "https://spacehr.net/payroll-anomaly-detection",
   },
   openGraph: {
-    title: "Payroll Anomaly Detection Software | SpaceHR",
+    title: "Payroll Anomaly Detection Software | Space HR",
     description:
-      "Catch ghost employees, tax errors, overtime spikes, and duplicate payments before payroll runs. SpaceHR's AI payroll anomaly detection — 99% error reduction.",
+      "Catch ghost employees, tax errors, overtime spikes, and duplicate payments before payroll runs. Space HR's AI payroll anomaly detection — 99% error reduction.",
     url: "https://spacehr.net/payroll-anomaly-detection",
-    siteName: "SpaceHR",
+    siteName: "Space HR",
     images: [
       {
         url: "https://spacehr.net/desktop-design-showcase.webp",
         width: 1200,
         height: 630,
-        alt: "SpaceHR Payroll Anomaly Detection Dashboard",
+        alt: "Space HR Payroll Anomaly Detection Dashboard",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Payroll Anomaly Detection Software | SpaceHR",
+    title: "Payroll Anomaly Detection Software | Space HR",
     description:
       "AI payroll anomaly detection catches ghost employees, tax errors, and duplicate payments before funds transfer. 99% error reduction.",
     images: ["https://spacehr.net/desktop-design-showcase.webp"],
@@ -71,12 +71,12 @@ const howItWorksSchema = {
   "@type": "HowTo",
   name: "How AI Payroll Anomaly Detection Works",
   description:
-    "A step-by-step explanation of how SpaceHR's AI scans payroll runs for anomalies before funds are transferred.",
+    "A step-by-step explanation of how Space HR's AI scans payroll runs for anomalies before funds are transferred.",
   step: [
     {
       "@type": "HowToStep",
       name: "Payroll Data Ingestion",
-      text: "SpaceHR ingests the current payroll batch — salaries, overtime, bonuses, deductions, and bank details — from your HRMS and payroll system before the run is processed.",
+      text: "Space HR ingests the current payroll batch — salaries, overtime, bonuses, deductions, and bank details — from your HRMS and payroll system before the run is processed.",
     },
     {
       "@type": "HowToStep",
@@ -110,12 +110,12 @@ const faqItems = [
   {
     question: "How does AI detect payroll anomalies?",
     answer:
-      "SpaceHR's AI Payroll Auditor uses machine learning models trained on payroll transaction patterns to identify statistical outliers before every pay run. It benchmarks each employee's current payroll data against their 12-month history, flagging deviations such as sudden salary increases, duplicate bank account entries, payments to terminated employees (ghost employees), overtime spikes exceeding baseline norms, and incorrect tax bracket applications. All flagged items are reviewed by HR before the NACHA-compliant ACH file is generated.",
+      "Space HR's AI Payroll Auditor uses machine learning models trained on payroll transaction patterns to identify statistical outliers before every pay run. It benchmarks each employee's current payroll data against their 12-month history, flagging deviations such as sudden salary increases, duplicate bank account entries, payments to terminated employees (ghost employees), overtime spikes exceeding baseline norms, and incorrect tax bracket applications. All flagged items are reviewed by HR before the NACHA-compliant ACH file is generated.",
   },
   {
-    question: "What is a ghost employee and how does SpaceHR detect them?",
+    question: "What is a ghost employee and how does Space HR detect them?",
     answer:
-      "A ghost employee is a fictitious or terminated worker who continues to receive payroll payments — either through system error or intentional fraud. SpaceHR prevents ghost employee costs by cross-referencing every payment recipient against the active employee directory and HR records in real-time. If a pay recipient's employment status is terminated, on leave without pay, or flagged as inactive, the system automatically blocks the payment and alerts HR before the payroll run is processed.",
+      "A ghost employee is a fictitious or terminated worker who continues to receive payroll payments — either through system error or intentional fraud. Space HR prevents ghost employee costs by cross-referencing every payment recipient against the active employee directory and HR records in real-time. If a pay recipient's employment status is terminated, on leave without pay, or flagged as inactive, the system automatically blocks the payment and alerts HR before the payroll run is processed.",
   },
   {
     question: "What types of payroll anomalies does the AI scan for?",
@@ -125,22 +125,22 @@ const faqItems = [
   {
     question: "How does payroll anomaly detection protect against compliance risk?",
     answer:
-      "Every payroll error that goes undetected creates downstream compliance risk — incorrect FUTA/FICA remittances trigger IRS penalties, FLSA overtime violations result in back-pay liability, and inaccurate state tax withholding creates year-end reconciliation issues. SpaceHR's pre-processing audit layer catches these errors before the payroll run, ensuring your liability ledger is accurate, your tax filings are correct, and your NACHA ACH files are clean before they reach the bank.",
+      "Every payroll error that goes undetected creates downstream compliance risk — incorrect FUTA/FICA remittances trigger IRS penalties, FLSA overtime violations result in back-pay liability, and inaccurate state tax withholding creates year-end reconciliation issues. Space HR's pre-processing audit layer catches these errors before the payroll run, ensuring your liability ledger is accurate, your tax filings are correct, and your NACHA ACH files are clean before they reach the bank.",
   },
   {
     question: "Can I see a report of all detected anomalies per pay run?",
     answer:
-      "Yes. After every payroll audit, SpaceHR generates a structured Anomaly Report listing each flagged item with its anomaly type, severity level (critical / warning / informational), the affected employee's ID, the variance amount, and the recommended resolution. The report is stored in your audit log for compliance documentation and can be exported for external audits or CFO review.",
+      "Yes. After every payroll audit, Space HR generates a structured Anomaly Report listing each flagged item with its anomaly type, severity level (critical / warning / informational), the affected employee's ID, the variance amount, and the recommended resolution. The report is stored in your audit log for compliance documentation and can be exported for external audits or CFO review.",
   },
   {
     question: "How is payroll anomaly detection different from standard payroll software?",
     answer:
-      "Standard payroll software processes what you enter — it doesn't catch errors in what was entered. Payroll anomaly detection adds a pre-processing audit layer that validates the data before processing: comparing against history, verifying employee status, checking tax calculations, and flagging outliers. SpaceHR's AI anomaly detection catches an average of 3–7 issues per payroll run that standard software would process without question.",
+      "Standard payroll software processes what you enter — it doesn't catch errors in what was entered. Payroll anomaly detection adds a pre-processing audit layer that validates the data before processing: comparing against history, verifying employee status, checking tax calculations, and flagging outliers. Space HR's AI anomaly detection catches an average of 3–7 issues per payroll run that standard software would process without question.",
   },
   {
     question: "How long does it take to set up payroll anomaly detection?",
     answer:
-      "SpaceHR's payroll anomaly detection deploys in 48 hours for standard setups. It connects to your existing HRMS and payroll system, ingests 12 months of historical payroll data to build employee baselines, and begins scanning from the next payroll cycle. No coding is required and our onboarding team manages the integration process end to end.",
+      "Space HR's payroll anomaly detection deploys in 48 hours for standard setups. It connects to your existing HRMS and payroll system, ingests 12 months of historical payroll data to build employee baselines, and begins scanning from the next payroll cycle. No coding is required and our onboarding team manages the integration process end to end.",
   },
 ];
 
@@ -226,7 +226,7 @@ export default function PayrollAnomalyDetectionPage() {
             </span>
           </h1>
           <p className="text-xl text-slate-600 dark:text-slate-300 mb-10 max-w-3xl mx-auto leading-relaxed">
-            SpaceHR&apos;s AI scans every payroll run for ghost employees, duplicate payments, tax errors,
+            Space HR&apos;s AI scans every payroll run for ghost employees, duplicate payments, tax errors,
             and overtime spikes — before a single dollar leaves your account. Reduce payroll errors
             by <strong>99%</strong>. Setup in 48 hours.
           </p>
@@ -287,7 +287,7 @@ export default function PayrollAnomalyDetectionPage() {
             </p>
             <p>
               AI-powered anomaly detection changes this entirely. By comparing every line item in the
-              current payroll batch against 12 months of historical data, SpaceHR&apos;s system catches the
+              current payroll batch against 12 months of historical data, Space HR&apos;s system catches the
               3–7 issues that exist in the average payroll run — before the ACH file is generated and
               before money leaves the account. HR reviews a prioritized list of flags, resolves each
               in minutes, and approves a clean payroll run.
@@ -305,7 +305,7 @@ export default function PayrollAnomalyDetectionPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-14">
             <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">
-              6 Payroll Anomaly Types SpaceHR Detects Automatically
+              6 Payroll Anomaly Types Space HR Detects Automatically
             </h2>
             <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
               Every payroll run is scanned across all six anomaly categories before a single
@@ -350,7 +350,7 @@ export default function PayrollAnomalyDetectionPage() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-14">
             <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">
-              How SpaceHR Payroll Anomaly Detection Works
+              How Space HR Payroll Anomaly Detection Works
             </h2>
             <p className="text-xl text-slate-600 dark:text-slate-400">
               A 5-step pre-processing audit that runs automatically before every payroll cycle.
@@ -358,7 +358,7 @@ export default function PayrollAnomalyDetectionPage() {
           </div>
           <div className="space-y-8">
             {[
-              { step: "1", icon: FileText, title: "Payroll Data Ingestion", desc: "SpaceHR ingests the current payroll batch — salaries, overtime, bonuses, deductions, and bank details — from your HRMS and payroll system. This happens automatically before the run is queued for processing." },
+              { step: "1", icon: FileText, title: "Payroll Data Ingestion", desc: "Space HR ingests the current payroll batch — salaries, overtime, bonuses, deductions, and bank details — from your HRMS and payroll system. This happens automatically before the run is queued for processing." },
               { step: "2", icon: BarChart3, title: "Historical Baseline Comparison", desc: "The AI compares every employee line item against their 12-month payroll history. Deviations greater than 5% — salary, overtime, deductions, or net pay — are automatically flagged as anomalies requiring review." },
               { step: "3", icon: Search, title: "Active Employee Verification", desc: "Each payment recipient is cross-referenced against the live active employee directory. Terminated, inactive, or unverified employees are flagged as potential ghost employees and their payments are blocked pending review." },
               { step: "4", icon: Shield, title: "Tax & Compliance Validation", desc: "Gross-to-net calculations are validated against current federal, state, and local tax tables. FUTA, FICA, SUTA, and local tax withholdings are verified for accuracy. Multi-state reciprocity agreements are automatically applied." },
@@ -397,7 +397,7 @@ export default function PayrollAnomalyDetectionPage() {
                 Your AI Payroll Guardian
               </h2>
               <p className="text-lg text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
-                SpaceHR acts as a firewall for your payroll — a dedicated audit layer
+                Space HR acts as a firewall for your payroll — a dedicated audit layer
                 that flags issues <strong>before</strong> money leaves the account.
                 Every anomaly is logged, traced, and resolved with a full audit trail.
               </p>
@@ -470,7 +470,7 @@ export default function PayrollAnomalyDetectionPage() {
               <thead>
                 <tr className="bg-slate-50 dark:bg-slate-700">
                   <th className="px-6 py-4 text-left text-slate-900 dark:text-white font-bold">Capability</th>
-                  <th className="px-6 py-4 text-center text-red-600 dark:text-red-400 font-bold">SpaceHR Anomaly Detection</th>
+                  <th className="px-6 py-4 text-center text-red-600 dark:text-red-400 font-bold">Space HR Anomaly Detection</th>
                   <th className="px-6 py-4 text-center text-slate-500 dark:text-slate-400 font-semibold">Standard Payroll Software</th>
                   <th className="px-6 py-4 text-center text-slate-500 dark:text-slate-400 font-semibold">Manual HR Review</th>
                 </tr>
@@ -487,10 +487,10 @@ export default function PayrollAnomalyDetectionPage() {
                   ["Payroll blocked until flags resolved", "✅ Hard stop", "❌", "❌"],
                   ["Error catch rate", "99%", "~70%", "~85%"],
                   ["Time to review flagged issues", "< 10 min/run", "N/A", "2–4 hours"],
-                ].map(([cap, spacehr, std, manual]) => (
+                ].map(([cap, spaceHR, std, manual]) => (
                   <tr key={cap} className="hover:bg-slate-50 dark:hover:bg-slate-700/50">
                     <td className="px-6 py-4 text-slate-700 dark:text-slate-300 font-medium">{cap}</td>
-                    <td className="px-6 py-4 text-center text-red-600 dark:text-red-400 font-semibold">{spacehr}</td>
+                    <td className="px-6 py-4 text-center text-red-600 dark:text-red-400 font-semibold">{spaceHR}</td>
                     <td className="px-6 py-4 text-center text-slate-500 dark:text-slate-400">{std}</td>
                     <td className="px-6 py-4 text-center text-slate-500 dark:text-slate-400">{manual}</td>
                   </tr>
@@ -527,7 +527,7 @@ export default function PayrollAnomalyDetectionPage() {
       {/* Internal links */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-[#0f172a]">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-6">Related SpaceHR Payroll & Compliance Features</h2>
+          <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-6">Related Space HR Payroll & Compliance Features</h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
             {[
               { href: "/features/ai-payroll-auditor", label: "AI Payroll Auditor (Full Feature)" },
@@ -536,8 +536,8 @@ export default function PayrollAnomalyDetectionPage() {
               { href: "/features/attrition-prediction", label: "Attrition Prediction" },
               { href: "/features/ai-automation", label: "HR Workflow Automation" },
               { href: "/features/finance", label: "Finance & Reporting" },
-              { href: "/compare/bamboohr", label: "SpaceHR vs BambooHR" },
-              { href: "/compare/workday", label: "SpaceHR vs Workday" },
+              { href: "/compare/bamboohr", label: "Space HR vs BambooHR" },
+              { href: "/compare/workday", label: "Space HR vs Workday" },
               { href: "/tools/true-cost-calculator", label: "True Cost Calculator" },
             ].map((link) => (
               <a
@@ -561,7 +561,7 @@ export default function PayrollAnomalyDetectionPage() {
           </h2>
           <p className="text-xl text-slate-300 mb-10">
             Schedule a demonstration with our Finance Solutions team to see
-            how SpaceHR&apos;s payroll anomaly detection secures your payroll process.
+            how Space HR&apos;s payroll anomaly detection secures your payroll process.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a

@@ -14,11 +14,11 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   metadataBase: new URL("https://spacehr.net"),
   title: {
-    default: "Space HR | AI-Powered Performance Management Platform",
+    default: "Space HR | AI HR Chatbot & Employee Self-Service Platform",
     template: "%s | Space HR",
   },
   description:
-    "Transform your workplace with Space HR's AI-powered performance management platform. Streamline appraisals, automate workflows, and drive employee growth with intelligent analytics.",
+    "Space HR is an AI HR chatbot and employee self-service platform. Automate HR queries, detect payroll anomalies, forecast labor costs, and run 360° appraisals. Trusted by teams in the US, UAE, UK, and India.",
   keywords: [
     "HR software",
     "performance management",
@@ -62,36 +62,28 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://spacehr.net",
     siteName: "Space HR",
-    title: "Space HR | AI-Powered Performance Management Platform",
+    title: "Space HR | AI HR Chatbot & Employee Self-Service Platform",
     description:
-      "Transform your workplace with Space HR's AI-powered performance management platform. Streamline appraisals, automate workflows, and drive employee growth.",
+      "Space HR is an AI HR chatbot and HRMS that automates employee self-service, detects payroll anomalies, and forecasts labor costs. Trusted by teams in the US, UAE, UK & India.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/opengraph-image.png",
         width: 1200,
         height: 630,
-        alt: "Space HR Platform",
+        alt: "Space HR — AI HR Chatbot & Employee Self-Service Platform",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Space HR | AI-Powered Performance Management Platform",
+    title: "Space HR | AI HR Chatbot & Employee Self-Service Platform",
     description:
-      "Transform your workplace with AI-powered performance management. Streamline appraisals and drive employee growth.",
-    images: ["/og-image.jpg"],
+      "AI HR chatbot that handles leave, payroll, and policy queries 24/7. Reduce HR ticket volume by 70%. Setup in 48 hours.",
     creator: "@SpaceHR",
+    images: ["/opengraph-image.png"],
   },
   alternates: {
     canonical: "https://spacehr.net",
-    languages: {
-      "en":    "https://spacehr.net",
-      "en-US": "https://spacehr.net/regions/united-states",
-      "en-IN": "https://spacehr.net/regions/india",
-      "en-GB": "https://spacehr.net/regions/uk",
-      "en-AE": "https://spacehr.net/regions/dubai",
-      "x-default": "https://spacehr.net",
-    },
   },
   verification: {
     google: "MJLrhzEJERw1j9RMKx272D8n3whd7L_71XQTi2_puqY",

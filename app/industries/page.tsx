@@ -19,13 +19,20 @@ export const metadata: Metadata = {
     "sector-specific HRMS",
     "compliance HR software",
   ],
+  twitter: {
+    card: "summary_large_image",
+    title: "HR Software by Industry | Space HR",
+    description: "Industry-tailored HR software for healthcare, banking, retail, manufacturing, and government — with built-in compliance and sector-specific workflows.",
+  },
   alternates: { canonical: "https://spacehr.net/industries" },
   openGraph: {
     title: "HR Software by Industry | Space HR",
     description:
       "Industry-tailored HR software for healthcare, banking, retail, manufacturing, and government — with built-in compliance and sector-specific workflows.",
     url: "https://spacehr.net/industries",
-    images: [{ url: "/desktop-design-showcase.webp", width: 1200, height: 630 }],
+    siteName: "Space HR",
+    type: "website",
+    images: [{ url: "/desktop-design-showcase.webp", width: 1200, height: 630, alt: "Space HR — Industry-Specific HR Software" }],
   },
 };
 

@@ -14,13 +14,18 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Freshteam vs Space HR: Recruitment-First HRMS vs Full AI Platform",
   description: "Freshteam is excellent for recruitment and onboarding. Space HR extends further with AI payroll anomaly detection, attrition prediction, leave automation, and a conversational HR AI concierge.",
-  keywords: ["freshteam alternative","space hr vs freshteam","freshworks hr alternative","hr software with ai","freshteam competitor"],
+  keywords: ["freshteam alternative","Space HR vs freshteam","freshworks hr alternative","hr software with ai","freshteam competitor"],
+  twitter: {
+    card: "summary_large_image",
+    title: "Freshteam vs Space HR: Recruitment-First HRMS vs Full AI Platform",
+    description: "Freshteam is excellent for recruitment and onboarding. Space HR extends further with AI payroll anomaly detection, attrition prediction, leave automation, and a conversational HR AI concierge.",
+  },
   alternates: { canonical: "https://spacehr.net/compare/freshteam" },
   openGraph: {
     title: "Freshteam vs Space HR: Recruitment-First HRMS vs Full AI Platform",
     description: "Freshteam is excellent for recruitment and onboarding. Space HR extends further with AI payroll anomaly detection, attrition prediction, leave automation, and a conversational HR AI concierge.",
     url: "https://spacehr.net/compare/freshteam",
-    siteName: "SpaceHR",
+    siteName: "Space HR",
     images: [{ url: "/desktop-design-showcase.webp", width: 1200, height: 630, alt: "Space HR vs Freshteam Comparison" }],
   },
 };

@@ -28,9 +28,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "About SpaceHR — AI-Powered HR Platform for Growing Teams",
+  title: "About Space HR — AI-Powered HR Platform for Growing Teams",
   description:
-    "SpaceHR is an AI-powered HR and payroll platform built for mid-market companies. Learn about our mission, the team behind SpaceHR, and why HR leaders trust us to automate chatbots, payroll anomaly detection, and workforce forecasting.",
+    "Space HR is an AI-powered HR and payroll platform built for mid-market companies. Learn about our mission, the team behind Space HR, and why HR leaders trust us to automate chatbots, payroll anomaly detection, and workforce forecasting.",
   keywords: [
     "Space AI",
     "Space HR",
@@ -44,18 +44,18 @@ export const metadata: Metadata = {
     "HR automation",
   ],
   openGraph: {
-    title: "About SpaceHR — AI-Powered HR Platform for Growing Teams",
+    title: "About Space HR — AI-Powered HR Platform for Growing Teams",
     description:
       "Meet the team behind Space HR. We build AI that automates HR chatbots, payroll anomaly detection, labor cost forecasting, and 360 appraisals — so HR teams can focus on people, not admin.",
     type: "website",
     url: "https://spacehr.net/about",
-    siteName: "SpaceHR",
+    siteName: "Space HR",
     images: [
       {
         url: "/desktop-design-showcase.webp",
         width: 1200,
         height: 630,
-        alt: "SpaceHR Team and Platform",
+        alt: "Space HR Team and Platform",
       },
     ],
   },
@@ -64,9 +64,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "About SpaceHR — AI-Powered HR Platform",
+    title: "About Space HR — AI-Powered HR Platform",
     description:
-      "AI HR chatbots, payroll anomaly detection, labor cost forecasting, and 360 appraisals — meet the team behind SpaceHR.",
+      "AI HR chatbots, payroll anomaly detection, labor cost forecasting, and 360 appraisals — meet the team behind Space HR.",
     images: ["/desktop-design-showcase.webp"],
   },
 };
@@ -202,12 +202,12 @@ const aboutFAQs = [
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "SpaceHR",
+    name: "Space HR",
     alternateName: "Space AI",
     url: "https://spacehr.net",
     logo: "https://spacehr.net/about_logo.png",
     description:
-      "SpaceHR is an AI-powered HR and payroll platform that automates employee self-service, payroll anomaly detection, labor cost forecasting, attrition prediction, and 360-degree performance appraisals for mid-market and enterprise companies.",
+      "Space HR is an AI-powered HR and payroll platform that automates employee self-service, payroll anomaly detection, labor cost forecasting, attrition prediction, and 360-degree performance appraisals for mid-market and enterprise companies.",
     foundingDate: "2023",
     parentOrganization: {
       "@type": "Organization",
@@ -241,9 +241,9 @@ const aboutFAQs = [
       addressCountry: "US",
     },
     sameAs: [
-      "https://www.linkedin.com/company/spacehr",
-      "https://twitter.com/spacehr",
-      "https://g2.com/products/spacehr",
+      "https://www.linkedin.com/company/Space HR",
+      "https://twitter.com/Space HR",
+      "https://g2.com/products/Space HR",
       "https://pmspace.ai",
       "https://spaceaiapp.com",
       "https://bibinprathap.com",
@@ -374,7 +374,7 @@ const aboutFAQs = [
               
               <div className="space-y-6 text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
                 <p>
-                  Space AI was founded in 2020 with a bold vision: to create software that doesn't just manage 
+                  Space AI was founded in the United States in 2020 with a bold vision: to create software that doesn't just manage 
                   employees—it <span className="text-gray-900 dark:text-white font-semibold">empowers them</span>. 
                   We saw how traditional HR systems were failing modern organizations, drowning them in 
                   paperwork while missing the bigger picture.
@@ -385,8 +385,9 @@ const aboutFAQs = [
                   disconnected systems, and the inability to gain actionable insights from their workforce data.
                 </p>
                 <p>
-                  Today, we serve 500+ companies across 15 countries, processing billions in payroll and helping
-                  organizations build cultures where people genuinely thrive. But we're just getting started.
+                  Headquartered in the United States with customers and operations across 15 countries, we serve 500+ companies, 
+                  processing billions in payroll and helping organizations build cultures where people genuinely thrive. 
+                  But we're just getting started.
                 </p>
                 <p>
                   Space HR is one product in the broader{" "}
@@ -599,7 +600,7 @@ const aboutFAQs = [
       {/* TIMELINE / JOURNEY */}
 
 
-      {/* SPACE HR PRODUCT HIGHLIGHT */}
+      {/* Space HR PRODUCT HIGHLIGHT */}
       <section className="py-24 bg-gradient-to-br from-[#0b1121] via-[#0f172a] to-[#1e1b4b] relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-gradient-to-r from-primary/20 to-cyan-500/20 rounded-full blur-3xl"></div>

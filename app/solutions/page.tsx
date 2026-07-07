@@ -9,6 +9,11 @@ export const metadata: Metadata = {
   title: "HR Solutions by Role & Use Case | Space HR",
   description:
     "Explore Space HR solutions built for CEOs, HR Admins, and employees — including AI chatbots, employee self-service, and chatbot-for-HR-services.",
+  twitter: {
+    card: "summary_large_image",
+    title: "HR Solutions by Role & Use Case | Space HR",
+    description: "Explore Space HR solutions built for CEOs, HR Admins, and employees — including AI chatbots, employee self-service, and chatbot-for-HR-services.",
+  },
   alternates: { canonical: "https://spacehr.net/solutions" },
   openGraph: {
     title: "HR Solutions by Role & Use Case | Space HR",

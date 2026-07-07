@@ -22,11 +22,11 @@ import { Button } from "@/components/ui/Button";
 import { SpaceHRCard } from "@/components/SpaceHRCard";
 
 export const metadata: Metadata = {
-  title: "SpaceHR × PM Space AI Integration — Crew Scheduling & Labor Cost Sync",
+  title: "Space HR × PM Space AI Integration — Crew Scheduling & Labor Cost Sync",
   description:
-    "Connect SpaceHR with PM Space AI to sync crew schedules, labor costs, and payroll data directly into project budgets. One workforce platform, zero data silos.",
+    "Connect Space HR with PM Space AI to sync crew schedules, labor costs, and payroll data directly into project budgets. One workforce platform, zero data silos.",
   keywords: [
-    "SpaceHR integration",
+    "Space HR integration",
     "PM Space AI",
     "crew scheduling",
     "labor cost sync",
@@ -36,19 +36,19 @@ export const metadata: Metadata = {
     "workforce management",
   ],
   openGraph: {
-    title: "SpaceHR × PM Space AI Integration",
+    title: "Space HR × PM Space AI Integration",
     description:
-      "Sync crew schedules, labor costs, and payroll data between SpaceHR and PM Space AI — eliminating double-entry and giving project managers real-time budget visibility.",
+      "Sync crew schedules, labor costs, and payroll data between Space HR and PM Space AI — eliminating double-entry and giving project managers real-time budget visibility.",
     type: "website",
     url: "https://spacehr.net/integrations/space-ai",
-    siteName: "SpaceHR",
+    siteName: "Space HR",
   },
   alternates: {
     canonical: "https://spacehr.net/integrations/space-ai",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SpaceHR × PM Space AI Integration",
+    title: "Space HR × PM Space AI Integration",
     description:
       "Crew scheduling, labor cost sync, and payroll → project budget — all connected across the Space AI ecosystem.",
   },
@@ -65,7 +65,7 @@ const integrationPoints = [
     icon: Calendar,
     title: "Crew Scheduling Sync",
     description:
-      "Shift assignments created in SpaceHR automatically populate project timelines in PM Space AI. When an employee is assigned to a project task, their availability windows, approved leave, and overtime restrictions are respected in real time.",
+      "Shift assignments created in Space HR automatically populate project timelines in PM Space AI. When an employee is assigned to a project task, their availability windows, approved leave, and overtime restrictions are respected in real time.",
     benefit: "Eliminate scheduling conflicts across HR and project teams",
     iconColor: "text-blue-500",
     bg: "bg-blue-500/10",
@@ -74,7 +74,7 @@ const integrationPoints = [
     icon: DollarSign,
     title: "Labor Cost Sync",
     description:
-      "SpaceHR's 12-month labor cost forecasts — including base salary, benefits burden, and overtime estimates — feed directly into PM Space AI project budgets. Project managers see true labor cost, not just headcount.",
+      "Space HR's 12-month labor cost forecasts — including base salary, benefits burden, and overtime estimates — feed directly into PM Space AI project budgets. Project managers see true labor cost, not just headcount.",
     benefit: "Real-time budget-vs-actual labor cost tracking per project",
     iconColor: "text-emerald-500",
     bg: "bg-emerald-500/10",
@@ -83,7 +83,7 @@ const integrationPoints = [
     icon: BarChart3,
     title: "Payroll → Project Budget",
     description:
-      "Once payroll is processed in SpaceHR, actual gross wages are pushed to PM Space AI as committed costs against the relevant project codes. Finance and project managers share a single source of truth without manual reconciliation.",
+      "Once payroll is processed in Space HR, actual gross wages are pushed to PM Space AI as committed costs against the relevant project codes. Finance and project managers share a single source of truth without manual reconciliation.",
     benefit: "Automated cost accounting — no spreadsheets, no manual exports",
     iconColor: "text-violet-500",
     bg: "bg-violet-500/10",
@@ -92,7 +92,7 @@ const integrationPoints = [
     icon: Users,
     title: "Headcount & Org Chart",
     description:
-      "Employee roles, departments, and reporting lines maintained in SpaceHR are mirrored in PM Space AI's resource pool. Onboarding a new hire in HR makes them immediately available for project assignment.",
+      "Employee roles, departments, and reporting lines maintained in Space HR are mirrored in PM Space AI's resource pool. Onboarding a new hire in HR makes them immediately available for project assignment.",
     benefit: "One master directory for both HR and project resource planning",
     iconColor: "text-pink-500",
     bg: "bg-pink-500/10",
@@ -117,10 +117,10 @@ export default function SpaceAIIntegrationPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "WebPage",
-          name: "SpaceHR × PM Space AI Integration",
+          name: "Space HR × PM Space AI Integration",
           url: "https://spacehr.net/integrations/space-ai",
           description:
-            "Connect SpaceHR with PM Space AI to sync crew schedules, labor costs, and payroll data into project budgets.",
+            "Connect Space HR with PM Space AI to sync crew schedules, labor costs, and payroll data into project budgets.",
           isPartOf: { "@type": "WebSite", url: "https://spacehr.net" },
           about: [
             { "@type": "SoftwareApplication", name: "Space HR", url: "https://spacehr.net" },
@@ -175,7 +175,7 @@ export default function SpaceAIIntegrationPage() {
                 </span>
               </h1>
               <p className="text-xl text-slate-300 max-w-3xl mx-auto mb-10 leading-relaxed">
-                SpaceHR and PM Space AI are built by the same team at Space AI. Connect them to sync crew schedules,
+                Space HR and PM Space AI are built by the same team at Space AI. Connect them to sync crew schedules,
                 labor cost forecasts, and processed payroll directly into project budgets — eliminating data silos
                 between HR and operations.
               </p>
@@ -210,7 +210,7 @@ export default function SpaceAIIntegrationPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                Four Ways SpaceHR Connects with PM Space AI
+                Four Ways Space HR Connects with PM Space AI
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                 Data flows both ways so HR and project teams always work from the same numbers.
@@ -255,10 +255,10 @@ export default function SpaceAIIntegrationPage() {
 
             <div className="space-y-4">
               {[
-                { step: "1", from: "SpaceHR", action: "Employee onboarded & assigned to department", to: "PM Space AI", result: "Added to resource pool with role & cost rate" },
-                { step: "2", from: "PM Space AI", action: "Project manager assigns crew to task", to: "SpaceHR", result: "Shift created, leave & overtime rules applied" },
-                { step: "3", from: "SpaceHR", action: "Labor cost forecast generated (12 months)", to: "PM Space AI", result: "Project budget updated with forecast labor spend" },
-                { step: "4", from: "SpaceHR", action: "Payroll processed & gross wages finalized", to: "PM Space AI", result: "Actual costs committed against project codes" },
+                { step: "1", from: "Space HR", action: "Employee onboarded & assigned to department", to: "PM Space AI", result: "Added to resource pool with role & cost rate" },
+                { step: "2", from: "PM Space AI", action: "Project manager assigns crew to task", to: "Space HR", result: "Shift created, leave & overtime rules applied" },
+                { step: "3", from: "Space HR", action: "Labor cost forecast generated (12 months)", to: "PM Space AI", result: "Project budget updated with forecast labor spend" },
+                { step: "4", from: "Space HR", action: "Payroll processed & gross wages finalized", to: "PM Space AI", result: "Actual costs committed against project codes" },
               ].map((row) => (
                 <div
                   key={row.step}
@@ -294,7 +294,7 @@ export default function SpaceAIIntegrationPage() {
                 Part of the Space AI Ecosystem
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                SpaceHR and PM Space AI are two products in the broader Space AI suite — all built and maintained by the same team.
+                Space HR and PM Space AI are two products in the broader Space AI suite — all built and maintained by the same team.
               </p>
             </div>
 
@@ -339,7 +339,7 @@ export default function SpaceAIIntegrationPage() {
               Ready to connect HR with project management?
             </h2>
             <p className="text-xl text-slate-300 mb-10">
-              Book a demo to see the SpaceHR × PM Space AI integration live — crew scheduling, labor cost sync, and
+              Book a demo to see the Space HR × PM Space AI integration live — crew scheduling, labor cost sync, and
               payroll-to-budget in one flow.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

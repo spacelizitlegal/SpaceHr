@@ -74,7 +74,7 @@ export function Footer() {
             {/* Social Media */}
             <div className="flex items-center gap-2 pt-2">
               <Link
-                href="https://x.com/SpaceHR197173"
+                href="https://x.com/Space HR197173"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-blue-400 hover:bg-blue-400/10 hover:border-blue-400/30 transition-all duration-200"
@@ -92,7 +92,7 @@ export function Footer() {
                 <Instagram className="w-4 h-4" />
               </Link>
               <Link
-                href="https://youtube.com/@spacehr7?si=Mz17igrQhxa3Jt7R"
+                href="https://youtube.com/@SpaceHR7?si=Mz17igrQhxa3Jt7R"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-red-500 hover:bg-red-500/10 hover:border-red-500/30 transition-all duration-200"
@@ -112,7 +112,7 @@ export function Footer() {
               <Link
                 href="/social-media-platforms"
                 className="w-8 h-8 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-violet-400 hover:bg-violet-400/10 hover:border-violet-400/30 hover:scale-110 hover:shadow-[0_0_10px_rgba(167,139,250,0.4)] active:scale-95 transition-all duration-200"
-                aria-label="All SpaceHR social platforms"
+                aria-label="All Space HR social platforms"
               >
                 <LayoutGrid className="w-4 h-4" />
               </Link>

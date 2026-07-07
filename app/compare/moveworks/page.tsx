@@ -14,13 +14,18 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Moveworks vs Space HR: IT Helpdesk vs AI HR Platform",
   description: "Moveworks automates IT helpdesk tickets. Space HR automates HR — payroll anomaly detection, leave management, attrition prediction, and AI HR concierge in one platform.",
-  keywords: ["moveworks alternative","space hr vs moveworks","ai hr automation","hr helpdesk software","moveworks hr competitor"],
+  keywords: ["moveworks alternative","Space HR vs moveworks","ai hr automation","hr helpdesk software","moveworks hr competitor"],
+  twitter: {
+    card: "summary_large_image",
+    title: "Moveworks vs Space HR: IT Helpdesk vs AI HR Platform",
+    description: "Moveworks automates IT helpdesk tickets. Space HR automates HR — payroll anomaly detection, leave management, attrition prediction, and AI HR concierge in one platform.",
+  },
   alternates: { canonical: "https://spacehr.net/compare/moveworks" },
   openGraph: {
     title: "Moveworks vs Space HR: IT Helpdesk vs AI HR Platform",
     description: "Moveworks automates IT helpdesk tickets. Space HR automates HR — payroll anomaly detection, leave management, attrition prediction, and AI HR concierge in one platform.",
     url: "https://spacehr.net/compare/moveworks",
-    siteName: "SpaceHR",
+    siteName: "Space HR",
     images: [{ url: "/desktop-design-showcase.webp", width: 1200, height: 630, alt: "Space HR vs Moveworks Comparison" }],
   },
 };

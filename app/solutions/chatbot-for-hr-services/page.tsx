@@ -23,47 +23,47 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Chatbot for HR Services — Automate HR Requests 24/7 | SpaceHR",
+  title: "Chatbot for HR Services — Automate HR Operations & Requests | Space HR",
   description:
-    "Deploy a chatbot for HR services that handles leave requests, payslips, policy questions, and onboarding — instantly, 24/7. SpaceHR cuts HR ticket volume by 70% in 30 days. Setup in 48 hours.",
+    "Automate your HR services delivery with an AI chatbot that handles leave, payslips, policies, benefits, and onboarding requests — 24/7, integrated with your existing HR systems.",
   keywords: [
     "chatbot for hr services",
     "hr services chatbot",
-    "chatbot hr services",
-    "ai chatbot for hr department",
+    "hr service automation",
     "automated hr services",
-    "hr helpdesk chatbot",
-    "chatbot for internal employees",
-    "hr service desk automation",
+    "hr operations chatbot",
+    "hr request automation",
+    "hr service desk chatbot",
+    "employee hr chatbot",
+    "ai chatbot for hr department",
     "conversational ai hr",
     "hr chatbot platform",
-    "employee hr chatbot",
-    "hr service automation",
+    "hr service delivery automation",
   ],
   alternates: {
     canonical: "https://spacehr.net/solutions/chatbot-for-hr-services",
   },
   openGraph: {
-    title: "Chatbot for HR Services — Automate HR Requests 24/7 | SpaceHR",
+    title: "Chatbot for HR Services — Automate HR Operations | Space HR",
     description:
-      "Handle 85% of employee HR requests automatically — leave, payslips, policies, benefits — with SpaceHR's AI chatbot. 24/7, no waiting, no HR tickets.",
+      "Automate HR services delivery: leave, payslips, policies, benefits, and onboarding requests — 24/7 with AI.",
     url: "https://spacehr.net/solutions/chatbot-for-hr-services",
-    siteName: "SpaceHR",
+    siteName: "Space HR",
     images: [
       {
         url: "https://spacehr.net/desktop-design-showcase.webp",
         width: 1200,
         height: 630,
-        alt: "SpaceHR Chatbot for HR Services",
+        alt: "Space HR Chatbot for HR Services",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Chatbot for HR Services | SpaceHR",
+    title: "Chatbot for HR Services | Space HR",
     description:
-      "Automate 85% of HR requests with a 24/7 AI chatbot. Leave, payslips, policies, benefits — instant answers, zero HR tickets.",
+      "Automate HR services delivery with AI. Leave, payslips, policies, benefits, onboarding — 24/7.",
     images: ["https://spacehr.net/desktop-design-showcase.webp"],
   },
 };
@@ -72,42 +72,42 @@ const faqItems = [
   {
     question: "What can a chatbot for HR services do?",
     answer:
-      "A chatbot for HR services handles the full range of routine employee HR requests: leave balance checks and PTO submissions, payslip retrieval, tax document access, benefits enrollment queries, onboarding checklist guidance, expense policy lookups, company policy Q&A, and manager approval notifications. SpaceHR's chatbot handles approximately 85% of all routine HR interactions — leaving HR teams free to focus on complex, high-value work.",
+      "A chatbot for HR services handles the full range of routine employee HR requests: leave balance checks and PTO submissions, payslip retrieval, tax document access, benefits enrollment queries, onboarding checklist guidance, expense policy lookups, company policy Q&A, and manager approval notifications. Space HR's chatbot handles approximately 85% of all routine HR interactions — leaving HR teams free to focus on complex, high-value work.",
   },
   {
     question: "How is an HR services chatbot different from a regular chatbot?",
     answer:
-      "An HR services chatbot is specifically trained on HR workflows, company policies, and employee data. Unlike a general chatbot, it connects directly to your HRMS, payroll system, and policy documents — so it gives personalized, accurate answers based on each employee's actual entitlements and company rules. It can also take actions (book leave, pull payslips) not just answer questions. SpaceHR's HR chatbot is pre-trained on HR domain knowledge and customised to your specific policies.",
+      "An HR services chatbot is specifically trained on HR workflows, company policies, and employee data. Unlike a general chatbot, it connects directly to your HRMS, payroll system, and policy documents — so it gives personalized, accurate answers based on each employee's actual entitlements and company rules. It can also take actions (book leave, pull payslips) not just answer questions. Space HR's HR chatbot is pre-trained on HR domain knowledge and customised to your specific policies.",
   },
   {
     question: "How much does it cost to deploy a chatbot for HR services?",
     answer:
-      "SpaceHR offers a free trial for teams to test the HR chatbot before committing. Paid plans start from a per-employee-per-month fee based on your company size and modules required. Most customers achieve full ROI within 60 days — a 200-person company typically saves $4,000–$6,000/month in HR staff time from reduced ticket handling alone. Contact SpaceHR for a customized quote.",
+      "Space HR offers a free trial for teams to test the HR chatbot before committing. Paid plans start from a per-employee-per-month fee based on your company size and modules required. Most customers achieve full ROI within 60 days — a 200-person company typically saves $4,000–$6,000/month in HR staff time from reduced ticket handling alone. Contact Space HR for a customized quote.",
   },
   {
     question: "How long does it take to deploy an HR services chatbot?",
     answer:
-      "SpaceHR deploys in as little as 48 hours for standard configurations. The setup involves connecting your existing HRMS/payroll system, uploading your company policy documents, and configuring escalation rules for complex requests. No coding is required. Enterprise deployments with custom integrations typically take 1–2 weeks, with our onboarding team managing the full process.",
+      "Space HR deploys in as little as 48 hours for standard configurations. The setup involves connecting your existing HRMS/payroll system, uploading your company policy documents, and configuring escalation rules for complex requests. No coding is required. Enterprise deployments with custom integrations typically take 1–2 weeks, with our onboarding team managing the full process.",
   },
   {
     question: "Will the chatbot integrate with our existing HR systems?",
     answer:
-      "Yes. SpaceHR integrates with all major HR and payroll systems including Workday, BambooHR, ADP, Gusto, Rippling, Sage, and custom HRMS via REST API. Employee data stays in real-time sync so the chatbot always reflects current leave balances, payroll data, and org structure. Single sign-on (SSO) and Microsoft Teams / Slack integration are also supported.",
+      "Yes. Space HR integrates with all major HR and payroll systems including Workday, BambooHR, ADP, Gusto, Rippling, Sage, and custom HRMS via REST API. Employee data stays in real-time sync so the chatbot always reflects current leave balances, payroll data, and org structure. Single sign-on (SSO) and Microsoft Teams / Slack integration are also supported.",
   },
   {
     question: "Is an HR chatbot secure for sensitive employee data?",
     answer:
-      "SpaceHR uses enterprise-grade security throughout: 256-bit AES encryption at rest, TLS 1.3 in transit, role-based access controls (RBAC) ensuring employees only see their own data, full audit logging of all chatbot interactions, and SOC 2 Type II compliance. MFA is supported. Data residency options are available for US, UK, EU, UAE, and Singapore requirements.",
+      "Space HR uses enterprise-grade security throughout: 256-bit AES encryption at rest, TLS 1.3 in transit, role-based access controls (RBAC) ensuring employees only see their own data, full audit logging of all chatbot interactions, and SOC 2 Type II compliance. MFA is supported. Data residency options are available for US, UK, EU, UAE, and Singapore requirements.",
   },
   {
     question: "What happens when the chatbot can't answer a question?",
     answer:
-      "SpaceHR's HR chatbot automatically escalates to a human HR team member when a query is outside its configured scope or requires human judgment. The escalation includes the full conversation context so the HR agent doesn't need to ask the employee to repeat themselves. The HR team reviews a clean ticket queue — not a flood of repetitive emails.",
+      "Space HR's HR chatbot automatically escalates to a human HR team member when a query is outside its configured scope or requires human judgment. The escalation includes the full conversation context so the HR agent doesn't need to ask the employee to repeat themselves. The HR team reviews a clean ticket queue — not a flood of repetitive emails.",
   },
   {
     question: "Can the chatbot handle multiple languages for global HR teams?",
     answer:
-      "Yes. SpaceHR's chatbot for HR services supports 40+ languages including English, Arabic, French, Spanish, German, Mandarin, Hindi, and more. Region-specific HR rules — UAE WPS compliance, Singapore CPF, US multi-state tax, UK statutory leave — are automatically applied based on each employee's location. Perfect for multinational organizations with diverse workforces.",
+      "Yes. Space HR's chatbot for HR services supports 40+ languages including English, Arabic, French, Spanish, German, Mandarin, Hindi, and more. Region-specific HR rules — UAE WPS compliance, Singapore CPF, US multi-state tax, UK statutory leave — are automatically applied based on each employee's location. Perfect for multinational organizations with diverse workforces.",
   },
 ];
 
@@ -169,13 +169,13 @@ const deploymentSteps = [
   {
     step: "1",
     title: "Connect Your HR Data Sources",
-    desc: "SpaceHR integrates with your HRMS, payroll system, and document storage. Employee records, leave entitlements, and org structure stay in real-time sync. Setup takes 30–90 minutes for standard integrations.",
+    desc: "Space HR integrates with your HRMS, payroll system, and document storage. Employee records, leave entitlements, and org structure stay in real-time sync. Setup takes 30–90 minutes for standard integrations.",
     icon: Zap,
   },
   {
     step: "2",
     title: "Upload & Train on Your HR Policies",
-    desc: "Upload your employee handbook, leave policy, benefits guide, and compliance documents. SpaceHR's AI indexes and learns your specific policies — employees get answers based on your actual rules, not generic defaults.",
+    desc: "Upload your employee handbook, leave policy, benefits guide, and compliance documents. Space HR's AI indexes and learns your specific policies — employees get answers based on your actual rules, not generic defaults.",
     icon: FileText,
   },
   {
@@ -193,7 +193,7 @@ const deploymentSteps = [
   {
     step: "5",
     title: "Monitor, Optimise, Expand",
-    desc: "SpaceHR provides weekly reports on resolution rates, unanswered queries, and ticket trends. Use insights to improve policy documentation, add new workflows, and continuously reduce HR workload.",
+    desc: "Space HR provides weekly reports on resolution rates, unanswered queries, and ticket trends. Use insights to improve policy documentation, add new workflows, and continuously reduce HR workload.",
     icon: TrendingDown,
   },
 ];
@@ -235,17 +235,17 @@ export default function ChatbotForHRServicesPage() {
               <div>
                 <div className="inline-flex items-center gap-2 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-700 dark:text-indigo-300 text-sm font-medium px-4 py-2 rounded-full mb-6">
                   <Bot className="w-4 h-4" />
-                  Chatbot for HR Services
+                  HR Services Automation
                 </div>
                 <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
-                  Handle <span className="text-indigo-600 dark:text-indigo-400">85% of HR Requests</span>{" "}
-                  Automatically — Without an HR Ticket
+                  Automate HR Service Delivery{" "}
+                  <span className="text-indigo-600 dark:text-indigo-400">End to End</span>
                 </h1>
                 <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                  SpaceHR&apos;s chatbot for HR services answers employee questions about
-                  leave, payslips, policies, and benefits instantly — 24/7. HR teams
-                  stop answering repetitive queries and start doing strategic work.
-                  Deployment takes <strong>48 hours</strong>.
+                  Space HR&apos;s chatbot for HR services handles the full request lifecycle —
+                  leave, payslips, policies, benefits, onboarding, and IT routing — without
+                  manual HR intervention. HR operations teams reduce repetitive work and
+                  deliver faster service. Deployment takes <strong>48 hours</strong>.
                 </p>
 
                 {/* Key stats inline */}
@@ -302,7 +302,7 @@ export default function ChatbotForHRServicesPage() {
                     <Bot className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <div className="text-white font-semibold text-sm">SpaceHR HR Services Bot</div>
+                    <div className="text-white font-semibold text-sm">Space HR HR Services Bot</div>
                     <div className="text-indigo-200 text-xs flex items-center gap-1.5">
                       <span className="w-1.5 h-1.5 rounded-full bg-green-400 inline-block" />
                       Online · Avg response 2.8 seconds
@@ -362,7 +362,7 @@ export default function ChatbotForHRServicesPage() {
                 well-configured HR chatbot answers them in under 3 seconds, 24 hours a day.
               </p>
               <p>
-                SpaceHR&apos;s chatbot goes beyond answering questions. It takes action: submitting
+                Space HR&apos;s chatbot goes beyond answering questions. It takes action: submitting
                 leave requests, pulling payslips, routing approvals, sending onboarding checklists,
                 and escalating complex cases to the right HR person with full context. It&apos;s
                 not a FAQ page with a chat interface — it&apos;s a full HR service automation layer.
@@ -372,7 +372,7 @@ export default function ChatbotForHRServicesPage() {
                 process a single HR service request manually is <strong>$4.51</strong>. For a
                 200-person company handling 200 requests/month, that&apos;s $900/month minimum —
                 before factoring in the opportunity cost of HR talent working on admin instead of
-                retention, culture, or talent development. SpaceHR customers reduce that cost by
+                retention, culture, or talent development. Space HR customers reduce that cost by
                 70–85% within 90 days of deployment.
               </p>
             </div>
@@ -387,7 +387,7 @@ export default function ChatbotForHRServicesPage() {
                 6 HR Services Transformed by Chatbot Automation
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                See exactly how SpaceHR replaces manual HR service delivery with instant,
+                See exactly how Space HR replaces manual HR service delivery with instant,
                 automated responses across the most common employee request types.
               </p>
             </div>
@@ -414,7 +414,7 @@ export default function ChatbotForHRServicesPage() {
                       </div>
                       {/* Automated */}
                       <div className="px-5 py-4">
-                        <div className="text-xs font-semibold text-green-600 dark:text-green-400 uppercase tracking-wide mb-1.5">✅ With SpaceHR chatbot</div>
+                        <div className="text-xs font-semibold text-green-600 dark:text-green-400 uppercase tracking-wide mb-1.5">✅ With Space HR chatbot</div>
                         <p className="text-sm text-gray-600 dark:text-gray-400">{svc.automated}</p>
                       </div>
                       {/* Saving */}
@@ -478,7 +478,7 @@ export default function ChatbotForHRServicesPage() {
                 The ROI of a Chatbot for HR Services
               </h2>
               <p className="text-indigo-100 text-lg">
-                Real numbers from SpaceHR customers. Typical 200-person company, 90 days post-deployment.
+                Real numbers from Space HR customers. Typical 200-person company, 90 days post-deployment.
               </p>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -504,7 +504,7 @@ export default function ChatbotForHRServicesPage() {
                     </div>
                     <ArrowRight className="w-4 h-4 text-indigo-300" />
                     <div>
-                      <div className="text-xs text-green-300 mb-1">After SpaceHR</div>
+                      <div className="text-xs text-green-300 mb-1">After Space HR</div>
                       <div className="text-white font-bold text-sm">{row.after}</div>
                     </div>
                   </div>
@@ -524,7 +524,7 @@ export default function ChatbotForHRServicesPage() {
               Employees Access HR Services Anywhere
             </h2>
             <p className="text-xl text-gray-600 dark:text-gray-400 mb-12">
-              SpaceHR&apos;s chatbot meets employees in the tools they already use — no new app to install.
+              Space HR&apos;s chatbot meets employees in the tools they already use — no new app to install.
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
               {[
@@ -577,7 +577,7 @@ export default function ChatbotForHRServicesPage() {
         <section className="py-16 px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-6">
-              Related SpaceHR Solutions & Features
+              Related Space HR Solutions & Features
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {[
@@ -590,8 +590,8 @@ export default function ChatbotForHRServicesPage() {
                 { href: "/features/payroll", label: "Payroll Self-Service" },
                 { href: "/features/hr-ai-concierge", label: "HR AI Concierge" },
                 { href: "/tools/true-cost-calculator", label: "HR Cost Calculator" },
-                { href: "/compare/bamboohr", label: "SpaceHR vs BambooHR" },
-                { href: "/compare/workday", label: "SpaceHR vs Workday" },
+                { href: "/compare/bamboohr", label: "Space HR vs BambooHR" },
+                { href: "/compare/workday", label: "Space HR vs Workday" },
                 { href: "/blogs", label: "HR Automation Blog" },
               ].map((link) => (
                 <a
@@ -614,7 +614,7 @@ export default function ChatbotForHRServicesPage() {
               Ready to Automate Your HR Services?
             </h2>
             <p className="text-xl text-gray-300 mb-10">
-              Join hundreds of HR teams using SpaceHR to eliminate repetitive queries,
+              Join hundreds of HR teams using Space HR to eliminate repetitive queries,
               reduce ticket volume by 70%, and give employees instant 24/7 HR service.
               Deploy in 48 hours.
             </p>

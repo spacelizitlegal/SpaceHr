@@ -21,11 +21,24 @@ export const metadata: Metadata = {
     "Rippling automates speed, but Space HR ensures safety. prevent payroll errors and compliance risks with our built-in AI Audit layer.",
   keywords: [
     "rippling alternative",
-    "space hr vs rippling",
+    "Space HR vs rippling",
     "payroll audit software",
     "compliance focused hr software",
     "safer payroll alternative",
   ],
+  openGraph: {
+    title: "Rippling vs Space HR: Why You Need AI Payroll Audits | Space HR",
+    description: "Rippling automates speed, but Space HR ensures safety. Prevent payroll errors and compliance risks with Space HR's built-in AI Audit layer.",
+    url: "https://spacehr.net/compare/rippling",
+    siteName: "Space HR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rippling vs Space HR: Why You Need AI Payroll Audits | Space HR",
+    description: "Rippling automates speed, but Space HR ensures safety. Prevent payroll errors and compliance risks with Space HR's built-in AI Audit layer.",
+  },
+  alternates: { canonical: "https://spacehr.net/compare/rippling" },
 };
 
 const faqs = [

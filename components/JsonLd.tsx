@@ -15,7 +15,7 @@ export const organizationSchema = {
   url: "https://spacehr.net",
   logo: "https://spacehr.net/hrlogonly.png",
   description:
-    "AI-powered HRMS and ERP platform for modern enterprises — payroll automation, predictive workforce analytics, and compliance management.",
+    "US-based AI-powered HRMS and ERP platform for modern enterprises — payroll automation, predictive workforce analytics, and compliance management across the United States, UAE, Singapore, UK, India, Canada, and Europe.",
   foundingDate: "2023",
   parentOrganization: {
     "@type": "Organization",
@@ -39,14 +39,14 @@ export const organizationSchema = {
     },
   ],
   sameAs: [
-    "https://twitter.com/SpaceHR",
+    "https://twitter.com/Space HR",
     "https://www.linkedin.com/company/space-hr",
-    "https://www.facebook.com/SpaceHR",
-    "https://www.g2.com/products/spacehr",
-    "https://www.capterra.com/p/spacehr",
-    "https://www.trustradius.com/products/spacehr",
-    "https://www.producthunt.com/products/spacehr",
-    "https://www.crunchbase.com/organization/spacehr",
+    "https://www.facebook.com/Space HR",
+    "https://www.g2.com/products/Space HR",
+    "https://www.capterra.com/p/Space HR",
+    "https://www.trustradius.com/products/Space HR",
+    "https://www.producthunt.com/products/Space HR",
+    "https://www.crunchbase.com/organization/Space HR",
     "https://pmspace.ai",
     "https://spaceaiapp.com",
     "https://space-sign.ai",
@@ -81,22 +81,19 @@ export const organizationSchema = {
       availableLanguage: "English",
     },
   ],
-  address: [
-    {
-      "@type": "PostalAddress",
-      addressCountry: "US",
-      addressLocality: "United States",
-    },
-    {
-      "@type": "PostalAddress",
-      addressCountry: "SG",
-      addressLocality: "Singapore",
-    },
-    {
-      "@type": "PostalAddress",
-      addressCountry: "AE",
-      addressLocality: "Dubai",
-    },
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "US",
+    addressLocality: "United States",
+  },
+  areaServed: [
+    { "@type": "Country", name: "United States" },
+    { "@type": "Country", name: "United Arab Emirates" },
+    { "@type": "Country", name: "Singapore" },
+    { "@type": "Country", name: "United Kingdom" },
+    { "@type": "Country", name: "India" },
+    { "@type": "Country", name: "Canada" },
+    { "@type": "Place", name: "Europe" },
   ],
 };
 
@@ -115,7 +112,7 @@ export const softwareSchema = {
   availableOnDevice: ["Desktop", "Mobile", "Tablet"],
   url: "https://spacehr.net",
   description:
-    "Enterprise-grade AI-powered HRMS and ERP platform featuring automated payroll auditing, predictive workforce analytics, 360-degree performance appraisals, NACHA-compliant ACH processing, tax compliance automation, and an AI HR Concierge chatbot for 24/7 employee self-service.",
+    "US-based, enterprise-grade AI-powered HRMS and ERP platform featuring automated payroll auditing, predictive workforce analytics, 360-degree performance appraisals, NACHA-compliant ACH processing, multi-country tax compliance automation, and an AI HR Concierge chatbot for 24/7 employee self-service.",
   featureList: [
     "AI Payroll Auditor with anomaly detection",
     "Predictive workforce analytics and cost forecasting",
@@ -132,9 +129,7 @@ export const softwareSchema = {
   ],
   offers: {
     "@type": "Offer",
-    price: "0",
-    priceCurrency: "USD",
-    description: "Free trial available. Custom enterprise pricing.",
+    description: "Free trial available. Request a demo for a tailored quote.",
     url: "https://spacehr.net/request-a-demo",
   },
   aggregateRating: {

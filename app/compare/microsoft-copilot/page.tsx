@@ -14,13 +14,18 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Microsoft Copilot vs Space HR: Generic AI vs Purpose-Built HR AI",
   description: "Microsoft Copilot is a general productivity AI. Space HR is purpose-built for HR — with payroll anomaly detection, attrition prediction, leave automation, and a trained HR AI concierge.",
-  keywords: ["microsoft copilot alternative for hr","space hr vs microsoft copilot","hr ai software","copilot for hr teams","dedicated hr ai platform"],
+  keywords: ["microsoft copilot alternative for hr","Space HR vs microsoft copilot","hr ai software","copilot for hr teams","dedicated hr ai platform"],
+  twitter: {
+    card: "summary_large_image",
+    title: "Microsoft Copilot vs Space HR: Generic AI vs Purpose-Built HR AI",
+    description: "Microsoft Copilot is a general productivity AI. Space HR is purpose-built for HR — with payroll anomaly detection, attrition prediction, leave automation, and a trained HR AI concierge.",
+  },
   alternates: { canonical: "https://spacehr.net/compare/microsoft-copilot" },
   openGraph: {
     title: "Microsoft Copilot vs Space HR: Generic AI vs Purpose-Built HR AI",
     description: "Microsoft Copilot is a general productivity AI. Space HR is purpose-built for HR — with payroll anomaly detection, attrition prediction, leave automation, and a trained HR AI concierge.",
     url: "https://spacehr.net/compare/microsoft-copilot",
-    siteName: "SpaceHR",
+    siteName: "Space HR",
     images: [{ url: "/desktop-design-showcase.webp", width: 1200, height: 630, alt: "Space HR vs Microsoft Copilot Comparison" }],
   },
 };

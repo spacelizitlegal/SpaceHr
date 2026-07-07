@@ -45,6 +45,13 @@ export const metadata: Metadata = {
     description:
       "PF/ESI compliance, TDS management, gratuity automation, and AI workforce analytics for Indian enterprises.",
     url: "https://spacehr.net/regions/india",
+    siteName: "Space HR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HR Software for India | Space HR",
+    description: "PF/ESI compliance, TDS management, gratuity automation, and AI workforce analytics for Indian enterprises.",
   },
   alternates: {
     canonical: "https://spacehr.net/regions/india",
@@ -325,6 +332,32 @@ export default function IndiaPage() {
                 <p className="text-slate-400 text-sm">{item.desc}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PROSE SECTION */}
+      <section className="py-20 bg-[#0b1121]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-white mb-6">
+            India Payroll Compliance — PF, ESIC, TDS, Gratuity & the Statutory Framework
+          </h2>
+          <div className="space-y-5 text-slate-300 leading-relaxed text-lg">
+            <p>
+              India&apos;s statutory payroll compliance framework is one of the most layered in the world — combining central legislation with state-level variations in professional tax, Shops & Establishments Act requirements, and minimum wage notifications. For HR teams managing payroll across multiple states, the administrative burden compounds quickly: a company with offices in Maharashtra, Karnataka, and Tamil Nadu is simultaneously subject to three different professional tax slabs, three different Shops Act renewal processes, and state-specific minimum wage revisions that occur on different calendar cycles.
+            </p>
+            <p>
+              The Employees&apos; Provident Fund (EPF), governed by the EPF & MP Act 1952, is mandatory for establishments with 20 or more employees. Both employer and employee contribute 12% of the employee&apos;s basic salary and Dearness Allowance (DA) — but the employer&apos;s 12% is split: 3.67% goes to the EPF account and 8.33% to the Employees&apos; Pension Scheme (EPS), subject to the pensionable wage ceiling of ₹15,000 per month. The wage ceiling matters significantly for compliance: EPF contributions must be calculated on actual basic+DA for employees earning below ₹15,000, while for those above, employers can choose to contribute on ₹15,000 or the actual amount. Space HR automates this split, generates ECR (Electronic Challan cum Return) files for EPFO portal submission, and tracks UAN (Universal Account Number) links for all enrolled employees.
+            </p>
+            <p>
+              ESIC (Employees&apos; State Insurance Corporation) applies to employees earning up to ₹21,000 per month in establishments covered under the ESI Act 1948. The contribution rates are 3.25% by the employer and 0.75% by the employee, applied to gross wages. Critically, employees earning up to ₹137 per day are exempted from the employee contribution (though the employer still contributes). Space HR tracks ESIC eligibility dynamically — automatically enrolling employees who cross the coverage threshold due to promotions or wage revisions, and managing challan generation and e-return filing.
+            </p>
+            <p>
+              TDS on salaries (Section 192 of the Income Tax Act) requires employers to deduct tax at source from employee salaries based on the applicable slab rate, after accounting for investments declared under Section 80C (up to ₹1.5 lakh), HRA exemption, standard deduction of ₹50,000, and other eligible deductions. Space HR&apos;s TDS module processes investment declarations collected from employees in January, recalculates projected annual tax, and adjusts monthly TDS deductions for the remaining months of the financial year. Quarterly TDS returns (Form 24Q) are generated automatically, as is Form 16 for each employee at year-end — a document that is increasingly important as employees use it directly for ITR filing.
+            </p>
+            <p>
+              Gratuity under the Payment of Gratuity Act 1972 becomes payable on separation after five years of continuous service, calculated as 15 days of last drawn salary multiplied by years of service, divided by 26 (the working days denominator). The statutory ceiling is ₹20 lakh. Space HR calculates gratuity liability for all eligible employees in real time, maintains a gratuity provision in the financial analytics module, and generates the gratuity payment computation at the time of resignation or retirement — eliminating the manual lookups that commonly delay full-and-final settlements.
+            </p>
           </div>
         </div>
       </section>

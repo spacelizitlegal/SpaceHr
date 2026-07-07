@@ -11,13 +11,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!post) {
     return {
-      title: "Blog Post Not Found | SpaceHR",
+      title: "Blog Post Not Found | Space HR",
       robots: { index: false, follow: false },
     };
   }
 
-  const title = `${post.title} | SpaceHR Blog`;
+  const title = `${post.title} | Space HR Blog`;
   const description = post.summary.slice(0, 160);
+
+  if (post.noindex) {
+    return {
+      title,
+      description,
+      robots: { index: false, follow: false },
+    };
+  }
 
   return {
     title,
@@ -26,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       post.category,
       "HR blog",
       "HR insights",
-      "SpaceHR",
+      "Space HR",
       "human resources",
       "AI HR software",
     ],
@@ -37,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
       url: `https://spacehr.net/blogs/${slug}`,
-      siteName: "SpaceHR",
+      siteName: "Space HR",
       type: "article",
       publishedTime: post.date,
     },

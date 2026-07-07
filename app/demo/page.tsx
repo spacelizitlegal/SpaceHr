@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     "Watch a 2-minute demo of Space HR's AI-powered HRMS. See the AI HR chatbot, payroll anomaly detection, workforce cost forecasting, and employee self-service live. No signup required.",
   keywords: [
-    "space hr demo",
+    "Space HR demo",
     "ai hr software demo",
     "hr chatbot demo",
     "hr platform demo video",

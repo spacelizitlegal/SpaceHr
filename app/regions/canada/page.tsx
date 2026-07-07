@@ -38,6 +38,13 @@ export const metadata: Metadata = {
     description:
       "Automate Canadian payroll, provincial tax compliance, and workforce operations with Space HR.",
     url: "https://spacehr.net/regions/canada",
+    siteName: "Space HR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Canada Payroll & HR Compliance Software | Space HR",
+    description: "Automate Canadian payroll, provincial tax compliance, and workforce operations with Space HR.",
   },
   alternates: {
     canonical: "https://spacehr.net/regions/canada",
@@ -232,6 +239,32 @@ export default function CanadaPage() {
                 <span className="text-gray-700 dark:text-gray-300">{item}</span>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PROSE SECTION */}
+      <section className="py-20 bg-gray-50 dark:bg-[#0f172a]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+            Canadian Payroll Compliance — CPP, EI, Provincial Tax & CRA Obligations
+          </h2>
+          <div className="space-y-5 text-gray-700 dark:text-slate-300 leading-relaxed text-lg">
+            <p>
+              Canadian payroll compliance is uniquely complex because it operates at two levels simultaneously: federal obligations (CPP, EI, federal income tax) apply uniformly across most of the country, while provincial income tax, Workers&apos; Compensation premiums, and employment standards vary significantly by province. A company with employees in Ontario, British Columbia, Alberta, and Quebec is subject to four different tax rates, four different WCB/WSIB premium structures, four different employment standards codes — and Quebec adds its own pension plan (QPP) and parental insurance plan (QPIP) entirely separate from the federal programs.
+            </p>
+            <p>
+              Canada Pension Plan (CPP) contributions are mandatory for employees aged 18–70 outside Quebec, on employment income between the basic exemption ($3,500) and the maximum pensionable earnings ceiling ($68,500 for 2024). Both employee and employer contribute at 5.95%, with the employer matching dollar-for-dollar. CPP2 — the second additional contribution introduced in 2024 — applies at 4% on earnings between the first ceiling ($68,500) and the second ceiling ($73,200). Quebec employees contribute to QPP instead, which has different rates. Space HR tracks CPP and QPP contributions separately by province and maintains year-to-date maximums to stop deductions once employees reach their annual ceiling.
+            </p>
+            <p>
+              Employment Insurance (EI) premiums for 2024 are 1.66% of insurable earnings for employees (maximum insurable earnings: $63,200), with employers paying 1.4 times the employee rate — 2.324%. Quebec EI rates are lower because QPIP provides provincially-funded parental benefits. When an employee&apos;s employment ends for any reason, employers must issue a Record of Employment (ROE) within 5 calendar days of the last day paid — or within 5 days of becoming aware of an interruption. Late ROEs can delay EI benefits for former employees and attract CRA penalties. Space HR generates ROE files in the standard XML format accepted by Service Canada&apos;s ROE Web portal, pre-populated with all required earnings history and insurable hours data.
+            </p>
+            <p>
+              Provincial income tax withholding applies at each province&apos;s marginal rates in addition to federal tax. Ontario&apos;s top rate of 13.16% stacks on top of the federal rate of 33%, creating effective marginal rates above 50% for high earners. Provincial tax credits (basic personal amount, age credit, disability credit) reduce withholding and differ by province. Space HR maintains current provincial tax tables and applies the correct withholding for employees based on their province of employment — not their province of residence, which matters for remote workers crossing provincial borders.
+            </p>
+            <p>
+              T4 slips must be distributed to employees and submitted to CRA by the last day of February following the tax year. T4 Summary and electronic T4 filings are mandatory for employers filing 6 or more T4 slips. The T4 must accurately report all employment income, CPP contributions, EI premiums, income tax deducted, and any taxable benefits. Space HR generates T4 XML files in the CRA-specified schema, validates them against CRA business rules before submission, and maintains a digital copy of each T4 linked to the employee record for reference.
+            </p>
           </div>
         </div>
       </section>

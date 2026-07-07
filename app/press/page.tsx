@@ -17,30 +17,30 @@ import { JsonLd,
   generateBreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Press & Media Kit | SpaceHR — AI-Powered HR Platform",
+  title: "Press & Media Kit | Space HR — AI-Powered HR Platform",
   description:
-    "SpaceHR press resources: company overview, product facts, logo downloads, screenshots, and media contact. For journalists, analysts, and directory editors.",
+    "Space HR press resources: company overview, product facts, logo downloads, screenshots, and media contact. For journalists, analysts, and directory editors.",
   keywords: [
-    "SpaceHR press kit",
-    "SpaceHR media kit",
+    "Space HR press kit",
+    "Space HR media kit",
     "HR software press",
     "AI HR platform media",
-    "SpaceHR company info",
-    "SpaceHR logos",
-    "SpaceHR reviews",
-    "SpaceHR G2",
-    "SpaceHR Capterra",
-    "SpaceHR rating",
+    "Space HR company info",
+    "Space HR logos",
+    "Space HR reviews",
+    "Space HR G2",
+    "Space HR Capterra",
+    "Space HR rating",
   ],
   alternates: {
     canonical: "https://spacehr.net/press",
   },
   openGraph: {
-    title: "Press & Media Kit | SpaceHR",
+    title: "Press & Media Kit | Space HR",
     description:
-      "Brand assets, company facts, screenshots, and press contact for SpaceHR.",
+      "Brand assets, company facts, screenshots, and press contact for Space HR.",
     url: "https://spacehr.net/press",
-    siteName: "SpaceHR",
+    siteName: "Space HR",
     type: "website",
   },
 };
@@ -48,26 +48,26 @@ export const metadata: Metadata = {
 const pressSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
-  name: "SpaceHR Press & Media Kit",
+  name: "Space HR Press & Media Kit",
   url: "https://spacehr.net/press",
   description:
-    "Official press and media resources for SpaceHR — AI-powered HR platform.",
+    "Official press and media resources for Space HR — AI-powered HR platform.",
   publisher: {
     "@type": "Organization",
-    name: "SpaceHR",
+    name: "Space HR",
     url: "https://spacehr.net",
     logo: {
       "@type": "ImageObject",
       url: "https://spacehr.net/about_logo.png",
     },
     sameAs: [
-      "https://www.linkedin.com/company/spacehr",
-      "https://twitter.com/spacehr",
-      "https://www.g2.com/products/spacehr",
-      "https://www.capterra.com/p/spacehr",
-      "https://www.trustradius.com/products/spacehr",
-      "https://www.producthunt.com/products/spacehr",
-      "https://www.crunchbase.com/organization/spacehr",
+      "https://www.linkedin.com/company/Space HR",
+      "https://twitter.com/Space HR",
+      "https://www.g2.com/products/Space HR",
+      "https://www.capterra.com/p/Space HR",
+      "https://www.trustradius.com/products/Space HR",
+      "https://www.producthunt.com/products/Space HR",
+      "https://www.crunchbase.com/organization/Space HR",
     ],
   },
 };
@@ -124,7 +124,7 @@ const keyFeatures = [
   },
 ];
 
-const boilerplate = `SpaceHR is an AI-powered HR and payroll platform built for mid-market and enterprise companies. SpaceHR combines a 24/7 AI HR chatbot for employee self-service, an AI Payroll Auditor that eliminates payroll errors before processing, 12-month labor cost forecasting with 95% accuracy, attrition prediction, and 360-degree performance appraisals — all in one platform. SpaceHR supports payroll compliance across the United States, UAE, Singapore, Canada, and Europe. Teams go live in 48 hours. Learn more at spacehr.net.`;
+const boilerplate = `Space HR is an AI-powered HR and payroll platform built for mid-market and enterprise companies. Space HR combines a 24/7 AI HR chatbot for employee self-service, an AI Payroll Auditor that eliminates payroll errors before processing, 12-month labor cost forecasting with 95% accuracy, attrition prediction, and 360-degree performance appraisals — all in one platform. Space HR supports payroll compliance across the United States, UAE, Singapore, Canada, and Europe. Teams go live in 48 hours. Learn more at spacehr.net.`;
 
 const _bc_press = [{"name":"Home","url":"https://spacehr.net"},{"name":"Press","url":"https://spacehr.net/press"}];
 
@@ -142,10 +142,10 @@ export default function PressPage() {
               <span className="text-blue-300 text-sm font-medium">Press &amp; Media Kit</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              SpaceHR Media Resources
+              Space HR Media Resources
             </h1>
             <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
-              Everything journalists, analysts, and directory editors need to write about SpaceHR —
+              Everything journalists, analysts, and directory editors need to write about Space HR —
               brand assets, product facts, screenshots, and press contact.
             </p>
             <a
@@ -236,7 +236,7 @@ export default function PressPage() {
               </h2>
             </div>
             <p className="text-gray-600 dark:text-gray-400 mb-8">
-              SpaceHR is listed on the major SaaS review platforms below. If you&apos;re a customer,
+              Space HR is listed on the major SaaS review platforms below. If you&apos;re a customer,
               we&apos;d be grateful for an honest review — it helps other HR teams find us.
             </p>
 
@@ -246,7 +246,7 @@ export default function PressPage() {
                   name: "G2",
                   category: "HR Software",
                   description: "The world's largest B2B software review platform. Verified user reviews from HR professionals.",
-                  url: "https://www.g2.com/products/spacehr",
+                  url: "https://www.g2.com/products/Space HR",
                   cta: "Review on G2",
                   badge: "4.8★",
                 },
@@ -254,7 +254,7 @@ export default function PressPage() {
                   name: "Capterra",
                   category: "HRMS & HR Software",
                   description: "Gartner-owned directory trusted by millions of business software buyers.",
-                  url: "https://www.capterra.com/p/spacehr",
+                  url: "https://www.capterra.com/p/Space HR",
                   cta: "Review on Capterra",
                   badge: "4.8★",
                 },
@@ -262,23 +262,23 @@ export default function PressPage() {
                   name: "TrustRadius",
                   category: "HR Management Software",
                   description: "In-depth B2B software reviews with detailed criteria scoring.",
-                  url: "https://www.trustradius.com/products/spacehr",
+                  url: "https://www.trustradius.com/products/Space HR",
                   cta: "Review on TrustRadius",
                   badge: "4.8★",
                 },
                 {
                   name: "Product Hunt",
                   category: "AI HR Tools",
-                  description: "Where tech teams discover new products. Upvote SpaceHR and leave a comment.",
-                  url: "https://www.producthunt.com/products/spacehr",
+                  description: "Where tech teams discover new products. Upvote Space HR and leave a comment.",
+                  url: "https://www.producthunt.com/products/Space HR",
                   cta: "View on Product Hunt",
                   badge: null,
                 },
                 {
                   name: "Crunchbase",
                   category: "Company Profile",
-                  description: "SpaceHR company profile including funding, team, and product information.",
-                  url: "https://www.crunchbase.com/organization/spacehr",
+                  description: "Space HR company profile including funding, team, and product information.",
+                  url: "https://www.crunchbase.com/organization/Space HR",
                   cta: "View on Crunchbase",
                   badge: null,
                 },
@@ -286,7 +286,7 @@ export default function PressPage() {
                   name: "GetApp",
                   category: "HR & Payroll Software",
                   description: "Gartner Digital Markets platform for small and mid-size business software buyers.",
-                  url: "https://www.getapp.com/hr-employee-management-software/a/spacehr/",
+                  url: "https://www.getapp.com/hr-employee-management-software/a/Space HR/",
                   cta: "Review on GetApp",
                   badge: "4.8★",
                 },
@@ -326,7 +326,7 @@ export default function PressPage() {
                 For Directory Editors &amp; Analysts
               </h3>
               <p className="text-sm text-gray-600 dark:text-gray-400 mb-3">
-                Updating or creating a SpaceHR listing? Use the company boilerplate above, our brand
+                Updating or creating a Space HR listing? Use the company boilerplate above, our brand
                 assets below, and contact{" "}
                 <a
                   href="mailto:partnerships@spacehr.net"
@@ -339,11 +339,11 @@ export default function PressPage() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3 text-xs text-gray-600 dark:text-gray-400">
                 {[
                   { label: "Category", value: "HR Software / HRMS / AI HR" },
-                  { label: "Pricing Model", value: "Per employee/month, SaaS" },
+                  { label: "Pricing Model", value: "Custom quote (request a demo)" },
                   { label: "Deployment", value: "Cloud / SaaS" },
                   { label: "Company Size", value: "Startup → Enterprise" },
                   { label: "Founded", value: "2023" },
-                  { label: "HQ", value: "Remote-first, global" },
+                  { label: "HQ", value: "United States" },
                   { label: "Website", value: "spacehr.net" },
                   { label: "Trial Available", value: "Yes — free trial" },
                 ].map(({ label, value }) => (
@@ -372,7 +372,7 @@ export default function PressPage() {
                 <div className="bg-white p-8 flex items-center justify-center h-40">
                   <Image
                     src="/about_logo.png"
-                    alt="SpaceHR logo on white background"
+                    alt="Space HR logo on white background"
                     width={160}
                     height={60}
                     className="object-contain"
@@ -388,7 +388,7 @@ export default function PressPage() {
                 <div className="bg-[#0b1121] p-8 flex items-center justify-center h-40">
                   <Image
                     src="/about_logo.png"
-                    alt="SpaceHR logo on dark background"
+                    alt="Space HR logo on dark background"
                     width={160}
                     height={60}
                     className="object-contain"
@@ -404,7 +404,7 @@ export default function PressPage() {
                 <div className="bg-gray-100 dark:bg-gray-800 p-8 flex items-center justify-center h-40">
                   <Image
                     src="/hrlogonly.png"
-                    alt="SpaceHR icon mark"
+                    alt="Space HR icon mark"
                     width={80}
                     height={80}
                     className="object-contain"
@@ -498,12 +498,12 @@ export default function PressPage() {
             </h2>
             <ul className="space-y-3 text-gray-600 dark:text-gray-400">
               {[
-                'Refer to the product as "SpaceHR" (one word, capital S and HR).',
-                'The parent company is "Space AI" — use SpaceHR when referring to the HR product.',
+                'Refer to the product as "Space HR" (one word, capital S and HR).',
+                'The parent company is "Space AI" — use Space HR when referring to the HR product.',
                 "Do not alter the logo in any way — no recoloring, stretching, or added effects.",
                 'The preferred product description is: "AI-powered HR platform" or "AI HR and payroll software".',
                 "For screenshots or product images beyond what is shown here, please email press@spacehr.net.",
-                "Link to https://spacehr.net when citing SpaceHR in online articles.",
+                "Link to https://spacehr.net when citing Space HR in online articles.",
               ].map((guideline, i) => (
                 <li key={i} className="flex items-start gap-3">
                   <span className="w-6 h-6 rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">
@@ -518,7 +518,7 @@ export default function PressPage() {
               <h3 className="font-bold text-gray-900 dark:text-white mb-2">Also see</h3>
               <div className="flex flex-wrap gap-4 text-sm">
                 <Link href="/about" className="text-blue-600 dark:text-blue-400 hover:underline">
-                  About SpaceHR
+                  About Space HR
                 </Link>
                 <Link href="/features" className="text-blue-600 dark:text-blue-400 hover:underline">
                   All Features

@@ -14,13 +14,18 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Leena AI vs Space HR: Full HR Suite vs Standalone Chatbot",
   description: "Leena AI is a standalone HR chatbot. Space HR combines AI HR concierge with payroll anomaly detection, leave management, attrition prediction, and a complete HRMS — one platform, one price.",
-  keywords: ["leena ai alternative","space hr vs leena ai","hr chatbot with payroll","ai hr platform","leena ai competitor"],
+  keywords: ["leena ai alternative","Space HR vs leena ai","hr chatbot with payroll","ai hr platform","leena ai competitor"],
+  twitter: {
+    card: "summary_large_image",
+    title: "Leena AI vs Space HR: Full HR Suite vs Standalone Chatbot",
+    description: "Leena AI is a standalone HR chatbot. Space HR combines AI HR concierge with payroll anomaly detection, leave management, attrition prediction, and a complete HRMS — one platform, one price.",
+  },
   alternates: { canonical: "https://spacehr.net/compare/leena-ai" },
   openGraph: {
     title: "Leena AI vs Space HR: Full HR Suite vs Standalone Chatbot",
     description: "Leena AI is a standalone HR chatbot. Space HR combines AI HR concierge with payroll anomaly detection, leave management, attrition prediction, and a complete HRMS — one platform, one price.",
     url: "https://spacehr.net/compare/leena-ai",
-    siteName: "SpaceHR",
+    siteName: "Space HR",
     images: [{ url: "/desktop-design-showcase.webp", width: 1200, height: 630, alt: "Space HR vs Leena AI Comparison" }],
   },
 };

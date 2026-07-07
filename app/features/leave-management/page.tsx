@@ -532,6 +532,32 @@ export default function LeaveManagementPage() {
         </div>
       </section>
 
+      {/* PROSE SECTION */}
+      <section className="py-20 bg-gray-50 dark:bg-[#0f172a]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+            Why Leave Management Software Replaces Spreadsheets — And What Changes When It Does
+          </h2>
+          <div className="prose prose-lg dark:prose-invert text-gray-700 dark:text-gray-300 leading-relaxed space-y-5">
+            <p>
+              For most companies, leave management starts as a spreadsheet problem. Someone owns a shared Google Sheet tracking PTO balances, managers email approvals, and HR reconciles the numbers manually at month-end. This works at 20 employees. By 100, the spreadsheet has inconsistencies. By 500, it has compliance gaps. Leave management software doesn't just digitize the spreadsheet — it changes the process architecture entirely, moving from reactive tracking to proactive policy enforcement.
+            </p>
+            <p>
+              The core shift is in approval workflows. When an employee submits a leave request in Space HR, the system doesn't simply route it to a manager's inbox. It first checks the employee's current balance against the request, applies any blackout periods or team coverage rules configured by HR, and flags conflicts if the department falls below minimum staffing thresholds. Managers receive a request that has already been pre-validated — reducing approval time from days to minutes, and eliminating the most common approval errors: granting leave when balances are insufficient, or approving requests during periods that violate coverage policies.
+            </p>
+            <p>
+              Accrual accuracy is the second major improvement. Statutory leave entitlements vary significantly across jurisdictions: 28 days per year in the UK (including 8 bank holidays), 15 days of annual earned leave under India's Factories Act, 10 days of paid vacation plus 6 personal days in Singapore under the Employment Act, and varying state mandates across US jurisdictions. Space HR maintains jurisdiction-specific accrual rules that update automatically when statutory minimums change. For global teams, this means each employee's balance reflects their local statutory entitlement — not a generic global policy that may underprovide in some markets and overprovide in others.
+            </p>
+            <p>
+              The payroll connection closes the most persistent source of leave-related payroll errors. When leave is approved in Space HR, the approval immediately updates the payroll engine's calculation inputs. Unpaid leave reduces the gross wages calculation for that pay period. Paid leave is included at the correct rate. Leave encashment — where unused PTO is paid out at termination — calculates automatically using the employee's current base rate and unused balance. This real-time sync eliminates the manual leave-to-payroll reconciliation that typically consumes 4–6 HR hours per payroll cycle in a 200-person company.
+            </p>
+            <p>
+              Pattern detection adds a proactive compliance layer. Space HR's dashboards show managers leave frequency trends — identifying employees who consistently take leave on Mondays and Fridays, who request leave immediately after accrual, or who show absence patterns correlating with performance review periods. Early identification of these patterns enables HR conversations before patterns become policy violations or legal issues, shifting leave management from retroactive enforcement to proactive people management.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-24 bg-white dark:bg-gray-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">

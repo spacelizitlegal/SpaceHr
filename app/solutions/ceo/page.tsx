@@ -43,6 +43,13 @@ export const metadata: Metadata = {
     description:
       "Real-time labor cost visibility, predictive forecasting, and AI-powered executive dashboards for strategic decision-making.",
     url: "https://spacehr.net/solutions/ceo",
+    siteName: "Space HR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Space HR for CEOs | Labor Cost Analysis & Forecasting",
+    description: "Real-time labor cost visibility, predictive forecasting, and AI-powered executive dashboards for strategic decision-making.",
   },
   alternates: {
     canonical: "https://spacehr.net/solutions/ceo",

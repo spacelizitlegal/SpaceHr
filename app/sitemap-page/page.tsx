@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function SitemapPage() {
   const routes = [
     {
-      name: "Explore SpaceHR",
+      name: "Explore Space HR",
       path: "/",
       subRoutes: [
         { name: "Home", path: "/" },

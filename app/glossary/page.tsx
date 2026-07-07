@@ -29,6 +29,13 @@ export const metadata: Metadata = {
     description:
       "Comprehensive glossary of modern HR technology terms — from predictive analytics to geofenced attendance.",
     url: "https://spacehr.net/glossary",
+    siteName: "Space HR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Future of Work & HR Glossary | Space HR",
+    description: "Comprehensive glossary of modern HR technology terms — from predictive analytics to geofenced attendance.",
   },
   alternates: {
     canonical: "https://spacehr.net/glossary",

@@ -24,7 +24,13 @@ export const metadata: Metadata = {
     description:
       "Complete your IRS W-4 form online and download a ready-to-submit PDF. Free tool by Space HR.",
     url: "https://spacehr.net/tools/w4-generator",
+    siteName: "Space HR",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Free W-4 Form Generator 2024 | Fill & Download PDF | Space HR",
+    description: "Generate your IRS W-4 Employee's Withholding Certificate online in minutes. Fill out your W-4 form digitally and download a completed PDF.",
   },
 };
 

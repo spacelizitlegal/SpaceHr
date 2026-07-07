@@ -44,6 +44,13 @@ export const metadata: Metadata = {
     description:
       "MOM-compliant HRMS with CPF automation, IRAS tax filing, and AI-powered workforce analytics for Singapore companies.",
     url: "https://spacehr.net/regions/singapore",
+    siteName: "Space HR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Top AI HR Software in Singapore | Space HR",
+    description: "MOM-compliant HRMS with CPF automation, IRAS tax filing, and AI-powered workforce analytics for Singapore companies.",
   },
   alternates: {
     canonical: "https://spacehr.net/regions/singapore",
@@ -202,6 +209,32 @@ export default function SingaporePage() {
                 <span className="text-gray-700 dark:text-gray-300">{item}</span>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PROSE SECTION */}
+      <section className="py-20 bg-gray-50 dark:bg-[#0f172a]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+            Singapore HR Compliance — CPF, MOM Employment Act, SDL & IRAS Obligations
+          </h2>
+          <div className="space-y-5 text-gray-700 dark:text-slate-300 leading-relaxed text-lg">
+            <p>
+              Singapore operates one of the most structured employment regulatory environments in Southeast Asia, with CPF contributions, the Employment Act (Cap. 91), Skills Development Levy, and IRAS income tax obligations all requiring systematic compliance. For multi-national companies expanding into Singapore, the compliance model differs fundamentally from both the US (at-will employment, employer-side benefits) and India (extensive statutory deductions) — requiring specific knowledge of Singapore&apos;s unique mechanisms.
+            </p>
+            <p>
+              CPF (Central Provident Fund) contributions are mandatory for Singapore citizens and permanent residents working in Singapore. For employees below 55, the total contribution is 37% of monthly wages — 20% from the employee and 17% from the employer. This rate decreases in steps as employees age: the 55–60 cohort contributes 13% employee + 15% employer, and over-70s contribute 5% + 7.5%. The Ordinary Wage (OW) ceiling is $6,000 per month — contributions above this ceiling are only required on Additional Wages (bonuses, commissions) up to the Annual Wage Ceiling of $102,000 less ordinary wages already contributed upon. Space HR automates CPF calculation for each employee based on their age bracket, citizenship status, and wage components, generating CPF submission files in the format required by the CPF Board&apos;s e-Submit gateway.
+            </p>
+            <p>
+              The Employment Act establishes core employment standards including minimum annual leave entitlement (7 days rising to 14 days based on years of service), paid sick leave (14–60 days depending on hospitalization status), and maternity/paternity leave. Part IV of the Employment Act — which covers additional protections including overtime pay, rest days, and hours of work — applies specifically to employees earning up to $2,600 per month. For employees above this threshold, the protections are contractual rather than statutory. Space HR applies the correct Part IV determinations based on each employee&apos;s salary and tracks leave entitlements by service tenure automatically.
+            </p>
+            <p>
+              The Skills Development Levy (SDL) is a mandatory employer contribution of 0.25% of gross monthly wages, subject to a minimum of $2 and capped at $11.25 per employee per month. SDL applies to all employees, including foreign workers, and funds SkillsFuture Singapore&apos;s workforce development programs. The Foreign Worker Levy (FWL) adds another layer for employers with work permit and S Pass holders — FWL rates vary by sector (construction, marine, process, services) and by the employer&apos;s dependency ratio ceiling. Space HR tracks both SDL and FWL for each employee category and generates consolidated monthly payment summaries.
+            </p>
+            <p>
+              IR8A annual income tax reporting to IRAS (Inland Revenue Authority of Singapore) requires employers to submit details of employee earnings, benefits-in-kind, and tax deductions by 1 March each year. For employers with 6 or more employees or those instructed by IRAS, submission must be made electronically via the Auto-Inclusion Scheme (AIS). Space HR generates AIS-compliant IR8A files with the correct field formats, validates them before submission, and maintains the submission history for audit purposes.
+            </p>
           </div>
         </div>
       </section>

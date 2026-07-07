@@ -44,6 +44,13 @@ export const metadata: Metadata = {
     description:
       "5-step payroll wizard, automated compliance, and AI auditing for HR administrators.",
     url: "https://spacehr.net/solutions/hr-admin",
+    siteName: "Space HR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Space HR for HR Admins | Payroll Wizard & Compliance",
+    description: "5-step payroll wizard, automated compliance, and AI auditing for HR administrators.",
   },
   alternates: {
     canonical: "https://spacehr.net/solutions/hr-admin",

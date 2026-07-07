@@ -23,29 +23,39 @@ import {
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Enterprise HRMS Solutions in Dubai | UAE HR Software | Space HR",
+  title: "HR Software for Dubai & UAE | WPS Payroll, MOHRE & HRMS",
   description:
-    "Space HR delivers enterprise HRMS solutions in Dubai and the UAE. WPS-compliant payroll, MOHRE integration, gratuity calculation, and AI-powered workforce analytics for UAE businesses.",
+    "Space HR is UAE-ready HR software for Dubai businesses — WPS-compliant payroll, MOHRE integration, gratuity (EOSB) calculation, Emiratization tracking, and AI HR chatbot. Setup in 48 hours.",
   keywords: [
-    "enterprise HRMS solutions Dubai",
+    "HR software Dubai",
     "UAE HR software",
-    "Dubai payroll software",
-    "WPS compliant payroll UAE",
+    "WPS payroll software UAE",
+    "HRMS Dubai",
     "MOHRE integration software",
     "UAE gratuity calculation",
-    "Dubai HR management system",
+    "Dubai payroll software",
     "best HR software Dubai",
     "UAE workforce analytics",
     "DIFC ADGM HR compliance",
     "UAE end of service benefits",
-    "Dubai employee management",
+    "Emiratization software",
     "GCC HR software",
+    "HR chatbot Dubai",
+    "UAE HRMS",
   ],
   openGraph: {
-    title: "Enterprise HRMS Solutions in Dubai | Space HR",
+    title: "HR Software for Dubai & UAE | WPS Payroll, MOHRE & HRMS | Space HR",
     description:
-      "WPS-compliant payroll, MOHRE integration, gratuity calculation, and AI workforce analytics for UAE businesses.",
+      "WPS-compliant payroll, MOHRE integration, EOSB gratuity calculation, and AI HR chatbot — built for UAE Labour Law. Used by businesses across Dubai, Abu Dhabi, and UAE free zones.",
     url: "https://spacehr.net/regions/dubai",
+    siteName: "Space HR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HR Software for Dubai & UAE | WPS Payroll, MOHRE & HRMS | Space HR",
+    description:
+      "WPS-compliant payroll, EOSB gratuity, MOHRE integration, and AI HR chatbot — UAE-ready HR software. Setup in 48 hours.",
   },
   alternates: {
     canonical: "https://spacehr.net/regions/dubai",
@@ -181,8 +191,27 @@ export default function DubaiPage() {
         </div>
       </section>
 
+      {/* PROSE CONTENT SECTION */}
       <section className="py-24 bg-gray-50 dark:bg-[#0f172a]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+            HR Software Built for Dubai&apos;s Business Environment
+          </h2>
+          <div className="prose prose-lg dark:prose-invert max-w-none text-gray-600 dark:text-gray-300 space-y-6 mb-20">
+            <p>
+              Running HR in Dubai is operationally different from anywhere else in the world. The UAE&apos;s <strong>Wages Protection System (WPS)</strong> mandates that every private sector employer submit a Salary Information File (SIF) through an approved bank or exchange house for each payroll cycle. Failure to comply results in fines and visa freeze risk for the company. Most HR software built for Western markets has no concept of WPS at all — they can&apos;t generate a valid SIF file, they don&apos;t validate employee records against MOHRE requirements, and they have no mechanism for the multi-bank payroll exports that many UAE businesses need. Space HR generates WPS-compliant SIF files automatically, validates every record before export, and supports payroll disbursement across multiple approved UAE banks simultaneously.
+            </p>
+            <p>
+              <strong>End-of-service gratuity (EOSB)</strong> is among the most commonly miscalculated HR obligations in the UAE. Under UAE Labour Law (Federal Decree-Law No. 33 of 2021), gratuity entitlement depends on contract type (limited vs. unlimited), duration of service (with different rates applying below and above five years), the method of resignation or termination, and whether the employee is covered by mainland MOHRE rules, DIFC Employee Workplace Savings (DEWS), or ADGM-specific provisions. Manual gratuity calculations introduce systematic errors — particularly when employees cross service duration thresholds, when contract types change, or when the calculation needs to account for unpaid leave periods. Space HR&apos;s gratuity engine automates the full calculation matrix including DEWS contributions (5.83% under five years, 8.33% above five years) and GPSSA pension for UAE nationals (12.5% employer, 5% employee).
+            </p>
+            <p>
+              <strong>Emiratization</strong> — the UAE government&apos;s mandate to increase Emirati participation in the private sector — is now enforced with quarterly quotas for companies above a minimum headcount threshold. Non-compliance results in financial penalties calculated per unfilled Emirati position per month. HR teams managing Emiratization manually, through spreadsheets and periodic MOHRE portal checks, frequently miss the quarterly reporting windows. Space HR provides a live Emiratization dashboard that tracks your current UAE national headcount, calculates your compliance ratio against the applicable target percentage for your sector, and forecasts how planned hires will affect your quarterly compliance status before the reporting deadline arrives.
+            </p>
+            <p>
+              Dubai&apos;s workforce is among the most internationally diverse in the world — over 85% of UAE residents are expatriates, representing more than 200 nationalities. This creates an HR administration complexity that no single-country HR system can handle: visa types (employment visa, investor visa, freelancer permit, golden visa) each have different renewal timelines and documentation requirements; labor cards and Emirates IDs expire on independent schedules; free zone employees (DIFC, ADGM, JAFZA, DAFZA, and others) operate under zone-specific employment contracts and dispute resolution mechanisms. Space HR centralizes all immigration document tracking in one compliance dashboard, sends automated renewal alerts at 90, 60, and 30 days before expiry, and supports zone-specific payroll and contract structures for employees across all major UAE free zones.
+            </p>
+          </div>
+
           <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4 text-center">
             UAE Compliance & Deductions Table
           </h2>

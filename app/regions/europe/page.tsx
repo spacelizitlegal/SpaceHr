@@ -38,6 +38,13 @@ export const metadata: Metadata = {
     description:
       "Run multi-country payroll and HR operations across Europe with one centralized platform.",
     url: "https://spacehr.net/regions/europe",
+    siteName: "Space HR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Europe Payroll & HR Compliance Platform | Space HR",
+    description: "Run multi-country payroll and HR operations across Europe with one centralized platform.",
   },
   alternates: {
     canonical: "https://spacehr.net/regions/europe",

@@ -508,6 +508,32 @@ export default function GoalsPage() {
         </div>
       </section>
 
+      {/* PROSE SECTION */}
+      <section className="py-20 bg-white dark:bg-[#0b1121]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+            OKR-Based Goal Management — How Cascading Objectives Drive Organizational Alignment
+          </h2>
+          <div className="prose prose-lg dark:prose-invert text-gray-700 dark:text-gray-300 leading-relaxed space-y-5">
+            <p>
+              Most companies set annual goals and review them once. By Q3, the goals are forgotten — buried under shifting priorities and day-to-day operational demands. The Objectives and Key Results (OKR) framework exists to solve this: instead of setting goals once per year and measuring them once per year, OKRs create a 90-day cadence of setting, tracking, and reviewing progress, with company-level objectives cascading down to teams and individuals so that every contributor can see how their work connects to organizational strategy.
+            </p>
+            <p>
+              The cascade mechanism is the defining feature of effective OKR implementation. A company-level objective — "Become the market leader in our category by end of year" — breaks into functional objectives for Sales, Product, and Marketing. Each functional objective then generates team-level key results with measurable targets. Individual contributors set their own key results that support team objectives. This creates a tree structure where every employee's daily work is traceable upward to a company priority, and every leadership decision is traceable downward to individual accountability. Without software enforcing this structure, the cascade collapses into misaligned goal-setting exercises.
+            </p>
+            <p>
+              Space HR's goal management system enforces alignment through parent-child goal relationships. When a manager creates a team objective, team members link their individual goals as children of that objective. The system aggregates completion percentages upward — so a team objective automatically shows 60% complete when the weighted average of its child goals is 60% complete. This gives leaders a real-time dashboard of organizational progress without requiring manual status updates or weekly reporting meetings.
+            </p>
+            <p>
+              AI-powered check-in alerts change the cadence of goal engagement. Rather than waiting for quarterly reviews to identify goals that are off track, Space HR monitors progress rates against expected timelines. If a key result that should be 40% complete by mid-quarter is at 15%, the system flags it and prompts the goal owner to update their status and note blockers. Managers receive aggregated risk dashboards showing which team goals are at risk, allowing early intervention rather than end-of-quarter surprises. Research consistently shows that goals reviewed weekly are completed at 2.4× the rate of goals reviewed annually.
+            </p>
+            <p>
+              Goal visibility also improves cross-functional collaboration. When employees can see each other's public objectives, they identify natural dependencies and coordination opportunities that would otherwise surface only in escalation meetings. A product manager whose OKR depends on a platform capability being delivered by engineering can see the engineering team's timeline in real time — and flag the dependency before it becomes a blocker. This transparency is particularly valuable for distributed and hybrid teams where informal corridor conversations no longer surface these connections naturally.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA SECTION */}
       <section className="py-24 bg-gradient-to-br from-violet-600 via-purple-600 to-indigo-700 relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGQ9Ik0wIDBoMzAwdjMwMEgweiIgZmlsdGVyPSJ1cmwoI2EpIiBvcGFjaXR5PSIuMDUiLz48L3N2Zz4=')] opacity-30"></div>

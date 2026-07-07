@@ -25,45 +25,45 @@ import {
 import ROICalculator from "./ROICalculator";
 
 export const metadata: Metadata = {
-  title: "Employee Self-Service Portal — 24/7 HR Automation | SpaceHR",
+  title: "Employee Self-Service Implementation & ROI | Space HR",
   description:
-    "Give employees instant 24/7 access to payslips, leave requests, policy answers, and benefits — without HR intervention. SpaceHR's self-service portal cuts HR admin by 80%. Setup in 48 hours.",
+    "Deploy an employee self-service solution in 48 hours. See integration options, security controls, rollout steps, and ROI for mid-market and enterprise HR teams.",
   keywords: [
-    "employee self-service",
-    "employee self service portal",
-    "hr self service",
-    "employee self service software",
-    "hr self service portal",
-    "employee portal hr",
-    "hr automation software",
-    "24/7 hr support",
-    "employee self service chatbot",
-    "hr portal for employees",
+    "employee self service implementation",
+    "employee self service deployment",
+    "employee self service roi",
+    "hr self service integration",
+    "employee self service solution",
+    "ess deployment",
+    "employee portal implementation",
+    "hr automation roi",
+    "employee self service setup",
+    "hr self service rollout",
   ],
   alternates: {
     canonical: "https://spacehr.net/solutions/employee-self-service",
   },
   openGraph: {
-    title: "Employee Self-Service Portal — 24/7 HR Automation | SpaceHR",
+    title: "Employee Self-Service Implementation & ROI | Space HR",
     description:
-      "Employees get instant answers about leave, payroll, and benefits 24/7. No HR tickets, no waiting. SpaceHR's self-service portal — setup in 48 hours.",
+      "Deploy an employee self-service solution in 48 hours. Integration, security, rollout, and ROI for enterprise HR teams.",
     url: "https://spacehr.net/solutions/employee-self-service",
-    siteName: "SpaceHR",
+    siteName: "Space HR",
     images: [
       {
         url: "https://spacehr.net/desktop-design-showcase.webp",
         width: 1200,
         height: 630,
-        alt: "SpaceHR Employee Self-Service Portal",
+        alt: "Space HR Employee Self-Service Implementation",
       },
     ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Employee Self-Service Portal — 24/7 HR Automation | SpaceHR",
+    title: "Employee Self-Service Implementation & ROI | Space HR",
     description:
-      "Give employees instant 24/7 access to payslips, leave, policies & benefits. Cut HR tickets by 70%. Setup in 48 hours.",
+      "Deploy ESS in 48 hours. Integration, security, rollout steps, and ROI for HR teams.",
     images: ["https://spacehr.net/desktop-design-showcase.webp"],
   },
 };
@@ -72,27 +72,27 @@ const faqItems = [
   {
     question: "What is an employee self-service portal?",
     answer:
-      "An employee self-service (ESS) portal is a secure online platform that lets employees independently access and manage their HR information — payslips, leave balances, personal details, tax forms, and policy documents — without needing to contact HR directly. SpaceHR's ESS portal adds an AI chatbot layer so employees can ask questions in natural language, 24/7.",
+      "An employee self-service (ESS) portal is a secure online platform that lets employees independently access and manage their HR information — payslips, leave balances, personal details, tax forms, and policy documents — without needing to contact HR directly. Space HR's ESS portal adds an AI chatbot layer so employees can ask questions in natural language, 24/7.",
   },
   {
     question: "How much time does self-service save HR teams?",
     answer:
-      "SpaceHR customers report an average 80% reduction in routine HR tickets within 90 days of deployment. A typical HR manager spends 15–20 hours per week answering repetitive employee questions. With SpaceHR's self-service, that drops to under 3 hours — freeing the rest for strategic work.",
+      "Space HR customers report an average 80% reduction in routine HR tickets within 90 days of deployment. A typical HR manager spends 15–20 hours per week answering repetitive employee questions. With Space HR's self-service, that drops to under 3 hours — freeing the rest for strategic work.",
   },
   {
     question: "Can employees access the portal on mobile?",
     answer:
-      "Yes. SpaceHR's self-service portal is fully responsive and works on any device — desktop, tablet, or smartphone. Employees can submit leave requests, check payslips, or ask policy questions from anywhere, at any time.",
+      "Yes. Space HR's self-service portal is fully responsive and works on any device — desktop, tablet, or smartphone. Employees can submit leave requests, check payslips, or ask policy questions from anywhere, at any time.",
   },
   {
-    question: "Does SpaceHR integrate with our existing HRMS or payroll system?",
+    question: "Does Space HR integrate with our existing HRMS or payroll system?",
     answer:
-      "SpaceHR integrates with major HRMS and payroll systems including Workday, BambooHR, ADP, Gusto, Rippling, and custom setups via API. Employee data stays in sync automatically so the self-service portal always reflects real-time information.",
+      "Space HR integrates with major HRMS and payroll systems including Workday, BambooHR, ADP, Gusto, Rippling, and custom setups via API. Employee data stays in sync automatically so the self-service portal always reflects real-time information.",
   },
   {
     question: "How secure is employee self-service data?",
     answer:
-      "SpaceHR uses enterprise-grade security: 256-bit AES encryption at rest, TLS 1.3 in transit, role-based access controls (RBAC), MFA support, and SOC 2 Type II compliance. Employees only ever see their own data.",
+      "Space HR uses enterprise-grade security: 256-bit AES encryption at rest, TLS 1.3 in transit, role-based access controls (RBAC), MFA support, and SOC 2 Type II compliance. Employees only ever see their own data.",
   },
   {
     question: "What types of requests can employees handle themselves?",
@@ -102,12 +102,12 @@ const faqItems = [
   {
     question: "How long does deployment take?",
     answer:
-      "SpaceHR deploys in as little as 48 hours for standard setups. Enterprise deployments with custom integrations typically take 1–2 weeks. Our onboarding team handles data migration, configuration, and staff training.",
+      "Space HR deploys in as little as 48 hours for standard setups. Enterprise deployments with custom integrations typically take 1–2 weeks. Our onboarding team handles data migration, configuration, and staff training.",
   },
   {
     question: "What ROI can we expect from employee self-service?",
     answer:
-      "Typical SpaceHR customers see ROI within 60 days. For a 200-person company, automated self-service saves approximately $4,200/month in HR staff time, reduces payroll query handling by 75%, and cuts onboarding admin time by 60%. Use our ROI calculator on this page to estimate your specific savings.",
+      "Typical Space HR customers see ROI within 60 days. For a 200-person company, automated self-service saves approximately $4,200/month in HR staff time, reduces payroll query handling by 75%, and cuts onboarding admin time by 60%. Use our ROI calculator on this page to estimate your specific savings.",
   },
 ];
 
@@ -179,7 +179,7 @@ const useCases = [
     problem:
       "Employees email HR to check leave balances, then submit requests via email or paper forms. HR manually checks entitlements, emails back approvals, and updates spreadsheets.",
     solution:
-      "Employee opens SpaceHR, sees real-time leave balance, submits request in one click. Manager gets instant notification, approves in one click. Employee gets immediate confirmation. HR has zero involvement.",
+      "Employee opens Space HR, sees real-time leave balance, submits request in one click. Manager gets instant notification, approves in one click. Employee gets immediate confirmation. HR has zero involvement.",
     result: "Leave admin time reduced from 45 min to 2 min per request",
     color: "blue",
   },
@@ -190,7 +190,7 @@ const useCases = [
     problem:
       "Payroll queries are the #1 HR ticket type. Employees ask: 'Where's my payslip?', 'Why did my net pay change?', 'Can I get my last 6 payslips for a mortgage application?'",
     solution:
-      "SpaceHR's self-service portal gives every employee instant access to their full payslip history, downloadable PDFs, and an AI chatbot that explains deductions and net pay changes in plain language.",
+      "Space HR's self-service portal gives every employee instant access to their full payslip history, downloadable PDFs, and an AI chatbot that explains deductions and net pay changes in plain language.",
     result: "75% reduction in payroll-related HR tickets within 30 days",
     color: "green",
   },
@@ -201,7 +201,7 @@ const useCases = [
     problem:
       "HR chases new hires for contracts, ID documents, bank details, and tax forms via email chains. Average onboarding admin: 4–6 hours per new hire for HR coordinators.",
     solution:
-      "New hires complete a self-guided digital onboarding checklist. SpaceHR auto-sends reminders, tracks completion, and stores documents securely — HR reviews a complete package, not scattered emails.",
+      "New hires complete a self-guided digital onboarding checklist. Space HR auto-sends reminders, tracks completion, and stores documents securely — HR reviews a complete package, not scattered emails.",
     result: "Onboarding admin reduced from 5 hours to 45 minutes per hire",
     color: "purple",
   },
@@ -212,7 +212,7 @@ const useCases = [
     problem:
       "HR spends hours weekly answering the same questions: 'How much notice do I need for leave?', 'What's the expense claim limit?', 'Am I entitled to parental leave?'",
     solution:
-      "SpaceHR's AI chatbot is trained on your exact HR policies and employee handbook. It answers any policy question accurately, 24/7, and cites the relevant policy section — so employees trust the answer.",
+      "Space HR's AI chatbot is trained on your exact HR policies and employee handbook. It answers any policy question accurately, 24/7, and cites the relevant policy section — so employees trust the answer.",
     result: "Policy Q&A: zero HR involvement for 85% of questions",
     color: "orange",
   },
@@ -273,20 +273,19 @@ export default function EmployeeSelfServicePage() {
               <div>
                 <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-sm font-medium px-4 py-2 rounded-full mb-6">
                   <Sparkles className="w-4 h-4" />
-                  24/7 Employee Self-Service
+                  Implementation & ROI
                 </div>
                 <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white leading-tight mb-6">
-                  Give Employees the Answers They Need —{" "}
+                  Deploy Employee Self-Service{" "}
                   <span className="text-blue-600 dark:text-blue-400">
-                    Without Involving HR
+                    in 48 Hours
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                  SpaceHR&apos;s employee self-service portal lets staff check leave
-                  balances, download payslips, ask policy questions, and complete
-                  HR tasks — instantly, 24/7. HR teams reduce ticket volume by{" "}
-                  <strong>80%</strong>. Employees get answers in seconds, not
-                  days.
+                  Space HR&apos;s employee self-service solution integrates with your
+                  existing HRIS and payroll systems, rolls out in under a week, and
+                  delivers measurable ROI. HR teams cut routine tickets by{" "}
+                  <strong>80%</strong> while employees get instant answers 24/7.
                 </p>
                 <div className="flex flex-wrap gap-4 mb-8">
                   <a href="/request-a-demo" className="inline-flex items-center gap-2 h-11 rounded-md px-8 text-sm font-medium bg-primary text-primary-foreground hover:bg-primary/90 transition-colors">Book a Free Demo <ArrowRight className="w-4 h-4" /></a>
@@ -313,7 +312,7 @@ export default function EmployeeSelfServicePage() {
                 <div className="bg-blue-600 dark:bg-blue-700 px-6 py-4 flex items-center gap-3">
                   <Bot className="w-6 h-6 text-white" />
                   <div>
-                    <div className="text-white font-semibold text-sm">SpaceHR Self-Service</div>
+                    <div className="text-white font-semibold text-sm">Space HR Self-Service</div>
                     <div className="text-blue-200 text-xs">Always online · Instant answers</div>
                   </div>
                   <div className="ml-auto flex items-center gap-1.5">
@@ -399,7 +398,7 @@ export default function EmployeeSelfServicePage() {
                 need instantly.
               </p>
               <p>
-                Modern ESS platforms go beyond static portals. SpaceHR combines a full HR
+                Modern ESS platforms go beyond static portals. Space HR combines a full HR
                 self-service portal with an AI-powered chatbot that understands natural
                 language questions. An employee can ask &quot;Am I eligible for parental leave?&quot;
                 and get an accurate, policy-specific answer in seconds — at midnight on a
@@ -429,7 +428,7 @@ export default function EmployeeSelfServicePage() {
                 Everything Employees Need, Available 24/7
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                SpaceHR&apos;s self-service portal covers every routine HR interaction —
+                Space HR&apos;s self-service portal covers every routine HR interaction —
                 from leave requests to policy questions — without HR involvement.
               </p>
             </div>
@@ -472,7 +471,7 @@ export default function EmployeeSelfServicePage() {
                 4 High-Impact HR Automations That Pay Back in Weeks
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                These are the most common HR workflows SpaceHR automates — and where
+                These are the most common HR workflows Space HR automates — and where
                 customers see the fastest ROI.
               </p>
             </div>
@@ -502,7 +501,7 @@ export default function EmployeeSelfServicePage() {
                       </div>
                       <div>
                         <div className="text-xs font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wide mb-2">
-                          ✅ SpaceHR Solution
+                          ✅ Space HR Solution
                         </div>
                         <p className="text-sm text-gray-600 dark:text-gray-400">{uc.solution}</p>
                       </div>
@@ -534,7 +533,7 @@ export default function EmployeeSelfServicePage() {
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-400">
                 Adjust the sliders to see your estimated monthly savings from
-                deploying SpaceHR&apos;s employee self-service portal.
+                deploying Space HR&apos;s employee self-service portal.
               </p>
             </div>
             <ROICalculator />
@@ -546,7 +545,7 @@ export default function EmployeeSelfServicePage() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-14">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-                How SpaceHR Self-Service Works
+                How Space HR Self-Service Works
               </h2>
               <p className="text-xl text-gray-600 dark:text-gray-400">
                 From first login to fully automated HR in 48 hours.
@@ -558,7 +557,7 @@ export default function EmployeeSelfServicePage() {
                   step: "1",
                   title: "Connect Your HR Data",
                   description:
-                    "SpaceHR integrates with your existing HRMS, payroll system, and policy documents in under 2 hours. We support Workday, BambooHR, ADP, Gusto, and custom APIs. Your data stays in sync automatically.",
+                    "Space HR integrates with your existing HRMS, payroll system, and policy documents in under 2 hours. We support Workday, BambooHR, ADP, Gusto, and custom APIs. Your data stays in sync automatically.",
                   icon: Zap,
                 },
                 {
@@ -572,21 +571,21 @@ export default function EmployeeSelfServicePage() {
                   step: "3",
                   title: "Employees Access 24/7 via Any Device",
                   description:
-                    "Employees log in via SSO, Microsoft Teams, Slack, or the SpaceHR app. They can check balances, submit requests, ask policy questions, and download documents — instantly, from anywhere.",
+                    "Employees log in via SSO, Microsoft Teams, Slack, or the Space HR app. They can check balances, submit requests, ask policy questions, and download documents — instantly, from anywhere.",
                   icon: Globe,
                 },
                 {
                   step: "4",
                   title: "HR Monitors, Reviews Exceptions Only",
                   description:
-                    "HR reviews a clean dashboard of approvals, exceptions, and analytics — not a flood of routine questions. SpaceHR handles 85% of requests automatically; HR focuses only on what needs human judgment.",
+                    "HR reviews a clean dashboard of approvals, exceptions, and analytics — not a flood of routine questions. Space HR handles 85% of requests automatically; HR focuses only on what needs human judgment.",
                   icon: TrendingUp,
                 },
                 {
                   step: "5",
                   title: "Continuous Improvement via AI Learning",
                   description:
-                    "SpaceHR's AI learns from every interaction. New policies are automatically reflected. Unanswered questions flag gaps in your HR documentation. Monthly reports show resolution rates and ticket trends.",
+                    "Space HR's AI learns from every interaction. New policies are automatically reflected. Unanswered questions flag gaps in your HR documentation. Monthly reports show resolution rates and ticket trends.",
                   icon: Sparkles,
                 },
               ].map((item, i) => {
@@ -623,7 +622,7 @@ export default function EmployeeSelfServicePage() {
         <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
           <div className="max-w-5xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-12">
-              SpaceHR vs. Traditional HR Self-Service Options
+              Space HR vs. Traditional HR Self-Service Options
             </h2>
             <div className="overflow-x-auto rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700">
               <table className="w-full bg-white dark:bg-gray-800 text-sm">
@@ -633,7 +632,7 @@ export default function EmployeeSelfServicePage() {
                       Feature
                     </th>
                     <th className="px-6 py-4 text-center text-blue-600 dark:text-blue-400 font-bold">
-                      SpaceHR
+                      Space HR
                     </th>
                     <th className="px-6 py-4 text-center text-gray-500 dark:text-gray-400 font-semibold">
                       Basic HRMS Portal
@@ -656,7 +655,7 @@ export default function EmployeeSelfServicePage() {
                     ["HR analytics & ticket volume reports", "✅", "Basic", "❌"],
                     ["Deployment time", "48 hours", "2–4 weeks", "N/A"],
                     ["ROI payback period", "60 days", "6–12 months", "Never"],
-                  ].map(([feature, spacehr, hrms, email]) => (
+                  ].map(([feature, spaceHR, hrms, email]) => (
                     <tr
                       key={feature}
                       className="hover:bg-gray-50 dark:hover:bg-gray-700/50"
@@ -665,7 +664,7 @@ export default function EmployeeSelfServicePage() {
                         {feature}
                       </td>
                       <td className="px-6 py-4 text-center text-blue-600 dark:text-blue-400 font-semibold">
-                        {spacehr}
+                        {spaceHR}
                       </td>
                       <td className="px-6 py-4 text-center text-gray-500 dark:text-gray-400">
                         {hrms}
@@ -712,7 +711,7 @@ export default function EmployeeSelfServicePage() {
         <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 dark:bg-gray-900">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-6">
-              Explore More SpaceHR Solutions & Features
+              Explore More Space HR Solutions & Features
             </h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
               {[
@@ -726,8 +725,8 @@ export default function EmployeeSelfServicePage() {
                 { href: "/features/cost-prediction", label: "Labor Cost Forecasting" },
                 { href: "/features/attrition-prediction", label: "Attrition Prediction" },
                 { href: "/tools/true-cost-calculator", label: "True Cost Calculator" },
-                { href: "/compare/bamboohr", label: "SpaceHR vs BambooHR" },
-                { href: "/compare/workday", label: "SpaceHR vs Workday" },
+                { href: "/compare/bamboohr", label: "Space HR vs BambooHR" },
+                { href: "/compare/workday", label: "Space HR vs Workday" },
               ].map((link) => (
                 <a
                   key={link.href}
@@ -749,7 +748,7 @@ export default function EmployeeSelfServicePage() {
               Stop Answering Repetitive HR Questions
             </h2>
             <p className="text-xl text-blue-100 mb-10">
-              Deploy SpaceHR&apos;s employee self-service portal in 48 hours. Give your
+              Deploy Space HR&apos;s employee self-service portal in 48 hours. Give your
               team 24/7 instant access to everything they need — and give your HR
               team their time back.
             </p>

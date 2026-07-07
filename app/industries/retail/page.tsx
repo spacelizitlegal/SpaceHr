@@ -17,6 +17,13 @@ export const metadata: Metadata = {
     title: "HR Software for Retail | Space HR",
     description: "Rota scheduling, variable pay, zero-hours contracts, and seasonal workforce management for retail businesses.",
     url: "https://spacehr.net/industries/retail",
+    siteName: "Space HR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HR Software for Retail | Space HR",
+    description: "Rota scheduling, variable pay, zero-hours contracts, and seasonal workforce management for retail businesses.",
   },
   alternates: { canonical: "https://spacehr.net/industries/retail" },
 };

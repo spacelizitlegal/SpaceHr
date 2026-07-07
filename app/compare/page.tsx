@@ -7,13 +7,20 @@ export const metadata: Metadata = {
   title: "Space HR vs Competitors — 13 Detailed Comparisons | Space HR",
   description:
     "See how Space HR stacks up against BambooHR, Workday, ServiceNow, Leena AI, Moveworks, SAP, ADP, and more. AI-powered HR built for modern, growing teams.",
+  twitter: {
+    card: "summary_large_image",
+    title: "Space HR vs Competitors — 13 Detailed Comparisons | Space HR",
+    description: "See how Space HR stacks up against BambooHR, Workday, ServiceNow, Leena AI, Moveworks, SAP, ADP, and more. AI-powered HR built for modern, growing teams.",
+  },
   alternates: { canonical: "https://spacehr.net/compare" },
   openGraph: {
     title: "Space HR vs Competitors — 13 Detailed Comparisons | Space HR",
     description:
       "See how Space HR stacks up against BambooHR, Workday, ServiceNow, Leena AI, Moveworks, SAP, ADP, and more. AI-powered HR built for modern, growing teams.",
     url: "https://spacehr.net/compare",
-    images: [{ url: "/desktop-design-showcase.webp", width: 1200, height: 630 }],
+    siteName: "Space HR",
+    type: "website",
+    images: [{ url: "/desktop-design-showcase.webp", width: 1200, height: 630, alt: "Space HR vs Competitors — HR Software Comparisons" }],
   },
 };
 
