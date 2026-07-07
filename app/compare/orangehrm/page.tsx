@@ -23,10 +23,23 @@ export const metadata: Metadata = {
     "orangehrm alternative",
     "better than orangehrm",
     "open source hr alternative",
-    "space hr vs orangehrm",
+    "Space HR vs orangehrm",
     "ai hr software",
     "automated hr system",
   ],
+  openGraph: {
+    title: "OrangeHRM Alternative | Best AI-Powered HR Software | Space HR",
+    description: "Looking for an OrangeHRM alternative? Space HR offers integrated AI automation, simpler setup, and better support than open-source HR tools.",
+    url: "https://spacehr.net/compare/orangehrm",
+    siteName: "Space HR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "OrangeHRM Alternative | Best AI-Powered HR Software | Space HR",
+    description: "Looking for an OrangeHRM alternative? Space HR offers integrated AI automation, simpler setup, and better support than open-source HR tools.",
+  },
+  alternates: { canonical: "https://spacehr.net/compare/orangehrm" },
 };
 
 const faqs = [

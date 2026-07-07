@@ -51,11 +51,11 @@ export const metadata: Metadata = {
     canonical: "https://spacehr.net/resources/hr-chatbot-buyers-guide",
   },
   openGraph: {
-    title: "HR Chatbot Buyer's Guide 2026 | SpaceHR",
+    title: "HR Chatbot Buyer's Guide 2026 | Space HR",
     description:
       "Everything HR teams need to evaluate, select, and deploy an HR chatbot — features, pricing, red flags, and an implementation checklist.",
     url: "https://spacehr.net/resources/hr-chatbot-buyers-guide",
-    siteName: "SpaceHR",
+    siteName: "Space HR",
     type: "article",
     images: [
       {
@@ -88,7 +88,7 @@ const faqItems = [
   {
     question: "How long does it take to implement an HR chatbot?",
     answer:
-      "Implementation time ranges from 48 hours for SaaS platforms with pre-built HRIS connectors, to 3–6 months for enterprise solutions requiring custom integrations and policy training. The biggest variable is data readiness — if your HR policies are documented and your HRIS data is clean, deployment is much faster. SpaceHR's AI HR Concierge can be live in 48 hours with standard HRIS integrations.",
+      "Implementation time ranges from 48 hours for SaaS platforms with pre-built HRIS connectors, to 3–6 months for enterprise solutions requiring custom integrations and policy training. The biggest variable is data readiness — if your HR policies are documented and your HRIS data is clean, deployment is much faster. Space HR's AI HR Concierge can be live in 48 hours with standard HRIS integrations.",
   },
   {
     question: "What HR queries can a chatbot handle?",
@@ -433,7 +433,7 @@ export default function HRChatbotBuyersGuidePage() {
           </div>
           <div className="mt-8 p-5 bg-blue-500/10 border border-blue-500/20 rounded-xl">
             <p className="text-sm text-muted-foreground">
-              <strong className="text-foreground">SpaceHR&apos;s AI HR Concierge</strong> includes all 10 of these features
+              <strong className="text-foreground">Space HR&apos;s AI HR Concierge</strong> includes all 10 of these features
               natively, with pre-built integrations for the 20 most common HRIS platforms.{" "}
               <Link href="/features/ai-chatbots" className="text-primary hover:underline">
                 See the full feature list →
@@ -619,7 +619,7 @@ export default function HRChatbotBuyersGuidePage() {
             typically 3–5× the HR-time-savings figure.
           </p>
           <p className="text-muted-foreground leading-relaxed">
-            See how <Link href="/features/ai-chatbots" className="text-primary hover:underline">SpaceHR&apos;s AI HR Concierge</Link> is
+            See how <Link href="/features/ai-chatbots" className="text-primary hover:underline">Space HR&apos;s AI HR Concierge</Link> is
             priced and what ROI our customers typically see within the first 6 months.
           </p>
         </section>
@@ -737,9 +737,9 @@ export default function HRChatbotBuyersGuidePage() {
         {/* CTA Mid */}
         <div className="mb-16 p-8 bg-gradient-to-br from-primary/10 to-primary/5 border border-primary/20 rounded-2xl text-center">
           <Sparkles className="h-8 w-8 text-primary mx-auto mb-3" />
-          <h3 className="text-2xl font-bold mb-2">See SpaceHR&apos;s AI HR Concierge in Action</h3>
+          <h3 className="text-2xl font-bold mb-2">See Space HR&apos;s AI HR Concierge in Action</h3>
           <p className="text-muted-foreground mb-6 max-w-xl mx-auto">
-            SpaceHR&apos;s AI HR Concierge handles leave, payroll queries, policy lookup, and onboarding
+            Space HR&apos;s AI HR Concierge handles leave, payroll queries, policy lookup, and onboarding
             workflows — with native integration to your HRIS, live in 48 hours.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -774,12 +774,12 @@ export default function HRChatbotBuyersGuidePage() {
           <h2 className="text-2xl font-bold mb-6">Related Resources</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
-              { href: "/solutions/hr-ai-chatbot", title: "HR AI Chatbot Solution", desc: "See how SpaceHR's AI chatbot works and what it can automate." },
+              { href: "/solutions/hr-ai-chatbot", title: "HR AI Chatbot Solution", desc: "See how Space HR's AI chatbot works and what it can automate." },
               { href: "/features/ai-chatbots", title: "AI Chatbot Feature Page", desc: "Full feature list, channel support, and integration details." },
               { href: "/solutions/chatbot-for-hr-services", title: "Chatbot for HR Services", desc: "Use cases, ROI benchmarks, and deployment guide." },
               { href: "/blogs/hr-helpdesk-chatbot-guide-2026", title: "HR Helpdesk Chatbot Guide", desc: "How to transform your HR service desk with AI." },
               { href: "/blogs/internal-hr-chatbot-deployment-guide", title: "Internal HR Chatbot Deployment", desc: "Step-by-step deployment playbook for HR teams." },
-              { href: "/compare", title: "HR Software Comparisons", desc: "See how SpaceHR compares to 13 competitors." },
+              { href: "/compare", title: "HR Software Comparisons", desc: "See how Space HR compares to 13 competitors." },
             ].map(({ href, title, desc }) => (
               <Link
                 key={href}
@@ -803,7 +803,7 @@ export default function HRChatbotBuyersGuidePage() {
         <div className="max-w-4xl mx-auto px-6 py-16 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Automate Your HR Help Desk?</h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-            SpaceHR&apos;s AI HR Concierge is live in 48 hours, handles 70% of HR queries automatically,
+            Space HR&apos;s AI HR Concierge is live in 48 hours, handles 70% of HR queries automatically,
             and integrates with your existing HRIS. No lengthy implementation. No engineering work.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">

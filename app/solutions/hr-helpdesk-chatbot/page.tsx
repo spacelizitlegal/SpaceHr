@@ -32,9 +32,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "HR Helpdesk Chatbot — Automate Your HR Service Desk with AI | SpaceHR",
+  title: "HR Helpdesk Chatbot — AI Service Desk & Ticketing Integration | Space HR",
   description:
-    "SpaceHR's HR helpdesk chatbot deflects 70% of tickets, eliminates SLA breaches, and gives employees instant HR answers — without growing your HR headcount. Live in 48 hours.",
+    "Deflect HR tickets before they reach your service desk. Space HR's HR helpdesk chatbot integrates with ServiceNow, Jira, Freshdesk, and Zendesk to resolve routine queries and escalate the rest with full context.",
   keywords: [
     "hr helpdesk chatbot",
     "hr service desk chatbot",
@@ -42,10 +42,10 @@ export const metadata: Metadata = {
     "ai hr helpdesk",
     "hr helpdesk automation",
     "hr support chatbot",
-    "hr service desk automation",
-    "automated hr helpdesk",
     "hr ticket deflection",
-    "hr chatbot helpdesk",
+    "hr service now chatbot",
+    "hr jira chatbot",
+    "hr zendesk chatbot",
     "employee helpdesk chatbot",
     "conversational hr helpdesk",
   ],
@@ -53,26 +53,26 @@ export const metadata: Metadata = {
     canonical: "https://spacehr.net/solutions/hr-helpdesk-chatbot",
   },
   openGraph: {
-    title: "HR Helpdesk Chatbot — AI-Powered HR Service Desk | SpaceHR",
+    title: "HR Helpdesk Chatbot — AI Service Desk Integration | Space HR",
     description:
-      "Deflect 70% of HR tickets automatically. Eliminate SLA breaches. Give employees instant answers 24/7. SpaceHR's HR helpdesk chatbot — live in 48 hours.",
+      "Deflect HR tickets before they reach your service desk. Integrates with ServiceNow, Jira, Freshdesk, and Zendesk.",
     url: "https://spacehr.net/solutions/hr-helpdesk-chatbot",
-    siteName: "SpaceHR",
+    siteName: "Space HR",
     type: "website",
     images: [
       {
         url: "/desktop-design-showcase.webp",
         width: 1200,
         height: 630,
-        alt: "SpaceHR HR Helpdesk Chatbot",
+        alt: "Space HR HR Helpdesk Chatbot Ticketing Integration",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "HR Helpdesk Chatbot | SpaceHR",
+    title: "HR Helpdesk Chatbot | Space HR",
     description:
-      "AI-powered HR service desk. 70% ticket deflection. Zero SLA breaches. Live in 48 hours.",
+      "Deflect HR tickets before they reach your service desk. ServiceNow, Jira, Freshdesk, Zendesk integration.",
     images: ["/desktop-design-showcase.webp"],
   },
 };
@@ -81,52 +81,52 @@ const faqs = [
   {
     question: "What is an HR helpdesk chatbot?",
     answer:
-      "An HR helpdesk chatbot is an AI-powered assistant that sits at the front of your HR service desk — automatically resolving employee queries before they become tickets. It connects to your HRIS and HR knowledge base to answer questions about leave, payroll, policies, and benefits instantly, 24/7. Queries that require human judgment are triaged and routed to the right HR team member with full context. SpaceHR's HR helpdesk chatbot typically deflects 70% of inbound HR tickets in the first month.",
+      "An HR helpdesk chatbot is an AI-powered assistant that sits at the front of your HR service desk — automatically resolving employee queries before they become tickets. It connects to your HRIS and HR knowledge base to answer questions about leave, payroll, policies, and benefits instantly, 24/7. Queries that require human judgment are triaged and routed to the right HR team member with full context. Space HR's HR helpdesk chatbot typically deflects 70% of inbound HR tickets in the first month.",
   },
   {
     question: "How does an HR helpdesk chatbot reduce ticket volume?",
     answer:
-      "Most HR helpdesk tickets are repetitive and answerable with the right data: leave balance checks, payslip queries, policy clarifications, onboarding questions. An HR chatbot resolves these automatically by pulling live data from your HRIS and answers from your policy knowledge base. Since the chatbot operates 24/7 and responds in seconds, employees get answers before they resort to raising a ticket. SpaceHR customers typically see 60-70% ticket deflection within 30 days of deployment.",
+      "Most HR helpdesk tickets are repetitive and answerable with the right data: leave balance checks, payslip queries, policy clarifications, onboarding questions. An HR chatbot resolves these automatically by pulling live data from your HRIS and answers from your policy knowledge base. Since the chatbot operates 24/7 and responds in seconds, employees get answers before they resort to raising a ticket. Space HR customers typically see 60-70% ticket deflection within 30 days of deployment.",
   },
   {
     question: "What is the difference between an HR helpdesk chatbot and an HR ticketing system?",
     answer:
-      "An HR ticketing system (like ServiceNow or Jira Service Management) captures, routes, and tracks HR requests that need human handling. An HR helpdesk chatbot sits in front of the ticketing system and resolves queries that do not need human handling — before a ticket is created. The two work together: the chatbot handles the 60-70% of queries it can resolve automatically, and only escalates the remaining 30-40% to the ticketing system with structured context already captured. SpaceHR integrates with ServiceNow, Jira, and Freshdesk.",
+      "An HR ticketing system (like ServiceNow or Jira Service Management) captures, routes, and tracks HR requests that need human handling. An HR helpdesk chatbot sits in front of the ticketing system and resolves queries that do not need human handling — before a ticket is created. The two work together: the chatbot handles the 60-70% of queries it can resolve automatically, and only escalates the remaining 30-40% to the ticketing system with structured context already captured. Space HR integrates with ServiceNow, Jira, and Freshdesk.",
   },
   {
     question: "Can the HR helpdesk chatbot integrate with our existing ticketing system?",
     answer:
-      "Yes. SpaceHR's HR helpdesk chatbot integrates with ServiceNow, Jira Service Management, Freshdesk, Zendesk, and most major ITSM platforms. When the chatbot escalates a query, it automatically creates a structured ticket in your ticketing system with the full conversation context, employee details, query category, and priority level already populated. HR agents receive a pre-triaged ticket — not a blank form.",
+      "Yes. Space HR's HR helpdesk chatbot integrates with ServiceNow, Jira Service Management, Freshdesk, Zendesk, and most major ITSM platforms. When the chatbot escalates a query, it automatically creates a structured ticket in your ticketing system with the full conversation context, employee details, query category, and priority level already populated. HR agents receive a pre-triaged ticket — not a blank form.",
   },
   {
     question: "How does the HR chatbot handle SLA management?",
     answer:
-      "SpaceHR's HR helpdesk chatbot prevents SLA breaches at the source by resolving queries before they become tickets. For queries that do escalate, the chatbot captures the interaction timestamp, auto-categorizes the query, and routes it to the correct team with SLA clock already started. HR managers can configure priority rules: certain query types (e.g., payroll disputes, disciplinary matters) can be flagged as high-priority for immediate routing. The analytics dashboard shows SLA performance in real time.",
+      "Space HR's HR helpdesk chatbot prevents SLA breaches at the source by resolving queries before they become tickets. For queries that do escalate, the chatbot captures the interaction timestamp, auto-categorizes the query, and routes it to the correct team with SLA clock already started. HR managers can configure priority rules: certain query types (e.g., payroll disputes, disciplinary matters) can be flagged as high-priority for immediate routing. The analytics dashboard shows SLA performance in real time.",
   },
   {
     question: "What query categories does the HR helpdesk chatbot cover?",
     answer:
-      "SpaceHR's HR helpdesk chatbot covers: leave and absence (balance checks, applications, policy queries), payroll and payslips (retrieval, queries, disputes), HR policies (remote work, expenses, benefits), onboarding and offboarding queries, IT access requests (routing only), compliance training status, performance review deadlines, and benefits enrollment guidance. Custom categories can be added via the admin knowledge base interface without engineering involvement.",
+      "Space HR's HR helpdesk chatbot covers: leave and absence (balance checks, applications, policy queries), payroll and payslips (retrieval, queries, disputes), HR policies (remote work, expenses, benefits), onboarding and offboarding queries, IT access requests (routing only), compliance training status, performance review deadlines, and benefits enrollment guidance. Custom categories can be added via the admin knowledge base interface without engineering involvement.",
   },
   {
     question: "How does the chatbot handle queries it cannot resolve?",
     answer:
-      "SpaceHR uses a confidence threshold for every response. When the chatbot is below its confidence threshold for a query, it escalates rather than guessing. The escalation path is configurable by query type, employee location, and time of day. The escalation creates a structured handoff — the HR agent receives the full conversation history, the employee's profile, the query category, and the chatbot's partial findings. No context is lost and no employee is left with an unanswered question.",
+      "Space HR uses a confidence threshold for every response. When the chatbot is below its confidence threshold for a query, it escalates rather than guessing. The escalation path is configurable by query type, employee location, and time of day. The escalation creates a structured handoff — the HR agent receives the full conversation history, the employee's profile, the query category, and the chatbot's partial findings. No context is lost and no employee is left with an unanswered question.",
   },
   {
     question: "Is employee data secure in the HR helpdesk chatbot?",
     answer:
-      "Yes. SpaceHR enforces role-based access controls so employees only access their own data. All data is encrypted in transit (TLS 1.3) and at rest (AES-256). Every interaction is fully audit-logged. SpaceHR is GDPR-compliant for EU deployments and implements SOC 2-equivalent security controls. Sensitive query categories (e.g., medical leave, disciplinary matters) can be configured to escalate immediately to a human rather than being handled by the chatbot.",
+      "Yes. Space HR enforces role-based access controls so employees only access their own data. All data is encrypted in transit (TLS 1.3) and at rest (AES-256). Every interaction is fully audit-logged. Space HR is GDPR-compliant for EU deployments and implements SOC 2-equivalent security controls. Sensitive query categories (e.g., medical leave, disciplinary matters) can be configured to escalate immediately to a human rather than being handled by the chatbot.",
   },
   {
     question: "How long does it take to set up an HR helpdesk chatbot?",
     answer:
-      "Standard deployment takes 48 hours. The process: connect SpaceHR to your HRIS (pre-built connectors for Workday, BambooHR, SAP, ADP, and 20+ others), upload your HR policy documents to the knowledge base, configure escalation rules and ticketing system integration, and deploy to Slack, Teams, or your HR portal. SpaceHR's onboarding team manages the full process. No engineering work is required.",
+      "Standard deployment takes 48 hours. The process: connect Space HR to your HRIS (pre-built connectors for Workday, BambooHR, SAP, ADP, and 20+ others), upload your HR policy documents to the knowledge base, configure escalation rules and ticketing system integration, and deploy to Slack, Teams, or your HR portal. Space HR's onboarding team manages the full process. No engineering work is required.",
   },
   {
     question: "How do we measure the success of an HR helpdesk chatbot?",
     answer:
-      "Track four metrics: (1) Ticket deflection rate — what percentage of HR queries are resolved without a ticket being raised? Target: 60-70%. (2) First-response time — how fast do employees get an answer? Target: under 5 seconds for chatbot-handled queries. (3) SLA compliance rate — what percentage of escalated tickets are resolved within SLA? (4) Employee CSAT for HR — does self-service improve satisfaction? SpaceHR's analytics dashboard tracks all four automatically.",
+      "Track four metrics: (1) Ticket deflection rate — what percentage of HR queries are resolved without a ticket being raised? Target: 60-70%. (2) First-response time — how fast do employees get an answer? Target: under 5 seconds for chatbot-handled queries. (3) SLA compliance rate — what percentage of escalated tickets are resolved within SLA? (4) Employee CSAT for HR — does self-service improve satisfaction? Space HR's analytics dashboard tracks all four automatically.",
   },
 ];
 
@@ -251,7 +251,7 @@ export default function HRHelpdeskChatbotPage() {
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-                  SpaceHR&apos;s <strong>HR helpdesk chatbot</strong> deflects 70% of HR service desk tickets automatically — giving employees instant answers and HR teams their time back.
+                  Space HR&apos;s <strong>HR helpdesk chatbot</strong> deflects 70% of HR service desk tickets automatically — giving employees instant answers and HR teams their time back.
                 </p>
                 <p className="text-lg text-gray-500 dark:text-gray-400 mb-8 leading-relaxed">
                   No more SLA breaches. No more email backlog. No more answering the same leave balance question forty times a week. <strong>Live in 48 hours</strong> — integrates with ServiceNow, Jira, Slack, and Teams.
@@ -283,7 +283,7 @@ export default function HRHelpdeskChatbotPage() {
                 <div className="relative bg-white dark:bg-[#111827] rounded-2xl shadow-2xl border border-gray-200 dark:border-gray-700 overflow-hidden">
                   <div className="bg-teal-700 p-3 flex items-center gap-3">
                     <Headphones className="w-5 h-5 text-white" />
-                    <p className="text-white text-sm font-semibold">HR Helpdesk — SpaceHR</p>
+                    <p className="text-white text-sm font-semibold">HR Helpdesk — Space HR</p>
                     <div className="ml-auto text-xs text-teal-200 flex items-center gap-1.5">
                       <span className="w-2 h-2 rounded-full bg-green-400" /> Live
                     </div>
@@ -350,7 +350,7 @@ export default function HRHelpdeskChatbotPage() {
                 Your HR Service Desk — Before and After
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                SpaceHR transforms your service desk from a reactive email queue to a proactive, automated HR support operation.
+                Space HR transforms your service desk from a reactive email queue to a proactive, automated HR support operation.
               </p>
             </div>
             <div className="overflow-x-auto rounded-2xl border border-gray-200 dark:border-gray-700">
@@ -358,8 +358,8 @@ export default function HRHelpdeskChatbotPage() {
                 <thead>
                   <tr className="bg-gray-100 dark:bg-[#1e293b]">
                     <th className="text-left px-5 py-4 font-semibold text-gray-700 dark:text-gray-300">Metric</th>
-                    <th className="px-5 py-4 font-semibold text-red-600 dark:text-red-400 text-center">Without SpaceHR</th>
-                    <th className="px-5 py-4 font-semibold text-green-600 dark:text-green-400 text-center">With SpaceHR</th>
+                    <th className="px-5 py-4 font-semibold text-red-600 dark:text-red-400 text-center">Without Space HR</th>
+                    <th className="px-5 py-4 font-semibold text-green-600 dark:text-green-400 text-center">With Space HR</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -388,7 +388,7 @@ export default function HRHelpdeskChatbotPage() {
                 Everything Your HR Service Desk Needs
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                SpaceHR&apos;s HR helpdesk chatbot is a complete HR service desk automation platform — HRIS integration, ticketing system integration, real-time analytics, and omnichannel intake in one.
+                Space HR&apos;s HR helpdesk chatbot is a complete HR service desk automation platform — HRIS integration, ticketing system integration, real-time analytics, and omnichannel intake in one.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -414,7 +414,7 @@ export default function HRHelpdeskChatbotPage() {
                   Deflection Rate by HR Query Category
                 </h2>
                 <p className="text-gray-600 dark:text-gray-400 mb-8 leading-relaxed">
-                  Not all HR queries are equal. SpaceHR automatically resolves high-volume, low-complexity categories — and always escalates sensitive matters to a human HR professional.
+                  Not all HR queries are equal. Space HR automatically resolves high-volume, low-complexity categories — and always escalates sensitive matters to a human HR professional.
                 </p>
                 <div className="space-y-3">
                   {ticketCategories.map(({ category, pct, deflection }) => (
@@ -476,7 +476,7 @@ export default function HRHelpdeskChatbotPage() {
                 Integrates With Your Existing Stack
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                SpaceHR sits in front of your ticketing system — deflecting the queries that do not need a ticket, and enriching the ones that do.
+                Space HR sits in front of your ticketing system — deflecting the queries that do not need a ticket, and enriching the ones that do.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -501,7 +501,7 @@ export default function HRHelpdeskChatbotPage() {
               Ready to End Your HR Ticket Backlog?
             </h2>
             <p className="text-teal-100 mb-8 max-w-xl mx-auto text-lg">
-              SpaceHR&apos;s HR helpdesk chatbot deflects 70% of tickets in the first 30 days — with full integration into ServiceNow, Jira, Slack, and your HRIS.
+              Space HR&apos;s HR helpdesk chatbot deflects 70% of tickets in the first 30 days — with full integration into ServiceNow, Jira, Slack, and your HRIS.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="https://cad.spaceaiapp.com/login">
@@ -540,7 +540,7 @@ export default function HRHelpdeskChatbotPage() {
                 { href: "/solutions/hr-ai-chatbot", title: "HR AI Chatbot", desc: "Full HR AI chatbot platform — all use cases and capabilities." },
                 { href: "/solutions/internal-employee-chatbot", title: "Internal Employee Chatbot", desc: "Chatbot deployed inside Slack and Teams for internal HR queries." },
                 { href: "/solutions/chatbot-for-hr-services", title: "Chatbot for HR Services", desc: "HR service automation with AI — use cases and ROI benchmarks." },
-                { href: "/features/ai-chatbots", title: "AI Chatbot Features", desc: "Full feature breakdown for SpaceHR's chatbot platform." },
+                { href: "/features/ai-chatbots", title: "AI Chatbot Features", desc: "Full feature breakdown for Space HR's chatbot platform." },
                 { href: "/blogs/hr-helpdesk-chatbot-guide-2026", title: "HR Helpdesk Guide 2026", desc: "How to transform your HR service desk with AI." },
                 { href: "/blogs/how-to-reduce-hr-ticket-volume", title: "Reduce HR Ticket Volume", desc: "6 tactics to cut HR email and ticket volume by 70%." },
                 { href: "/resources/hr-chatbot-buyers-guide", title: "HR Chatbot Buyer's Guide", desc: "Evaluation framework, pricing benchmarks, red flags to watch for." },

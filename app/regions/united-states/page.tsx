@@ -46,6 +46,13 @@ export const metadata: Metadata = {
     description:
       "Automate multi-state payroll tax compliance across all 50 states. NACHA ACH, FUTA/SUTA, W-2/1099, and AI payroll auditing.",
     url: "https://spacehr.net/regions/united-states",
+    siteName: "Space HR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "US Multi-State Payroll Tax Compliance | Space HR",
+    description: "Automate multi-state payroll tax compliance across all 50 states. NACHA ACH, FUTA/SUTA, W-2/1099, and AI payroll auditing.",
   },
   alternates: {
     canonical: "https://spacehr.net/regions/united-states",
@@ -101,9 +108,9 @@ export default function UnitedStatesPage() {
             </span>
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-3xl mx-auto">
-            Automate <strong>multi-state payroll tax compliance</strong> across
-            all 50 states. Space HR handles{" "}
-            <strong>NACHA-compliant ACH processing</strong>,{" "}
+            Built in the United States, Space HR automates{" "}
+            <strong>multi-state payroll tax compliance</strong> across all 50
+            states. We handle <strong>NACHA-compliant ACH processing</strong>,{" "}
             <strong>FUTA/SUTA tax withholding</strong>,{" "}
             <strong>W-2/1099 generation</strong>, and{" "}
             <strong>AI-powered payroll anomaly detection</strong> for US
@@ -216,6 +223,32 @@ export default function UnitedStatesPage() {
                 </span>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PROSE SECTION */}
+      <section className="py-20 bg-gray-50 dark:bg-[#0f172a]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+            US Payroll Compliance — FLSA, FUTA/SUTA, ACA, Multi-State Tax & W-2 Filing
+          </h2>
+          <div className="space-y-5 text-gray-700 dark:text-slate-300 leading-relaxed text-lg">
+            <p>
+              US payroll compliance is a multi-layered system where federal law sets the floor and states build significantly on top of it. The Fair Labor Standards Act (FLSA), the Federal Unemployment Tax Act (FUTA), and the Affordable Care Act (ACA) employer mandate are the three primary federal obligations — but each state adds its own income tax, State Unemployment Insurance (SUI) rate, workers&apos; compensation requirements, paid leave mandates, and minimum wage levels that can differ substantially from the federal floor. For employers with employees in multiple states, maintaining compliance across all of these simultaneously is the core payroll operations challenge.
+            </p>
+            <p>
+              FLSA overtime rules require non-exempt employees to receive 1.5× their regular rate of pay for all hours worked beyond 40 in a single workweek. The regular rate of pay is broader than base wages — it includes most bonuses, shift differentials, and commission payments, which must be factored into the overtime rate calculation. Several states impose stricter rules: California requires daily overtime for hours beyond 8 per day (and double time for hours beyond 12), Nevada and Alaska have similar daily OT provisions. The overtime exemption test for salaried employees requires a minimum salary threshold of $684 per week ($35,568 annually) as of the 2024 federal rule, with states like California imposing higher state thresholds. Space HR applies the stricter of federal and state rules for each employee based on their work location.
+            </p>
+            <p>
+              FUTA tax applies at 6.0% on the first $7,000 of each employee&apos;s wages per year. Employers who pay State Unemployment Insurance (SUI/SUTA) taxes on time receive a FUTA credit of up to 5.4%, reducing the effective FUTA rate to 0.6%. SUI wage bases and rates vary dramatically by state — from $7,000 in Arizona (matching the federal base) to $56,700 in Washington State for 2024. New employer SUI rates also vary: a new employer in California starts at 3.4%, while a new employer in New York starts at 3.175%. Space HR maintains state-specific FUTA/SUTA wage bases and rates, tracks each employee&apos;s wages against the applicable ceiling, and stops SUI deductions automatically once the ceiling is reached — preventing overpayment.
+            </p>
+            <p>
+              The ACA employer mandate requires Applicable Large Employers (ALEs — those with 50 or more full-time equivalent employees) to offer minimum essential coverage to full-time employees (30+ hours/week) or face Employer Shared Responsibility Payments. For 2024, the penalty for failing to offer coverage is $2,970 per full-time employee (minus 30). Space HR tracks FTE counts monthly using the ACA lookback measurement method, identifies employees crossing the full-time threshold, and generates 1094-C and 1095-C forms for IRS filing and employee distribution by the January 31 deadline.
+            </p>
+            <p>
+              W-2 forms must be distributed to employees by January 31 and submitted to the Social Security Administration by the same deadline. For employers filing 10 or more W-2s, electronic filing is mandatory. Space HR generates W-2 files in the SSA&apos;s EFW2 format, validates them using SSA&apos;s Accuwage Online tool specifications, and maintains the filed copies linked to employee records. For multi-state employers, state W-2 copies are generated with the correct state withholding amounts for each state where the employee had taxable wages — including states that require separate state copies to be filed with state agencies on varying deadlines.
+            </p>
           </div>
         </div>
       </section>

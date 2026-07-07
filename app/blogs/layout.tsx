@@ -1,39 +1,44 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "HR Insights & Leadership Blog",
+  title: "HR Blog | Automation, Performance, Payroll & Recruiting Guides",
   description:
-    "Explore expert perspectives on leadership, AI technology, and organizational culture. Stay ahead with deep dives into the future of work and performance.",
+    "Practical HR guides from Space HR covering AI automation, payroll compliance, employee engagement, 360 appraisals, attrition prediction, and recruiting — written for HR teams and CHROs.",
   keywords: [
     "HR blog",
-    "leadership insights",
-    "workplace culture",
+    "HR automation guides",
+    "payroll compliance",
+    "performance management",
     "employee engagement",
-    "performance management tips",
-    "HR trends",
-    "future of work",
-    "organizational development",
+    "AI HR software",
+    "attrition prediction",
+    "360 appraisals",
+    "recruiting strategy",
     "HR best practices",
+    "CHRO resources",
+    "workforce analytics",
   ],
   openGraph: {
-    title: "HR Insights & Leadership Blog | Space HR",
+    title: "HR Blog | Automation, Performance, Payroll & Recruiting Guides",
     description:
-      "Expert perspectives on leadership, AI technology, and organizational culture.",
+      "Practical HR guides from Space HR covering AI automation, payroll compliance, employee engagement, 360 appraisals, attrition prediction, and recruiting.",
     url: "https://spacehr.net/blogs",
+    siteName: "Space HR",
+    type: "website",
     images: [
       {
         url: "/og-blogs.jpg",
         width: 1200,
         height: 630,
-        alt: "Space HR Blog",
+        alt: "Space HR Blog — HR Automation, Performance & Payroll Guides",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "HR Insights & Leadership Blog | Space HR",
+    title: "HR Blog | Automation, Performance, Payroll & Recruiting Guides",
     description:
-      "Deep dives into leadership, AI technology, and organizational culture.",
+      "Practical HR guides covering AI automation, payroll compliance, performance management, and recruiting — from the Space HR team.",
     images: ["/og-blogs.jpg"],
   },
   alternates: {

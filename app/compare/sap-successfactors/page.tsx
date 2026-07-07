@@ -14,13 +14,18 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "SAP SuccessFactors vs Space HR: Enterprise Complexity vs Agile AI",
   description: "SAP SuccessFactors takes 6–18 months to implement and costs millions. Space HR delivers AI-powered HR in 72 hours with payroll anomaly detection, attrition prediction, and an AI concierge included.",
-  keywords: ["sap successfactors alternative","space hr vs sap successfactors","successfactors competitor","mid-market hr software","hr platform without sap"],
+  keywords: ["sap successfactors alternative","Space HR vs sap successfactors","successfactors competitor","mid-market hr software","hr platform without sap"],
+  twitter: {
+    card: "summary_large_image",
+    title: "SAP SuccessFactors vs Space HR: Enterprise Complexity vs Agile AI",
+    description: "SAP SuccessFactors takes 6–18 months to implement and costs millions. Space HR delivers AI-powered HR in 72 hours with payroll anomaly detection, attrition prediction, and an AI concierge included.",
+  },
   alternates: { canonical: "https://spacehr.net/compare/sap-successfactors" },
   openGraph: {
     title: "SAP SuccessFactors vs Space HR: Enterprise Complexity vs Agile AI",
     description: "SAP SuccessFactors takes 6–18 months to implement and costs millions. Space HR delivers AI-powered HR in 72 hours with payroll anomaly detection, attrition prediction, and an AI concierge included.",
     url: "https://spacehr.net/compare/sap-successfactors",
-    siteName: "SpaceHR",
+    siteName: "Space HR",
     images: [{ url: "/desktop-design-showcase.webp", width: 1200, height: 630, alt: "Space HR vs SAP SuccessFactors Comparison" }],
   },
 };

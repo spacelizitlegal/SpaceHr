@@ -79,7 +79,7 @@ export default function CourseDetailPage() {
                   </Button>
                 </Link>
                 <p className="text-center text-xs text-gray-500">
-                  Free with your SpaceHR subscription
+                  Free with your Space HR subscription
                 </p>
               </div>
             </div>

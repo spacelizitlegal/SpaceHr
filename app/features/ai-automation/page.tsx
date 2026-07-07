@@ -1,4 +1,4 @@
-﻿import { Button } from "@/components/ui/Button";
+import { Button } from "@/components/ui/Button";
 import {
   CheckCircle,
   ArrowRight,
@@ -28,9 +28,9 @@ import { JsonLd, generateFAQSchema, generateBreadcrumbSchema,
   softwareSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "HR Automation Software — Automate HR Workflows & Processes | SpaceHR",
+  title: "HR Automation Software — Automate HR Workflows & Processes | Space HR",
   description:
-    "SpaceHR automates HR workflows — onboarding journeys, approval chains, compliance reminders, engagement campaigns, and sentiment analysis. Save 40+ hours/week. Free trial.",
+    "Space HR automates HR workflows — onboarding journeys, approval chains, compliance reminders, engagement campaigns, and sentiment analysis. Save 40+ hours/week. Free trial.",
   keywords: [
     "AI workflow automation",
     "HR process automation",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
         url: "/desktop-design-showcase.webp",
         width: 1200,
         height: 630,
-        alt: "SpaceHR HR Automation Software Dashboard",
+        alt: "Space HR HR Automation Software Dashboard",
       },
     ],
   },
@@ -75,34 +75,34 @@ export const metadata: Metadata = {
 
 const faqs = [
   {
-    question: "What HR processes can SpaceHR automate?",
+    question: "What HR processes can Space HR automate?",
     answer:
-      "SpaceHR automates a wide range of HR workflows including: new hire onboarding sequences (Day 1–90 task chains), multi-level approval workflows for leave, expenses, and headcount, compliance training reminders and certification tracking, pulse survey distribution and response collection, employee anniversary and recognition campaigns, and recurring administrative tasks like monthly compliance checks and quarterly goal reviews.",
+      "Space HR automates a wide range of HR workflows including: new hire onboarding sequences (Day 1–90 task chains), multi-level approval workflows for leave, expenses, and headcount, compliance training reminders and certification tracking, pulse survey distribution and response collection, employee anniversary and recognition campaigns, and recurring administrative tasks like monthly compliance checks and quarterly goal reviews.",
   },
   {
-    question: "How does SpaceHR onboarding automation work?",
+    question: "How does Space HR onboarding automation work?",
     answer:
-      "When a new hire is added to SpaceHR, the onboarding automation engine triggers a pre-configured sequence of tasks, messages, and content deliveries based on start date, role, department, and location. It automatically sends document collection reminders, delivers training content at the right pace, schedules manager check-ins, and tracks completion — all without HR needing to manually follow up. Most companies complete setup using a pre-built template in under 2 hours.",
+      "When a new hire is added to Space HR, the onboarding automation engine triggers a pre-configured sequence of tasks, messages, and content deliveries based on start date, role, department, and location. It automatically sends document collection reminders, delivers training content at the right pace, schedules manager check-ins, and tracks completion — all without HR needing to manually follow up. Most companies complete setup using a pre-built template in under 2 hours.",
   },
   {
-    question: "Can SpaceHR automate multi-level approval chains?",
+    question: "Can Space HR automate multi-level approval chains?",
     answer:
-      "Yes. SpaceHR supports multi-level approval routing for leave requests, expense claims, headcount approvals, and policy acknowledgments. You define the rules (approval tiers, spending thresholds, escalation timers) once, and SpaceHR routes every request automatically. If an approver doesn't respond within your defined SLA, the system escalates to the next level and notifies HR.",
+      "Yes. Space HR supports multi-level approval routing for leave requests, expense claims, headcount approvals, and policy acknowledgments. You define the rules (approval tiers, spending thresholds, escalation timers) once, and Space HR routes every request automatically. If an approver doesn't respond within your defined SLA, the system escalates to the next level and notifies HR.",
   },
   {
-    question: "How is SpaceHR's HR automation different from Zapier or Make.com?",
+    question: "How is Space HR's HR automation different from Zapier or Make.com?",
     answer:
-      "Zapier and Make.com are general-purpose automation platforms — they require custom builds for every HR workflow and don't understand HR data natively. SpaceHR is purpose-built for HR: it comes pre-loaded with HR-specific workflow templates (onboarding, offboarding, compliance, engagement), understands your employee data model out of the box, and integrates directly with your payroll and HRIS data. No-code configuration, instant deployment, and HR-first logic.",
+      "Zapier and Make.com are general-purpose automation platforms — they require custom builds for every HR workflow and don't understand HR data natively. Space HR is purpose-built for HR: it comes pre-loaded with HR-specific workflow templates (onboarding, offboarding, compliance, engagement), understands your employee data model out of the box, and integrates directly with your payroll and HRIS data. No-code configuration, instant deployment, and HR-first logic.",
   },
   {
-    question: "Does SpaceHR's automation work for remote and distributed teams?",
+    question: "Does Space HR's automation work for remote and distributed teams?",
     answer:
-      "Yes. SpaceHR automation is location-independent — workflows trigger based on employee data, not physical presence. Remote onboarding, async approval chains, and digital engagement campaigns all work identically whether your team is in one office or spread across 30 countries. Multi-timezone scheduling is built in.",
+      "Yes. Space HR automation is location-independent — workflows trigger based on employee data, not physical presence. Remote onboarding, async approval chains, and digital engagement campaigns all work identically whether your team is in one office or spread across 30 countries. Multi-timezone scheduling is built in.",
   },
   {
-    question: "How long does it take to set up HR automation in SpaceHR?",
+    question: "How long does it take to set up HR automation in Space HR?",
     answer:
-      "Most teams launch their first automated workflow within 2 hours using SpaceHR's pre-built templates. Full setup of onboarding, approvals, and engagement automation typically takes 1–2 days with guided onboarding support. No coding or IT involvement required.",
+      "Most teams launch their first automated workflow within 2 hours using Space HR's pre-built templates. Full setup of onboarding, approvals, and engagement automation typically takes 1–2 days with guided onboarding support. No coding or IT involvement required.",
   },
 ];
 
@@ -115,16 +115,15 @@ const breadcrumb = [
 const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  name: "How to Automate HR Workflows with SpaceHR",
+  name: "How to Automate HR Workflows with Space HR",
   description:
-    "A step-by-step guide to setting up automated HR workflows — onboarding, approvals, and engagement campaigns — using SpaceHR's AI automation engine.",
+    "A step-by-step guide to setting up automated HR workflows — onboarding, approvals, and engagement campaigns — using Space HR's AI automation engine.",
   totalTime: "PT2H",
-  estimatedCost: { "@type": "MonetaryAmount", currency: "USD", value: "0" },
   step: [
     {
       "@type": "HowToStep",
       name: "Connect your employee data",
-      text: "Link SpaceHR to your HRIS or upload your employee roster. SpaceHR maps role, department, location, and start date automatically.",
+      text: "Link Space HR to your HRIS or upload your employee roster. Space HR maps role, department, location, and start date automatically.",
       position: 1,
     },
     {
@@ -142,13 +141,13 @@ const howToSchema = {
     {
       "@type": "HowToStep",
       name: "Test and activate",
-      text: "Run a test scenario against a sample employee record to verify the workflow fires correctly. Activate when ready — SpaceHR handles all future executions automatically.",
+      text: "Run a test scenario against a sample employee record to verify the workflow fires correctly. Activate when ready — Space HR handles all future executions automatically.",
       position: 4,
     },
     {
       "@type": "HowToStep",
       name: "Monitor and optimize",
-      text: "Track completion rates, response times, and engagement metrics from your automation dashboard. SpaceHR's AI surfaces optimization suggestions based on actual workflow performance.",
+      text: "Track completion rates, response times, and engagement metrics from your automation dashboard. Space HR's AI surfaces optimization suggestions based on actual workflow performance.",
       position: 5,
     },
   ],
@@ -835,7 +834,7 @@ export default function AIAutomationPage() {
               Real-World HR Automation Use Cases
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              See exactly how HR teams use SpaceHR automation to eliminate manual work and deliver consistent employee experiences.
+              See exactly how HR teams use Space HR automation to eliminate manual work and deliver consistent employee experiences.
             </p>
           </div>
           <div className="space-y-8">
@@ -843,28 +842,28 @@ export default function AIAutomationPage() {
               {
                 title: "New Hire Onboarding (Day 1–90 Automation)",
                 problem: "HR manually sends welcome emails, chases document submissions, assigns IT tickets, and schedules manager check-ins for every new hire — a 4–6 hour process per person.",
-                solution: "SpaceHR triggers the full onboarding journey the moment a new hire is added. Day 1 welcome message, Day 3 document reminder, Day 7 manager check-in prompt, Day 14 training module unlock, Day 30 pulse survey, Day 90 probation review — all automated, tracked, and escalated if missed.",
+                solution: "Space HR triggers the full onboarding journey the moment a new hire is added. Day 1 welcome message, Day 3 document reminder, Day 7 manager check-in prompt, Day 14 training module unlock, Day 30 pulse survey, Day 90 probation review — all automated, tracked, and escalated if missed.",
                 result: "3× faster onboarding completion. Zero manual follow-ups. New hires rate their onboarding experience 40% higher.",
                 color: "orange",
               },
               {
                 title: "Leave & Expense Approval Chains",
                 problem: "Leave requests pile up in email threads. Managers miss approvals. HR spends hours chasing sign-offs and manually updating records when approvals are granted.",
-                solution: "SpaceHR routes every leave and expense request to the right approver based on department hierarchy, request type, and spending thresholds. If the primary approver doesn't respond within 24 hours, the request auto-escalates. The employee is notified at every stage, and HR records update automatically on approval.",
+                solution: "Space HR routes every leave and expense request to the right approver based on department hierarchy, request type, and spending thresholds. If the primary approver doesn't respond within 24 hours, the request auto-escalates. The employee is notified at every stage, and HR records update automatically on approval.",
                 result: "85% reduction in approval cycle time. Zero requests lost in email. Full audit trail for every decision.",
                 color: "green",
               },
               {
                 title: "Compliance Training & Certification Tracking",
                 problem: "Annual compliance training deadlines are missed because HR relies on manual reminders. Certification expiry dates are tracked in spreadsheets. Audits require hours of manual data gathering.",
-                solution: "SpaceHR maintains a compliance calendar for every employee. It sends automated reminders at 30 days, 7 days, and 1 day before each deadline, escalates to the manager if incomplete, and generates a real-time compliance dashboard for audit purposes.",
+                solution: "Space HR maintains a compliance calendar for every employee. It sends automated reminders at 30 days, 7 days, and 1 day before each deadline, escalates to the manager if incomplete, and generates a real-time compliance dashboard for audit purposes.",
                 result: "99% on-time compliance training completion. Audit-ready reports generated in seconds instead of hours.",
                 color: "blue",
               },
               {
                 title: "Employee Engagement & Recognition Campaigns",
                 problem: "Employee anniversaries and birthdays are missed. Engagement surveys get low response rates because they're sent at the wrong time. Recognition is inconsistent across managers.",
-                solution: "SpaceHR automates birthday and work anniversary celebrations with personalized messages and team notifications. Pulse surveys are sent based on AI-optimized timing (shown to increase response rates by 34%). Recognition workflows let any employee trigger a public shoutout that routes to Slack, Teams, or the company feed.",
+                solution: "Space HR automates birthday and work anniversary celebrations with personalized messages and team notifications. Pulse surveys are sent based on AI-optimized timing (shown to increase response rates by 34%). Recognition workflows let any employee trigger a public shoutout that routes to Slack, Teams, or the company feed.",
                 result: "+42% employee satisfaction score. +34% survey response rate. Recognition frequency up 3× vs. manual.",
                 color: "purple",
               },
@@ -882,7 +881,7 @@ export default function AIAutomationPage() {
                     <p className="text-gray-600 dark:text-gray-400 leading-relaxed">{problem}</p>
                   </div>
                   <div>
-                    <p className="text-xs font-bold uppercase tracking-wide text-blue-600 dark:text-blue-400 mb-2">⚙️ SpaceHR Solution</p>
+                    <p className="text-xs font-bold uppercase tracking-wide text-blue-600 dark:text-blue-400 mb-2">⚙️ Space HR Solution</p>
                     <p className="text-gray-600 dark:text-gray-400 leading-relaxed">{solution}</p>
                   </div>
                   <div>
@@ -904,7 +903,7 @@ export default function AIAutomationPage() {
               HR Automation — Frequently Asked Questions
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400">
-              Everything teams ask before automating their HR workflows with SpaceHR.
+              Everything teams ask before automating their HR workflows with Space HR.
             </p>
           </div>
           <div className="space-y-3">
@@ -929,7 +928,7 @@ export default function AIAutomationPage() {
       {/* Internal Links */}
       <section className="py-12 bg-white dark:bg-[#0b1121] border-t border-gray-200 dark:border-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-          <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-6">Related SpaceHR Features</h2>
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-6">Related Space HR Features</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {[
               { label: "AI HR Chatbot", href: "/features/ai-chatbots" },

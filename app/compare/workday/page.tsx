@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     "workday alternative",
     "workday alternative for mid-market",
     "workday competitor",
-    "space hr vs workday",
+    "Space HR vs workday",
     "enterprise HRMS alternative",
     "mid-market HR software",
     "AI HR platform",
@@ -42,6 +42,13 @@ export const metadata: Metadata = {
     description:
       "Enterprise-grade AI HRMS without the Workday complexity. Predictive analytics, AI payroll auditing, and 360° appraisals at mid-market pricing.",
     url: "https://spacehr.net/compare/workday",
+    siteName: "Space HR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Workday Alternative for Mid-Market Enterprises | Space HR",
+    description: "Enterprise-grade AI HRMS without the Workday complexity. Predictive analytics, AI payroll auditing, and 360° appraisals at mid-market pricing.",
   },
   alternates: {
     canonical: "https://spacehr.net/compare/workday",
@@ -84,29 +91,29 @@ const breadcrumb = generateBreadcrumbSchema([
 ]);
 
 const comparisonData = [
-  { feature: "AI Payroll Anomaly Detection", workday: "Add-on", spaceHR: true },
-  { feature: "Predictive Workforce Analytics", workday: true, spaceHR: true },
-  { feature: "360° Performance Appraisals", workday: true, spaceHR: true },
+  { feature: "AI Payroll Anomaly Detection", workday: "Add-on", "Space HR": true },
+  { feature: "Predictive Workforce Analytics", workday: true, "Space HR": true },
+  { feature: "360° Performance Appraisals", workday: true, "Space HR": true },
   {
     feature: "AI-Generated Performance Summaries",
     workday: false,
-    spaceHR: true,
+    "Space HR": true,
   },
-  { feature: "AI HR Concierge Chatbot", workday: "Basic", spaceHR: true },
-  { feature: "Automated Cost Forecasting", workday: true, spaceHR: true },
-  { feature: "NACHA-Compliant ACH Generation", workday: true, spaceHR: true },
-  { feature: "Multi-State Tax Compliance", workday: true, spaceHR: true },
+  { feature: "AI HR Concierge Chatbot", workday: "Basic", "Space HR": true },
+  { feature: "Automated Cost Forecasting", workday: true, "Space HR": true },
+  { feature: "NACHA-Compliant ACH Generation", workday: true, "Space HR": true },
+  { feature: "Multi-State Tax Compliance", workday: true, "Space HR": true },
   {
     feature: "Implementation Time",
     workday: "6-18 months",
-    spaceHR: "2-6 weeks",
+    "Space HR": "2-6 weeks",
   },
-  { feature: "Mid-Market Pricing", workday: false, spaceHR: true },
-  { feature: "No Consulting Fees Required", workday: false, spaceHR: true },
-  { feature: "Self-Service Configuration", workday: "Limited", spaceHR: true },
-  { feature: "Goal & OKR Management", workday: true, spaceHR: true },
-  { feature: "Attrition Prediction AI", workday: "Add-on", spaceHR: true },
-  { feature: "GPS Geofenced Attendance", workday: false, spaceHR: true },
+  { feature: "Mid-Market Pricing", workday: false, "Space HR": true },
+  { feature: "No Consulting Fees Required", workday: false, "Space HR": true },
+  { feature: "Self-Service Configuration", workday: "Limited", "Space HR": true },
+  { feature: "Goal & OKR Management", workday: true, "Space HR": true },
+  { feature: "Attrition Prediction AI", workday: "Add-on", "Space HR": true },
+  { feature: "GPS Geofenced Attendance", workday: false, "Space HR": true },
 ];
 
 export default function WorkdayComparisonPage() {
@@ -186,11 +193,11 @@ export default function WorkdayComparisonPage() {
                       )}
                     </td>
                     <td className="py-4 px-4 text-center">
-                      {row.spaceHR === true ? (
+                      {row["Space HR"] === true ? (
                         <CheckCircle className="w-5 h-5 text-green-500 mx-auto" />
-                      ) : typeof row.spaceHR === "string" ? (
+                      ) : typeof row["Space HR"] === "string" ? (
                         <span className="text-green-600 text-sm font-bold">
-                          {row.spaceHR}
+                          {row["Space HR"]}
                         </span>
                       ) : (
                         <XCircle className="w-5 h-5 text-red-400 mx-auto" />

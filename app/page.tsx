@@ -34,10 +34,10 @@ import {
 export const metadata: Metadata = {
   title: {
     absolute:
-      "SpaceHR - AI-Powered HR Chatbot & Employee Self-Service Platform",
+      "Space HR - AI-Powered HR Chatbot & Employee Self-Service Platform",
   },
   description:
-    "SpaceHR automates HR for growing teams - AI chatbot for employee self-service, payroll anomaly detection, 12-month labor cost forecasting, and 360 appraisals. Free trial. Setup in 48 hours.",
+    "Space HR automates HR for growing teams - AI chatbot for employee self-service, payroll anomaly detection, 12-month labor cost forecasting, and 360 appraisals. Free trial. Setup in 48 hours.",
   keywords: [
     "AI HR chatbot",
     "chatbot for HR services",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     "hr payroll software",
   ],
   openGraph: {
-    title: "SpaceHR - AI HR Chatbot & Employee Self-Service Platform",
+    title: "Space HR - AI HR Chatbot & Employee Self-Service Platform",
     description:
       "AI HR chatbot + payroll auditor + workforce forecasting - all in one platform. Reduce HR tickets by 70%. Free trial available.",
     url: "https://spacehr.net",
@@ -66,13 +66,13 @@ export const metadata: Metadata = {
         url: "https://spacehr.net/desktop-design-showcase.webp",
         width: 1200,
         height: 630,
-        alt: "SpaceHR - AI HR Chatbot and Employee Self-Service Platform",
+        alt: "Space HR - AI HR Chatbot and Employee Self-Service Platform",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SpaceHR - AI HR Chatbot & Employee Self-Service Platform",
+    title: "Space HR - AI HR Chatbot & Employee Self-Service Platform",
     description:
       "AI chatbot for HR, payroll anomaly detection, workforce forecasting - all in one. Free trial, setup in 48 hours.",
     images: ["https://spacehr.net/desktop-design-showcase.webp"],
@@ -85,34 +85,34 @@ export const metadata: Metadata = {
 export default function Home() {
   const homeFaqs = [
     {
-      question: "What is SpaceHR?",
+      question: "What is Space HR?",
       answer:
-        "SpaceHR is an AI-powered HR platform that combines an AI HR chatbot for employee self-service, automated payroll anomaly detection, 12-month labor cost forecasting, 360-degree performance appraisals, and attrition prediction. Designed for mid-market and enterprise companies to reduce HR overhead and make data-driven workforce decisions.",
+        "Space HR is an AI-powered HR platform that combines an AI HR chatbot for employee self-service, automated payroll anomaly detection, 12-month labor cost forecasting, 360-degree performance appraisals, and attrition prediction. Designed for mid-market and enterprise companies to reduce HR overhead and make data-driven workforce decisions.",
     },
     {
-      question: "Does SpaceHR have an AI HR chatbot?",
+      question: "Does Space HR have an AI HR chatbot?",
       answer:
-        "Yes. SpaceHR includes a 24/7 AI HR chatbot that handles employee questions about leave balances, payroll, policies, and benefits automatically. It resolves 95% of queries instantly, reduces HR ticket volume by 70%, and escalates complex issues to your HR team with full context.",
+        "Yes. Space HR includes a 24/7 AI HR chatbot that handles employee questions about leave balances, payroll, policies, and benefits automatically. It resolves 95% of queries instantly, reduces HR ticket volume by 70%, and escalates complex issues to your HR team with full context.",
     },
     {
-      question: "How does SpaceHR detect payroll anomalies?",
+      question: "How does Space HR detect payroll anomalies?",
       answer:
-        "SpaceHR's AI Payroll Auditor scans every payroll run before processing and flags errors in gross-to-net calculations, FUTA/FICA withholding, and NACHA ACH file generation. It compares payroll against historical baselines and alerts HR instantly, reducing payroll errors by 99%.",
+        "Space HR's AI Payroll Auditor scans every payroll run before processing and flags errors in gross-to-net calculations, FUTA/FICA withholding, and NACHA ACH file generation. It compares payroll against historical baselines and alerts HR instantly, reducing payroll errors by 99%.",
     },
     {
-      question: "Can SpaceHR predict labor costs?",
+      question: "Can Space HR predict labor costs?",
       answer:
-        "Yes. SpaceHR forecasts 12 months of labor costs with 95% accuracy using AI headcount scenario modeling. HR leaders and CFOs can model hiring plans, simulate salary increase impacts, and track budget-vs-actual variance in real time.",
+        "Yes. Space HR forecasts 12 months of labor costs with 95% accuracy using AI headcount scenario modeling. HR leaders and CFOs can model hiring plans, simulate salary increase impacts, and track budget-vs-actual variance in real time.",
     },
     {
-      question: "Which countries does SpaceHR support?",
+      question: "Which countries does Space HR support?",
       answer:
-        "SpaceHR supports United States (all 50 states, FUTA/SUTA, NACHA), UAE (WPS, MOHRE, gratuity), Singapore (CPF, MOM), Canada, and Europe (GDPR). Regional payroll compliance is built in with no configuration required.",
+        "Space HR supports United States (all 50 states, FUTA/SUTA, NACHA), UAE (WPS, MOHRE, gratuity), Singapore (CPF, MOM), Canada, and Europe (GDPR). Regional payroll compliance is built in with no configuration required.",
     },
     {
-      question: "How long does it take to set up SpaceHR?",
+      question: "How long does it take to set up Space HR?",
       answer:
-        "Most teams go live within 48 hours. SpaceHR provides guided onboarding, data import tools, and a dedicated setup team. No coding is required. A free trial is available.",
+        "Most teams go live within 48 hours. Space HR provides guided onboarding, data import tools, and a dedicated setup team. No coding is required. A free trial is available.",
     },
   ];
 
@@ -196,6 +196,86 @@ export default function Home() {
                 </Button>
               </Link>
             </div>
+            <p className="text-sm text-gray-300 mt-8 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-500">
+              Built in the United States · Trusted by teams in 15+ countries
+            </p>
+          </div>
+        </section>
+
+        {/* AI CHATBOT SPOTLIGHT — high-priority SEO internal link */}
+        <section className="py-20 bg-white dark:bg-[#0d1526] border-b border-gray-100 dark:border-gray-800">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-sm font-semibold mb-6 border border-purple-200 dark:border-purple-800">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
+                  </span>
+                  AI HR Chatbot — Most Popular Feature
+                </div>
+                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+                  Your employees get answers in{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
+                    under 3 seconds
+                  </span>
+                </h2>
+                <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+                  Space HR&apos;s <strong>AI HR chatbot</strong> handles leave
+                  requests, payslip queries, policy lookups, and benefits
+                  questions 24/7 — so your HR team can focus on work that
+                  matters.
+                </p>
+                <ul className="space-y-3 mb-10">
+                  {[
+                    "Resolves 95% of HR queries without human involvement",
+                    "Reduces HR ticket volume by 70% from week one",
+                    "Connects to your HRMS — answers are live, not static",
+                    "Available in the US, UAE, UK, Singapore & India",
+                  ].map((point) => (
+                    <li key={point} className="flex items-start gap-3 text-gray-700 dark:text-gray-300">
+                      <CheckCircle className="w-5 h-5 text-purple-500 mt-0.5 shrink-0" />
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link href="/features/ai-chatbots">
+                    <Button size="lg" className="rounded-full h-12 px-8 bg-purple-600 hover:bg-purple-700 text-white group">
+                      See the AI HR Chatbot
+                      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                  </Link>
+                  <Link href="/solutions/chatbot-for-hr-services">
+                    <Button size="lg" variant="outline" className="rounded-full h-12 px-8 group">
+                      Chatbot for HR Services
+                      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  { stat: "70%", label: "Fewer HR tickets", color: "from-purple-500 to-pink-500" },
+                  { stat: "95%", label: "Query resolution rate", color: "from-blue-500 to-cyan-500" },
+                  { stat: "24/7", label: "Always available", color: "from-green-500 to-teal-500" },
+                  { stat: "48h", label: "Setup time", color: "from-orange-500 to-amber-500" },
+                ].map((item) => (
+                  <Link
+                    key={item.stat}
+                    href="/features/ai-chatbots"
+                    className="bg-gray-50 dark:bg-[#1e293b] rounded-2xl p-6 border border-gray-100 dark:border-gray-800 hover:border-purple-300 dark:hover:border-purple-700 hover:shadow-lg transition-all text-center group"
+                  >
+                    <div className={`text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r ${item.color} mb-2`}>
+                      {item.stat}
+                    </div>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white transition-colors">
+                      {item.label}
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
         </section>
 
@@ -204,11 +284,11 @@ export default function Home() {
           <div className="px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-                See AIPerform in Action
+                See Space HR in Action
               </h2>
               <p className="text-gray-400 text-lg mb-8">
-                Watch how top companies use our platform to transform their
-                culture regardless of team size.
+                Watch how growing teams use Space HR's AI HR chatbot and HRMS to
+                automate workflows and cut HR overhead by 70%.
               </p>
               <Link href="/tools/w4-generator">
                 <Button
@@ -247,7 +327,7 @@ export default function Home() {
                     >
                       <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z" />
                     </svg>
-                    <span className="truncate">AIPerform · Dashboard</span>
+                    <span className="truncate">Space HR · Dashboard</span>
                     <svg
                       className="w-3 h-3 ml-1 text-white/30 hover:text-white/70 cursor-pointer shrink-0"
                       viewBox="0 0 24 24"
@@ -339,7 +419,7 @@ export default function Home() {
                     </svg>
                     <span className="text-xs text-white/50 select-none truncate">
                       <span className="text-white/30">https://</span>
-                      <span className="text-white/70">app.aiperform.io</span>
+                      <span className="text-white/70">app.spacehr.net</span>
                       <span className="text-white/30">/dashboard/overview</span>
                     </span>
                   </div>
@@ -1151,7 +1231,7 @@ export default function Home() {
                 Compliant HR in Every Region
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                Native payroll compliance for the US, UAE, Singapore, UK, India, Canada, and Europe — not a bolt-on.
+                Headquartered in the United States, Space HR delivers native payroll compliance for the US, UAE, Singapore, UK, India, Canada, and Europe — not a bolt-on.
               </p>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
@@ -1202,11 +1282,11 @@ export default function Home() {
                 One Company. Eight AI Products.
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                SpaceHR is built by{" "}
+                Space HR is built by{" "}
                 <a href="https://pmspace.ai" target="_blank" rel="noopener noreferrer" className="text-blue-600 dark:text-blue-400 hover:underline font-semibold">
                   Space AI
                 </a>
-                {" "}— the same team behind PM Space AI, Space CRM, and five other enterprise tools. Connect them all or use SpaceHR standalone.
+                {" "}— the same team behind PM Space AI, Space CRM, and five other enterprise tools. Connect them all or use Space HR standalone.
               </p>
             </div>
 
@@ -1247,7 +1327,7 @@ export default function Home() {
 
             <div className="text-center">
               <Link href="/integrations/space-ai" className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 font-semibold hover:underline text-sm">
-                See how SpaceHR integrates with PM Space AI
+                See how Space HR integrates with PM Space AI
                 <ArrowRight className="w-4 h-4" />
               </Link>
             </div>
@@ -1345,6 +1425,72 @@ export default function Home() {
             </div>
           </div>
         </section>
+        {/* RESOURCES HUB */}
+        <section className="py-20 bg-gray-50 dark:bg-[#0f172a]">
+          <div className="container mx-auto px-6 max-w-5xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3">
+                Explore Space HR Resources
+              </h2>
+              <p className="text-lg text-gray-500 dark:text-gray-400">
+                Guides, templates, and tools to help HR teams work smarter
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                {
+                  href: "/blogs",
+                  label: "HR Blog",
+                  desc: "58 articles on AI automation, payroll compliance, performance management, and workforce analytics",
+                  badge: "58 Articles",
+                  color: "text-blue-600 dark:text-blue-400",
+                  bg: "bg-blue-50 dark:bg-blue-900/20",
+                },
+                {
+                  href: "/templates",
+                  label: "HR Templates",
+                  desc: "Free downloadable templates — offer letters, PIPs, onboarding checklists, job descriptions, and more",
+                  badge: "16 Free Templates",
+                  color: "text-emerald-600 dark:text-emerald-400",
+                  bg: "bg-emerald-50 dark:bg-emerald-900/20",
+                },
+                {
+                  href: "/glossary",
+                  label: "HR Glossary",
+                  desc: "Plain-English definitions of modern HR tech terms — from predictive workforce analytics to NACHA ACH files",
+                  badge: "16 Terms",
+                  color: "text-purple-600 dark:text-purple-400",
+                  bg: "bg-purple-50 dark:bg-purple-900/20",
+                },
+                {
+                  href: "/compare",
+                  label: "Compare Platforms",
+                  desc: "Space HR vs BambooHR, Workday, Rippling, Gusto, ADP, and 9 more — side-by-side feature breakdowns",
+                  badge: "14 Comparisons",
+                  color: "text-orange-600 dark:text-orange-400",
+                  bg: "bg-orange-50 dark:bg-orange-900/20",
+                },
+              ].map(({ href, label, desc, badge, color, bg }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="group block rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#0b1121] p-6 hover:shadow-lg hover:border-primary/40 transition-all duration-200"
+                >
+                  <div className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold mb-4 ${bg} ${color}`}>
+                    {badge}
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
+                    {label}
+                  </h3>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+                    {desc}
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
         {/* FAQ Section */}
         <section className="py-20 bg-white dark:bg-[#0b1121]" id="faq">
           <div className="container mx-auto px-6 max-w-4xl">
@@ -1353,33 +1499,33 @@ export default function Home() {
                 Frequently Asked Questions
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-300">
-                Everything you need to know about SpaceHR
+                Everything you need to know about Space HR
               </p>
             </div>
             <div className="space-y-4">
               {[
                 {
-                  q: "What is SpaceHR?",
-                  a: "SpaceHR is an AI-powered HR platform combining an AI chatbot for employee self-service, automated payroll anomaly detection, 12-month labor cost forecasting, 360° performance appraisals, and attrition prediction — designed for mid-market and enterprise teams.",
+                  q: "What is Space HR?",
+                  a: "Space HR is an AI-powered HR platform combining an AI chatbot for employee self-service, automated payroll anomaly detection, 12-month labor cost forecasting, 360° performance appraisals, and attrition prediction — designed for mid-market and enterprise teams.",
                 },
                 {
-                  q: "Does SpaceHR have an AI HR chatbot?",
-                  a: "Yes. SpaceHR's AI HR chatbot handles employee questions about leave, payroll, policies, and benefits 24/7. It resolves 95% of queries instantly and reduces HR ticket volume by 70%.",
+                  q: "Does Space HR have an AI HR chatbot?",
+                  a: "Yes. Space HR's AI HR chatbot handles employee questions about leave, payroll, policies, and benefits 24/7. It resolves 95% of queries instantly and reduces HR ticket volume by 70%.",
                 },
                 {
-                  q: "How does SpaceHR detect payroll anomalies?",
-                  a: "SpaceHR's AI Payroll Auditor scans every payroll run before processing, flags errors in gross-to-net calculations and FUTA/FICA withholding, and alerts HR instantly — reducing payroll errors by 99%.",
+                  q: "How does Space HR detect payroll anomalies?",
+                  a: "Space HR's AI Payroll Auditor scans every payroll run before processing, flags errors in gross-to-net calculations and FUTA/FICA withholding, and alerts HR instantly — reducing payroll errors by 99%.",
                 },
                 {
-                  q: "Can SpaceHR predict labor costs?",
-                  a: "Yes. SpaceHR forecasts 12 months of labor costs with 95% accuracy, enabling HR and CFOs to model headcount scenarios and track budget-vs-actual variance in real time.",
+                  q: "Can Space HR predict labor costs?",
+                  a: "Yes. Space HR forecasts 12 months of labor costs with 95% accuracy, enabling HR and CFOs to model headcount scenarios and track budget-vs-actual variance in real time.",
                 },
                 {
-                  q: "Which countries does SpaceHR support?",
-                  a: "SpaceHR supports United States (all 50 states, NACHA), UAE (WPS, MOHRE, gratuity), Singapore (CPF, MOM), Canada, and Europe (GDPR). Regional payroll compliance is built in.",
+                  q: "Which countries does Space HR support?",
+                  a: "Space HR is headquartered in the United States and supports organizations across the US (all 50 states, NACHA), UAE (WPS, MOHRE, gratuity), Singapore (CPF, MOM), India (PF, ESI, TDS), Canada, and Europe (GDPR). Regional payroll compliance is built in.",
                 },
                 {
-                  q: "How long does it take to set up SpaceHR?",
+                  q: "How long does it take to set up Space HR?",
                   a: "Most teams go live within 48 hours with guided onboarding, data import tools, and a dedicated setup team. No coding required. A free trial is available.",
                 },
               ].map(({ q, a }, i) => (

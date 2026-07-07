@@ -6,7 +6,7 @@ import { ArrowRight, CheckCircle } from "lucide-react";
 export const metadata: Metadata = {
   title: "Global HR Software | US, UK, UAE, India, Singapore & More | Space HR",
   description:
-    "Space HR delivers country-specific HR and payroll compliance for the United States, United Kingdom, UAE, India, Singapore, Canada, and Europe. Built-in local regulations, no manual configuration needed.",
+    "Space HR is a US-based HR platform delivering country-specific HR and payroll compliance for the United States, United Kingdom, UAE, India, Singapore, Canada, and Europe. Built-in local regulations, no manual configuration needed.",
   keywords: [
     "global HR software",
     "international HR software",
@@ -21,6 +21,11 @@ export const metadata: Metadata = {
     "global HRMS",
     "international payroll compliance",
   ],
+  twitter: {
+    card: "summary_large_image",
+    title: "Global HR Software | Space HR",
+    description: "Country-specific HR and payroll compliance for the US, UK, UAE, India, Singapore, Canada, and Europe — built in, not bolted on.",
+  },
   alternates: { canonical: "https://spacehr.net/regions" },
   openGraph: {
     title: "Global HR Software | Space HR",
@@ -28,6 +33,8 @@ export const metadata: Metadata = {
       "Country-specific HR and payroll compliance for the US, UK, UAE, India, Singapore, Canada, and Europe — built in, not bolted on.",
     url: "https://spacehr.net/regions",
     images: [{ url: "/desktop-design-showcase.webp", width: 1200, height: 630 }],
+    siteName: "Space HR",
+    type: "website",
   },
 };
 
@@ -176,7 +183,7 @@ export default function RegionsPage() {
             </span>
           </h1>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Space HR ships with local payroll engines, statutory compliance rules, and data residency options for 7 major regions — no manual tax configuration required.
+            Headquartered in the United States, Space HR ships with local payroll engines, statutory compliance rules, and data residency options for 7 major regions — no manual tax configuration required.
           </p>
         </div>
       </section>

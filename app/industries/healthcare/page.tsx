@@ -18,6 +18,13 @@ export const metadata: Metadata = {
     title: "HR Software for Healthcare | Space HR",
     description: "Automate nurse scheduling, mandatory training tracking, and compliance management for healthcare organisations.",
     url: "https://spacehr.net/industries/healthcare",
+    siteName: "Space HR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HR Software for Healthcare | Space HR",
+    description: "Automate nurse scheduling, mandatory training tracking, and compliance management for healthcare organisations.",
   },
   alternates: { canonical: "https://spacehr.net/industries/healthcare" },
 };

@@ -23,10 +23,23 @@ export const metadata: Metadata = {
   keywords: [
     "bamboohr alternative mid-sized business",
     "hr software for tech companies",
-    "space hr vs bamboohr",
+    "Space HR vs bamboohr",
     "scalable hr platform",
     "global payroll for tech teams",
   ],
+  openGraph: {
+    title: "BambooHR Alternatives for Mid-Sized Tech Companies | Space HR",
+    description: "BambooHR is great for small business, but mid-sized tech companies need more. Space HR provides the scalability, global compliance, and API integrations growing tech teams demand.",
+    url: "https://spacehr.net/compare/bamboohr",
+    siteName: "Space HR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BambooHR Alternatives for Mid-Sized Tech Companies | Space HR",
+    description: "BambooHR is great for small business, but mid-sized tech companies need more. Space HR provides the scalability, global compliance, and API integrations growing tech teams demand.",
+  },
+  alternates: { canonical: "https://spacehr.net/compare/bamboohr" },
 };
 
 const faqs = [

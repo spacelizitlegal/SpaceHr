@@ -1,4 +1,4 @@
-﻿import DemoRequest from "@/components/DemoRequest";
+import DemoRequest from "@/components/DemoRequest";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

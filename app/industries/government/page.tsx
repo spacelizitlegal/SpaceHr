@@ -18,6 +18,13 @@ export const metadata: Metadata = {
     title: "HR Software for Government & Public Sector | Space HR",
     description: "Civil service compliance, public pension schemes, workforce planning, and secure auditable HR for government organisations.",
     url: "https://spacehr.net/industries/government",
+    siteName: "Space HR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HR Software for Government & Public Sector | Space HR",
+    description: "Civil service compliance, public pension schemes, workforce planning, and secure auditable HR for government organisations.",
   },
   alternates: { canonical: "https://spacehr.net/industries/government" },
 };

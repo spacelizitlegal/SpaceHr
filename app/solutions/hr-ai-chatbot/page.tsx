@@ -24,47 +24,47 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "HR AI Chatbot — 24/7 Employee Self-Service Chatbot | SpaceHR",
+  title: "HR AI Chatbot: What It Is, Features & Buyer's Guide | Space HR",
   description:
-    "SpaceHR's HR AI chatbot answers employee questions about leave, payroll, policies, and benefits instantly — 24/7. Reduce HR tickets by 70%. Free trial, setup in 48 hours.",
+    "Learn what an HR AI chatbot is, which features matter, and how to choose one for your team. Covers use cases, integrations, security, and ROI for mid-market and enterprise HR.",
   keywords: [
     "hr ai chatbot",
-    "ai chatbot hr",
-    "ai hr chatbot",
-    "hr chatbot platform",
-    "chatbot for hr services",
-    "employee self-service chatbot",
-    "hr helpdesk chatbot",
-    "ai chatbot for employees",
-    "hr virtual assistant",
+    "what is hr ai chatbot",
+    "ai chatbot for hr",
+    "hr chatbot buyers guide",
+    "best hr ai chatbot",
+    "hr chatbot features",
+    "hr chatbot comparison",
+    "ai hr assistant",
     "automated hr support",
-    "hr ticket automation",
+    "hr virtual assistant",
     "employee query automation",
+    "hr chatbot platform",
   ],
   alternates: {
     canonical: "https://spacehr.net/solutions/hr-ai-chatbot",
   },
   openGraph: {
-    title: "HR AI Chatbot — 24/7 Employee Self-Service | SpaceHR",
+    title: "HR AI Chatbot: What It Is, Features & Buyer's Guide | Space HR",
     description:
-      "Resolve 95% of employee HR queries instantly with SpaceHR's AI chatbot. Leave balances, payslips, policy questions — answered 24/7. Reduce HR ticket volume by 70%.",
+      "Learn what an HR AI chatbot is, which features matter, and how to choose one for your team.",
     url: "https://spacehr.net/solutions/hr-ai-chatbot",
-    siteName: "SpaceHR",
+    siteName: "Space HR",
     type: "website",
     images: [
       {
         url: "/desktop-design-showcase.webp",
         width: 1200,
         height: 630,
-        alt: "SpaceHR HR AI Chatbot Interface",
+        alt: "Space HR HR AI Chatbot Buyer's Guide",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "HR AI Chatbot — 24/7 Employee Self-Service | SpaceHR",
+    title: "HR AI Chatbot: What It Is, Features & Buyer's Guide | Space HR",
     description:
-      "Resolve 95% of employee HR queries instantly. Reduce HR ticket volume by 70% with SpaceHR's AI chatbot.",
+      "Learn what an HR AI chatbot is, which features matter, and how to choose one.",
     images: ["/desktop-design-showcase.webp"],
   },
 };
@@ -73,47 +73,47 @@ const faqs = [
   {
     question: "What is an HR AI chatbot?",
     answer:
-      "An HR AI chatbot is an AI-powered virtual assistant that handles employee questions about HR topics — leave balances, payroll queries, company policies, benefits information, onboarding tasks, and more — automatically and instantly, without requiring an HR team member to respond. SpaceHR's HR AI chatbot resolves 95% of employee queries with no human intervention, 24 hours a day, 7 days a week.",
+      "An HR AI chatbot is an AI-powered virtual assistant that handles employee questions about HR topics — leave balances, payroll queries, company policies, benefits information, onboarding tasks, and more — automatically and instantly, without requiring an HR team member to respond. Space HR's HR AI chatbot resolves 95% of employee queries with no human intervention, 24 hours a day, 7 days a week.",
   },
   {
-    question: "What questions can SpaceHR's HR chatbot answer?",
+    question: "What questions can Space HR's HR chatbot answer?",
     answer:
-      "SpaceHR's HR AI chatbot handles: leave balance enquiries and leave applications, payslip access and payroll queries, company policy lookups (holiday policy, expense policy, remote work policy), benefits information (health insurance, 401k, pension), onboarding task checklists, IT request routing, compliance training status, performance review deadlines, and general HR FAQs. For complex or sensitive queries the chatbot escalates to the right HR team member with full context.",
+      "Space HR's HR AI chatbot handles: leave balance enquiries and leave applications, payslip access and payroll queries, company policy lookups (holiday policy, expense policy, remote work policy), benefits information (health insurance, 401k, pension), onboarding task checklists, IT request routing, compliance training status, performance review deadlines, and general HR FAQs. For complex or sensitive queries the chatbot escalates to the right HR team member with full context.",
   },
   {
-    question: "How does SpaceHR's HR chatbot reduce HR ticket volume?",
+    question: "How does Space HR's HR chatbot reduce HR ticket volume?",
     answer:
-      "Most employee HR queries are repetitive — 'What's my leave balance?', 'When is the next payroll?', 'What's the laptop policy?' SpaceHR's chatbot answers these instantly from your HR data, removing them entirely from HR's inbox. Customers typically see a 70% reduction in HR support tickets within the first month, freeing HR teams to focus on strategic work instead of answering the same questions repeatedly.",
+      "Most employee HR queries are repetitive — 'What's my leave balance?', 'When is the next payroll?', 'What's the laptop policy?' Space HR's chatbot answers these instantly from your HR data, removing them entirely from HR's inbox. Customers typically see a 70% reduction in HR support tickets within the first month, freeing HR teams to focus on strategic work instead of answering the same questions repeatedly.",
   },
   {
     question: "Does the HR chatbot work outside business hours?",
     answer:
-      "Yes. SpaceHR's HR AI chatbot operates 24/7 — including weekends, bank holidays, and overnight shifts. Employees in any timezone can get instant answers without waiting for HR business hours. This is especially valuable for global or shift-based workforces where traditional office-hours support creates bottlenecks.",
+      "Yes. Space HR's HR AI chatbot operates 24/7 — including weekends, bank holidays, and overnight shifts. Employees in any timezone can get instant answers without waiting for HR business hours. This is especially valuable for global or shift-based workforces where traditional office-hours support creates bottlenecks.",
   },
   {
-    question: "How does SpaceHR's chatbot escalate queries it can't resolve?",
+    question: "How does Space HR's chatbot escalate queries it can't resolve?",
     answer:
-      "When SpaceHR's HR chatbot encounters a complex, sensitive, or novel query it cannot confidently resolve, it escalates to the appropriate HR team member — with the full conversation context already attached. The HR team member receives a structured handoff including the employee's name, department, query type, and what the chatbot has already tried, so no time is wasted re-gathering context.",
+      "When Space HR's HR chatbot encounters a complex, sensitive, or novel query it cannot confidently resolve, it escalates to the appropriate HR team member — with the full conversation context already attached. The HR team member receives a structured handoff including the employee's name, department, query type, and what the chatbot has already tried, so no time is wasted re-gathering context.",
   },
   {
     question: "Is the HR chatbot available in multiple languages?",
     answer:
-      "SpaceHR's HR chatbot supports English as the primary language, with multi-language capabilities available for enterprise customers. The chatbot can be configured to respond in the employee's preferred language for key HR topics. For global deployments, SpaceHR's team configures language settings during the 48-hour onboarding process.",
+      "Space HR's HR chatbot supports English as the primary language, with multi-language capabilities available for enterprise customers. The chatbot can be configured to respond in the employee's preferred language for key HR topics. For global deployments, Space HR's team configures language settings during the 48-hour onboarding process.",
   },
   {
-    question: "How does SpaceHR's HR chatbot handle sensitive employee data?",
+    question: "How does Space HR's HR chatbot handle sensitive employee data?",
     answer:
-      "SpaceHR is built with enterprise-grade security: all data is encrypted in transit and at rest (AES-256), the chatbot only surfaces data the requesting employee is authorized to see (role-based access controls), and all chatbot interactions are logged for audit purposes. SpaceHR is GDPR-compliant for European deployments and supports SOC 2-equivalent security controls.",
+      "Space HR is built with enterprise-grade security: all data is encrypted in transit and at rest (AES-256), the chatbot only surfaces data the requesting employee is authorized to see (role-based access controls), and all chatbot interactions are logged for audit purposes. Space HR is GDPR-compliant for European deployments and supports SOC 2-equivalent security controls.",
   },
   {
-    question: "How long does it take to set up SpaceHR's HR AI chatbot?",
+    question: "How long does it take to set up Space HR's HR AI chatbot?",
     answer:
-      "Most teams are fully live with SpaceHR's HR AI chatbot within 48 hours. Setup involves connecting SpaceHR to your HRIS or uploading your employee directory, configuring the chatbot's knowledge base with your policies and FAQs, and testing with a pilot group. No coding is required. SpaceHR's onboarding team guides you through every step. A free trial is available.",
+      "Most teams are fully live with Space HR's HR AI chatbot within 48 hours. Setup involves connecting Space HR to your HRIS or uploading your employee directory, configuring the chatbot's knowledge base with your policies and FAQs, and testing with a pilot group. No coding is required. Space HR's onboarding team guides you through every step. A free trial is available.",
   },
   {
-    question: "How is SpaceHR's HR chatbot different from a general AI chatbot like ChatGPT?",
+    question: "How is Space HR's HR chatbot different from a general AI chatbot like ChatGPT?",
     answer:
-      "General AI chatbots like ChatGPT have no access to your employee data and cannot answer questions like 'What's my leave balance?' or 'When was my last payslip processed?' SpaceHR's HR chatbot is connected directly to your HRIS and payroll data, so it answers with real, employee-specific information — not generic text. It also follows your company's specific policies, escalation rules, and data access controls.",
+      "General AI chatbots like ChatGPT have no access to your employee data and cannot answer questions like 'What's my leave balance?' or 'When was my last payslip processed?' Space HR's HR chatbot is connected directly to your HRIS and payroll data, so it answers with real, employee-specific information — not generic text. It also follows your company's specific policies, escalation rules, and data access controls.",
   },
 ];
 
@@ -251,19 +251,19 @@ export default function HRAIChatbotPage() {
             <div className="grid lg:grid-cols-2 gap-14 items-center">
               <div>
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-sm font-semibold mb-6 border border-blue-200 dark:border-blue-800">
-                  <Bot className="w-4 h-4" /> HR AI Chatbot
+                  <Bot className="w-4 h-4" /> HR AI Chatbot Buyer's Guide
                 </div>
                 <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900 dark:text-white mb-6 leading-tight">
-                  The HR AI Chatbot That{" "}
+                  What Is an{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-                    Answers Everything.
+                    HR AI Chatbot?
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
-                  SpaceHR's <strong>HR AI chatbot</strong> gives every employee instant, accurate answers about leave, payroll, policies, and benefits — 24/7, without involving your HR team.
+                  An HR AI chatbot is a virtual assistant that answers employee questions about leave, payroll, policies, and benefits using your live HR data. Learn what features matter, how it differs from generic AI, and what ROI to expect.
                 </p>
                 <p className="text-lg text-gray-500 dark:text-gray-400 mb-8 leading-relaxed">
-                  Resolve <strong>95% of HR queries automatically</strong>. Reduce your HR support ticket volume by <strong>70%</strong>. Free up your HR team to focus on people strategy, not inbox management.
+                  Use this guide to evaluate chatbots for your team. Then see how Space HR resolves <strong>95% of HR queries automatically</strong> and reduces ticket volume by <strong>70%</strong>.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 mb-10">
                   <Link href="https://cad.spaceaiapp.com/login">
@@ -296,7 +296,7 @@ export default function HRAIChatbotPage() {
                       <Bot className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <p className="font-semibold text-white text-sm">SpaceHR Assistant</p>
+                      <p className="font-semibold text-white text-sm">Space HR Assistant</p>
                       <p className="text-blue-200 text-xs flex items-center gap-1">
                         <span className="w-2 h-2 rounded-full bg-green-400 inline-block" /> Online 24/7
                       </p>
@@ -369,10 +369,10 @@ export default function HRAIChatbotPage() {
                 The average HR professional spends <strong>40–60% of their time</strong> answering the same questions over and over: "What's my leave balance?", "When do I get paid?", "What's the holiday policy?" These questions are important to employees — but they're not the strategic work that HR teams were hired to do. Every hour spent on inbox management is an hour not spent on hiring strategy, retention, culture-building, or workforce planning.
               </p>
               <p>
-                SpaceHR's HR AI chatbot changes this equation entirely. It connects directly to your HRIS and payroll data, learns your company's specific policies, and answers employee questions with real, employee-specific information — not generic text. Employees get instant answers 24/7. HR teams reclaim hours every week.
+                Space HR's HR AI chatbot changes this equation entirely. It connects directly to your HRIS and payroll data, learns your company's specific policies, and answers employee questions with real, employee-specific information — not generic text. Employees get instant answers 24/7. HR teams reclaim hours every week.
               </p>
               <p>
-                Unlike general AI tools like ChatGPT, SpaceHR's chatbot knows <em>your</em> HR data. It can tell Sarah in engineering that she has 12 days of annual leave remaining, that her next payslip will be processed on April 28, and that her company allows 3 remote days per week — all in the same conversation, all in under 5 seconds.
+                Unlike general AI tools like ChatGPT, Space HR's chatbot knows <em>your</em> HR data. It can tell Sarah in engineering that she has 12 days of annual leave remaining, that her next payslip will be processed on April 28, and that her company allows 3 remote days per week — all in the same conversation, all in under 5 seconds.
               </p>
             </div>
           </div>
@@ -386,7 +386,7 @@ export default function HRAIChatbotPage() {
                 HR AI Chatbot Capabilities
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                Everything SpaceHR's HR chatbot can do out of the box — no custom development required.
+                Everything Space HR's HR chatbot can do out of the box — no custom development required.
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -418,7 +418,7 @@ export default function HRAIChatbotPage() {
                 What Employees Ask the HR AI Chatbot
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                SpaceHR handles these queries automatically — 24/7, with zero HR involvement.
+                Space HR handles these queries automatically — 24/7, with zero HR involvement.
               </p>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
@@ -455,7 +455,7 @@ export default function HRAIChatbotPage() {
                 The ROI of an HR AI Chatbot
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                HR AI chatbots deliver measurable returns from month one. Here's what SpaceHR customers typically see.
+                HR AI chatbots deliver measurable returns from month one. Here's what Space HR customers typically see.
               </p>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6 mb-12">
@@ -478,10 +478,10 @@ export default function HRAIChatbotPage() {
                   A typical HR professional earning $65,000/year spends roughly 40% of their time on reactive employee queries — approximately <strong>$26,000/year</strong> in labor cost per HR headcount, just answering questions.
                 </p>
                 <p>
-                  For a company with 2 HR generalists, that's <strong>$52,000/year</strong> in HR labor dedicated to answering repetitive questions. SpaceHR's HR AI chatbot automates 70% of those queries, returning an estimated <strong>$36,400/year</strong> in HR capacity — which can be reinvested in strategic work or used to delay the next HR hire.
+                  For a company with 2 HR generalists, that's <strong>$52,000/year</strong> in HR labor dedicated to answering repetitive questions. Space HR's HR AI chatbot automates 70% of those queries, returning an estimated <strong>$36,400/year</strong> in HR capacity — which can be reinvested in strategic work or used to delay the next HR hire.
                 </p>
                 <p>
-                  Additional ROI comes from reduced employee frustration (faster answers = higher engagement), improved compliance (consistent, policy-accurate responses), and reduced HR burnout. Most SpaceHR customers recover their subscription cost within <strong>30–60 days</strong>.
+                  Additional ROI comes from reduced employee frustration (faster answers = higher engagement), improved compliance (consistent, policy-accurate responses), and reduced HR burnout. Most Space HR customers recover their subscription cost within <strong>30–60 days</strong>.
                 </p>
               </div>
             </div>
@@ -493,7 +493,7 @@ export default function HRAIChatbotPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
             <div className="text-center mb-14">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                How SpaceHR's HR AI Chatbot Works
+                How Space HR's HR AI Chatbot Works
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
                 From employee question to instant answer — here's the full flow.
@@ -506,13 +506,13 @@ export default function HRAIChatbotPage() {
                   {
                     step: "01",
                     title: "Employee asks a question",
-                    body: "An employee types a question in the SpaceHR chatbot interface — embedded in your HRMS dashboard, Slack, Microsoft Teams, or WhatsApp. No app switching, no login friction.",
+                    body: "An employee types a question in the Space HR chatbot interface — embedded in your HRMS dashboard, Slack, Microsoft Teams, or WhatsApp. No app switching, no login friction.",
                     side: "left",
                   },
                   {
                     step: "02",
                     title: "AI retrieves the right answer",
-                    body: "SpaceHR's AI queries your live HRIS and payroll data for employee-specific information (leave balances, payslips, personal records) and your policy knowledge base for general HR questions. No hallucination — only verified data.",
+                    body: "Space HR's AI queries your live HRIS and payroll data for employee-specific information (leave balances, payslips, personal records) and your policy knowledge base for general HR questions. No hallucination — only verified data.",
                     side: "right",
                   },
                   {
@@ -576,10 +576,10 @@ export default function HRAIChatbotPage() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
-                SpaceHR HR Chatbot vs. The Alternatives
+                Space HR HR Chatbot vs. The Alternatives
               </h2>
               <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                How SpaceHR compares to email support, Intercom/Zendesk, and general-purpose AI chatbots.
+                How Space HR compares to email support, Intercom/Zendesk, and general-purpose AI chatbots.
               </p>
             </div>
             <div className="overflow-x-auto rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm">
@@ -587,7 +587,7 @@ export default function HRAIChatbotPage() {
                 <thead>
                   <tr className="bg-gray-50 dark:bg-[#1e293b] border-b border-gray-200 dark:border-gray-700">
                     <th className="text-left p-5 font-semibold text-gray-700 dark:text-gray-300 w-1/4">Feature</th>
-                    <th className="p-5 font-bold text-blue-700 dark:text-blue-400 text-center bg-blue-50 dark:bg-blue-900/20">SpaceHR Chatbot</th>
+                    <th className="p-5 font-bold text-blue-700 dark:text-blue-400 text-center bg-blue-50 dark:bg-blue-900/20">Space HR Chatbot</th>
                     <th className="p-5 font-semibold text-gray-600 dark:text-gray-400 text-center">Email / Ticketing</th>
                     <th className="p-5 font-semibold text-gray-600 dark:text-gray-400 text-center">ChatGPT / General AI</th>
                     <th className="p-5 font-semibold text-gray-600 dark:text-gray-400 text-center">Intercom / Zendesk</th>
@@ -604,10 +604,10 @@ export default function HRAIChatbotPage() {
                     ["Audit log", "✅ Full conversation log", "✅ Email thread", "❌ No log", "✅ Ticket log"],
                     ["Setup time", "✅ 48 hours", "✅ Immediate", "✅ Immediate", "❌ Weeks"],
                     ["HR-specific pricing", "✅ Mid-market SaaS", "✅ Free (HR labor cost)", "⚠️ Per-seat", "❌ Expensive"],
-                  ].map(([feature, spacehr, email, gpt, intercom], i) => (
+                  ].map(([feature, spaceHR, email, gpt, intercom], i) => (
                     <tr key={i} className={i % 2 === 0 ? "bg-white dark:bg-[#0b1121]" : "bg-gray-50/50 dark:bg-[#0f172a]/50"}>
                       <td className="p-5 font-medium text-gray-700 dark:text-gray-300">{feature}</td>
-                      <td className="p-5 text-center font-medium text-blue-700 dark:text-blue-400 bg-blue-50/50 dark:bg-blue-900/10">{spacehr}</td>
+                      <td className="p-5 text-center font-medium text-blue-700 dark:text-blue-400 bg-blue-50/50 dark:bg-blue-900/10">{spaceHR}</td>
                       <td className="p-5 text-center text-gray-600 dark:text-gray-400">{email}</td>
                       <td className="p-5 text-center text-gray-600 dark:text-gray-400">{gpt}</td>
                       <td className="p-5 text-center text-gray-600 dark:text-gray-400">{intercom}</td>
@@ -649,7 +649,7 @@ export default function HRAIChatbotPage() {
         {/* Related links */}
         <section className="py-12 bg-gray-50 dark:bg-[#111827] border-t border-gray-200 dark:border-gray-800">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
-            <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-6">Related SpaceHR Features &amp; Solutions</h2>
+            <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-6">Related Space HR Features &amp; Solutions</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
                 { label: "AI HR Chatbot Feature", href: "/features/ai-chatbots" },
@@ -677,7 +677,7 @@ export default function HRAIChatbotPage() {
               Give Every Employee Instant HR Answers.
             </h2>
             <p className="text-xl text-blue-100 mb-4 max-w-2xl mx-auto">
-              Deploy SpaceHR's HR AI chatbot in 48 hours. No coding. No complex integrations. Just instant answers for every employee, 24/7.
+              Deploy Space HR's HR AI chatbot in 48 hours. No coding. No complex integrations. Just instant answers for every employee, 24/7.
             </p>
             <p className="text-base text-blue-200 mb-10">
               Free trial available. Setup in 48 hours. GDPR compliant.

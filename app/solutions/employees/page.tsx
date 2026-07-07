@@ -43,6 +43,13 @@ export const metadata: Metadata = {
     description:
       "Mobile-first self-service with AI Concierge chatbot. Payslips, leave requests, and HR support — all from your phone.",
     url: "https://spacehr.net/solutions/employees",
+    siteName: "Space HR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Space HR for Employees | Mobile Self-Service & AI Concierge",
+    description: "Mobile-first self-service with AI Concierge chatbot. Payslips, leave requests, and HR support — all from your phone.",
   },
   alternates: {
     canonical: "https://spacehr.net/solutions/employees",

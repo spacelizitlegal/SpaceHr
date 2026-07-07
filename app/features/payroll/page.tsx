@@ -1244,6 +1244,32 @@ export default function AIPayrollPage() {
         </div>
       </section>
 
+      {/* PROSE SECTION */}
+      <section className="py-20 bg-white dark:bg-[#0b1121]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+            How AI Payroll Automation Works — From Gross Wages to Direct Deposit
+          </h2>
+          <div className="prose prose-lg dark:prose-invert text-gray-700 dark:text-gray-300 leading-relaxed space-y-5">
+            <p>
+              Traditional payroll processing forces HR teams to manually verify timesheets, reconcile deductions, and cross-check tax tables before every run — a process that takes 3–5 days and introduces errors at every handoff. Space HR&apos;s AI payroll engine compresses this into a guided 5-step wizard that completes in under two hours, with machine learning auditing every calculation before ACH files are generated.
+            </p>
+            <p>
+              The process starts with data aggregation: attendance records, approved leave, bonus authorizations, and compensation changes flow automatically from their source modules into the payroll engine. No spreadsheet imports, no CSV uploads. The AI then runs its anomaly detection pass — comparing each employee&apos;s current pay components against their last 12 pay periods. Any deviation greater than 5% in base pay, any duplicate payment entry, or any unauthorized rate change is flagged for HR review before the run proceeds. Statistically, this catches the 1.2% of payroll transactions that contain errors in a typical 500-person company — errors that would otherwise require expensive retroactive corrections.
+            </p>
+            <p>
+              The gross-to-net calculation follows a strict statutory sequence. Pre-tax deductions (401k, HSA, FSA) reduce gross wages first, preserving their tax-advantaged treatment. Federal income tax withholding then applies using current IRS Publication 15-T tables, accounting for W-4 filing status and additional withholding elections. FICA contributions — 6.2% Social Security on wages up to $176,100 and 1.45% Medicare with no wage ceiling — are calculated next, with employer matching tracked in the liability ledger simultaneously. FUTA is applied at 6.0% on the first $7,000 per employee annually, reduced to the effective 0.6% rate via the state tax credit. Post-tax deductions including Roth contributions, wage garnishments, and voluntary benefits complete the calculation.
+            </p>
+            <p>
+              Once gross-to-net is finalized, Space HR generates NACHA-compliant ACH files automatically. These files conform to the National Automated Clearing House Association format specifications — with proper batch header records, individual transaction records, and file control totals. Banks reject ACH files that don&apos;t pass hash validation; Space HR performs this validation internally before transmission, eliminating late payment incidents caused by file formatting errors. Multi-state employers benefit from automatic state tax withholding updates: when a state adjusts its income tax tables or SUI wage base, Space HR applies the change without manual reconfiguration.
+            </p>
+            <p>
+              The result is a payroll process where HR teams spend time on exceptions and strategy rather than arithmetic. Employees receive accurate pay stubs with full deduction breakdowns, direct deposits land on time, and the liability ledger reconciles automatically for month-end close. Audit readiness improves because every calculation step is logged with a timestamp, an operator, and the data inputs used — creating an evidence trail that satisfies both internal auditors and external tax authorities.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ SECTION */}
       <section className="py-24 bg-gray-50 dark:bg-[#0f172a]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">

@@ -1,27 +1,76 @@
-"use client";
-
-import { useParams, notFound } from "next/navigation";
+import { notFound } from "next/navigation";
+import { Metadata } from "next";
 import { blogPosts } from "@/lib/blogData";
 import { howToSchemas } from "@/lib/howToSchemas";
+import { generateBreadcrumbSchema, generateFAQSchema } from "@/components/JsonLd";
+import { blogFaqSchemas } from "@/lib/blogFaqSchemas";
 import { Button } from "@/components/ui/Button";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-export default function BlogDetailPage() {
-  const params = useParams();
-  const slug = params.slug as string;
+export async function generateStaticParams() {
+  return blogPosts.map((post) => ({ slug: post.slug }));
+}
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const post = blogPosts.find((p) => p.slug === slug);
+  if (!post) return {};
+
+  const title = `${post.title} | Space HR`;
+  const description = post.summary;
+  const url = `https://spacehr.net/blogs/${slug}`;
+
+  return {
+    title,
+    description,
+    ...(post.noindex && { robots: { index: false, follow: false } }),
+    openGraph: {
+      title,
+      description,
+      url,
+      siteName: "Space HR",
+      type: "article",
+      publishedTime: post.date,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+    alternates: {
+      canonical: url,
+    },
+  };
+}
+
+export default async function BlogDetailPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
   const post = blogPosts.find((p) => p.slug === slug);
 
-  if (!post) {
-    notFound();
-  }
+  if (!post) notFound();
 
-  const titleTokens = new Set(post.title.toLowerCase().split(/\W+/).filter(Boolean));
+  const titleTokens = new Set(
+    post.title
+      .toLowerCase()
+      .split(/\W+/)
+      .filter(Boolean)
+  );
   const relatedPosts = blogPosts
-    .filter((candidate) => candidate.slug !== post.slug)
+    .filter((candidate) => candidate.slug !== post.slug && !candidate.noindex)
     .map((candidate) => {
-      const candidateTokens = candidate.title.toLowerCase().split(/\W+/).filter(Boolean);
+      const candidateTokens = candidate.title
+        .toLowerCase()
+        .split(/\W+/)
+        .filter(Boolean);
       const sharedTokenScore = candidateTokens.reduce(
         (score, token) => score + (titleTokens.has(token) ? 1 : 0),
         0
@@ -33,12 +82,76 @@ export default function BlogDetailPage() {
     .slice(0, 3)
     .map((item) => item.candidate);
 
+  // Intra-cluster posts (only for cluster posts — same clusterName, excluding self)
+  const clusterPeers = post.clusterName
+    ? blogPosts
+        .filter(
+          (p) =>
+            p.clusterName === post.clusterName &&
+            p.slug !== post.slug &&
+            !p.noindex
+        )
+        .slice(0, 4)
+    : [];
+
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: "https://spacehr.net" },
+    { name: "HR Blog", url: "https://spacehr.net/blogs" },
+    { name: post.title, url: `https://spacehr.net/blogs/${slug}` },
+  ]);
+
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.summary,
+    datePublished: post.date,
+    dateModified: post.lastModified ?? post.date,
+    author: {
+      "@type": "Organization",
+      name: "Space HR",
+      url: "https://spacehr.net",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Space HR",
+      url: "https://spacehr.net",
+      logo: {
+        "@type": "ImageObject",
+        url: "https://spacehr.net/hrlogonly.png",
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://spacehr.net/blogs/${slug}`,
+    },
+    keywords: post.category,
+  };
+
   return (
     <div className="min-h-screen bg-white dark:bg-[#0f172a] font-sans pt-32 pb-20">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
+      />
       {howToSchemas[slug] && (
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchemas[slug]) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(howToSchemas[slug]),
+          }}
+        />
+      )}
+      {blogFaqSchemas[slug] && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(generateFAQSchema(blogFaqSchemas[slug])),
+          }}
         />
       )}
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
@@ -72,6 +185,29 @@ export default function BlogDetailPage() {
           <div dangerouslySetInnerHTML={{ __html: post.content }} />
         </article>
 
+        {clusterPeers.length > 0 && (
+          <section className="mt-14 p-6 bg-gray-50 dark:bg-gray-800/50 rounded-2xl border border-gray-200 dark:border-gray-700">
+            <p className="text-xs font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400 mb-4">
+              More in: {post.clusterName}
+            </p>
+            <ul className="space-y-3">
+              {clusterPeers.map((peer) => (
+                <li key={peer.slug}>
+                  <Link
+                    href={`/blogs/${peer.slug}`}
+                    className="text-sm font-medium text-primary hover:underline"
+                  >
+                    {peer.title}
+                  </Link>
+                  <span className="text-xs text-gray-400 ml-2">
+                    {peer.readTime}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
         <section className="mt-16">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
             Related Blogs
@@ -103,7 +239,7 @@ export default function BlogDetailPage() {
             Ready to transform your workforce?
           </h3>
           <p className="text-gray-600 dark:text-gray-400 mb-8 max-w-xl mx-auto">
-            Join thousands of forward-thinking companies using SpaceHR to drive
+            Join thousands of forward-thinking companies using Space HR to drive
             performance and engagement.
           </p>
           <Link href="https://cad.spaceaiapp.com/login">

@@ -18,6 +18,13 @@ export const metadata: Metadata = {
     title: "HR Software for Banking & Financial Services | Space HR",
     description: "FCA SMCR compliance, conduct risk tracking, and bonus administration for banks and financial services firms.",
     url: "https://spacehr.net/industries/banking",
+    siteName: "Space HR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "HR Software for Banking & Financial Services | Space HR",
+    description: "FCA SMCR compliance, conduct risk tracking, and bonus administration for banks and financial services firms.",
   },
   alternates: { canonical: "https://spacehr.net/industries/banking" },
 };

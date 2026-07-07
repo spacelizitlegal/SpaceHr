@@ -31,44 +31,42 @@ import { Metadata } from "next";
 import { JsonLd, generateBreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Employee Self-Service Portal: ESS & Payslips | Space HR",
+  title: "Employee Self-Service Portal Features | Space HR",
   description:
-    "Empower your workforce with a modern portal. Employees can access payslips, track goals, and submit leave requests in one secure, easy-to-use platform",
+    "Explore the Space HR employee self-service portal: payslip access, leave requests, attendance, document downloads, mobile UX, AI chatbot, and role-based security — all in one interface.",
   keywords: [
-    "employee self-service portal",
-    "ESS portal",
-    "employee portal software",
-    "HR self-service",
-    "payslip access",
-    "leave request portal",
-    "employee document access",
-    "self-service HR",
-    "employee empowerment",
-    "digital employee experience",
-    "HR mobile app",
-    "employee dashboard",
-    "personal information management",
-    "employee benefits portal",
+    "employee self service portal features",
+    "ESS portal features",
+    "employee portal features",
+    "self service hr portal features",
+    "employee self service dashboard",
+    "mobile employee self service",
+    "payslip self service portal",
+    "leave request self service",
+    "employee document portal",
+    "ESS mobile app",
+    "employee self service ui",
+    "employee portal capabilities",
   ],
   openGraph: {
-    title: "Employee Self-Service Portal | Space HR",
+    title: "Employee Self-Service Portal Features | Space HR",
     description:
-      "Modern ESS portal for payslips, leave, goals, and performance management.",
+      "Explore ESS portal capabilities: payslips, leave, attendance, documents, mobile UX, AI chatbot, and security.",
     url: "https://spacehr.net/features/employee-self-service",
     images: [
       {
         url: "/og-ess.png",
         width: 1200,
         height: 630,
-        alt: "Space HR Employee Self-Service",
+        alt: "Space HR Employee Self-Service Portal Features",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Employee Self-Service Portal | Space HR",
+    title: "Employee Self-Service Portal Features | Space HR",
     description:
-      "Empower employees with 24/7 access to HR services and information.",
+      "ESS portal capabilities: payslips, leave, attendance, documents, mobile UX, and AI chatbot.",
     images: ["/og-ess.png"],
   },
   alternates: {
@@ -96,19 +94,20 @@ export default function EmployeeSelfServicePage() {
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className="lg:w-1/2">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-orange-100 dark:bg-orange-900/30 text-orange-700 dark:text-orange-300 text-sm font-semibold mb-6">
-              <User className="w-4 h-4" /> Employee Self-Service
+              <User className="w-4 h-4" /> Portal Features
             </div>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-              Empower Your
+              Everything Employees Can Do
               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-600">
-                Workforce.
+                In One Portal.
               </span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-              Give employees the autonomy they deserve. Our self-service portal
-              puts payslips, leave requests, goals, and appraisals at their
-              fingertips—reducing HR tickets by 70% while boosting satisfaction.
+              Explore the Space HR employee self-service interface: payslips,
+              leave requests, attendance, documents, goals, AI chatbot, and
+              role-based security — all designed for fast, intuitive use on
+              desktop and mobile.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link href="/request-a-demo">

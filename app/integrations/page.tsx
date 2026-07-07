@@ -16,11 +16,11 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "SpaceHR Integrations — Connect HR with Your Entire Ecosystem",
+  title: "Space HR Integrations — Connect HR with Your Entire Ecosystem",
   description:
-    "SpaceHR integrates with PM Space AI, Space Sign, Space Capture, and more tools in the Space AI ecosystem. Eliminate data silos across HR, project management, and operations.",
+    "Space HR integrates with PM Space AI, Space Sign, Space Capture, and more tools in the Space AI ecosystem. Eliminate data silos across HR, project management, and operations.",
   keywords: [
-    "SpaceHR integrations",
+    "Space HR integrations",
     "HR integrations",
     "Space AI ecosystem",
     "PM Space AI",
@@ -28,21 +28,21 @@ export const metadata: Metadata = {
     "workforce management integrations",
   ],
   openGraph: {
-    title: "SpaceHR Integrations",
+    title: "Space HR Integrations",
     description:
-      "Connect SpaceHR with the full Space AI ecosystem — sync crew schedules, labor costs, and payroll across every tool your team uses.",
+      "Connect Space HR with the full Space AI ecosystem — sync crew schedules, labor costs, and payroll across every tool your team uses.",
     type: "website",
     url: "https://spacehr.net/integrations",
-    siteName: "SpaceHR",
+    siteName: "Space HR",
   },
   alternates: {
     canonical: "https://spacehr.net/integrations",
   },
   twitter: {
     card: "summary_large_image",
-    title: "SpaceHR Integrations",
+    title: "Space HR Integrations",
     description:
-      "Connect SpaceHR with PM Space AI and the full Space AI ecosystem. No data silos.",
+      "Connect Space HR with PM Space AI and the full Space AI ecosystem. No data silos.",
   },
 };
 
@@ -69,7 +69,7 @@ const integrations = [
     name: "Space Sign",
     slug: null,
     description:
-      "Send offer letters, NDAs, and employment contracts for e-signature without leaving SpaceHR.",
+      "Send offer letters, NDAs, and employment contracts for e-signature without leaving Space HR.",
     icon: FileSignature,
     iconColor: "text-violet-500",
     iconBg: "bg-violet-500/10",
@@ -121,7 +121,7 @@ const integrations = [
     name: "Space Nexus",
     slug: null,
     description:
-      "Enterprise integration hub — connect SpaceHR with any tool in your stack via Space Nexus.",
+      "Enterprise integration hub — connect Space HR with any tool in your stack via Space Nexus.",
     icon: Network,
     iconColor: "text-indigo-500",
     iconBg: "bg-indigo-500/10",
@@ -153,10 +153,10 @@ export default function IntegrationsPage() {
         data={{
           "@context": "https://schema.org",
           "@type": "WebPage",
-          name: "SpaceHR Integrations",
+          name: "Space HR Integrations",
           url: "https://spacehr.net/integrations",
           description:
-            "Connect SpaceHR with the full Space AI ecosystem — PM Space AI, Space Sign, Space Capture, and more.",
+            "Connect Space HR with the full Space AI ecosystem — PM Space AI, Space Sign, Space Capture, and more.",
           isPartOf: { "@type": "WebSite", url: "https://spacehr.net" },
         }}
       />
@@ -175,13 +175,13 @@ export default function IntegrationsPage() {
               </div>
 
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-                SpaceHR{" "}
+                Space HR{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-violet-400">
                   Integrations
                 </span>
               </h1>
               <p className="text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
-                SpaceHR connects with every tool in the Space AI ecosystem — keeping HR data, project budgets,
+                Space HR connects with every tool in the Space AI ecosystem — keeping HR data, project budgets,
                 and operations in sync automatically.
               </p>
             </div>
@@ -259,7 +259,7 @@ export default function IntegrationsPage() {
               Ready to connect your HR stack?
             </h2>
             <p className="text-xl text-slate-300 mb-10">
-              Book a demo to see SpaceHR integrations live — from crew scheduling to payroll-to-budget in one flow.
+              Book a demo to see Space HR integrations live — from crew scheduling to payroll-to-budget in one flow.
             </p>
             <Link href="/request-a-demo">
               <button className="inline-flex items-center gap-2 rounded-full h-14 px-10 text-base font-bold bg-gradient-to-r from-pink-500 via-violet-500 to-blue-600 hover:from-pink-600 hover:via-violet-600 hover:to-blue-700 text-white shadow-2xl transition-all">

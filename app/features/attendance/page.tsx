@@ -491,6 +491,32 @@ export default function AttendancePage() {
         </div>
       </section>
 
+      {/* PROSE SECTION */}
+      <section className="py-20 bg-white dark:bg-[#0b1121]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-3xl">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+            GPS Attendance vs. Traditional Time Clocks — Why Modern Workforces Need Both
+          </h2>
+          <div className="prose prose-lg dark:prose-invert text-gray-700 dark:text-gray-300 leading-relaxed space-y-5">
+            <p>
+              Traditional time clocks were designed for a world where every employee worked at a single fixed location, punching in and out on the same physical device. That model breaks down the moment a team includes field technicians, construction crews, multi-site retail staff, or hybrid office workers. GPS-based attendance tracking solves this by moving verification from a fixed device to the employee's location itself — making clock-in location-verified regardless of where the employee is working.
+            </p>
+            <p>
+              Geofenced attendance takes this further. Instead of requiring employees to manually open an app and check in, the system uses virtual geographic boundaries drawn around job sites, offices, or client locations. When an employee's device enters the geofence, a clock-in event is triggered automatically. When they leave, the system records the departure. This removes human error from time capture entirely and provides HR with GPS-stamped timesheet entries that are usable in labor disputes, overtime disputes, and FLSA compliance documentation.
+            </p>
+            <p>
+              For remote and hybrid workforces, Space HR adds IP-based verification alongside GPS. When an employee logs in from their designated home office network, the system records a verified remote attendance entry. This creates a consistent attendance record across all work arrangements — office, remote, field, and hybrid — without requiring different tracking systems for each. Managers see a unified view of who is present, where, and for how long, across every location.
+            </p>
+            <p>
+              Overtime compliance is one of the highest-risk areas in workforce management. Under the Fair Labor Standards Act, non-exempt employees must receive 1.5× their regular rate for all hours worked beyond 40 in a workweek. Several states — California, Nevada, and Alaska among them — impose additional daily overtime rules. Space HR monitors cumulative hours in real time and sends alerts to managers when employees approach overtime thresholds, allowing proactive scheduling adjustments before overtime liability accrues. For each employee, the system projects the current week's expected overtime cost so labor budget managers can act on data rather than discovering overruns after the fact.
+            </p>
+            <p>
+              Because attendance data flows directly into the payroll engine, the liability ledger reflects accurate accrued wages at all times. Every approved timesheet — including overtime hours, on-call pay, and shift differentials — feeds into gross-to-net calculations without manual re-entry. This single integration point eliminates the most common source of payroll discrepancies: the gap between what time-tracking records and what payroll processes.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ SECTION */}
       <section className="py-24 bg-gray-50 dark:bg-[#0f172a]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">

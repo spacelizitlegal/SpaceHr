@@ -14,13 +14,18 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "ServiceNow vs Space HR: AI HR Chatbot Without Enterprise Complexity",
   description: "ServiceNow requires months of configuration and IT teams. Space HR deploys an AI HR chatbot in days — with built-in payroll anomaly detection, leave management, and zero IT overhead.",
-  keywords: ["servicenow alternative","space hr vs servicenow","hr service delivery software","ai hr chatbot servicenow alternative","hr helpdesk without servicenow"],
+  keywords: ["servicenow alternative","Space HR vs servicenow","hr service delivery software","ai hr chatbot servicenow alternative","hr helpdesk without servicenow"],
+  twitter: {
+    card: "summary_large_image",
+    title: "ServiceNow vs Space HR: AI HR Chatbot Without Enterprise Complexity",
+    description: "ServiceNow requires months of configuration and IT teams. Space HR deploys an AI HR chatbot in days — with built-in payroll anomaly detection, leave management, and zero IT overhead.",
+  },
   alternates: { canonical: "https://spacehr.net/compare/servicenow" },
   openGraph: {
     title: "ServiceNow vs Space HR: AI HR Chatbot Without Enterprise Complexity",
     description: "ServiceNow requires months of configuration and IT teams. Space HR deploys an AI HR chatbot in days — with built-in payroll anomaly detection, leave management, and zero IT overhead.",
     url: "https://spacehr.net/compare/servicenow",
-    siteName: "SpaceHR",
+    siteName: "Space HR",
     images: [{ url: "/desktop-design-showcase.webp", width: 1200, height: 630, alt: "Space HR vs ServiceNow Comparison" }],
   },
 };

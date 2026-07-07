@@ -44,6 +44,13 @@ export const metadata: Metadata = {
     description:
       "Download free HR templates: appraisal forms, leave policies, remote work handbooks, and more.",
     url: "https://spacehr.net/templates",
+    siteName: "Space HR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Free HR Templates & Policies | Space HR",
+    description: "Download free HR templates: appraisal forms, leave policies, remote work handbooks, and more.",
   },
   alternates: {
     canonical: "https://spacehr.net/templates",
@@ -280,7 +287,9 @@ export default function TemplatesPage() {
                       </span>
                     </div>
                     <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2">
-                      {template.title}
+                      <Link href={`/templates/${template.slug}`} className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors">
+                        {template.title}
+                      </Link>
                     </h3>
                     <p className="text-gray-600 dark:text-gray-300 text-sm leading-relaxed mb-4 flex-grow">
                       {template.description}

@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     "Compare Gusto vs Space HR for AI predictive workforce analytics. While Gusto handles basic payroll, Space HR delivers AI-powered cost forecasting, anomaly detection, and predictive workforce analytics for growing enterprises.",
   keywords: [
     "gusto alternative",
-    "gusto vs space hr",
+    "gusto vs Space HR",
     "AI predictive forecasting HR",
     "gusto competitor",
     "better than gusto",
@@ -43,6 +43,13 @@ export const metadata: Metadata = {
     description:
       "Gusto handles payroll basics. Space HR adds AI predictive forecasting, anomaly detection, and enterprise-grade workforce analytics.",
     url: "https://spacehr.net/compare/gusto",
+    siteName: "Space HR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gusto vs Space HR: Why AI Predictive Forecasting Wins",
+    description: "Gusto handles payroll basics. Space HR adds AI predictive forecasting, anomaly detection, and enterprise-grade workforce analytics.",
   },
   alternates: {
     canonical: "https://spacehr.net/compare/gusto",
@@ -85,25 +92,25 @@ const breadcrumb = generateBreadcrumbSchema([
 ]);
 
 const comparisonData = [
-  { feature: "Automated Payroll Processing", gusto: true, spaceHR: true },
-  { feature: "Tax Filing & Compliance", gusto: true, spaceHR: true },
-  { feature: "Direct Deposit (ACH)", gusto: true, spaceHR: true },
-  { feature: "Benefits Administration", gusto: true, spaceHR: true },
-  { feature: "AI Payroll Anomaly Detection", gusto: false, spaceHR: true },
-  { feature: "Predictive Workforce Analytics", gusto: false, spaceHR: true },
-  { feature: "AI Cost Forecasting", gusto: false, spaceHR: true },
-  { feature: "360° Performance Appraisals", gusto: false, spaceHR: true },
-  { feature: "AI HR Concierge Chatbot", gusto: false, spaceHR: true },
-  { feature: "Attrition Prediction", gusto: false, spaceHR: true },
-  { feature: "NACHA-Compliant ACH with AI Audit", gusto: false, spaceHR: true },
+  { feature: "Automated Payroll Processing", gusto: true, "Space HR": true },
+  { feature: "Tax Filing & Compliance", gusto: true, "Space HR": true },
+  { feature: "Direct Deposit (ACH)", gusto: true, "Space HR": true },
+  { feature: "Benefits Administration", gusto: true, "Space HR": true },
+  { feature: "AI Payroll Anomaly Detection", gusto: false, "Space HR": true },
+  { feature: "Predictive Workforce Analytics", gusto: false, "Space HR": true },
+  { feature: "AI Cost Forecasting", gusto: false, "Space HR": true },
+  { feature: "360° Performance Appraisals", gusto: false, "Space HR": true },
+  { feature: "AI HR Concierge Chatbot", gusto: false, "Space HR": true },
+  { feature: "Attrition Prediction", gusto: false, "Space HR": true },
+  { feature: "NACHA-Compliant ACH with AI Audit", gusto: false, "Space HR": true },
   {
     feature: "Multi-State Tax Compliance Engine",
     gusto: "Basic",
-    spaceHR: true,
+    "Space HR": true,
   },
-  { feature: "Goal & OKR Management", gusto: false, spaceHR: true },
-  { feature: "GPS Attendance Tracking", gusto: false, spaceHR: true },
-  { feature: "Financial Analytics Dashboard", gusto: "Basic", spaceHR: true },
+  { feature: "Goal & OKR Management", gusto: false, "Space HR": true },
+  { feature: "GPS Attendance Tracking", gusto: false, "Space HR": true },
+  { feature: "Financial Analytics Dashboard", gusto: "Basic", "Space HR": true },
 ];
 
 export default function GustoComparisonPage() {
@@ -183,7 +190,7 @@ export default function GustoComparisonPage() {
                       )}
                     </td>
                     <td className="py-4 px-4 text-center">
-                      {row.spaceHR === true ? (
+                      {row["Space HR"] === true ? (
                         <CheckCircle className="w-5 h-5 text-green-500 mx-auto" />
                       ) : (
                         <XCircle className="w-5 h-5 text-red-400 mx-auto" />

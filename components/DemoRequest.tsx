@@ -40,7 +40,7 @@ export default function DemoRequest() {
     company: "",
     companySize: "",
     projectDetails: "",
-    formType: "SpaceHR",
+    formType: "Space HR",
   });
 
   const [errors, setErrors] = useState({

@@ -31,9 +31,9 @@ import {
 } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "AI HR Chatbot for Employee Self-Service | Chatbot for HR Services | Space HR",
+  title: "AI HR Chatbot for Employee Self-Service | Space HR",
   description:
-    "Deploy an AI HR chatbot that answers employee questions about leave, payroll, and policies 24/7. Reduce HR ticket volume by 70%. Instant setup, enterprise-grade security. Try free.",
+    "Deploy a chatbot for HR services that answers employee questions about leave, payroll, and policies 24/7. Reduce HR ticket volume by 70%. Setup in 48 hours, no coding required.",
   keywords: [
     "AI HR chatbot",
     "chatbot for HR services",
@@ -56,8 +56,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AI HR Chatbot for Employee Self-Service | Space HR",
     description:
-      "24/7 AI chatbot for HR services — instant answers on leave, payroll, policy, and benefits. Reduce HR workload by 70%.",
+      "24/7 AI chatbot for HR services — instant answers on leave, payroll, policy, and benefits. Reduce HR workload by 70%. Setup in 48 hours.",
     url: "https://spacehr.net/features/ai-chatbots",
+    siteName: "Space HR",
+    type: "website",
     images: [
       {
         url: "/desktop-design-showcase.webp",
@@ -69,9 +71,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "AI HR Chatbot | Chatbot for HR Services | Space HR",
+    title: "AI HR Chatbot for Employee Self-Service | Space HR",
     description:
-      "24/7 AI chatbot that handles policies, leave, payroll, and benefits queries instantly. 70% fewer HR tickets.",
+      "24/7 AI chatbot for HR services — handles leave, payroll, policies, and benefits instantly. 70% fewer HR tickets. Setup in 48 hours.",
     images: ["/desktop-design-showcase.webp"],
   },
   alternates: {
@@ -816,6 +818,57 @@ export default function AIChatbotsPage() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* WHY AI CHATBOT VS TICKETING */}
+      <section className="py-24 bg-white dark:bg-[#0b1121]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+            AI HR Chatbot vs. Traditional HR Support
+          </h2>
+          <p className="text-xl text-gray-600 dark:text-gray-300 mb-12 text-center max-w-3xl mx-auto">
+            Why forward-thinking HR teams are replacing ticketing systems with conversational AI
+          </p>
+          <div className="prose prose-lg dark:prose-invert max-w-none text-gray-600 dark:text-gray-300 space-y-6">
+            <p>
+              A traditional HR ticketing system routes an employee&apos;s question into a queue. Someone on the HR team reads it, looks up the answer, and replies — typically hours or days later. During that window, the employee is waiting, the HR team is processing, and both sides are spending time on a transaction that should take seconds. For high-volume, repetitive queries like leave balances, payslip downloads, and policy lookups, a ticketing system is the most expensive way to deliver the least satisfying experience.
+            </p>
+            <p>
+              An <strong>AI HR chatbot</strong> handles these queries at the point of need, in the channel the employee is already using, in under three seconds. The chatbot connects directly to your HRMS and policy documents, so answers reflect the employee&apos;s actual entitlements — not a generic FAQ page. When an employee asks &ldquo;how many sick days do I have left?&rdquo; the chatbot queries their real leave balance and responds with their specific number. When they say &ldquo;book Friday off,&rdquo; it executes the request, checks against the leave policy, notifies the manager, and confirms — all without a human in the loop.
+            </p>
+            <p>
+              The economic case is direct. HR teams report that 60–70% of their weekly inbound requests are the same ten to fifteen question types asked repeatedly by different employees. Automating those ten to fifteen query types eliminates the majority of HR ticket volume. Space HR customers typically see a <strong>70% reduction in HR tickets within the first 30 days</strong> of chatbot deployment — with the HR team&apos;s time redistributed toward strategic work: performance programmes, talent planning, and employee relations issues that genuinely require human judgment.
+            </p>
+            <p>
+              The secondary benefit is consistency. When a human answers HR questions, the answer quality varies by person, by day, and by how busy the team is. When the chatbot answers, the answer is always based on the current policy document, always complete, and always available — at 2am for a night-shift employee as readily as at 10am for a head-office worker. For global and multi-location teams, this consistency across time zones is one of the most valued outcomes of chatbot deployment.
+            </p>
+            <p>
+              Space HR&apos;s <strong>chatbot for HR services</strong> is purpose-built for the HR function — pre-trained on HR domain knowledge, integrated with 20+ HRMS platforms, and configurable without code. It handles leave, payroll, policy, onboarding, and benefits self-service out of the box, with enterprise-grade security and full audit logging for compliance. Most teams deploy in 48 hours and see measurable ROI within the first pay cycle.
+            </p>
+          </div>
+          <div className="mt-10 grid md:grid-cols-2 gap-6">
+            <div className="bg-gray-50 dark:bg-[#1e293b] rounded-2xl p-6 border border-gray-100 dark:border-gray-800">
+              <h3 className="font-bold text-gray-900 dark:text-white text-lg mb-4">Traditional HR Ticketing</h3>
+              <ul className="space-y-3 text-gray-600 dark:text-gray-400 text-sm">
+                <li className="flex items-start gap-2"><span className="text-red-400 mt-0.5 shrink-0">✗</span> Hours or days to resolve routine queries</li>
+                <li className="flex items-start gap-2"><span className="text-red-400 mt-0.5 shrink-0">✗</span> HR team capacity consumed by repetitive tasks</li>
+                <li className="flex items-start gap-2"><span className="text-red-400 mt-0.5 shrink-0">✗</span> Offline after business hours</li>
+                <li className="flex items-start gap-2"><span className="text-red-400 mt-0.5 shrink-0">✗</span> Answer quality varies by person and workload</li>
+                <li className="flex items-start gap-2"><span className="text-red-400 mt-0.5 shrink-0">✗</span> No self-service action (leave booking, payslip retrieval)</li>
+              </ul>
+            </div>
+            <div className="bg-purple-50 dark:bg-purple-950/30 rounded-2xl p-6 border border-purple-200 dark:border-purple-800">
+              <h3 className="font-bold text-gray-900 dark:text-white text-lg mb-4">Space HR AI HR Chatbot</h3>
+              <ul className="space-y-3 text-gray-700 dark:text-gray-300 text-sm">
+                <li className="flex items-start gap-2"><span className="text-green-500 mt-0.5 shrink-0">✓</span> Under 3-second response for 95% of queries</li>
+                <li className="flex items-start gap-2"><span className="text-green-500 mt-0.5 shrink-0">✓</span> 70% HR ticket reduction from day one</li>
+                <li className="flex items-start gap-2"><span className="text-green-500 mt-0.5 shrink-0">✓</span> Available 24/7 across all time zones</li>
+                <li className="flex items-start gap-2"><span className="text-green-500 mt-0.5 shrink-0">✓</span> Always answers from your current policy version</li>
+                <li className="flex items-start gap-2"><span className="text-green-500 mt-0.5 shrink-0">✓</span> Books leave, retrieves payslips, executes actions</li>
+              </ul>
             </div>
           </div>
         </div>

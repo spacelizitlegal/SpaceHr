@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { DollarSign, TrendingUp, Clock, Users } from "lucide-react";
+import Link from "next/link";
+import { Button } from "@/components/ui/Button";
+import { DollarSign, TrendingUp, Clock, Users, ArrowRight } from "lucide-react";
 
 export default function ROICalculator() {
   const [employees, setEmployees] = useState(200);
@@ -18,7 +20,6 @@ export default function ROICalculator() {
   const savedHours = (automatedTickets * minutesPerTicket) / 60;
   const savedCost = savedHours * hourlyRate;
   const annualSavings = savedCost * 12;
-  const paybackMonths = Math.ceil(499 / savedCost); // SpaceHR ~$499/mo est.
 
   const formatCurrency = (n: number) =>
     new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(n);
@@ -195,17 +196,21 @@ export default function ROICalculator() {
           </div>
 
           <div className="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl p-5 text-white text-center">
-            <div className="text-sm font-medium text-blue-100 mb-1">Estimated Payback Period</div>
-            <div className="text-4xl font-bold">
-              {paybackMonths <= 1 ? "< 1 month" : `${paybackMonths} months`}
+            <div className="text-sm font-medium text-blue-100 mb-2">
+              Want the exact ROI for your team?
             </div>
-            <div className="text-blue-200 text-xs mt-1">
-              Based on SpaceHR pricing for your team size
+            <Link href="/request-a-demo">
+              <Button className="bg-white text-blue-700 hover:bg-gray-50 font-semibold rounded-full px-6">
+                Request a Demo <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+            </Link>
+            <div className="text-blue-200 text-xs mt-3">
+              We&apos;ll follow up with aggressive pricing tailored to your headcount.
             </div>
           </div>
 
           <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
-            * Assumes 85% ticket automation rate based on SpaceHR customer data. Actual savings
+            * Assumes 85% ticket automation rate based on Space HR customer data. Actual savings
             vary by team size, ticket complexity, and configuration.
           </p>
         </div>
