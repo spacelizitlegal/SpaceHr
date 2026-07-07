@@ -202,83 +202,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* AI CHATBOT SPOTLIGHT — high-priority SEO internal link */}
-        <section className="py-20 bg-white dark:bg-[#0d1526] border-b border-gray-100 dark:border-gray-800">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
-            <div className="grid lg:grid-cols-2 gap-12 items-center">
-              <div>
-                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-sm font-semibold mb-6 border border-purple-200 dark:border-purple-800">
-                  <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
-                  </span>
-                  AI HR Chatbot — Most Popular Feature
-                </div>
-                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                  Your employees get answers in{" "}
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
-                    under 3 seconds
-                  </span>
-                </h2>
-                <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                  Space HR&apos;s <strong>AI HR chatbot</strong> handles leave
-                  requests, payslip queries, policy lookups, and benefits
-                  questions 24/7 — so your HR team can focus on work that
-                  matters.
-                </p>
-                <ul className="space-y-3 mb-10">
-                  {[
-                    "Resolves 95% of HR queries without human involvement",
-                    "Reduces HR ticket volume by 70% from week one",
-                    "Connects to your HRMS — answers are live, not static",
-                    "Available in the US, UAE, UK, Singapore & India",
-                  ].map((point) => (
-                    <li key={point} className="flex items-start gap-3 text-gray-700 dark:text-gray-300">
-                      <CheckCircle className="w-5 h-5 text-purple-500 mt-0.5 shrink-0" />
-                      <span>{point}</span>
-                    </li>
-                  ))}
-                </ul>
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Link href="/features/ai-chatbots">
-                    <Button size="lg" className="rounded-full h-12 px-8 bg-purple-600 hover:bg-purple-700 text-white group">
-                      See the AI HR Chatbot
-                      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </Button>
-                  </Link>
-                  <Link href="/solutions/chatbot-for-hr-services">
-                    <Button size="lg" variant="outline" className="rounded-full h-12 px-8 group">
-                      Chatbot for HR Services
-                      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-              <div className="grid grid-cols-2 gap-4">
-                {[
-                  { stat: "70%", label: "Fewer HR tickets", color: "from-purple-500 to-pink-500" },
-                  { stat: "95%", label: "Query resolution rate", color: "from-blue-500 to-cyan-500" },
-                  { stat: "24/7", label: "Always available", color: "from-green-500 to-teal-500" },
-                  { stat: "48h", label: "Setup time", color: "from-orange-500 to-amber-500" },
-                ].map((item) => (
-                  <Link
-                    key={item.stat}
-                    href="/features/ai-chatbots"
-                    className="bg-gray-50 dark:bg-[#1e293b] rounded-2xl p-6 border border-gray-100 dark:border-gray-800 hover:border-purple-300 dark:hover:border-purple-700 hover:shadow-lg transition-all text-center group"
-                  >
-                    <div className={`text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r ${item.color} mb-2`}>
-                      {item.stat}
-                    </div>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white transition-colors">
-                      {item.label}
-                    </p>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
-
         {/* 2. EMBEDDED VIDEO SECTION */}
         <section className="py-24 px-10 bg-[#0b1121] relative">
           <div className="px-4 sm:px-6 lg:px-8">
@@ -468,6 +391,83 @@ export default function Home() {
                     Your browser does not support the video tag.
                   </video>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* AI CHATBOT SPOTLIGHT — high-priority SEO internal link */}
+        <section className="py-20 bg-white dark:bg-[#0d1526] border-b border-gray-100 dark:border-gray-800">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+            <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div>
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-sm font-semibold mb-6 border border-purple-200 dark:border-purple-800">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-purple-500"></span>
+                  </span>
+                  AI HR Chatbot — Most Popular Feature
+                </div>
+                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
+                  Your employees get answers in{" "}
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
+                    under 3 seconds
+                  </span>
+                </h2>
+                <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
+                  Space HR&apos;s <strong>AI HR chatbot</strong> handles leave
+                  requests, payslip queries, policy lookups, and benefits
+                  questions 24/7 — so your HR team can focus on work that
+                  matters.
+                </p>
+                <ul className="space-y-3 mb-10">
+                  {[
+                    "Resolves 95% of HR queries without human involvement",
+                    "Reduces HR ticket volume by 70% from week one",
+                    "Connects to your HRMS — answers are live, not static",
+                    "Available in the US, UAE, UK, Singapore & India",
+                  ].map((point) => (
+                    <li key={point} className="flex items-start gap-3 text-gray-700 dark:text-gray-300">
+                      <CheckCircle className="w-5 h-5 text-purple-500 mt-0.5 shrink-0" />
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link href="/features/ai-chatbots">
+                    <Button size="lg" className="rounded-full h-12 px-8 bg-purple-600 hover:bg-purple-700 text-white group">
+                      See the AI HR Chatbot
+                      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                  </Link>
+                  <Link href="/solutions/chatbot-for-hr-services">
+                    <Button size="lg" variant="outline" className="rounded-full h-12 px-8 group">
+                      Chatbot for HR Services
+                      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                {[
+                  { stat: "70%", label: "Fewer HR tickets", color: "from-purple-500 to-pink-500" },
+                  { stat: "95%", label: "Query resolution rate", color: "from-blue-500 to-cyan-500" },
+                  { stat: "24/7", label: "Always available", color: "from-green-500 to-teal-500" },
+                  { stat: "48h", label: "Setup time", color: "from-orange-500 to-amber-500" },
+                ].map((item) => (
+                  <Link
+                    key={item.stat}
+                    href="/features/ai-chatbots"
+                    className="bg-gray-50 dark:bg-[#1e293b] rounded-2xl p-6 border border-gray-100 dark:border-gray-800 hover:border-purple-300 dark:hover:border-purple-700 hover:shadow-lg transition-all text-center group"
+                  >
+                    <div className={`text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r ${item.color} mb-2`}>
+                      {item.stat}
+                    </div>
+                    <p className="text-sm text-gray-600 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white transition-colors">
+                      {item.label}
+                    </p>
+                  </Link>
+                ))}
               </div>
             </div>
           </div>
