@@ -13,7 +13,7 @@ import { Twitter } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-[#0b1121] text-white border-t border-white/5 font-sans">
+    <footer className="bg-[#0b1121] text-white font-sans relative z-10 footer-fade fade-overlay">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Main grid: brand + link columns */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-8 gap-8 lg:gap-6">

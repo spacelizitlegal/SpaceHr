@@ -85,7 +85,7 @@ const discoveryPlatforms = [
     name: "SaaSHub",
     description:
       "Space HR software listing on SaaSHub — ratings, alternatives, and product discovery.",
-    url: "https://www.saashub.com/Space HR",
+    url: "https://www.saashub.com/spacehr",
     status: "REGISTERED",
     statusColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
     iconBg: "bg-violet-500/10",
@@ -96,9 +96,86 @@ const discoveryPlatforms = [
     name: "F6S",
     description:
       "Space HR startup profile on F6S for funding visibility, deals, and growth programs.",
-    url: "https://www.f6s.com/Space HR",
+    url: "https://www.f6s.com/company/spacehr#about",
     status: "REGISTERED",
     statusColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+    iconBg: "bg-orange-500/10",
+    iconColor: "text-orange-400",
+    borderHover: "hover:border-orange-400/30",
+  },
+  {
+    name: "AlternativeTo",
+    description:
+      "Space HR listed on AlternativeTo — discover users, reviews, and software alternatives.",
+    url: "https://alternativeto.net/user/spacehr",
+    status: "LIVE",
+    statusColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+    iconBg: "bg-cyan-500/10",
+    iconColor: "text-cyan-400",
+    borderHover: "hover:border-cyan-400/30",
+  },
+  {
+    name: "Quora",
+    description:
+      "Space HR content and discussions on HR technology, payroll, and workforce automation.",
+    url: "https://spacehrmanagement.quora.com",
+    status: "ACTIVE",
+    statusColor: "bg-blue-500/10 text-blue-400 border-blue-500/20",
+    iconBg: "bg-red-500/10",
+    iconColor: "text-red-400",
+    borderHover: "hover:border-red-400/30",
+  },
+  {
+    name: "Paragraph",
+    description:
+      "Space HR newsletter and long-form content published on Paragraph.",
+    url: "https://paragraph.com/0x735e2013bebc4f5584ce912062289a9ec4770e29",
+    status: "ACTIVE",
+    statusColor: "bg-blue-500/10 text-blue-400 border-blue-500/20",
+    iconBg: "bg-indigo-500/10",
+    iconColor: "text-indigo-400",
+    borderHover: "hover:border-indigo-400/30",
+  },
+  {
+    name: "Medium",
+    description:
+      "Space HR articles on AI HR automation, payroll compliance, and workforce management.",
+    url: "https://medium.com/@spacehr",
+    status: "ACTIVE",
+    statusColor: "bg-blue-500/10 text-blue-400 border-blue-500/20",
+    iconBg: "bg-amber-500/10",
+    iconColor: "text-amber-400",
+    borderHover: "hover:border-amber-400/30",
+  },
+  {
+    name: "SlideShare",
+    description:
+      "Space HR presentations and slide decks covering HR tech and product overviews.",
+    url: "https://www.slideshare.net/spacehrnet?tab=about",
+    status: "LIVE",
+    statusColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+    iconBg: "bg-sky-500/10",
+    iconColor: "text-sky-400",
+    borderHover: "hover:border-sky-400/30",
+  },
+  {
+    name: "Pinterest",
+    description:
+      "Space HR visual boards on HR technology infographics and workforce insights.",
+    url: "https://www.pinterest.com/spacehrnet",
+    status: "LIVE",
+    statusColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+    iconBg: "bg-rose-500/10",
+    iconColor: "text-rose-400",
+    borderHover: "hover:border-rose-400/30",
+  },
+  {
+    name: "Reddit",
+    description:
+      "Space HR community presence on Reddit for discussions and HR-related topics.",
+    url: "https://www.reddit.com/user/Space_HR",
+    status: "ACTIVE",
+    statusColor: "bg-blue-500/10 text-blue-400 border-blue-500/20",
     iconBg: "bg-orange-500/10",
     iconColor: "text-orange-400",
     borderHover: "hover:border-orange-400/30",
@@ -230,16 +307,6 @@ export default function SocialMediaPlatformsPage() {
                 </a>
               ))}
 
-              {/* Coming soon placeholder */}
-              <div className="flex flex-col gap-3 p-6 rounded-2xl bg-white/3 border border-dashed border-white/10 opacity-50">
-                <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center">
-                  <Globe className="w-5 h-5 text-slate-500" />
-                </div>
-                <div>
-                  <p className="text-slate-500 font-bold mb-1">More coming soon</p>
-                  <p className="text-slate-600 text-sm">New platform registrations are added as Space HR expands its presence.</p>
-                </div>
-              </div>
             </div>
           </div>
         </section>

@@ -1,0 +1,171 @@
+.spotlight-border-card {
+  --mouse-x: 50%;
+  --mouse-y: 50%;
+  --edge-proximity: 0;
+  --cursor-angle: 45deg;
+  --spotlight-color: rgba(255,255,255,0.25) 0%, rgba(99,102,241,0.06) 40%, transparent 80%;
+  --edge-sensitivity: 25;
+  --border-radius: 20px;
+  --glow-padding: 30px;
+  --cone-spread: 20;
+
+  position: relative;
+  border-radius: var(--border-radius);
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+  transition:
+    transform 300ms cubic-bezier(0.22, 0.61, 0.36, 1),
+    box-shadow 300ms cubic-bezier(0.22, 0.61, 0.36, 1),
+    border-color 300ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  overflow: visible;
+  isolation: isolate;
+}
+
+.spotlight-border-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 40px rgba(15, 23, 42, 0.12);
+  border-color: rgba(15, 23, 42, 0.12);
+}
+
+/* Layer 2: Spotlight */
+.spotlight-border-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    var(--spotlight-size, 600px) circle at var(--mouse-x) var(--mouse-y),
+    var(--spotlight-color)
+  );
+  opacity: 0;
+  transition: opacity 300ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.spotlight-border-card:hover::before {
+  opacity: 1;
+}
+
+/* Layer 3: Content */
+.card-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Layer 4: Border glow */
+.spotlight-border-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 1px solid transparent;
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    var(--gradient-one) border-box,
+    var(--gradient-two) border-box,
+    var(--gradient-three) border-box,
+    var(--gradient-four) border-box,
+    var(--gradient-five) border-box,
+    var(--gradient-six) border-box,
+    var(--gradient-seven) border-box,
+    var(--gradient-base) border-box;
+
+  mask:
+    conic-gradient(
+      from var(--cursor-angle) at center,
+      black calc(var(--cone-spread) * 1%),
+      transparent calc((var(--cone-spread) + 15) * 1%),
+      transparent calc((100 - var(--cone-spread) - 15) * 1%),
+      black calc((100 - var(--cone-spread)) * 1%)
+    );
+  -webkit-mask:
+    conic-gradient(
+      from var(--cursor-angle) at center,
+      black calc(var(--cone-spread) * 1%),
+      transparent calc((var(--cone-spread) + 15) * 1%),
+      transparent calc((100 - var(--cone-spread) - 15) * 1%),
+      black calc((100 - var(--cone-spread)) * 1%)
+    );
+
+  opacity: 0;
+  transition: opacity 300ms cubic-bezier(0.22, 0.61, 0.36, 1);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.spotlight-border-card:hover::after {
+  opacity: calc(
+    (var(--edge-proximity) - var(--edge-sensitivity)) /
+    (100 - var(--edge-sensitivity)) * 0.5
+  );
+}
+
+/* Layer 5: Outer glow */
+.spotlight-border-card > .edge-light {
+  position: absolute;
+  inset: calc(var(--glow-padding) * -1);
+  border-radius: calc(var(--border-radius) + var(--glow-padding));
+  pointer-events: none;
+  z-index: 3;
+
+  mask:
+    conic-gradient(
+      from var(--cursor-angle) at center,
+      black 2.5%,
+      transparent 10%,
+      transparent 90%,
+      black 97.5%
+    );
+  -webkit-mask:
+    conic-gradient(
+      from var(--cursor-angle) at center,
+      black 2.5%,
+      transparent 10%,
+      transparent 90%,
+      black 97.5%
+    );
+
+  opacity: 0;
+  transition: opacity 300ms cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.spotlight-border-card:hover > .edge-light {
+  opacity: calc(
+    (var(--edge-proximity) - var(--edge-sensitivity)) /
+    (100 - var(--edge-sensitivity)) * 0.15
+  );
+}
+
+.spotlight-border-card > .edge-light::before {
+  content: "";
+  position: absolute;
+  inset: var(--glow-padding);
+  border-radius: inherit;
+  box-shadow:
+    0 0 1px 0 var(--glow-color-60),
+    0 0 3px 0 var(--glow-color-50),
+    0 0 6px 0 var(--glow-color-40),
+    0 0 15px 0 var(--glow-color-30),
+    0 0 25px 2px var(--glow-color-20);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .spotlight-border-card,
+  .spotlight-border-card::before,
+  .spotlight-border-card::after,
+  .spotlight-border-card > .edge-light {
+    transition: none;
+  }
+  .spotlight-border-card:hover {
+    transform: none;
+  }
+}
+
+/* Focus visible */
+.spotlight-border-card:focus-visible {
+  outline: 2px solid #60A5FA;
+  outline-offset: 2px;
+}

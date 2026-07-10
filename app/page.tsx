@@ -20,6 +20,8 @@ import {
   Sparkles,
 } from "lucide-react";
 import { SpaceHRCard } from "@/components/SpaceHRCard";
+import { AskAI } from "@/components/AskAI";
+import LocationsSection from "@/sections/Locations";
 import Image from "next/image";
 import { Metadata } from "next";
 import {
@@ -397,7 +399,7 @@ export default function Home() {
         </section>
 
         {/* AI CHATBOT SPOTLIGHT — high-priority SEO internal link */}
-        <section className="py-20 bg-white dark:bg-[#0d1526] border-b border-gray-100 dark:border-gray-800">
+        <section className="py-20 border-b border-gray-100 dark:border-gray-800 chatbot-bg-fade">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
@@ -1221,7 +1223,7 @@ export default function Home() {
         </section>
 
         {/* Global Coverage */}
-        <section className="py-24 bg-gray-50 dark:bg-[#0f172a]">
+        <section className="py-24 global-bg-fade">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
             <div className="text-center mb-12">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-500 font-bold tracking-wider uppercase text-sm">
@@ -1236,16 +1238,16 @@ export default function Home() {
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
               {[
-                { href: "/regions/united-states", flag: "🇺🇸", label: "United States", desc: "NACHA, IRS, all 50 states" },
-                { href: "/regions/dubai", flag: "🇦🇪", label: "UAE / Dubai", desc: "WPS, MOHRE, gratuity" },
-                { href: "/regions/singapore", flag: "🇸🇬", label: "Singapore", desc: "CPF, MOM, IR8A" },
-                { href: "/regions/uk", flag: "🇬🇧", label: "United Kingdom", desc: "RTI, PAYE, auto-enrolment" },
-                { href: "/regions/india", flag: "🇮🇳", label: "India", desc: "PF, ESI, TDS" },
-                { href: "/regions/canada", flag: "🇨🇦", label: "Canada", desc: "CRA, provincial tax" },
-                { href: "/regions/europe", flag: "🇪🇺", label: "Europe", desc: "GDPR, local labour law" },
+                { href: "/regions/united-states", flag: "🇺🇸", svg: "https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/flags/4x3/us.svg", label: "United States", desc: "NACHA, IRS, all 50 states" },
+                { href: "/regions/dubai", flag: "🇦🇪", svg: "https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/flags/4x3/ae.svg", label: "UAE / Dubai", desc: "WPS, MOHRE, gratuity" },
+                { href: "/regions/singapore", flag: "🇸🇬", svg: "https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/flags/4x3/sg.svg", label: "Singapore", desc: "CPF, MOM, IR8A" },
+                { href: "/regions/uk", flag: "🇬🇧", svg: "https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/flags/4x3/gb.svg", label: "United Kingdom", desc: "RTI, PAYE, auto-enrolment" },
+                { href: "/regions/india", flag: "🇮🇳", svg: "https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/flags/4x3/in.svg", label: "India", desc: "PF, ESI, TDS" },
+                { href: "/regions/canada", flag: "🇨🇦", svg: "https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/flags/4x3/ca.svg", label: "Canada", desc: "CRA, provincial tax" },
+                { href: "/regions/europe", flag: "🇪🇺", svg: "https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/flags/4x3/eu.svg", label: "Europe", desc: "GDPR, local labour law" },
               ].map((reg) => (
                 <Link key={reg.href} href={reg.href} className="group bg-white dark:bg-[#0b1121] rounded-2xl p-5 border border-gray-200 dark:border-gray-700 hover:border-blue-400 hover:shadow-lg transition-all flex items-center gap-4">
-                  <span className="text-3xl flex-shrink-0">{reg.flag}</span>
+                  <img src={reg.svg} alt={`${reg.label} flag`} className="w-8 h-6 flex-shrink-0 rounded-sm object-cover" />
                   <div>
                     <h3 className="font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors text-sm">{reg.label}</h3>
                     <p className="text-xs text-gray-500 dark:text-gray-400">{reg.desc}</p>
@@ -1258,6 +1260,128 @@ export default function Home() {
                 Explore global HR compliance →
               </Link>
             </div>
+          </div>
+        </section>
+
+
+
+        {/* RESOURCES HUB */}
+        <section className="py-20 bg-gray-50 dark:bg-[#0f172a]">
+          <div className="container mx-auto px-6 max-w-5xl">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-3">
+                Explore Space HR Resources
+              </h2>
+              <p className="text-lg text-gray-500 dark:text-gray-400">
+                Guides, templates, and tools to help HR teams work smarter
+              </p>
+            </div>
+            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {[
+                {
+                  href: "/blogs",
+                  label: "HR Blog",
+                  desc: "58 articles on AI automation, payroll compliance, performance management, and workforce analytics",
+                  badge: "58 Articles",
+                  color: "text-blue-600 dark:text-blue-400",
+                  bg: "bg-blue-50 dark:bg-blue-900/20",
+                },
+                {
+                  href: "/templates",
+                  label: "HR Templates",
+                  desc: "Free downloadable templates — offer letters, PIPs, onboarding checklists, job descriptions, and more",
+                  badge: "16 Free Templates",
+                  color: "text-emerald-600 dark:text-emerald-400",
+                  bg: "bg-emerald-50 dark:bg-emerald-900/20",
+                },
+                {
+                  href: "/glossary",
+                  label: "HR Glossary",
+                  desc: "Plain-English definitions of modern HR tech terms — from predictive workforce analytics to NACHA ACH files",
+                  badge: "16 Terms",
+                  color: "text-purple-600 dark:text-purple-400",
+                  bg: "bg-purple-50 dark:bg-purple-900/20",
+                },
+                {
+                  href: "/compare",
+                  label: "Compare Platforms",
+                  desc: "Space HR vs BambooHR, Workday, Rippling, Gusto, ADP, and 9 more — side-by-side feature breakdowns",
+                  badge: "14 Comparisons",
+                  color: "text-orange-600 dark:text-orange-400",
+                  bg: "bg-orange-50 dark:bg-orange-900/20",
+                },
+              ].map(({ href, label, desc, badge, color, bg }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="group block rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#0b1121] p-6 hover:shadow-lg hover:border-primary/40 transition-all duration-200"
+                >
+                  <div className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold mb-4 ${bg} ${color}`}>
+                    {badge}
+                  </div>
+                  <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
+                    {label}
+                  </h3>
+                  <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+                    {desc}
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="py-20 faq-bg-fade" id="faq">
+          <div className="container mx-auto px-6 max-w-4xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                Frequently Asked Questions
+              </h2>
+              <p className="text-lg text-gray-600 dark:text-gray-300">
+                Everything you need to know about Space HR
+              </p>
+            </div>
+            <div className="space-y-4">
+              {[
+                {
+                  q: "What is Space HR?",
+                  a: "Space HR is an AI-powered HR platform combining an AI chatbot for employee self-service, automated payroll anomaly detection, 12-month labor cost forecasting, 360° performance appraisals, and attrition prediction — designed for mid-market and enterprise teams.",
+                },
+                {
+                  q: "Does Space HR have an AI HR chatbot?",
+                  a: "Yes. Space HR's AI HR chatbot handles employee questions about leave, payroll, policies, and benefits 24/7. It resolves 95% of queries instantly and reduces HR ticket volume by 70%.",
+                },
+                {
+                  q: "How does Space HR detect payroll anomalies?",
+                  a: "Space HR's AI Payroll Auditor scans every payroll run before processing, flags errors in gross-to-net calculations and FUTA/FICA withholding, and alerts HR instantly — reducing payroll errors by 99%.",
+                },
+                {
+                  q: "Can Space HR predict labor costs?",
+                  a: "Yes. Space HR forecasts 12 months of labor costs with 95% accuracy, enabling HR and CFOs to model headcount scenarios and track budget-vs-actual variance in real time.",
+                },
+                {
+                  q: "Which countries does Space HR support?",
+                  a: "Space HR is headquartered in the United States and supports organizations across the US (all 50 states, NACHA), UAE (WPS, MOHRE, gratuity), Singapore (CPF, MOM), India (PF, ESI, TDS), Canada, and Europe (GDPR). Regional payroll compliance is built in.",
+                },
+                {
+                  q: "How long does it take to set up Space HR?",
+                  a: "Most teams go live within 48 hours with guided onboarding, data import tools, and a dedicated setup team. No coding required. A free trial is available.",
+                },
+              ].map(({ q, a }, i) => (
+                <details key={i} className="group border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
+                  <summary className="flex items-center justify-between p-5 cursor-pointer bg-gray-50 dark:bg-[#111827] hover:bg-gray-100 dark:hover:bg-[#1a2433] transition-colors list-none">
+                    <span className="font-semibold text-gray-900 dark:text-white pr-4">{q}</span>
+                    <span className="text-2xl text-blue-500 flex-shrink-0 group-open:rotate-45 transition-transform duration-200">+</span>
+                  </summary>
+                  <div className="p-5 text-gray-600 dark:text-gray-300 leading-relaxed bg-white dark:bg-[#0b1121]">
+                    {a}
+                  </div>
+                </details>
+              ))}
+            </div>
+
+            <AskAI />
           </div>
         </section>
 
@@ -1334,16 +1458,21 @@ export default function Home() {
           </div>
         </section>
 
-        {/* 6. ENHANCED FINAL CTA */}
-        <section className="relative py-32 bg-gradient-to-br from-gray-900 via-gray-800 to-black dark:from-black dark:via-gray-950 dark:to-black overflow-hidden">
+        {/* Global Locations Map + CTA — shared animated background */}
+        <section className="relative bg-gradient-to-br from-gray-900 via-gray-800 to-black dark:from-black dark:via-gray-950 dark:to-black overflow-hidden">
           {/* Animated Gradient Orbs */}
-          <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-r from-pink-500/20 to-violet-500/20 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+          <div className="absolute top-0 left-1/4 w-96 h-96 bg-gradient-to-r from-pink-500/20 to-violet-500/20 rounded-full blur-3xl animate-pulse pointer-events-none"></div>
+          <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full blur-3xl animate-pulse delay-1000 pointer-events-none"></div>
 
           {/* Noise Texture */}
-          <div className="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGQ9Ik0wIDBoMzAwdjMwMEgweiIgZmlsdGVyPSJ1cmwoI2EpIiBvcGFjaXR5PSIuMDUiLz48L3N2Zz4=')]"></div>
+          <div className="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzMDAiIGhlaWdodD0iMzAwIj48ZmlsdGVyIGlkPSJhIiB4PSIwIiB5PSIwIj48ZmVUdXJidWxlbmNlIGJhc2VGcmVxdWVuY3k9Ii43NSIgc3RpdGNoVGlsZXM9InN0aXRjaCIgdHlwZT0iZnJhY3RhbE5vaXNlIi8+PGZlQ29sb3JNYXRyaXggdHlwZT0ic2F0dXJhdGUiIHZhbHVlcz0iMCIvPjwvZmlsdGVyPjxwYXRoIGQ9Ik0wIDBoMzAwdjMwMEgweiIgZmlsdGVyPSJ1cmwoI2EpIiBvcGFjaXR5PSIuMDUiLz48L3N2Zz4=')] pointer-events-none"></div>
 
-          <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
+          <LocationsSection />
+
+          <div className="relative z-10">
+            {/* 6. ENHANCED FINAL CTA */}
+            <section className="py-32">
+              <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             {/* Main CTA Content */}
             <div className="text-center mb-16">
               <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8">
@@ -1425,124 +1554,8 @@ export default function Home() {
             </div>
           </div>
         </section>
-        {/* RESOURCES HUB */}
-        <section className="py-20 bg-gray-50 dark:bg-[#0f172a]">
-          <div className="container mx-auto px-6 max-w-5xl">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-3">
-                Explore Space HR Resources
-              </h2>
-              <p className="text-lg text-gray-500 dark:text-gray-400">
-                Guides, templates, and tools to help HR teams work smarter
-              </p>
-            </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {[
-                {
-                  href: "/blogs",
-                  label: "HR Blog",
-                  desc: "58 articles on AI automation, payroll compliance, performance management, and workforce analytics",
-                  badge: "58 Articles",
-                  color: "text-blue-600 dark:text-blue-400",
-                  bg: "bg-blue-50 dark:bg-blue-900/20",
-                },
-                {
-                  href: "/templates",
-                  label: "HR Templates",
-                  desc: "Free downloadable templates — offer letters, PIPs, onboarding checklists, job descriptions, and more",
-                  badge: "16 Free Templates",
-                  color: "text-emerald-600 dark:text-emerald-400",
-                  bg: "bg-emerald-50 dark:bg-emerald-900/20",
-                },
-                {
-                  href: "/glossary",
-                  label: "HR Glossary",
-                  desc: "Plain-English definitions of modern HR tech terms — from predictive workforce analytics to NACHA ACH files",
-                  badge: "16 Terms",
-                  color: "text-purple-600 dark:text-purple-400",
-                  bg: "bg-purple-50 dark:bg-purple-900/20",
-                },
-                {
-                  href: "/compare",
-                  label: "Compare Platforms",
-                  desc: "Space HR vs BambooHR, Workday, Rippling, Gusto, ADP, and 9 more — side-by-side feature breakdowns",
-                  badge: "14 Comparisons",
-                  color: "text-orange-600 dark:text-orange-400",
-                  bg: "bg-orange-50 dark:bg-orange-900/20",
-                },
-              ].map(({ href, label, desc, badge, color, bg }) => (
-                <Link
-                  key={href}
-                  href={href}
-                  className="group block rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-[#0b1121] p-6 hover:shadow-lg hover:border-primary/40 transition-all duration-200"
-                >
-                  <div className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold mb-4 ${bg} ${color}`}>
-                    {badge}
-                  </div>
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2 group-hover:text-primary transition-colors">
-                    {label}
-                  </h3>
-                  <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
-                    {desc}
-                  </p>
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* FAQ Section */}
-        <section className="py-20 bg-white dark:bg-[#0b1121]" id="faq">
-          <div className="container mx-auto px-6 max-w-4xl">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
-                Frequently Asked Questions
-              </h2>
-              <p className="text-lg text-gray-600 dark:text-gray-300">
-                Everything you need to know about Space HR
-              </p>
-            </div>
-            <div className="space-y-4">
-              {[
-                {
-                  q: "What is Space HR?",
-                  a: "Space HR is an AI-powered HR platform combining an AI chatbot for employee self-service, automated payroll anomaly detection, 12-month labor cost forecasting, 360° performance appraisals, and attrition prediction — designed for mid-market and enterprise teams.",
-                },
-                {
-                  q: "Does Space HR have an AI HR chatbot?",
-                  a: "Yes. Space HR's AI HR chatbot handles employee questions about leave, payroll, policies, and benefits 24/7. It resolves 95% of queries instantly and reduces HR ticket volume by 70%.",
-                },
-                {
-                  q: "How does Space HR detect payroll anomalies?",
-                  a: "Space HR's AI Payroll Auditor scans every payroll run before processing, flags errors in gross-to-net calculations and FUTA/FICA withholding, and alerts HR instantly — reducing payroll errors by 99%.",
-                },
-                {
-                  q: "Can Space HR predict labor costs?",
-                  a: "Yes. Space HR forecasts 12 months of labor costs with 95% accuracy, enabling HR and CFOs to model headcount scenarios and track budget-vs-actual variance in real time.",
-                },
-                {
-                  q: "Which countries does Space HR support?",
-                  a: "Space HR is headquartered in the United States and supports organizations across the US (all 50 states, NACHA), UAE (WPS, MOHRE, gratuity), Singapore (CPF, MOM), India (PF, ESI, TDS), Canada, and Europe (GDPR). Regional payroll compliance is built in.",
-                },
-                {
-                  q: "How long does it take to set up Space HR?",
-                  a: "Most teams go live within 48 hours with guided onboarding, data import tools, and a dedicated setup team. No coding required. A free trial is available.",
-                },
-              ].map(({ q, a }, i) => (
-                <details key={i} className="group border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
-                  <summary className="flex items-center justify-between p-5 cursor-pointer bg-gray-50 dark:bg-[#111827] hover:bg-gray-100 dark:hover:bg-[#1a2433] transition-colors list-none">
-                    <span className="font-semibold text-gray-900 dark:text-white pr-4">{q}</span>
-                    <span className="text-2xl text-blue-500 flex-shrink-0 group-open:rotate-45 transition-transform duration-200">+</span>
-                  </summary>
-                  <div className="p-5 text-gray-600 dark:text-gray-300 leading-relaxed bg-white dark:bg-[#0b1121]">
-                    {a}
-                  </div>
-                </details>
-              ))}
-            </div>
-          </div>
-        </section>
-
+      </div>
+    </section>
 
       </div>
     </>
