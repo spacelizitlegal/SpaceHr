@@ -4,7 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/Button";
 import { useState, useEffect, useRef } from "react";
-import { Menu, X, ChevronRight, ChevronDown, Phone } from "lucide-react";
+import { Menu, X, ChevronRight, ChevronDown } from "lucide-react";
+import { PhoneSelector } from "@/components/PhoneSelector";
 import { cn } from "@/lib/utils";
 
 const featuresLinks = [
@@ -157,25 +158,7 @@ export function Navbar() {
             <div className="hidden sm:flex items-center gap-1 text-xs text-slate-400">
               <span>AI-Powered HRMS for Modern Enterprises</span>
             </div>
-            <div className="flex items-center gap-3 sm:gap-6">
-              <a
-                href="tel:+19169690451"
-                className="flex items-center gap-1.5 text-xs text-slate-300 hover:text-white transition-colors"
-              >
-                <span className="text-sm">🇺🇸</span>
-                <Phone className="w-3 h-3 hidden sm:block" />
-                <span className="font-medium">+1 916-969-0451</span>
-              </a>
-              <div className="w-px h-3 bg-slate-600"></div>
-              <a
-                href="tel:+6586111900"
-                className="flex items-center gap-1.5 text-xs text-slate-300 hover:text-white transition-colors"
-              >
-                <span className="text-sm">🇸🇬</span>
-                <Phone className="w-3 h-3 hidden sm:block" />
-                <span className="font-medium">+65 8611 1900</span>
-              </a>
-            </div>
+            <PhoneSelector />
           </div>
         </div>
       </div>
