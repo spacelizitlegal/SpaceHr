@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     "HR compliance software",
     "algorithm bias detection",
   ],
+  alternates: {
+    canonical: "https://spacehr.net/nyc-144-compliance",
+  },
 };
 
 const _bc_nyc144 = [{"name":"Home","url":"https://spacehr.net"},{"name":"NYC Local Law 144 Compliance","url":"https://spacehr.net/nyc-144-compliance"}];

@@ -138,6 +138,7 @@ export default function RetailPage() {
               { href: "/industries/healthcare", emoji: "🏥", label: "Healthcare", blurb: "Shift scheduling, mandatory training & clinical staff retention" },
               { href: "/industries/manufacturing", emoji: "🏭", label: "Manufacturing", blurb: "Multi-shift planning, safety compliance & ISO certification" },
               { href: "/industries/government", emoji: "🏛️", label: "Government", blurb: "Civil service pay scales, GDPR/FOI & pension scheme management" },
+              { href: "/industries/construction", emoji: "🏗️", label: "Construction", blurb: "Project-based workforce, contractor payments & safety compliance" },
             ].map((ind) => (
               <Link href={ind.href} key={ind.href} className="group bg-[#0f1a35] border border-slate-700 rounded-xl p-5 hover:border-pink-500/40 transition-colors">
                 <span className="text-2xl mb-3 block">{ind.emoji}</span>

@@ -1,0 +1,27 @@
+# Space HR
+
+## What is Space HR?
+Space HR is an AI-powered HRMS and ERP platform for mid-market enterprises. It automates payroll, performance management, workforce analytics, and employee self-service.
+
+## Who is it for?
+- HR professionals, CEOs, CFOs
+- Companies with 50-5000 employees
+- Teams in US, UAE, UK, Singapore, India, Canada, Europe
+
+## Key Features
+- AI HR Concierge chatbot (24/7 employee self-service)
+- AI Payroll Auditor with anomaly detection
+- Predictive workforce analytics and cost forecasting
+- 360-degree performance appraisals
+- Leave, attendance, and GPS check-in
+- Multi-country tax compliance
+
+## Pricing
+Custom pricing based on headcount and modules. Request a quote at https://spacehr.net/pricing
+
+## Key Pages
+- Features: https://spacehr.net/features
+- Solutions: https://spacehr.net/solutions
+- Comparison: https://spacehr.net/compare
+- Demo: https://spacehr.net/demo
+- Blog: https://spacehr.net/blogs

@@ -1206,6 +1206,7 @@ export default function Home() {
                 { href: "/industries/retail", emoji: "🛒", label: "Retail", desc: "Hourly workforce, multi-location" },
                 { href: "/industries/manufacturing", emoji: "🏭", label: "Manufacturing", desc: "OSHA safety, union payroll" },
                 { href: "/industries/government", emoji: "🏛️", label: "Government", desc: "Civil service, leave accrual" },
+                { href: "/industries/construction", emoji: "🏗️", label: "Construction", desc: "Project-based workforce, labor compliance" },
               ].map((ind) => (
                 <Link key={ind.href} href={ind.href} className="group bg-gray-50 dark:bg-[#0f172a] rounded-2xl p-6 border border-gray-200 dark:border-gray-700 hover:border-teal-400 hover:shadow-lg transition-all text-center">
                   <div className="text-4xl mb-3">{ind.emoji}</div>

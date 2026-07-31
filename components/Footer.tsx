@@ -282,7 +282,7 @@ export function Footer() {
                   href: "/tools/true-cost-calculator",
                   label: "Employee Cost Calculator",
                 },
-                { href: "/tools/w2-form-download", label: "W-2 Form Download" },
+                { href: "/tools/fw4-form-download", label: "W-2 Form Download" },
                 { href: "/tools/fw4-form-download", label: "FW-4 Form Download" },
                 {
                   href: "/california-pay-transparency",
@@ -291,6 +291,8 @@ export function Footer() {
                 { href: "/nyc-144-compliance", label: "NYC 144 Compliance" },
                 { href: "/integrations", label: "Integrations" },
                 { href: "/about", label: "About Space HR" },
+                { href: "/privacy", label: "Privacy Policy" },
+                { href: "/terms", label: "Terms of Service" },
               ].map((link) => (
                 <li key={link.label}>
                   <Link

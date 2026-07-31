@@ -210,7 +210,99 @@ export default function TrueCostCalculator() {
                 </div>
             </div>
          </div>
-       </div>
+        </div>
+
+      <section className="py-16 lg:py-20 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-700">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-6 text-center">
+              Understanding Employee Cost Beyond Salary
+            </h2>
+            <p className="text-slate-600 dark:text-slate-300 text-center mb-12 max-w-2xl mx-auto leading-relaxed">
+              Most hiring managers focus on base salary when budgeting for a new
+              hire. In reality, the true cost of an employee ranges from 1.25x to
+              2x their annual salary once taxes, benefits, and overhead are factored
+              in. This calculator gives you a clear picture of that multiplier so
+              you can make better workforce planning decisions.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-6 mb-12">
+              <div className="rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 p-6">
+                <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-3">
+                  Employer Payroll Taxes
+                </h3>
+                <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                  Beyond the employee's income tax withholding, employers pay
+                  FICA (Social Security and Medicare at 7.65%), FUTA federal
+                  unemployment (0.6% on the first $7,000), and state unemployment
+                  taxes (SUTA) which vary by state and industry. Combined, these
+                  typically add 10-12% to an employee's base salary.
+                </p>
+              </div>
+
+              <div className="rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 p-6">
+                <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-3">
+                  Benefits Cost
+                </h3>
+                <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                  Health insurance, dental, vision, 401(k) matching, life
+                  insurance, disability coverage, and paid time off add up
+                  quickly. A standard benefits package costs employers 25-30% of
+                  base salary on average. Premium packages with generous perks
+                  can push that to 35% or higher.
+                </p>
+              </div>
+
+              <div className="rounded-2xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 p-6">
+                <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-3">
+                  Overhead and Equipment
+                </h3>
+                <p className="text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                  Desk space, laptop and monitors, software licenses (Office 365,
+                  Slack, project management tools), onboarding training, and
+                  ongoing professional development all contribute to the fully
+                  loaded cost. For remote employees, stipends for home office
+                  equipment and internet add further to this figure.
+                </p>
+              </div>
+            </div>
+
+            <div className="bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-2xl p-8">
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-4">
+                Why This Matters for Budgeting
+              </h3>
+              <ul className="space-y-3 text-slate-600 dark:text-slate-300">
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-500 mt-1">-</span>
+                  <span>
+                    <strong>Accurate headcount forecasting:</strong> When you
+                    know a $75,000 salary actually costs $105,000-$120,000, you
+                    can forecast department budgets with confidence rather than
+                    surprises.
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-500 mt-1">-</span>
+                  <span>
+                    <strong>Compensation benchmarking:</strong> Understanding your
+                    true cost multiplier helps you compare internal hires against
+                    contractors or outsourced services on an apples-to-apples basis.
+                  </span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="text-blue-500 mt-1">-</span>
+                  <span>
+                    <strong>ROI analysis for HR tools:</strong> If an AI payroll
+                    tool reduces processing time by 40% and catches $50,000 in
+                    ghost employee fraud annually, knowing your true cost multiplier
+                    helps quantify the exact return on that investment.
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

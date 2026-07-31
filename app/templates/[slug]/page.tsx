@@ -597,6 +597,7 @@ export default async function TemplateDetailPage({
             <a
               href={`/api/template-download?slug=${slug}`}
               download
+              rel="nofollow"
               className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-teal-600 hover:bg-teal-700 text-white font-semibold text-sm transition-colors"
             >
               <Download className="w-4 h-4" /> Download Free Template

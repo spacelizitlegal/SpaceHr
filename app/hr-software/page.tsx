@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     "hr software comparison",
     "cloud hr software",
   ],
+  alternates: {
+    canonical: "https://spacehr.net/hr-software",
+  },
 };
 
 const faqs = [
@@ -201,7 +204,7 @@ export default function HRSoftwarePage() {
                 payroll anomaly detection
               </Link>{" "}
               to scan tax documents like{" "}
-              <Link href="/tools/w2-form-download" className="text-blue-600 dark:text-blue-400 hover:underline">
+              <Link href="/tools/fw4-form-download" className="text-blue-600 dark:text-blue-400 hover:underline">
                 W-2 forms
               </Link>{" "}
               and{" "}

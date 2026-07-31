@@ -27,6 +27,9 @@ export const metadata: Metadata = {
     "CA pay transparency",
     "HR compliance tools",
   ],
+  alternates: {
+    canonical: "https://spacehr.net/california-pay-transparency",
+  },
 };
 
 const _bc_ca_pay = [{"name":"Home","url":"https://spacehr.net"},{"name":"California Pay Transparency","url":"https://spacehr.net/california-pay-transparency"}];

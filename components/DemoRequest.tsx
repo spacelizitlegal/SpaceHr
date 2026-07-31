@@ -498,14 +498,14 @@ export default function DemoRequest() {
                 <p className="mt-6 text-center text-sm text-gray-500 dark:text-gray-400">
                   By submitting this form, you agree to our{" "}
                   <a
-                    href="#"
+                    href="/terms"
                     className="text-violet-600 dark:text-violet-400 hover:underline"
                   >
                     Terms of Service
                   </a>{" "}
                   and{" "}
                   <a
-                    href="#"
+                    href="/privacy"
                     className="text-violet-600 dark:text-violet-400 hover:underline"
                   >
                     Privacy Policy

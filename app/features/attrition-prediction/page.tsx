@@ -44,6 +44,9 @@ export const metadata: Metadata = {
       },
     ],
   },
+  alternates: {
+    canonical: "https://spacehr.net/features/attrition-prediction",
+  },
 };
 
 const attritionFAQs = [

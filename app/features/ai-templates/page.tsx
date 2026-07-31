@@ -38,6 +38,9 @@ export const metadata: Metadata = {
       "Generate fair, role-specific performance review templates with AI in seconds.",
     images: ["/og-templates.png"],
   },
+  alternates: {
+    canonical: "https://spacehr.net/features/ai-templates",
+  },
 };
 
 const _bc_ai_templates = [{"name":"Home","url":"https://spacehr.net"},{"name":"Features","url":"https://spacehr.net/features"},{"name":"AI Templates","url":"https://spacehr.net/features/ai-templates"}];

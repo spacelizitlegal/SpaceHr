@@ -40,6 +40,9 @@ export const metadata: Metadata = {
       "360° reviews with AI-generated summaries and personalized training recommendations.",
     images: ["/og-appraisals.png"],
   },
+  alternates: {
+    canonical: "https://spacehr.net/features/appraisals",
+  },
 };
 
 const _bc_appraisals = [{"name":"Home","url":"https://spacehr.net"},{"name":"Features","url":"https://spacehr.net/features"},{"name":"Appraisals","url":"https://spacehr.net/features/appraisals"}];

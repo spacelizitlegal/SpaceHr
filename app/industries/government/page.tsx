@@ -173,6 +173,7 @@ export default function GovernmentPage() {
               { href: "/industries/healthcare", emoji: "🏥", label: "Healthcare", blurb: "Shift scheduling, mandatory training & clinical staff retention" },
               { href: "/industries/retail", emoji: "🛍️", label: "Retail & Hospitality", blurb: "Zero-hours contracts, multi-site scheduling & seasonal hiring" },
               { href: "/industries/manufacturing", emoji: "🏭", label: "Manufacturing", blurb: "Multi-shift planning, safety compliance & ISO certification" },
+              { href: "/industries/construction", emoji: "🏗️", label: "Construction", blurb: "Project-based workforce, contractor payments & safety compliance" },
             ].map((ind) => (
               <Link href={ind.href} key={ind.href} className="group bg-[#0f1a35] border border-slate-700 rounded-xl p-5 hover:border-indigo-500/40 transition-colors">
                 <span className="text-2xl mb-3 block">{ind.emoji}</span>

@@ -33,6 +33,9 @@ export const metadata: Metadata = {
     "compensation management",
     "benefits administration",
   ],
+  alternates: {
+    canonical: "https://spacehr.net/hr-payroll-software",
+  },
 };
 
 const faqs = [

@@ -298,6 +298,7 @@ export default function TemplatesPage() {
                       <a
                         href={`/api/template-download?slug=${template.slug}`}
                         download
+                        rel="nofollow"
                         className="inline-flex h-10 w-full items-center justify-center whitespace-nowrap rounded-md border border-input bg-background px-4 py-2 text-sm font-medium ring-offset-background transition-colors hover:bg-accent hover:text-accent-foreground"
                       >
                         <Download className="w-4 h-4 mr-2" /> Download Template
