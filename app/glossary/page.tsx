@@ -6,7 +6,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Future of Work & HR Glossary — Modern HR Tech Terms Defined | Space HR",
+    "HR Glossary — Modern HR Tech Terms Defined | Space HR",
   description:
     "Comprehensive glossary of modern HR technology terms. Learn about Predictive Workforce Analytics, Continuous Feedback Loops, Geofenced Attendance, Asynchronous Team Alignment, gross-to-net calculations, and more.",
   keywords: [

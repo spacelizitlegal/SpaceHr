@@ -31,7 +31,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Employee Self Service HRMS: Buyer's Guide & Comparison | Space HR",
+  title: "Employee Self Service HRMS | Buyer's Guide | Space HR",
   description:
     "Compare employee self-service HRMS options and learn what to look for in a global ESS portal. Covers leave, payslips, attendance, compliance, and ROI for US, UK, UAE, Singapore, India, Canada, and Europe.",
   keywords: [

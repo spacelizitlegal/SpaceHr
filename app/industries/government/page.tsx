@@ -5,8 +5,8 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ArrowRight, ShieldCheck, FileText, Users, Brain, BarChart3, Lock, Globe, Calendar } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "HR Software for Government & Public Sector | Compliance, Pensions & Workforce Planning | Space HR",
-  description: "Space HR helps government agencies and public sector organisations manage civil service HR compliance, public pension schemes, workforce planning, and diversity reporting with secure, auditable HR automation.",
+  title: "HR Software for Government & Public Sector | Space HR",
+  description: "HR software for government: civil service compliance, pension schemes, workforce planning, and diversity reporting. Secure, auditable HR automation.",
   keywords: [
     "HR software government", "public sector HR system", "civil service HR software",
     "government workforce management", "public sector payroll software", "civil service pension HR",

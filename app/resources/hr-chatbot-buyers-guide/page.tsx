@@ -30,7 +30,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "HR Chatbot Buyer's Guide 2026: How to Choose the Right Platform",
+  title: "HR Chatbot Buyer's Guide 2026 | How to Choose",
   description:
     "The complete HR chatbot buyer's guide — 10 must-have features, evaluation framework, pricing benchmarks, implementation checklist, and the 7 red flags to watch for. Updated for 2026.",
   keywords: [

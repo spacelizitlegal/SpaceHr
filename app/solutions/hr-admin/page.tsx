@@ -24,9 +24,9 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title:
-    "Space HR for HR Admins — 5-Step Payroll Wizard & Compliance | Space HR",
+    "Space HR for HR Admins — Payroll Wizard & Compliance",
   description:
-    "Space HR empowers HR administrators with a 5-step payroll wizard, automated tax compliance, leave management, and AI-powered auditing. Reduce manual work by 80% and eliminate compliance risk.",
+    "HR admin software with 5-step payroll wizard, automated tax compliance, and AI auditing. Reduce manual work by 80%. Setup in 48 hours.",
   keywords: [
     "HR admin software",
     "5-step payroll wizard",

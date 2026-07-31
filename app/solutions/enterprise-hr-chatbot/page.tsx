@@ -33,7 +33,7 @@ import {
 export const metadata: Metadata = {
   title: "Enterprise AI HR Chatbot — Security, Scale & HRIS Integration | Space HR",
   description:
-    "Enterprise-grade AI HR chatbot with SSO, SCIM, private cloud or on-premise deployment, SOC 2 security, and deep integrations with Workday, SAP SuccessFactors, Oracle, ADP, and Ceridian. Built for 1,000+ employee organizations.",
+    "Enterprise AI HR chatbot with SSO, SCIM, private cloud, SOC 2 security, and integrations with Workday, SAP, Oracle, and ADP. Built for 1,000+ employees.",
   keywords: [
     "enterprise ai hr chatbot",
     "enterprise hr chatbot",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     canonical: "https://spacehr.net/solutions/enterprise-hr-chatbot",
   },
   openGraph: {
-    title: "Enterprise AI HR Chatbot — Security, Scale & HRIS Integration | Space HR",
+  title: "Enterprise AI HR Chatbot — Security & HRIS Integration",
     description:
       "Enterprise-grade AI HR chatbot with SSO, private cloud, SOC 2, and deep Workday/SAP/Oracle/ADP integration. For 1,000+ employee organizations.",
     url: "https://spacehr.net/solutions/enterprise-hr-chatbot",

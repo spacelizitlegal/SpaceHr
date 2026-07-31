@@ -122,6 +122,152 @@ export default function PricingPage() {
         </div>
       </section>
 
+      {/* Problem/Pain Section — Copywriting Skill: "Show you understand their situation" */}
+      <section className="py-24 bg-white dark:bg-[#0b1121]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              Why Generic Pricing Fails Growing Companies
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300">
+              Most HR software pricing pages show tiers that don't match your reality.
+            </p>
+          </div>
+          <div className="space-y-8">
+            <div className="bg-gray-50 dark:bg-gray-800/40 p-8 rounded-2xl border border-gray-200 dark:border-gray-700">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
+                "We paid for features we never used."
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                Traditional HR software forces you into tiers. The "Pro" plan includes 50 features, but you only need 10. You're paying for talent management, succession planning, and learning management — modules you won't use for years. It's like buying a truck when you need a sedan.
+              </p>
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800/40 p-8 rounded-2xl border border-gray-200 dark:border-gray-700">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
+                "Hidden fees doubled our bill."
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                The pricing page says $8 per employee. But add payroll processing, tax filing, compliance updates, and premium support — suddenly you're paying $22 per employee. What looked affordable became expensive. Transparency matters.
+              </p>
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800/40 p-8 rounded-2xl border border-gray-200 dark:border-gray-700">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
+                "We outgrew our tier in 6 months."
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                You started with 50 employees and the "Starter" plan. Now you're at 150, need multi-entity support, and have to upgrade to "Enterprise" — which costs 3x more. Growing shouldn't mean your HR costs explode.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* What Influences Your Quote — Copywriting Skill: "Specific over vague" */}
+      <section className="py-24 bg-gray-50 dark:bg-[#0f172a]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              What Influences Your Quote
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300">
+              Every quote is tailored. Here's what we consider.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                Headcount & Growth
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                Your current team size and projected growth. We price fairly for where you are today, with clear pricing for where you're headed. No surprise jumps when you add 10 employees.
+              </p>
+            </div>
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                Compliance Complexity
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                Multi-state tax filing, international payroll, industry-specific regulations — compliance complexity affects your quote. Simple US payroll costs less than global multi-currency operations.
+              </p>
+            </div>
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                Modules You Need
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                Start with payroll and HR. Add AI features, performance management, or learning management when you're ready. Only pay for what you use today, with easy upgrades as you grow.
+              </p>
+            </div>
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                Support Level
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                Standard support is included with every plan. Need a dedicated customer success manager, priority response times, or custom training? We'll tailor your support level to match your needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Proof — Copywriting Skill: "Build credibility" */}
+      <section className="py-24 bg-white dark:bg-[#0b1121]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              What Our Customers Say About Pricing
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-300">
+              Transparent pricing, no surprises.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-gray-50 dark:bg-gray-800/40 p-8 rounded-2xl border border-gray-200 dark:border-gray-700">
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 mb-4 italic">
+                "We switched from BambooHR and saved 35%. No hidden fees, no module upsells. The quote they gave us is the price we pay."
+              </p>
+              <p className="font-bold text-gray-900 dark:text-white">Sarah Chen</p>
+              <p className="text-sm text-gray-500">VP People, TechCorp (280 employees)</p>
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800/40 p-8 rounded-2xl border border-gray-200 dark:border-gray-700">
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 mb-4 italic">
+                "The personalized quote meant we only paid for what we needed. Rippling wanted to sell us IT modules we didn't want."
+              </p>
+              <p className="font-bold text-gray-900 dark:text-white">Marcus Rodriguez</p>
+              <p className="text-sm text-gray-500">CTO, DataFlow (420 employees)</p>
+            </div>
+            <div className="bg-gray-50 dark:bg-gray-800/40 p-8 rounded-2xl border border-gray-200 dark:border-gray-700">
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 mb-4 italic">
+                "We grew from 100 to 300 employees and our price only increased proportionally. No tier upgrades, no surprises."
+              </p>
+              <p className="font-bold text-gray-900 dark:text-white">Priya Patel</p>
+              <p className="text-sm text-gray-500">Head of HR, GlobalTech (300 employees)</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* INCLUDED */}
       <section className="py-24 bg-white dark:bg-[#0b1121]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">

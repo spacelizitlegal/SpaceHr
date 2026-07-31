@@ -22,7 +22,7 @@ import {
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "HR Payroll Software & Performance Appraisals | Integrated HR System",
+  title: "HR Payroll Software & Performance Appraisals | Space HR",
   description:
     "Discover the power of integrating HR Payroll Software with Performance Appraisals. Streamline compensation, bonus calculations, and talent retention with Space HR.",
   keywords: [

@@ -238,6 +238,154 @@ export default function DemoPage() {
           </div>
         </section>
 
+        {/* Problem/Pain Section — Copywriting Skill: "Show you understand their situation" */}
+        <section className="py-16 bg-white dark:bg-[#0b1121]">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                Why Most HR Demos Are a Waste of Time
+              </h2>
+              <p className="text-lg text-gray-600 dark:text-gray-300">
+                We respect your time. That's why our demo is different.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-gray-50 dark:bg-gray-800/40 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
+                <h3 className="font-bold text-gray-900 dark:text-white mb-2">
+                  No Sales Pitches
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                  Most demos are 45 minutes of sales talk with 10 minutes of product. Our 2-minute video shows the actual product working — no slides, no pitches, no fluff.
+                </p>
+              </div>
+              <div className="bg-gray-50 dark:bg-gray-800/40 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
+                <h3 className="font-bold text-gray-900 dark:text-white mb-2">
+                  Real Workflows, Not Demos
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                  We show real employee scenarios: requesting leave, checking payslips, running payroll. You see exactly how your team would use the platform — not cherry-picked features.
+                </p>
+              </div>
+              <div className="bg-gray-50 dark:bg-gray-800/40 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
+                <h3 className="font-bold text-gray-900 dark:text-white mb-2">
+                  No Signup Required
+                </h3>
+                <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                  Watch the demo without giving us your email. We believe in letting the product speak for itself. If you like what you see, book a live demo.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Detailed Demo Breakdown — Copywriting Skill: "Specific over vague" */}
+        <section className="py-16 bg-gray-50 dark:bg-[#0f172a]">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                What You'll See in Detail
+              </h2>
+              <p className="text-lg text-gray-600 dark:text-gray-300">
+                A minute-by-minute breakdown of the demo.
+              </p>
+            </div>
+            <div className="space-y-6">
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl border border-gray-100 dark:border-gray-700 flex gap-4">
+                <div className="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/30 rounded-full flex items-center justify-center shrink-0">
+                  <span className="text-indigo-600 dark:text-indigo-400 font-bold">0:00</span>
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-900 dark:text-white mb-1">AI HR Chatbot Demo</h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                    Watch an employee ask "What's my leave balance?" and "Can I take next Friday off?" The AI responds instantly, processes the request, and confirms — all without HR involvement.
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl border border-gray-100 dark:border-gray-700 flex gap-4">
+                <div className="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/30 rounded-full flex items-center justify-center shrink-0">
+                  <span className="text-indigo-600 dark:text-indigo-400 font-bold">0:30</span>
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-900 dark:text-white mb-1">AI Payroll Auditor</h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                    See a payroll run being processed. The AI scans every calculation, flags a FICA withholding anomaly, and generates a corrective action report before the error reaches employees.
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl border border-gray-100 dark:border-gray-700 flex gap-4">
+                <div className="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/30 rounded-full flex items-center justify-center shrink-0">
+                  <span className="text-indigo-600 dark:text-indigo-400 font-bold">1:00</span>
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-900 dark:text-white mb-1">Workforce Cost Forecasting</h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                    A walkthrough of the 12-month labor cost prediction dashboard. See headcount scenario modeling, budget vs. actual variance tracking, and overtime anomaly alerts in action.
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl border border-gray-100 dark:border-gray-700 flex gap-4">
+                <div className="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/30 rounded-full flex items-center justify-center shrink-0">
+                  <span className="text-indigo-600 dark:text-indigo-400 font-bold">1:30</span>
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-900 dark:text-white mb-1">360° Performance Appraisals</h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                    Watch managers, peers, and direct reports submit structured feedback. See how AI generates a performance summary and how goal alignment is tracked across teams.
+                  </p>
+                </div>
+              </div>
+              <div className="bg-white dark:bg-gray-800 p-6 rounded-2xl border border-gray-100 dark:border-gray-700 flex gap-4">
+                <div className="w-12 h-12 bg-indigo-100 dark:bg-indigo-900/30 rounded-full flex items-center justify-center shrink-0">
+                  <span className="text-indigo-600 dark:text-indigo-400 font-bold">2:00</span>
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-900 dark:text-white mb-1">Employee Self-Service Portal</h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+                    Employees access payslips, update personal details, view benefits, and submit expense requests — all from their phone, without contacting HR.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Social Proof — Copywriting Skill: "Build credibility" */}
+        <section className="py-16 bg-white dark:bg-[#0b1121]">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                What Viewers Say After Watching
+              </h2>
+              <p className="text-lg text-gray-600 dark:text-gray-300">
+                Feedback from HR leaders who watched the demo.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              <div className="bg-gray-50 dark:bg-gray-800/40 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
+                <p className="text-gray-600 dark:text-gray-400 mb-4 italic text-sm">
+                  "Finally, a demo that shows the actual product. I watched the whole thing in 2 minutes and knew exactly what Space HR could do for us."
+                </p>
+                <p className="font-bold text-gray-900 dark:text-white text-sm">James Morrison</p>
+                <p className="text-xs text-gray-500">CFO, ScaleUp Inc</p>
+              </div>
+              <div className="bg-gray-50 dark:bg-gray-800/40 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
+                <p className="text-gray-600 dark:text-gray-400 mb-4 italic text-sm">
+                  "The AI payroll auditor caught an error in the demo that our current system missed. That alone convinced me to book a live demo."
+                </p>
+                <p className="font-bold text-gray-900 dark:text-white text-sm">Linda Chen</p>
+                <p className="text-xs text-gray-500">VP HR, TechGrowth</p>
+              </div>
+              <div className="bg-gray-50 dark:bg-gray-800/40 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
+                <p className="text-gray-600 dark:text-gray-400 mb-4 italic text-sm">
+                  "No signup required. No sales calls. Just the product. That's how you build trust."
+                </p>
+                <p className="font-bold text-gray-900 dark:text-white text-sm">Robert Kim</p>
+                <p className="text-xs text-gray-500">Director of People, DataFlow</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* READY TO SEE MORE */}
         <section className="py-20 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 text-white">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-3xl">

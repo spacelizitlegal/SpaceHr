@@ -23,9 +23,9 @@ import {
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Space HR for CEOs — Labor Cost Analysis & Predictive Forecasting",
+  title: "Space HR for CEOs — Labor Cost Analysis & Forecasting",
   description:
-    "Space HR gives CEOs real-time visibility into labor costs, YTD budget tracking, predictive workforce forecasting, and attrition risk analysis. Make data-driven decisions with AI-powered executive dashboards.",
+    "Real-time labor cost visibility for CEOs: YTD budget tracking, predictive workforce forecasting, and attrition risk analysis. AI-powered executive dashboards.",
   keywords: [
     "HR software for CEOs",
     "labor cost analysis software",

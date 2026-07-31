@@ -278,6 +278,62 @@ export default function CanadaPage() {
         </div>
       </section>
 
+      {/* Explore Space HR Features */}
+      <section className="py-20 bg-gray-50 dark:bg-[#0f172a]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-white text-center mb-4">
+            Explore Space HR Features
+          </h2>
+          <p className="text-gray-500 dark:text-slate-400 text-center text-sm mb-10">
+            Discover how Space HR transforms HR operations across every function.
+          </p>
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">AI & Automation</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 mb-8">
+            {[
+              { href: "/features/ai-chatbots", label: "AI Chatbots" },
+              { href: "/features/ai-automation", label: "AI Automation" },
+              { href: "/features/ai-payroll-auditor", label: "AI Payroll Auditor" },
+              { href: "/features/ai-templates", label: "AI Templates" },
+              { href: "/features/attrition-prediction", label: "Attrition Prediction" },
+              { href: "/features/cost-prediction", label: "Cost Prediction" },
+              { href: "/features/hr-ai-concierge", label: "HR AI Concierge" },
+            ].map((f) => (
+              <Link href={f.href} key={f.href} className="group bg-white dark:bg-[#0f1a35] border border-gray-200 dark:border-slate-700 rounded-xl p-4 hover:border-rose-300 dark:hover:border-rose-500/40 transition-colors text-center">
+                <p className="text-gray-900 dark:text-white font-semibold text-sm group-hover:text-rose-600 dark:group-hover:text-rose-400 transition-colors">{f.label}</p>
+              </Link>
+            ))}
+          </div>
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">HR & Performance</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 mb-8">
+            {[
+              { href: "/features/appraisals", label: "Appraisals" },
+              { href: "/features/360-performance-appraisals", label: "360° Performance Appraisals" },
+              { href: "/features/attendance", label: "Attendance" },
+              { href: "/features/employee-self-service", label: "Employee Self-Service" },
+            ].map((f) => (
+              <Link href={f.href} key={f.href} className="group bg-white dark:bg-[#0f1a35] border border-gray-200 dark:border-slate-700 rounded-xl p-4 hover:border-rose-300 dark:hover:border-rose-500/40 transition-colors text-center">
+                <p className="text-gray-900 dark:text-white font-semibold text-sm group-hover:text-rose-600 dark:group-hover:text-rose-400 transition-colors">{f.label}</p>
+              </Link>
+            ))}
+          </div>
+          <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Industries</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-3">
+            {[
+              { href: "/industries/healthcare", label: "Healthcare" },
+              { href: "/industries/banking", label: "Banking" },
+              { href: "/industries/retail", label: "Retail" },
+              { href: "/industries/manufacturing", label: "Manufacturing" },
+              { href: "/industries/government", label: "Government" },
+              { href: "/industries/construction", label: "Construction" },
+            ].map((f) => (
+              <Link href={f.href} key={f.href} className="group bg-white dark:bg-[#0f1a35] border border-gray-200 dark:border-slate-700 rounded-xl p-4 hover:border-rose-300 dark:hover:border-rose-500/40 transition-colors text-center">
+                <p className="text-gray-900 dark:text-white font-semibold text-sm group-hover:text-rose-600 dark:group-hover:text-rose-400 transition-colors">{f.label}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Related Regions */}
       <section className="py-16 bg-gray-50 dark:bg-[#0f172a] border-t border-gray-200 dark:border-slate-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">

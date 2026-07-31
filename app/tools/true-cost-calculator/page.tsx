@@ -12,8 +12,6 @@ import {
   CheckCircle2,
 } from "lucide-react";
 import Link from "next/link";
-// JSON-LD schema can be injected via a separate Server Component wrapper if needed, 
-// for simplicity in this client component we'll focus on the UI/Logic.
 
 export default function TrueCostCalculator() {
   const [salary, setSalary] = useState(75000);

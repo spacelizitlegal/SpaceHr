@@ -31,7 +31,7 @@ import {
 export const metadata: Metadata = {
   title: "Internal Employee Chatbot for Slack, Teams & Intranet | Space HR",
   description:
-    "Deploy an internal HR chatbot where employees already work: Slack, Microsoft Teams, or your company intranet. Instant answers on leave, payroll, policies, and benefits with enterprise security.",
+    "Internal HR chatbot for Slack, Teams, or intranet. Instant answers on leave, payroll, and policies with enterprise security. Setup in 48 hours.",
   keywords: [
     "internal employee chatbot",
     "internal hr chatbot",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     canonical: "https://spacehr.net/solutions/internal-employee-chatbot",
   },
   openGraph: {
-    title: "Internal Employee Chatbot for Slack, Teams & Intranet | Space HR",
+  title: "Internal Employee Chatbot for Slack & Teams | Space HR",
     description:
       "Deploy an internal HR chatbot in Slack, Microsoft Teams, or your intranet. Instant answers with enterprise security.",
     url: "https://spacehr.net/solutions/internal-employee-chatbot",

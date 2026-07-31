@@ -5,8 +5,8 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ArrowRight, Clock, Users, Brain, DollarSign, BarChart3, Calendar, CheckCircle, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "HR Software for Retail | Rota Management, Variable Pay & Staff Retention | Space HR",
-  description: "Space HR helps retail businesses manage rota scheduling, zero-hours contracts, variable pay, seasonal hiring, and high-turnover workforce challenges with AI-powered HR automation.",
+  title: "HR Software for Retail | Rota Scheduling & Staff Retention",
+  description: "HR software for retail: rota scheduling, zero-hours contracts, variable pay, and seasonal hiring. AI-powered automation for high-turnover teams.",
   keywords: [
     "HR software retail", "retail workforce management", "retail rota scheduling software",
     "zero hours contract HR", "retail payroll software", "seasonal workforce management",

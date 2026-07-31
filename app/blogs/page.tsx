@@ -5,9 +5,6 @@ import Link from "next/link";
 import { blogPosts } from "@/lib/blogData";
 import { useState } from "react";
 
-// Note: Since this is a client component, metadata should be in layout.tsx or a separate metadata file
-// For now, adding via Head component would be an alternative
-
 export default function BlogsPage() {
   const postsPerPage = 10;
   const [currentPage, setCurrentPage] = useState(1);

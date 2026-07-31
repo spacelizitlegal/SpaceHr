@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sitemap | Space HR",
+  title: "Sitemap — All Pages & Resources | Space HR",
   description: "View the comprehensive sitemap of Space HR to easily navigate through our features, resources, and services.",
   alternates: {
     canonical: "https://spacehr.net/sitemap-page",
@@ -115,7 +115,6 @@ export default function SitemapPage() {
         { name: "HR Templates", path: "/templates" },
         { name: "W-4 Generator", path: "/tools/w4-generator" },
         { name: "Employee Cost Calculator", path: "/tools/true-cost-calculator" },
-        { name: "W-2 Form Download", path: "/tools/fw4-form-download" },
         { name: "FW-4 Form Download", path: "/tools/fw4-form-download" },
         { name: "Payroll Anomaly Detection", path: "/payroll-anomaly-detection" },
         { name: "HR Glossary", path: "/glossary" },

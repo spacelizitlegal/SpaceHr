@@ -29,9 +29,9 @@ import {
 import { FAQAccordion } from "@/components/FAQAccordion";
 
 export const metadata: Metadata = {
-  title: "HR AI Concierge — 24/7 Employee Self-Service Chatbot | Space HR",
+  title: "HR AI Concierge — 24/7 Employee Self-Service Chatbot",
   description:
-    "Deploy a 24/7 AI-powered HR chatbot that handles employee queries, leave requests, policy lookups, and payslip retrieval instantly. Space HR's AI Concierge reduces HR ticket volume by 70% while improving employee satisfaction.",
+    "24/7 AI HR concierge for employee queries, leave requests, and payslip retrieval. Reduce HR tickets by 70%. Setup in 48 hours, no coding required.",
   keywords: [
     "HR AI concierge",
     "24/7 employee self-service chatbot",
@@ -421,6 +421,49 @@ export default function HRAIConcierge() {
             </h2>
           </div>
           <FAQAccordion items={faqs} />
+        </div>
+      </section>
+
+      {/* SOLUTIONS & COMPARISONS */}
+      <section className="py-12 bg-white dark:bg-[#0b1121] border-t border-gray-100 dark:border-gray-800">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-6">Explore Solutions</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+            {[
+              { label: "Chatbot for HR Services", href: "/solutions/chatbot-for-hr-services" },
+              { label: "HR Helpdesk Chatbot", href: "/solutions/hr-helpdesk-chatbot" },
+              { label: "Internal Employee Chatbot", href: "/solutions/internal-employee-chatbot" },
+              { label: "Enterprise HR Chatbot", href: "/solutions/enterprise-hr-chatbot" },
+              { label: "Employee Self-Service", href: "/solutions/employee-self-service" },
+              { label: "For Employees", href: "/solutions/employees" },
+            ].map(({ label, href }) => (
+              <Link
+                key={href}
+                href={href}
+                className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-[#1e293b] rounded-xl border border-gray-200 dark:border-gray-700 text-sm font-medium text-gray-700 dark:text-gray-300 hover:border-teal-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+              >
+                <ArrowRight className="w-4 h-4 flex-shrink-0" />
+                {label}
+              </Link>
+            ))}
+          </div>
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-6">Compare with Competitors</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {[
+              { label: "vs BambooHR", href: "/compare/bamboohr" },
+              { label: "vs Workday", href: "/compare/workday" },
+              { label: "vs Rippling", href: "/compare/rippling" },
+            ].map(({ label, href }) => (
+              <Link
+                key={href}
+                href={href}
+                className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-[#1e293b] rounded-xl border border-gray-200 dark:border-gray-700 text-sm font-medium text-gray-700 dark:text-gray-300 hover:border-teal-400 hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+              >
+                <ArrowRight className="w-4 h-4 flex-shrink-0" />
+                {label}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

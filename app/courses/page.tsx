@@ -22,8 +22,6 @@ import {
 } from "lucide-react";
 import { courses } from "@/lib/courseData";
 
-// Note: Since this is a client component, metadata should be in layout.tsx or a separate metadata file
-
 export default function CoursesPage() {
   return (
     <div className="min-h-screen bg-white dark:bg-[#0f172a] font-sans">

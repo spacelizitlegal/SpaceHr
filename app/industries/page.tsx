@@ -4,7 +4,7 @@ import { JsonLd, generateBreadcrumbSchema, generateFAQSchema } from "@/component
 import { ArrowRight, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "HR Software by Industry | Healthcare, Banking, Retail & More | Space HR",
+  title: "HR Software by Industry | Healthcare, Banking & Retail",
   description:
     "Space HR delivers AI-powered HR software tailored for healthcare, banking & financial services, retail, manufacturing, and government. Industry-specific compliance, workforce management, and automation built in.",
   keywords: [

@@ -5,8 +5,8 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ArrowRight, ShieldCheck, Clock, Users, Brain, FileText, Calendar, CheckCircle, BarChart3, Shield } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "HR Software for Healthcare | Nurse Scheduling, Compliance & Staff Retention | Space HR",
-  description: "Space HR helps healthcare organisations automate nurse scheduling, track mandatory training, manage credentialing, and reduce clinical staff turnover with AI-powered HR tools.",
+  title: "HR Software for Healthcare | Nurse Scheduling & Compliance",
+  description: "HR software for healthcare: automate nurse scheduling, track training, manage credentialing, and reduce staff turnover with AI-powered tools.",
   keywords: [
     "HR software healthcare", "nurse scheduling software", "healthcare workforce management",
     "hospital HR system", "clinical staff scheduling", "healthcare compliance HR",

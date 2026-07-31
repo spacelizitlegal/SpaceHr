@@ -23,7 +23,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Chatbot for HR Services — Automate HR Operations & Requests | Space HR",
+  title: "Chatbot for HR Services — Automate HR Operations",
   description:
     "Automate your HR services delivery with an AI chatbot that handles leave, payslips, policies, benefits, and onboarding requests — 24/7, integrated with your existing HR systems.",
   keywords: [

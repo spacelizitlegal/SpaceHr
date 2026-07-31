@@ -5,8 +5,8 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ArrowRight, Clock, Users, Brain, ShieldCheck, BarChart3, FileText, DollarSign, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "HR Software for Manufacturing | Shift Scheduling, Labour Compliance & Workforce Planning | Space HR",
-  description: "Space HR helps manufacturers automate shift scheduling, factory-act compliance, labour cost control, and hourly workforce management with AI-powered HR tools designed for the shop floor.",
+  title: "HR Software for Manufacturing | Shift Scheduling & Compliance",
+  description: "HR software for manufacturing: shift scheduling, factory-act compliance, and hourly workforce management. AI-powered tools for the shop floor.",
   keywords: [
     "HR software manufacturing", "manufacturing workforce management", "factory shift scheduling software",
     "manufacturing payroll software", "labour law compliance manufacturing", "factory HR system",

@@ -22,7 +22,7 @@ import {
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "HR Software | The Ultimate Guide to HR Management Solutions (2025)",
+  title: "HR Software | The Ultimate Guide to HR Management Solutions (2026)",
   description:
     "A comprehensive 2,000+ word guide to HR Software. Compare features, benefits, and pricing. Learn why Space HR is the best HR software for modern teams.",
   keywords: [

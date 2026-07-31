@@ -24,7 +24,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "HR AI Chatbot: What It Is, Features & Buyer's Guide | Space HR",
+  title: "HR AI Chatbot: Features & Buyer's Guide | Space HR",
   description:
     "Learn what an HR AI chatbot is, which features matter, and how to choose one for your team. Covers use cases, integrations, security, and ROI for mid-market and enterprise HR.",
   keywords: [

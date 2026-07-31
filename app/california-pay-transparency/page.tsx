@@ -15,7 +15,7 @@ import { Metadata } from "next";
 import { JsonLd, generateBreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "California Pay Transparency Act Software | Automated Pay Scales",
+  title: "California Pay Transparency Act Software | Space HR",
   description:
     "Comply with California's Pay Transparency Act (SB 1162). Automate pay scale disclosures, generate salary ranges, and submit required pay data reports easily.",
   keywords: [

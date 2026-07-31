@@ -23,7 +23,7 @@ import {
 } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Payroll Anomaly Detection Software — Catch Errors Before Payroll Runs | Space HR",
+  title: "Payroll Anomaly Detection Software | Space HR",
   description:
     "Space HR's AI payroll anomaly detection scans every pay run before funds transfer — catching ghost employees, tax errors, overtime spikes, and duplicate payments. Reduce payroll errors by 99%.",
   keywords: [

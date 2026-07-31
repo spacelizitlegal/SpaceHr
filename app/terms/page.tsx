@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service | Space HR",
+  title: "Terms of Service — Platform Usage Agreement | Space HR",
   description: "Space HR's terms of service. Read the terms governing your use of our platform and services.",
   alternates: {
     canonical: "https://spacehr.net/terms",

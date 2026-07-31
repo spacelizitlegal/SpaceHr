@@ -25,7 +25,7 @@ import {
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Best HR Software for Small Business 2026 — Global SMB Guide",
+  title: "Best HR Software for Small Business 2026 | Space HR",
   description:
     "Best HR software for small businesses in 2026. Compare Space HR, greytHR, Zoho People, Keka, and BambooHR on features, global compliance, and custom pricing. Free trial available.",
   keywords: [

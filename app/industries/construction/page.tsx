@@ -9,9 +9,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "HR Software for Construction Companies 2026 | Site Labour, Compliance & Payroll | Space HR",
+  title: "HR Software for Construction | Site Labour & Compliance",
   description:
-    "Space HR helps construction companies manage site labour, BOCW Act compliance, contractor workforce, daily wage payroll, and multi-site attendance — all from one platform. India-compliant HR for builders, developers, and infra companies.",
+    "HR software for construction: manage site labour, BOCW compliance, contractor workforce, and daily wage payroll. Multi-site attendance from one platform.",
   keywords: [
     "hr software for construction companies",
     "construction hr software",

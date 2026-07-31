@@ -16,7 +16,7 @@ import {
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "OrangeHRM Alternative | Best AI-Powered HR Software (2025)",
+  title: "OrangeHRM Alternative | Best AI-Powered HR Software (2026)",
   description:
     "Looking for an OrangeHRM alternative? Space HR offers integrated AI automation, simpler setup, and better support than open-source HR tools. Compare features now.",
   keywords: [
@@ -210,6 +210,30 @@ export default function CompareOrangeHRMPage() {
         </div>
       </section>
 
+      {/* Sticky CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-orange-600 to-red-600">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            Ready to Switch?
+          </h2>
+          <p className="text-xl text-white/80 mb-6 max-w-2xl mx-auto">
+            Free trial · No credit card · Free migration from OrangeHRM
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/request-a-demo">
+              <Button size="lg" className="rounded-full px-8 h-14 text-lg font-bold bg-white text-orange-600 hover:bg-gray-100">
+                Start Free Trial
+              </Button>
+            </Link>
+            <Link href="/pricing">
+              <Button variant="outline" size="lg" className="rounded-full px-8 h-14 text-lg font-medium border-white/30 text-white hover:bg-white/10">
+                Get a Custom Quote
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Why Switch Section */}
       <section className="py-20 bg-gray-50 dark:bg-[#0f172a]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -349,6 +373,27 @@ export default function CompareOrangeHRMPage() {
           </div>
         </div>
       </section>
+
+      {/* Related Features */}
+      <div className="mt-12 border-t border-white/5 pt-8">
+        <h2 className="text-2xl font-bold text-white mb-4">Related Features</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          {[
+            { href: "/features/ai-chatbots", label: "AI HR Chatbot" },
+            { href: "/features/ai-automation", label: "AI Workflow Automation" },
+            { href: "/features/ai-templates", label: "AI Templates" },
+            { href: "/features/hr-templates", label: "HR Templates" },
+          ].map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 text-sm text-gray-700 dark:text-gray-300 hover:text-white hover:border-gray-400 transition-all text-center"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

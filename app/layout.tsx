@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     template: "%s | Space HR",
   },
   description:
-    "Space HR is an AI HR chatbot and employee self-service platform. Automate HR queries, detect payroll anomalies, forecast labor costs, and run 360° appraisals. Trusted by teams in the US, UAE, UK, and India.",
+    "AI HR chatbot for employee self-service, payroll anomaly detection, and workforce forecasting. Trusted by teams in the US, UAE, UK, and India.",
   keywords: [
     "HR software",
     "performance management",
