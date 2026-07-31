@@ -5,8 +5,8 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ArrowRight, ShieldCheck, FileText, Users, Brain, BarChart3, Lock, Globe, Calendar } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "HR Software for Government & Public Sector | Compliance, Pensions & Workforce Planning | Space HR",
-  description: "Space HR helps government agencies and public sector organisations manage civil service HR compliance, public pension schemes, workforce planning, and diversity reporting with secure, auditable HR automation.",
+  title: "HR Software for Government & Public Sector | Space HR",
+  description: "HR software for government: civil service compliance, pension schemes, workforce planning, and diversity reporting. Secure, auditable HR automation.",
   keywords: [
     "HR software government", "public sector HR system", "civil service HR software",
     "government workforce management", "public sector payroll software", "civil service pension HR",
@@ -173,6 +173,7 @@ export default function GovernmentPage() {
               { href: "/industries/healthcare", emoji: "🏥", label: "Healthcare", blurb: "Shift scheduling, mandatory training & clinical staff retention" },
               { href: "/industries/retail", emoji: "🛍️", label: "Retail & Hospitality", blurb: "Zero-hours contracts, multi-site scheduling & seasonal hiring" },
               { href: "/industries/manufacturing", emoji: "🏭", label: "Manufacturing", blurb: "Multi-shift planning, safety compliance & ISO certification" },
+              { href: "/industries/construction", emoji: "🏗️", label: "Construction", blurb: "Project-based workforce, contractor payments & safety compliance" },
             ].map((ind) => (
               <Link href={ind.href} key={ind.href} className="group bg-[#0f1a35] border border-slate-700 rounded-xl p-5 hover:border-indigo-500/40 transition-colors">
                 <span className="text-2xl mb-3 block">{ind.emoji}</span>

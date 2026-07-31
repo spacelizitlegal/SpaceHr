@@ -26,9 +26,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Best HCM Software 2026 — Top 8 Human Capital Management Platforms Compared",
+  title: "Best HCM Software 2026 — Top 8 Platforms Compared",
   description:
-    "Compare the best HCM software of 2026: Space HR, Workday, SAP SuccessFactors, Oracle HCM, BambooHR, Darwinbox, Rippling, and ADP. Features, pricing, pros & cons, and which HCM system is right for your US or global company.",
+    "Compare the best HCM software of 2026: Space HR, Workday, SAP, Oracle, BambooHR, Darwinbox, Rippling, and ADP. Features, pricing, and which is right for you.",
   keywords: [
     "best hcm software",
     "hcm software",

@@ -36,10 +36,10 @@ import {
 export const metadata: Metadata = {
   title: {
     absolute:
-      "Space HR - AI-Powered HR Chatbot & Employee Self-Service Platform",
+      "Space HR — AI HR Chatbot & Employee Self-Service Platform",
   },
   description:
-    "Space HR automates HR for growing teams - AI chatbot for employee self-service, payroll anomaly detection, 12-month labor cost forecasting, and 360 appraisals. Free trial. Setup in 48 hours.",
+    "AI HR chatbot for employee self-service, payroll anomaly detection, and workforce forecasting. Automate HR for growing teams. Free trial, setup in 48 hours.",
   keywords: [
     "AI HR chatbot",
     "chatbot for HR services",
@@ -155,29 +155,14 @@ export default function Home() {
             </div>
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white mb-8 leading-tight drop-shadow-sm animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-100">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-cyan-300">
-                HR Software
+                Automate HR.
               </span>{" "}
               <br />
-              for Modern Teams
+              Cut Tickets by 70%. Go Live in 48 Hours.
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 mb-12 max-w-3xl mx-auto leading-relaxed animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-200">
-              Experience the <strong>best HR software</strong> designed to
-              simplify complex{" "}
-              <Link
-                href="/hrms"
-                className="text-teal-300 hover:underline decoration-teal-300/50 underline-offset-4"
-              >
-                human resource management
-              </Link>
-              . From intelligent{" "}
-              <Link
-                href="/features/payroll"
-                className="text-teal-300 hover:underline decoration-teal-300/50 underline-offset-4"
-              >
-                payroll automation
-              </Link>{" "}
-              to advanced HRMS analytics, Space HR empowers your business to
-              thrive.
+              AI chatbot, payroll anomaly detection, and workforce forecasting
+              — in one platform. Free trial, no credit card required.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center animate-in fade-in slide-in-from-bottom-10 duration-1000 delay-300">
               <Link href="/request-a-demo">
@@ -185,22 +170,33 @@ export default function Home() {
                   size="lg"
                   className="h-14 px-8 rounded-full text-lg font-semibold bg-primary hover:bg-primary/90 text-white shadow-xl shadow-primary/25 hover:shadow-2xl hover:-translate-y-1 transition-all"
                 >
-                  Request Demo
+                  Start Free Trial
                 </Button>
               </Link>
-              <Link href="/features">
+              <Link href="/pricing">
                 <Button
                   size="lg"
                   variant="outline"
                   className="h-14 px-8 rounded-full text-lg font-semibold bg-white/10 backdrop-blur-sm border-white/20 text-white hover:bg-white/20 hover:border-white/40 transition-all"
                 >
-                  Explore Platform
+                  Get a Custom Quote
                 </Button>
               </Link>
             </div>
-            <p className="text-sm text-gray-300 mt-8 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-500">
-              Built in the United States · Trusted by teams in 15+ countries
-            </p>
+            <div className="flex flex-wrap justify-center gap-x-8 gap-y-3 mt-10 animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-500">
+              {[
+                "500+ companies",
+                "95% query resolution",
+                "70% ticket reduction",
+                "48-hour setup",
+                "15+ countries",
+              ].map((stat) => (
+                <span key={stat} className="flex items-center gap-2 text-sm text-gray-300">
+                  <CheckCircle className="w-4 h-4 text-teal-400" />
+                  {stat}
+                </span>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -215,13 +211,13 @@ export default function Home() {
                 Watch how growing teams use Space HR's AI HR chatbot and HRMS to
                 automate workflows and cut HR overhead by 70%.
               </p>
-              <Link href="/tools/w4-generator">
+              <Link href="/request-a-demo">
                 <Button
                   size="lg"
                   className="rounded-full px-8 text-white bg-gradient-to-r from-pink-500 to-violet-500 hover:from-pink-600 hover:to-violet-600 border-none shadow-[0_0_20px_rgba(236,72,153,0.3)] transition-all hover:scale-105"
                 >
                   <Sparkles className="w-5 h-5 mr-2" />
-                  Try Our Free W-4 Form Generator for Employees
+                  Start Free Trial
                 </Button>
               </Link>
             </div>
@@ -1206,6 +1202,7 @@ export default function Home() {
                 { href: "/industries/retail", emoji: "🛒", label: "Retail", desc: "Hourly workforce, multi-location" },
                 { href: "/industries/manufacturing", emoji: "🏭", label: "Manufacturing", desc: "OSHA safety, union payroll" },
                 { href: "/industries/government", emoji: "🏛️", label: "Government", desc: "Civil service, leave accrual" },
+                { href: "/industries/construction", emoji: "🏗️", label: "Construction", desc: "Project-based workforce, labor compliance" },
               ].map((ind) => (
                 <Link key={ind.href} href={ind.href} className="group bg-gray-50 dark:bg-[#0f172a] rounded-2xl p-6 border border-gray-200 dark:border-gray-700 hover:border-teal-400 hover:shadow-lg transition-all text-center">
                   <div className="text-4xl mb-3">{ind.emoji}</div>
@@ -1501,17 +1498,17 @@ export default function Home() {
                   size="lg"
                   className="rounded-full h-16 px-12 text-lg font-bold shadow-2xl hover:shadow-pink-500/50 transition-all bg-gradient-to-r from-pink-500 via-violet-500 to-blue-600 hover:from-pink-600 hover:via-violet-600 hover:to-blue-700 text-white border-0 group"
                 >
-                  Get Started Now
+                  Start Free Trial
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
-              <Link href="/request-a-demo">
+              <Link href="/pricing">
                 <Button
                   size="lg"
                   variant="outline"
                   className="rounded-full h-16 px-12 text-lg font-bold border-2 border-white/30 text-white hover:bg-white hover:text-gray-900 transition-all backdrop-blur-sm"
                 >
-                  Schedule a Demo
+                  Get a Custom Quote
                 </Button>
               </Link>
             </div>

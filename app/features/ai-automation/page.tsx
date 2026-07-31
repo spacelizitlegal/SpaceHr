@@ -28,9 +28,9 @@ import { JsonLd, generateFAQSchema, generateBreadcrumbSchema,
   softwareSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "HR Automation Software — Automate HR Workflows & Processes | Space HR",
+  title: "HR Automation Software — Automate Workflows | Space HR",
   description:
-    "Space HR automates HR workflows — onboarding journeys, approval chains, compliance reminders, engagement campaigns, and sentiment analysis. Save 40+ hours/week. Free trial.",
+    "AI workflow automation for HR: onboarding, approvals, compliance reminders, and sentiment analysis. Save 40+ hours/week. Free trial.",
   keywords: [
     "AI workflow automation",
     "HR process automation",
@@ -185,16 +185,15 @@ export default function AIAutomationPage() {
                 <Zap className="w-4 h-4" /> AI Workflow Automation
               </div>
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6 leading-tight">
-                Automate Engagement.{" "}
+                Save 40+ Hours/Week on HR Tasks{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">
-                  Scale Your Culture.
+                  — No Code Required
                 </span>
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-                Treat your employees like customers. Use AI to deliver
-                personalized internal communication campaigns, automated
-                onboarding journeys, intelligent reminders, and culture-building
-                workflows that run 24/7.
+                Automate onboarding, approvals, compliance reminders, and
+                engagement campaigns with AI. Pre-built templates, zero coding,
+                live in 2 hours.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Link href="/request-a-demo">
@@ -948,6 +947,47 @@ export default function AIAutomationPage() {
                 <ArrowRight className="w-4 h-4 flex-shrink-0" />
                 {label}
               </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* SOLUTIONS & COMPARISONS */}
+      <section className="py-12 bg-white dark:bg-[#0b1121] border-t border-gray-100 dark:border-gray-800">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-6">Explore Solutions</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+            {[
+              { label: "HR Admin", href: "/solutions/hr-admin" },
+              { label: "For CEOs", href: "/solutions/ceo" },
+              { label: "For Employees", href: "/solutions/employees" },
+              { label: "Employee Self-Service", href: "/solutions/employee-self-service" },
+            ].map(({ label, href }) => (
+              <Link
+                key={href}
+                href={href}
+                className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-[#1e293b] rounded-xl border border-gray-200 dark:border-gray-700 text-sm font-medium text-gray-700 dark:text-gray-300 hover:border-orange-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
+              >
+                <ArrowRight className="w-4 h-4 flex-shrink-0" />
+                {label}
+              </Link>
+            ))}
+          </div>
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-6">Compare with Competitors</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {[
+              { label: "vs BambooHR", href: "/compare/bamboohr" },
+              { label: "vs Workday", href: "/compare/workday" },
+              { label: "vs Rippling", href: "/compare/rippling" },
+            ].map(({ label, href }) => (
+              <Link
+                key={href}
+                href={href}
+                className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-[#1e293b] rounded-xl border border-gray-200 dark:border-gray-700 text-sm font-medium text-gray-700 dark:text-gray-300 hover:border-orange-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
+              >
+                <ArrowRight className="w-4 h-4 flex-shrink-0" />
+                {label}
+              </Link>
             ))}
           </div>
         </div>

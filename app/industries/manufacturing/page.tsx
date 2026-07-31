@@ -5,8 +5,8 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ArrowRight, Clock, Users, Brain, ShieldCheck, BarChart3, FileText, DollarSign, Zap } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "HR Software for Manufacturing | Shift Scheduling, Labour Compliance & Workforce Planning | Space HR",
-  description: "Space HR helps manufacturers automate shift scheduling, factory-act compliance, labour cost control, and hourly workforce management with AI-powered HR tools designed for the shop floor.",
+  title: "HR Software for Manufacturing | Shift Scheduling & Compliance",
+  description: "HR software for manufacturing: shift scheduling, factory-act compliance, and hourly workforce management. AI-powered tools for the shop floor.",
   keywords: [
     "HR software manufacturing", "manufacturing workforce management", "factory shift scheduling software",
     "manufacturing payroll software", "labour law compliance manufacturing", "factory HR system",
@@ -139,6 +139,7 @@ export default function ManufacturingPage() {
               { href: "/industries/healthcare", emoji: "🏥", label: "Healthcare", blurb: "Shift scheduling, mandatory training & clinical staff retention" },
               { href: "/industries/retail", emoji: "🛍️", label: "Retail & Hospitality", blurb: "Zero-hours contracts, multi-site scheduling & seasonal hiring" },
               { href: "/industries/government", emoji: "🏛️", label: "Government", blurb: "Civil service pay scales, GDPR/FOI & pension scheme management" },
+              { href: "/industries/construction", emoji: "🏗️", label: "Construction", blurb: "Project-based workforce, contractor payments & safety compliance" },
             ].map((ind) => (
               <Link href={ind.href} key={ind.href} className="group bg-[#0f1a35] border border-slate-700 rounded-xl p-5 hover:border-amber-500/40 transition-colors">
                 <span className="text-2xl mb-3 block">{ind.emoji}</span>

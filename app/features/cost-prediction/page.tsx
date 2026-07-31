@@ -23,9 +23,9 @@ import { JsonLd, generateFAQSchema, generateBreadcrumbSchema,
   softwareSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Labor Cost Forecasting Software | Predict Workforce Costs 12 Months Out | Space HR",
+  title: "Labor Cost Forecasting Software | Space HR",
   description:
-    "Space HR's AI labor cost forecasting predicts 12 months of workforce spend with 95% accuracy. Model headcount scenarios, automate variance alerts, and align HR budgets with Finance. Free trial.",
+    "AI labor cost forecasting: predict 12 months of workforce spend with 95% accuracy. Model scenarios and automate variance alerts. Free trial.",
   keywords: [
     "labor cost forecasting software",
     "workforce cost prediction",
@@ -529,6 +529,46 @@ export default function CostPredictionPage() {
                   key={href}
                   href={href}
                   className="flex items-center gap-2 p-3 bg-white dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 text-sm font-medium text-slate-700 dark:text-slate-300 hover:border-emerald-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
+                >
+                  <ArrowRight className="w-4 h-4 flex-shrink-0" />
+                  {label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* SOLUTIONS & COMPARISONS */}
+        <section className="py-12 bg-white dark:bg-[#0f172a] border-t border-slate-200 dark:border-slate-800">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+            <h2 className="text-lg font-semibold text-slate-900 dark:text-white mb-6">Explore Solutions</h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+              {[
+                { label: "For CEOs", href: "/solutions/ceo" },
+                { label: "HR Admin", href: "/solutions/hr-admin" },
+                { label: "For Employees", href: "/solutions/employees" },
+              ].map(({ label, href }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="flex items-center gap-2 p-3 bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 text-sm font-medium text-slate-700 dark:text-slate-300 hover:border-emerald-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
+                >
+                  <ArrowRight className="w-4 h-4 flex-shrink-0" />
+                  {label}
+                </Link>
+              ))}
+            </div>
+            <h2 className="text-lg font-semibold text-slate-900 dark:text-white mb-6">Compare with Competitors</h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+              {[
+                { label: "vs BambooHR", href: "/compare/bamboohr" },
+                { label: "vs Workday", href: "/compare/workday" },
+                { label: "vs Rippling", href: "/compare/rippling" },
+              ].map(({ label, href }) => (
+                <Link
+                  key={href}
+                  href={href}
+                  className="flex items-center gap-2 p-3 bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 text-sm font-medium text-slate-700 dark:text-slate-300 hover:border-emerald-400 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
                 >
                   <ArrowRight className="w-4 h-4 flex-shrink-0" />
                   {label}

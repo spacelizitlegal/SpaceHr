@@ -30,7 +30,7 @@ import {
 export const metadata: Metadata = {
   title: "About Space HR — AI-Powered HR Platform for Growing Teams",
   description:
-    "Space HR is an AI-powered HR and payroll platform built for mid-market companies. Learn about our mission, the team behind Space HR, and why HR leaders trust us to automate chatbots, payroll anomaly detection, and workforce forecasting.",
+    "Learn about Space HR — an AI-powered HR platform for mid-market companies. Our mission: automate HR with chatbots, payroll detection, and workforce forecasting.",
   keywords: [
     "Space AI",
     "Space HR",
@@ -331,17 +331,17 @@ const aboutFAQs = [
                   size="lg"
                   className="h-14 px-8 rounded-full text-lg font-semibold bg-gradient-to-r from-primary to-violet-600 hover:from-primary/90 hover:to-violet-600/90 text-white shadow-xl shadow-primary/25 hover:shadow-2xl hover:shadow-primary/40 hover:-translate-y-1 transition-all"
                 >
-                  Experience Space HR
+                  Start Free Trial
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
               </Link>
-              <Link href="#our-story">
+              <Link href="/features">
                 <Button
                   size="lg"
                   variant="outline"
                   className="h-14 px-8 rounded-full text-lg font-semibold bg-white/5 backdrop-blur-sm border-white/20 text-white hover:bg-white/10 hover:border-white/40 transition-all"
                 >
-                  Our Story
+                  See What We Build for You
                   <ChevronRight className="ml-1 w-5 h-5" />
                 </Button>
               </Link>

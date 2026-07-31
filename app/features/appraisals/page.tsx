@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/Button";
 import {
   Check,
   ArrowLeft,
+  ArrowRight,
   MessageSquarePlus,
   Award,
   Users,
@@ -19,7 +20,7 @@ import { Metadata } from "next";
 import { JsonLd, generateBreadcrumbSchema } from "@/components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "AI-Powered Performance Appraisals | 360° Reviews with Smart Coaching",
+  title: "AI-Powered Performance Appraisals | 360° Reviews",
   description:
     "Transform performance reviews with AI coaching. Get natural language summaries, training recommendations, and calibration insights for 360-degree appraisals.",
   keywords: [
@@ -39,6 +40,9 @@ export const metadata: Metadata = {
     description:
       "360° reviews with AI-generated summaries and personalized training recommendations.",
     images: ["/og-appraisals.png"],
+  },
+  alternates: {
+    canonical: "https://spacehr.net/features/appraisals",
   },
 };
 
@@ -339,6 +343,46 @@ export default function AIAppraisalsPage() {
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SOLUTIONS & COMPARISONS */}
+      <section className="py-12 bg-white dark:bg-[#0b1121] border-t border-gray-100 dark:border-gray-800">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-6">Explore Solutions</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+            {[
+              { label: "HR Admin", href: "/solutions/hr-admin" },
+              { label: "For CEOs", href: "/solutions/ceo" },
+              { label: "For Employees", href: "/solutions/employees" },
+            ].map(({ label, href }) => (
+              <Link
+                key={href}
+                href={href}
+                className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-[#1e293b] rounded-xl border border-gray-200 dark:border-gray-700 text-sm font-medium text-gray-700 dark:text-gray-300 hover:border-purple-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
+              >
+                <ArrowRight className="w-4 h-4 flex-shrink-0" />
+                {label}
+              </Link>
+            ))}
+          </div>
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-6">Compare with Competitors</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {[
+              { label: "vs BambooHR", href: "/compare/bamboohr" },
+              { label: "vs Workday", href: "/compare/workday" },
+              { label: "vs Rippling", href: "/compare/rippling" },
+            ].map(({ label, href }) => (
+              <Link
+                key={href}
+                href={href}
+                className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-[#1e293b] rounded-xl border border-gray-200 dark:border-gray-700 text-sm font-medium text-gray-700 dark:text-gray-300 hover:border-purple-400 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
+              >
+                <ArrowRight className="w-4 h-4 flex-shrink-0" />
+                {label}
+              </Link>
+            ))}
           </div>
         </div>
       </section>

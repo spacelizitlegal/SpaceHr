@@ -16,9 +16,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Space HR Integrations — Connect HR with Your Entire Ecosystem",
+  title: "Space HR Integrations — Connect HR with Your Ecosystem",
   description:
-    "Space HR integrates with PM Space AI, Space Sign, Space Capture, and more tools in the Space AI ecosystem. Eliminate data silos across HR, project management, and operations.",
+    "Space HR integrates with PM Space AI, Space Sign, and Space Capture. Eliminate data silos across HR, project management, and operations.",
   keywords: [
     "Space HR integrations",
     "HR integrations",

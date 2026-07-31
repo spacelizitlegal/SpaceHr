@@ -4,7 +4,7 @@ import { JsonLd, generateBreadcrumbSchema, generateFAQSchema } from "@/component
 import { ArrowRight, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "HR Software by Industry | Healthcare, Banking, Retail & More | Space HR",
+  title: "HR Software by Industry | Healthcare, Banking & Retail",
   description:
     "Space HR delivers AI-powered HR software tailored for healthcare, banking & financial services, retail, manufacturing, and government. Industry-specific compliance, workforce management, and automation built in.",
   keywords: [
@@ -91,6 +91,17 @@ const industries = [
     accent: "text-violet-600 dark:text-violet-400",
     desc: "Civil service pay scale management, GDPR and FOI compliance, workforce capacity planning, pension scheme integration, and unionized workforce administration.",
     bullets: ["Civil service pay scales", "GDPR/FOI compliance built-in", "Pension scheme integration"],
+  },
+  {
+    href: "/industries/construction",
+    emoji: "🏗️",
+    label: "Construction & Infrastructure",
+    badge: "Construction",
+    badgeColor: "bg-orange-100 text-orange-700 dark:bg-orange-900/30 dark:text-orange-400",
+    border: "border-orange-300 dark:border-orange-700",
+    accent: "text-orange-600 dark:text-orange-400",
+    desc: "Project-based workforce management, labor law compliance, contractor payments, safety certification tracking, and multi-site attendance.",
+    bullets: ["Project-based crew scheduling", "Contractor & subcontractor payments", "Safety certification tracking"],
   },
 ];
 

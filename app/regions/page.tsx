@@ -4,7 +4,7 @@ import { JsonLd, generateBreadcrumbSchema, generateFAQSchema } from "@/component
 import { ArrowRight, CheckCircle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Global HR Software | US, UK, UAE, India, Singapore & More | Space HR",
+  title: "Global HR Software | US, UK, UAE, India & Singapore",
   description:
     "Space HR is a US-based HR platform delivering country-specific HR and payroll compliance for the United States, United Kingdom, UAE, India, Singapore, Canada, and Europe. Built-in local regulations, no manual configuration needed.",
   keywords: [

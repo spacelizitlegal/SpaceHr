@@ -5,8 +5,8 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ArrowRight, ShieldCheck, Clock, Users, Brain, FileText, Calendar, CheckCircle, BarChart3, Shield } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "HR Software for Healthcare | Nurse Scheduling, Compliance & Staff Retention | Space HR",
-  description: "Space HR helps healthcare organisations automate nurse scheduling, track mandatory training, manage credentialing, and reduce clinical staff turnover with AI-powered HR tools.",
+  title: "HR Software for Healthcare | Nurse Scheduling & Compliance",
+  description: "HR software for healthcare: automate nurse scheduling, track training, manage credentialing, and reduce staff turnover with AI-powered tools.",
   keywords: [
     "HR software healthcare", "nurse scheduling software", "healthcare workforce management",
     "hospital HR system", "clinical staff scheduling", "healthcare compliance HR",
@@ -173,6 +173,7 @@ export default function HealthcarePage() {
               { href: "/industries/retail", emoji: "🛍️", label: "Retail & Hospitality", blurb: "Zero-hours contracts, multi-site scheduling & seasonal hiring" },
               { href: "/industries/manufacturing", emoji: "🏭", label: "Manufacturing", blurb: "Multi-shift planning, safety compliance & ISO certification" },
               { href: "/industries/government", emoji: "🏛️", label: "Government", blurb: "Civil service pay scales, GDPR/FOI & pension scheme management" },
+              { href: "/industries/construction", emoji: "🏗️", label: "Construction", blurb: "Project-based workforce, contractor payments & safety compliance" },
             ].map((ind) => (
               <Link href={ind.href} key={ind.href} className="group bg-[#0f1a35] border border-slate-700 rounded-xl p-5 hover:border-teal-500/40 transition-colors">
                 <span className="text-2xl mb-3 block">{ind.emoji}</span>

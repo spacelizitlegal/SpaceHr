@@ -12,8 +12,8 @@ import {
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ServiceNow vs Space HR: AI HR Chatbot Without Enterprise Complexity",
-  description: "ServiceNow requires months of configuration and IT teams. Space HR deploys an AI HR chatbot in days — with built-in payroll anomaly detection, leave management, and zero IT overhead.",
+  title: "ServiceNow vs Space HR: AI HR Chatbot Without Complexity",
+  description: "ServiceNow needs months of configuration. Space HR deploys an AI HR chatbot in days with payroll detection, leave management, and zero IT overhead.",
   keywords: ["servicenow alternative","Space HR vs servicenow","hr service delivery software","ai hr chatbot servicenow alternative","hr helpdesk without servicenow"],
   twitter: {
     card: "summary_large_image",
@@ -180,6 +180,30 @@ export default function CompareServiceNowPage() {
         </div>
       </section>
 
+      {/* Sticky CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-cyan-600">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            Ready to Switch?
+          </h2>
+          <p className="text-xl text-white/80 mb-6 max-w-2xl mx-auto">
+            Free trial · No credit card · Free migration from ServiceNow
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/request-a-demo">
+              <Button size="lg" className="rounded-full px-8 h-14 text-lg font-bold bg-white text-blue-600 hover:bg-gray-100">
+                Start Free Trial
+              </Button>
+            </Link>
+            <Link href="/pricing">
+              <Button variant="outline" size="lg" className="rounded-full px-8 h-14 text-lg font-medium border-white/30 text-white hover:bg-white/10">
+                Get a Custom Quote
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Why Switch Section */}
       <section className="py-20 bg-gray-50 dark:bg-[#0f172a]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -299,6 +323,27 @@ export default function CompareServiceNowPage() {
           </div>
         </div>
       </section>
+
+      {/* Related Features */}
+      <div className="mt-12 border-t border-white/5 pt-8">
+        <h2 className="text-2xl font-bold text-white mb-4">Related Features</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          {[
+            { href: "/features/ai-chatbots", label: "AI HR Chatbot" },
+            { href: "/features/ai-payroll-auditor", label: "AI Payroll Auditor" },
+            { href: "/features/employee-self-service", label: "Employee Self-Service" },
+            { href: "/features/ai-automation", label: "AI Workflow Automation" },
+          ].map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 text-sm text-gray-700 dark:text-gray-300 hover:text-white hover:border-gray-400 transition-all text-center"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

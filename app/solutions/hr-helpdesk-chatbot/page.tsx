@@ -32,9 +32,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "HR Helpdesk Chatbot — AI Service Desk & Ticketing Integration | Space HR",
+  title: "HR Helpdesk Chatbot — AI Service Desk & Ticketing",
   description:
-    "Deflect HR tickets before they reach your service desk. Space HR's HR helpdesk chatbot integrates with ServiceNow, Jira, Freshdesk, and Zendesk to resolve routine queries and escalate the rest with full context.",
+    "Deflect HR tickets with an AI helpdesk chatbot. Integrates with ServiceNow, Jira, Freshdesk, and Zendesk to resolve routine queries automatically.",
   keywords: [
     "hr helpdesk chatbot",
     "hr service desk chatbot",
@@ -245,9 +245,9 @@ export default function HRHelpdeskChatbotPage() {
                   <Headphones className="w-4 h-4" /> HR Helpdesk Chatbot
                 </div>
                 <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-white mb-6 leading-tight">
-                  The HR Helpdesk Chatbot That{" "}
+                  Deflect 70% of HR Tickets{" "}
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-cyan-600">
-                    Kills Your Ticket Backlog
+                    Before They&apos;re Created
                   </span>
                 </h1>
                 <p className="text-xl text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">

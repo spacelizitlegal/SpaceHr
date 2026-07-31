@@ -27,9 +27,9 @@ import {
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "What is HRMS? Complete Guide to HR Management Systems (2026)",
+  title: "What is HRMS? Complete Guide to HR Management Systems",
   description:
-    "A definitive HRMS guide covering what Human Resource Management Systems do, HRMS vs HRIS vs HCM, core modules, implementation steps, and how to choose the best HRMS software for US and global teams in 2026.",
+    "What is HRMS? Complete guide to Human Resource Management Systems: HRMS vs HRIS vs HCM, core modules, and how to choose the best HRMS software in 2026.",
   keywords: [
     "hrms",
     "human resource management system",

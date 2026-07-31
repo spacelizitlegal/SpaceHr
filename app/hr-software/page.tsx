@@ -22,7 +22,7 @@ import {
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "HR Software | The Ultimate Guide to HR Management Solutions (2025)",
+  title: "HR Software | The Ultimate Guide to HR Management Solutions (2026)",
   description:
     "A comprehensive 2,000+ word guide to HR Software. Compare features, benefits, and pricing. Learn why Space HR is the best HR software for modern teams.",
   keywords: [
@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     "hr software comparison",
     "cloud hr software",
   ],
+  alternates: {
+    canonical: "https://spacehr.net/hr-software",
+  },
 };
 
 const faqs = [
@@ -201,7 +204,7 @@ export default function HRSoftwarePage() {
                 payroll anomaly detection
               </Link>{" "}
               to scan tax documents like{" "}
-              <Link href="/tools/w2-form-download" className="text-blue-600 dark:text-blue-400 hover:underline">
+              <Link href="/tools/fw4-form-download" className="text-blue-600 dark:text-blue-400 hover:underline">
                 W-2 forms
               </Link>{" "}
               and{" "}

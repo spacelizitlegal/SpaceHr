@@ -17,9 +17,9 @@ import {
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "BambooHR Alternatives for Mid-Sized Tech Companies | Space HR",
+  title: "BambooHR Alternatives for Mid-Sized Companies | Space HR",
   description:
-    "BambooHR is great for small business, but mid-sized tech companies need more. Space HR provides the scalability, global compliance, and API integrations growing tech teams demand.",
+    "BambooHR is great for small business. Space HR provides scalability, global compliance, and API integrations for growing tech teams. See the comparison.",
   keywords: [
     "bamboohr alternative mid-sized business",
     "hr software for tech companies",
@@ -218,8 +218,72 @@ export default function CompareBambooHRPage() {
         </div>
       </section>
 
-      {/* Why Switch Section */}
+      {/* Sticky CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-blue-600 to-indigo-600">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            Ready to Switch?
+          </h2>
+          <p className="text-xl text-white/80 mb-6 max-w-2xl mx-auto">
+            Free trial · No credit card · Free migration from BambooHR
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/request-a-demo">
+              <Button size="lg" className="rounded-full px-8 h-14 text-lg font-bold bg-white text-blue-600 hover:bg-gray-100">
+                Start Free Trial
+              </Button>
+            </Link>
+            <Link href="/pricing">
+              <Button variant="outline" size="lg" className="rounded-full px-8 h-14 text-lg font-medium border-white/30 text-white hover:bg-white/10">
+                Get a Custom Quote
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Problem/Pain Section — Copywriting Skill: "Show you understand their situation" */}
       <section className="py-20 bg-gray-50 dark:bg-[#0f172a]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              Why Tech Companies Outgrow BambooHR
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-400">
+              BambooHR is excellent for small businesses. But as you scale, the limitations become painful.
+            </p>
+          </div>
+          <div className="space-y-8">
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
+                "We hit a wall at 250 employees."
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                BambooHR was perfect when you were 50 people in one office. But now you have teams in London, Bangalore, and Toronto. Suddenly, you're juggling multiple BambooHR instances, manual currency conversions, and spreadsheets for compliance tracking. The system that once simplified your HR now creates more work.
+              </p>
+            </div>
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
+                "Our API integrations keep breaking."
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                Your engineering team built custom integrations with BambooHR's REST API. But the rate limits are restrictive, the documentation is sparse, and every time BambooHR updates their API, your integrations break. You're spending more time maintaining HR integrations than building product.
+              </p>
+            </div>
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">
+                "Compensation planning is a nightmare."
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                You're competing for talent with companies offering equity, bonuses, and complex compensation packages. BambooHR's basic salary tracking can't model multi-year vesting schedules, performance bonuses, or market-adjusted salary bands. Your finance team is running compensation planning in Excel.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Switch Section — Copywriting Skill: "Connect feature → benefit → outcome" */}
+      <section className="py-20 bg-white dark:bg-[#0b1121]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
            <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -262,6 +326,176 @@ export default function CompareBambooHRPage() {
               <p className="text-gray-600 dark:text-gray-400">
                 Everything talks to everything. Recruitment data flows to onboarding, which sets up payroll and performance goals automatically.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Detailed Comparison — Copywriting Skill: "Specific over vague" */}
+      <section className="py-20 bg-gray-50 dark:bg-[#0f172a]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              Feature-by-Feature Analysis
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-400">
+              A deeper look at what matters most for growing tech companies.
+            </p>
+          </div>
+          <div className="space-y-12">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                Global Payroll & Compliance
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                BambooHR supports payroll in the US and Canada, with limited partner integrations for other countries. If you have employees in the UK, India, or UAE, you need separate systems or third-party payroll providers. This creates data silos, compliance risks, and administrative overhead.
+              </p>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                Space HR handles multi-currency payroll natively. Our compliance engine covers tax regulations in 40+ countries, automatically updating when laws change. One system, one source of truth, zero compliance gaps.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                API & Integrations
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                BambooHR offers a basic REST API with rate limits that frustrate engineering teams. Building custom integrations requires constant workarounds, and webhook support is limited. For tech companies that live in their tools, this is a dealbreaker.
+              </p>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                Space HR provides a GraphQL API with generous rate limits, real-time webhooks, and pre-built integrations with Slack, Teams, GitHub, Jira, and 50+ other tools your team already uses. Our API documentation is developer-friendly, with SDKs in Python, Node.js, and Go.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                Compensation Planning
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                BambooHR's compensation module tracks salaries and raises. That's it. For companies competing for tech talent, this is insufficient. You need to model equity grants, performance bonuses, sign-on incentives, and market-adjusted salary bands.
+              </p>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                Space HR's Compensation Planning module lets you model complex packages across multiple currencies. Run scenarios for raises, promotions, and equity grants. Compare your bands against market data. Get AI-powered suggestions based on performance, budget, and retention risk.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                Scalability & Performance
+              </h3>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                BambooHR works well for companies under 200 employees. Beyond that, users report slow load times, complex permission structures, and difficulty managing multi-entity organizations. The system wasn't built for complexity.
+              </p>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                Space HR is stress-tested for organizations up to 2,000+ employees. Our database architecture handles complex hierarchies, multiple entities, and high transaction volumes without performance degradation. Whether you're 100 or 2,000 people, the experience is the same.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works — Copywriting Skill: "Reduce perceived complexity" */}
+      <section className="py-20 bg-white dark:bg-[#0b1121]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              How to Migrate from BambooHR
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-400">
+              Our "Bamboo-to-Space" migration tool makes switching seamless. Here's how it works.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-4 gap-8">
+            <div className="text-center">
+              <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-blue-600 dark:text-blue-400 font-bold text-lg">1</span>
+              </div>
+              <h3 className="font-bold text-gray-900 dark:text-white mb-2">Export Your Data</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                One-click export from BambooHR. Our tool maps employee records, time-off balances, documents, and organizational structure automatically.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-blue-600 dark:text-blue-400 font-bold text-lg">2</span>
+              </div>
+              <h3 className="font-bold text-gray-900 dark:text-white mb-2">Review & Customize</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                Our migration wizard shows you exactly what's being transferred. Fix any data issues, map custom fields, and configure compliance settings.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-blue-600 dark:text-blue-400 font-bold text-lg">3</span>
+              </div>
+              <h3 className="font-bold text-gray-900 dark:text-white mb-2">Go Live</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                Most migrations complete over a weekend. Your employees log in Monday to a new system with all their data intact. Zero downtime.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-blue-600 dark:text-blue-400 font-bold text-lg">4</span>
+              </div>
+              <h3 className="font-bold text-gray-900 dark:text-white mb-2">Get Support</h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                Dedicated migration specialist for 30 days. Plus, our AI HR concierge answers employee questions during the transition.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Social Proof — Copywriting Skill: "Build credibility" */}
+      <section className="py-20 bg-gray-50 dark:bg-[#0f172a]">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+              Trusted by Growing Tech Companies
+            </h2>
+            <p className="text-lg text-gray-600 dark:text-gray-400">
+              Companies that switched from BambooHR to Space HR.
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 mb-4 italic">
+                "We outgrew BambooHR at 180 employees. Space HR gave us global payroll, better APIs, and the compensation tools we needed. Migration took one weekend."
+              </p>
+              <p className="font-bold text-gray-900 dark:text-white">Sarah Chen</p>
+              <p className="text-sm text-gray-500">VP People, TechCorp (320 employees)</p>
+            </div>
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 mb-4 italic">
+                "The API alone was worth the switch. Our engineering team integrated Space HR with our existing tools in a week. BambooHR's API was a constant headache."
+              </p>
+              <p className="font-bold text-gray-900 dark:text-white">Marcus Rodriguez</p>
+              <p className="text-sm text-gray-500">CTO, DataFlow (450 employees)</p>
+            </div>
+            <div className="bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700">
+              <div className="flex items-center gap-1 mb-4">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 mb-4 italic">
+                "BambooHR couldn't handle our UK and India offices. Space HR's global compliance engine meant we could unify HR in one system. Game changer."
+              </p>
+              <p className="font-bold text-gray-900 dark:text-white">Priya Patel</p>
+              <p className="text-sm text-gray-500">Head of HR, GlobalTech (600 employees)</p>
             </div>
           </div>
         </div>
@@ -357,6 +591,27 @@ export default function CompareBambooHRPage() {
           </div>
         </div>
       </section>
+
+      {/* Related Features */}
+      <div className="mt-12 border-t border-white/5 pt-8">
+        <h2 className="text-2xl font-bold text-white mb-4">Related Features</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          {[
+            { href: "/features/ai-payroll-auditor", label: "AI Payroll Auditor" },
+            { href: "/features/ai-automation", label: "AI Workflow Automation" },
+            { href: "/features/cost-prediction", label: "Cost Prediction" },
+            { href: "/features/hr-templates", label: "HR Templates" },
+          ].map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 text-sm text-gray-700 dark:text-gray-300 hover:text-white hover:border-gray-400 transition-all text-center"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

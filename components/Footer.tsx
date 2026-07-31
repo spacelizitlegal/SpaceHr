@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import {
   Instagram,
   Youtube,
@@ -12,8 +15,11 @@ import {
 import { Twitter } from "lucide-react";
 
 export function Footer() {
+  const pathname = usePathname();
+  const isHomepage = pathname === "/";
+
   return (
-    <footer className="bg-[#0b1121] text-white font-sans relative z-10 footer-fade fade-overlay">
+    <footer className={`bg-[#0b1121] text-white font-sans relative z-10 ${isHomepage ? "footer-fade fade-overlay" : ""}`}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
         {/* Main grid: brand + link columns */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-8 gap-8 lg:gap-6">
@@ -242,6 +248,30 @@ export function Footer() {
             </ul>
 
             <h3 className="font-semibold text-white mt-6 mb-5 tracking-wide text-sm uppercase">
+              Industries
+            </h3>
+            <ul className="space-y-0.5">
+              {[
+                { href: "/industries/healthcare", label: "Healthcare" },
+                { href: "/industries/banking", label: "Banking & Finance" },
+                { href: "/industries/retail", label: "Retail" },
+                { href: "/industries/manufacturing", label: "Manufacturing" },
+                { href: "/industries/government", label: "Government" },
+                { href: "/industries/construction", label: "Construction" },
+                { href: "/industries", label: "All Industries →" },
+              ].map((link) => (
+                <li key={link.label}>
+                  <Link
+                    href={link.href}
+                    className="text-gray-400 hover:text-white hover:translate-x-1 transition-all duration-200 inline-block text-sm py-1"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+
+            <h3 className="font-semibold text-white mt-6 mb-5 tracking-wide text-sm uppercase">
               HR Software
             </h3>
             <ul className="space-y-0.5">
@@ -291,6 +321,8 @@ export function Footer() {
                 { href: "/nyc-144-compliance", label: "NYC 144 Compliance" },
                 { href: "/integrations", label: "Integrations" },
                 { href: "/about", label: "About Space HR" },
+                { href: "/privacy", label: "Privacy Policy" },
+                { href: "/terms", label: "Terms of Service" },
               ].map((link) => (
                 <li key={link.label}>
                   <Link

@@ -37,6 +37,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/contact`,            lastModified: d(2026, 5, 1),  changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/press`,                     lastModified: d(2026, 5, 1),  changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/social-media-platforms`,    lastModified: d(2026, 6, 24), changeFrequency: "monthly", priority: 0.5 },
+    { url: `${base}/privacy`,                   lastModified: d(2026, 7, 31), changeFrequency: "yearly",  priority: 0.3 },
+    { url: `${base}/terms`,                     lastModified: d(2026, 7, 31), changeFrequency: "yearly",  priority: 0.3 },
   ];
 
   // ─── High-Priority SEO Landing Pages ────────────────────────────────────
@@ -151,7 +153,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/glossary`,                    lastModified: d(2026, 5, 1),  changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/tools/true-cost-calculator`,  lastModified: d(2026, 5, 1),  changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/tools/w4-generator`,          lastModified: d(2026, 5, 1),  changeFrequency: "monthly", priority: 0.7 },
-    { url: `${base}/tools/w2-form-download`,      lastModified: d(2026, 5, 1),  changeFrequency: "monthly", priority: 0.6 },
+
     { url: `${base}/tools/fw4-form-download`,     lastModified: d(2026, 5, 1),  changeFrequency: "monthly", priority: 0.6 },
     { url: `${base}/resources/hr-chatbot-buyers-guide`, lastModified: d(2026, 5, 1), changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/sitemap-page`,                lastModified: d(2026, 5, 1),  changeFrequency: "monthly", priority: 0.4 },

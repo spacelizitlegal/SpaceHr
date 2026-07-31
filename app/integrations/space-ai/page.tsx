@@ -22,7 +22,7 @@ import { Button } from "@/components/ui/Button";
 import { SpaceHRCard } from "@/components/SpaceHRCard";
 
 export const metadata: Metadata = {
-  title: "Space HR × PM Space AI Integration — Crew Scheduling & Labor Cost Sync",
+  title: "Space HR × PM Space AI Integration | Space HR",
   description:
     "Connect Space HR with PM Space AI to sync crew schedules, labor costs, and payroll data directly into project budgets. One workforce platform, zero data silos.",
   keywords: [

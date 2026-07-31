@@ -12,8 +12,8 @@ import {
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "ADP Workforce Now vs Space HR: Payroll Legacy vs AI-Native HR",
-  description: "ADP Workforce Now is the payroll gold standard — but lacks AI anomaly detection, attrition prediction, and a modern employee self-service chatbot. Space HR adds the AI layer your ADP doesn't have.",
+  title: "ADP Workforce Now vs Space HR: Payroll vs AI-Native HR",
+  description: "ADP lacks AI anomaly detection and attrition prediction. Space HR adds the AI layer your payroll system is missing. See the comparison.",
   keywords: ["adp workforce now alternative","Space HR vs adp","adp competitor","ai payroll software","adp replacement for mid-market"],
   twitter: {
     card: "summary_large_image",
@@ -180,6 +180,30 @@ export default function CompareADPWorkforceNowPage() {
         </div>
       </section>
 
+      {/* Sticky CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-red-600 to-orange-600">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+            Ready to Switch?
+          </h2>
+          <p className="text-xl text-white/80 mb-6 max-w-2xl mx-auto">
+            Free trial · No credit card · Free migration from ADP Workforce Now
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/request-a-demo">
+              <Button size="lg" className="rounded-full px-8 h-14 text-lg font-bold bg-white text-red-600 hover:bg-gray-100">
+                Start Free Trial
+              </Button>
+            </Link>
+            <Link href="/pricing">
+              <Button variant="outline" size="lg" className="rounded-full px-8 h-14 text-lg font-medium border-white/30 text-white hover:bg-white/10">
+                Get a Custom Quote
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Why Switch Section */}
       <section className="py-20 bg-gray-50 dark:bg-[#0f172a]">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -299,6 +323,27 @@ export default function CompareADPWorkforceNowPage() {
           </div>
         </div>
       </section>
+
+      {/* Related Features */}
+      <div className="mt-12 border-t border-white/5 pt-8">
+        <h2 className="text-2xl font-bold text-white mb-4">Related Features</h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          {[
+            { href: "/features/ai-payroll-auditor", label: "AI Payroll Auditor" },
+            { href: "/features/attrition-prediction", label: "Attrition Prediction" },
+            { href: "/features/employee-self-service", label: "Employee Self-Service" },
+            { href: "/features/hr-ai-concierge", label: "HR AI Concierge" },
+          ].map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="px-4 py-3 rounded-lg border border-gray-200 dark:border-gray-700 text-sm text-gray-700 dark:text-gray-300 hover:text-white hover:border-gray-400 transition-all text-center"
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

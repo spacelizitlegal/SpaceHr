@@ -5,8 +5,8 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { ArrowRight, Clock, Users, Brain, DollarSign, BarChart3, Calendar, CheckCircle, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "HR Software for Retail | Rota Management, Variable Pay & Staff Retention | Space HR",
-  description: "Space HR helps retail businesses manage rota scheduling, zero-hours contracts, variable pay, seasonal hiring, and high-turnover workforce challenges with AI-powered HR automation.",
+  title: "HR Software for Retail | Rota Scheduling & Staff Retention",
+  description: "HR software for retail: rota scheduling, zero-hours contracts, variable pay, and seasonal hiring. AI-powered automation for high-turnover teams.",
   keywords: [
     "HR software retail", "retail workforce management", "retail rota scheduling software",
     "zero hours contract HR", "retail payroll software", "seasonal workforce management",
@@ -138,6 +138,7 @@ export default function RetailPage() {
               { href: "/industries/healthcare", emoji: "🏥", label: "Healthcare", blurb: "Shift scheduling, mandatory training & clinical staff retention" },
               { href: "/industries/manufacturing", emoji: "🏭", label: "Manufacturing", blurb: "Multi-shift planning, safety compliance & ISO certification" },
               { href: "/industries/government", emoji: "🏛️", label: "Government", blurb: "Civil service pay scales, GDPR/FOI & pension scheme management" },
+              { href: "/industries/construction", emoji: "🏗️", label: "Construction", blurb: "Project-based workforce, contractor payments & safety compliance" },
             ].map((ind) => (
               <Link href={ind.href} key={ind.href} className="group bg-[#0f1a35] border border-slate-700 rounded-xl p-5 hover:border-pink-500/40 transition-colors">
                 <span className="text-2xl mb-3 block">{ind.emoji}</span>

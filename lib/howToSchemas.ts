@@ -73,20 +73,6 @@ export const howToSchemas: Record<string, Record<string, unknown>> = {
     { totalTime: "PT2W", tool: ["HRMS onboarding module", "Digital document signing", "AI HR chatbot"] }
   ),
 
-  "internal-hr-chatbot-deployment-guide": buildHowTo(
-    "How to Deploy an Internal HR Chatbot Your Employees Actually Use",
-    "A practical deployment guide for HR teams launching an internal AI chatbot — from knowledge base setup to employee adoption and ongoing optimisation.",
-    [
-      { name: "Define the chatbot's scope and top use cases", text: "Start with the 10 most common employee questions: leave balance, payslip access, policy FAQs, IT request routing, benefits queries. A focused scope beats an overambitious one that confuses users.", url: "https://spacehr.net/blogs/internal-hr-chatbot-deployment-guide" },
-      { name: "Build and structure your HR knowledge base", text: "Compile policy documents, FAQs, onboarding guides, and process documentation into structured, searchable content. Clean, well-organised source material is the single biggest predictor of chatbot accuracy.", url: "https://spacehr.net/solutions/internal-employee-chatbot" },
-      { name: "Connect the chatbot to live HR systems", text: "Integrate with your HRMS for real-time leave balances, payslip retrieval, and org chart queries. Static FAQs are helpful; live data answers are transformative.", url: "https://spacehr.net/features/ai-chatbots" },
-      { name: "Deploy in your employees' existing workflow", text: "Launch in Slack, Microsoft Teams, or your intranet — wherever employees already spend their day. A chatbot they have to navigate to separately will be ignored.", url: "https://spacehr.net/features/hr-ai-concierge" },
-      { name: "Run a soft launch with a pilot group", text: "Select a 50–100 person pilot group across functions. Capture unresolved queries, monitor escalation rates, and fix the top 5 failure intents before full rollout.", url: "https://spacehr.net/solutions/internal-employee-chatbot" },
-      { name: "Measure adoption, resolution rate, and satisfaction", text: "Track weekly active users, first-contact resolution rate, escalations to human HR, and employee CSAT score. Review monthly and retrain on new topics as the business evolves." },
-    ],
-    { totalTime: "PT6W", tool: ["AI HR chatbot platform", "HRMS integration", "Slack or Microsoft Teams"] }
-  ),
-
   "chatbot-for-hr-services-complete-guide": buildHowTo(
     "How to Implement a Chatbot for HR Services: Complete 2026 Guide",
     "End-to-end implementation guide for deploying an AI chatbot across HR services — from vendor selection through go-live and ROI measurement.",

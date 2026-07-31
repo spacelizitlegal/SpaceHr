@@ -31,7 +31,7 @@ import {
 export const metadata: Metadata = {
   title: "Internal Employee Chatbot for Slack, Teams & Intranet | Space HR",
   description:
-    "Deploy an internal HR chatbot where employees already work: Slack, Microsoft Teams, or your company intranet. Instant answers on leave, payroll, policies, and benefits with enterprise security.",
+    "Internal HR chatbot for Slack, Teams, or intranet. Instant answers on leave, payroll, and policies with enterprise security. Setup in 48 hours.",
   keywords: [
     "internal employee chatbot",
     "internal hr chatbot",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     canonical: "https://spacehr.net/solutions/internal-employee-chatbot",
   },
   openGraph: {
-    title: "Internal Employee Chatbot for Slack, Teams & Intranet | Space HR",
+  title: "Internal Employee Chatbot for Slack & Teams | Space HR",
     description:
       "Deploy an internal HR chatbot in Slack, Microsoft Teams, or your intranet. Instant answers with enterprise security.",
     url: "https://spacehr.net/solutions/internal-employee-chatbot",
@@ -582,7 +582,7 @@ export default function InternalEmployeeChatbotPage() {
                 { href: "/solutions/chatbot-for-hr-services", title: "Chatbot for HR Services", desc: "HR service desk automation with AI — use cases and ROI." },
                 { href: "/features/ai-chatbots", title: "AI Chatbot Features", desc: "Detailed feature list for Space HR's chatbot platform." },
                 { href: "/features/employee-self-service", title: "Employee Self-Service", desc: "Full ESS portal — beyond chatbot to complete self-service." },
-                { href: "/blogs/internal-hr-chatbot-deployment-guide", title: "Deployment Guide", desc: "Step-by-step guide to deploying an internal HR chatbot." },
+                { href: "/blogs/chatbot-for-hr-services-complete-guide", title: "Deployment Guide", desc: "Step-by-step guide to deploying an internal HR chatbot." },
                 { href: "/resources/hr-chatbot-buyers-guide", title: "HR Chatbot Buyer's Guide", desc: "How to evaluate, choose, and implement an HR chatbot." },
                 { href: "/compare", title: "Compare HR Platforms", desc: "See how Space HR compares to 13 competitors." },
                 { href: "/request-a-demo", title: "Book a Demo", desc: "See the internal chatbot live with your HRIS data." },

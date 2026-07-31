@@ -22,7 +22,7 @@ import {
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "HR Software for UK | PAYE, Auto-Enrolment & IR35 Compliance | Space HR",
+  title: "HR Software for UK | PAYE & Auto-Enrolment Compliance",
   description:
     "Space HR delivers AI-powered HR software for UK businesses. PAYE payroll, auto-enrolment pension, IR35 compliance, UK GDPR, and statutory leave management for British companies.",
   keywords: [
@@ -369,6 +369,62 @@ export default function UKPage() {
             Frequently Asked Questions — United Kingdom
           </h2>
           <FAQAccordion items={faqs} />
+        </div>
+      </section>
+
+      {/* Explore Space HR Features */}
+      <section className="py-20 bg-[#0b1121]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-white text-center mb-4">
+            Explore Space HR Features
+          </h2>
+          <p className="text-slate-400 text-center text-sm mb-10">
+            Discover how Space HR transforms HR operations across every function.
+          </p>
+          <h3 className="text-lg font-semibold text-white mb-4">AI & Automation</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 mb-8">
+            {[
+              { href: "/features/ai-chatbots", label: "AI Chatbots" },
+              { href: "/features/ai-automation", label: "AI Automation" },
+              { href: "/features/ai-payroll-auditor", label: "AI Payroll Auditor" },
+              { href: "/features/ai-templates", label: "AI Templates" },
+              { href: "/features/attrition-prediction", label: "Attrition Prediction" },
+              { href: "/features/cost-prediction", label: "Cost Prediction" },
+              { href: "/features/hr-ai-concierge", label: "HR AI Concierge" },
+            ].map((f) => (
+              <Link href={f.href} key={f.href} className="group bg-[#0f1a35] border border-slate-700 rounded-xl p-4 hover:border-blue-500/40 transition-colors text-center">
+                <p className="text-white font-semibold text-sm group-hover:text-blue-400 transition-colors">{f.label}</p>
+              </Link>
+            ))}
+          </div>
+          <h3 className="text-lg font-semibold text-white mb-4">HR & Performance</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 mb-8">
+            {[
+              { href: "/features/appraisals", label: "Appraisals" },
+              { href: "/features/360-performance-appraisals", label: "360° Performance Appraisals" },
+              { href: "/features/attendance", label: "Attendance" },
+              { href: "/features/employee-self-service", label: "Employee Self-Service" },
+            ].map((f) => (
+              <Link href={f.href} key={f.href} className="group bg-[#0f1a35] border border-slate-700 rounded-xl p-4 hover:border-blue-500/40 transition-colors text-center">
+                <p className="text-white font-semibold text-sm group-hover:text-blue-400 transition-colors">{f.label}</p>
+              </Link>
+            ))}
+          </div>
+          <h3 className="text-lg font-semibold text-white mb-4">Industries</h3>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-3">
+            {[
+              { href: "/industries/healthcare", label: "Healthcare" },
+              { href: "/industries/banking", label: "Banking" },
+              { href: "/industries/retail", label: "Retail" },
+              { href: "/industries/manufacturing", label: "Manufacturing" },
+              { href: "/industries/government", label: "Government" },
+              { href: "/industries/construction", label: "Construction" },
+            ].map((f) => (
+              <Link href={f.href} key={f.href} className="group bg-[#0f1a35] border border-slate-700 rounded-xl p-4 hover:border-blue-500/40 transition-colors text-center">
+                <p className="text-white font-semibold text-sm group-hover:text-blue-400 transition-colors">{f.label}</p>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

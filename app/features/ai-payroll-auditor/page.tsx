@@ -29,9 +29,9 @@ import {
 import { FAQAccordion } from "@/components/FAQAccordion";
 
 export const metadata: Metadata = {
-  title: "AI Payroll Auditor — Automated Payroll Anomaly Detection | Space HR",
+  title: "AI Payroll Auditor — Automated Anomaly Detection",
   description:
-    "Detect payroll anomalies before they cost you. Space HR's AI Payroll Auditor uses machine learning to scan every payroll run for errors in gross-to-net calculations, FUTA/SICA tax withholding, and NACHA-compliant ACH file generation. Reduce payroll errors by 99%.",
+    "Detect payroll anomalies before they cost you. AI scans every run for tax errors, NACHA compliance, and calculation mistakes. Reduce payroll errors by 99%.",
   keywords: [
     "AI payroll auditor",
     "automated payroll anomaly detection",
@@ -492,6 +492,46 @@ export default function AIPayrollAuditorPage() {
           </p>
         </div>
       </section>
+        </div>
+      </section>
+
+      {/* SOLUTIONS & COMPARISONS */}
+      <section className="py-12 bg-white dark:bg-[#0b1121] border-t border-gray-100 dark:border-gray-800">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-6">Explore Solutions</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+            {[
+              { label: "HR Admin", href: "/solutions/hr-admin" },
+              { label: "For CEOs", href: "/solutions/ceo" },
+              { label: "Employee Self-Service", href: "/solutions/employee-self-service" },
+            ].map(({ label, href }) => (
+              <Link
+                key={href}
+                href={href}
+                className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-[#1e293b] rounded-xl border border-gray-200 dark:border-gray-700 text-sm font-medium text-gray-700 dark:text-gray-300 hover:border-red-400 hover:text-red-600 dark:hover:text-red-400 transition-colors"
+              >
+                <ArrowRight className="w-4 h-4 flex-shrink-0" />
+                {label}
+              </Link>
+            ))}
+          </div>
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-6">Compare with Competitors</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {[
+              { label: "vs BambooHR", href: "/compare/bamboohr" },
+              { label: "vs Workday", href: "/compare/workday" },
+              { label: "vs Rippling", href: "/compare/rippling" },
+            ].map(({ label, href }) => (
+              <Link
+                key={href}
+                href={href}
+                className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-[#1e293b] rounded-xl border border-gray-200 dark:border-gray-700 text-sm font-medium text-gray-700 dark:text-gray-300 hover:border-red-400 hover:text-red-600 dark:hover:text-red-400 transition-colors"
+              >
+                <ArrowRight className="w-4 h-4 flex-shrink-0" />
+                {label}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

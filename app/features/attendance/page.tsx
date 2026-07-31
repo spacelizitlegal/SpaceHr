@@ -32,7 +32,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 export const metadata: Metadata = {
   title: "GPS Time Tracking & Geofenced Attendance Software | Space HR",
   description:
-    "Streamline workforce tracking with GPS time tracking, geofenced attendance verification, and real-time check-ins. Prevent overtime issues with AI alerts and seamless payroll integration.",
+    "GPS time tracking with geofenced attendance verification and real-time check-ins. Prevent overtime with AI alerts and payroll integration.",
   keywords: [
     "GPS time tracking",
     "geofenced attendance",
@@ -531,6 +531,47 @@ export default function AttendancePage() {
             </p>
           </div>
           <FAQAccordion items={faqs} />
+        </div>
+      </section>
+
+      {/* SOLUTIONS & COMPARISONS */}
+      <section className="py-12 bg-white dark:bg-[#0b1121] border-t border-gray-100 dark:border-gray-800">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-5xl">
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-6">Explore Solutions</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+            {[
+              { label: "For Employees", href: "/solutions/employees" },
+              { label: "HR Admin", href: "/solutions/hr-admin" },
+              { label: "Employee Self-Service", href: "/solutions/employee-self-service" },
+              { label: "For CEOs", href: "/solutions/ceo" },
+            ].map(({ label, href }) => (
+              <Link
+                key={href}
+                href={href}
+                className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-[#1e293b] rounded-xl border border-gray-200 dark:border-gray-700 text-sm font-medium text-gray-700 dark:text-gray-300 hover:border-cyan-400 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"
+              >
+                <ArrowRight className="w-4 h-4 flex-shrink-0" />
+                {label}
+              </Link>
+            ))}
+          </div>
+          <h2 className="text-lg font-semibold text-gray-900 dark:text-white mb-6">Compare with Competitors</h2>
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+            {[
+              { label: "vs BambooHR", href: "/compare/bamboohr" },
+              { label: "vs Workday", href: "/compare/workday" },
+              { label: "vs Rippling", href: "/compare/rippling" },
+            ].map(({ label, href }) => (
+              <Link
+                key={href}
+                href={href}
+                className="flex items-center gap-2 p-3 bg-gray-50 dark:bg-[#1e293b] rounded-xl border border-gray-200 dark:border-gray-700 text-sm font-medium text-gray-700 dark:text-gray-300 hover:border-cyan-400 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"
+              >
+                <ArrowRight className="w-4 h-4 flex-shrink-0" />
+                {label}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

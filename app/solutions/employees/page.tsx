@@ -23,9 +23,9 @@ import {
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Space HR for Employees — Mobile Self-Service App & AI Concierge",
+  title: "Space HR for Employees — Mobile Self-Service & AI Chatbot",
   description:
-    "Space HR gives employees a mobile-first self-service app with an AI Concierge chatbot for instant HR support. Check payslips, request leave, access policies, and manage your profile — all from your phone.",
+    "Mobile-first employee self-service app with AI chatbot. Check payslips, request leave, and access policies from your phone. Setup in 48 hours.",
   keywords: [
     "employee self-service app",
     "mobile HR app",
