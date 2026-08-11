@@ -541,8 +541,8 @@ export default function HRHelpdeskChatbotPage() {
                 { href: "/solutions/internal-employee-chatbot", title: "Internal Employee Chatbot", desc: "Chatbot deployed inside Slack and Teams for internal HR queries." },
                 { href: "/solutions/chatbot-for-hr-services", title: "Chatbot for HR Services", desc: "HR service automation with AI — use cases and ROI benchmarks." },
                 { href: "/features/ai-chatbots", title: "AI Chatbot Features", desc: "Full feature breakdown for Space HR's chatbot platform." },
-                { href: "/blogs/hr-helpdesk-chatbot-guide-2026", title: "HR Helpdesk Guide 2026", desc: "How to transform your HR service desk with AI." },
-                { href: "/blogs/how-to-reduce-hr-ticket-volume", title: "Reduce HR Ticket Volume", desc: "6 tactics to cut HR email and ticket volume by 70%." },
+                { href: "/blogs/chatbot-for-hr-services-complete-guide", title: "HR Chatbot Deployment Guide", desc: "Step-by-step guide to deploying an AI HR chatbot." },
+                { href: "/blogs/hr-automation-kpis-measuring-speed-accuracy-and-adoption", title: "HR Automation KPIs", desc: "Measure speed, accuracy, and adoption of HR automation." },
                 { href: "/resources/hr-chatbot-buyers-guide", title: "HR Chatbot Buyer's Guide", desc: "Evaluation framework, pricing benchmarks, red flags to watch for." },
                 { href: "/request-a-demo", title: "Book a Demo", desc: "See the HR helpdesk chatbot live against your use cases." },
               ].map(({ href, title, desc }) => (
