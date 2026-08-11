@@ -1,6 +1,6 @@
 # Changelog
 
-Master heading for all changes made to spacehr.net.
+Master heading for all changes made to spacehr.net. Click to follow.
 
 [2026-08-11](#2026-08-11)<br>
 [2026-08-01 to 2026-08-10](#2026-08-01-to-2026-08-10)<br>
