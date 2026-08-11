@@ -777,8 +777,8 @@ export default function HRChatbotBuyersGuidePage() {
               { href: "/solutions/hr-ai-chatbot", title: "HR AI Chatbot Solution", desc: "See how Space HR's AI chatbot works and what it can automate." },
               { href: "/features/ai-chatbots", title: "AI Chatbot Feature Page", desc: "Full feature list, channel support, and integration details." },
               { href: "/solutions/chatbot-for-hr-services", title: "Chatbot for HR Services", desc: "Use cases, ROI benchmarks, and deployment guide." },
-              { href: "/blogs/hr-helpdesk-chatbot-guide-2026", title: "HR Helpdesk Chatbot Guide", desc: "How to transform your HR service desk with AI." },
-              { href: "/blogs/chatbot-for-hr-services-complete-guide", title: "Internal HR Chatbot Deployment", desc: "Step-by-step deployment playbook for HR teams." },
+              { href: "/blogs/chatbot-for-hr-services-complete-guide", title: "HR Chatbot Deployment Guide", desc: "Step-by-step guide to deploying an AI HR chatbot." },
+              { href: "/blogs/hr-automation-kpis-measuring-speed-accuracy-and-adoption", title: "HR Automation KPIs", desc: "Measure speed, accuracy, and adoption of HR automation." },
               { href: "/compare", title: "HR Software Comparisons", desc: "See how Space HR compares to 13 competitors." },
             ].map(({ href, title, desc }) => (
               <Link

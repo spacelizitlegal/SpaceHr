@@ -46,24 +46,11 @@ function buildHowTo(
 
 export const howToSchemas: Record<string, Record<string, unknown>> = {
 
-  "how-to-reduce-hr-ticket-volume": buildHowTo(
-    "How to Reduce HR Ticket Volume by 70%",
-    "A practical step-by-step guide for HR teams to automate repetitive requests, deploy AI self-service, and cut helpdesk ticket volume by 70% or more.",
-    [
-      { name: "Audit your current HR ticket mix", text: "Pull 3 months of helpdesk data and categorise tickets by type. Identify the top 10 recurring request types — typically leave balance queries, payslip requests, policy FAQs, and IT onboarding steps. These are your automation targets.", url: "https://spacehr.net/blogs/how-to-reduce-hr-ticket-volume" },
-      { name: "Deploy an AI HR chatbot for Tier-0 self-service", text: "Implement an AI chatbot connected to your HR knowledge base to handle the top 10 ticket categories automatically. Target 60–70% first-contact resolution without human involvement.", url: "https://spacehr.net/solutions/hr-helpdesk-chatbot" },
-      { name: "Build a self-service employee portal", text: "Enable employees to view payslips, submit leave, update personal details, and download forms without raising a ticket. Reduce Tier-1 volume by making HR data self-accessible 24/7.", url: "https://spacehr.net/features/employee-self-service" },
-      { name: "Automate recurring HR workflows", text: "Set up triggered automations for onboarding checklists, offboarding tasks, leave approvals, and document reminders. Eliminate tickets created by process gaps rather than genuine queries.", url: "https://spacehr.net/features/ai-automation" },
-      { name: "Measure, tune, and report deflection rate", text: "Track weekly ticket deflection rate (tickets avoided ÷ total expected tickets). Share monthly reports with leadership. Iterate on chatbot intents and portal content based on remaining ticket themes." },
-    ],
-    { totalTime: "PT4W", tool: ["HR helpdesk software", "AI chatbot", "Employee self-service portal"] }
-  ),
-
-  "onboarding-automation-guide-2026": buildHowTo(
+  "how-to-automate-employee-onboarding-without-losing-human-touch": buildHowTo(
     "How to Automate HR Onboarding and Reduce Time-to-Productivity by 3 Weeks",
     "Step-by-step guide to implementing automated HR onboarding workflows that cut manual admin, accelerate new hire productivity, and create a consistent first-day experience.",
     [
-      { name: "Map your current onboarding journey end-to-end", text: "Document every task from offer acceptance to day 90: IT provisioning, document collection, induction scheduling, payroll setup, policy acknowledgements. Identify handoffs between HR, IT, finance, and the hiring manager.", url: "https://spacehr.net/blogs/onboarding-automation-guide-2026" },
+      { name: "Map your current onboarding journey end-to-end", text: "Document every task from offer acceptance to day 90: IT provisioning, document collection, induction scheduling, payroll setup, policy acknowledgements. Identify handoffs between HR, IT, finance, and the hiring manager.", url: "https://spacehr.net/blogs/how-to-automate-employee-onboarding-without-losing-human-touch" },
       { name: "Automate pre-boarding document collection", text: "Trigger a digital onboarding pack immediately on offer acceptance. Collect signed contracts, tax forms, bank details, and ID via a secure employee self-service portal — before day one.", url: "https://spacehr.net/features/employee-self-service" },
       { name: "Set up role-based onboarding checklists", text: "Create templated onboarding workflows by department and seniority. Automatically assign tasks to HR, IT, the line manager, and the new hire — with due dates and reminder escalations.", url: "https://spacehr.net/features/ai-automation" },
       { name: "Deploy a Day-1 AI buddy for new hire questions", text: "Give new hires access to an AI chatbot trained on your company handbook, policies, and FAQs. Reduce the flood of 'who do I ask about X' questions that land on HR in the first week.", url: "https://spacehr.net/solutions/internal-employee-chatbot" },
@@ -101,11 +88,11 @@ export const howToSchemas: Record<string, Record<string, unknown>> = {
     { totalTime: "PT6W", tool: ["Performance management software", "360-degree appraisal module", "AI feedback analysis"] }
   ),
 
-  "employee-self-service-portal-guide": buildHowTo(
+  "designing-self-service-hr-journeys-with-ai-concierge": buildHowTo(
     "How to Implement an Employee Self-Service Portal in 2026",
     "Complete implementation guide for HR teams deploying an employee self-service portal — from requirements to rollout and adoption.",
     [
-      { name: "Audit which HR transactions can be self-served", text: "Review your HR ticket log and identify all queries and requests that employees could resolve themselves with access to the right data: leave balances, payslips, tax forms, policy documents, address changes, and benefits enrolment.", url: "https://spacehr.net/blogs/employee-self-service-portal-guide" },
+      { name: "Audit which HR transactions can be self-served", text: "Review your HR ticket log and identify all queries and requests that employees could resolve themselves with access to the right data: leave balances, payslips, tax forms, policy documents, address changes, and benefits enrolment.", url: "https://spacehr.net/blogs/designing-self-service-hr-journeys-with-ai-concierge" },
       { name: "Select a platform with role-based access controls", text: "Choose an ESS platform that allows granular access by role — employees see their own data, managers see their team, HR admins see everything. Data security is non-negotiable in a self-service model.", url: "https://spacehr.net/features/employee-self-service" },
       { name: "Configure core self-service modules", text: "Enable payslip view and download, leave request and approval, personal data update, tax document access, and company document library as the minimum viable portal. Add expense submission and benefits enrolment in phase two.", url: "https://spacehr.net/features/employee-self-service" },
       { name: "Integrate with payroll and attendance systems", text: "Connect the ESS portal to your payroll engine for real-time payslip data and to your attendance system for live leave balances. Static portals with stale data erode trust and generate more tickets, not fewer.", url: "https://spacehr.net/features/payroll" },

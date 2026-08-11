@@ -612,7 +612,7 @@ export default function EnterpriseHRChatbotPage() {
                 { href: "/solutions/hr-helpdesk-chatbot", title: "HR Helpdesk Chatbot", desc: "Ticket deflection, SLA management, ServiceNow integration." },
                 { href: "/solutions/internal-employee-chatbot", title: "Internal Employee Chatbot", desc: "Slack and Teams deployment for internal HR queries." },
                 { href: "/features/ai-chatbots", title: "AI Chatbot Features", desc: "Full feature breakdown — enterprise and standard tiers." },
-                { href: "/blogs/enterprise-ai-hr-chatbot-guide", title: "Enterprise HR Chatbot Guide", desc: "Requirements, evaluation, and deployment for large organizations." },
+                { href: "/blogs/chatbot-for-hr-services-complete-guide", title: "HR Chatbot Deployment Guide", desc: "Step-by-step guide to deploying an AI HR chatbot." },
                 { href: "/resources/hr-chatbot-buyers-guide", title: "HR Chatbot Buyer's Guide", desc: "Evaluation framework, red flags, pricing benchmarks." },
                 { href: "/compare", title: "Compare HR Platforms", desc: "Space HR vs ServiceNow, Moveworks, Leena AI, and 10 more." },
                 { href: "/request-a-demo", title: "Request Enterprise Demo", desc: "Tailored demo with live HRIS integration and security briefing." },
