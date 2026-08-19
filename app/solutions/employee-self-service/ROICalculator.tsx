@@ -40,13 +40,14 @@ export default function ROICalculator() {
 
           <div>
             <div className="flex justify-between mb-2">
-              <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
+              <label htmlFor="employees-range" className="text-sm font-medium text-gray-700 dark:text-gray-300">
                 Number of Employees
               </label>
               <span className="text-sm font-bold text-blue-600 dark:text-blue-400">{employees}</span>
             </div>
             <input
               type="range"
+              id="employees-range"
               min="50"
               max="2000"
               step="50"
@@ -61,13 +62,14 @@ export default function ROICalculator() {
 
           <div>
             <div className="flex justify-between mb-2">
-              <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
+              <label htmlFor="hr-staff-range" className="text-sm font-medium text-gray-700 dark:text-gray-300">
                 HR Team Size
               </label>
               <span className="text-sm font-bold text-blue-600 dark:text-blue-400">{hrStaff} people</span>
             </div>
             <input
               type="range"
+              id="hr-staff-range"
               min="1"
               max="20"
               step="1"
@@ -82,7 +84,7 @@ export default function ROICalculator() {
 
           <div>
             <div className="flex justify-between mb-2">
-              <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
+              <label htmlFor="hr-salary-range" className="text-sm font-medium text-gray-700 dark:text-gray-300">
                 Avg HR Salary (Annual)
               </label>
               <span className="text-sm font-bold text-blue-600 dark:text-blue-400">
@@ -91,6 +93,7 @@ export default function ROICalculator() {
             </div>
             <input
               type="range"
+              id="hr-salary-range"
               min="35000"
               max="120000"
               step="5000"
@@ -105,13 +108,14 @@ export default function ROICalculator() {
 
           <div>
             <div className="flex justify-between mb-2">
-              <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
+              <label htmlFor="tickets-range" className="text-sm font-medium text-gray-700 dark:text-gray-300">
                 HR Tickets / Month
               </label>
               <span className="text-sm font-bold text-blue-600 dark:text-blue-400">{ticketsPerMonth}</span>
             </div>
             <input
               type="range"
+              id="tickets-range"
               min="20"
               max="500"
               step="10"
@@ -126,13 +130,14 @@ export default function ROICalculator() {
 
           <div>
             <div className="flex justify-between mb-2">
-              <label className="text-sm font-medium text-gray-700 dark:text-gray-300">
+              <label htmlFor="minutes-range" className="text-sm font-medium text-gray-700 dark:text-gray-300">
                 Avg Minutes per Ticket
               </label>
               <span className="text-sm font-bold text-blue-600 dark:text-blue-400">{minutesPerTicket} min</span>
             </div>
             <input
               type="range"
+              id="minutes-range"
               min="5"
               max="60"
               step="5"

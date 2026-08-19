@@ -23,7 +23,7 @@ const locations: Location[] = [
     description: "2500 Marconi Ave, Ste 101,\nSacramento, CA 95821 USA",
     coordinates: { lat: 38.61512, lng: -121.38384 },
     flag: "🇺🇸",
-    svg: "https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/flags/4x3/us.svg",
+    svg: "https://flagcdn.com/us.svg",
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ const locations: Location[] = [
     description: "PMSPACE AI, #04-39,\n7 Soon Lee Street,\nSingapore 627608",
     coordinates: { lat: 1.32151, lng: 103.73999 },
     flag: "🇸🇬",
-    svg: "https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/flags/4x3/sg.svg",
+    svg: "https://flagcdn.com/sg.svg",
     mapQuery: "PMSPACE AI, 7 Soon Lee Street, Singapore 627608",
   },
   {
@@ -40,7 +40,7 @@ const locations: Location[] = [
     description: "Dubai, United Arab Emirates",
     coordinates: { lat: 25.2048, lng: 55.2708 },
     flag: "🇦🇪",
-    svg: "https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/flags/4x3/ae.svg",
+    svg: "https://flagcdn.com/ae.svg",
   },
   {
     id: 4,
@@ -48,7 +48,7 @@ const locations: Location[] = [
     description: "New Delhi, India",
     coordinates: { lat: 28.6139, lng: 77.209 },
     flag: "🇮🇳",
-    svg: "https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/flags/4x3/in.svg",
+    svg: "https://flagcdn.com/in.svg",
   },
   {
     id: 5,
@@ -56,7 +56,7 @@ const locations: Location[] = [
     description: "Kuwait City, Kuwait",
     coordinates: { lat: 29.3759, lng: 47.9774 },
     flag: "🇰🇼",
-    svg: "https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/flags/4x3/kw.svg",
+    svg: "https://flagcdn.com/kw.svg",
   },
   {
     id: 6,
@@ -64,7 +64,7 @@ const locations: Location[] = [
     description: "Toronto, Ontario, Canada",
     coordinates: { lat: 43.6532, lng: -79.3832 },
     flag: "🇨🇦",
-    svg: "https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/flags/4x3/ca.svg",
+    svg: "https://flagcdn.com/ca.svg",
   },
   {
     id: 7,
@@ -72,7 +72,7 @@ const locations: Location[] = [
     description: "Hong Kong",
     coordinates: { lat: 22.3193, lng: 114.1694 },
     flag: "🇭🇰",
-    svg: "https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/flags/4x3/hk.svg",
+    svg: "https://flagcdn.com/hk.svg",
   },
 ];
 
@@ -96,7 +96,7 @@ export default function LocationMap() {
   const contact = contactByCountry[active.name];
 
   return (
-    <section id="locations" className="relative py-16 sm:py-20 md:py-24">
+    <section id="locations" className="relative py-6 sm:py-20 md:py-24">
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-500/10 rounded-full blur-3xl pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-purple-500/10 rounded-full blur-3xl pointer-events-none" />
 
@@ -106,12 +106,12 @@ export default function LocationMap() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-10"
+          className="text-center mb-6 sm:mb-10"
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-3 sm:mb-4">
             Always Within Reach
           </h2>
-          <p className="text-white/70 text-lg max-w-2xl mx-auto">
+          <p className="text-white/70 text-base sm:text-lg max-w-2xl mx-auto px-2 sm:px-0">
             Connect with our HR specialists through our headquarters and regional offices around the world.
           </p>
         </motion.div>
@@ -121,9 +121,9 @@ export default function LocationMap() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="flex gap-3 items-stretch"
+          className="flex flex-col lg:flex-row gap-3 items-stretch"
         >
-          <div className="flex-1 relative border border-white/10 shadow-2xl shadow-blue-950/20" style={{ height: "580px" }}>
+          <div className="flex-1 max-sm:flex-none relative border border-white/10 shadow-2xl shadow-blue-950/20 h-[260px] sm:h-[350px] lg:h-[580px] max-sm:overflow-hidden">
             <iframe
               key={active.id}
               src={getEmbedUrl(active)}
@@ -141,14 +141,14 @@ export default function LocationMap() {
               animate={{ x: 0, opacity: 1 }}
               exit={{ x: 80, opacity: 0 }}
               transition={{ type: "spring", stiffness: 300, damping: 28 }}
-              className="absolute top-3 right-3 z-20"
+              className="absolute bottom-2 left-2 right-2 sm:bottom-3 sm:left-auto sm:right-3 sm:left-auto z-20"
             >
-              <div className="w-72 bg-black/70 backdrop-blur-2xl rounded-xl border border-white/10 p-4 shadow-2xl">
+              <div className="w-full sm:w-64 lg:w-72 bg-black/70 backdrop-blur-2xl rounded-xl border border-white/10 p-2.5 sm:p-4 shadow-2xl">
                 <div className="flex items-center justify-between mb-2">
-                  <div className="flex items-center gap-2.5">
-                    <img src={active.svg} alt={`${active.name} flag`} className="w-8 h-6 rounded-sm object-cover" />
+                  <div className="flex items-center gap-1.5 sm:gap-2.5">
+                    <img src={active.svg} alt={`${active.name} flag`} width={32} height={24} loading="lazy" className="w-6 h-5 sm:w-8 sm:h-6 rounded-sm object-cover" />
                     <div>
-                      <h3 className="text-white font-semibold text-sm">{active.name}</h3>
+                      <h3 className="text-white font-semibold text-xs sm:text-sm">{active.name}</h3>
                       {contact && (
                         <p className="text-white/40 text-[11px]">{contact.number}</p>
                       )}
@@ -184,18 +184,18 @@ export default function LocationMap() {
           </AnimatePresence>
           </div>
 
-          <div className="flex flex-col gap-2">
+          <div className="flex flex-wrap lg:flex-col gap-2 sm:gap-3 lg:overflow-x-visible pb-2 lg:pb-0">
             {locations.map((loc, idx) => (
               <button
                 key={loc.id}
                 onClick={() => setActiveIndex(idx)}
-                className={`flex items-center gap-2.5 px-4 py-2.5 rounded-xl backdrop-blur-xl border text-sm font-medium transition-all duration-300 whitespace-nowrap ${
+                className={`flex items-center gap-1.5 sm:gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-xl backdrop-blur-xl border text-xs sm:text-sm font-medium transition-all duration-300 whitespace-nowrap ${
                   idx === activeIndex
                     ? "bg-blue-600/80 border-blue-400/50 text-white shadow-lg shadow-blue-500/20"
                     : "bg-black/50 border-white/10 text-white/70 hover:bg-black/70 hover:text-white hover:border-white/30"
                 }`}
               >
-                <img src={loc.svg} alt={`${loc.name} flag`} className="w-6 h-4.5 rounded-sm object-cover" />
+                <img src={loc.svg} alt={`${loc.name} flag`} width={24} height={18} loading="lazy" className="w-5 h-4 sm:w-6 sm:h-4.5 rounded-sm object-cover" />
                 <span>{loc.name}</span>
               </button>
             ))}

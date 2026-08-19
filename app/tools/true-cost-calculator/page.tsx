@@ -87,11 +87,12 @@ export default function TrueCostCalculator() {
             {/* Calculator Inputs */}
             <div className="lg:col-span-5 space-y-8 bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-lg border border-slate-200 dark:border-slate-700 h-fit">
                 <div>
-                    <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Annual Base Salary</label>
+                    <label htmlFor="salary-input" className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">Annual Base Salary</label>
                     <div className="relative">
                         <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 w-5 h-5" />
                         <input 
                             type="number" 
+                            id="salary-input"
                             value={salary} 
                             onChange={(e) => setSalary(Number(e.target.value))}
                             className="w-full pl-10 pr-4 py-3 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none transition-all font-mono text-lg"
@@ -124,7 +125,7 @@ export default function TrueCostCalculator() {
                 </div>
 
                 <div>
-                    <label className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">
+                    <label htmlFor="overhead-input" className="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-2">
                         Overhead / Equipment (Annual)
                          <span className="ml-2 inline-flex group relative">
                             <Info className="w-4 h-4 text-slate-400 cursor-help" />
@@ -137,6 +138,7 @@ export default function TrueCostCalculator() {
                         <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 w-5 h-5" />
                         <input 
                             type="number" 
+                            id="overhead-input"
                             value={overhead} 
                             onChange={(e) => setOverhead(Number(e.target.value))}
                             className="w-full pl-10 pr-4 py-3 rounded-lg border border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-900 text-slate-900 dark:text-white focus:ring-2 focus:ring-blue-500 outline-none transition-all font-mono text-lg"

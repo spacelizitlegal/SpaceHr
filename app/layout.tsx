@@ -139,8 +139,12 @@ export default function RootLayout({
         </noscript>
         {/* End Google Tag Manager (noscript) */}
 
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:z-50 focus:p-4 focus:bg-white focus:text-black">
+          Skip to main content
+        </a>
+
         <Navbar />
-        <main className="flex-grow relative z-10 pt-24 sm:pt-28">
+        <main id="main-content" className="flex-grow relative z-10 pt-24 sm:pt-28">
           {children}
         </main>
         <Footer />

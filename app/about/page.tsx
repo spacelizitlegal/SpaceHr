@@ -5,6 +5,7 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/Button";
+import { TeamSection } from "@/components/TeamSection";
 import {
   ArrowRight,
   Target,
@@ -349,6 +350,9 @@ const aboutFAQs = [
           </div>
         </div>
       </section>
+
+      {/* OUR TEAM SECTION */}
+      <TeamSection />
 
       {/* OUR STORY SECTION */}
       <section id="our-story" className="py-24 bg-gray-50 dark:bg-[#0f172a] relative overflow-hidden">

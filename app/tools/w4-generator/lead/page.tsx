@@ -175,62 +175,74 @@ export default function W4LeadCapturePage() {
                 <form className="mt-8 space-y-5" onSubmit={submitLeadAndDownload} noValidate>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label className="text-sm font-medium text-gray-800">First Name</label>
+                      <label htmlFor="lead-firstName" className="text-sm font-medium text-gray-800">First Name</label>
                       <div className="relative mt-1">
                         <UserRound className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
                         <input
+                          id="lead-firstName"
                           className="w-full h-11 pl-9 pr-3 rounded-lg border border-gray-300 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                           value={formData.firstName}
                           onChange={(e) => handleInputChange("firstName", e.target.value)}
                           placeholder="John"
+                          aria-invalid={!!errors.firstName}
+                          aria-describedby={errors.firstName ? "lead-firstName-error" : undefined}
                         />
                       </div>
-                      {errors.firstName && <p className="text-xs text-red-600 mt-1">{errors.firstName}</p>}
+                      {errors.firstName && <p id="lead-firstName-error" className="text-xs text-red-600 mt-1" aria-live="polite">{errors.firstName}</p>}
                     </div>
                     <div>
-                      <label className="text-sm font-medium text-gray-800">Last Name</label>
+                      <label htmlFor="lead-lastName" className="text-sm font-medium text-gray-800">Last Name</label>
                       <div className="relative mt-1">
                         <UserRound className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
                         <input
+                          id="lead-lastName"
                           className="w-full h-11 pl-9 pr-3 rounded-lg border border-gray-300 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                           value={formData.lastName}
                           onChange={(e) => handleInputChange("lastName", e.target.value)}
                           placeholder="Doe"
+                          aria-invalid={!!errors.lastName}
+                          aria-describedby={errors.lastName ? "lead-lastName-error" : undefined}
                         />
                       </div>
-                      {errors.lastName && <p className="text-xs text-red-600 mt-1">{errors.lastName}</p>}
+                      {errors.lastName && <p id="lead-lastName-error" className="text-xs text-red-600 mt-1" aria-live="polite">{errors.lastName}</p>}
                     </div>
                   </div>
 
                   <div>
-                    <label className="text-sm font-medium text-gray-800">Email</label>
+                    <label htmlFor="lead-email" className="text-sm font-medium text-gray-800">Email</label>
                     <input
                       type="email"
+                      id="lead-email"
                       className="mt-1 w-full h-11 px-3 rounded-lg border border-gray-300 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                       value={formData.email}
                       onChange={(e) => handleInputChange("email", e.target.value)}
                       placeholder="you@company.com"
+                      aria-invalid={!!errors.email}
+                      aria-describedby={errors.email ? "lead-email-error" : undefined}
                     />
-                    {errors.email && <p className="text-xs text-red-600 mt-1">{errors.email}</p>}
+                    {errors.email && <p id="lead-email-error" className="text-xs text-red-600 mt-1" aria-live="polite">{errors.email}</p>}
                   </div>
 
                   <div>
-                    <label className="text-sm font-medium text-gray-800">Phone Number (with country code)</label>
+                    <label htmlFor="lead-phoneNumber" className="text-sm font-medium text-gray-800">Phone Number (with country code)</label>
                     <div className="relative mt-1">
                       <Phone className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-gray-400" />
                       <input
                         type="tel"
+                        id="lead-phoneNumber"
                         className="w-full h-11 pl-9 pr-3 rounded-lg border border-gray-300 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500"
                         value={formData.phoneNumber}
                         onChange={(e) => handleInputChange("phoneNumber", e.target.value)}
                         placeholder="+1 555 123 4567"
+                        aria-invalid={!!errors.phoneNumber}
+                        aria-describedby={errors.phoneNumber ? "lead-phoneNumber-error" : undefined}
                       />
                     </div>
-                    {errors.phoneNumber && <p className="text-xs text-red-600 mt-1">{errors.phoneNumber}</p>}
+                    {errors.phoneNumber && <p id="lead-phoneNumber-error" className="text-xs text-red-600 mt-1" aria-live="polite">{errors.phoneNumber}</p>}
                   </div>
 
                   {submitError && (
-                    <div className="text-sm text-red-700 bg-red-50 border border-red-200 rounded-lg p-3">{submitError}</div>
+                    <div role="alert" className="text-sm text-red-700 bg-red-50 border border-red-200 rounded-lg p-3">{submitError}</div>
                   )}
 
                   <button

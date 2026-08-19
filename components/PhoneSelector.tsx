@@ -80,6 +80,8 @@ export function PhoneSelector() {
         <img
           src={`https://flagcdn.com/${selected.code.toLowerCase()}.svg`}
           alt={selected.country}
+          width={16}
+          height={12}
           className="w-4 h-3 rounded-sm object-cover flex-shrink-0"
         />
         <span className="hidden sm:inline font-medium">{selected.phone}</span>
@@ -134,6 +136,8 @@ export function PhoneSelector() {
                     <img
                       src={`https://flagcdn.com/${office.code.toLowerCase()}.svg`}
                       alt={office.country}
+                      width={28}
+                      height={20}
                       className="w-7 h-5 rounded-sm object-cover flex-shrink-0 mt-0.5"
                     />
                     <div className="flex flex-col min-w-0 flex-1">
