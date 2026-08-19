@@ -43,3 +43,6 @@ next-env.d.ts
 
 # PowerShell scripts
 *.ps1
+
+# Lighthouse reports
+lighthouse-*.report.*

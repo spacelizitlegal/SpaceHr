@@ -299,9 +299,11 @@ export default function DemoRequest() {
                             : "border-gray-200 dark:border-gray-700"
                         } bg-gray-50 dark:bg-gray-900 px-4 py-3 text-gray-900 dark:text-white transition-colors focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-200 dark:focus:ring-violet-900`}
                         placeholder="John"
+                        aria-invalid={!!errors.firstName}
+                        aria-describedby={errors.firstName ? "firstName-error" : undefined}
                       />
                       {errors.firstName && (
-                        <p className="mt-2 text-sm text-red-600 dark:text-red-400">
+                        <p id="firstName-error" className="mt-2 text-sm text-red-600 dark:text-red-400" aria-live="polite">
                           {errors.firstName}
                         </p>
                       )}
@@ -326,9 +328,11 @@ export default function DemoRequest() {
                             : "border-gray-200 dark:border-gray-700"
                         } bg-gray-50 dark:bg-gray-900 px-4 py-3 text-gray-900 dark:text-white transition-colors focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-200 dark:focus:ring-violet-900`}
                         placeholder="Doe"
+                        aria-invalid={!!errors.lastName}
+                        aria-describedby={errors.lastName ? "lastName-error" : undefined}
                       />
                       {errors.lastName && (
-                        <p className="mt-2 text-sm text-red-600 dark:text-red-400">
+                        <p id="lastName-error" className="mt-2 text-sm text-red-600 dark:text-red-400" aria-live="polite">
                           {errors.lastName}
                         </p>
                       )}
@@ -354,9 +358,11 @@ export default function DemoRequest() {
                           : "border-gray-200 dark:border-gray-700"
                       } bg-gray-50 dark:bg-gray-900 px-4 py-3 text-gray-900 dark:text-white transition-colors focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-200 dark:focus:ring-violet-900`}
                       placeholder="john.doe@company.com"
+                      aria-invalid={!!errors.email}
+                      aria-describedby={errors.email ? "email-error" : undefined}
                     />
                     {errors.email && (
-                      <p className="mt-2 text-sm text-red-600 dark:text-red-400">
+                      <p id="email-error" className="mt-2 text-sm text-red-600 dark:text-red-400" aria-live="polite">
                         {errors.email}
                       </p>
                     )}
@@ -382,9 +388,11 @@ export default function DemoRequest() {
                           ? "border-red-500"
                           : "border-gray-200 dark:border-gray-700"
                       } bg-gray-50 dark:bg-gray-900 px-4 py-3 text-gray-900 dark:text-white transition-colors focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-200 dark:focus:ring-violet-900`}
+                      aria-invalid={!!errors.phoneNumber}
+                      aria-describedby={errors.phoneNumber ? "phoneNumber-error" : undefined}
                     />
                     {errors.phoneNumber && (
-                      <p className="mt-2 text-sm text-red-600 dark:text-red-400">
+                      <p id="phoneNumber-error" className="mt-2 text-sm text-red-600 dark:text-red-400" aria-live="polite">
                         {errors.phoneNumber}
                       </p>
                     )}
@@ -409,9 +417,11 @@ export default function DemoRequest() {
                           : "border-gray-200 dark:border-gray-700"
                       } bg-gray-50 dark:bg-gray-900 px-4 py-3 text-gray-900 dark:text-white transition-colors focus:border-violet-500 focus:outline-none focus:ring-2 focus:ring-violet-200 dark:focus:ring-violet-900`}
                       placeholder="Your Company Inc."
+                      aria-invalid={!!errors.company}
+                      aria-describedby={errors.company ? "company-error" : undefined}
                     />
                     {errors.company && (
-                      <p className="mt-2 text-sm text-red-600 dark:text-red-400">
+                      <p id="company-error" className="mt-2 text-sm text-red-600 dark:text-red-400" aria-live="polite">
                         {errors.company}
                       </p>
                     )}

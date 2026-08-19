@@ -20,7 +20,8 @@ import {
   Sparkles,
 } from "lucide-react";
 import { SpaceHRCard } from "@/components/SpaceHRCard";
-import { AskAI } from "@/components/AskAI";
+import dynamic from "next/dynamic";
+const AskAI = dynamic(() => import("@/components/AskAI").then(mod => mod.AskAI));
 import LocationsSection from "@/sections/Locations";
 import Image from "next/image";
 import { Metadata } from "next";
@@ -1235,16 +1236,16 @@ export default function Home() {
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
               {[
-                { href: "/regions/united-states", flag: "🇺🇸", svg: "https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/flags/4x3/us.svg", label: "United States", desc: "NACHA, IRS, all 50 states" },
-                { href: "/regions/dubai", flag: "🇦🇪", svg: "https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/flags/4x3/ae.svg", label: "UAE / Dubai", desc: "WPS, MOHRE, gratuity" },
-                { href: "/regions/singapore", flag: "🇸🇬", svg: "https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/flags/4x3/sg.svg", label: "Singapore", desc: "CPF, MOM, IR8A" },
-                { href: "/regions/uk", flag: "🇬🇧", svg: "https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/flags/4x3/gb.svg", label: "United Kingdom", desc: "RTI, PAYE, auto-enrolment" },
-                { href: "/regions/india", flag: "🇮🇳", svg: "https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/flags/4x3/in.svg", label: "India", desc: "PF, ESI, TDS" },
-                { href: "/regions/canada", flag: "🇨🇦", svg: "https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/flags/4x3/ca.svg", label: "Canada", desc: "CRA, provincial tax" },
-                { href: "/regions/europe", flag: "🇪🇺", svg: "https://cdnjs.cloudflare.com/ajax/libs/flag-icons/7.2.3/flags/4x3/eu.svg", label: "Europe", desc: "GDPR, local labour law" },
+                { href: "/regions/united-states", flag: "🇺🇸", svg: "https://flagcdn.com/us.svg", label: "United States", desc: "NACHA, IRS, all 50 states" },
+                { href: "/regions/dubai", flag: "🇦🇪", svg: "https://flagcdn.com/ae.svg", label: "UAE / Dubai", desc: "WPS, MOHRE, gratuity" },
+                { href: "/regions/singapore", flag: "🇸🇬", svg: "https://flagcdn.com/sg.svg", label: "Singapore", desc: "CPF, MOM, IR8A" },
+                { href: "/regions/uk", flag: "🇬🇧", svg: "https://flagcdn.com/gb.svg", label: "United Kingdom", desc: "RTI, PAYE, auto-enrolment" },
+                { href: "/regions/india", flag: "🇮🇳", svg: "https://flagcdn.com/in.svg", label: "India", desc: "PF, ESI, TDS" },
+                { href: "/regions/canada", flag: "🇨🇦", svg: "https://flagcdn.com/ca.svg", label: "Canada", desc: "CRA, provincial tax" },
+                { href: "/regions/europe", flag: "🇪🇺", svg: "https://flagcdn.com/eu.svg", label: "Europe", desc: "GDPR, local labour law" },
               ].map((reg) => (
                 <Link key={reg.href} href={reg.href} className="group bg-white dark:bg-[#0b1121] rounded-2xl p-5 border border-gray-200 dark:border-gray-700 hover:border-blue-400 hover:shadow-lg transition-all flex items-center gap-4">
-                  <img src={reg.svg} alt={`${reg.label} flag`} className="w-8 h-6 flex-shrink-0 rounded-sm object-cover" />
+                  <img src={reg.svg} alt={`${reg.label} flag`} width={32} height={24} loading="lazy" className="w-8 h-6 flex-shrink-0 rounded-sm object-cover" />
                   <div>
                     <h3 className="font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors text-sm">{reg.label}</h3>
                     <p className="text-xs text-gray-500 dark:text-gray-400">{reg.desc}</p>
@@ -1468,35 +1469,35 @@ export default function Home() {
 
           <div className="relative z-10">
             {/* 6. ENHANCED FINAL CTA */}
-            <section className="py-32">
+            <section className="py-6 sm:py-24 md:py-32">
               <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             {/* Main CTA Content */}
-            <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-8">
+            <div className="text-center mb-6 sm:mb-16">
+              <div className="inline-flex items-center gap-2 px-4 sm:px-6 py-2 sm:py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-4 sm:mb-8">
                 <Sparkles className="w-5 h-5 text-yellow-400" />
                 <span className="text-white font-semibold">
                   Join 500+ companies already using Space HR
                 </span>
               </div>
-              <h2 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+              <h2 className="text-3xl sm:text-5xl md:text-7xl font-bold text-white mb-3 sm:mb-6 leading-tight">
                 Ready to Transform
                 <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-violet-400 to-blue-400">
                   Your Workforce?
                 </span>
               </h2>
-              <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed">
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-6 sm:mb-12 leading-relaxed">
                 From payroll automation to AI-powered appraisals—everything you
                 need to build high-performing teams.
               </p>
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-20">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-8 sm:mb-20">
               <Link href="/request-a-demo">
                 <Button
                   size="lg"
-                  className="rounded-full h-16 px-12 text-lg font-bold shadow-2xl hover:shadow-pink-500/50 transition-all bg-gradient-to-r from-pink-500 via-violet-500 to-blue-600 hover:from-pink-600 hover:via-violet-600 hover:to-blue-700 text-white border-0 group"
+                  className="rounded-full h-14 sm:h-16 px-8 sm:px-12 text-base sm:text-lg font-bold shadow-2xl hover:shadow-pink-500/50 transition-all bg-gradient-to-r from-pink-500 via-violet-500 to-blue-600 hover:from-pink-600 hover:via-violet-600 hover:to-blue-700 text-white border-0 group"
                 >
                   Start Free Trial
                   <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -1506,7 +1507,7 @@ export default function Home() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="rounded-full h-16 px-12 text-lg font-bold border-2 border-white/30 text-white hover:bg-white hover:text-gray-900 transition-all backdrop-blur-sm"
+                  className="rounded-full h-14 sm:h-16 px-8 sm:px-12 text-base sm:text-lg font-bold border-2 border-white/30 text-white hover:bg-white hover:text-gray-900 transition-all backdrop-blur-sm"
                 >
                   Get a Custom Quote
                 </Button>

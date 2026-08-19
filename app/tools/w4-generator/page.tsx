@@ -31,16 +31,22 @@ const PAY_PERIODS = [
 
 // ── Reusable Components (replacing shadcn/ui) ──
 function FormField({ label, required, error, children, helpText }: { label: string; required?: boolean; error?: string; children: React.ReactNode; helpText?: string }) {
+  const id = React.useId();
+  const child = React.Children.only(children);
+  const childWithId = React.isValidElement(child)
+    ? React.cloneElement(child as React.ReactElement<any>, { id })
+    : child;
+
   return (
     <div className="space-y-1">
 
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: `{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://spacehr.net"},{"@type":"ListItem","position":2,"name":"Tools","item":"https://spacehr.net/tools"},{"@type":"ListItem","position":3,"name":"W-4 Generator","item":"https://spacehr.net/tools/w4-generator"}]}` }} />
-      <label className="flex items-center gap-1 text-sm font-medium text-gray-700">
+      <label htmlFor={id} className="flex items-center gap-1 text-sm font-medium text-gray-700">
         {label}
         {required && <span className="text-red-500">*</span>}
       </label>
       {helpText && <p className="text-xs text-gray-500">{helpText}</p>}
-      {children}
+      {childWithId}
       {error && <p className="text-xs text-red-500">{error}</p>}
     </div>
   );

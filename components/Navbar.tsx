@@ -45,6 +45,7 @@ const ecosystemLinks = [
 ];
 
 const resourceLinks = [
+  { href: "/tools", label: "Free HR Tools" },
   { href: "/blogs", label: "Blog & Insights" },
   { href: "/courses", label: "Learning Center" },
   { href: "/templates", label: "HR Templates" },
@@ -195,7 +196,7 @@ export function Navbar() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex flex-1 items-center justify-center">
+          <div className="hidden xl:flex flex-1 items-center justify-center">
             <div className="flex items-center gap-1 lg:gap-2 bg-slate-100/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-full px-2 py-1.5 border border-slate-200/50 dark:border-slate-700/50 shadow-sm">
               <NavDropdown label="Features" links={featuresLinks} columns={2} />
               <Link
@@ -240,7 +241,7 @@ export function Navbar() {
             {/* Mobile Menu Toggle */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="lg:hidden p-3 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors"
+              className="xl:hidden p-3 text-slate-700 dark:text-slate-200 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800 rounded-lg transition-colors"
               aria-label="Toggle menu"
             >
               {isOpen ? (
@@ -254,7 +255,7 @@ export function Navbar() {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="lg:hidden absolute top-full left-4 right-4 mt-2 bg-white dark:bg-slate-800 backdrop-blur-xl border border-slate-200 dark:border-slate-600 rounded-2xl shadow-2xl p-4 flex flex-col gap-1 animate-in slide-in-from-top-4 fade-in-0 max-h-[80vh] overflow-y-auto">
+          <div className="xl:hidden absolute top-full left-4 right-4 mt-2 bg-white dark:bg-slate-800 backdrop-blur-xl border border-slate-200 dark:border-slate-600 rounded-2xl shadow-2xl p-4 flex flex-col gap-1 animate-in slide-in-from-top-4 fade-in-0 max-h-[80vh] overflow-y-auto">
             {/* Features accordion */}
             <button
               onClick={() => toggleMobile("features")}

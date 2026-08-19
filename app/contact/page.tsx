@@ -247,12 +247,13 @@ export default function ContactPage() {
                                     <form onSubmit={handleSubmit} className="space-y-5">
                                         <div className="grid sm:grid-cols-2 gap-5">
                                             <div>
-                                                <label className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
+                                                <label htmlFor="contact-name" className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
                                                     Full Name <span className="text-red-500">*</span>
                                                 </label>
                                                 <input
                                                     type="text"
                                                     name="name"
+                                                    id="contact-name"
                                                     required
                                                     value={formData.name}
                                                     onChange={handleChange}
@@ -261,12 +262,13 @@ export default function ContactPage() {
                                                 />
                                             </div>
                                             <div>
-                                                <label className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
+                                                <label htmlFor="contact-email" className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
                                                     Work Email <span className="text-red-500">*</span>
                                                 </label>
                                                 <input
                                                     type="email"
                                                     name="email"
+                                                    id="contact-email"
                                                     required
                                                     value={formData.email}
                                                     onChange={handleChange}
@@ -278,12 +280,13 @@ export default function ContactPage() {
 
                                         <div className="grid sm:grid-cols-2 gap-5">
                                             <div>
-                                                <label className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
+                                                <label htmlFor="contact-company" className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
                                                     Company Name
                                                 </label>
                                                 <input
                                                     type="text"
                                                     name="company"
+                                                    id="contact-company"
                                                     value={formData.company}
                                                     onChange={handleChange}
                                                     placeholder="Acme Corp"
@@ -291,11 +294,12 @@ export default function ContactPage() {
                                                 />
                                             </div>
                                             <div>
-                                                <label className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
+                                                <label htmlFor="contact-employees" className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
                                                     Company Size
                                                 </label>
                                                 <select
                                                     name="employees"
+                                                    id="contact-employees"
                                                     value={formData.employees}
                                                     onChange={handleChange}
                                                     className="w-full px-4 py-3 rounded-xl border border-gray-200 dark:border-gray-600 bg-gray-50 dark:bg-gray-700/50 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
@@ -311,11 +315,12 @@ export default function ContactPage() {
                                         </div>
 
                                         <div>
-                                            <label className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
+                                            <label htmlFor="contact-subject" className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
                                                 Subject <span className="text-red-500">*</span>
                                             </label>
                                             <select
                                                 name="subject"
+                                                id="contact-subject"
                                                 required
                                                 value={formData.subject}
                                                 onChange={handleChange}
@@ -331,11 +336,12 @@ export default function ContactPage() {
                                         </div>
 
                                         <div>
-                                            <label className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
+                                            <label htmlFor="contact-message" className="block text-sm font-semibold text-gray-700 dark:text-gray-200 mb-2">
                                                 Message <span className="text-red-500">*</span>
                                             </label>
                                             <textarea
                                                 name="message"
+                                                id="contact-message"
                                                 required
                                                 rows={5}
                                                 value={formData.message}
