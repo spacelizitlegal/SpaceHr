@@ -31,6 +31,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const corePages: MetadataRoute.Sitemap = [
     { url: base,                         lastModified: d(2026, 6, 20), changeFrequency: "weekly",  priority: 1.0 },
     { url: `${base}/about`,              lastModified: d(2026, 5, 1),  changeFrequency: "monthly", priority: 0.9 },
+    { url: `${base}/careers`,            lastModified: d(2026, 9, 23), changeFrequency: "weekly",  priority: 0.8 },
+    { url: `${base}/careers/mern-developer`,            lastModified: d(2026, 9, 23), changeFrequency: "weekly", priority: 0.7 },
+    { url: `${base}/careers/senior-mern-developer`,     lastModified: d(2026, 9, 23), changeFrequency: "weekly", priority: 0.7 },
+    { url: `${base}/careers/python-developer-ai`,       lastModified: d(2026, 9, 23), changeFrequency: "weekly", priority: 0.7 },
     { url: `${base}/demo`,               lastModified: d(2026, 5, 1),  changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/request-a-demo`,     lastModified: d(2026, 5, 1),  changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/pricing`,            lastModified: d(2026, 6, 24), changeFrequency: "monthly", priority: 0.9 },
