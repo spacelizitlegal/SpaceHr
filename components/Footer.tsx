@@ -324,6 +324,7 @@ export function Footer() {
                 { href: "/nyc-144-compliance", label: "NYC 144 Compliance" },
                 { href: "/integrations", label: "Integrations" },
                 { href: "/about", label: "About Space HR" },
+                { href: "/careers", label: "Careers at Space HR" },
                 { href: "/privacy", label: "Privacy Policy" },
                 { href: "/terms", label: "Terms of Service" },
               ].map((link) => (
