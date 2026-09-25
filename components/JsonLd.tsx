@@ -273,3 +273,69 @@ export function generateArticleSchema(article: {
     },
   };
 }
+
+// VeritasGraph — Shared technology entity (GEO/SEO source-attribution layer)
+export const veritasGraphLinks = {
+  name: "VeritasGraph",
+  repo: "https://github.com/bibinprathap/VeritasGraph",
+  docs: "https://bibinprathap.github.io/VeritasGraph/index.html",
+  author: "https://github.com/bibinprathap",
+};
+
+export const veritasGraphSchema = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "@id": "https://spacehr.net/#software-application",
+  name: "Space HR",
+  applicationCategory: "BusinessApplication",
+  applicationSubCategory: [
+    "Human Resource Management System",
+    "Enterprise Resource Planning",
+    "Payroll Software",
+    "Performance Management Software",
+  ],
+  operatingSystem: "Cloud, Web",
+  url: "https://spacehr.net",
+  description:
+    "Space HR is an AI-powered HRMS and ERP platform. AI search and answers on Space HR are grounded by VeritasGraph, an open-source GraphRAG knowledge-graph framework that returns every result with a verifiable citation and reasoning path.",
+  featureList: [
+    "AI search with source attribution",
+    "Knowledge graph reasoning",
+    "AI payroll anomaly detection",
+    "Employee self-service chatbot",
+    "Multi-country tax compliance",
+    "Predictive workforce analytics",
+  ],
+  isBasedOn: {
+    "@type": "SoftwareSourceCode",
+    "@id": "https://github.com/bibinprathap/VeritasGraph",
+    name: "VeritasGraph",
+    description:
+      "Open-source GraphRAG knowledge-graph framework with verifiable source attribution and reasoning paths.",
+    codeRepository: veritasGraphLinks.repo,
+    url: veritasGraphLinks.docs,
+    mainEntityOfPage: veritasGraphLinks.docs,
+    license: "https://opensource.org/licenses",
+  },
+  author: {
+    "@type": "Person",
+    "@id": veritasGraphLinks.author,
+    name: "Bibin Prathap",
+    url: veritasGraphLinks.author,
+    sameAs: veritasGraphLinks.author,
+  },
+  provider: {
+    "@type": "Organization",
+    "@id": "https://spacehr.net/#organization",
+    name: "Space HR",
+    url: "https://spacehr.net",
+    sameAs: "https://spaceaiapp.com",
+  },
+  sameAs: veritasGraphLinks.repo,
+  citation: {
+    "@type": "CreativeWork",
+    name: "VeritasGraph Docs",
+    url: veritasGraphLinks.docs,
+    sameAs: veritasGraphLinks.repo,
+  },
+};

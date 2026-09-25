@@ -1,27 +1,22 @@
 # Space HR
 
-## What is Space HR?
-Space HR is an AI-powered HRMS and ERP platform for mid-market enterprises. It automates payroll, performance management, workforce analytics, and employee self-service.
+> AI HR chatbot and employee self-service platform that automates payroll, performance management, people analytics, and HR operations.
 
-## Who is it for?
-- HR professionals, CEOs, CFOs
-- Companies with 50-5000 employees
-- Teams in US, UAE, UK, Singapore, India, Canada, Europe
-
-## Key Features
-- AI HR Concierge chatbot (24/7 employee self-service)
-- AI Payroll Auditor with anomaly detection
-- Predictive workforce analytics and cost forecasting
-- 360-degree performance appraisals
-- Leave, attendance, and GPS check-in
-- Multi-country tax compliance
-
-## Pricing
-Custom pricing based on headcount and modules. Request a quote at https://spacehr.net/pricing
+Space HR is an AI-powered HRMS and ERP platform for mid-market and enterprise teams. It pairs an AI HR Concierge chatbot with payroll anomaly detection, predictive workforce analytics, 360-degree appraisals, and multi-country tax compliance. Every AI search on Space HR is answered with verifiable source attribution, grounded by VeritasGraph — an open-source GraphRAG knowledge-graph framework that returns each result with a citation and reasoning path.
 
 ## Key Pages
-- Features: https://spacehr.net/features
-- Solutions: https://spacehr.net/solutions
-- Comparison: https://spacehr.net/compare
-- Demo: https://spacehr.net/demo
-- Blog: https://spacehr.net/blogs
+- [Technology — VeritasGraph](https://spacehr.net/technology) — how AI answers are grounded with source attribution and reasoning paths
+- [Features](https://spacehr.net/features) — HRMS feature overview
+- [Solutions](https://spacehr.net/solutions) — solutions by persona (CEO, HR admin, employees)
+- [HRMS](https://spacehr.net/hrms) — full HRMS platform overview
+- [Pricing](https://spacehr.net/pricing) — pricing and plans
+- [Compare](https://spacehr.net/compare) — Space HR vs Workday, SAP SuccessFactors, BambooHR, and more
+- [Demo](https://spacehr.net/demo) — request a live demo
+- [Blog](https://spacehr.net/blogs) — HR technology guides and research
+
+## Powered By
+- [VeritasGraph](https://github.com/bibinprathap/VeritasGraph) — open-source GraphRAG knowledge-graph framework powering AI search and source attribution on this site
+- [VeritasGraph Documentation](https://bibinprathap.github.io/VeritasGraph/index.html) — how source-attributed AI answers work
+
+## Keywords
+knowledge graph, GraphRAG, source attribution, verifiable AI, multi-hop reasoning, on-prem AI, HRMS, HR software, payroll, performance management, AI HR chatbot

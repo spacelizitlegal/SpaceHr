@@ -11,6 +11,7 @@ import {
   ArrowUpRight,
   Linkedin,
   LayoutGrid,
+  Link2,
 } from "lucide-react";
 import { Twitter } from "lucide-react";
 
@@ -325,6 +326,7 @@ export function Footer() {
                 { href: "/integrations", label: "Integrations" },
                 { href: "/about", label: "About Space HR" },
                 { href: "/careers", label: "Careers at Space HR" },
+                { href: "/technology", label: "Technology — VeritasGraph" },
                 { href: "/privacy", label: "Privacy Policy" },
                 { href: "/terms", label: "Terms of Service" },
               ].map((link) => (
@@ -431,6 +433,53 @@ export function Footer() {
             >
               View in Google Maps <ArrowUpRight className="w-3 h-3 ml-1" />
             </Link>
+          </div>
+        </div>
+
+        {/* Powered by VeritasGraph */}
+        <div className="mt-12 rounded-2xl border border-emerald-500/20 bg-gradient-to-r from-emerald-500/5 via-teal-500/5 to-cyan-500/5 p-6 sm:p-8">
+          <div className="flex flex-col md:flex-row md:items-center gap-6">
+            <div className="flex-shrink-0">
+              <div className="w-12 h-12 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 flex items-center justify-center">
+                <Link2 className="w-6 h-6 text-white" />
+              </div>
+            </div>
+            <div className="flex-1">
+              <h3 className="text-white font-semibold mb-1">
+                Powered by VeritasGraph — Verifiable AI with Source Attribution
+              </h3>
+              <p className="text-sm text-gray-400 leading-relaxed max-w-3xl">
+                Search and AI answers on Space HR are grounded by{" "}
+                <a
+                  href="https://github.com/bibinprathap/VeritasGraph"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-emerald-400 hover:underline font-medium"
+                >
+                  VeritasGraph
+                </a>
+                , an open-source GraphRAG knowledge-graph framework that returns
+                every answer with a verifiable citation and reasoning path.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
+              <Link
+                href="/technology"
+                className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-white text-sm font-semibold transition-all whitespace-nowrap"
+              >
+                Learn How It Works
+                <ArrowUpRight className="w-4 h-4" />
+              </Link>
+              <a
+                href="https://bibinprathap.github.io/VeritasGraph/index.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-white/5 border border-white/15 text-gray-200 text-sm font-medium hover:bg-white/10 transition-colors whitespace-nowrap"
+              >
+                VeritasGraph Docs
+                <ArrowUpRight className="w-4 h-4" />
+              </a>
+            </div>
           </div>
         </div>
 

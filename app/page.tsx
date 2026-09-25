@@ -117,6 +117,21 @@ export default function Home() {
       answer:
         "Most teams go live within 48 hours. Space HR provides guided onboarding, data import tools, and a dedicated setup team. No coding is required. A free trial is available.",
     },
+    {
+      question: "How does Space HR verify its AI answers?",
+      answer:
+        "Every AI answer on Space HR is grounded by VeritasGraph, an open-source GraphRAG knowledge-graph framework. Rather than generating text from pattern matching alone, Space HR reasons over a structured knowledge graph and attaches a source citation and reasoning path to each answer — so employees and HR can trace exactly where every response came from.",
+    },
+    {
+      question: "What is a knowledge graph and why does Space HR use one?",
+      answer:
+        "A knowledge graph organizes HR data — policies, payroll records, org charts, and employee handbooks — as connected entities and relationships. Space HR uses a VeritasGraph-powered knowledge graph to perform multi-hop reasoning across these connections, making answers that span multiple related documents more accurate and auditable than free-text keyword search.",
+    },
+    {
+      question: "Can Space HR's AI run on-premises with VeritasGraph?",
+      answer:
+        "Yes. VeritasGraph runs on-prem or 100% local, which means AI search and answers can operate with zero data egress to third-party providers. This keeps workforce and payroll data sovereign and supports GDPR, PDPA, and regional data-residency requirements.",
+    },
   ];
 
   const homeBreadcrumb = [{ name: "Home", url: "https://spacehr.net" }];
@@ -209,7 +224,7 @@ export default function Home() {
                 See Space HR in Action
               </h2>
               <p className="text-gray-400 text-lg mb-8">
-                Watch how growing teams use Space HR's AI HR chatbot and HRMS to
+                Watch how growing teams use Space HR&apos;s AI HR chatbot and HRMS to
                 automate workflows and cut HR overhead by 70%.
               </p>
               <Link href="/request-a-demo">
@@ -770,7 +785,7 @@ export default function Home() {
                   <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
                     Professional US payroll engine that automates everything
                     from time tracking to ACH file generation. Our AI flags
-                    anomalies before you hit "Process."
+                    anomalies before you hit &quot;Process.&quot;
                   </p>
                   <div className="space-y-4 mb-8">
                     <div className="flex items-start gap-4">
@@ -1365,6 +1380,18 @@ export default function Home() {
                 {
                   q: "How long does it take to set up Space HR?",
                   a: "Most teams go live within 48 hours with guided onboarding, data import tools, and a dedicated setup team. No coding required. A free trial is available.",
+                },
+                {
+                  q: "How does Space HR verify its AI answers?",
+                  a: "Every AI answer is grounded by VeritasGraph, an open-source GraphRAG knowledge-graph framework. Space HR reasons over a structured knowledge graph and attaches a source citation and reasoning path to each answer, so employees and HR can trace exactly where each response came from.",
+                },
+                {
+                  q: "What is a knowledge graph and why does Space HR use one?",
+                  a: "A knowledge graph organizes HR data — policies, payroll records, org charts, and employee handbooks — as connected entities and relationships. Space HR uses it for multi-hop reasoning across these connections, making answers that span multiple documents more accurate and auditable than free-text search.",
+                },
+                {
+                  q: "Can Space HR's AI run on-premises with VeritasGraph?",
+                  a: "Yes. VeritasGraph runs on-prem or 100% local with zero data egress to third-party providers, keeping workforce and payroll data sovereign and supporting GDPR, PDPA, and regional data-residency requirements.",
                 },
               ].map(({ q, a }, i) => (
                 <details key={i} className="group border border-gray-200 dark:border-gray-700 rounded-xl overflow-hidden">
