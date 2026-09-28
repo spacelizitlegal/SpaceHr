@@ -4,6 +4,7 @@ import Script from "next/script";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import { JsonLd, veritasGraphSchema } from "@/components/JsonLd";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -123,6 +124,8 @@ export default function RootLayout({
           }}
         />
         {/* End Google Tag Manager */}
+        {/* VeritasGraph SoftwareApplication JSON-LD (SoftwareApplication + isBasedOn → VeritasGraph → GitHub/Docs) */}
+        <JsonLd data={veritasGraphSchema} />
       </head>
 
       <body

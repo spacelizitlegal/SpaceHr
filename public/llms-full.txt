@@ -1,0 +1,164 @@
+# Space HR
+
+> AI HR chatbot and employee self-service platform that automates payroll, performance management, people analytics, and HR operations.
+
+Space HR is an AI-powered HRMS and ERP platform for mid-market and enterprise teams in the US, UAE, UK, Singapore, India, Canada, and Europe. It pairs an AI HR Concierge chatbot with payroll anomaly detection, predictive workforce analytics, 360-degree appraisals, leave and attendance tracking, and multi-country tax compliance. Every AI search on Space HR is answered with verifiable source attribution, grounded by VeritasGraph — an open-source GraphRAG knowledge-graph framework that returns each result with a citation and reasoning path.
+
+## About
+Space HR automates the employee lifecycle end-to-end: onboarding, attendance, leave, payroll processing with tax compliance, performance appraisals, goals and OKRs, learning, and people analytics. Its AI layer handles employee self-service queries 24/7, detects payroll anomalies before pay runs, predicts attrition and labor cost, and answers HR policy questions with cited, verifiable sources.
+
+## Who Is It For
+- HR professionals, HR admins, people ops teams
+- CEOs, CFOs, and finance teams
+- Companies with 50–5,000 employees
+- Global teams across the US, UAE, UK, Singapore, India, Canada, and Europe
+- Regulated industries: healthcare, retail, banking, manufacturing, construction, government
+
+## Key Features
+- AI HR Concierge chatbot — 24/7 employee self-service with source-attributed answers
+- AI Payroll Auditor — anomaly detection and payroll error prevention
+- Predictive workforce analytics — attrition prediction, labor cost forecasting
+- 360-degree performance appraisals and OKR/goals
+- Leave, attendance, and GPS check-in
+- Multi-country payroll and tax compliance (US, UK, UAE, India, Singapore, Canada, EU)
+- AI templates and approval workflow automation
+
+## Key Pages
+- [Home](https://spacehr.net/) — Space HR overview
+- [Technology — VeritasGraph](https://spacehr.net/technology) — how AI answers are grounded with source attribution
+- [Features](https://spacehr.net/features) — full feature hub
+- [Solutions](https://spacehr.net/solutions) — solutions hub
+- [HRMS](https://spacehr.net/hrms) — HRMS platform overview
+- [HR Software](https://spacehr.net/hr-software) — HR software overview
+- [HR Payroll Software](https://spacehr.net/hr-payroll-software) — payroll platform overview
+- [Employee Self-Service HRMS](https://spacehr.net/employee-self-service-hrms) — employee self-service platform
+- [Payroll Anomaly Detection](https://spacehr.net/payroll-anomaly-detection) — AI payroll audit capability
+- [Pricing](https://spacehr.net/pricing) — pricing and plans
+- [Compare](https://spacehr.net/compare) — comparison hub
+- [Demo](https://spacehr.net/demo) — request a live demo
+- [Contact](https://spacehr.net/contact) — get in touch
+- [Blog](https://spacehr.net/blogs) — all HR guides and research
+- [Resources — HR Chatbot Buyers Guide](https://spacehr.net/resources/hr-chatbot-buyers-guide) — in-depth buyers guide
+- [Glossary](https://spacehr.net/glossary) — HR tech glossary
+- [Courses](https://spacehr.net/courses) — management and AI learning courses
+- [Templates](https://spacehr.net/templates) — HR document templates
+- [Tools](https://spacehr.net/tools) — free HR calculators and tools
+- [Careers](https://spacehr.net/careers) — open roles at Space HR
+- [About](https://spacehr.net/about) — company information
+- [Integrations](https://spacehr.net/integrations) — integration overview
+- [Space AI Integration](https://spacehr.net/integrations/space-ai) — Space AI ecosystem integration
+- [Press](https://spacehr.net/press) — press and media kit
+
+## Product Features
+- [AI Chatbots](https://spacehr.net/features/ai-chatbots) — AI chatbot capabilities
+- [HR AI Concierge](https://spacehr.net/features/hr-ai-concierge) — employee self-service concierge
+- [AI Payroll Auditor](https://spacehr.net/features/ai-payroll-auditor) — anomaly detection and audit
+- [AI Intelligence](https://spacehr.net/features/ai-intelligence) — AI insights and forecasting
+- [AI Automation](https://spacehr.net/features/ai-automation) — workflow automation
+- [AI Templates](https://spacehr.net/features/ai-templates) — AI-generated document templates
+- [360 Performance Appraisals](https://spacehr.net/features/360-performance-appraisals) — 360-degree reviews
+- [Appraisals](https://spacehr.net/features/appraisals) — performance appraisals
+- [Goals](https://spacehr.net/features/goals) — OKRs and goal tracking
+- [Attendance](https://spacehr.net/features/attendance) — attendance tracking
+- [Leave Management](https://spacehr.net/features/leave-management) — leave and time off
+- [Payroll](https://spacehr.net/features/payroll) — payroll processing
+- [Tax](https://spacehr.net/features/tax) — multi-country tax compliance
+- [Finance](https://spacehr.net/features/finance) — finance and cost management
+- [Cost Prediction](https://spacehr.net/features/cost-prediction) — labor cost forecasting
+- [Attrition Prediction](https://spacehr.net/features/attrition-prediction) — churn prediction
+- [Employee Self-Service](https://spacehr.net/features/employee-self-service) — self-service portal
+
+## Solutions
+- [HR AI Chatbot](https://spacehr.net/solutions/hr-ai-chatbot) — AI chatbot for HR
+- [Enterprise HR Chatbot](https://spacehr.net/solutions/enterprise-hr-chatbot) — enterprise-scale chatbot
+- [Internal Employee Chatbot](https://spacehr.net/solutions/internal-employee-chatbot) — internal knowledge assistant
+- [HR Helpdesk Chatbot](https://spacehr.net/solutions/hr-helpdesk-chatbot) — helpdesk automation
+- [Chatbot for HR Services](https://spacehr.net/solutions/chatbot-for-hr-services) — service automation
+- [Employee Self-Service](https://spacehr.net/solutions/employee-self-service) — ESS solutions
+- [For Employees](https://spacehr.net/solutions/employees) — employee-focused solutions
+- [For HR Admin](https://spacehr.net/solutions/hr-admin) — admin productivity
+- [For CEOs](https://spacehr.net/solutions/ceo) — CEO and leadership insights
+
+## Comparison Hub
+- [Compare](https://spacehr.net/compare) — comparison overview
+- [vs Workday](https://spacehr.net/compare/workday)
+- [vs SAP SuccessFactors](https://spacehr.net/compare/sap-successfactors)
+- [vs ADP](https://spacehr.net/compare/adp)
+- [vs BambooHR](https://spacehr.net/compare/bamboohr)
+- [vs Gusto](https://spacehr.net/compare/gusto)
+- [vs Rippling](https://spacehr.net/compare/rippling)
+- [vs Darwinbox](https://spacehr.net/compare/darwinbox)
+- [vs Leena AI](https://spacehr.net/compare/leena-ai)
+- [vs Moveworks](https://spacehr.net/compare/moveworks)
+- [vs Microsoft Copilot](https://spacehr.net/compare/microsoft-copilot)
+- [vs ServiceNow](https://spacehr.net/compare/servicenow)
+- [vs FreshTeam](https://spacehr.net/compare/freshteam)
+- [vs OrangeHRM](https://spacehr.net/compare/orangehrm)
+
+## Industries
+- [Healthcare](https://spacehr.net/industries/healthcare)
+- [Retail](https://spacehr.net/industries/retail)
+- [Banking](https://spacehr.net/industries/banking)
+- [Manufacturing](https://spacehr.net/industries/manufacturing)
+- [Construction](https://spacehr.net/industries/construction)
+- [Government](https://spacehr.net/industries/government)
+
+## Regions
+- [United States](https://spacehr.net/regions/united-states)
+- [UK](https://spacehr.net/regions/uk)
+- [Dubai / UAE](https://spacehr.net/regions/dubai)
+- [Singapore](https://spacehr.net/regions/singapore)
+- [India](https://spacehr.net/regions/india)
+- [Canada](https://spacehr.net/regions/canada)
+- [Europe](https://spacehr.net/regions/europe)
+
+## Compliance Pages
+- [California Pay Transparency](https://spacehr.net/california-pay-transparency)
+- [NYC 144 Compliance](https://spacehr.net/nyc-144-compliance)
+- [Best HR Software for Small Business](https://spacehr.net/best-hr-software-small-business)
+- [Best HCM Software](https://spacehr.net/best-hcm-software)
+
+## Tools
+- [Cost per Hire Calculator](https://spacehr.net/tools/cost-per-hire-calculator)
+- [Employee Cost Calculator](https://spacehr.net/tools/employee-cost-calculator)
+- [Employee Turnover Calculator](https://spacehr.net/tools/employee-turnover-calculator)
+- [HR ROI Calculator](https://spacehr.net/tools/hr-roi-calculator)
+- [Payroll Error Cost Calculator](https://spacehr.net/tools/payroll-error-cost-calculator)
+- [True Cost Calculator](https://spacehr.net/tools/true-cost-calculator)
+- [W-4 Form Generator](https://spacehr.net/tools/w4-generator)
+- [W-2 Form Download](https://spacehr.net/tools/w2-form-download)
+- [FW-4 Form Download](https://spacehr.net/tools/fw4-form-download)
+
+## Top Blog Posts
+- [Employee Attrition Prediction Guide](https://spacehr.net/blogs/employee-attrition-prediction-guide)
+- [Importance of Soft Skills](https://spacehr.net/blogs/importance-of-soft-skills)
+- [Chatbot for HR Services — Complete Guide](https://spacehr.net/blogs/chatbot-for-hr-services-complete-guide)
+- [Payroll Anomaly Detection Guide 2026](https://spacehr.net/blogs/payroll-anomaly-detection-guide-2026)
+- [360 Degree Performance Appraisal Guide](https://spacehr.net/blogs/360-degree-performance-appraisal-guide)
+- [AI HR Software Buying Guide 2026](https://spacehr.net/blogs/ai-hr-software-buying-guide-2026)
+- [HR Data Analytics Guide 2026](https://spacehr.net/blogs/hr-data-analytics-guide-2026)
+- [AI Recruitment Workflows Guide](https://spacehr.net/blogs/ai-recruitment-workflows-guide)
+- [AI Workflow Automation for HR Blueprint](https://spacehr.net/blogs/ai-workflow-automation-for-hr-end-to-end-execution-blueprint)
+- [Automate Employee Onboarding Guide](https://spacehr.net/blogs/how-to-automate-employee-onboarding-without-losing-human-touch)
+- [Approval Workflow Automation at Scale](https://spacehr.net/blogs/approval-workflow-automation-for-hr-teams-at-scale)
+
+## Courses
+- [Leadership 101](https://spacehr.net/courses/leadership-101)
+- [Giving Effective Feedback](https://spacehr.net/courses/giving-effective-feedback)
+- [Emotional Intelligence at Work](https://spacehr.net/courses/emotional-intelligence-at-work)
+- [Strategic Thinking](https://spacehr.net/courses/strategic-thinking)
+- [Generative AI for Business](https://spacehr.net/courses/generative-ai-for-business)
+- [Presentation Mastery](https://spacehr.net/courses/presentation-mastery)
+
+## Templates
+- [360 Degree Appraisal Template](https://spacehr.net/templates/360-degree-appraisal-template)
+- [Annual Performance Review Template](https://spacehr.net/templates/annual-performance-review-template)
+- [Employee Self-Assessment Form](https://spacehr.net/templates/employee-self-assessment-form)
+- [All Templates](https://spacehr.net/templates)
+
+## Powered By
+- [VeritasGraph](https://github.com/bibinprathap/VeritasGraph) — open-source GraphRAG knowledge-graph framework powering AI search and source attribution on this site
+- [VeritasGraph Documentation](https://bibinprathap.github.io/VeritasGraph/index.html) — how source-attributed AI answers and reasoning paths work
+
+## Keywords
+knowledge graph, GraphRAG, source attribution, verifiable AI, multi-hop reasoning, on-prem AI, sovereign AI, HRMS, HR software, human resource management, payroll software, performance management, employee self-service, AI HR chatbot, workforce analytics
