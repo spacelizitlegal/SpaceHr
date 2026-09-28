@@ -36,6 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/careers/senior-mern-developer`,     lastModified: d(2026, 9, 23), changeFrequency: "weekly", priority: 0.7 },
     { url: `${base}/careers/python-developer-ai`,       lastModified: d(2026, 9, 23), changeFrequency: "weekly", priority: 0.7 },
     { url: `${base}/technology`,         lastModified: d(2026, 9, 25), changeFrequency: "weekly",  priority: 0.8 },
+    { url: `${base}/knowledge-graph`,    lastModified: d(2026, 9, 26), changeFrequency: "weekly",  priority: 0.8 },
     { url: `${base}/demo`,               lastModified: d(2026, 5, 1),  changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/request-a-demo`,     lastModified: d(2026, 5, 1),  changeFrequency: "monthly", priority: 0.9 },
     { url: `${base}/pricing`,            lastModified: d(2026, 6, 24), changeFrequency: "monthly", priority: 0.9 },

@@ -55,6 +55,7 @@ const resourceLinks = [
   { href: "/payroll-anomaly-detection", label: "Payroll Anomaly Detection" },
   { href: "/press", label: "Press Kit" },
   { href: "/careers", label: "Careers at Space HR" },
+  { href: "/knowledge-graph", label: "HR Knowledge Graph" },
 ];
 
 interface DropdownProps {

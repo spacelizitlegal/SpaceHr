@@ -327,6 +327,7 @@ export function Footer() {
                 { href: "/about", label: "About Space HR" },
                 { href: "/careers", label: "Careers at Space HR" },
                 { href: "/technology", label: "Technology — VeritasGraph" },
+                { href: "/knowledge-graph", label: "HR Knowledge Graph" },
                 { href: "/privacy", label: "Privacy Policy" },
                 { href: "/terms", label: "Terms of Service" },
               ].map((link) => (
