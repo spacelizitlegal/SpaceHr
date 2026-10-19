@@ -86,7 +86,7 @@ const nextConfig: NextConfig = {
           { key: "X-Content-Type-Options", value: "nosniff" },
           { key: "X-Frame-Options", value: "DENY" },
           { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
-          { key: "Content-Security-Policy", value: "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https://flagcdn.com https://images.unsplash.com https://grainy-gradients.vercel.app data:; font-src 'self'; frame-src https://www.googletagmanager.com https://www.google.com; connect-src 'self' https://www.googletagmanager.com; base-uri 'self'; form-action 'self'" },
+          { key: "Content-Security-Policy", value: "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com; style-src 'self' 'unsafe-inline'; img-src 'self' https://flagcdn.com https://images.unsplash.com https://grainy-gradients.vercel.app data:; font-src 'self'; frame-src https://www.googletagmanager.com https://www.google.com; connect-src 'self' https://www.googletagmanager.com https://app.pmspace.ai; base-uri 'self'; form-action 'self'" },
           { key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains; preload" },
         ],
       },
